@@ -11,7 +11,7 @@
 ########################################################################
 
 $EM_CONF[$_EXTKEY] = array(
-	'title' => 'Typo3 Tutorial',
+	'title' => 'TYPO3 Tutorial forEditors',
 	'description' => 'This tutorial explains how to add or change content on an existing website in Typo3. It provides the most basic instructions to get the job done with step by step instructions. Only the information relevant to get the job is provided, no in depth explanation of all other available options in Typo3 is given.',
 	'category' => 'doc',
 	'shy' => 0,
@@ -26,16 +26,16 @@ $EM_CONF[$_EXTKEY] = array(
 	'modify_tables' => '',
 	'clearCacheOnLoad' => 0,
 	'lockType' => '',
-	'author' => 'Marlies Cohen',
-	'author_email' => 'mc@mcuniverse.com',
+	'author' => 'DocTeam, Susanne Moog',
+	'author_email' => 'typo3@susannemoog.de',
 	'author_company' => '',
 	'CGLcompliance' => '',
 	'CGLcompliance_note' => '',
-	'version' => '0.0.6',
+	'version' => '1.0.0',
 	'constraints' => array(
 		'depends' => array(
 			'typo3' => '3.5.0-0.0.0',
-			'php' => '3.0.0-0.0.0',
+			'php' => '4.0.0-0.0.0',
 		),
 		'conflicts' => array(
 		),

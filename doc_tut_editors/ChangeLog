@@ -1,4 +1,16 @@
-24.09.2004 Marlies Cohen
+
+(add new changes on top of this file)
+
+08-09-01 DocTeam, Daniel Bruessler <danielb@typo3.org>
+
+    * inserted keywords-list into first page, extension-icon
+    * upload as 1.0.0
+
+08-08-30 DocTeam, Susanne Moog <typo3@susannemoog.de>
+
+    * transfer from http://wiki.typo3.org/Typo3_tut to .sxw
+
+04-09-24 Marlies Cohen
 
     * upload as 0.0.6
 
