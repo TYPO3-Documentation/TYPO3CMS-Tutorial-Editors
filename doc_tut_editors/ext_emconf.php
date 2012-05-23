@@ -1,9 +1,9 @@
 <?php
 
 ########################################################################
-# Extension Manager/Repository config file for ext "typo3_tut".
+# Extension Manager/Repository config file for ext "doc_tut_editors".
 #
-# Auto generated 22-08-2011 16:54
+# Auto generated 23-08-2011 19:08
 #
 # Manual updates:
 # Only the data in the array - everything else is removed by next
@@ -11,38 +11,39 @@
 ########################################################################
 
 $EM_CONF[$_EXTKEY] = array(
-	'title' => 'TYPO3 Tutorial forEditors',
-	'description' => 'This tutorial explains how to add or change content on an existing website in TYPO3. It provides the most basic instructions to get the job done with step by step instructions. Only the information relevant to get the job is provided, no in depth explanation of all other available options in TYPO3 is given.',
+	'title' => 'TYPO3 Tutorial for Editors',
+	'description' => 'This tutorial explains how to add or change content on an existing website in TYPO3. It provides the most basic instructions step by step and illustrated with screenshots. Only the information relevant to get the job done is provided, no in depth explanation of other options in TYPO3 is given.',
 	'category' => 'doc',
 	'shy' => 0,
-	'version' => '1.1.1',
+	'version' => '1.5.0',
 	'dependencies' => '',
 	'conflicts' => '',
 	'priority' => '',
 	'loadOrder' => '',
 	'module' => '',
-	'state' => 'obsolete',
+	'doNotLoadInFE' => 1,
+	'state' => 'stable',
 	'uploadfolder' => 0,
 	'createDirs' => '',
 	'modify_tables' => '',
-	'clearcacheonload' => 0,
+	'clearCacheOnLoad' => 0,
 	'lockType' => '',
-	'author' => 'DocTeam, Susanne Moog',
-	'author_email' => 'typo3@susannemoog.de',
+	'author' => 'Official Documentation',
+	'author_email' => 'documentation@typo3.org',
 	'author_company' => '',
 	'CGLcompliance' => '',
 	'CGLcompliance_note' => '',
 	'constraints' => array(
 		'depends' => array(
-			'php' => '4.0.0-0.0.0',
-			'typo3' => '3.5.0-0.0.0',
 		),
 		'conflicts' => array(
 		),
 		'suggests' => array(
 		),
 	),
-	'_md5_values_when_last_written' => 'a:6:{s:9:"ChangeLog";s:4:"45af";s:12:"ext_icon.gif";s:4:"b4e6";s:14:"doc/manual.pdf";s:4:"9c8b";s:14:"doc/manual.sxw";s:4:"8a9b";s:19:"doc/wizard_form.dat";s:4:"e579";s:20:"doc/wizard_form.html";s:4:"6b59";}',
+	'_md5_values_when_last_written' => 'a:7:{s:9:"ChangeLog";s:4:"5d7d";s:12:"ext_icon.gif";s:4:"7277";s:22:"doc/basicreference.odt";s:4:"2d5b";s:14:"doc/manual.pdf";s:4:"afed";s:14:"doc/manual.sxw";s:4:"a778";s:14:"doc/manual.txt";s:4:"df77";s:24:"doc/partsnotinmanual.sxw";s:4:"e21e";}',
+	'suggests' => array(
+	),
 );
 
 ?>
