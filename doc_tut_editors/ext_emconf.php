@@ -12,7 +12,7 @@
 
 $EM_CONF[$_EXTKEY] = array(
 	'title' => 'TYPO3 Tutorial forEditors',
-	'description' => 'This tutorial explains how to add or change content on an existing website in Typo3. It provides the most basic instructions to get the job done with step by step instructions. Only the information relevant to get the job is provided, no in depth explanation of all other available options in Typo3 is given.',
+	'description' => 'This tutorial explains how to add or change content on an existing website in TYPO3. It provides the most basic instructions to get the job done with step by step instructions. Only the information relevant to get the job is provided, no in depth explanation of all other available options in TYPO3 is given.',
 	'category' => 'doc',
 	'shy' => 0,
 	'dependencies' => '',
