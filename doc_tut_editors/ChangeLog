@@ -1,10 +1,6 @@
 
 (add new changes on top of this file)
 
-08-09-02 DocTeam, Daniel Bruessler <danielb@typo3.org>
-
-    * little error in ext_emconf.php: Typo3 -> TYPO3
-
 08-09-01 DocTeam, Daniel Bruessler <danielb@typo3.org>
 
     * inserted keywords-list into first page, extension-icon
