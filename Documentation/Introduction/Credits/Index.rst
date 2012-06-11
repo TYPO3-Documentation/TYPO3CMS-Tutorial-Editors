@@ -1,0 +1,24 @@
+﻿
+
+.. ==================================================
+.. FOR YOUR INFORMATION
+.. --------------------------------------------------
+.. -*- coding: utf-8 -*- with BOM.
+
+.. ==================================================
+.. DEFINE SOME TEXTROLES
+.. --------------------------------------------------
+.. role::   underline
+.. role::   typoscript(code)
+.. role::   ts(typoscript)
+   :class:  typoscript
+.. role::   php(code)
+
+
+Credits
+^^^^^^^
+
+This extension is based on a tutorial extension originally written by
+Marlies Cohen and a summary / excerpt in the wiki by Eikaa. Susanne
+Moog did some major updates. Thanks to them all!
+

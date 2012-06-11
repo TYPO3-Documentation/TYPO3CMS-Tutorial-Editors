@@ -1,0 +1,14 @@
+﻿.. |img-13|     image:: ../../Images/manual_html_46c7801c.png
+   :height: 341
+   :width: 415
+.. :align: left
+.. :border: 0
+.. :name: Grafik12
+
+.. |img-14|     image:: ../../Images/manual_html_9c0595c.png
+   :height: 312
+   :width: 448
+.. :align: left
+.. :border: 0
+.. :name: Grafik13
+
