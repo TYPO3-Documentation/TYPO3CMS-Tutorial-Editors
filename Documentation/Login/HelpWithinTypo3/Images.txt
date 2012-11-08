@@ -1,6 +1,6 @@
 ﻿.. |img-4|      image:: ../../Images/manual_html_m79857ba8.png
-   :height: 17
-   :width: 17
+.. :height: 17
+.. :width: 17
 .. :border: 0
 .. :name: Grafik10
 

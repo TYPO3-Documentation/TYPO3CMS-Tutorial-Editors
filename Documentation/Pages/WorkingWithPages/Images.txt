@@ -1,20 +1,20 @@
 ﻿.. |img-17|     image:: ../../Images/manual_html_3b7dd93a.png
-   :height: 345
-   :width: 254
+.. :height: 345
+.. :width: 254
 .. :align: left
 .. :border: 0
 .. :name: Grafik16
 
 .. |img-18|     image:: ../../Images/manual_html_631f1248.png
-   :height: 56
-   :width: 155
+.. :height: 56
+.. :width: 155
 .. :align: left
 .. :border: 0
 .. :name: Grafik17
 
 .. |img-19|     image:: ../../Images/manual_html_m7393b6f.png
-   :height: 356
-   :width: 488
+.. :height: 356
+.. :width: 488
 .. :align: left
 .. :border: 0
 .. :name: Grafik18
