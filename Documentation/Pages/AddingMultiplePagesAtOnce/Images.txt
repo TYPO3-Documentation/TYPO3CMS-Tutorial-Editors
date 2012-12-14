@@ -1,7 +1,0 @@
-﻿.. |img-28|     image:: ../../Images/manual_html_58f834f7.png
-.. :height: 333
-.. :width: 605
-.. :align: left
-.. :border: 0
-.. :name: Grafik26
-

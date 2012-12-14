@@ -6,6 +6,8 @@
 .. include:: ../Includes.txt
 
 
+.. _content-elements:
+
 Content Elements
 ----------------
 
@@ -15,10 +17,10 @@ Content Elements
    :titlesonly:
    :glob:
 
-   WorkingWithContent/Index
+   Content/Index
    CreatingContent/Index
    EditingContent/Index
-   TheRichTextEditor/Index
-   WorkingWithImages/Index
-   WorkingWithFiles/Index
+   RichTextEditor/Index
+   Images/Index
+   Files/Index
 

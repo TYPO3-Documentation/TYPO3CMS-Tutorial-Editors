@@ -1,9 +1,0 @@
-﻿.. |img-29|     image:: ../Images/manual_html_m364934c0.png
-.. :height: 110
-.. :width: 482
-.. :align: left
-.. :border: 0
-.. :name: Grafik19
-
-.. |img-30|     image:: ../Images/manual_html_m4fa3ce9e.gif
-.. :align: left

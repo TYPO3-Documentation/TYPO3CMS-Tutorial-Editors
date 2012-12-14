@@ -4,8 +4,9 @@
 .. -*- coding: utf-8 -*- with BOM.
 
 .. include:: Includes.txt
-.. include:: Images.txt
 
+
+.. _start:
 
 ==========================
 TYPO3 Tutorial for Editors
@@ -15,7 +16,7 @@ TYPO3 Tutorial for Editors
       doc_tut_editors
 
 :Version:
-      1.5.0
+      6.0.0
 
 :Language:
       en
@@ -27,7 +28,7 @@ TYPO3 Tutorial for Editors
       forEditors, forBeginners, tutorial
 
 :Copyright:
-      2000-2011
+      2000-2013
 
 :Author:
       Documentation Team
@@ -81,6 +82,6 @@ future reference.
    Overview/Index
    ContentElements/Index
    Pages/Index
-   WorkingWithLanguages/Index
+   Languages/Index
    NextSteps/Index
    Targets

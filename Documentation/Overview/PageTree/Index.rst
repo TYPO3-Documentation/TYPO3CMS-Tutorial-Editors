@@ -4,41 +4,40 @@
 .. -*- coding: utf-8 -*- with BOM.
 
 .. include:: ../../Includes.txt
-.. include:: Images.txt
 
+
+.. _page-tree:
 
 Page Tree
 ^^^^^^^^^
 
-|img-6| Figure 3
+.. figure:: ../../Images/pagetree_img1.png
+   :alt: Figure 6
 
 In the page tree you will see different icons:
 
-#. This is a  **standard** page
-
-#. This page is a  **shortcut** , that means, if you visit this page in
+#. Page "Home" is a **shortcut** , that means, if you visit this page in
    the frontend you will be redirected to a different page.
 
-#. This page is  **not visible** in the frontend. It has  **Hide Page**
-   enabled in the page properties.
+#. Clicking on the arrow expands or implodes the directory tree.
 
-#. This one is of the type  **not in menu** . It has  **Hide in Menu**
-   enabled in the page properties.
+#. Page "History" is a **standard** page
 
-#. This is not so much a page but rather a  **folder** , they are used to
+#. "News Entries" is not so much a page but rather a **folder**, they are used to
    store all kinds of items, for example news, newsletters, guest book
    entries, etc.
 
-#. Clicking on the plus sign expands the directory tree. Clicking on the
-   minus sign contracts the directory tree.
+#. If you created a page and it doesn't appear reload the page tree.
 
-#. If you created a page and it doesn't appear in the page tree, try
-   reloading it.
+.. figure:: ../../Images/pagetree_img2.png
+   :alt: Figure 7
+
+Use the filter (click on icon) to delimit the pages shown in the page tree.
+
+.. figure:: ../../Images/pagetree_img3.png
+   :alt: Figure 8
 
 Note that it makes a difference if you click on the icon or on the
-name of the page. Clicking on the icon will produce a menu with page
+name of the page. Clicking on the icon will produce the context menu with page
 specific options, while clicking on the name of the page will load the
 page in the work area.
-
-|img-7| Figure 4
-

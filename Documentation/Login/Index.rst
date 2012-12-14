@@ -4,22 +4,22 @@
 .. -*- coding: utf-8 -*- with BOM.
 
 .. include:: ../Includes.txt
-.. include:: Images.txt
 
+
+.. _login:
 
 Login
 -----
 
-Let's start from the beginning. Make sure you have javascript and
-cookies enabled in your browser or it will not work.
+Let's start from the beginning. Make sure you have javascript and cookies enabled in your browser or it will not work.
 
-Enter your domain name into the address bar of your internet browser
-and append "/typo3" to it to get to the "log in" page of your site.
+Enter your domain name into the address bar of your internet browser and append "/typo3" to it to get to the "log in" page of your site.
 For example: http://www.example.com/typo3.
 
 Now you will see a screen like this:
 
-|img-3| Figure 1
+.. figure:: ../Images/login_img1.png
+   :alt: Figure 1
 
 - In the Username box write your username
 
@@ -33,5 +33,4 @@ Now you will see a screen like this:
    :titlesonly:
    :glob:
 
-   HelpWithinTypo3/Index
-
+   Help/Index

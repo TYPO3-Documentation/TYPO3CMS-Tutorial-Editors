@@ -4,25 +4,58 @@
 .. -*- coding: utf-8 -*- with BOM.
 
 .. include:: ../../Includes.txt
-.. include:: Images.txt
 
+
+.. _content-creating:
 
 Creating Content
 ^^^^^^^^^^^^^^^^
 
 Once you have clicked to create a new content element, you will see a
-page with various content types available for selection (Figure 8).
+page with various content types available for selection.
 Note that the content type selections available to you are dependent
 on the features you have installed in your TYPO3 system.
 
-|img-11| Figure 8
+In the first step you can then select which type of content you want
+to have, use the other tabs to choose different types of content elements.
 
-In this image you can then select [1] which type of content you want
-to have and then [2] where on the page it should appear (use the small
-grey arrow). The second option is only visible if you haven't already
-specified where you want to have it. In other words, to see this
-position selection, you must use the  **new content** icon at the top
-of the page (Figure 6, Item 4).
+In the following step you will be able to edit the new content.
 
-Then you can edit the new content.
 
+.. _content-typical:
+
+Typical Page Content
+""""""""""""""""""""
+
+.. figure:: ../../Images/content_create_img1.png
+   :alt: Typical Page Content
+
+
+.. _content-special:
+
+Special Elements
+""""""""""""""""
+
+.. figure:: ../../Images/content_create_img2.png
+   :alt: Special Elements
+
+
+.. _content-form:
+
+Form Elements
+"""""""""""""
+
+.. figure:: ../../Images/content_create_img3.png
+   :alt: Form Elements
+
+
+.. _content-plugin:
+
+Plugins
+"""""""
+
+.. figure:: ../../Images/content_create_img4.png
+   :alt: Plugins
+
+
+In the next step you will already insert your first content

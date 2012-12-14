@@ -1,7 +1,0 @@
-﻿.. |img-12|     image:: ../../Images/manual_html_m7b43ccab.png
-.. :height: 176
-.. :width: 600
-.. :align: left
-.. :border: 0
-.. :name: Grafik11
-

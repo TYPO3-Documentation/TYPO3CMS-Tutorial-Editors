@@ -6,6 +6,8 @@
 .. include:: ../Includes.txt
 
 
+.. _pages:
+
 Pages
 -----
 
@@ -17,5 +19,5 @@ Pages
 
    WorkingWithPages/Index
    CreatingPages/Index
-   AddingMultiplePagesAtOnce/Index
+   AddingMultiple/Index
 

@@ -1,7 +1,0 @@
-﻿.. |img-15|     image:: ../../Images/manual_html_m45f478d5.png
-.. :height: 454
-.. :width: 475
-.. :align: left
-.. :border: 0
-.. :name: Grafik15
-
