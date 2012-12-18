@@ -11,7 +11,7 @@
 Headerbar
 ^^^^^^^^^
 .. figure:: ../../Images/headerbar_img1.png
-   :alt: Figure 4
+   :alt: Headerbar
 
 Beside the TYPO3 Logo you will find the following functions:
 
@@ -19,11 +19,11 @@ Beside the TYPO3 Logo you will find the following functions:
 #. Add bookmark and workspaces
 #. Search
 
-After a predefined amount if time with *idle use* your session will expire
+After a predefined amount of time with *idle use* your session will expire
 for security reasons:
 
 .. figure:: ../../Images/expire_img1.png
-   :alt: Figure 5
+   :alt: Expire Session
 
 You may refresh the session, but unsaved changes will be lost - keep in mind, to
 save changes regular. TYPO3 saves data and files on the server and not on your pc.
@@ -35,7 +35,7 @@ Menu
 ^^^^
 
 .. figure:: ../../Images/menu_img1.png
-   :alt: Figure 6
+   :alt: Menu
 
 The menu has categories with several modules. You can see
 the categories **Web, File, User tools and **Help**
@@ -64,5 +64,5 @@ all kinds of files like pictures, PDFs, etc. on the server.
 
 All modules are explained in the **About modules** module in the help
 category. Please note that the categories can be folded using the
-little + / - buttons next to the name.
+little arrow icons next to the name.
 

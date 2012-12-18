@@ -20,7 +20,7 @@ browse files on the server. The files which are stored this way are
 the image section** of content elements.
 
 .. figure:: ../../Images/filelist_img1.png
-   :alt: Figure 20
+   :alt: Filelist
 
 #. Select the  **filelist** module.
 
@@ -41,18 +41,19 @@ the image section** of content elements.
    permanent.
 
 .. figure:: ../../Images/filelist_img2.png
-   :alt: Figure 21
+   :alt: File upload progress
 
 Dialog to upload multiple files, with the **flash uploader** enabled in your
-personal settings (default).
+personal settings. To replace an existing file select the option "overwrite".
 
 .. figure:: ../../Images/filelist_img3.png
-   :alt: Figure 22
+   :alt: Upload files
 
-Dialog to upload multiple files, if the Flash Uploader is disabled.
+Dialog to upload multiple files, with the flash uploader is disabled. To replace
+an existing file select the option "overwrite".
 
 .. figure:: ../../Images/filelist_img4.png
-   :alt: Figure 23
+   :alt: Create empty files or folders
 
 Dialog to create empty folders and files.
 

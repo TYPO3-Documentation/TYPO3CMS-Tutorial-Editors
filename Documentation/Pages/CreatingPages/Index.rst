@@ -11,10 +11,10 @@
 Creating Pages
 ^^^^^^^^^^^^^^
 
-Adding a new page can be done in two ways.
+There are two ways to add a new page.
 
 First make sure that you currently are in a module inside the category
-Web (e.g. in the page module).
+web (e.g. in the page module).
 
 
 .. _pages-creating-tree:
@@ -23,14 +23,14 @@ Adding pages within the page tree
 """""""""""""""""""""""""""""""""
 
 .. figure:: ../../Images/page_img3.png
-   :alt: Figure
+   :alt: Creating pages
 
 #. pick a page type (here standard)
 #. create new page
 #. insert page title
 
 .. figure:: ../../Images/page_img4.png
-   :alt: Figure
+   :alt: Insert page title 
 
 A new page is disabled by default. To enable a page, use the context menu or
 the page properties.
@@ -48,22 +48,22 @@ Adding pages with the context menu
 """"""""""""""""""""""""""""""""""
 
 .. figure:: ../../Images/pagetree_img3.png
-   :alt: Figure
+   :alt: Creating pages with context menu
 
 To activate the context menu click on the icon of a page, not the title. The context menu
 concentrates fast access to different actions at one place.
 
-#. for examle disable or enable a page with one mouse click
-#. page actions are redundant to drag and drop actions of the page tree
+#. For examle disable or enable a page with one mouse click
+#. Page actions are redundant to drag and drop actions of the page tree
 
 Once the page has been copied or cut, it is copied to your clipboard in TYPO3. Creating a **new page**
 with the context menu will lead you to the follwing step:
 
 .. figure:: ../../Images/page_img1.png
-   :alt: Figure
+   :alt: Select position fpr the new page
 
-#. put the page on the same level of the page tree hierarchy **or**
-#. put the page inside the page you clicked on, so that it will appear as a child of that page in the page tree.
+#. Put the page on the same level of the page tree hierarchy **or**
+#. Put the page inside the page you clicked on, so that it will appear as a child of that page in the page tree.
 
 After selecting the location of the new page you would define the title of the page:
 
@@ -74,7 +74,7 @@ Page Properties
 """""""""""""""
 
 .. figure:: ../../Images/page_img2.png
-   :alt: Figure
+   :alt: Page properties
 
 #. Insert the page title (mandatory) and save
-#. opens a new popup window (reasonable on small displays)
+#. Opens a new popup window (reasonable on small displays)

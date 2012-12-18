@@ -29,7 +29,7 @@ example the available language is "dansk".
    :alt: Languages
 
 Then enter the new translation of the page name in the field
-**Pagetitle** and save.
+**Page title** and save changes.
 
 .. figure:: ../Images/languages_img3.png
    :alt: Languages
@@ -51,7 +51,6 @@ New Language with "Dansk" in our example)
 
 If this two column mode is a little confusing, you can go back to the
 old view of the work area by selecting **Columns** in the dropdown
-menu, where you previously selected Languages.
+menu, where you previously selected languages.
 Note that you can now switch between the different translations of the
 page with another drop-down menu below the one you just used.
-

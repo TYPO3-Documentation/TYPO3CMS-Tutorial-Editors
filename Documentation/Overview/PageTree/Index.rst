@@ -5,7 +5,6 @@
 
 .. include:: ../../Includes.txt
 
-
 .. _page-tree:
 
 Page Tree
@@ -30,7 +29,7 @@ In the page tree you will see different icons:
 #. If you created a page and it doesn't appear reload the page tree.
 
 .. figure:: ../../Images/pagetree_img2.png
-   :alt: Figure 7
+   :alt: Page tree
 
 Use the filter (click on icon) to delimit the pages shown in the page tree.
 
