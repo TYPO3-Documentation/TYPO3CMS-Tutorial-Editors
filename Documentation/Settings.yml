@@ -1,9 +1,8 @@
 # Settings.yml
 ---
 conf.py:
-  ##==========================================
-  ## define configuration data for conf.py as
-  ## "parameter: value" pairs here:
-  ##------------------------------------------
-  exampleParameter: example value
+  project: TYPO3 Tutorial for Editors
+  copyright: 2000-2013
+  version: 6.0.0
+  release: 6.0.0
 ...
