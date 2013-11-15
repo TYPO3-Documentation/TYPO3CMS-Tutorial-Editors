@@ -26,7 +26,7 @@ is empty.
 .. figure:: ../../Images/content_img1.png
    :alt: Figure 12
 
-The content elements on this page are type **text** and **text with image**,
+The content elements on this page are type **text** and **text & images**,
 and we'll learn more about different content types later on. Moving over
 a column or an content element will highlight it, so that you will see
 the icons.
@@ -35,7 +35,7 @@ the icons.
 
 #. Add a new content element to this column.
 
-#. Icon of the content element *Text with image*
+#. Icon of the content element *Text & Images*
 
 #. Edit this content element, enable/disable or delete it.
 

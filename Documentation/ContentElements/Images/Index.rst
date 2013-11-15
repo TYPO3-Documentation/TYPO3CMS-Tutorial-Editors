@@ -11,7 +11,7 @@
 Working with Images
 ^^^^^^^^^^^^^^^^^^^
 
-Most times you work with images either in the "text with image" or the
+Most times you work with images either in the "text & images" or the
 "images only" content element. Both cases are covered here. For
 working with images it can be helpful to activate the option  **Show
 secondary options** at the bottom of the page with the edit form.
