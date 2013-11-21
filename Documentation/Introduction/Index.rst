@@ -63,13 +63,12 @@ For general questions about the documentation get in touch by writing
 to `documentation@typo3.org <mailto:documentation@typo3.org>`_ .
 
 If you find a bug in this manual, please file an issue in this
-manual's bug tracker: `http://forge.typo3.org/projects/typo3v4-typo3\_
-editor\_tutorial/issues <http://forge.typo3.org/projects/typo3v4-typo3
-_editor_tutorial/issues>`_
+manual's bug tracker: `http://forge.typo3.org/projects/typo3cms-doc-editors/issues
+<http://forge.typo3.org/projects/typo3cms-doc-editors>`_
 
 To support the translation to other languages see
-`http://wiki.typo3.org/Doc\_tut\_editors
-<http://wiki.typo3.org/Doc_tut_editors>`_
+`http://wiki.typo3.org/TYPO3_Tutorial_for_Editors
+<http://wiki.typo3.org/TYPO3_Tutorial_for_Editors>`_
 
 Maintaining quality documentation is hard work and the Documentation
 Team is always looking for volunteers. If you feel like helping please
