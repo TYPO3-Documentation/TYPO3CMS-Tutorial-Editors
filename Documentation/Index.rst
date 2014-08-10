@@ -16,7 +16,7 @@ TYPO3 Tutorial for Editors
       doc_tut_editors
 
 :Version:
-      6.0.0
+      6.2
 
 :Language:
       en
@@ -28,7 +28,7 @@ TYPO3 Tutorial for Editors
       forEditors, forBeginners, tutorial
 
 :Copyright:
-      2000-2013
+      2000-2014
 
 :Author:
       Documentation Team
