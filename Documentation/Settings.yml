@@ -5,4 +5,19 @@ conf.py:
   copyright: 2000-2013
   version: 6.0.0
   release: 6.0.0
+  html_theme_options:
+    github_repository: TYPO3-Documentation/TYPO3CMS-Tutorial-Editors
+    github_branch: 6-0
+  latex_documents:
+  - - Index
+    - t3editors.tex
+    - TYPO3 Tutorial for Editors
+    - Documentation Team
+    - manual
+
+  latex_elements:
+    papersize: a4paper
+    pointsize: 10pt
+    preamble: \usepackage{typo3}
+
 ...
