@@ -20,8 +20,8 @@ installing TYPO3 and notes on templates, user management and usage of
 extensions.
 
 If you need more information on how to translate a website, you should
-read the :ref:`Localization Guide <t3l10n:start>`. It contains information on how to set up a
-multi-language site and how to actually do the translation and
-localization.
+read the :ref:`Localization Guide <t3l10n:start>`. It contains
+information on how to set up a multi-language site and how to actually
+do the translation and localization.
 
 
