@@ -2,15 +2,15 @@
 ---
 conf.py:
   project: TYPO3 Tutorial for Editors
-  copyright: 2000-2014
+  copyright: 2000-2015
   version: 6.2
   release: 6.2
   intersphinx_mapping:
     t3start:
-    - http://docs.typo3.org/typo3cms/GettingStartedTutorial
+    - https://docs.typo3.org/typo3cms/GettingStartedTutorial
     - null
     t3l10n:
-    - http://docs.typo3.org/typo3cms/FrontendLocalizationGuide
+    - https://docs.typo3.org/typo3cms/FrontendLocalizationGuide
     - null
   html_theme_options:
     github_repository: TYPO3-Documentation/TYPO3CMS-Tutorial-Editors
