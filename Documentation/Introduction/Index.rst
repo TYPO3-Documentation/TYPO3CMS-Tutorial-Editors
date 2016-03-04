@@ -1,7 +1,3 @@
-.. ==================================================
-.. FOR YOUR INFORMATION
-.. --------------------------------------------------
-.. -*- coding: utf-8 -*- with BOM.
 
 .. include:: ../Includes.txt
 
@@ -17,21 +13,23 @@ Introduction
 About this document
 ^^^^^^^^^^^^^^^^^^^
 
-This is a short tutorial for editors.
+This is a short tutorial for editors. It explains how to create
+pages and content elements. It also details the various types
+of pages and content elements.
 
-It first shows you how to log in to TYPO3. TYPO3 has a page tree with
-the pages, which you can see when you visit your website. On these
-pages you have content elements, which contain the content, which is
-present on each page. As an editor you will create and edit content
-elements and pages.
-
-This tutorial begins with the tasks, which an editor needs most
-frequently: Editing existing and creating new content. The following
-chapters will explain how to edit and create pages. Finally there is a
-short introduction on working with translations.
+This tutorial starts with the tasks which an editor most frequently needs:
+editing existing content and creating new one. We will then move on to editing
+and creating pages. Then comes a short introduction to working with translations.
+Finally the tutorial presents the various access restriction
+concepts: visibility, publication time and password-protected pages.
 
 The tutorial provides the most basic instructions step-by-step.
 It does not cover all available functions, but the most common ones.
+
+It is assumed that you have been through the
+:ref:`Getting Started Tutorial <t3start:start>` and are thus
+familiar with the general concepts of TYPO3 CMS, in particular
+the separation of frontend and backend.
 
 
 .. _new:
@@ -39,9 +37,8 @@ It does not cover all available functions, but the most common ones.
 What's new
 ^^^^^^^^^^
 
-- This manual is illustrated with screenshots from the Introduction Package
-  using TYPO3 CMS 6.0.
-- This document replaces the old document "typo3\_tut".
+This manual is illustrated with screenshots from the Introduction Package
+using TYPO3 CMS 7 LTS.
 
 
 .. _credits:
@@ -52,6 +49,8 @@ Credits
 This extension is based on a tutorial extension originally written by
 Marlies Cohen and a summary / excerpt in the wiki by Eikaa. Susanne
 Moog did some major updates. Thanks to them all!
+
+It was updated for TYPO3 CMS 7 LTS by François Suter.
 
 
 .. _feedback:
