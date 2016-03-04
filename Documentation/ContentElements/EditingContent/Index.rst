@@ -1,8 +1,4 @@
-﻿.. ==================================================
-.. FOR YOUR INFORMATION
-.. --------------------------------------------------
-.. -*- coding: utf-8 -*- with BOM.
-
+﻿
 .. include:: ../../Includes.txt
 
 
@@ -11,25 +7,27 @@
 Editing Content
 ^^^^^^^^^^^^^^^
 
-The work area for editing content and for creating content is actually
-the same. The only difference is that the form is already filled when
-you edit an existing element. In this section you will find a
-description of the different parts of the working area when working
-with a  **text & Images** content element. This covers both the
-**text** and the  **images** content elements.
+Editing is basically the same as creating new content, except
+that you input form is already filled with the existing data.
 
-.. figure:: ../../Images/content_edit_img1.png
-   :alt: Editing Content
+First off, we will change the type of content element, since
+this is what is causing errors in the frontend. So click the
+"Edit" icon of your new content element.
 
-#. Close, Save, (+ preview, + close, + new record) delete this content element or undo last changes
+.. figure:: ../../Images/EditContentChangeType.png
+   :alt: Editing a content element to change its type
 
-#. General Settings are Type, Column and Language, depending on the type of content element there
-   are different tabs. Switching between the tabs keeps changes. The top area contains the
-   header of the element, as well as the type, which you can change. Be aware that changing a
-   text & images element to a text element will cause it to loose all pictures.
 
-#. Header area of this content element
+Open the "Type" selector and choose "Text & Images". The following
+dialog box will appear:
 
-#. Text area of this content element with Rich Text Editor (RTE), we will discuss the RTE later.
+.. figure:: ../../Images/EditContentChangeTypeConfirm.png
+   :alt: Editing a content element to change its type
 
-#. Opens the RTE in fullscreen mode
+
+When you change a content element's type, TYPO3 CMS will reload
+the input form to display different fields. This is why it is
+asking for confirmation about saving before the reloading happens.
+
+Change the text you entered before and use the "Save and view page"
+action to save your changes and preview them in the frontend.

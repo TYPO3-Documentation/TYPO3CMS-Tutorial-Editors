@@ -1,8 +1,4 @@
-﻿.. ==================================================
-.. FOR YOUR INFORMATION
-.. --------------------------------------------------
-.. -*- coding: utf-8 -*- with BOM.
-
+﻿
 .. include:: ../../Includes.txt
 
 
@@ -11,32 +7,48 @@
 Working with Content
 ^^^^^^^^^^^^^^^^^^^^
 
-We will now discuss the work area of the page module, where most of
-the work is usually done. Don't be scared by the many icons and
-buttons, as they are somewhat redundant. Use the mouse to point and
-hover (do not click) over any icon to see the help text appear.
-At first we will discuss working with content, later we will talk
-about how to work with pages.
+Working with content happens essentially in the **WEB > Page** module.
+We will start by taking a tour of the module, which is quite rich.
 
-The screenshot shows the work area of the page module after clicking on the
-name of a page in the page tree. You can see two **content elements** one in
-the column called  *Normal* and one in the column *Right*, the column *Left*
-is empty.
+The *Page* module has three different modes or functions: "QuickEdit", "Columns"
+and "Languages". The first one moves you straight to editing the first
+content element on the page. This may be a bit disturbing at first and is
+not recommended. The "Languages" mode will be discussed later when talking
+about translations.
 
-.. figure:: ../../Images/content_img1.png
-   :alt: Figure 12
+For now we want to be in "Columns" mode. If that is not the case when
+you move to the *Page* module, please use the menu in the docheader to
+switch mode.
 
-The content elements on this page are type **text** and **text & images**,
-and we'll learn more about different content types later on. Moving over
-a column or an content element will highlight it, so that you will see
-the icons.
+.. figure:: ../../Images/PageModuleFunctions.png
+   :alt: Changing mode in the Page module
 
-#. Edit all content elements of one column.
 
-#. Add a new content element to this column.
+The screenshot below shows how the home page of the Introduction
+Package looks like in the TYPO3 CMS backend. Content is distributed
+among various content areas ("Border", "Middle: Left", "Middle: Center", etc.)
+which are called **columns**.
 
-#. Icon of the content element *Text & Images*
+Many icons are greyed out to make the interface look less cluttered.
+Some icons don't appear at all until your hover over specific areas.
 
-#. Edit this content element, enable/disable or delete it.
+.. figure:: ../../Images/PageModuleColumns.png
+   :alt: A typical view of the Page module with various content columns
 
-You can click anywhere on the highlighted area of the content element to edit it.
+
+What can be seen in this view?
+
+#. This icon only appears when you hover over the column title.
+   It is used to edit all content elements of that column.
+
+#. Adds a new content element to this column at precisely that position.
+
+#. This icon represents the type of the content element. In that case
+   it is a custom content element which relies on the default icon,
+   but it may vary and provides a visual clue to the type.
+
+#. These icons light up when hovering over the whole element.
+   They are user to edit this content element, enable/disable it
+   or delete it respectively.
+
+You can click anywhere on the highlighted area of a content element to edit it.

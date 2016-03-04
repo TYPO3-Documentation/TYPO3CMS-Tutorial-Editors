@@ -1,7 +1,3 @@
-.. ==================================================
-.. FOR YOUR INFORMATION
-.. --------------------------------------------------
-.. -*- coding: utf-8 -*- with BOM.
 
 .. include:: ../Includes.txt
 
@@ -22,5 +18,4 @@ Content Elements
    EditingContent/Index
    RichTextEditor/Index
    Images/Index
-   Files/Index
 
