@@ -75,7 +75,6 @@ future reference.
 
    Introduction/Index
    Login/Index
-   Overview/Index
    ContentElements/Index
    Pages/Index
    Languages/Index
