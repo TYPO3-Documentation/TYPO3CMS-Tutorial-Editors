@@ -1,7 +1,3 @@
-.. ==================================================
-.. FOR YOUR INFORMATION
-.. --------------------------------------------------
-.. -*- coding: utf-8 -*- with BOM.
 
 .. include:: Includes.txt
 
@@ -16,19 +12,19 @@ TYPO3 Tutorial for Editors
       doc_tut_editors
 
 :Version:
-      6.2
+      7 LTS
 
 :Language:
       en
 
 :Description:
-      This tutorial explains how to add or change content on an existing website in TYPO3. It provides the most basic instructions step by step and illustrated with screenshots.
+      This tutorial explains how to add or change content on an existing website using TYPO3 CMS. It provides the most basic instructions step by step and illustrated with screenshots.
 
 :Keywords:
       forEditors, forBeginners, tutorial
 
 :Copyright:
-      2000-2015
+      2000-2016
 
 :Author:
       Documentation Team
