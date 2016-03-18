@@ -25,7 +25,8 @@ dropping a page type from the top of the page tree.
    :alt: Creating a page using drag and drop
 
 
-#. Choose a page type by selecting one of the icons (here a standard page)
+#. Choose a page type by selecting one of the icons (here a standard page,
+   see the :ref:`Page types chapter <pages-types>`).
 
 #. Drop the icon either between two existing pages (will create a sibling)
    or on an existing page (will create a child).
@@ -60,28 +61,19 @@ to select a position for the new page.
 
 
 After selecting a position, you will be taken to the form which
-lets you define the properties of the new page.
-
-
-.. _pages-properties:
-
-Page Properties
-"""""""""""""""
-
-A page in TYPO3 CMS has many properties, but the title is the only
-mandatory one.
+lets you define the properties of the new page. For now, let's
+just set the title which is mandatory.
 
 .. figure:: ../../Images/PageCreateProperties.png
    :alt: Editing the page properties
 
 
-Please set a title for your new page and feel free to explore
-the other properties. Remember that you can get some help
-by clicking on any of the field labels.
-
-In particular, you may want to move to the *Access* tab and
+You may also want to move to the *Access* tab and
 uncheck the "Disable" box, so that your new page is visible
 in your web site.
 
 .. figure:: ../../Images/PageCreateEnable.png
    :alt: Unchecking this box will make the page publicly visible
+
+
+More properties are explored in the :ref:`Page properties chapter <pages-properties>`.

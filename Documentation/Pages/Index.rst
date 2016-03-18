@@ -20,4 +20,6 @@ Pages
    WorkingWithPages/Index
    CreatingPages/Index
    AddingMultiple/Index
-
+   PageTypes/Index
+   PageProperties/Index
+   OtherFeatures/Index
