@@ -1,7 +1,3 @@
-.. ==================================================
-.. FOR YOUR INFORMATION
-.. --------------------------------------------------
-.. -*- coding: utf-8 -*- with BOM.
 
 .. include:: ../../Includes.txt
 
@@ -11,10 +7,10 @@
 Creating Pages
 ^^^^^^^^^^^^^^
 
-There are two ways to add a new page.
+There are two main ways to add a new page to your site.
 
-First make sure that you currently are in a module inside the category
-web (e.g. in the page module).
+First make sure that you currently are in a **WEB** module
+so that you see the page tree.
 
 
 .. _pages-creating-tree:
@@ -22,24 +18,26 @@ web (e.g. in the page module).
 Adding pages within the page tree
 """""""""""""""""""""""""""""""""
 
-.. figure:: ../../Images/page_img3.png
-   :alt: Creating pages
+As we saw before, you can create a new page by dragging and
+dropping a page type from the top of the page tree.
 
-#. pick a page type (here standard)
-#. create new page
-#. insert page title
+.. figure:: ../../Images/PageCreateDragDrop.png
+   :alt: Creating a page using drag and drop
 
-.. figure:: ../../Images/page_img4.png
-   :alt: Insert page title 
+
+#. Choose a page type by selecting one of the icons (here a standard page)
+
+#. Drop the icon either between two existing pages (will create a sibling)
+   or on an existing page (will create a child).
+
+#. Insert a title for the new page
+
+.. figure:: ../../Images/PageCreateTitle.png
+   :alt: Inserting a page title
+
 
 A new page is disabled by default. To enable a page, use the context menu or
 the page properties.
-
-Clicking on any subitem of  **Create a new page** will immediately
-bring up the  **New page** information. Depending upon your selection
-you will create a page inside the current one (a subpage), after the
-current one (a sibling) or you get a wizard in which you can select
-the position of the page.
 
 
 .. _pages-creating-context:
@@ -47,25 +45,22 @@ the position of the page.
 Adding pages with the context menu
 """"""""""""""""""""""""""""""""""
 
-.. figure:: ../../Images/pagetree_img3.png
+Click on the icon of any existing page and choose
+"Page Actions > New" from the context menu.
+
+.. figure:: ../../Images/PageCreateContextMenu.png
    :alt: Creating pages with context menu
 
-To activate the context menu click on the icon of a page, not the title. The context menu
-concentrates fast access to different actions at one place.
 
-#. For examle disable or enable a page with one mouse click
-#. Page actions are redundant to drag and drop actions of the page tree
+You will be taken to the new page wizard, which asks you
+to select a position for the new page.
 
-Once the page has been copied or cut, it is copied to your clipboard in TYPO3. Creating a **new page**
-with the context menu will lead you to the follwing step:
+.. figure:: ../../Images/PageCreateWizard.png
+   :alt: Selecting a position for the new page using the wizard
 
-.. figure:: ../../Images/page_img1.png
-   :alt: Select position fpr the new page
 
-#. Put the page on the same level of the page tree hierarchy **or**
-#. Put the page inside the page you clicked on, so that it will appear as a child of that page in the page tree.
-
-After selecting the location of the new page you would define the title of the page:
+After selecting a position, you will be taken to the form which
+lets you define the properties of the new page.
 
 
 .. _pages-properties:
@@ -73,8 +68,20 @@ After selecting the location of the new page you would define the title of the p
 Page Properties
 """""""""""""""
 
-.. figure:: ../../Images/page_img2.png
-   :alt: Page properties
+A page in TYPO3 CMS has many properties, but the title is the only
+mandatory one.
 
-#. Insert the page title (mandatory) and save
-#. Opens a new popup window (reasonable on small displays)
+.. figure:: ../../Images/PageCreateProperties.png
+   :alt: Editing the page properties
+
+
+Please set a title for your new page and feel free to explore
+the other properties. Remember that you can get some help
+by clicking on any of the field labels.
+
+In particular, you may want to move to the *Access* tab and
+uncheck the "Disable" box, so that your new page is visible
+in your web site.
+
+.. figure:: ../../Images/PageCreateEnable.png
+   :alt: Unchecking this box will make the page publicly visible
