@@ -4,7 +4,7 @@
 
 .. _content-working:
 
-Working with Content
+Working with content
 ^^^^^^^^^^^^^^^^^^^^
 
 Working with content happens essentially in the **WEB > Page** module.
@@ -52,3 +52,25 @@ What can be seen in this view?
    or delete it respectively.
 
 You can click anywhere on the highlighted area of a content element to edit it.
+
+
+.. _content-working-moving:
+
+Moving content elements
+^^^^^^^^^^^^^^^^^^^^^^^
+
+Content elements can be moved around simply using drap and drop.
+
+.. figure:: ../../Images/PageModuleMoveElements.png
+   :alt: Moving content elements around using drap and drop
+
+
+Click in the gray bar at the top of a content element to start
+dragging it. The *Page* module will then show you where you can
+drop it.
+
+Moving a content element from one page to another is more
+convoluted, as you have to use the *List* module to perform
+a cut and paste operation. Please refer to the
+:ref:`Getting Started Tutorial <t3start:clipboard>` for
+usage of the *List* module.
