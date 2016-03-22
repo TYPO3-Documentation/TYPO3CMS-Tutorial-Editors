@@ -77,6 +77,7 @@ future reference.
    Login/Index
    ContentElements/Index
    Pages/Index
+   AccessControl/Index
    Languages/Index
    NextSteps/Index
    Targets
