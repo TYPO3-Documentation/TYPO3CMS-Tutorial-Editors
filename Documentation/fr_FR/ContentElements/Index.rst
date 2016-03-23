@@ -4,7 +4,7 @@
 
 .. _content-elements:
 
-Content Elements
+Éléments de contenu
 ----------------
 
 
