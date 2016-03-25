@@ -94,12 +94,12 @@ le paquet d'introduction.
 Création d'un nouvel élément de contenu
 """""""""""""""""""""""""""""""""""""""
 
-Retournez sur l'oget "Elément de contenu classique" et choisissez "Text & images",
+Retournez sur l'oget "Elément de contenu classique" et choisissez "Text & Media",
 qui est probablement le type de contenu le plus utilisé.
 Vous devriez voir le formulaire de saisie suivant :
 
 .. figure:: ../../Images/NewContentElement.png
-   :alt: Formulaire de saisie vide pour un élément de contenu texte et images
+   :alt: Formulaire de saisie vide pour un élément de contenu texte et media
 
 
 Les champs les plus importants sont le champ "Titre",
