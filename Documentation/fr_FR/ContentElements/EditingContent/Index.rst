@@ -4,30 +4,33 @@
 
 .. _content-editing:
 
-Editing Content
-^^^^^^^^^^^^^^^
+Modification du contenu
+^^^^^^^^^^^^^^^^^^^^^^^
 
-Editing is basically the same as creating new content, except
-that you input form is already filled with the existing data.
+La modification est fondamentalement la même chose
+que la création d'un nouveau contenu,
+sauf que le formulaire de saisie est déjà rempli avec les données existantes.
 
-First off, we will change the type of content element, since
-this is what is causing errors in the frontend. So click the
-"Edit" icon of your new content element.
+Tout d'abord, nous allons changer le type d'élément de contenu,
+puisque c'est ce qui provoque des erreurs dans le frontend.
+Alors cliquez sur l'icône "Modifier" de votre nouvel élément de contenu.
 
 .. figure:: ../../Images/EditContentChangeType.png
-   :alt: Editing a content element to change its type
+   :alt: Modification d'un élément de contenu pour changer son type
 
 
-Open the "Type" selector and choose "Text & Images". The following
-dialog box will appear:
+Ouvrez le sélecteur "Type" et choisissez "Texte & Images".
+La boîte de dialogue suivante apparaît:
 
 .. figure:: ../../Images/EditContentChangeTypeConfirm.png
-   :alt: Editing a content element to change its type
+   :alt: Modification d'un élément de contenu pour changer son type
 
 
-When you change a content element's type, TYPO3 CMS will reload
-the input form to display different fields. This is why it is
-asking for confirmation about saving before the reloading happens.
+Lorsque vous changez le type d'un élément de contenu,
+TYPO3 CMS recharge le formulaire de saisie pour afficher différents champs.
+C'est la raison pour laquelle il vous demande de confirmer
+l'enregistrement des données avant que le rafraichissement se produise.
 
-Change the text you entered before and use the "Save and view page"
-action to save your changes and preview them in the frontend.
+Modifier le texte saisi avant et utiliser l'action
+"Enregistrer et visualiser" pour enregistrer vos modifications
+et les prévisualiser dans le frontend.
