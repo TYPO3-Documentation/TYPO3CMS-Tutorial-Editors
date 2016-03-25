@@ -4,73 +4,74 @@
 
 .. _content-creating:
 
-Creating Content
-^^^^^^^^^^^^^^^^
+Création de contenu
+^^^^^^^^^^^^^^^^^^^
 
-Click any of the "Add content" icons. You will then be presented
-with a wizard for choosing the type of content element that you
-want to add to your page. This list may vary depending on your
-setup and on extensions that may be installed.
+Cliquez sur l'une des icônes "Ajouter du contenu".
+Se présente à vous un assistant pour vous permettant de choisir
+le type d'élément de contenu que vous souhaitez ajouter à votre page.
+Cette liste peut varier en fonction de votre configuration
+et des extensions installées.
 
-We will take this opportunity to briefly go through the
-various types of content elements as needed. The wizard
-itself already provides mostly self-explanatory descriptions.
+Nous allons saisir cette occasion pour passer brièvement
+en revue les différents types d'éléments de contenu.
+L'assistant fournit déjà lui-même des descriptions le plus souvent explicites.
 
 .. tip::
 
-   **Advanced topic:** this whole wizard is configurable using
-   so-called :ref:`Page TSConfig <t3tsconfig:pagenewcontentelementwizard>`.
+   **Sujet avancé :** l'ensemble de cet assistant est configurable
+   en utilisant ce qu'on appelle le :ref:`Page TSConfig <t3tsconfig:pagenewcontentelementwizard>`.
 
 
 .. _content-types:
 
-Types of content elements
-"""""""""""""""""""""""""
+Les types d'éléments de contenu
+"""""""""""""""""""""""""""""""
 
 .. _content-typical:
 
-Typical Page Content
-~~~~~~~~~~~~~~~~~~~~
+Elément de contenu classique
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 .. figure:: ../../Images/NewContentWizardTabTypical.png
-   :alt: The Typical Page Content tab of the new content element wizard
+   :alt: L'onglet "Élément de contenu classique" de l'assistant de nouvel élément de contenu
 
 
 .. _content-special:
 
-Special Elements
+Eléments spéciaux
 ~~~~~~~~~~~~~~~~
 
 .. figure:: ../../Images/NewContentWizardTabSpecial.png
-   :alt: The Special Elements tab of the new content element wizard
+   :alt: L'onglet "Eléments spéciaux" de l'assistant de nouvel élément de contenu
 
 
-The "Insert records" element is used to make references to
-other content elements. This way you can reuse content in
-anoter page without duplicating it.
+L'élément "enregistre Insérer" est utilisé pour faire référence
+à d'autres éléments de contenu. De cette façon, vous pouvez
+réutiliser le contenu d'une autre page sans le dupliquer.
 
 
 .. _content-form:
 
-Form Elements
-~~~~~~~~~~~~~
+Formulaires
+~~~~~~~~~~~
 
 .. figure:: ../../Images/NewContentWizardTabForm.png
-   :alt: The Form Elements tab of the new content element wizard
+   :alt: L'onglet "Formulaires" de l'assistant de nouvel élément de contenu
 
 
 .. _content-plugin:
 
-Plugins
-~~~~~~~
+Modules (plugins)
+~~~~~~~~~~~~~~~~~
 
 .. figure:: ../../Images/NewContentWizardTabPlugins.png
-   :alt: The Plugins tab of the new content element wizard
+   :alt: L'onglet "Modules" de l'assistant de nouvel élément de contenu
 
 
-Plugins are provided by extensions. Not all plugins appear
-in this tab. It depends on their architecture or on backend
-configuration.
+Les modules sont fournis par des extensions.
+Tous les plugins n'apparaissent pas dans cet onglet.
+Cela dépend de leur architecture ou de la configuration du backend.
 
 
 .. _content-bootstrap:
@@ -79,66 +80,70 @@ Bootstrap
 ~~~~~~~~~
 
 .. figure:: ../../Images/NewContentWizardTabBootstrap.png
-   :alt: The Bootstrap tab of the new content element wizard
+   :alt: L'onglet "Bootstrap" de l'assistant de nouvel élément de contenu
 
 
-The Bootstrap tab comes from the Introduction Package. It displays
-a list of all custom content elements provided by extension
-"bootstrap_package" on which the Introduction Package relies.
+L'onglet Bootstrap provient du paquet d'introduction.
+Il affiche la liste de tous les éléments de contenu personnalisés
+fournis par l'extension "bootstrap_package" sur la quelle repose
+le paquet d'introduction.
 
 
 .. _content-new-element:
 
-Creating a new content element
-""""""""""""""""""""""""""""""
+Création d'un nouvel élément de contenu
+"""""""""""""""""""""""""""""""""""""""
 
-Go back to the "Typical Page Content" and choose "Text & Media",
-which is probably the most used content type. You should see the
-following input form:
+Retournez sur l'oget "Elément de contenu classique" et choisissez "Text & images",
+qui est probablement le type de contenu le plus utilisé.
+Vous devriez voir le formulaire de saisie suivant :
 
 .. figure:: ../../Images/NewContentElement.png
-   :alt: Empty input form for a Text & Media content element
+   :alt: Formulaire de saisie vide pour un élément de contenu texte et images
 
 
-The most import fields are the "Header", which is going to be the
-title of your content element, and the "Text", which will be the
-content itself. This field uses a Rich-Text Editor (RTE), which
-is :ref:`described in more details later <rte>`.
+Les champs les plus importants sont le champ "Titre",
+qui va être le titre de votre élément de contenu,
+et le champ "Texte", qui sera le contenu lui-même.
+Ce champ utilise un éditeur de texte enrichi (RTE),
+qui est :ref:`décrit plus en détail plus tard <rte>.
 
-We will not look at the other fields in detail just yet.
-For now please enter some text in both the "Header" and "Text"
-fields and save your work.
+Nous ne regarderons pas les autres champs en détail pour l'instant.
+Pour l'instant, entrez un texte dans les deux champs « Titre » et « Texte »
+et enregistrez votre travail.
 
 .. figure:: ../../Images/SaveRecordMenu.png
-   :alt: The various options when saving
+   :alt: Les différentes options lors de l'enregistrement
 
 
-Next to the "Save" icon is a dropdown menu which lets you choose
-combined actions:
+A côté de l'icône "Enregistrer" se trouve un menu déroulant
+qui vous permet de choisir les actions combinées :
 
-- "Save and view page" will both save your work and open the
-  current page in the frontend.
+- "Enregistrer et visualiser la page" va à la fois enregistrer votre travail
+  et ouvrir la page en cours dans le frontend (dans un nouvel onglet).
 
-- "Save and create new one" will save your work and open a new
-  empty input form.
+- "Enregistrer le document et en créer un nouveau" permettra d'enregistrer
+  votre travail et ouvrir un nouveau formulaire de saisie vide.
 
-- "Save and close" will save your work and return you to wherever
-  you were previously. In our case, the *Page* module.
+- "Enregistrer et fermer" va enregistrer votre travail et vous reviendrez
+  à l'endroit où vous étiez auparavant. Dans notre cas, le module *Page*.
 
-Choose "Save and close" (or just hit the "Close" icon next to the
-"Save" button if you have already saved), so that we get back to
-the *Page* module. You should be able to see you new content:
+Choisissez "Enregistrer et fermer" (ou cliquez juste sur l'icône "Fermer"
+à côté du bouton "Enregistrer" si vous avez déjà enregistré votre travail),
+de sorte que nous serons de retour au module *Page*.
+Vous devriez être en mesure de voir votre nouveau contenu:
 
 .. figure:: ../../Images/NewContentElementSaved.png
-   :alt: The new content element appears in the Page module
+   :alt: Le nouvel élément de contenu apparaît dans le module Page
 
 
 .. note::
 
-   If you look at the result in the frontend, you will see an error.
-   This is due to some configuration mismatch between the TYPO3 CMS
-   Core and the Introduction Package. Hopefully it will be resolved
-   at some point.
+   Si vous regardez le résultat dans le frontend, vous verrez une erreur.
+   Cela est dû à une certaine différence de configuration entre le noyau de
+   TYPO3 CMS et le paquet d'introduction.
+   Espérons que cela sera résolu à un moment donné.
 
-   We will use the next chapter about editing to do something
-   about this situation.
+   Nous allons utiliser le chapitre suivant traiatant de l'édition
+   pour faire quelque chose au sujet de cette situation problématique.
+
