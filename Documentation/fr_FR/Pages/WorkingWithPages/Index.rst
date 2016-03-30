@@ -6,39 +6,42 @@
 Working with Pages
 ^^^^^^^^^^^^^^^^^^
 
-You have already seen the page tree, this chapter shows how easily pages are
-created, moved around, hidden and deleted. Most can be achieved by
-dragging and droppping.
+Vous avez déjà vu l'arborescence des pages, ce chapitre montre
+comment les pages sont facilement créées, déplacées, cachées et supprimées.
+La plupart de ces actions peuvent être réalaisées grâce au glisser-déposer.
 
 .. _pages-drag-drop:
 
-Drag and Drop
-"""""""""""""
+Glisser déposer
+"""""""""""""""
 
 .. figure:: ../../Images/PageTreeDragDrop.png
-   :alt: Working in the page tree with drag and drop
+   :alt: Travailler dans l'arborescence des pages par glisser-déposer
 
-#. Click on the "new page" icon to display icons corresponding to the various
-   page types. Drag and drop any of these icons in your page tree to create
-   a new page of that type.
+#. Cliquez sur l'icône "nouvelle page" pour afficher les icônes
+   correspondant aux différents types de page. Glissez et déposez
+   une de ces icônes dans votre arborescence de page pour créer
+   une nouvelle page de ce type.
 
-#. To move an existing page, grab the page title (not the icon!) and drop it anywhere
-   in the page tree.
+#. Pour déplacer une page existante, saisissez le titre de la page (pas l'icône!)
+   Et déposez-le partout ailleurs dans l'arborescence de la page.
 
-#. The page tree shows the point where the page will be inserted once
-   you drop it. A bubble help displays information about possible
-   actions options (i.e. copy instead of move)
+#. L'arborescence de page affcihe l'endroit où la page sera insérée
+   une fois que vous l'aurez déposée. Une info bulle affiche des
+   informations sur les options d'actions possibles (à savoir copie au lieu de déplacement)
 
-#. This page is being copied. Note the page highlighted with the light blue
-   background. If the page is dropped now, it will become of child of that
-   page.
+#. Cette page est en cours de copie. Notez la page mise en évidence avec
+   le fond bleu clair. Si la page est déposée maintenant, elle deviendra
+    une sous page de la page "Image groups".
 
-#. When you move a page to the bottom of the screen, a "delete" zone appears.
-   Drop the page there to delete it. There is no confirmation dialog box,
-   but the "delete" zone offers to undo the operation for a little while.
+#. Lorsque vous déplacez une page vers le bas de l'écran, une zone
+   "déplacer ici pour supprimer" apparaît. Déposez la page ici pour la supprimer.
+   Il n'y a pas de boîte de dialogue de confirmation, mais la zone
+   "déplacer ici pour supprimer" propose d'annuler l'opération pendant un petit moment.
 
 
 .. note::
 
-   A lot can also be achieved using the context menu, as is explained
-   in the :ref:`Getting Started Tutorial <t3start:the-context-menu>`.
+   Beaucoup d'actions sur les pages peuvent également être réalisées
+   en utilisant le menu contextuel, comme cela est expliqué dans le
+   :ref:`tutoriel de mise en route <t3start:the-context-menu>`.
