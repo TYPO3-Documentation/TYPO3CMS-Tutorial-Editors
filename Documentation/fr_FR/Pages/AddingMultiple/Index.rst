@@ -4,45 +4,45 @@
 
 .. _pages-multiple:
 
-Adding Multiple Pages at Once
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Ajout de plusieurs pages à la fois
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-You can create more than one page at a time by using the
-**WEB > Functions** module.
+Vous pouvez créer plus d'une page à la fois en utilisant
+le module **WEB > Fonctions**.
 
-Place your yourself on the page which should be the parent
-of the new pages.
+Placez vous sur la page qui devra être la page mère
+des nouvelles pages.
 
-Select the **Create multiple page** wizard.
+Sélectionnez l'assistant **Créer plusieurs pages multiples**.
 
 .. figure:: ../../Images/FunctionsCreateWizardTop.png
-   :alt: Creating multiple pages at once with the Functions wizard
+   :alt: Création de plusieurs pages à la fois avec l'assistant Fonctions
 
 
-For each page you can define its title and choose its type.
+Pour chaque page, vous pouvez définir son titre et choisir son type.
 
-At the bottom of the wizard are several options:
+Au bas de l'assistant se trouvent plusieurs options :
 
 .. figure:: ../../Images/FunctionsCreateWizardBottom.png
-   :alt: Options at the bottom of the Create new pages wizard
+   :alt: Options diponibles au bas de l'assistant de création de multiples nouvelles pages
 
 
-By checking the **Place new pages after the existing subpages** box,
-the new pages will be added below the currently existing subpages.
-Otherwise they will be placed above the current pages.
+En cochant la case **Placer les nouvelles pages à la suite**,
+les nouvelles pages seront ajoutées en dessous des sous-pages existant actuellement.
+Sinon, ils seront placés au-dessus des sous-pages actuelles.
 
-You can choose to add more pages than proposed (5 by default)
-by clicking on the "Add more lines" button.
+Vous pouvez choisir d'ajouter plus de pages que proposées
+(5 par défaut) en cliquant sur le bouton "Ajouter plus de lignes".
 
-Options **Hide new pages** and **Hide new pages in menus** let you
-manage the visibility of your new pages.
+Les options **Masquer les nouvelles pages** et
+**Masquer les nouvelles pages dans les menus** vous permettent
+de gérer la visibilité de vos nouvelles pages.
+
 
 .. tip::
 
-   A hidden page cannot be accessed by anyone via the web site.
-   A page which is hidden in menus does not appear in the site
-   navigation but can be accessed by someone having the direct URL
-   of that page.
+   Une page cachée ne peut pas être consultée par qui que ce soit via le site web.
+   Une page qui est cachée dans les menus ne figure pas dans la navigation du site,
+   mais peut être consultée par une personne ayant l'URL directe de cette page.
 
-Once you are done click the  **Create pages** button.
-
+Une fois que vous avez terminé cliquez sur le bouton **Créer les pages**.
