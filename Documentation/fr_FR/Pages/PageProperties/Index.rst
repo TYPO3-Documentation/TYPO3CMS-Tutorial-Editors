@@ -4,188 +4,194 @@
 
 .. _pages-properties:
 
-Page Properties
-^^^^^^^^^^^^^^^
+Propriétés de la page
+^^^^^^^^^^^^^^^^^^^^^
 
-Pages in TYPO3 CMS have many properties. So far we have seen the
-title (which is quite obvious), the "Visibility > Page > Disable"
-flag which hides the page in the frontend and the "Visibility >
-In menus > Hide" flag which makes it so that the page does not
-appear in any navigation element.
+Les pages dans TYPO3 CMS ont de nombreuses propriétés.
+Jusqu'à présent, nous avons vu le titre (ce qui est tout à fait évident),
+la case à cocher "Visibilité > Page > Désactiver" qui cache la page
+dans le frontend et la case à cocher "Visibilité > Dans les menus > cacher"
+qui fait en sorte que la page n'apparaîsse pas dans n'importe quel
+élément de navigation.
 
 
 .. _pages-properties-titles:
 
-Titles, navigation and URLs
-"""""""""""""""""""""""""""
+Les titres, la navigation et les URL
+""""""""""""""""""""""""""""""""""""
 
-First off it is interesting to note how page titles, URLs
-and navigation elements are related.
+Tout d'abord, il est intéressant de noter comment les titres de page,
+les URL et les éléments de navigation sont liés.
 
 .. figure:: ../../Images/PagePropertiesTitle.png
-   :alt: Impact of page title on URL, navigation and metadata
+   :alt: Impact du titre de page sur l'URL, la navigation et les métadonnées
 
 
-The page title is used directly to generate speaking URLs. It is
-also used in menus and in the `<title>` tag.
+Le titre de la page est utilisé directement pour générer des URL parlantes.
+Il est également utilisé dans les menus et dans la balise `<title>`.
 
-In the page properties, a navigation title can also be defined.
+Dans les propriétés de la page, un titre de navigation peut également être défini.
 
 .. figure:: ../../Images/PagePropertiesEditNavigationTitle.png
-   :alt: Setting a different title for navigation elements
+   :alt: Définition d'un titre différent pour les éléments de navigation
 
 
-Let's see the impact this had on the web site:
+Voyons l'impact que cela a sur le site web :
 
 .. figure:: ../../Images/PagePropertiesNavigationTitle.png
-   :alt: Impact of setting a different navigation title
+   :alt: Impact d'un titre de navigation différent
 
 
-The menu is now using the navigation title. All other instances
-of page title usage are left unchanged.
+Le menu utilise maintenant le titre de navigation. Tous les autres cas
+d'utilisation du titre de pages ne sont pas modifiés.
 
 
 .. note::
 
-   One could argue that the breadcrumb trail is also a navigation element
-   and thus should be impacted by this change too. This is true, but
-   every menu can be configured separately in TYPO3 CMS and thus have
-   a different behaviour.
+   On pourrait dire que le fil d'Ariane est également un élément
+   de navigation et devrait donc être également affecté par ce changement.
+   C'est vrai, mais chaque menu peut être configuré séparément dans
+   TYPO3 CMS et a donc un comportement différent.
 
 
-We will skip the *Access* tab, as access and visibility-related properties
-are discussed elsewhere and move on to the other tabs.
+Nous allons sauter l'onglet *Accèss*, car les propriétés liées à l'accès
+et à la visibilité sont discutées ailleurs, et passer aux autres onglets.
 
 
 .. _pages-properties-metadata:
 
-Metadata
-""""""""
+Métadonnées
+"""""""""""
 
-A lot of metadata can be entered in the *Metadata* tab. It is all
-very standard but it is worth mentioning that the actual usage of
-that metadata in the fronted depends on how the site is configured.
+Un grand nombre de métadonnées peut être entré dans l'onglet *Métadonnées*.
+C'est évident, mais il convient de mentionner que l'utilisation réelle
+de ces métadonnées dans le frontend dépend de la façon dont le site est configuré.
 
-The Introduction Package makes use of the "description", "keywords" and
-"author" fields to fill the corresponding meta tags. The description
-is used again to defined the `og:description` meta tag, whereas the page
-title is used for the `og:title` meta tag.
+Le paquet d'introduction fait usage des champs "description",
+"mots clés" et "auteur" pour remplir les balises meta correspondantes.
+La description est utilisée à nouveau pour définir la balise meta `og:description`,
+alors que le titre de la page est utilisé pour la balise meta `og:title`.
 
-All of this is driven by TypoScript making TYPO3 CMS both powerful
-and flexible.
+Tout cela est géré en TypoScript rendant TYPO3 CMS puissant et flexible.
 
 
 .. _pages-properties-appearance:
 
-Appearance
-""""""""""
+Apparence
+"""""""""
 
-As can be expected the *Appearance* tab contains properties that will
-influence how the page is rendered in the frontend.
+Comme on peut s'y attendre l'onglet *Apparence* contient des propriétés
+qui vont influencer la façon dont la page est affichée dans le frontend.
 
 .. figure:: ../../Images/PagePropertiesAppearance.png
-   :alt: The "Appearance" tab of the page properties
+   :alt: L'onglet "Apparence" des propriétés de la page
 
 
-Backend layouts determine how many content areas are made available
-for input in the **WEB > Page** module. But they can also be used as
-information during the rendering to influence the actual output in the
-frontend.
+La mises en page Backend déterminer combien de zones de contenu
+sont mis à disposition pour la saisie dans le module **WEB > Page**.
+Mais ils peuvent également être utilisés comme informations lors
+du rendu pour influencer le rendu réel de l'interface frontend.
 
-An interesting field is "Show content from page" at the bottom of the
-screen. It tells the page to display the content from another selected
-page. For repeating the content of a single page, this is far easier
-to use than :ref:`mount points <pages-types>`.
+Un champ intéressant est "Montrer le contenu de cette page" en bas de l'écran.
+Il indique à la page d'afficher le contenu d'une autre page sélectionnée.
+Pour répéter le contenu d'une seule page, cela est beaucoup plus facile
+à utiliser que les :ref:`points de montage <pages-types>`.
 
 
 .. _pages-properties-behaviour:
 
-Behaviour
-"""""""""
+Comportement
+""""""""""""
 
-The *Behaviour* tab has a rich set of options and influences very
-different aspects of the page.
+L'onglet *Comportement* a un riche ensemble d'options et
+influences des aspects très différents de la page.
 
 .. figure:: ../../Images/PagePropertiesBehaviour.png
-   :alt: The "Behaviour" tab of the page properties
+   :alt: L'onglet "Comportement" des propriétés de la page
 
 
-The first part is related to linking. It defines if an alias can be
-used for linking to this page. This is not related to speaking URLs.
-If you define "foo" as an alias, the can be called up using
-`http://www.mysite.com/index.php?id=foo`. A default target for calling
-this page can also defined, as well as a specific protocol.
+La première partie est liée aux liens. Elle définit si un alias
+peut être utilisé pour un lien vers cette page.
+Ce ne sont pas liées aux URL parlantes.
+Si vous définissez "foo" comme alias, on peut appeler la page
+à l'aide de `http://www.mysite.com/index.php?id=foo`.
+Une cible par défaut pour appeler cette page peut également être définie,
+ainsi qu'un protocole spécifique.
 
-The caching part lets you define a specific cache duration for this
-page or disable the cache entirely for this page (something which you
-should avoid). All pages which have the same cache tag will have their
-cache deleted when the cache is flushed using that given tag.
-Note however that this is not used by TYPO3 CMS be default, but may be
-used by extensions.
+La partie "Mise en cache" vous permet de définir une durée de cache
+spécifique pour cette page ou de désactiver complètement le cache
+pour cette page (quelque chose que vous devriez éviter).
+Toutes les pages qui ont la même étiquette de cache auront
+leur cache supprimé lorsque le cache est vidé en utilisant cette balise.
+Notez toutefois que cela n'est pas utilisé par TYPO3 CMS par défaut,
+mais peut être utilisé par des extensions.
 
-The language part overrides the default behaviour of translations.
-This is covered in more depth in the
-:ref:`Frontend Localization Guide <t3l10n:start>`.
+La partie "Langue" remplace le comportement par défaut des traductions.
+Ceci est couvert de manière plus approfondie dans le
+:ref:`Guide de localisation Frontend <t3l10n:start>`.
 
-Next come a bunch of flags with various meanings:
+Viennent ensuite plusieurs cases à cocher avec des significations différentes :
 
-Use a Root Page
-  Indicates that this page is the start of a new web site.
-  The page icon is replaced by a world icon, as can be seen
-  for the "Congratulations" page.
+Utiliser comme page racine
+  Indique que cette page est le début d'un nouveau site web.
+  L'icône de page est remplacée par une icône du monde,
+  comme on le voit pour la page "Félicitations".
 
-Include is Search
-  By default every page will be included in the TYPO3 CMS built-in
-  search engine (extension "indexed_search"). Use this flag to
-  exclude the current page.
+Inclure dans la recherche
+  Par défaut, chaque page sera incluse dans le moteur de recherche
+  intégré à TYPO3 CMS (extension "indexed_search"). Utilisez cette
+  option pour exclure la page en cours.
 
-Editable for Admins Only
-  This restricts edition of the page strictly to users with
-  admin rights, no matter what other permissions may have been set.
+Editable seulement par des administrateurs
+  Cela restreint l'édition de la page strictement aux utilisateurs
+  avec des droits d'administrateur, peu importe ce que les autres
+  autorisations ont pu autoriser.
 
-Stop Page Tree
-  Influences only the backend and stops rendering child pages
-  of that page in the page tree.
+Fin de l'arborescence
+  Influences seulement le backend et arrête le rendu des
+  pages filles de cette page dans l'arborescence des pages.
 
-Finally the "Use a Container" property is just an indication
-of what the page may contain, but does not actually restrict
-the types of records that can be created. It will change the page
-icon and is just a visual help.
+Enfin, la propriété "Utiliser comme conteneur" est juste une indication
+de ce que la page peut contenir, mais ne restreint pas les types
+d'enregistrement qui peuvent être créés. Elle va changer l'icône de la page
+et est juste une aide visuelle.
 
 
 .. _pages-properties-resources:
 
-Resources
-"""""""""
+Ressources
+""""""""""
 
-The *Resources* tab first and foremost makes it possible to link
-media files to the current page. What is done with those links
-depends on the frontend rendering configuration. Typically this
-may be used to associate an image with each page, but there's no
-preconfigured behaviour.
+La première partie de l'onglet *Ressources* permet de lier des fichiers
+multimédia à la page courante. Ce qui est fait avec ces liens dépend
+de la configuration de rendu frontend. Typiquement, cela peut être utilisé
+pour associer une image à chaque page, mais il n'y a pas de comportement
+préconfiguré.
 
 .. figure:: ../../Images/PagePropertiesResources.png
-   :alt: The "Resources" tab of the page properties
+   :alt: L'onglet "Ressources" des propriétés de la page
 
 
-The rest of the properties are related to :ref:`Page TSconfig <t3tsconfig:pagetsconfig>`.
-This is a configuration language which can be used to tune many
-parts of the backend.
+Les propriétés restantes sont liées à la :ref:`page TSconfig <t3tsconfig:pagetsconfig>`.
+Ceci est un langage de configuration qui peut être
+utilisé pour paramétrer de nombreuses parties du backend.
 
 
 .. _pages-properties-categories:
 
-Categories
+Catégories
 """"""""""
 
-TYPO3 CMS provides a system-wide categorisation tool. By default
-categories can be applied to pages, content elements, and files.
+TYPO3 CMS fournit un outil de catégorisation global.
+Par défaut les catégories peuvent être appliquées à des pages,
+des éléments de contenu, et des fichiers.
 
 .. figure:: ../../Images/PagePropertiesCategories.png
-   :alt: The "Categories" tab of the page properties
+   :alt: L'onglet "Catégories" des propriétés de la page
 
 
-Categories should be defined in some folder and can then be
-assigned to pages. The :ref:`content element type <content-special>`
-"Special Menus" can display - among others - a list of pages
-from a selected category.
+Les catégories doivent être définies dans certains dossier et
+peuvent ensuite être affectés à des pages.
+Le :ref:`type d'élément de contenu <content-special>`
+"Menus spéciaux" peut afficher - entre autres -
+une liste de pages d'une catégorie sélectionnée.
