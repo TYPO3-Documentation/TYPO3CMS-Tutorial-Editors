@@ -64,7 +64,7 @@ Metadata
 
 A lot of metadata can be entered in the *Metadata* tab. It is all
 very standard but it is worth mentioning that the actual usage of
-that metadata in the fronted depends on how the site is configured.
+that metadata in the frontend depends on how the site is configured.
 
 The Introduction Package makes use of the "description", "keywords" and
 "author" fields to fill the corresponding meta tags. The description
@@ -112,15 +112,15 @@ different aspects of the page.
 
 The first part is related to linking. It defines if an alias can be
 used for linking to this page. This is not related to speaking URLs.
-If you define "foo" as an alias, the can be called up using
+If you define "foo" as an alias, the page can be called up using
 `http://www.mysite.com/index.php?id=foo`. A default target for calling
-this page can also defined, as well as a specific protocol.
+this page can also be defined, as well as a specific protocol.
 
 The caching part lets you define a specific cache duration for this
 page or disable the cache entirely for this page (something which you
 should avoid). All pages which have the same cache tag will have their
 cache deleted when the cache is flushed using that given tag.
-Note however that this is not used by TYPO3 CMS be default, but may be
+Note however that this is not used by TYPO3 CMS by default, but may be
 used by extensions.
 
 The language part overrides the default behaviour of translations.
