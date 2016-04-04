@@ -4,161 +4,172 @@
 
 .. _frontend-login:
 
-Frontend login
-^^^^^^^^^^^^^^
+Connexion frontend
+^^^^^^^^^^^^^^^^^^
 
-Going further it is actually possible to require proper
-authentication to access parts of the information contained
-in your web site.
+En allant plus loin, il est effectivement possible
+d'exiger une authentification appropriée pour accéder
+à des certaines informations présentes sur votre site web.
 
 
 .. _frontend-login-users:
 
-Frontend users
-""""""""""""""
+Les utilisateurs frontend
+"""""""""""""""""""""""""
 
-As with the rest of TYPO3 CMS, users are also separated
-into frontend and backend users. Backend users are used to
-authenticate into the backend and are used to manage your
-TYPO3 CMS installation, create pages, input content, etc.
+Comme pour le reste de TYPO3 CMS, les utilisateurs sont
+séparés en utilisateurs frontend et backend.
+Les utilisateurs backend sont utilisés pour s'authentifier
+dans le backend et pour gérer votre installation TYPO3 CMS,
+créer des pages, saisir du contenu, etc.
 
-Frontend users live strictly in the frontend and are
-used to restrict access to pages, content elements and any
-other type of information which relies on the same
-mechanism.
+Les utilisateurs frontend existent strictement dans le frontend
+et sont utilisés pour limiter l'accès aux pages,
+à des éléments de contenu et tout autre type d'information
+qui repose sur le même mécanisme.
 
-Frontend users are always part of frontend groups. Access is
-granted to groups, never directly to users. Users and groups
-are defined as any other record and stored in any suitable
-page in the backend.
+Les utilisateurs frontend font toujours partie de groupes frontend.
+L'accès est accordé aux groupes, jamais directement aux utilisateurs.
+Les utilisateurs et les groupes sont définis comme tout autre enregistrement
+et stockés dans une page appropriée dans le backend.
 
-Use your new skills to create a new page of type "Folder"
-and name it "Web site users".
+Utilisez vos nouvelles compétences pour créer une nouvelle
+page de type "Dossier" et nommez-le "Utilisateurs du site Web".
 
 .. figure:: ../../Images/AccessUserFolder.png
-   :alt: Creating a folder for storing the users and groups
+   :alt: Création d'un dossier pour stocker les utilisateurs et les groupes
 
-
-Switch to **WEB > List** view and select your new folder.
-Click on the "Create new record" icon at the left of the
-docheader. The new record wizard appears.
+Basculer vers la vue **WEB > Liste** et sélectionnez
+votre nouveau dossier. Cliquez sur l'icône "Créer un nouvel enregistrement"
+à la gauche du menu d'action haut. L'assistant de nouvel enregistrement apparaît.
 
 .. figure:: ../../Images/AccessNewRecordWizard.png
-   :alt: Selecting what type of record to create with the new record wizard
+   :alt: Sélection du type d'enregistrement à créer avec l'assistant de nouvel enregistrement
 
 
-Click on "Website Usergroup" to create a new frontend group.
+Cliquez sur "Groupe utilisateur du site web" pour créer
+un nouveau groupe d'utilisateurs frontend.
 
 .. figure:: ../../Images/AccessNewGroup.png
-   :alt: Creating a new frontend group
+   :alt: Création d'un nouveau groupe d'utilisateurs frontend
 
 
-Just give it a name, that's enough to get started. Save the record
-and close it. Now use the new record wizard again, but click on
-"Website User".
+Donnez lui juste le nom « zone privée », c'est suffisant pour commencer.
+Sauvegardez l'enregistrement et fermez-le.
+Utilisez à nouveau l'assistant de nouvel enregistrement,
+mais cliquez sur "Utilisateur du site".
 
 .. figure:: ../../Images/AccessNewUser.png
-   :alt: Creating a new frontend user
+   :alt: Création d'un nouvel utilisateurs frontend
 
+Les information minimales requises ici sont un nom d'utilisateur,
+un mot de passe et la sélection d'au moins un groupe.
+Vous pouvez voir comment notre groupe « zone privée »
+nouvellement créé est disponible pour la sélection.
 
-The minimum input required here is a user name, a password and
-a selection of at least one group. You can see how our newly
-created "Private area" group is available for selection.
-
-You can add personal data to your user if you wish, but it is not
-needed. You can save the record and close it.
+Vous pouvez ajouter des données personnelles à votre utilisateur
+si vous le souhaitez, mais cela n'est pas nécessaire.
+Vous pouvez sauvegarder l'enregistrement et le fermer.
 
 
 .. _frontend-login-rights:
 
-Access rights
-"""""""""""""
+Droits d'accès
+""""""""""""""
 
-Now that we have at least one group, we can start assigning
-access restrictions. Let's create a new page called "Members only"
-and restrict it to the "Private area" group.
+Maintenant que nous avons au moins un groupe,
+nous pouvons commencer à attribuer des restrictions d'accès.
+Créons une nouvelle page appelée « Membres seulement »
+et restreignons la au groupe « zone privée ».
 
 .. figure:: ../../Images/AccessRestrictPage.png
-   :alt: Restricting access to the page to a given group
+   :alt: Restriction d'accès à la page à un groupe donné
 
 
 .. note::
 
-   Two default groups appear in the list of groups. They are not
-   strictly groups, in the sense that they are always available
-   and cannot be edited nor removed.
+   Deux groupes par défaut apparaissent dans la liste des groupes.
+   Ce ne sont pas strictement des groupes, dans le sens où
+   ils sont toujours disponibles et ne peuvent pas être modifiés ni supprimés.
 
-   The "Hide at login" group means that the element is only visible
-   when the user is not authenticated. The "Show at any login" group
-   is used for elements which require authentication to access, but
-   are okay for all groups to see.
+   Le groupe "Cacher à la connexion" signifie que l'élément
+   est visible uniquement lorsque l'utilisateur n'est pas authentifié.
+   Le groupe "Afficher à toutes les connexions" est utilisé pour
+   les éléments qui nécessitent une authentification d'accès,
+   mais à affichier pour tous les groupes.
 
-Notice how the page icon changes as soon as you save the new
-user rights. It it a visual reminder that this page is not
-public.
+Remarquez comment l'icône de page change dès que vous enregistrez
+les nouveaux droits d'utilisateur. Elle rappelle visuellement
+que cette page n'est pas publique.
 
-Try accessing that new page. You will notice that you are
-redirected to the home page. Access restriction is in place.
+Essayez d'accéder à cette nouvelle page.
+Vous remarquerez que vous êtes redirigé vers la page d'accueil.
+La restriction d'accès est en place.
 
 
 .. _frontend-login-form:
 
-Login box
-"""""""""
+Boîte de connexion
+""""""""""""""""""
 
-The next step is to place a login box somewhere so that
-visitors can authenticate and view the restricted information.
+L'étape suivante consiste à placer une boîte de connexion quelque part
+afin que les visiteurs puissent s'authentifier et afficher les informations
+à accès limités.
 
-Let's change our setup with the following step:
+Changeons notre configuration avec les étapes suivantes :
 
-#. Remove the access restriction you just placed on the
-   "Members only" page.
+#. Supprimer la restriction d'accès que vous venez de placer
+   sur la page "Membres seulement".
 
-#. Create a "Text" content element, which says something like
-   "You need to authenticate to access the members area" and choose
-   the "Hide at login" group for it.
+#. Créer un élément de contenu "Texte", qui dit quelque chose comme
+   « Vous devez vous authentifier pour accéder à la zone des membres »
+   et choisissez le groupe "Masquer lors de la connexion"
 
-#. Create another "Text" content element with a text saying
-   "Welcome to the members area" and choose the "Private area"
-   group as access right.
+#. Créer un autre élément de contenu "Texte"
+   disant "Bienvenue dans la zone des membres"
+   et choisissez le groupe « zone privée » comme droit d'accès.
 
-You should have something like this:
+Vous devriez avoir quelque chose comme ceci :
 
 .. figure:: ../../Images/AccessRestrictContent.png
-   :alt: Placing access restriction on individual content elements
+   :alt: Mise en place de restriction d'accès sur des éléments de contenu individuels
 
 
-Now let's add a login box to the party. Click on the "Create new content element"
-button located between the two existing content elements. In the
-new content element wizard, move to the "Form elements" tab
-and click on "Login Form".
+Ajoutons maintenant une boîte de connexion à la partie.
+Cliquez sur le bouton "Créer un nouvel élément de contenu" situé entre
+les deux éléments de contenu existants. Dans l'assistant de nouvel élément de contenu,
+accédez à l'onglet "Formulaires" et cliquez sur "Formulaire de connexion".
 
-Give it a header and move to the "Plugin" tab.
+Donnez-lui un titre et de passez à l'onglet "Plugin".
 
 .. figure:: ../../Images/AccessLoginForm.png
-   :alt: Defining a new login form
+   :alt: Définition d'un nouveau formulaire de connexion
 
 
-The Login Form has many options, but the only one which is absolutely
-necessary is the "User Storage Page". Use the record browser icon to
-call up the page tree and choose the "Web site users" folder.
+Le formulaire Connexion a beaucoup d'options,
+mais la seule qui est absolument nécessaire est
+le "Page de stockage des utilisateurs ". Utilisez l'icône
+du navigateur d'enregistrement pour afficher l'arborescence de pages
+et choisissez le dossier "utilisateurs du site Web".
 
-Save and view the page. You should have something like this:
+Enregistrer et afficher la page.
+Vous devriez avoir quelque chose comme ceci :
 
 .. figure:: ../../Images/AccessPageWithLoginBox.png
-   :alt: The page with the login box
+   :alt: La page avec la boîte de connexion
 
 
-Enter the user name and the password you defined earlier for the
-new frontend user and you should see the following:
+Entrez le nom d'utilisateur et le mot de passe
+que vous avez défini précédemment pour le nouvel utilisateur
+frontend et vous devriez voir ce qui suit :
 
 .. figure:: ../../Images/AccessPageWithAuthenticatedUser.png
-   :alt: The page with the authenticated user
+   :alt: La page avec l'utilisateur authentifié
 
 
-Note how the content element requesting authentication has disappeared,
-replaced by the one welcoming the user.
+Notez que l'élément de contenu requérant l'authentification a disparu,
+remplacé par celui accueillant l'utilisateur.
 
-This is just a quick overview of the login box provided by
-TYPO3 CMS. It has a rich feature set described in
-:ref:`its own manual <felogin:start>`.
+Ceci est juste un aperçu rapide de la boîte de connexion
+fournie par TYPO3 CMS. Elle dispose d'un riche ensemble de fonctionnalités
+décrites dans :ref:`son propre manuel <felogin:start>`.
