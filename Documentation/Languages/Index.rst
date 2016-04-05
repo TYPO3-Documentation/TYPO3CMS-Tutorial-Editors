@@ -31,13 +31,13 @@ Use the **WEB > List** view and place yourself on the
 the list of "Website Languages".
 
 .. figure:: ../Images/LanguagesListExisting.png
-:alt: List of existing web site languages
+   :alt: List of existing web site languages
 
 
 Click on the "New record" icon and define your new language.
 
 .. figure:: ../Images/LanguagesNewLanguage.png
-:alt: Setting up a new language
+   :alt: Setting up a new language
 
 
 Give your new language a title, relate it to an official language
@@ -54,7 +54,7 @@ home page. Using the menu in the docheader, switch to the
 "Languages" view.
 
 .. figure:: ../Images/LanguagesPageLanguages.png
-:alt: The "Languages" view of the Page module
+   :alt: The "Languages" view of the Page module
 
 
 Use the menu entitled "Make new translation of this page" to
@@ -64,7 +64,7 @@ input form for the page translation (so-called "Alternative
 Page Language"):
 
 .. figure:: ../Images/LanguagesNewPageTranslation.png
-:alt: Creating a new page translation
+   :alt: Creating a new page translation
 
 
 Just enter the translation in the "Page Title" field and save changes.
@@ -72,7 +72,7 @@ Back in the *Page* module, we can now see the default language and the
 German version side by side.
 
 .. figure:: ../Images/LanguagesPageVersions.png
-:alt: Viewing languages side by side in the page module
+   :alt: Viewing languages side by side in the page module
 
 
 The *Page* module makes it possible to easily copy content elements
@@ -80,7 +80,7 @@ in the new language by hitting the "Translate" button. Do so now
 for the "Border" content area and you should see the following:
 
 .. figure:: ../Images/LanguagesTranslateContentElementsStep1.png
-:alt: First step of the translation wizard
+   :alt: First step of the translation wizard
 
 
 The translations can either be linked together or unrelated.
@@ -99,7 +99,7 @@ a summary of the elements that will be translated. Hit the
 following result:
 
 .. figure:: ../Images/LanguagesNewContentTranslation.png
-:alt: A newly created content element translation
+   :alt: A newly created content element translation
 
 
 You can observe how the new element's content has been prepended
@@ -108,7 +108,7 @@ default, so that incomplete translations don't turn up on the
 web site.
 
 .. figure:: ../Images/LanguagesTranslatedContentElement.png
-:alt: A translated content element, with reference to its original
+   :alt: A translated content element, with reference to its original
 
 
 You can see how the new content element is related to the one
@@ -122,5 +122,5 @@ and with the original layout, by switching back to the "Columns"
 mode and choosing a specific language in the docheader.
 
 .. figure:: ../Images/LanguagesColumnModeWithTranslation.png
-:alt: The "Column" mode displaying a translation
+   :alt: The "Column" mode displaying a translation
 
