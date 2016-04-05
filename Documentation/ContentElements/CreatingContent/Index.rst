@@ -47,7 +47,7 @@ Special Elements
 
 The "Insert records" element is used to make references to
 other content elements. This way you can reuse content in
-anoter page without duplicating it.
+an other page without duplicating it.
 
 
 .. _content-form:
@@ -100,7 +100,7 @@ following input form:
    :alt: Empty input form for a Text & Media content element
 
 
-The most import fields are the "Header", which is going to be the
+The most important fields are the "Header", which is going to be the
 title of your content element, and the "Text", which will be the
 content itself. This field uses a Rich-Text Editor (RTE), which
 is :ref:`described in more details later <rte>`.
@@ -127,7 +127,7 @@ combined actions:
 
 Choose "Save and close" (or just hit the "Close" icon next to the
 "Save" button if you have already saved), so that we get back to
-the *Page* module. You should be able to see you new content:
+the *Page* module. You should be able to see your new content:
 
 .. figure:: ../../Images/NewContentElementSaved.png
    :alt: The new content element appears in the Page module

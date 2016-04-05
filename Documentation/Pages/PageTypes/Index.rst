@@ -34,7 +34,7 @@ Mount point
   tricky to use.
 
 Folder
-  A folder-type page is simplay a container. It will not appear in the
+  A folder-type page is simply a container. It will not appear in the
   frontend. It is generally used to store other types of records than
   pages or content elements.
 

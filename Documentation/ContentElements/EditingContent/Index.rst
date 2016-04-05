@@ -8,7 +8,7 @@ Editing Content
 ^^^^^^^^^^^^^^^
 
 Editing is basically the same as creating new content, except
-that you input form is already filled with the existing data.
+that your input form is already filled with the existing data.
 
 First off, we will change the type of content element, since
 this is what is causing errors in the frontend. So click the

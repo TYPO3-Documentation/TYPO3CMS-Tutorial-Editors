@@ -48,7 +48,7 @@ What can be seen in this view?
    but it may vary and provides a visual clue to the type.
 
 #. These icons light up when hovering over the whole element.
-   They are user to edit this content element, enable/disable it
+   They are used to edit this content element, enable/disable it
    or delete it respectively.
 
 You can click anywhere on the highlighted area of a content element to edit it.
