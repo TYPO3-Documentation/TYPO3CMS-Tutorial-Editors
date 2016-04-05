@@ -1,27 +1,19 @@
-.. ==================================================
-.. FOR YOUR INFORMATION
-.. --------------------------------------------------
-.. -*- coding: utf-8 -*- with BOM.
 
 .. include:: ../Includes.txt
 
 
 .. _next-steps:
 
-Next steps
-----------
+Prochaines étapes
+-----------------
 
-If you want more detailed information on how to work with the TYPO3
-backend, you should read the :ref:`Getting Started Tutorial <t3start:start>`.
-It contains more exhaustive
-information on how to do editor tasks and it also includes basic
-instructions on some administration tasks like a short section on
-installing TYPO3 and notes on templates, user management and usage of
-extensions.
+Si vous avez besoin de plus amples renseignements sur
+la façon de traduire un site Web, vous devriez lire le
+:ref:`Guide de localisation<t3l10n:start>`. Il contient
+les informations sur la façon de mettre en place un site
+multilingue et comment effectuer la traduction et la localisation.
 
-If you need more information on how to translate a website, you should
-read the :ref:`Localization Guide <t3l10n:start>`. It contains
-information on how to set up a multi-language site and how to actually
-do the translation and localization.
-
-
+Si vos activités ne sont pas limitées au travail éditorial,
+vous voudrez peut-être en apprendre davantage sur TYPO3 CMS
+en suivant le :ref:`tutoriel TypoScript en 45 minutes <t3ts45:start>`
+qui est une préparation pour le :ref:`tutoriel d'intégration <t3templating:start>`
