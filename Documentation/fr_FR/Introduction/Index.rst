@@ -51,7 +51,7 @@ Cette tutoriel est basé sur une extension tutoriel écrite
 Susanne Moog a fait quelques mises à jour majeures. Merci à tous!
 
 Il a été mis à jour pour TYPO3 CMS 7 LTS par François Suter.
-La mise à jour de François Suter a été traduit en français par Jonathan Iroulin.
+La mise à jour de François Suter a été traduite en français par Jonathan Iroulin.
 
 
 .. _feedback:
