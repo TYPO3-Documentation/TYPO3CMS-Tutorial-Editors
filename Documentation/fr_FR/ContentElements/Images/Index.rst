@@ -46,8 +46,8 @@ la vignette et le nom du fichier.
 La flèche à côté de la vignette est utilisée pour réduire
 l'affichage des détails de l'image.
 
-Une série d'icônes (2) vous permettent d'agir sur l'image
-ou sur sa relation à l'élément de contenu:
+Une série d'icônes (2) vous permet d'agir sur l'image
+ou sur sa relation à l'élément de contenu :
 
 - L'icône "Modifier" vous permet d'éditer les métadonnées de l'image choisie.
   Méfiez-vous, car cela pourrait avoir un impact
@@ -58,7 +58,7 @@ ou sur sa relation à l'élément de contenu:
 
 - L'icône "Cacher l'enregistrement" permet d'afficher ou cacher l'image.
 
-- L'icône "Move" (à droite) est utilisé par glisser-déposer pour modifier l'ordre des images
+- L'icône "Déplacer" (à droite) est utilisée par glisser-déposer pour modifier l'ordre des images
 
 La zone centrale (3) vous permet d'éditer les métadonnées de l'image
 en ce qui concerne sa relation actuelle à l'élément de contenu.
@@ -70,7 +70,7 @@ Vous pouvez expérimenter avec l'éditeur d'image (4),
 qui vous permettra de recadrer l'image.
 
 Enfin, si vous cochez la case "Agrandissement au clic" (5),
-l'image sera lié au fichier original qui affichée dans la visionneuse.
+l'image sera liée au fichier original qui ser affiché dans la visionneuse.
 
 
 .. _images-appearance:
