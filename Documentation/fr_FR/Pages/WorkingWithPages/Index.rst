@@ -3,12 +3,12 @@
 
 .. _pages-working-with:
 
-Working with Pages
-^^^^^^^^^^^^^^^^^^
+Utilisation des pages
+^^^^^^^^^^^^^^^^^^^^^
 
 Vous avez déjà vu l'arborescence des pages, ce chapitre montre
 comment les pages sont facilement créées, déplacées, cachées et supprimées.
-La plupart de ces actions peuvent être réalaisées grâce au glisser-déposer.
+La plupart de ces actions peuvent être réalisées grâce au glisser-déposer.
 
 .. _pages-drag-drop:
 
@@ -26,13 +26,13 @@ Glisser déposer
 #. Pour déplacer une page existante, saisissez le titre de la page (pas l'icône!)
    Et déposez-le partout ailleurs dans l'arborescence de la page.
 
-#. L'arborescence de page affcihe l'endroit où la page sera insérée
+#. L'arborescence de page affiche l'endroit où la page sera insérée
    une fois que vous l'aurez déposée. Une info bulle affiche des
-   informations sur les options d'actions possibles (à savoir copie au lieu de déplacement)
+   informations sur les options d'actions possibles (à savoir, copie au lieu de déplacement)
 
 #. Cette page est en cours de copie. Notez la page mise en évidence avec
    le fond bleu clair. Si la page est déposée maintenant, elle deviendra
-    une sous page de la page "Image groups".
+   une sous page de la page "Image groups".
 
 #. Lorsque vous déplacez une page vers le bas de l'écran, une zone
    "déplacer ici pour supprimer" apparaît. Déposez la page ici pour la supprimer.
