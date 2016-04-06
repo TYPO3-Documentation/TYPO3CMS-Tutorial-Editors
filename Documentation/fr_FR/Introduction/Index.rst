@@ -37,7 +37,7 @@ en particulier la séparation des frontend et backend.
 Quoi de neuf
 ^^^^^^^^^^^^
 
-Ce manuel est illustré avec des captures d'écran à partir de
+Ce manuel est illustré avec des captures d'écran à partir du
 paquet d'introduction de TYPO3 CMS 7 LTS.
 
 
@@ -59,7 +59,7 @@ La mise à jour de François Suter a été traduite en français par Jonathan Ir
 Commentaires
 ^^^^^^^^^^^^
 
-Pour des questions générales concernant la documentation écrire à
+Pour des questions générales concernant la documentation, écrire à
 `documentation@typo3.org <mailto:documentation@typo3.org>`_.
 
 Si vous trouvez une erreur dans ce manuel, merci de vérifier la

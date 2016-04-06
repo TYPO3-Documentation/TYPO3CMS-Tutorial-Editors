@@ -14,7 +14,7 @@ Le module *Page* dispose de trois fonctions ou modes différents :
 "Édition rapide", "Colonnes" et "Langues". La première vous déplace
 directement à la modification du premier élément de contenu sur la page.
 Cela peut être un peu perturbant au début et n'est pas recommandé.
-Le mode "Langues" sera abordé plus tard quand on parle de traductions.
+Le mode "Langues" sera abordé plus tard quand on parlera de traductions.
 
 Pour l'instant, nous voulons être en mode "Colonnes".
 Si tel n'est pas le cas lorsque vous vous déplacez vers le module *Page*,
@@ -26,7 +26,7 @@ veuillez utiliser le menu d'action haut pour changer de mode.
 
 La capture d'écran ci-dessous montre à quoi ressemble la page d'accueil du
 paquet d'introduction dans le backend TYPO3 CMS. Le contenu est réparti
-entre les différents zones de contenu ( "Haut", "Milieu: Gauche", "Milieu: Center", etc.)
+entre les différents zones de contenu ( "Haut", "Milieu: Gauche", "Milieu: Centre", etc.)
 appelées **colonnes**.
 
 De nombreuses icônes sont grisées pour obtenir une interface moins chargée.

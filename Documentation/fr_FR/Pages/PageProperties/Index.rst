@@ -11,8 +11,8 @@ Les pages dans TYPO3 CMS ont de nombreuses propriétés.
 Jusqu'à présent, nous avons vu le titre (ce qui est tout à fait évident),
 la case à cocher "Visibilité > Page > Désactiver" qui cache la page
 dans le frontend et la case à cocher "Visibilité > Dans les menus > cacher"
-qui fait en sorte que la page n'apparaîsse pas dans n'importe quel
-élément de navigation.
+qui fait en sorte que la page n'apparaîsse pas dans les éléments de navigation
+quels qu'ils soient.
 
 
 .. _pages-properties-titles:
@@ -51,7 +51,7 @@ d'utilisation du titre de pages ne sont pas modifiés.
    On pourrait dire que le fil d'Ariane est également un élément
    de navigation et devrait donc être également affecté par ce changement.
    C'est vrai, mais chaque menu peut être configuré séparément dans
-   TYPO3 CMS et a donc un comportement différent.
+   TYPO3 CMS et peut donc avoir un comportement qui lui est propre.
 
 
 Nous allons sauter l'onglet *Accèss*, car les propriétés liées à l'accès
@@ -63,7 +63,7 @@ et à la visibilité sont discutées ailleurs, et passer aux autres onglets.
 Métadonnées
 """""""""""
 
-Un grand nombre de métadonnées peut être entré dans l'onglet *Métadonnées*.
+Un grand nombre de métadonnées peut être saisie dans l'onglet *Métadonnées*.
 C'est évident, mais il convient de mentionner que l'utilisation réelle
 de ces métadonnées dans le frontend dépend de la façon dont le site est configuré.
 
@@ -87,10 +87,10 @@ qui vont influencer la façon dont la page est affichée dans le frontend.
    :alt: L'onglet "Apparence" des propriétés de la page
 
 
-La mises en page Backend déterminer combien de zones de contenu
-sont mis à disposition pour la saisie dans le module **WEB > Page**.
-Mais ils peuvent également être utilisés comme informations lors
-du rendu pour influencer le rendu réel de l'interface frontend.
+La mises en page Backend détermine combien de zones de contenu
+sont mises à disposition pour la saisie dans le module **WEB > Page**.
+Mais elle peut également être utilisée comme information
+pour influencer le rendu réel de l'interface frontend.
 
 Un champ intéressant est "Montrer le contenu de cette page" en bas de l'écran.
 Il indique à la page d'afficher le contenu d'une autre page sélectionnée.
@@ -104,7 +104,7 @@ Comportement
 """"""""""""
 
 L'onglet *Comportement* a un riche ensemble d'options et
-influences des aspects très différents de la page.
+influence des aspects très différents de la page.
 
 .. figure:: ../../Images/PagePropertiesBehaviour.png
    :alt: L'onglet "Comportement" des propriétés de la page
@@ -112,15 +112,15 @@ influences des aspects très différents de la page.
 
 La première partie est liée aux liens. Elle définit si un alias
 peut être utilisé pour un lien vers cette page.
-Ce ne sont pas liées aux URL parlantes.
+Ce n'est pas lié aux URL parlantes.
 Si vous définissez "foo" comme alias, on peut appeler la page
-à l'aide de `http://www.mysite.com/index.php?id=foo`.
+à l'aide de `http://www.votre-site.example.org/index.php?id=foo`.
 Une cible par défaut pour appeler cette page peut également être définie,
 ainsi qu'un protocole spécifique.
 
 La partie "Mise en cache" vous permet de définir une durée de cache
 spécifique pour cette page ou de désactiver complètement le cache
-pour cette page (quelque chose que vous devriez éviter).
+pour cette page (chose que vous devriez éviter).
 Toutes les pages qui ont la même étiquette de cache auront
 leur cache supprimé lorsque le cache est vidé en utilisant cette balise.
 Notez toutefois que cela n'est pas utilisé par TYPO3 CMS par défaut,
@@ -191,7 +191,7 @@ des éléments de contenu, et des fichiers.
 
 
 Les catégories doivent être définies dans certains dossier et
-peuvent ensuite être affectés à des pages.
+peuvent ensuite être affectées à des pages.
 Le :ref:`type d'élément de contenu <content-special>`
 "Menus spéciaux" peut afficher - entre autres -
 une liste de pages d'une catégorie sélectionnée.

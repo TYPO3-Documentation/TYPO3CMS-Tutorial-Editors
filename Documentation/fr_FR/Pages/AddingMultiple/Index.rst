@@ -29,7 +29,7 @@ Au bas de l'assistant se trouvent plusieurs options :
 
 En cochant la case **Placer les nouvelles pages à la suite**,
 les nouvelles pages seront ajoutées en dessous des sous-pages existant actuellement.
-Sinon, ils seront placés au-dessus des sous-pages actuelles.
+Sinon, elles seront placées au-dessus des sous-pages actuelles.
 
 Vous pouvez choisir d'ajouter plus de pages que proposées
 (5 par défaut) en cliquant sur le bouton "Ajouter plus de lignes".

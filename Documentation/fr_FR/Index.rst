@@ -57,7 +57,7 @@ Les documents officiels sont tenues à jour selon les capacités de l'équipe de
 
 Ce document est un tutoriel. Les tutoriels sont conçus sous forme d'instructions spécifiquement créées pour mener étape par étape un débutant du début à la fin d'une tâche particulière. Pour faciliter un apprentissage efficace, les tutoriels fournissent des exemples pour illustrer les sujets qu'ils
 couvrent. En outre, les tutoriels fournissent des indications sur la façon d'éviter les pièges communs
-et mettre l'accent sur les concepts clés dont il faut se rappeler pour la suite .
+et mettent l'accent sur les concepts clés dont il faut se rappeler pour la suite .
 
 
 **Table des matières**

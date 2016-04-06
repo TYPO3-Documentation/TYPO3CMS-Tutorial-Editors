@@ -8,7 +8,7 @@ Création de contenu
 ^^^^^^^^^^^^^^^^^^^
 
 Cliquez sur l'une des icônes "Ajouter du contenu".
-Se présente à vous un assistant pour vous permettant de choisir
+Se présente à vous un assistant vous permettant de choisir
 le type d'élément de contenu que vous souhaitez ajouter à votre page.
 Cette liste peut varier en fonction de votre configuration
 et des extensions installées.
@@ -94,7 +94,7 @@ le paquet d'introduction.
 Création d'un nouvel élément de contenu
 """""""""""""""""""""""""""""""""""""""
 
-Retournez sur l'oget "Elément de contenu classique" et choisissez "Text & Media",
+Retournez sur l'onglet "Elément de contenu classique" et choisissez "Text & Media",
 qui est probablement le type de contenu le plus utilisé.
 Vous devriez voir le formulaire de saisie suivant :
 
@@ -106,7 +106,7 @@ Les champs les plus importants sont le champ "Titre",
 qui va être le titre de votre élément de contenu,
 et le champ "Texte", qui sera le contenu lui-même.
 Ce champ utilise un éditeur de texte enrichi (RTE),
-qui est :ref:`décrit plus en détail plus tard <rte>.
+qui est :ref:`décrit plus en détail plus tard <rte>`.
 
 Nous ne regarderons pas les autres champs en détail pour l'instant.
 Pour l'instant, entrez un texte dans les deux champs « Titre » et « Texte »
@@ -131,7 +131,7 @@ qui vous permet de choisir les actions combinées :
 Choisissez "Enregistrer et fermer" (ou cliquez juste sur l'icône "Fermer"
 à côté du bouton "Enregistrer" si vous avez déjà enregistré votre travail),
 de sorte que nous serons de retour au module *Page*.
-Vous devriez être en mesure de voir votre nouveau contenu:
+Vous devriez être en mesure de voir votre nouveau contenu :
 
 .. figure:: ../../Images/NewContentElementSaved.png
    :alt: Le nouvel élément de contenu apparaît dans le module Page
@@ -144,6 +144,6 @@ Vous devriez être en mesure de voir votre nouveau contenu:
    TYPO3 CMS et le paquet d'introduction.
    Espérons que cela sera résolu à un moment donné.
 
-   Nous allons utiliser le chapitre suivant traiatant de l'édition
+   Nous allons utiliser le chapitre suivant traitant de l'édition
    pour faire quelque chose au sujet de cette situation problématique.
 
