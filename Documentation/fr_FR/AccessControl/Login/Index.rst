@@ -64,7 +64,7 @@ mais cliquez sur "Utilisateur du site".
 
 Les information minimales requises ici sont un nom d'utilisateur,
 un mot de passe et la sélection d'au moins un groupe.
-Vous pouvez voir comment notre groupe « zone privée »
+Vous pouvez voir que notre groupe « zone privée »
 nouvellement créé est disponible pour la sélection.
 
 Vous pouvez ajouter des données personnelles à votre utilisateur
@@ -96,7 +96,7 @@ et restreignons la au groupe « zone privée ».
    est visible uniquement lorsque l'utilisateur n'est pas authentifié.
    Le groupe "Afficher à toutes les connexions" est utilisé pour
    les éléments qui nécessitent une authentification d'accès,
-   mais à affichier pour tous les groupes.
+   mais à afficher pour tous les groupes.
 
 Remarquez comment l'icône de page change dès que vous enregistrez
 les nouveaux droits d'utilisateur. Elle rappelle visuellement
@@ -135,7 +135,7 @@ Vous devriez avoir quelque chose comme ceci :
    :alt: Mise en place de restriction d'accès sur des éléments de contenu individuels
 
 
-Ajoutons maintenant une boîte de connexion à la partie.
+Ajoutons maintenant une boîte de connexion à la page.
 Cliquez sur le bouton "Créer un nouvel élément de contenu" situé entre
 les deux éléments de contenu existants. Dans l'assistant de nouvel élément de contenu,
 accédez à l'onglet "Formulaires" et cliquez sur "Formulaire de connexion".
