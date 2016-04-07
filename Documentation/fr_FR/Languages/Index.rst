@@ -54,7 +54,7 @@ Travailler avec les traductions
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 Allez au module **WEB > Pages** et sur la page d'accueil "Félicitations".
-Utilisation du menu dans le docheader, passer à la vue "Langues".
+En utilisant le menu d'action haut, passez à la vue "Langues".
 
 .. figure:: ../Images/LanguagesPageLanguages.png
    :alt: La vue "Langues" du module Page
@@ -87,7 +87,7 @@ vous devriez voir ce qui suit:
 
 
 Les traductions peuvent être soit reliées entre elles
-ou sans rapport. Comme l'explique l'assistant le mode strict
+soit sans rapport. Comme l'explique l'assistant le mode strict
 doit être utilisé lorsque tous les contenus dans la langue par défaut
 sont destinés à être traduit de telle sorte que chaque traduction
 est strictement liée à un élément dans la langue par défaut.
@@ -107,7 +107,7 @@ Vous devriez voir le résultat suivant:
    :alt: Une traduction nouvellement créée d'élément de contenu
 
 
-Vous pouvez observer comment le contenu du nouvel élément
+Vous pouvez observer que le contenu du nouvel élément
 a été préfixé avec *[Traduction de l'allemand:]*.
 Notez également qu'il est caché par défaut, de sorte que
 les traductions incomplètes n'apparaissent pas sur le site Web.
@@ -116,9 +116,9 @@ les traductions incomplètes n'apparaissent pas sur le site Web.
    :alt: Un élément de contenu traduit, avec référence à son origine
 
 
-Vous pouvez voir comment le nouvel élément de contenu est lié
+Vous pouvez voir que le nouvel élément de contenu est lié
 à celui de la langue par défaut (dans le champ "Traduction originale").
-Dans la plupart des champs est également une indication du contenu de la langue par défaut.
+Dans la plupart des champs se strouve également une indication du contenu de la langue par défaut.
 
 Le module *Page* peut désormais sembler encombré,
 avec une colonne par traduction existante. Il est possible d'afficher

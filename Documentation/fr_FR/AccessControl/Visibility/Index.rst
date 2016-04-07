@@ -9,7 +9,7 @@ Visibilité des élements
 
 L'option qui agit avant tout sur la visibilité d'un élément
 est la case à cocher "Désactiver", de la partie "Visibilité"
-sur l'onglet "Accès",que nous avons déjà vu auparavant.
+sur l'onglet "Accès", que nous avons déjà vu auparavant.
 Un élément caché, que ce soit une page, un élément de contenu
 ou une actualité, ne sera jamais affiché dans le frontend,
 à moins que vous n'affichiez un aperçu depuis le backend.
@@ -29,7 +29,7 @@ Les dates de publication
 """"""""""""""""""""""""
 
 Un contrôle plus fin peut être exercé avec les dates de
-début et de fin de publication . Toute page ou élément de contenu
+début et de fin de publication. Toute page ou élément de contenu
 avec une « Date de publication » définie ne sera pas visible
 avant cette date. Si il y a une « Date d'expiration »,
 la page ou l'élément de contenu ne sera plus visible sur le site
