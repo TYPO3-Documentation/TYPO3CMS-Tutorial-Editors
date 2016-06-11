@@ -10,7 +10,7 @@ Adding Multiple Pages at Once
 You can create more than one page at a time by using the
 **WEB > Functions** module.
 
-Place your yourself on the page which should be the parent
+Place yourself on the page which should be the parent
 of the new pages.
 
 Select the **Create multiple page** wizard.
