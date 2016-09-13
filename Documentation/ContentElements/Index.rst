@@ -17,4 +17,5 @@ Content Elements
    EditingContent/Index
    RichTextEditor/Index
    Images/Index
+   ContactForm/Index
 
