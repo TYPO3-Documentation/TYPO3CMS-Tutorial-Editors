@@ -123,3 +123,8 @@ mode and choosing a specific language in the docheader.
 .. figure:: ../Images/LanguagesColumnModeWithTranslation.png
    :alt: The "Column" mode displaying a translation
 
+
+.. tip::
+
+   Detailed information about setting up a multilingual web site is
+   found in the :ref:`Frontend Localization Guide <t3l10n:start>`.
