@@ -37,7 +37,7 @@ What's new
 ^^^^^^^^^^
 
 This manual is illustrated with screenshots from the Introduction Package
-using TYPO3 CMS 7 LTS.
+using TYPO3 CMS 8 LTS.
 
 
 .. _credits:

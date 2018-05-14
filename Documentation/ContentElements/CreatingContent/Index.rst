@@ -35,20 +35,6 @@ Typical Page Content
    :alt: The Typical Page Content tab of the new content element wizard
 
 
-.. _content-special:
-
-Special Elements
-~~~~~~~~~~~~~~~~
-
-.. figure:: ../../Images/NewContentWizardTabSpecial.png
-   :alt: The Special Elements tab of the new content element wizard
-
-
-The "Insert records" element is used to make references to
-other content elements. This way you can reuse content in
-an other page without duplicating it.
-
-
 .. _content-form:
 
 Form Elements
@@ -56,6 +42,15 @@ Form Elements
 
 .. figure:: ../../Images/NewContentWizardTabForm.png
    :alt: The Form Elements tab of the new content element wizard
+
+
+.. _content-menu:
+
+Menu Elements
+~~~~~~~~~~~~~
+
+.. figure:: ../../Images/NewContentWizardTabMenu.png
+   :alt: The Menu Elements tab of the new content element wizard
 
 
 .. _content-plugin:
@@ -72,18 +67,18 @@ in this tab. It depends on their architecture or on backend
 configuration.
 
 
-.. _content-bootstrap:
+.. _content-special:
 
-Bootstrap
-~~~~~~~~~
+Special Elements
+~~~~~~~~~~~~~~~~
 
-.. figure:: ../../Images/NewContentWizardTabBootstrap.png
-   :alt: The Bootstrap tab of the new content element wizard
+.. figure:: ../../Images/NewContentWizardTabSpecial.png
+   :alt: The Special Elements tab of the new content element wizard
 
 
-The Bootstrap tab comes from the Introduction Package. It displays
-a list of all custom content elements provided by extension
-"bootstrap_package" on which the Introduction Package relies.
+The "Insert records" element is used to make references to
+other content elements. This way you can reuse content in
+an other page without duplicating it.
 
 
 .. _content-new-element:
@@ -118,7 +113,7 @@ combined actions:
 - "Save and view page" will both save your work and open the
   current page in the frontend.
 
-- "Save and create new one" will save your work and open a new
+- "Save and create a new one" will save your work and open a new
   empty input form.
 
 - "Save and close" will save your work and return you to wherever
@@ -130,14 +125,3 @@ the *Page* module. You should be able to see your new content:
 
 .. figure:: ../../Images/NewContentElementSaved.png
    :alt: The new content element appears in the Page module
-
-
-.. note::
-
-   If you look at the result in the frontend, you will see an error.
-   This is due to some configuration mismatch between the TYPO3 CMS
-   Core and the Introduction Package. Hopefully it will be resolved
-   at some point.
-
-   We will use the next chapter about editing to do something
-   about this situation.

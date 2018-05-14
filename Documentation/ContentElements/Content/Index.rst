@@ -9,10 +9,8 @@ Working with content
 Working with content happens essentially in the **WEB > Page** module.
 We will start by taking a tour of the module, which is quite rich.
 
-The *Page* module has three different modes or functions: "QuickEdit", "Columns"
-and "Languages". The first one moves you straight to editing the first
-content element on the page. This may be a bit disturbing at first and is
-not recommended. The "Languages" mode will be discussed later when talking
+The *Page* module has two different modes or functions: "Columns"
+and "Languages". The "Languages" mode will be discussed later when talking
 about translations.
 
 For now we want to be in "Columns" mode. If that is not the case when
@@ -64,7 +62,7 @@ Content elements can be moved around simply using drap and drop.
    :alt: Moving content elements around using drap and drop
 
 
-Click in the gray bar at the top of a content element to start
+Click in the grey bar at the top of a content element to start
 dragging it. The *Page* module will then show you where you can
 drop it.
 
