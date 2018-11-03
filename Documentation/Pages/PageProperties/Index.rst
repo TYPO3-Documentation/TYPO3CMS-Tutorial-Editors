@@ -143,8 +143,8 @@ Editable for Admins Only
   admin rights, no matter what other permissions may have been set.
 
 Stop Page Tree
-  Influences only the backend and stops rendering child pages
-  of that page in the page tree.
+  Influences only the backend. If enabled, this option excludes the 
+  subtree from rendering. Very useful if you have alot of subpages.
 
 Finally the "Use a Container" property is just an indication
 of what the page may contain, but does not actually restrict
