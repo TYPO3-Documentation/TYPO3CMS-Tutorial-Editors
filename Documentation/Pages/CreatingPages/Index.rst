@@ -3,76 +3,77 @@
 
 .. _pages-creating:
 
-Creating Pages
-^^^^^^^^^^^^^^
+Création de pages
+^^^^^^^^^^^^^^^^
 
-There are two main ways to add a new page to your site.
+Il y a deux principales façons d'ajouter une nouvelle page à votre site.
 
-First make sure that you currently are in a **WEB** module
-so that you see the page tree.
+Premièrement, assurez-vous d'être actuellement dans un module **WEB**
+de sorte que vous voyez l'arborescence des pages.
 
 
 .. _pages-creating-tree:
 
-Adding pages within the page tree
-"""""""""""""""""""""""""""""""""
+Ajout de pages dans l'arborescence de pages
+"""""""""""""""""""""""""""""""""""""""""""
 
-As we saw before, you can create a new page by dragging and
-dropping a page type from the top of the page tree.
+Comme nous l'avons vu précédemment, vous pouvez créer une nouvelle page
+en faisant glisser un type de page à partir du haut de l'arborescence de pages.
 
 .. figure:: ../../Images/PageCreateDragDrop.png
-   :alt: Creating a page using drag and drop
+   :alt: Création d'une page par glisser-déposer
 
 
-#. Choose a page type by selecting one of the icons (here a standard page,
-   see the :ref:`Page types chapter <pages-types>`).
+#. Choisissez un type de page en sélectionnant l'une des icônes
+(ici une page standard, voir le :ref:`chapitre Types de page <pages-types>`).
 
-#. Drop the icon either between two existing pages (will create a sibling)
-   or on an existing page (will create a child).
+#. Lâchez l'icône soit entre deux pages existantes (va créer une page soeur)
+   soit sur une page existante (créera une page fille).
 
-#. Insert a title for the new page
+#. Insérez un titre pour la nouvelle page
 
 .. figure:: ../../Images/PageCreateTitle.png
-   :alt: Inserting a page title
+   :alt: Insertion d'un titre de la page
 
 
-A new page is disabled by default. To enable a page, use the context menu or
-the page properties.
+Par défaut une nouvelle page est désactivée. Pour activer une page,
+utilisez le menu contextuel ou les propriétés de la page.
 
 
 .. _pages-creating-context:
 
-Adding pages with the context menu
-""""""""""""""""""""""""""""""""""
+Ajout de pages avec le menu contextuel
+""""""""""""""""""""""""""""""""""""""
 
-Click on the icon of any existing page and choose
-"Page Actions > New" from the context menu.
+Cliquez sur l'icône d'une page existante et choisissez
+"Actions pour la page > Nouveau" dans le menu contextuel.
 
 .. figure:: ../../Images/PageCreateContextMenu.png
-   :alt: Creating pages with context menu
+   :alt: Création de pages avec menu contextuel
 
 
-You will be taken to the new page wizard, which asks you
-to select a position for the new page.
+Vous serez redirigé vers l'assistant de nouvelle page,
+qui vous demandera de sélectionner une position pour la nouvelle page.
 
 .. figure:: ../../Images/PageCreateWizard.png
-   :alt: Selecting a position for the new page using the wizard
+   :alt: Sélection d'un emplacement pour la nouvelle page à l'aide de l'assistant
 
 
-After selecting a position, you will be taken to the form which
-lets you define the properties of the new page. For now, let's
-just set the title which is mandatory.
+Après avoir sélectionné une position, vous serez redirigé vers le formulaire
+qui vous permet de définir les propriétés de la nouvelle page. Pour l'instant,
+nous allons simplement définir le titre qui est obligatoire.
 
 .. figure:: ../../Images/PageCreateProperties.png
-   :alt: Editing the page properties
+   :alt: Édition des propriétés de la page
 
 
-You may also want to move to the *Access* tab and
-uncheck the "Disable" box, so that your new page is visible
-in your web site.
+Vous pouvez également accéder à l'onglet *Accèss* et décochez
+la case "Désactiver", afin que votre nouvelle page soit
+visible sur votre site web.
 
 .. figure:: ../../Images/PageCreateEnable.png
-   :alt: Unchecking this box will make the page publicly visible
+   :alt: Décochez cette case rendra la page publiquement visible
 
 
-More properties are explored in the :ref:`Page properties chapter <pages-properties>`.
+Plus de propriétés sont étudiées dans le chapitre
+:ref:`Propriétés de la page<pages-properties>`.

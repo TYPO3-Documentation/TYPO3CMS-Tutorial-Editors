@@ -3,15 +3,15 @@
 
 .. _pages-other-features:
 
-Other features
-^^^^^^^^^^^^^^
+Autres caractéristiques
+^^^^^^^^^^^^^^^^^^^^^^^
 
-Let us conclude this overview of working with pages
-by mentioning a useful feature. At the top of the page tree
-is a filtering tool. It can be used to search in the
-page tree, using either words (which will be matched to
-the page title) and numbers (which can also be matched to
-the id of a given page).
+Terminons cet aperçu du travail avec des pages en mentionnant
+une fonction utile. Au sommet de l'arborescence des pages se
+trouve un outil de filtrage. Il peut être utilisé pour rechercher
+des pages dans l'arborescence de la page, en utilisant soit des mots
+(qui seront contenu dans un titre de page) ou des chiffres
+(qui peuvent également correspondre à l'id d'une page donnée).
 
 .. figure:: ../../Images/PageTreeFilter.png
-:alt: Filtering pages in the page tree
+:alt: Filtrage de pages dans l'arborescence

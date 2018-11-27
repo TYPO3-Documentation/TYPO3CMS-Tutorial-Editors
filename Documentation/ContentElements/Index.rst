@@ -3,7 +3,7 @@
 
 .. _content-elements:
 
-Content Elements
+Éléments de contenu
 ----------------
 
 
@@ -17,5 +17,4 @@ Content Elements
    EditingContent/Index
    RichTextEditor/Index
    Images/Index
-   ContactForm/Index
 

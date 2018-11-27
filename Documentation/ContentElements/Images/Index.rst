@@ -3,99 +3,105 @@
 
 .. _images:
 
-Working with Images
-^^^^^^^^^^^^^^^^^^^
+Travailler avec des images
+^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Since we are working with a "Text & Images" content element,
-let's add images to it!
+Étant donné que nous travaillons avec un élément de contenu
+"Text & Images", nous allons lui ajouter des images !
 
-Move to the "Images" tab.
+Allez sur l'onglet "Images".
 
 .. figure:: ../../Images/EditContentAddImage.png
-   :alt: Adding an image to the content element
+   :alt: Ajout d'une image à l'élément de contenu
 
 
-Clicking the "Add image" button will open a window for selecting
-an image.
+Cliquer sur le bouton "Ajouter une image" va ouvrir
+une fenêtre pour sélectionner une image.
 
 .. figure:: ../../Images/ImageSelector.png
-   :alt: The window for selecting images
+   :alt: La fenêtre de sélection des images
 
 
-Navigate the file tree to get to the :file:`examples` folder.
-Clicking on it will trigger the display of the files it contains
-in the right part of the window. You may want to check the
-"Display thumbnails" box to get a preview of each image.
+Naviguer dans l'arborescence de fichiers pour atteindre
+le dossier :file:`exemples`. Cliquer dessus va déclencher
+l'affichage des fichiers qu'il contient dans la partie droite
+de la fenêtre. Vous pouvez cocher la case "Afficher les miniatures"
+pour obtenir un aperçu de chaque image.
 
-You have two ways of selecting an image. Clicking on its name
-will select the image and close the window. Clicking on the "+"
-icon will only select the image, making it possible to select
-multiple images before closing the window.
+Vous avez deux façons de sélectionner une image.
+Cliquer sur son nom permet de sélectionner l'image et fermer la fenêtre.
+Cliquer sur l'icône "+" ne va que sélectionner l'image,
+ce qui permet de sélectionner plusieurs images avant de fermer la fenêtre.
 
-Once you are back in your content element, you can perform
-a number of actions or configure the image further.
+Une fois que vous êtes de retour dans votre élément de contenu,
+vous pouvez effectuer un certain nombre d'actions ou paramétrer l'image plus loin.
 
 .. figure:: ../../Images/EditContentImageProperties.png
-   :alt: Working with the image attached to the content element
+   :alt: Travailler avec l'image attachée à l'élément de contenu
 
 
-First of all some information is display about the image (1):
-thumbnail and file name. The arrow next to the thumbnail is used
-to collapse the display of the image details.
+Tout d'abord quelques informations à propose de l'image sont affichées (1) :
+la vignette et le nom du fichier.
+La flèche à côté de la vignette est utilisée pour réduire
+l'affichage des détails de l'image.
 
-A series of icons (2) let you act the image or its relation to the content element:
+Une série d'icônes (2) vous permet d'agir sur l'image
+ou sur sa relation à l'élément de contenu :
 
-- The "Edit" icon lets you edit the chosen image's metadata.
-  Beware as this might impact other places where the image is used.
+- L'icône "Modifier" vous permet d'éditer les métadonnées de l'image choisie.
+  Méfiez-vous, car cela pourrait avoir un impact
+  aux autres endroits où l'image est utilisée.
 
-- The "Delete" icon will remove the image from the content element,
-  not delete the image itself.
+- L'icône "Supprimer" supprime l'image de l'élément de contenu,
+  mais ne supprime pas l'image elle-même.
 
-- The "Move" icon (rightmost) is used by dragging and dropping for
-  changing the order of images
+- L'icône "Cacher l'enregistrement" permet d'afficher ou cacher l'image.
 
-The central area (3) lets you edit the image's metadata with
-regards to its current relation to the content element. If you
-check the corresponding "Override?" boxes, you can set a specific
-title, alternative text and caption for the relation of that image
-to the current content element.
+- L'icône "Déplacer" (à droite) est utilisée par glisser-déposer pour modifier l'ordre des images
 
-You can experiment with the image editor (4), which will let you
-crop the image.
+La zone centrale (3) vous permet d'éditer les métadonnées de l'image
+en ce qui concerne sa relation actuelle à l'élément de contenu.
+Si vous cochez les cases correspondantes "Surcharger ?",
+vous pouvez définir un titre spécifique, texte alternatif et la légende
+pour la relation de cette image à l'élément de contenu en cours.
 
-Finally if you check the "Enlarge on click" box (5), the image
-will be linked to the original file in a lightbox display.
+Vous pouvez expérimenter avec l'éditeur d'image (4),
+qui vous permettra de recadrer l'image.
+
+Enfin, si vous cochez la case "Agrandissement au clic" (5),
+l'image sera liée au fichier original qui ser affiché dans la visionneuse.
 
 
 .. _images-appearance:
 
-Image appearance
-""""""""""""""""
+Apparence de l'image
+""""""""""""""""""""
 
-Moving the "Appearance" tab of the content element, you can set further
-behaviors of the images attached to the content element.
+Déplacez vous sur l'onglet "Apparence" de l'élément de contenu,
+vous pouvez définir d'autres comportements pour les images
+attachées à l'élément de contenu.
 
 .. figure:: ../../Images/EditContentAppearance.png
-   :alt: Changing the appearance of images
+   :alt: Modification de l'apparence des images
 
-In "Image Adjustments" you can choose to apply a border or a
-special effect to the images. You can also choose a specific
-quality for these images.
+Dans "Réglages de l'image" vous pouvez choisir d'appliquer
+une bordure ou un effet spécial aux images. Vous pouvez
+également choisir une qualité spécifique pour ces images.
 
-In "Image Alignement" you can choose where the images should
-be positioned with regards to the text. Images are automatically
-arranged in columns, two by two. You can change this behaviour
-with the "Number of Columns" field.
+Dans "Alignement de l'image" vous pouvez choisir où les images
+doivent être positionnées par rapport au texte. Les images sont
+automatiquement disposées en colonnes, deux par deux.
+Vous pouvez modifier ce comportement avec le champ "Nombre de colonnes".
 
 
 .. _images-new:
 
-New images
-""""""""""
+Nouvelles images
+""""""""""""""""
 
-New images can be added using upload buttons found in the
-image selector window or by using the **FILE > Filelist**
-module.
+De nouvelles images peuvent être ajoutées à l'aide des boutons
+de téléchargement présents dans la fenêtre de sélection d'image
+ou en utilisant le module **FICHIER > Fichiers**.
 
-Usage of the *Filelist* module is covered in the
-:ref:`Getting Started Tutorial <t3start:the-file-module-or-image-archives>`.
+L'utilisation du module *Fichiers* est couverte dans le
+:ref:`tutoriel de mise en route <t3start:the-file-module-or-image-archives>`.

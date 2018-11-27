@@ -3,46 +3,51 @@
 
 .. _login:
 
-Login
------
+S'identifier
+------------
 
-In TYPO3 CMS an editor's work is done in the backend. So point your browser
-to your domain name and append "/typo3" to get to the log in screen.
+Dans TYPO3 CMS le travail d'un éditeur se fait dans le backend.
+Donc, pointez votre navigateur sur votre nom de domaine
+et ajouter "/typo3" pour accéder à l'écran de connexion.
 
 .. important::
 
-   Make sure JavaScript and cookies are enabled in your browser or nothing will work.
+   Assurez-vous que JavaScript et les cookies sont activés
+   dans votre navigateur ou rien ne fonctionnera.
 
-Enter your domain name into the address bar of your internet browser and append "/typo3" to it to get to the "log in" page of your site.
-For example: http://www.example.com/typo3.
+Entrez votre nom de domaine dans la barre d'adresse
+de votre navigateur Internet et y ajouter "/typo3"
+pour vous rendre à la page "Connexion" de votre site.
+Par exemple: http://www.votre-site.example.org/typo3.
 
 .. figure:: ../Images/BackendLoginPage.png
-   :alt: The TYPO3 CMS backend login screen
+   :alt: L'écran de connexion au backend de TYPO3 CMS
 
 
-Log in and we're ready to go!
+Connectez-vous et nous sommes prêts à y aller!
 
 
 .. _help-inside:
 
-Help within TYPO3 CMS
-^^^^^^^^^^^^^^^^^^^^^
+Aide au sein de TYPO3 CMS
+^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Before we dive further into using TYPO3 CMS it is useful to remember
-that quite some help is available straight inside the backend:
+Avant de nous plonger davantage dans l'usage de TYPO3 CMS
+il est utile de rappeler que différentes aides sont disponibles
+directement depuis le backend :
 
-- A very short description of buttons or functions appears if you hover
-  with your mouse pointer over it.
+- Une très brève description des boutons ou des fonctions apparaît
+  lorsque vous les survolez avec le curseur de votre souris.
 
-- When editing a record, hover over its label. If your cursor changes into
-  a question mark, you can click on the label to get a help pop-up.
+- Lors de la modification d'un enregistrement, passez la souris sur son étiquette.
+  Si votre curseur se transforme en point d'interrogation,
+  vous pouvez cliquer sur l'étiquette pour obtenir une aide contextuelle.
 
-- You will often see the following a **question mark icon** next to an element. Hovering over
-  it will pop up a little help window about the item or function it is next to:
+- Vous verrez souvent l'**icône point d'interrogation** suivante à côté d'un élément.
+  La survoler fera apparaître une petite fenêtre d'aide à propos de
+  l'élément ou de la fonction à côté de cette icône :
 
 .. figure:: ../Images/BackendHelp.png
-   :alt: Various help features in the TYPO3 CMS backend
+   :alt: Diverses fonctions d'aide dans le backend TYPO3 CMS
 
-- For a more extensive description use the **TYPO3 Manual** module in the
-  help section.
-
+- Pour une description plus détaillée, utilisez le module **Manuel TYPO3** dans la section d'aide.

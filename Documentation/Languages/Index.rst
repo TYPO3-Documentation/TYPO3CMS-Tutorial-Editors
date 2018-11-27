@@ -3,128 +3,128 @@
 
 .. _languages:
 
-Working with languages
-----------------------
+Travailler avec les langues
+---------------------------
 
-TYPO3 CMS comes with the built-in ability to handle web sites
-in multiple languages.
+TYPO3 CMS est livré avec la capacité native de gérer
+les sites web en plusieurs langues.
 
 
 .. _languages-new:
 
-Defining a new language
-^^^^^^^^^^^^^^^^^^^^^^^
+Définition d'une nouvelle langue
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-The default language is never explicitely defined. It will be
-whatever you choose it to be. Additional languages are first
-created in the backend and can then be used to translate pages
-and content elements.
+La langue par défaut n'est jamais définie explicitement.
+Ce sera celle que vous choisirez comme telle.
+Les autres langues doivent d'abord être créées dans le backend
+pour ensuite être utilisées en vue de traduire les pages
+et les éléments de contenu.
 
-The Introduction Package's default language is English and the
-Danish and German languages are already defined. Adding a new language
-is as easy as creating a new record for that, but it can strictly be
-done only on the root page.
+La langue par défaut du paquet d'introduction est l'anglais
+et les langues danoise et allemande sont déjà définies.
+L'ajout d'une nouvelle langue est aussi simple que la création
+d'un nouvel enregistrement, mais elle ne peut se faire que
+sur la page racine.
 
-Use the **WEB > List** view and place yourself on the
-"New TYPO3 Site" page. Scroll down a bit, until you see
-the list of "Website Languages".
+Utilisez le module **WEB > Liste** et placez-vous sur la page
+"New TYPO3 Site". Déscendez un peu, jusqu'à ce que vous voyez
+la liste des « Langue du site web ».
 
 .. figure:: ../Images/LanguagesListExisting.png
-   :alt: List of existing web site languages
+   :alt: Liste des langues existantes pour le site Web
 
 
-Click on the "New record" icon and define your new language.
+Cliquez sur l'icône "Créer un nouvel enregistrement"
+et définissez votre nouvelle langue.
 
 .. figure:: ../Images/LanguagesNewLanguage.png
-   :alt: Setting up a new language
+   :alt: Mise en place d'une nouvelle langue
 
 
-Give your new language a title, relate it to an official language
-and choose a flag for it. Save and close, you're done.
+Donnez à votre nouvelle langue un titre,
+choisissez une langue officielle dans la liste déroulante
+et choisissez un drapeau. Enregistrer et fermer, vous avez terminé.
 
 
 .. _languages-translations:
 
-Working with translations
-^^^^^^^^^^^^^^^^^^^^^^^^^
+Travailler avec les traductions
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Move to the **WEB > Pages** module and to the "Congratulations"
-home page. Using the menu in the docheader, switch to the
-"Languages" view.
+Allez au module **WEB > Pages** et sur la page d'accueil "Félicitations".
+En utilisant le menu d'action haut, passez à la vue "Langues".
 
 .. figure:: ../Images/LanguagesPageLanguages.png
-   :alt: The "Languages" view of the Page module
+   :alt: La vue "Langues" du module Page
 
-
-Use the menu entitled "Make new translation of this page" to
-create a new translation. Choose the language from the dropdown,
-let's say German in this case. You will be presented with an
-input form for the page translation (so-called "Alternative
-Page Language"):
+Utilisez le menu intitulé "Créer une nouvelle traduction de cette page"
+pour créer une nouvelle traduction. Choisissez la langue dans le menu déroulant,
+disons allemande dans ce cas. Un formulaire de saisie va s'affichier
+pour la traduction de la page (ce qu'on appelle "Langue alternative de la page"):
 
 .. figure:: ../Images/LanguagesNewPageTranslation.png
-   :alt: Creating a new page translation
+   :alt: Création d'une nouvelle traduction de la page
 
 
-Just enter the translation in the "Page Title" field and save changes.
-Back in the *Page* module, we can now see the default language and the
-German version side by side.
+Il suffit d'entrer la traduction dans le champ "Titre de la page"
+et enregistrer les modifications. De retour dans le module *Page*,
+nous pouvons maintenant voir la langue par défaut et la version allemand
+côte à côte.
 
 .. figure:: ../Images/LanguagesPageVersions.png
-   :alt: Viewing languages side by side in the page module
+   :alt: Affichage des langues côte à côte dans le module de page
 
 
-The *Page* module makes it possible to easily copy content elements
-in the new language by hitting the "Translate" button. Do so now
-for the "Border" content area and you should see the following:
+Le module de *Page* permet de copier facilement des éléments contenus
+dans la nouvelle langue en appuyant sur le bouton "Traduire".
+Faites-le maintenant la zone de contenu "Bordure",
+vous devriez voir ce qui suit:
 
 .. figure:: ../Images/LanguagesTranslateContentElementsStep1.png
-   :alt: First step of the translation wizard
+   :alt: Première étape de l'assistant de traduction
 
 
-The translations can either be linked together or unrelated.
-As explained by the wizard the strict mode should be used when
-every content in the default language is meant to be translated
-so that every translation is strictly related to an element in the
-default language. The "copy" mode will also create a copy but it
-will be unrelated to its original source. This should be preferred
-when web site translations will diverge from the default language.
+Les traductions peuvent être soit reliées entre elles
+soit sans rapport. Comme l'explique l'assistant le mode strict
+doit être utilisé lorsque tous les contenus dans la langue par défaut
+sont destinés à être traduit de telle sorte que chaque traduction
+est strictement liée à un élément dans la langue par défaut.
+Le mode "copie" créera également une copie, mais la copie ne
+sera pas liée avec sa source d'origine.
+C'est le mode à privilégier lorsque les traductions
+du site web divergeront de la langue par défaut.
 
-For this example, click on the large "Translate" icon and then
-on the "Next" button. Step 2 of the wizard will pass by automatically
-since we are translating in a single language. Step 3 provides
-a summary of the elements that will be translated. Hit the
-"Start processing" button to get started. You should see the
-following result:
+Pour cet exemple, cliquez sur la grande icône "Traduire",
+puis sur le bouton "Suivant". L'étape 2 de l'Assistant se déroulera
+automatiquement puisque nous traduisons dans une seule langue.
+L'étape 3 fournit un résumé des éléments qui seront traduits.
+Appuyez sur le bouton « Lancer le traitement » pour commencer.
+Vous devriez voir le résultat suivant:
 
 .. figure:: ../Images/LanguagesNewContentTranslation.png
-   :alt: A newly created content element translation
+   :alt: Une traduction nouvellement créée d'élément de contenu
 
 
-You can observe how the new element's content has been prepended
-with *[Translate to German:]*. Also note that it is hidden by
-default, so that incomplete translations don't turn up on the
-web site.
+Vous pouvez observer que le contenu du nouvel élément
+a été préfixé avec *[Traduction de l'allemand:]*.
+Notez également qu'il est caché par défaut, de sorte que
+les traductions incomplètes n'apparaissent pas sur le site Web.
 
 .. figure:: ../Images/LanguagesTranslatedContentElement.png
-   :alt: A translated content element, with reference to its original
+   :alt: Un élément de contenu traduit, avec référence à son origine
 
 
-You can see how the new content element is related to the one
-in the default language (in the field "Transl.Orig"). Under
-most fields is also an indication of the content in the default
-language.
+Vous pouvez voir que le nouvel élément de contenu est lié
+à celui de la langue par défaut (dans le champ "Traduction originale").
+Dans la plupart des champs se strouve également une indication du contenu de la langue par défaut.
 
-The *Page* module may now seem cluttered, with one column per existing
-translation. It is possible to view a single language at a time
-and with the original layout, by switching back to the "Columns"
-mode and choosing a specific language in the docheader.
+Le module *Page* peut désormais sembler encombré,
+avec une colonne par traduction existante. Il est possible d'afficher
+une seule langue à la fois et avec la mise en page originale,
+en basculant au mode "Colonnes" et en choisissant une langue
+spécifique dans le menu d'action haut.
 
 .. figure:: ../Images/LanguagesColumnModeWithTranslation.png
-   :alt: The "Column" mode displaying a translation
+   :alt: Le mode "colonne" affichant une traduction
 
-
-.. tip::
-
-   Detailed information about setting up a multilingual web site is
-   found in the :ref:`Frontend Localization Guide <t3l10n:start>`.

@@ -11,13 +11,13 @@ TYPO3 Tutorial for Editors
       doc_tut_editors
 
 :Version:
-      8 LTS
+      7 LTS
 
 :Language:
-      en
+      fr
 
 :Description:
-      This tutorial explains how to add or change content on an existing website using TYPO3 CMS. It provides the most basic instructions step by step and illustrated with screenshots.
+      Ce tutoriel explique comment ajouter ou modifier le contenu d'un site existant utilisant TYPO3 CMS. Il fournit des instructions les plus élémentaires étape par étape et illustrées par des captures d'écran.
 
 :Keywords:
       forEditors, forBeginners, tutorial
@@ -38,34 +38,28 @@ TYPO3 Tutorial for Editors
 :Rendered:
       |today|
 
-The content of this document is related to TYPO3,
+Le contenu de ce document est lié à TYPO3 CMS,
 
-a GNU/GPL CMS/Framework available from `www.typo3.org
-<https://typo3.org/>`_
-
-
-**Official documentation**
-
-This document is included as part of the official TYPO3 documentation.
-It has been approved by the TYPO3 Documentation Team following a peer-
-review process. The reader should expect the information in this
-document to be accurate - please report discrepancies to the
-Documentation Team (documentation@typo3.org). Official documents are
-kept up-to-date to the best of the Documentation Team's abilities.
+un CMS/Framework GNU/GPL disponible à cette url `www.typo3.org
+<https://typo3.org/>`_ .
 
 
-**Tutorial**
+**Documentation officielle**
 
-This document is a tutorial. Tutorials are designed to be step-by-step
-instructions specifically created to walk a beginner through a
-particular task from beginning to end. To facilitate effective
-learning, tutorials provide examples to illustrate the subjects they
-cover. In addition, tutorials provide guidance on how to avoid common
-pitfalls and highlight key concepts that should be remembered for
-future reference.
+Ce document fait partie de la documentation officielle de TYPO3.
+Il a été approuvé par l' équipe de documentation TYPO3 suite à un
+processus de vérification par pairs. Les informations destinées aux lecteurs dans ce document devant être précises - merci de signaler les erreurs à l'équipe de Documentation ( documentation@typo3.org ).
+Les documents officiels sont tenues à jour selon les capacités de l'équipe de documentation.
 
 
-**Table of Contents**
+**Tutoriel**
+
+Ce document est un tutoriel. Les tutoriels sont conçus sous forme d'instructions spécifiquement créées pour mener étape par étape un débutant du début à la fin d'une tâche particulière. Pour faciliter un apprentissage efficace, les tutoriels fournissent des exemples pour illustrer les sujets qu'ils
+couvrent. En outre, les tutoriels fournissent des indications sur la façon d'éviter les pièges communs
+et mettent l'accent sur les concepts clés dont il faut se rappeler pour la suite .
+
+
+**Table des matières**
 
 .. toctree::
    :maxdepth: 5

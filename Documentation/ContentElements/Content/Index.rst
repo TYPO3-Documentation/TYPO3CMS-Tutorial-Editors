@@ -3,71 +3,75 @@
 
 .. _content-working:
 
-Working with content
-^^^^^^^^^^^^^^^^^^^^
+Travailler avec du contenu
+^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Working with content happens essentially in the **WEB > Page** module.
-We will start by taking a tour of the module, which is quite rich.
+Le travail du contenu se passe essentiellement dans le module **WEB > Page**.
+Nous allons commencer par faire un tour du module, qui est assez riche.
 
-The *Page* module has two different modes or functions: "Columns"
-and "Languages". The "Languages" mode will be discussed later when talking
-about translations.
+Le module *Page* dispose de trois fonctions ou modes différents :
+"Édition rapide", "Colonnes" et "Langues". La première vous déplace
+directement à la modification du premier élément de contenu sur la page.
+Cela peut être un peu perturbant au début et n'est pas recommandé.
+Le mode "Langues" sera abordé plus tard quand on parlera de traductions.
 
-For now we want to be in "Columns" mode. If that is not the case when
-you move to the *Page* module, please use the menu in the docheader to
-switch mode.
+Pour l'instant, nous voulons être en mode "Colonnes".
+Si tel n'est pas le cas lorsque vous vous déplacez vers le module *Page*,
+veuillez utiliser le menu d'action haut pour changer de mode.
 
 .. figure:: ../../Images/PageModuleFunctions.png
-   :alt: Changing mode in the Page module
+   :alt: Changement de mode dans le module Page
 
 
-The screenshot below shows how the home page of the Introduction
-Package looks like in the TYPO3 CMS backend. Content is distributed
-among various content areas ("Border", "Middle: Left", "Middle: Center", etc.)
-which are called **columns**.
+La capture d'écran ci-dessous montre à quoi ressemble la page d'accueil du
+paquet d'introduction dans le backend TYPO3 CMS. Le contenu est réparti
+entre les différents zones de contenu ( "Haut", "Milieu: Gauche", "Milieu: Centre", etc.)
+appelées **colonnes**.
 
-Many icons are greyed out to make the interface look less cluttered.
-Some icons don't appear at all until your hover over specific areas.
+De nombreuses icônes sont grisées pour obtenir une interface moins chargée.
+Certaines icônes n'apparaissent pas du tout jusqu'à ce que
+l'on survol des zones spécifiques.
 
 .. figure:: ../../Images/PageModuleColumns.png
-   :alt: A typical view of the Page module with various content columns
+   :alt: Une vue typique du module Page avec plusieurs colonnes de contenu
 
 
-What can be seen in this view?
+Que peut-on voir sur cette vue?
 
-#. This icon only appears when you hover over the column title.
-   It is used to edit all content elements of that column.
+#. Cette icône apparaît uniquement lorsque vous survolez le titre de la colonne.
+   Elle est utilisée pour modifier tous les éléments de contenu de cette colonne.
 
-#. Adds a new content element to this column at precisely that position.
+#. Ajoute un nouvel élément de contenu à cette colonne précisément cette position.
 
-#. This icon represents the type of the content element. In that case
-   it is a custom content element which relies on the default icon,
-   but it may vary and provides a visual clue to the type.
+#. Cette icône représente le type de l'élément de contenu.
+   Dans le cas présent, c'est un élément de contenu personnalisé représenté
+   par l'icône par défaut, mais elle peut varier et fournir un indice visuel
+   sur le type du contenu.
 
-#. These icons light up when hovering over the whole element.
-   They are used to edit this content element, enable/disable it
-   or delete it respectively.
+#. Ces icônes s'allument lorsque l'on survol l'élément entier.
+   Elles sont utilisées pour - respectivement - modifier un élément de contenu,
+   l'activer / le désactiver ou le supprimer.
 
-You can click anywhere on the highlighted area of a content element to edit it.
+Vous pouvez cliquer partout sur la zone en surbrillance
+d'un élément de contenu pour le modifier.
 
 
 .. _content-working-moving:
 
-Moving content elements
-^^^^^^^^^^^^^^^^^^^^^^^
+Déplacement des éléments de contenu
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Content elements can be moved around simply using drap and drop.
+Les éléments de contenu peuvent être déplacés simplement
+en utilisant le glisser/déposer.
 
 .. figure:: ../../Images/PageModuleMoveElements.png
-   :alt: Moving content elements around using drap and drop
+   :alt: Déplacement des éléments de contenu aux alentours en utilisant le glisser/déposer.
 
 
-Click in the grey bar at the top of a content element to start
-dragging it. The *Page* module will then show you where you can
-drop it.
+Cliquez dans la barre grise en haut d'un élément de contenu pour commencer à le glisser.
+Le module *Page* vous montrera alors où vous pouvez le déposer.
 
-Moving a content element from one page to another is more
-convoluted, as you have to use the *List* module to perform
-a cut and paste operation. Please refer to the
-:ref:`Getting Started Tutorial <t3start:clipboard>` for
-usage of the *List* module.
+Déplacer un élément de contenu d'une page à une autre est plus compliquée,
+car vous devez utiliser le module *Liste* pour effectuer une opération de couper et coller.
+Référez-vous au :ref:`tutoriel de Mise en route <t3start:clipboard>`
+pour l'utilisation du module de liste.

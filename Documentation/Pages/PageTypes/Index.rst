@@ -3,51 +3,54 @@
 
 .. _pages-types:
 
-Page types
-^^^^^^^^^^
+Les types de page
+^^^^^^^^^^^^^^^^^
 
-TYPO3 CMS offers many useful page types by default. They are
-shortly described in this chapter.
+TYPO3 CMS offre par défaut de nombreux types de pages utiles.
+Ils sont rapidement décrits dans ce chapitre.
 
 Standard
-  As the name implies this is the default page type and the most common
-  you will use. It covers all basic needs.
+  Comme son nom l'indique c'est le type de page par défaut et le plus
+  commun que vous allez utiliser. Il couvre tous les besoins de base.
 
-Shortcut
-  A shortcut to another page in the page tree. When users navigate
-  to such a page, they will be taken transparently to the shortcut's
-  destination.
+Raccourci
+  Un raccourci vers une autre page dans l'arborescence de page.
+  Lorsque les utilisateurs accèdent à une telle page, ils sont
+  redirigés en toute transparence à la destination du raccourci.
 
-Link to External URL
-  This is similar to the "Shortcut" type but leads the user to a
-  page on another web site.
+Lien vers URL externe
+  Ce type est similaire au type "raccourci" mais il conduit
+  l'utilisateur vers une page d'un autre site web.
 
-Mount point
-  A mount point lets you select any other page in the page tree. All
-  child pages of the chosen page will appear as child pages of the mount
-  point. In effect this lets you duplicate a part your page tree
-  in terms of navigation, without actually duplicating pages and content
-  in the backend.
+Point de montage
+  Un point de montage vous permet de sélectionner une autre page dans
+  l'arborescence de page. Toutes les pages filles de la page choisie
+  apparaissent comme les pages filles du point de montage.
+  En effet, cela vous permet de dupliquer une partie de votre arborescence
+  de pages en termes de navigation, sans réellement dupliquer les pages
+  et contenu dans le backend.
 
-  Mount points are a very powerful feature of TYPO3 CMS, although sometimes
-  tricky to use.
+  Bien que parfois difficile à utiliser, les points de montage sont
+  une fonctionnalité très puissante de TYPO3 CMS.
 
-Folder
-  A folder-type page is simply a container. It will not appear in the
-  frontend. It is generally used to store other types of records than
-  pages or content elements.
+Dossier
+  Une page de type dossier est simplement un conteneur.
+  Il n'apparaîtra pas dans le frontend. Il est généralement utilisé
+  pour stocker des enregistrements d'autres types que les pages
+  ou les éléments de contenu.
 
-Menu separator
-  Creates a visual separation in the page tree and, if configured, also
-  in the frontend navigation. Configuring usage of menu separators in the
-  frontend is achieved using TypoScript.
+Séparateur de menu
+  Crée une séparation visuelle dans l'arborescence de page et,
+  si elle est configurée, également dans la navigation en frontend.
+  La configuration de séparateurs de menu dans le frontend
+  est réalisée en utilisant TypoScript.
 
-Recycler
-  This is similar to the "Folder" type, but indicates that the content
-  is meant for removal. However it offers no cleanup function. It is just
-  a visual indication.
+Corbeille
+  Ce type est similaire au type "Dossier", mais indique que le contenu
+  est destiné à être supprimé. Cependant, il n'offre aucune fonction de nettoyage.
+  Il a juste une indication visuelle.
 
-Backend User Section
-  Such a page will appear in the frontend only for a specific group
-  of backend users (which means you have to be logged into the
-  backend to see such pages).
+Section d'utilisateur Backend
+  Cette page apparaîtra dans le frontend seulement pour un groupe
+  spécifique d'utilisateurs backend (ce qui signifie que vous devez
+  être connecté au backend pour voir ces pages).

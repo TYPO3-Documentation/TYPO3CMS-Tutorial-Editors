@@ -3,15 +3,16 @@
 
 .. _next-steps:
 
-Next steps
-----------
+Prochaines étapes
+-----------------
 
-If you need more information on how to translate a web site, you should
-read the :ref:`Localization Guide <t3l10n:start>`. It contains
-information on how to set up a multi-language site and how to actually
-do the translation and localization.
+Si vous avez besoin de plus amples renseignements sur
+la façon de traduire un site Web, vous devriez lire le
+:ref:`Guide de localisation<t3l10n:start>`. Il contient
+les informations sur la façon de mettre en place un site
+multilingue et comment effectuer la traduction et la localisation.
 
-If your activities are not limited to editorial work,
-you may want to further learn about TYPO3 CMS by following
-the :ref:`TypoScript in 45 minutes Tutorial <t3ts45:start>`
-which is a preparation for the :ref:`Templating Tutorial <t3templating:start>`.
+Si vos activités ne sont pas limitées au travail éditorial,
+vous voudrez peut-être en apprendre davantage sur TYPO3 CMS
+en suivant le :ref:`tutoriel TypoScript en 45 minutes <t3ts45:start>`
+qui est une préparation pour le :ref:`tutoriel d'intégration <t3templating:start>`
