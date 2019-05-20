@@ -1,0 +1,9 @@
+{
+    "name": "typo3/tutorial-editors",
+    "type": "typo3-cms-documentation",
+    "description": "This tutorial explains how to add or change content on an existing website using TYPO3 CMS. It provides the most basic instructions step by step and illustrated with screenshots.",
+    "license": "OPL-1.0",
+    "require": {
+      "typo3/cms-core": "^7.6"
+    }
+}
