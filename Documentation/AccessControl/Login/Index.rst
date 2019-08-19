@@ -93,11 +93,9 @@ and restrict it to the "Private area" group.
    are okay for all groups to see.
 
 Notice how the page icon changes as soon as you save the new
-user rights. It it a visual reminder that this page is not
-public.
-
-Try accessing that new page. You will notice that you are
-redirected to the home page. Access restriction is in place.
+user rights. It's a visual reminder that this page is not
+public. If you try to access this page in the frontend,
+the TYPO3 error message "Page Not Found" will be shown.
 
 
 .. _frontend-login-form:
