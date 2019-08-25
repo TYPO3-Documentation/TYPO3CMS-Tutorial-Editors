@@ -28,7 +28,7 @@ TYPO3 Tutorial for Editors
 
 :Status:
       The information in this tutorial has not been fully revised and updated for
-      TYPO3 8.7 yet.
+      TYPO3 |release| yet.
 
 :License:
       Open Publication License available from `www.opencontent.org/openpub/
