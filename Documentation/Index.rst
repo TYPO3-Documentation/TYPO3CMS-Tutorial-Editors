@@ -7,11 +7,9 @@
 TYPO3 Tutorial for Editors
 ==========================
 
-:Previous Key:
-      doc_tut_editors
 
 :Version:
-      8 LTS
+      |release|
 
 :Language:
       en
@@ -19,27 +17,24 @@ TYPO3 Tutorial for Editors
 :Description:
       This tutorial explains how to add or change content on an existing website using TYPO3 CMS. It provides the most basic instructions step by step and illustrated with screenshots.
 
-:Keywords:
-      forEditors, forBeginners, tutorial
+:Audience:
+      editors, beginners
 
 :Copyright:
-      2000-2016
+      since 2004
 
 :Author:
-      Documentation Team
+      Documentation Team & community
 
-:Email:
-      documentation@typo3.org
+:Status:
+      The information in this tutorial has not been fully revised and updated for
+      TYPO3 8.7 yet.
 
 :License:
       Open Publication License available from `www.opencontent.org/openpub/
       <http://www.opencontent.org/openpub/>`_
 
-:Rendered:
-      |today|
-
 The content of this document is related to TYPO3,
-
 a GNU/GPL CMS/Framework available from `www.typo3.org
 <https://typo3.org/>`_
 
@@ -65,12 +60,8 @@ pitfalls and highlight key concepts that should be remembered for
 future reference.
 
 
-**Table of Contents**
-
 .. toctree::
-   :maxdepth: 5
-   :titlesonly:
-   :glob:
+   :hidden:
 
    Introduction/Index
    Login/Index
