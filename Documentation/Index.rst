@@ -11,7 +11,7 @@ TYPO3 Tutorial for Editors
       doc_tut_editors
 
 :Version:
-      8 LTS
+      |release|
 
 :Language:
       en
