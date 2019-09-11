@@ -64,6 +64,12 @@ cover. In addition, tutorials provide guidance on how to avoid common
 pitfalls and highlight key concepts that should be remembered for
 future reference.
 
+**Mainzific Rim - A Gamification Approach**
+
+Our partners at `SkillDisplay`_ created an gamification based tutorial at their
+platform. All resources, together with further information, are available at
+their `landingpage
+<https://www.skilldisplay.eu/en/intellectual-outputs/typo3-gamification/>`_.
 
 **Table of Contents**
 
@@ -80,3 +86,5 @@ future reference.
    Languages/Index
    NextSteps/Index
    Targets
+
+.. _SkillDisplay: https://www.skilldisplay.eu/
