@@ -7,7 +7,7 @@ Working with Pages
 
 You have already seen the page tree, this chapter shows how easily pages are
 created, moved around, hidden and deleted. Most can be achieved by
-dragging and droppping.
+dragging and dropping.
 
 .. _pages-drag-drop:
 
