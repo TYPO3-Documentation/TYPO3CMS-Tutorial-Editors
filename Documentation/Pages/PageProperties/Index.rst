@@ -107,50 +107,36 @@ different aspects of the page.
 
 .. figure:: ../../Images/PagePropertiesBehaviour.png
    :alt: The "Behaviour" tab of the page properties
+   :class: with-shadow
 
 
-The first part is related to linking. It defines if an alias can be
-used for linking to this page. This is not related to speaking URLs.
-If you define "foo" as an alias, the page can be called up using
-`http://www.mysite.com/index.php?id=foo`. A default target for calling
-this page can also be defined, as well as a specific protocol.
+Link Target:
+    This sets the default Link Target for menu items linking to
+    this page. Can also be used to open the page as a popup window.
 
-The caching part lets you define a specific cache duration for this
-page or disable the cache entirely for this page (something which you
-should avoid). All pages which have the same cache tag will have their
-cache deleted when the cache is flushed using that given tag.
-Note however that this is not used by TYPO3 CMS by default, but may be
-used by extensions.
+Caching:
+    The caching part lets you define a specific cache duration for this
+    page or assign cache tags to this page. All pages which have the same cache tag will have their
+    cache deleted when the cache is flushed using that given tag.
+    Note however that this is not used by TYPO3 CMS by default, but may be
+    used by extensions.
 
-The language part overrides the default behaviour of translations.
-This is covered in more depth in the
-:ref:`Frontend Localization Guide <t3l10n:start>`.
+Use a Root Page:
+    Indicates that this page is the start of a new web site.
+    The page icon is replaced by a world icon, as can be seen
+    for the "Congratulations" page.
 
-Next come a bunch of flags with various meanings:
-
-Use a Root Page
-  Indicates that this page is the start of a new web site.
-  The page icon is replaced by a world icon, as can be seen
-  for the "Congratulations" page.
-
-Include is Search
+Include is Search:
   By default every page will be included in the TYPO3 CMS built-in
   search engine (extension "indexed_search"). Use this flag to
   exclude the current page.
 
-Editable for Admins Only
-  This restricts edition of the page strictly to users with
-  admin rights, no matter what other permissions may have been set.
-
-Stop Page Tree
+Hide child pages in page tree:
   Influences only the backend. If enabled, this option excludes the 
   subtree from rendering. Very useful if you have alot of subpages.
 
-Finally the "Use a Container" property is just an indication
-of what the page may contain, but does not actually restrict
-the types of records that can be created. It will change the page
-icon and is just a visual help.
-
+Contains Plugin:
+  Define the page as containing a frontend plugin.
 
 .. _pages-properties-resources:
 
