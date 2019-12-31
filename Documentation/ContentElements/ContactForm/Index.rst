@@ -22,9 +22,7 @@ Give it a header and save it. Then move to the "Form" tab.
    :alt: Choosing the mail form content element type
 
 
-The text field contains the form configuration. This is written
-in TypoScript and is fully documented in the
-:ref:`"form" system extension manual <form:start>`.
+The text field contains the form configuration.
 This will seem daunting at first, but a wizard is provided for
 WYSIWYG creation of the form. Click on the icon at the top right
 of the configuration field.
@@ -83,6 +81,3 @@ modify the configuration field of your form like:
 The values given to the "senderEmailField", "senderEmailName" and
 "subjectField" properties should correspond to the names you
 gave to the fields in your form.
-
-There are many more properties which can be defined. They are
-described in the :ref:`"form" system extension manual <form:start>`.
