@@ -14,4 +14,4 @@ the page title) and numbers (which can also be matched to
 the id of a given page).
 
 .. figure:: ../../Images/PageTreeFilter.png
-:alt: Filtering pages in the page tree
+    :alt: Filtering pages in the page tree
