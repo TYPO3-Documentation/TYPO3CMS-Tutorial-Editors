@@ -4,6 +4,6 @@
     "description": "This tutorial explains how to add or change content on an existing website using TYPO3 CMS. It provides the most basic instructions step by step and illustrated with screenshots.",
     "license": "OPL-1.0",
     "require": {
-      "typo3/cms-core": "^10"
+      "typo3/cms-core": "^11.0"
     }
 }
