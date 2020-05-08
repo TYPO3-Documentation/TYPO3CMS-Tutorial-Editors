@@ -14,7 +14,7 @@ and "Languages". The "Languages" mode will be discussed later when talking
 about translations.
 
 For now we want to be in "Columns" mode. If that is not the case when
-you move to the *Page* module, please use the menu in the docheader to
+you move to the *Page* module, please use the menu in the doc header to
 switch mode.
 
 .. figure:: ../../Images/PageModuleFunctions.png

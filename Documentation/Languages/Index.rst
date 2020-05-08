@@ -15,7 +15,7 @@ in multiple languages.
 Defining a new language
 ^^^^^^^^^^^^^^^^^^^^^^^
 
-The default language is never explicitely defined. It will be
+The default language is never explicitly defined. It will be
 whatever you choose it to be. Additional languages are first
 created in the backend and can then be used to translate pages
 and content elements.
@@ -49,7 +49,7 @@ Working with translations
 ^^^^^^^^^^^^^^^^^^^^^^^^^
 
 Move to the **WEB > Pages** module and to the "Congratulations"
-home page. Using the menu in the docheader, switch to the
+home page. Using the menu in the doc header, switch to the
 "Languages" view.
 
 .. figure:: ../Images/LanguagesPageLanguages.png
@@ -118,7 +118,7 @@ language.
 The *Page* module may now seem cluttered, with one column per existing
 translation. It is possible to view a single language at a time
 and with the original layout, by switching back to the "Columns"
-mode and choosing a specific language in the docheader.
+mode and choosing a specific language in the doc header.
 
 .. figure:: ../Images/LanguagesColumnModeWithTranslation.png
    :alt: The "Column" mode displaying a translation

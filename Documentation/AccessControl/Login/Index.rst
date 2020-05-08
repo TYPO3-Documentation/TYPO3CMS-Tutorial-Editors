@@ -40,7 +40,7 @@ and name it "Web site users".
 
 Switch to **WEB > List** view and select your new folder.
 Click on the "Create new record" icon at the left of the
-docheader. The new record wizard appears.
+doc header. The new record wizard appears.
 
 .. figure:: ../../Images/AccessNewRecordWizard.png
    :alt: Selecting what type of record to create with the new record wizard

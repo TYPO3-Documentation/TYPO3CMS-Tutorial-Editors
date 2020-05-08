@@ -33,7 +33,7 @@ of the configuration field.
    :alt: The form creation wizard
 
 
-Simply start dragging and droppping form elements from the
+Simply start dragging and dropping form elements from the
 left panel to the right panel.
 
 .. figure:: ../../Images/EditContentFormWizardElements.png
@@ -52,7 +52,7 @@ rule for that field) and a text area for the message.
 Don't forget to add a submit button!
 
 When you're done, click on the "Save and close form" button
-in the docheader.
+in the doc header.
 
 .. figure:: ../../Images/EditContentSaveForm.png
    :alt: Saving the form configuration
