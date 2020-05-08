@@ -40,7 +40,34 @@ Click on the "New record" icon and define your new language.
 
 
 Give your new language a title, relate it to an official language
-and choose a flag for it. Save and close, you're done.
+and choose a flag for it. Save and close.
+
+
+.. _languages-site-configuration:
+
+Making the language available
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Move to the **Sites** module, select the configuration of your site
+and switch to the "Languages" tab. Choose the new language and
+configure it. Save and close, you're done.
+
+.. figure:: ../Images/LanguagesConfiguredForSite.png
+   :alt: List of languages configured
+
+
+.. figure:: ../Images/LanguagesSiteAddLanguage.png
+   :alt: Select language for configuration
+
+
+.. figure:: ../Images/LanguagesSiteConfigureLanguage.png
+   :alt: Configure language for site
+
+
+.. tip::
+
+   Further details about the language management in the **Sites** module are
+   found in the :ref:`TYPO3 Core Api <t3coreapi:sitehandling-addingLanguages>`.
 
 
 .. _languages-translations:
