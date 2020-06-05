@@ -47,7 +47,7 @@ some property.
 
 Try adding some more fields, until you are happy. For a standard
 contact form, you may want to add an input field for the topic,
-another field fon entering an email (try setting a validation
+another field for entering an email (try setting a validation
 rule for that field) and a text area for the message.
 Don't forget to add a submit button!
 
