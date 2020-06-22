@@ -102,26 +102,7 @@ is :ref:`described in more details later <rte>`.
 
 We will not look at the other fields in detail just yet.
 For now please enter some text in both the "Header" and "Text"
-fields and save your work.
-
-.. figure:: ../../Images/SaveRecordMenu.png
-   :alt: The various options when saving
-
-
-Next to the "Save" icon is a dropdown menu which lets you choose
-combined actions:
-
-- "Save and view page" will both save your work and open the
-  current page in the frontend.
-
-- "Save and create a new one" will save your work and open a new
-  empty input form.
-
-- "Save and close" will save your work and return you to wherever
-  you were previously. In our case, the *Page* module.
-
-Choose "Save and close" (or just hit the "Close" icon next to the
-"Save" button if you have already saved), so that we get back to
+fields, save your work and hit the "Close" icon, so that we get back to
 the *Page* module. You should be able to see your new content:
 
 .. figure:: ../../Images/NewContentElementSaved.png
