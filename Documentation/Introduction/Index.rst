@@ -72,6 +72,13 @@ To support the translation to other languages see
 
 Maintaining high quality documentation requires time and effort
 and the TYPO3 Documentation Team always appreciates support.
-If you want to support us, please join the documentation
-mailing list/forum (http://forum.typo3.org/index.php/f/44/).
+If you want to support us, please contact us as described in
+the next section.
 
+.. _contact-doc-team:
+
+Contact the Documentation Team
+==============================
+
+For general questions about the documentation get in touch with
+the `Documentation Team <https://typo3.org/community/teams/documentation>`__.
