@@ -81,4 +81,4 @@ Contact the Documentation Team
 ==============================
 
 For general questions about the documentation get in touch with
-the `Documentation Team <https://typo3.org/community/teams/documentation/#c9886>`__.
+the `Documentation Team <https://typo3.org/community/teams/documentation>`__.
