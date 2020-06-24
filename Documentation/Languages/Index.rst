@@ -15,7 +15,7 @@ in multiple languages.
 Defining a new language
 ^^^^^^^^^^^^^^^^^^^^^^^
 
-The default language is never explicitely defined. It will be
+The default language is never explicitly defined. It will be
 whatever you choose it to be. Additional languages are first
 created in the backend and can then be used to translate pages
 and content elements.

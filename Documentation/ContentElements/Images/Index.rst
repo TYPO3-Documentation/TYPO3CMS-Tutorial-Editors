@@ -82,7 +82,7 @@ In "Image Adjustments" you can choose to apply a border or a
 special effect to the images. You can also choose a specific
 quality for these images.
 
-In "Image Alignement" you can choose where the images should
+In "Image Alignment" you can choose where the images should
 be positioned with regards to the text. Images are automatically
 arranged in columns, two by two. You can change this behaviour
 with the "Number of Columns" field.
