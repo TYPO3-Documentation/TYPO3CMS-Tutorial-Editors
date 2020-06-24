@@ -139,13 +139,9 @@ Include is Search
   search engine (extension "indexed_search"). Use this flag to
   exclude the current page.
 
-Editable for Admins Only
-  This restricts edition of the page strictly to users with
-  admin rights, no matter what other permissions may have been set.
-
-Stop Page Tree
-  Influences only the backend. If enabled, this option excludes the 
-  subtree from rendering. Very useful if you have alot of subpages.
+Hide child pages in page tree:
+  Influences only the backend. If enabled, this option excludes the
+  subtree from rendering. Very useful if you have a lot of subpages.
 
 Finally the "Use a Container" property is just an indication
 of what the page may contain, but does not actually restrict

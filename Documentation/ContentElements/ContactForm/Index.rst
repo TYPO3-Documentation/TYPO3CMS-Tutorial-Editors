@@ -34,7 +34,7 @@ of the configuration field.
    :alt: The form creation wizard
 
 
-Simply start dragging and droppping form elements from the
+Simply start dragging and dropping form elements from the
 left panel to the right panel.
 
 .. figure:: ../../Images/EditContentFormWizardElements.png
