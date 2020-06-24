@@ -133,8 +133,8 @@ Include is Search:
   exclude the current page.
 
 Hide child pages in page tree:
-  Influences only the backend. If enabled, this option excludes the 
-  subtree from rendering. Very useful if you have alot of subpages.
+  Influences only the backend. If enabled, this option excludes the
+  subtree from rendering. Very useful if you have a lot of subpages.
 
 Contains Plugin:
   Define the page as containing a frontend plugin.
