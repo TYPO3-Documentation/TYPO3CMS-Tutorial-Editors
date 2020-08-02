@@ -3,8 +3,9 @@
 
 .. _next-steps:
 
+==========
 Next steps
-----------
+==========
 
 If you need more information on how to translate a web site, you should
 read the :ref:`Localization Guide <t3l10n:start>`. It contains

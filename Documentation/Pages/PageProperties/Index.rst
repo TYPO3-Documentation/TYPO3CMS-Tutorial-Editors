@@ -3,8 +3,9 @@
 
 .. _pages-properties:
 
+===============
 Page Properties
-^^^^^^^^^^^^^^^
+===============
 
 Pages in TYPO3 CMS have many properties. So far we have seen the
 title (which is quite obvious), the "Visibility > Page > Disable"
@@ -16,7 +17,7 @@ appear in any navigation element.
 .. _pages-properties-titles:
 
 Titles, navigation and URLs
-"""""""""""""""""""""""""""
+===========================
 
 First off it is interesting to note how page titles, URLs
 and navigation elements are related.
@@ -59,7 +60,7 @@ are discussed elsewhere and move on to the other tabs.
 .. _pages-properties-metadata:
 
 Metadata
-""""""""
+========
 
 A lot of metadata can be entered in the *Metadata* tab. It is all
 very standard but it is worth mentioning that the actual usage of
@@ -77,7 +78,7 @@ and flexible.
 .. _pages-properties-appearance:
 
 Appearance
-""""""""""
+==========
 
 As can be expected the *Appearance* tab contains properties that will
 influence how the page is rendered in the frontend.
@@ -100,7 +101,7 @@ to use than :ref:`mount points <pages-types>`.
 .. _pages-properties-behaviour:
 
 Behaviour
-"""""""""
+=========
 
 The *Behaviour* tab has a rich set of options and influences very
 different aspects of the page.
@@ -141,7 +142,7 @@ Contains Plugin:
 .. _pages-properties-resources:
 
 Resources
-"""""""""
+=========
 
 The *Resources* tab first and foremost makes it possible to link
 media files to the current page. What is done with those links
@@ -161,7 +162,7 @@ parts of the backend.
 .. _pages-properties-categories:
 
 Categories
-""""""""""
+==========
 
 TYPO3 CMS provides a system-wide categorisation tool. By default
 categories can be applied to pages, content elements, and files.

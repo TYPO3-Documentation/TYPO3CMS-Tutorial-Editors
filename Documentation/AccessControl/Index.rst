@@ -3,8 +3,9 @@
 
 .. _access-control:
 
+==============
 Access Control
---------------
+==============
 
 There are many ways to restrict access to pages, content elements
 and other information from your TYPO3 CMS installation. This can

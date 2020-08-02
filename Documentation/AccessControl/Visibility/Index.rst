@@ -3,8 +3,9 @@
 
 .. _visibility:
 
+===================
 Elements visibility
-^^^^^^^^^^^^^^^^^^^
+===================
 
 The foremost option which acts on an element's visibility is the
 "Hidden" check box, which we already saw before. A hidden element,
@@ -23,7 +24,7 @@ named "Access".
 .. _visibility-dates:
 
 Publication dates
-"""""""""""""""""
+=================
 
 A finer control can be exerted with publication start and end
 dates. Any page or content element with a defined "Publish date"

@@ -3,8 +3,9 @@
 
 .. _pages-types:
 
+==========
 Page types
-^^^^^^^^^^
+==========
 
 TYPO3 CMS offers many useful page types by default. They are
 shortly described in this chapter.

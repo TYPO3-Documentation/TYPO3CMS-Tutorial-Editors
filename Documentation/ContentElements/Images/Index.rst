@@ -3,8 +3,9 @@
 
 .. _images:
 
+===================
 Working with Images
-^^^^^^^^^^^^^^^^^^^
+===================
 
 Since we are working with a "Text & Images" content element,
 let's add images to it!
@@ -70,7 +71,7 @@ will be linked to the original file in a lightbox display.
 .. _images-appearance:
 
 Image appearance
-""""""""""""""""
+================
 
 Moving the "Appearance" tab of the content element, you can set further
 behaviors of the images attached to the content element.
@@ -91,7 +92,7 @@ with the "Number of Columns" field.
 .. _images-new:
 
 New images
-""""""""""
+==========
 
 New images can be added using upload buttons found in the
 image selector window or by using the **FILE > Filelist**
