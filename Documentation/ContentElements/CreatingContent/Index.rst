@@ -3,8 +3,9 @@
 
 .. _content-creating:
 
+================
 Creating Content
-^^^^^^^^^^^^^^^^
+================
 
 Click any of the "Add content" icons. You will then be presented
 with a wizard for choosing the type of content element that you
@@ -24,12 +25,12 @@ itself already provides mostly self-explanatory descriptions.
 .. _content-types:
 
 Types of content elements
-"""""""""""""""""""""""""
+=========================
 
 .. _content-typical:
 
 Typical Page Content
-~~~~~~~~~~~~~~~~~~~~
+--------------------
 
 .. figure:: ../../Images/NewContentWizardTabTypical.png
    :alt: The Typical Page Content tab of the new content element wizard
@@ -38,7 +39,7 @@ Typical Page Content
 .. _content-form:
 
 Form Elements
-~~~~~~~~~~~~~
+-------------
 
 .. figure:: ../../Images/NewContentWizardTabForm.png
    :alt: The Form Elements tab of the new content element wizard
@@ -47,7 +48,7 @@ Form Elements
 .. _content-menu:
 
 Menu Elements
-~~~~~~~~~~~~~
+-------------
 
 .. figure:: ../../Images/NewContentWizardTabMenu.png
    :alt: The Menu Elements tab of the new content element wizard
@@ -56,7 +57,7 @@ Menu Elements
 .. _content-plugin:
 
 Plugins
-~~~~~~~
+-------
 
 .. figure:: ../../Images/NewContentWizardTabPlugins.png
    :alt: The Plugins tab of the new content element wizard
@@ -70,7 +71,7 @@ configuration.
 .. _content-special:
 
 Special Elements
-~~~~~~~~~~~~~~~~
+----------------
 
 .. figure:: ../../Images/NewContentWizardTabSpecial.png
    :alt: The Special Elements tab of the new content element wizard
@@ -84,7 +85,7 @@ an other page without duplicating it.
 .. _content-new-element:
 
 Creating a new content element
-""""""""""""""""""""""""""""""
+==============================
 
 Go back to the "Typical Page Content" and choose "Text & Media",
 which is probably the most used content type. You should see the
