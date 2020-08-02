@@ -3,8 +3,9 @@
 
 .. _content-editing:
 
+===============
 Editing Content
-^^^^^^^^^^^^^^^
+===============
 
 Editing is basically the same as creating new content, except
 that your input form is already filled with the existing data.

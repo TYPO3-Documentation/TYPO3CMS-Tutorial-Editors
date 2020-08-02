@@ -3,14 +3,15 @@
 
 .. _introduction:
 
+============
 Introduction
-------------
+============
 
 
 .. _about:
 
 About this document
-^^^^^^^^^^^^^^^^^^^
+===================
 
 This is a short tutorial for editors. It explains how to create
 pages and content elements. It also details the various types
@@ -34,7 +35,7 @@ the separation of frontend and backend.
 .. _new:
 
 What's new
-^^^^^^^^^^
+==========
 
 This manual is illustrated with screenshots from the Introduction Package
 using TYPO3 CMS 8 LTS.
@@ -43,7 +44,7 @@ using TYPO3 CMS 8 LTS.
 .. _credits:
 
 Credits
-^^^^^^^
+=======
 
 This extension is based on a tutorial extension originally written by
 Marlies Cohen and a summary / excerpt in the wiki by Eikaa. Susanne
@@ -55,7 +56,7 @@ It was updated for TYPO3 CMS 7 LTS by François Suter.
 .. _feedback:
 
 Feedback
-^^^^^^^^
+========
 
 For general questions about the documentation get in touch by writing
 to `documentation@typo3.org <mailto:documentation@typo3.org>`_ .

@@ -3,8 +3,9 @@
 
 .. _rte:
 
+====================
 The Rich Text Editor
-^^^^^^^^^^^^^^^^^^^^
+====================
 
 The editor will certainly feel familiar as it is not much
 different from a word processor. The options available in the

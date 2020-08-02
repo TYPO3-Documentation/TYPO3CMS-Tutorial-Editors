@@ -3,8 +3,9 @@
 
 .. _pages-creating:
 
+==============
 Creating Pages
-^^^^^^^^^^^^^^
+==============
 
 There are two main ways to add a new page to your site.
 
@@ -15,7 +16,7 @@ so that you see the page tree.
 .. _pages-creating-tree:
 
 Adding pages within the page tree
-"""""""""""""""""""""""""""""""""
+=================================
 
 As we saw before, you can create a new page by dragging and
 dropping a page type from the top of the page tree.
@@ -43,7 +44,7 @@ the page properties.
 .. _pages-creating-context:
 
 Adding pages with the context menu
-""""""""""""""""""""""""""""""""""
+==================================
 
 Click on the icon of any existing page and choose
 "Page Actions > New" from the context menu.
