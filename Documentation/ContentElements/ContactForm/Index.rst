@@ -3,8 +3,9 @@
 
 .. _mail-form:
 
+=======================
 Creating a contact form
-^^^^^^^^^^^^^^^^^^^^^^^
+=======================
 
 Setting up a contact form is slightly more complicated than other types
 of content elements and requires additional information.
