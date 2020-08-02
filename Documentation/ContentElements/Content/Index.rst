@@ -57,10 +57,10 @@ You can click anywhere on the highlighted area of a content element to edit it.
 Moving content elements
 =======================
 
-Content elements can be moved around simply using drap and drop.
+Content elements can be moved around simply using drag and drop.
 
 .. figure:: ../../Images/PageModuleMoveElements.png
-   :alt: Moving content elements around using drap and drop
+   :alt: Moving content elements around using drag and drop
 
 
 Click in the grey bar at the top of a content element to start

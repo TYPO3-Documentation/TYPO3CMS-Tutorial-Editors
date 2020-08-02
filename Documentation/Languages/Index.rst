@@ -16,33 +16,21 @@ in multiple languages.
 Defining a new language
 =======================
 
-The default language is never explicitely defined. It will be
-whatever you choose it to be. Additional languages are first
-created in the backend and can then be used to translate pages
-and content elements.
+Languages are defined in the site configuration on a per-rootpage
+basis. When creating a new page on root level via TYPO3 Backend,
+a very basic site configuration is generated on the fly.
+It prevents immediate errors due to missing configuration and can
+also serve as a starting point for all further actions.
 
-The Introduction Package's default language is English and the
-Danish and German languages are already defined. Adding a new language
-is as easy as creating a new record for that, but it can strictly be
-done only on the root page.
+The Introduction Package's default languages are English, Danish
+and German languages. Adding a new language is done in the
+"Sites" module, which is restricted to admin users.
 
-Use the **WEB > List** view and place yourself on the
-"New TYPO3 Site" page. Scroll down a bit, until you see
-the list of "Website Languages".
+.. tip::
 
-.. figure:: ../Images/LanguagesListExisting.png
-   :alt: List of existing web site languages
-
-
-Click on the "New record" icon and define your new language.
-
-.. figure:: ../Images/LanguagesNewLanguage.png
-   :alt: Setting up a new language
-
-
-Give your new language a title, relate it to an official language
-and choose a flag for it. Save and close, you're done.
-
+   Detailed information on how to extend the site configuration
+   with additional languages can be found in the
+   :ref:`Site Handling Documentation <coreapi:sitehandling-basics>`.
 
 .. _languages-translations:
 
