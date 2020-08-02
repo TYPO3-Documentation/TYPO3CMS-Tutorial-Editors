@@ -3,8 +3,9 @@
 
 .. _languages:
 
+======================
 Working with languages
-----------------------
+======================
 
 TYPO3 CMS comes with the built-in ability to handle web sites
 in multiple languages.
@@ -13,7 +14,7 @@ in multiple languages.
 .. _languages-new:
 
 Defining a new language
-^^^^^^^^^^^^^^^^^^^^^^^
+=======================
 
 The default language is never explicitely defined. It will be
 whatever you choose it to be. Additional languages are first
@@ -46,7 +47,7 @@ and choose a flag for it. Save and close, you're done.
 .. _languages-translations:
 
 Working with translations
-^^^^^^^^^^^^^^^^^^^^^^^^^
+=========================
 
 Move to the **WEB > Pages** module and to the "Congratulations"
 home page. Using the menu in the docheader, switch to the

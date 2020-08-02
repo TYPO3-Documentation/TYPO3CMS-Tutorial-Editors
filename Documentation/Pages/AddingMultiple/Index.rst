@@ -3,8 +3,9 @@
 
 .. _pages-multiple:
 
+=============================
 Adding Multiple Pages at Once
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+=============================
 
 You can create more than one page at a time by using the
 **WEB > Functions** module.

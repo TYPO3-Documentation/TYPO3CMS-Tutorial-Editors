@@ -3,8 +3,9 @@
 
 .. _pages:
 
+=====
 Pages
------
+=====
 
 
 .. toctree::

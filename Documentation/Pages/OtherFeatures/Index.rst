@@ -3,8 +3,9 @@
 
 .. _pages-other-features:
 
+==============
 Other features
-^^^^^^^^^^^^^^
+==============
 
 Let us conclude this overview of working with pages
 by mentioning a useful feature. At the top of the page tree

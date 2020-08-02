@@ -3,8 +3,9 @@
 
 .. _login:
 
+=====
 Login
------
+=====
 
 In TYPO3 CMS an editor's work is done in the backend. So point your browser
 to your domain name and append "/typo3" to get to the log in screen.
@@ -26,7 +27,7 @@ Log in and we're ready to go!
 .. _help-inside:
 
 Help within TYPO3 CMS
-^^^^^^^^^^^^^^^^^^^^^
+=====================
 
 Before we dive further into using TYPO3 CMS it is useful to remember
 that quite some help is available straight inside the backend:

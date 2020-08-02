@@ -3,8 +3,9 @@
 
 .. _frontend-login:
 
+==============
 Frontend login
-^^^^^^^^^^^^^^
+==============
 
 Going further it is actually possible to require proper
 authentication to access parts of the information contained
@@ -14,7 +15,7 @@ in your web site.
 .. _frontend-login-users:
 
 Frontend users
-""""""""""""""
+==============
 
 As with the rest of TYPO3 CMS, users are also separated
 into frontend and backend users. Backend users are used to
@@ -71,7 +72,7 @@ needed. You can save the record and close it.
 .. _frontend-login-rights:
 
 Access rights
-"""""""""""""
+=============
 
 Now that we have at least one group, we can start assigning
 access restrictions. Let's create a new page called "Members only"
@@ -101,7 +102,7 @@ the TYPO3 error message "Page Not Found" will be shown.
 .. _frontend-login-form:
 
 Login box
-"""""""""
+=========
 
 The next step is to place a login box somewhere so that
 visitors can authenticate and view the restricted information.

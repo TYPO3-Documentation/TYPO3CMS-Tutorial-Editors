@@ -3,8 +3,9 @@
 
 .. _content-working:
 
+====================
 Working with content
-^^^^^^^^^^^^^^^^^^^^
+====================
 
 Working with content happens essentially in the **WEB > Page** module.
 We will start by taking a tour of the module, which is quite rich.
@@ -54,7 +55,7 @@ You can click anywhere on the highlighted area of a content element to edit it.
 .. _content-working-moving:
 
 Moving content elements
-^^^^^^^^^^^^^^^^^^^^^^^
+=======================
 
 Content elements can be moved around simply using drap and drop.
 
