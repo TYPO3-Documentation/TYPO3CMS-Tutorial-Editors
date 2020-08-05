@@ -46,3 +46,11 @@ manage the visibility of your new pages.
 
 Once you are done click the  **Create pages** button.
 
+.. tip::
+
+   The two backend modules “Sort pages” and “Create multiple pages” 
+   in the Web -> Functions main module have been moved. 
+   They are now reachable as context menu   entries in the “more” 
+   section on all page records, for instance by clicking a page icon 
+   in the page tree or the list module.
+
