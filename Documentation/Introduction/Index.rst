@@ -26,20 +26,18 @@ concepts: visibility, publication time and password-protected pages.
 The tutorial provides the most basic instructions step-by-step.
 It does not cover all available functions, but the most common ones.
 
-It is assumed that you have been through the
+It is assumed that you have read the following pages of the
 :ref:`Getting Started Tutorial <t3start:start>` and are thus
 familiar with the general concepts of TYPO3 CMS, in particular
-the separation of frontend and backend.
+the separation of frontend and backend:
 
+* :ref:`t3start:backend-and-frontend`
+* :ref:`t3start:general-backend-structure`
+* :ref:`t3start:page-tree`
+* :ref:`t3start:page-content`
 
-.. _new:
-
-What's new
-==========
-
-This manual is illustrated with screenshots from the Introduction Package
-using TYPO3 CMS 8 LTS.
-
+The examples assume that you are working with a TYPO3 installation based
+on the "Introduction Package".
 
 .. _credits:
 
