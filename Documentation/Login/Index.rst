@@ -33,17 +33,26 @@ Before we dive further into using TYPO3 CMS it is useful to remember
 that quite some help is available straight inside the backend:
 
 - A very short description of buttons or functions appears if you hover
-  with your mouse pointer over it.
+  with your mouse pointer over it (tooltip).
 
-- When editing a record, hover over its label. If your cursor changes into
+.. figure:: ../Images/Tooltip.png
+   :alt: Tooltip
+
+   See the Tooltip help for the Forms module
+
+- When editing a record, hover over the label of a field. If your cursor changes into
   a question mark, you can click on the label to get a help pop-up.
 
-- You will often see the following a **question mark icon** next to an element. Hovering over
+- You will often see a **question mark icon** next to an element. Clicking on
   it will pop up a little help window about the item or function it is next to:
 
 .. figure:: ../Images/BackendHelp.png
    :alt: Various help features in the TYPO3 CMS backend
 
 - For a more extensive description use the **TYPO3 Manual** module in the
-  help section.
+  help section. Click on the question mark in the top bar.
 
+.. figure:: ../Images/Typo3Manual.png
+   :alt: Various help features in the TYPO3 CMS backend
+
+   Accessing the **TYPO3 Manual**
