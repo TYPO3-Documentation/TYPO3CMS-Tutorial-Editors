@@ -7,16 +7,20 @@
 Adding Multiple Pages at Once
 =============================
 
-You can create more than one page at a time by using the
-**WEB > Functions** module.
+.. versionchanged:: 9.0
+
+   This functionality used to be in the **WEB > Functions** module.
+
+You can create more than one page at a time.
 
 Place yourself on the page which should be the parent
 of the new pages.
 
-Select the **Create multiple page** wizard.
+Select :guilabel:`More options > Create multiple pages` in the
+context menu.
 
-.. figure:: ../../Images/FunctionsCreateWizardTop.png
-   :alt: Creating multiple pages at once with the Functions wizard
+.. figure:: ../../Images/MultiplePagesContextMenu.png
+   :alt: Select "Create multiple pages" in the context menu.
 
 
 For each page you can define its title and choose its type.
@@ -46,11 +50,4 @@ manage the visibility of your new pages.
 
 Once you are done click the  **Create pages** button.
 
-.. tip::
-
-   The two backend modules “Sort pages” and “Create multiple pages” 
-   in the Web -> Functions main module have been moved. 
-   They are now reachable as context menu   entries in the “more” 
-   section on all page records, for instance by clicking a page icon 
-   in the page tree or the list module.
 
