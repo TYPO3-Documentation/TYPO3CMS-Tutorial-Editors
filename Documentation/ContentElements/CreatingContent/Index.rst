@@ -27,6 +27,12 @@ itself already provides mostly self-explanatory descriptions.
 Types of content elements
 =========================
 
+If you are working with the *Introduction Package*, you will see
+more content elements as described here, because the *Introduction
+Package* comes with several content elements of its own.
+
+But, on this page we only show the TYPO3 core content elements.
+
 .. _content-typical:
 
 Typical Page Content
@@ -34,7 +40,6 @@ Typical Page Content
 
 .. figure:: ../../Images/NewContentWizardTabTypical.png
    :alt: The Typical Page Content tab of the new content element wizard
-
 
 .. _content-form:
 
