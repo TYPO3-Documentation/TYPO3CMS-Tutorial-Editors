@@ -29,7 +29,8 @@ Types of content elements
 
 If you are working with the *Introduction Package*, you will see
 more content elements than described here, because the *Introduction
-Package* comes with several content elements of its own.
+Package* (or rather the *Bootstrap Package*) comes with several
+content elements of its own.
 
 But, on this page we only show the TYPO3 core content elements.
 
