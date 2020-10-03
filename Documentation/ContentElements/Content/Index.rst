@@ -36,8 +36,7 @@ Some icons don't appear at all until your hover over specific areas.
 
 What can be seen in this view?
 
-#. This icon only appears when you hover over the column title.
-   It is used to edit all content elements of that column.
+#. This icon is used to edit all content elements of that column.
 
 #. Adds a new content element to this column at precisely that position.
 
@@ -49,7 +48,7 @@ What can be seen in this view?
    They are used to edit this content element, enable/disable it
    or delete it respectively.
 
-You can click anywhere on the highlighted area of a content element to edit it.
+You can click on the pencil icon of a content element to edit it (4).
 
 
 .. _content-working-moving:
