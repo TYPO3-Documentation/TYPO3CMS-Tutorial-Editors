@@ -16,7 +16,7 @@ TYPO3 Tutorial for Editors
 
 Helpful during overhaul
 
-:Rendered:     |today|
+:Rendered:     |today| (UTC server time)
 :warnings.txt: `./_buildinfo/warnings.txt <./_buildinfo/warnings.txt>`__
 :Buildinfo:    `./_buildinfo <./_buildinfo>`__
 :Branch:       documentation-draft (**=DRAFT**)
@@ -26,7 +26,7 @@ Helpful during overhaul
 
 
 
-Labels and tags
+Older labels and tags (from the original OpenOffice documents)
 
 :Previous Key: doc_tut_editors
 :Version:      |release|
