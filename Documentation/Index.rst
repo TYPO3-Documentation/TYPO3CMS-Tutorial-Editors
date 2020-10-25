@@ -1,68 +1,68 @@
-.. include:: Includes.rst.txt
-
-
+.. include:: /Includes.rst.txt
 .. _start:
 
 ==========================
 TYPO3 Tutorial for Editors
 ==========================
 
-:Previous Key:
-      doc_tut_editors
+.. Editors:
+   Do not create further headlines in a page that has a `.. toctree::`
+   directive like this file.
 
-:Version:
-      |release|
+.. warning::
 
-:Language:
-      en
+   This is version **DRAFT**. This means ...
 
-:Description:
-      This tutorial explains how to add or change content on an existing website using TYPO3 CMS. It provides the most basic instructions step by step and illustrated with screenshots.
 
-:Keywords:
-      forEditors, forBeginners, tutorial
+Helpful during overhaul
 
-:Copyright:
-      2000-2016
+:Rendered:     |today|
+:warnings.txt: `./_buildinfo <./_buildinfo/warnings.txt>`__
+:Buildinfo:    `./_buildinfo <./_buildinfo>`__
+:Branch:       documentation-draft
+:Repository:   `github.com/TYPO3-Documentation/TYPO3CMS-Tutorial-Editors
+    <https://github.com/TYPO3-Documentation/TYPO3CMS-Tutorial-Editors/tree/documentation-draft>`__
 
-:Author:
-      Documentation Team
 
-:Email:
-      documentation@typo3.org
 
-:License:
-      Open Publication License available from `www.opencontent.org/openpub/
-      <http://www.opencontent.org/openpub/>`_
+Labels and tags
 
-:Rendered:
-      |today|
+:Previous Key: doc_tut_editors
+:Version:      |release|
+:Language:     en
+:Description: This tutorial explains how to add or change content on an
+   existing website using TYPO3 CMS. It provides the most basic instructions
+   step by step and illustrated with screenshots.
+:Keywords:     forEditors, forBeginners, tutorial
+:Copyright:    2000-2016
+:Author:       Documentation Team
+:Email:        documentation@typo3.org
+:License:      Open Publication License available from
+               https://www.opencontent.org/openpub/
+:Rendered:     |today|
 
-The content of this document is related to TYPO3,
-
-a GNU/GPL CMS/Framework available from `www.typo3.org
-<https://typo3.org/>`_
+The content of this document is related to TYPO3, a GNU/GPL CMS/Framework
+available from https://typo3.org/.
 
 
 **Official documentation**
 
-This document is included as part of the official TYPO3 documentation.
-It has been approved by the TYPO3 Documentation Team following a peer-
-review process. The reader should expect the information in this
-document to be accurate - please report discrepancies to the
-Documentation Team (documentation@typo3.org). Official documents are
-kept up-to-date to the best of the Documentation Team's abilities.
+This document is included as part of the official TYPO3 documentation. It has
+been approved by the TYPO3 Documentation Team following a peer- review process.
+The reader should expect the information in this document to be accurate -
+please report discrepancies to the Documentation Team
+(documentation@typo3.org). Official documents are kept up-to-date to the best
+of the Documentation Team's abilities.
 
 
 **Tutorial**
 
 This document is a tutorial. Tutorials are designed to be step-by-step
-instructions specifically created to walk a beginner through a
-particular task from beginning to end. To facilitate effective
-learning, tutorials provide examples to illustrate the subjects they
-cover. In addition, tutorials provide guidance on how to avoid common
-pitfalls and highlight key concepts that should be remembered for
-future reference.
+instructions specifically created to walk a beginner through a particular task
+from beginning to end. To facilitate effective learning, tutorials provide
+examples to illustrate the subjects they cover. In addition, tutorials provide
+guidance on how to avoid common pitfalls and highlight key concepts that should
+be remembered for future reference.
 
 **Mainzific Rim - A Gamification Approach**
 
@@ -74,9 +74,7 @@ their `landingpage
 **Table of Contents**
 
 .. toctree::
-   :maxdepth: 5
    :titlesonly:
-   :glob:
 
    Introduction/Index
    Login/Index
