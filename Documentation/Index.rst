@@ -17,11 +17,12 @@ TYPO3 Tutorial for Editors
 Helpful during overhaul
 
 :Rendered:     |today|
-:warnings.txt: `./_buildinfo <./_buildinfo/warnings.txt>`__
+:warnings.txt: `./_buildinfo/warnings.txt <./_buildinfo/warnings.txt>`__
 :Buildinfo:    `./_buildinfo <./_buildinfo>`__
-:Branch:       documentation-draft
+:Branch:       documentation-draft (**=DRAFT**)
 :Repository:   `github.com/TYPO3-Documentation/TYPO3CMS-Tutorial-Editors
     <https://github.com/TYPO3-Documentation/TYPO3CMS-Tutorial-Editors/tree/documentation-draft>`__
+    (**=DRAFT**)
 
 
 
