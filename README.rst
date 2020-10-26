@@ -3,6 +3,7 @@
 `Help & Support <https://typo3.org/help>`__ \|
 `Settings <Documentation/Settings.cfg>`__ \|
 `buildinfo <https://docs.typo3.org/m/typo3/tutorial-editors/draft/en-us/_buildinfo/>`__ \|
+`warnings.txt <https://docs.typo3.org/m/typo3/tutorial-editors/draft/en-us/_buildinfo/warnings.txt>`__ \|
 
 
 ==========================
