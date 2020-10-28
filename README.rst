@@ -21,7 +21,6 @@ This tutorial explains how to add or change content on an existing website using
 
 ** OVERHAUL in progress!**
 
-*  Please don't push to this branch unless your name is ...
-*  ((editors and reviewers: specify your regulations here!))
-*  ...
+*  Please don't push to this branch unless your name is flicstar
+I am working on the Editors Tutorial page by page. My plan is in a Google Sheet: https://docs.google.com/spreadsheets/d/1FQjzWSSqP6BL4BsSa3_TpjBQUzB0ZxRbvjnuUZ9CfKk/edit#gid=485539181
 
