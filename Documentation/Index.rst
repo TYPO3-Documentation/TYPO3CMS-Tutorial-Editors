@@ -2,7 +2,7 @@
 .. _start:
 
 ==========================
-TYPO3 Tutorial for Editors
+TYPO3 Guide for Editors
 ==========================
 
 .. Editors:
@@ -31,8 +31,8 @@ Older labels and tags (from the original OpenOffice documents)
 :Previous Key: doc_tut_editors
 :Version:      |release|
 :Language:     en
-:Description: This tutorial explains how to add or change content on an existing website using TYPO3 CMS.
-:Keywords:     forEditors, forBeginners, tutorial
+:Description: This guide covers working content on an existing website using TYPO3 CMS.
+:Keywords:     forEditors, forBeginners, guide
 :Copyright:    2000-2016
 :Author:       Documentation Team
 :Email:        documentation@typo3.org
