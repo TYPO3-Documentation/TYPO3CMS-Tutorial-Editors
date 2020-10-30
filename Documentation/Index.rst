@@ -11,7 +11,9 @@ TYPO3 Guide for Editors
 
 .. warning::
 
-   This is version **DRAFT**. This means ... test
+   This is version **DRAFT**. This means it is currently being worked on, and should be treated as a work in progress.
+
+   Please view the  `Master version  <https://docs.typo3.org/m/typo3/tutorial-editors/draft/en-us/Index.html>`_ for current documentation.
 
 
 Helpful during overhaul
