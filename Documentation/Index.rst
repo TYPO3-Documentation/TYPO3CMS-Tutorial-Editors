@@ -11,9 +11,11 @@ TYPO3 Guide for Editors
 
 .. warning::
 
-   This is version **DRAFT**. This means it is currently being worked on, and should be treated as a work in progress.
+   This is version **DRAFT**. This means it is currently being worked on, and
+   should be treated as a work in progress.
 
-   Please view the  `Master version  <https://docs.typo3.org/m/typo3/tutorial-editors/master/en-us/Index.html>`_ for current documentation.
+   Please view the `Master version  <https://docs.typo3.org/m/typo3/tutorial-editors/master/en-us/Index.html>`_ 
+   for current documentation.
 
 
 Helpful during overhaul
@@ -58,7 +60,12 @@ of the Documentation Team's abilities.
 
 **Guide**
 
-This document is a guide. Guides are designed to familiarize a reader with a specific topic in order to provide a working knowledge of that particular process. Readers should peruse the guide from cover to cover in order to gain a practical overview of the process. Once completed, the Guide becomes a practical reference tool to which a reader can refer as needed. Guides offer advice on how best to achieve a given task.
+This document is a guide. Guides are designed to familiarize a reader
+with a specific topic in order to provide a working knowledge of that particular process.
+Readers should peruse the guide from cover to cover in order to gain a practical overview
+of the process. Once completed, the Guide becomes a practical reference tool
+to which a reader can refer as needed. Guides offer advice on how best to achieve
+a given task.
 
 **Mainzific Rim - A Gamification Approach**
 
