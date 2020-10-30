@@ -31,9 +31,7 @@ Older labels and tags (from the original OpenOffice documents)
 :Previous Key: doc_tut_editors
 :Version:      |release|
 :Language:     en
-:Description: This tutorial explains how to add or change content on an
-   existing website using TYPO3 CMS. It provides the most basic instructions
-   step by step and illustrated with screenshots.
+:Description: This tutorial explains how to add or change content on an existing website using TYPO3 CMS.
 :Keywords:     forEditors, forBeginners, tutorial
 :Copyright:    2000-2016
 :Author:       Documentation Team
@@ -56,21 +54,16 @@ please report discrepancies to the Documentation Team
 of the Documentation Team's abilities.
 
 
-**Tutorial**
+**Guide**
 
-This document is a tutorial. Tutorials are designed to be step-by-step
-instructions specifically created to walk a beginner through a particular task
-from beginning to end. To facilitate effective learning, tutorials provide
-examples to illustrate the subjects they cover. In addition, tutorials provide
-guidance on how to avoid common pitfalls and highlight key concepts that should
-be remembered for future reference.
+This document is a guide. Guides are designed to familiarize a reader with a specific topic in order to provide a working knowledge of that particular process. Readers should peruse the guide from cover to cover in order to gain a practical overview of the process. Once completed, the Guide becomes a practical reference tool to which a reader can refer as needed. Guides offer advice on how best to achieve a given task.
 
 **Mainzific Rim - A Gamification Approach**
 
-Our partners at `SkillDisplay`_ created an gamification based tutorial at their
+Our partners at `SkillDisplay`_ created a gamification-based tutorial at their
 platform. All resources, together with further information, are available at
-their `landingpage
-<https://www.skilldisplay.eu/en/intellectual-outputs/typo3-gamification/>`_.
+their `landing page
+<https://www.skilldisplay.eu/intellectual-outputs/typo3-gamification/>`_.
 
 **Table of Contents**
 
