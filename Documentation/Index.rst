@@ -11,7 +11,7 @@ TYPO3 Tutorial for Editors
 
 .. warning::
 
-   This is version **DRAFT**. This means ...
+   This is version **DRAFT**. This means ... test
 
 
 Helpful during overhaul
