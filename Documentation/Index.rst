@@ -79,6 +79,7 @@ their `landing page
 .. toctree::
    :titlesonly:
 
+   About
    Introduction/Index
    Login/Index
    ContentElements/Index
