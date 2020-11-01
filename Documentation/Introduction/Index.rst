@@ -4,73 +4,62 @@
 .. _introduction:
 
 ============
-Introduction
+About this guide
 ============
-
 
 .. _about:
 
-About this document
-===================
+This guide covers working with content in TYPO3. It includes common tasks an editor might perform, such as working with content elements, editing existing text and images, working with forms, and working with pages.
 
-This is a short tutorial for editors. It explains how to create
-pages and content elements. It also details the various types
-of pages and content elements.
+This guide touches briefly on access restriction concepts, as well as content translation.
 
-This tutorial starts with the tasks which an editor most frequently needs:
-editing existing content and creating new one. We will then move on to editing
-and creating pages. Then comes a short introduction to working with translations.
-Finally the tutorial presents the various access restriction
-concepts: visibility, publication time and password-protected pages.
+.. _prerequisite:
 
-The tutorial provides the most basic instructions step-by-step.
-It does not cover all available functions, but the most common ones.
+Prerequisite
+============
 
-It is assumed that you have read the following pages of the
-:ref:`Getting Started Tutorial <t3start:start>` and are thus
-familiar with the general concepts of TYPO3 CMS, in particular
-the separation of frontend and backend:
+This guides assumes you have read the :ref:`Getting Started Tutorial <t3start:start>` and are familiar with the following general concepts of TYPO3 CMS:
 
 * :ref:`t3start:backend-and-frontend`
 * :ref:`t3start:general-backend-structure`
 * :ref:`t3start:page-tree`
 * :ref:`t3start:page-content`
 
-The examples assume that you are working with a TYPO3 installation based
-on the "Introduction Package".
+.. _examples:
+
+Examples
+========
+
+The examples in this guide are from a TYPO3 installation based on The `Official Introduction Package
+<https://extensions.typo3.org/extension/introduction/>`__.
 
 .. _credits:
 
 Credits
 =======
 
-This extension is based on a tutorial extension originally written by
-Marlies Cohen and a summary / excerpt in the wiki by Eikaa. Susanne
-Moog did some major updates. Thanks to them all!
+This guide is based on material originally written by Marlies Cohen and Eikaa.
 
-It was updated for TYPO3 CMS 7 LTS by François Suter.
+It has since been updated by Susanne Moog, François Suter and Felicity Brand.
 
+Thanks to them all!
 
 .. _feedback:
 
 Feedback
 ========
 
-For general questions about the documentation get in touch by writing
-to `documentation@typo3.org <mailto:documentation@typo3.org>`_ .
-
-If you find a bug in this manual, please be so kind as to check the
-online version on https://docs.typo3.org/typo3cms/EditorsTutorial/.
-From there you can hit the "Edit me on GitHub" button in the top right corner
-and submit a pull request via GitHub. Alternatively you can just file an issue
-using the bug tracker: https://github.com/TYPO3-Documentation/TYPO3CMS-Tutorial-Editors/issues.
+If you find a bug in this guide, please use the "Edit on GitHub" button in the top right corner and submit a pull request via GitHub. Alternatively you can file an issue using the bug tracker: https://github.com/TYPO3-Documentation/TYPO3CMS-Tutorial-Editors/issues.
 
 To support the translation to other languages see
 `http://wiki.typo3.org/TYPO3_Tutorial_for_Editors
 <http://wiki.typo3.org/TYPO3_Tutorial_for_Editors>`_
 
-Maintaining high quality documentation requires time and effort
-and the TYPO3 Documentation Team always appreciates support.
-If you want to support us, please join the documentation
-mailing list/forum (http://forum.typo3.org/index.php/f/44/).
+Maintaining high quality documentation requires time and effort and the TYPO3 Documentation Team always appreciates support. If you want to support us, please contact us as described in the next section.
 
+.. _contact-doc-team:
+
+Contact the Documentation Team
+==============================
+
+For general questions about the documentation get in touch with the `Documentation Team <https://typo3.org/community/teams/documentation>`__.
