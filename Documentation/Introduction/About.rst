@@ -3,11 +3,11 @@
 
 .. _introduction:
 
-============
-About this guide
-============
-
 .. _about:
+
+================
+About this guide
+================
 
 This guide covers working with content in TYPO3. It includes common tasks an editor might perform, such as working with content elements, editing existing text and images, working with forms, and working with pages.
 
