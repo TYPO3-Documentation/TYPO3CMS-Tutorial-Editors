@@ -77,15 +77,17 @@ their `landing page
 **Table of Contents**
 
 .. toctree::
+   :maxdepth: 5
    :titlesonly:
+   :glob:
 
    About
-   Introduction/Index
    Login/Index
    ContentElements/Index
    Pages/Index
    AccessControl/Index
    Languages/Index
    NextSteps/Index
+   Targets
 
 .. _SkillDisplay: https://www.skilldisplay.eu/
