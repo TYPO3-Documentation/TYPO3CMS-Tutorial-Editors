@@ -14,7 +14,7 @@ TYPO3 Guide for Editors
    This is version **DRAFT**. This means it is currently being worked on, and
    should be treated as a work in progress.
 
-   Please view the `Master version  <https://docs.typo3.org/m/typo3/tutorial-editors/master/en-us/Index.html>`_ 
+   Please view the `Master version  <https://docs.typo3.org/m/typo3/tutorial-editors/master/en-us/Index.html>`_
    for current documentation.
 
 
@@ -86,6 +86,5 @@ their `landing page
    AccessControl/Index
    Languages/Index
    NextSteps/Index
-   Targets
 
 .. _SkillDisplay: https://www.skilldisplay.eu/
