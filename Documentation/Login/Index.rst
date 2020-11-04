@@ -1,56 +1,39 @@
 .. include:: /Includes.rst.txt
 
-
-.. _login:
-
-=====
-Login
-=====
-
-In TYPO3 CMS an editor's work is done in the backend. So point your browser
-to your domain name and append "/typo3" to get to the log in screen.
-
-.. important::
-
-   Make sure JavaScript and cookies are enabled in your browser or nothing will work.
-
-Enter your domain name into the address bar of your internet browser and append "/typo3" to it to get to the "log in" page of your site.
-For example: http://www.example.com/typo3.
-
-.. figure:: ../Images/BackendLoginPage.png
-   :alt: The TYPO3 CMS backend login screen
-
-
-Log in and we're ready to go!
-
-
 .. _help-inside:
 
+=====================
 Help within TYPO3 CMS
 =====================
 
-Before we dive further into using TYPO3 CMS it is useful to remember
-that quite some help is available straight inside the backend:
+There are several features built-in to the user interface of the backend to help guide you when using the TYPO3 CMS.
 
-- A very short description of buttons or functions appears if you hover
-  with your mouse pointer over it (tooltip).
+Tooltips
+========
+
+Hover your mouse pointer over buttons and icons to display a short description of the function.
 
 .. figure:: ../Images/Tooltip.png
    :alt: Tooltip
 
    See the Tooltip help for the Forms module
 
-- When editing a record, hover over the label of a field. If your cursor changes into
-  a question mark, you can click on the label to get a help pop-up.
+Context Sensitive help
+======================
 
-- You will often see a **question mark icon** next to an element. Clicking on
-  it will pop up a little help window about the item or function it is next to:
+- When you hover your mouse pointer over some field labels, your cursor changes into a question mark. This indicates that you can click on the label to display a help pop-up.
+
+- Most content elements include a **question mark icon**. Click the icon to display a help window about the item or function it is next to.
 
 .. figure:: ../Images/BackendHelp.png
    :alt: Various help features in the TYPO3 CMS backend
 
-- For a more extensive description use the **TYPO3 Manual** module in the
-  help section. Click on the question mark in the top bar.
+TYPO3 Manual
+============
+
+The TYPO3 Manual is a module that provides more extensive descriptions of features and functions in the backend.
+
+In the top bar, click the question mark icon to access the Help section, then select the **TYPO3 Manual** module.
 
 .. figure:: ../Images/Typo3Manual.png
    :alt: Various help features in the TYPO3 CMS backend
