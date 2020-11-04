@@ -4,7 +4,7 @@ CHANGELOG
 
 * **30/10/20** Index.rst - changed from Tutorial to Guide. Updated the Mainzific URL. Renamed. Added Draft message to top of page.
 * **01/11/20** Introduction - edited. Renamed to 'About'. Moved to root folder and deleted Introduction folder. Added to TOC.
-*
+* **04/11/20** Login - edited. Renamed to Help inside TYPO3. Updated in TOC. Updated the images. Removed the login information since it's already in the Getting Started tutorial.
 
 ## Plan
 The plan for overhauling this doc is in a Google Sheet:
