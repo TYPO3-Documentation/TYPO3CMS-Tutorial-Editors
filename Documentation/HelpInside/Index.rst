@@ -14,7 +14,8 @@ Tooltips
 Hover your mouse pointer over buttons and icons to display a short description of the function.
 
 .. figure:: ../Images/Tooltip.png
-   :alt: Tooltip
+   :alt: Tooltip for the Forms module
+   :class: with-shadow
 
    See the Tooltip help for the Forms module
 
@@ -25,11 +26,17 @@ When you hover your mouse pointer over some field labels, your cursor changes in
 
 .. figure:: ../Images/BackendLabelHelp.png
    :alt: Context help pop-up for the :guilabel:`Column` label
+   :class: with-shadow
+
+   Context help pop-up for the :guilabel:`Column` label
 
 Most content elements include a **question mark icon**. Click the icon to display a help window about the item or function it is next to.
 
 .. figure:: ../Images/BackendElementHelp.png
    :alt: Context help window for the editing interface
+   :class: with-shadow
+
+   Context help window for the editing interface
 
 TYPO3 Manual
 ============
@@ -39,6 +46,7 @@ The TYPO3 Manual is a module that provides more extensive descriptions of featur
 In the top bar, click the question mark icon to access the Help section, then select the **TYPO3 Manual** module.
 
 .. figure:: ../Images/Typo3Manual.png
-   :alt: Various help features in the TYPO3 CMS backend
+   :alt: The **TYPO3 Manual** in the :guilabel: `Help` menu
+   :class: with-shadow
 
-   Accessing the **TYPO3 Manual**
+   The **TYPO3 Manual** in the :guilabel: `Help` menu
