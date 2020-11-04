@@ -82,7 +82,7 @@ their `landing page
    :glob:
 
    About
-   Login/Index
+   HelpInside/Index
    ContentElements/Index
    Pages/Index
    AccessControl/Index
