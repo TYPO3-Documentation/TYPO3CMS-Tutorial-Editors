@@ -27,7 +27,7 @@ When you hover your mouse pointer over some field labels, your cursor changes in
 .. figure:: ../Images/BackendLabelHelp.png
    :alt: Context help pop-up for the :guilabel:`Column` label
    :class: with-shadow
-   :width: 80%
+   :scale: 80%
 
    Context help pop-up for the :guilabel:`Column` label
 
@@ -36,7 +36,7 @@ Most content elements include a **question mark icon**. Click the icon to displa
 .. figure:: ../Images/BackendElementHelp.png
    :alt: Context help window for the editing interface
    :class: with-shadow
-   :width: 80%
+   :scale: 80%
 
    Context help window for the editing interface
 
@@ -51,4 +51,4 @@ In the top bar, click the question mark icon to access the Help section, then se
    :alt: The **TYPO3 Manual** in the :guilabel:`Help` menu
    :class: with-shadow
 
-   The **TYPO3 Manual** in the :guilabel: `Help` menu
+   The **TYPO3 Manual** in the :guilabel:`Help` menu
