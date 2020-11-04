@@ -27,6 +27,7 @@ When you hover your mouse pointer over some field labels, your cursor changes in
 .. figure:: ../Images/BackendLabelHelp.png
    :alt: Context help pop-up for the :guilabel:`Column` label
    :class: with-shadow
+   :width: 80%
 
    Context help pop-up for the :guilabel:`Column` label
 
@@ -35,6 +36,7 @@ Most content elements include a **question mark icon**. Click the icon to displa
 .. figure:: ../Images/BackendElementHelp.png
    :alt: Context help window for the editing interface
    :class: with-shadow
+   :width: 80%
 
    Context help window for the editing interface
 
