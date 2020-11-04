@@ -48,8 +48,7 @@ The TYPO3 Manual is a module that provides more extensive descriptions of featur
 In the top bar, click the question mark icon to access the Help section, then select the **TYPO3 Manual** module.
 
 .. figure:: ../Images/Typo3Manual.png
-   :class: with-border
    :alt: The **TYPO3 Manual** in the :guilabel:`Help` menu
-   :class: with-shadow
+   :class: with-border
 
    The **TYPO3 Manual** in the :guilabel:`Help` menu
