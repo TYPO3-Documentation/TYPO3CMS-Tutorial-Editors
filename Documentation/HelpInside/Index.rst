@@ -22,23 +22,23 @@ Hover your mouse pointer over buttons and icons to display a short description o
 Context Sensitive help
 ======================
 
-When you hover your mouse pointer over some field labels, your cursor changes into a question mark. This indicates that you can click on the label to display a help pop-up.
+*  When you hover your mouse pointer over some field labels, your cursor changes into a question mark. This indicates that you can click on the label to display a help pop-up.
 
-.. figure:: ../Images/BackendLabelHelp.png
-   :alt: Context help pop-up for the :guilabel:`Column` label
-   :class: with-border
-   :scale: 90%
+   .. figure:: ../Images/BackendLabelHelp.png
+      :alt: Context help pop-up for the :guilabel:`Column` label
+      :class: with-border
+      :scale: 90%
 
-   Context help pop-up for the :guilabel:`Column` label
+      Context help pop-up for the :guilabel:`Column` label
 
-Most content elements include a **question mark icon**. Click the icon to display a help window about the item or function it is next to.
+*  Most content elements include a **question mark icon**. Click the icon to display a help window about the item or function it is next to.
 
-.. figure:: ../Images/BackendElementHelp.png
-   :alt: Context help window for the editing interface
-   :class: with-border
-   :scale: 90%
+   .. figure:: ../Images/BackendElementHelp.png
+      :alt: Context help window for the editing interface
+      :class: with-border
+      :scale: 90%
 
-   Context help window for the editing interface
+      Context help window for the editing interface
 
 TYPO3 Manual
 ============
