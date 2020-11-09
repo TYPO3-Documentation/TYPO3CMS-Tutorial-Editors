@@ -1,10 +1,11 @@
 .. include:: /Includes.rst.txt
 
 .. _pages-working-with:
+.. _Pages-in-the-Page-Tree:
 
-==================
-Working with Pages
-==================
+======================
+Pages in the Page Tree
+======================
 
 You have already seen the page tree, this chapter shows how easily pages are
 created, moved around, hidden and deleted. Most can be achieved by

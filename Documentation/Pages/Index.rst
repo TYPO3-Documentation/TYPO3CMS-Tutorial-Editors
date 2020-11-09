@@ -2,10 +2,11 @@
 
 
 .. _pages:
+.. _Working-with-Pages:
 
-=====
-Pages
-=====
+==================
+Working with Pages
+==================
 
 
 .. toctree::
