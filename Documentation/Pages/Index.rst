@@ -14,9 +14,9 @@ Working with Pages
    :titlesonly:
    :glob:
 
-   PagesinPageTree/Index
    CreatingPages/Index
-   AddingMultiple/Index
+   AddMultiple/Index
+   Move-Copy-Delete-Pages/Index
    PageTypes/Index
    PageProperties/Index
    OtherFeatures/Index

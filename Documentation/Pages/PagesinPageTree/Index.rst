@@ -1,15 +1,14 @@
 .. include:: /Includes.rst.txt
 
 .. _pages-working-with:
-.. _Pages-in-the-Page-Tree:
+.. _Move-Copy-Delete-Pages:
 .. _pages-drag-drop:
 
-======================
-Pages in the Page Tree
-======================
+===========================
+Move, Copy and Delete Pages
+===========================
 
-You can create, move, hide and delete pages by working directly in the page
-tree.
+You can manage pages directly in the page tree.
 
 .. figure:: ../../Images/PageTreeDragDrop.png
    :alt: Working in the page tree with drag and drop
