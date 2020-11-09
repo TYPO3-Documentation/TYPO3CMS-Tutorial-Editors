@@ -14,7 +14,7 @@ Working with Pages
    :titlesonly:
    :glob:
 
-   WorkingWithPages/Index
+   PagesinPageTree/Index
    CreatingPages/Index
    AddingMultiple/Index
    PageTypes/Index
