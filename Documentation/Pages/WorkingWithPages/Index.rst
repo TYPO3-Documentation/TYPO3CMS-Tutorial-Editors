@@ -35,7 +35,7 @@ Move Pages
 
       Drop a page on another page to make it a child page
 
-#. Release your mouse. A confirmation message displays the option to opy or
+#. Release your mouse. A confirmation message displays the option to copy or
    move the page.
 #. Select :guilabel:`Move this item`.
 
