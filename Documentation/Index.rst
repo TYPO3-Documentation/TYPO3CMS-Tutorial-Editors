@@ -83,8 +83,8 @@ their `landing page
 
    About
    HelpInside/Index
-   ContentElements/Index
    Pages/Index
+   ContentElements/Index
    AccessControl/Index
    Languages/Index
    NextSteps/Index
