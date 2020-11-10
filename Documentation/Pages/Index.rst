@@ -13,8 +13,8 @@ Pages
    :titlesonly:
    :glob:
 
-   WorkingWithPages/Index
    CreatingPages/Index
+   WorkingWithPages/Index
    AddingMultiple/Index
    PageTypes/Index
    PageProperties/Index
