@@ -14,46 +14,48 @@ You can manage pages directly in the page tree.
 Move Pages
 ==========
 
-Choose the page you want to move, then drag it anywhere in the page
-tree.
+#. Choose the page you want to move, then drag it anywhere in the page
+   tree.
 
-A horizontal line displays to indicate the potential new
-position of the page.
+   A horizontal line displays to indicate the potential new
+   position of the page.
 
-.. figure:: ../../Images/CopyMovePage.png
-   :alt: Drag a page to move it on the page tree
-   :class: with-border
+   .. figure:: ../../Images/CopyMovePage.png
+      :alt: Drag a page to move it on the page tree
+      :class: with-border
 
-   Drag a page to move it on the page tree
+      Drag a page to move it on the page tree
 
-A blue background on existing pages indicates that your page will
-become a child of that page.
+   A blue background on existing pages indicates that your page will
+   become a child of that page.
 
-.. figure:: ../../Images/CopyMoveChildPage.png
-   :alt: Drop a page on another page to make it a child page
-   :class: with-border
+   .. figure:: ../../Images/CopyMoveChildPage.png
+      :alt: Drop a page on another page to make it a child page
+      :class: with-border
 
-   Drop a page on another page to make it a child page
+      Drop a page on another page to make it a child page
 
-When you release your mouse, a confirmation message displays offering
-the option to copy or move the page. Select :guilabel:`Move this item`.
+#. When you release your mouse, a confirmation message displays the option to
+   copy or move the page.
+#. Select :guilabel:`Move this item`.
 
 .. _Copy-Pages:
 
 Copy Pages
 ==========
 
-Choose the page you want to copy, then drag it to the position on the
-page tree you want to copy it. When you release your mouse, select
-:guilabel:`Copy` in the confirmation message.
+#. Choose the page you want to copy, then drag it to the position on the
+   page tree you want to copy it.
+#. Release your mouse, then select :guilabel:`Copy` in the confirmation
+   message.
 
 .. _Delete-Pages:
 
 Delete Pages
 ============
 
-Choose the page you want to delete, then click and drag it directly to
-the right. The :guilabel:`Delete` option displays and you can drop your page here.
+Choose the page you want to delete. Drag it directly to the right to display
+the :guilabel:`Delete` option.
 
 .. figure:: ../../Images/DeletePage.png
    :alt: Drag a page to the right to delete it
