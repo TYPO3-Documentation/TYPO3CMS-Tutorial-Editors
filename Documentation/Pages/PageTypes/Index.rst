@@ -33,8 +33,8 @@ Mount point
   point. This lets you duplicate parts of your page tree in terms of
   navigation, without actually duplicating pages and content.
 
-  See the :ref:`t3tca:access-options-mounts` section in TYPO3 Explained for
-  more information about mount points.
+  See the :ref:`Mounts <t3tca:access-options-mounts>` section in TYPO3
+  Explained for more information about mount points.
 
 Link to External URL
   This page type is similar to the :guilabel:`Shortcut` type but leads the
