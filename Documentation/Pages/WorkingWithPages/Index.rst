@@ -9,30 +9,62 @@ Working with Pages
 
 You can manage pages directly in the page tree.
 
-.. figure:: ../../Images/PageTreeDragDrop.png
-   :alt: Working in the page tree with drag and drop
+.. _Move-Pages:
 
-#. Click on the "new page" icon to display icons corresponding to the various
-   page types. Drag and drop any of these icons to the page tree to create
-   a new page of that type.
+Move Pages
+==========
 
-#. To move an existing page, grab the page title (not the icon!) and drop it
-   anywhere in the page tree.
+Choose the page you want to move, then drag it anywhere in the page
+tree.
 
-#. The page tree shows the point where the page will be inserted once
-   you drop it. A bubble help displays information about possible
-   actions options (i.e. copy instead of move)
+A horizontal line displays to indicate the potential new
+position of the page.
 
-#. This page is being copied. Note the page highlighted with the light blue
-   background. If the page is dropped now, it will become of child of that
-   page.
+.. figure:: ../Images/CopyMovePage.png
+   :alt: Drag a page to move it on the page tree
+   :class: with-border
 
-#. Move a page to the bottom of the screen to display the "delete" zone.
-   Drop the page there to delete it. There is no confirmation dialog box,
-   but the "delete" zone offers the option to undo.
+   Drag a page to move it on the page tree
 
+A blue background on existing pages indicates that your page will
+become a child of that page.
 
-.. note::
+.. figure:: ../Images/CopyMoveChildPage.png
+   :alt: Drop a page on another page to make it a child page
+   :class: with-border
 
-   A variety of functions are also available from the context menu, as
-   explained in the :ref:`Getting Started Tutorial <t3start:the-context-menu>`.
+   Drop a page on another page to make it a child page
+
+When you release your mouse, a confirmation message displays offering
+the option to copy or move the page. Select guilable:`Move this item`.
+
+.. _Copy-Pages:
+
+Copy Pages
+==========
+
+Choose the page you want to copy, then drag it to the position on the
+page tree you want to copy it. When you release your mouse, select
+guilabel:`Copy` in the confirmation message.
+
+.. _Delete-Pages:
+
+Delete Pages
+============
+
+Choose the page you want to delete, then click and drag it directly to
+the right. The `Delete` option displays. Drop your page onto the
+`Delete` zone. A confirmation message displays.
+
+.. figure:: ../Images/DeletePage.png
+   :alt: Drag a page to the right to delete it
+   :class: with-border
+
+   Drag a page to the right to delete it
+
+Context menu
+============
+
+A variety of functions are also available from the right-click context
+menu, as explained in the :ref:`Getting Started Tutorial <t3start:the-
+context-menu>`.
