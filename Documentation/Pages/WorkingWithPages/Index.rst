@@ -20,7 +20,7 @@ tree.
 A horizontal line displays to indicate the potential new
 position of the page.
 
-.. figure:: ../Images/CopyMovePage.png
+.. figure:: ../../Images/CopyMovePage.png
    :alt: Drag a page to move it on the page tree
    :class: with-border
 
@@ -29,7 +29,7 @@ position of the page.
 A blue background on existing pages indicates that your page will
 become a child of that page.
 
-.. figure:: ../Images/CopyMoveChildPage.png
+.. figure:: ../../Images/CopyMoveChildPage.png
    :alt: Drop a page on another page to make it a child page
    :class: with-border
 
@@ -55,7 +55,7 @@ Delete Pages
 Choose the page you want to delete, then click and drag it directly to
 the right. The :guilabel:`Delete` option displays and you can drop your page here.
 
-.. figure:: ../Images/DeletePage.png
+.. figure:: ../../Images/DeletePage.png
    :alt: Drag a page to the right to delete it
    :class: with-border
 
