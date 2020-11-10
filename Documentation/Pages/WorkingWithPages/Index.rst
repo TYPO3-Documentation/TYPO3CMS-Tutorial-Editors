@@ -53,7 +53,7 @@ Delete Pages
 ============
 
 Choose the page you want to delete, then click and drag it directly to
-the right. The `Delete` option displays and you can drop your page here.
+the right. The :guilabel:`Delete` option displays and you can drop your page here.
 
 .. figure:: ../Images/DeletePage.png
    :alt: Drag a page to the right to delete it
