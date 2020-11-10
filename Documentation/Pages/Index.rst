@@ -2,11 +2,10 @@
 
 
 .. _pages:
-.. _Working-with-Pages:
 
-==================
-Working with Pages
-==================
+=====
+Pages
+=====
 
 
 .. toctree::
@@ -14,9 +13,9 @@ Working with Pages
    :titlesonly:
    :glob:
 
+   WorkingWithPages/Index
    CreatingPages/Index
-   AddMultiple/Index
-   Move-Copy-Delete-Pages/Index
+   AddingMultiple/Index
    PageTypes/Index
    PageProperties/Index
    OtherFeatures/Index

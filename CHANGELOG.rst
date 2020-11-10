@@ -2,6 +2,7 @@
 CHANGELOG
 =========
 
+* **10/11/20** Pages and Working with Pages - Reverted my changes. Decided against such a drastic structual change. And I want to keep it simple so that I can backport the work on pages in the page tree.
 * **09/11/20** Pages and Working with Pages - Renamed. I wanted the Pages file (that houses the TOC) to be called Working with Pages. The Working with Pages file contained information about the page tree, so I named it Pages in the Page Tree. Edited these pages. There is cross-over with the Getting Started and it's hard to know where to draw the line on my work. I think I will stop here and work on the Getting Started in a subsequent piece of work.
 * **08/11/20** Page Types - edited.
 * **04/11/20** Login - edited. Renamed to Help inside TYPO3. Updated in TOC. Updated the images. Removed the login information since it's already in the Getting Started tutorial.

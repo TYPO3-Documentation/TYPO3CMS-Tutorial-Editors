@@ -1,12 +1,11 @@
 .. include:: /Includes.rst.txt
 
 .. _pages-working-with:
-.. _Move-Copy-Delete-Pages:
 .. _pages-drag-drop:
 
-===========================
-Move, Copy and Delete Pages
-===========================
+==================
+Working with Pages
+==================
 
 You can manage pages directly in the page tree.
 
