@@ -153,7 +153,7 @@ Use as Root Page
 
 Include in Search
   By default, every page is included in the TYPO3 CMS built-in
-  search engine :ref:`indexed_search <indexed_search>`. Use this flag to
+  search engine :ref:`indexed_search`. Use this flag to
   exclude the current page.
 
 Hide child pages in page tree
