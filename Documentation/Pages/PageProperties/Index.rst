@@ -10,7 +10,7 @@ Page Properties
 To access the page properties, click on the :guilabel:`Edit page properties`
 icon in the Docheader.
 
-.. figure:: ../Images/EditPageProperties.png
+.. figure:: ../../Images/EditPageProperties.png
   :alt: Edit Page Properties icon
   :class: with-border
 
@@ -37,7 +37,7 @@ Package include:
 General
 =======
 
-The :guilabel:`general` includes fields for page titles, URL
+The :guilabel:`General` tab includes fields for page titles, URL
 and navigation elements.
 
 The :guilabel:`Page Title` is used directly to generate speaking URLs. It is
