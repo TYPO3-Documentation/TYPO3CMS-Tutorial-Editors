@@ -10,11 +10,11 @@ Page Properties
 To access the page properties, click on the :guilabel:`Edit page properties`
 icon in the Docheader.
 
-   .. figure:: ../Images/EditPageProperties.png
-      :alt: Edit Page Properties icon
-      :class: with-border
+.. figure:: ../Images/EditPageProperties.png
+  :alt: Edit Page Properties icon
+  :class: with-border
 
-      The :guilabel:`Edit page properties` icon
+  The :guilabel:`Edit page properties` icon
 
 The page properties that are available depend on the page typeo and your
 TYPO3 installation. The default properties available in the Introduction
