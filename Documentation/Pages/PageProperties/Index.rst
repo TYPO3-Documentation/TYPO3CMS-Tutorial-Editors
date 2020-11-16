@@ -14,8 +14,6 @@ icon in the Docheader.
   :alt: Edit Page Properties icon
   :class: with-border
 
-  The :guilabel:`Edit page properties` icon
-
 The page properties that are available depend on the page typeo and your
 TYPO3 installation. The default properties available in the Introduction
 Package include:
@@ -128,7 +126,8 @@ the page.
 
    The :guilabel:`Behaviour` tab of the page properties
 
-Here is an explanation of some of the common sections and fields:
+Here is an explanation of some of the common sections and fields of the
+Behaviour tab:
 
 Links to this Page
 ------------------
@@ -140,8 +139,8 @@ window.
 Caching
 -------
 
-This section lets you define a specific cache duration and assign cache
-tags to the page. Some TYPO3 extensions can flush pages from the
+This section lets you define a specific cache duration as well as assign
+cache tags to the page. Some TYPO3 extensions can flush pages from the
 cache based on their cache tag.
 
 Miscellaneous
@@ -154,7 +153,7 @@ Use as Root Page
 
 Include in Search
   By default, every page is included in the TYPO3 CMS built-in
-  search engine (extension "indexed_search"). Use this flag to
+  search engine :ref:`indexed_search:indexed_search`. Use this flag to
   exclude the current page.
 
 Hide child pages in page tree
