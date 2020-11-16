@@ -2,6 +2,7 @@
 CHANGELOG
 =========
 
+* **16/11/20** Page Properties. Updated the information for v10. Edited. New screenshots. Still in draft - asked question on Slack.
 * **10/11/20** Pages and Working with Pages - Reverted my changes. Decided
 against such a drastic structual change. And I want to keep it simple
 so that I can backport the work on pages in the page tree. Swapped pages and
