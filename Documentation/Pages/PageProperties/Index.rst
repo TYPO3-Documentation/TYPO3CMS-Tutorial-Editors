@@ -1,11 +1,10 @@
 .. include:: /Includes.rst.txt
 
-
 .. _pages-properties:
 
-===============
-Page Properties
-===============
+==================================
+Page Properties for Standard Pages
+==================================
 
 To access the page properties, click on the :guilabel:`Edit page properties`
 icon in the Docheader.

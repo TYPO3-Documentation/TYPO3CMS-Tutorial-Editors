@@ -67,4 +67,21 @@ Context menu
 ============
 
 A variety of functions are also available from the right-click context
-menu, as explained in the :ref:`Getting Started Tutorial <t3start:the-context-menu>`.
+menu, as explained in the :ref:`Getting Started Tutorial <t3start:the-context-
+menu>`.
+
+.. _pages-other-features:
+.. _Filter-the-page-tree:
+
+Filter the page tree
+====================
+
+At the top of the page tree is a filtering tool. Click the filter icon, then
+type a word or numbers to filter the page tree based on matching page titles
+or page ID.
+
+.. figure:: ../../Images/PageTreeFilter.png
+   :alt: Filtering pages in the page tree
+   :class: with-border
+
+   Filtering pages in the page tree

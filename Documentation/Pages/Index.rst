@@ -18,4 +18,4 @@ Pages
    AddingMultiple/Index
    PageTypes/Index
    PageProperties/Index
-   OtherFeatures/Index
+   PagePropertiesNonStandard/Index

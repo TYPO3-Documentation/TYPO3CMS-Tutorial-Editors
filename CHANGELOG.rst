@@ -2,7 +2,14 @@
 CHANGELOG
 =========
 
-* **16/11/20** Page Properties. Updated the information for v10. Edited. New screenshots. Still in draft - asked question on Slack.
+* **17/11/20** More work on Page Properties. Ugh, it's bigger than Ben Hur.
+Took a break on that and moved the 'Other features' content into the Working
+with Pages content. Removed the other features because it was only one feature
+and it was about filtering the page tree. Added new folder
+'PagePropertiesNonStandard' to house the info for properties for other page
+types.
+* **16/11/20** Page Properties. Updated the information for v10. Edited. New
+screenshots. Still in draft - asked question on Slack.
 * **10/11/20** Pages and Working with Pages - Reverted my changes. Decided
 against such a drastic structual change. And I want to keep it simple
 so that I can backport the work on pages in the page tree. Swapped pages and
