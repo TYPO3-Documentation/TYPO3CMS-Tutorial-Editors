@@ -14,9 +14,9 @@ icon in the Docheader.
   :alt: Edit Page Properties icon
   :class: with-border
 
-The page properties that are available depend on the page typeo and your
+The page properties that are available depend on the page type and your
 TYPO3 installation. The default properties available in the Introduction
-Package include:
+Package for the *Standard* page type include:
 
 * General
 * SEO
@@ -35,41 +35,27 @@ Package include:
 General
 =======
 
-The :guilabel:`General` tab includes fields for page titles, URL
-and navigation elements.
+The **General** tab contains general information about the page. You
+can change the :guilabel:`Page Type`, and edit titles for the page and the URL.
 
 The :guilabel:`Page Title` is used directly to generate speaking URLs. It is
 also used in menus and in the `<title>` tag.
 
-.. figure:: ../../Images/PagePropertiesTitle.png
-   :alt: Impact of page title on URL, navigation and metadata
-   :class: with-border
-
-    The impact of the :guilabel:`Page Title` on the URL, navigation and
-    metadata
-
-You can also specify an alternative navigation title to display a different
-title in the menu navigation.
-
-.. figure:: ../../Images/PagePropertiesEditNavigationTitle.png
-   :alt: Setting a different title for navigation elements
-   :class: with-border
-
-    Setting a different title for navigation elements
-
 When you specify an :guilabel:`Alternative Navigation Title` all other
 instances of :guilabel:`Page Title` usage are left unchanged.
 
-.. figure:: ../../Images/PagePropertiesNavigationTitle.png
-   :alt: Impact of setting a different navigation title
+.. figure:: ../../Images/PagePropertiesGeneral.png
+   :alt: The General tab of the page properties
    :class: with-border
 
-    The impact of setting an alternative navigation title
+   The :guilabel:`General` tab of the page properties
 
 .. _pages-properties-seo:
 
 SEO
 ===
+
+The **SEO** tab uses the cs_seo system extension. https://docs.typo3.org/c/typo3/cms-seo/master/en-us/Index.html
 
 
 .. _pages-properties-social-media:
