@@ -1,4 +1,4 @@
-﻿.. include:: /Includes.rst.txt
+.. include:: /Includes.rst.txt
 
 
 .. _pages-multiple:
@@ -9,45 +9,36 @@ Adding Multiple Pages at Once
 
 .. versionchanged:: 9.0
 
-   This functionality used to be in the **WEB > Functions** module.
+   This functionality used to be in the :guilabel:`Web > Functions` module.
 
-You can create more than one page at a time.
+#. In the page tree, position your cursor on the page you want to be the
+   parent of the new pages.
 
-Place yourself on the page which should be the parent
-of the new pages.
+#. In the right-click context menu, select :guilabel:`More options > Create
+   multiple pages`.
 
-Select :guilabel:`More options > Create multiple pages` in the
-context menu.
+   .. figure:: ../../Images/MultiplePagesContextMenu.png
+      :alt: Select "Create multiple pages" in the context menu.
+      :class: with-border
 
-.. figure:: ../../Images/MultiplePagesContextMenu.png
-   :alt: Select "Create multiple pages" in the context menu.
+      The **Create Multiple Pages** screen displays, with five new pages by
+      default.
 
+#. Give each new page a title and choose its type.
 
-For each page you can define its title and choose its type.
+#. Click the :guilabel:`Add more lines` button to add five more new pages.
 
-At the bottom of the wizard are several options:
+#. Configure the new pages using the following options:
 
-.. figure:: ../../Images/FunctionsCreateWizardBottom.png
-   :alt: Options at the bottom of the Create new pages wizard
+   *  The :guilabel:`Place new pages after the existing subpages` option adds
+      new pages below the currently existing subpages. Otherwise they will be
+      placed above the current pages.
 
+   *  The :guilabel:`Hide new pages` and :guilabel:`Hide new pages in menus`
+      options` let you manage the visibility of your new pages.
 
-By checking the **Place new pages after the existing subpages** box,
-the new pages will be added below the currently existing subpages.
-Otherwise they will be placed above the current pages.
+      A hidden page cannot be accessed by anyone via the web site. A page which
+      is hidden in menus does not appear in the site navigation but can be
+      accessed by someone having the direct URL  of that page.
 
-You can choose to add more pages than proposed (5 by default)
-by clicking on the "Add more lines" button.
-
-Options **Hide new pages** and **Hide new pages in menus** let you
-manage the visibility of your new pages.
-
-.. tip::
-
-   A hidden page cannot be accessed by anyone via the web site.
-   A page which is hidden in menus does not appear in the site
-   navigation but can be accessed by someone having the direct URL
-   of that page.
-
-Once you are done click the  **Create pages** button.
-
-
+#. Click the :guilabel:`Create pages` button to create the pages.

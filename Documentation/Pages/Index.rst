@@ -14,8 +14,7 @@ Pages
    :glob:
 
    CreatingPages/Index
-   WorkingWithPages/Index
    AddingMultiple/Index
+   WorkingWithPages/Index
    PageTypes/Index
    PageProperties/Index
-   PagePropertiesNonStandard/Index

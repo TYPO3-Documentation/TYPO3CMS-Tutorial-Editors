@@ -2,9 +2,9 @@
 
 .. _pages-properties:
 
-==================================
-Page Properties for Standard Pages
-==================================
+===============
+Page Properties
+===============
 
 To access the page properties, click on the :guilabel:`Edit page properties`
 icon in the Docheader.
