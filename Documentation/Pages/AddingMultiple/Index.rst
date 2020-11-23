@@ -32,7 +32,7 @@ Adding Multiple Pages at Once
 
 #. Click the :guilabel:`Add more lines` button to add five more new pages.
 
-#. Configure the new pages using the following options:
+#. Configure the new pages using the options at the bottom of the screen:
 
    *  The :guilabel:`Place new pages after the existing subpages` option adds
       new pages below the currently existing subpages. Otherwise they will be
