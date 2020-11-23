@@ -2,6 +2,7 @@
 CHANGELOG
 =========
 
+* **23/11/20** Worked on Translation page to edit it and update images. Also modified Next Steps, and removed x-ref from the TOC
 * **17/11/20** More work on Page Properties. Ugh, it's bigger than Ben Hur.
 Took a break on that and moved the 'Other features' content into the Working
 with Pages content. Removed the other features because it was only one feature

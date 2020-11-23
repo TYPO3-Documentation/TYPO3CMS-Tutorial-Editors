@@ -10,112 +10,132 @@ Working with languages
 TYPO3 CMS comes with the built-in ability to handle web sites
 in multiple languages.
 
+.. tip::
+
+   Detailed information about setting up a multilingual web site is
+   found in the :ref:`Frontend Localization Guide <t3l10n:start>`.
 
 .. _languages-new:
 
 Defining a new language
 =======================
 
-Languages are defined in the site configuration on a per-rootpage
-basis. When creating a new page on root level via TYPO3 Backend,
-a very basic site configuration is generated on the fly.
-It prevents immediate errors due to missing configuration and can
-also serve as a starting point for all further actions.
+Languages are defined per site.
 
-The Introduction Package's default languages are English, Danish
-and German languages. Adding a new language is done in the
-"Sites" module, which is restricted to admin users.
+Adding a new language is done in the :guilabel:`Site Management > Sites`
+module, which is restricted to admin users. The Introduction Package's default
+languages are English, Danish and German languages.
 
 .. tip::
 
-   Detailed information on how to extend the site configuration
-   with additional languages can be found in the
-   :ref:`Site Handling Documentation <coreapi:sitehandling-basics>`.
+   Detailed information on how to configure your site to add more languages
+   can be found in the :ref:`Site Handling <coreapi:sitehandling-basics>`
+   documentation.
+
+
+.. _Translation-modes:
+
+Translation modes
+=================
+
+When you choose to translate content, TYPO3 offers two methods:
+
+*  **Translate** - Use this option when you have a strict translation workflow
+   or content structure. TYPO3 will create a direct connection between the
+   original language and the translation. When the original language content
+   is changed, the translations are marked as out-of-date and you can see the
+   changes in the original language when editing a translation.
+
+   This mode means that TYPO3 can help you maintain consistency when you have
+   separate teams localizing content. This mode also allows TYPO3 to
+   automatically mark translated content for review, and notify translators
+   when the original text changes.
+*  **Copy** - Use this option when you would like the content structure to be
+   free and independent between languages. TYPO3 creates a copy of the content
+   in the target language. No connection is maintained between the original
+   and the translation, which means subsequent versions of the translations
+   can easily diverge from the original.
 
 .. _languages-translations:
 
 Working with translations
 =========================
 
-Move to the **WEB > Pages** module and to the "Congratulations"
-home page. Using the menu in the docheader, switch to the
-"Languages" view.
+#. In the :guilabel:`Web > Pages` module, go to the "Congratulations"
+   home page.
+#. Using the menu in the docheader, switch to the "Languages" view.
 
-.. figure:: ../Images/LanguagesPageLanguages.png
-   :alt: The "Languages" view of the Page module
+   .. figure:: ../Images/LanguagesPageLanguages.png
+      :alt: The "Languages" view of the Page module
+      :class: with-border
 
+      The "Languages" view of the Page module
 
-Use the menu entitled "Make new translation of this page" to
-create a new translation. Choose the language from the dropdown,
-let's say German in this case. You will be presented with an
-input form for the page translation (so-called "Alternative
-Page Language"):
+#. In the drop-down menu "Create a new translation of this page", choose a
+   language, let's say German in this case. The page properties displays for
+   the German version of the page.
+#. Type the German translation in the :guilabel:`Page Title` field..
 
-.. figure:: ../Images/LanguagesNewPageTranslation.png
-   :alt: Creating a new page translation
+   .. figure:: ../Images/LanguagesNewPageTranslation.png
+      :alt: Creating a new page translation
+      :class: with-border
 
+      Creating a new page translation
 
-Just enter the translation in the "Page Title" field and save changes.
-Back in the *Page* module, we can now see the default language and the
-German version side by side.
+#. Save and close the page. The page now displays two versions of the content
+   elements showing the default language and the German version side by side.
 
-.. figure:: ../Images/LanguagesPageVersions.png
-   :alt: Viewing languages side by side in the page module
+   .. figure:: ../Images/LanguagesPageVersions.png
+      :alt: Viewing languages side by side in the page module
+      :class: with-border
 
+      Viewing languages side by side in the page module
 
-The *Page* module makes it possible to easily copy content elements
-in the new language by hitting the "Translate" button. Do so now
-for the "Border" content area and you should see the following:
+#. Click the :guilabel:`Translate` button for a content element to translate
+   the content. The **Localize** wizard displays.
 
-.. figure:: ../Images/LanguagesTranslateContentElementsStep1.png
-   :alt: First step of the translation wizard
+   .. figure:: ../Images/LanguagesTranslateContentElementsStep1.png
+      :alt: First step of the Localize wizard
+      :class: with-border
 
+      First step of the Localize wizard
 
-The translations can either be linked together or unrelated.
-As explained by the wizard the strict mode should be used when
-every content in the default language is meant to be translated
-so that every translation is strictly related to an element in the
-default language. The "copy" mode will also create a copy but it
-will be unrelated to its original source. This should be preferred
-when web site translations will diverge from the default language.
+#. For this example, click the "Translate" button then click Next. Step 2 of
+   the wizard will pass by automatically since we are translating in a single
+   language.
+#. Step 3 provides a summary of the elements that will be translated. Click
+   Next to complete the wizard.
 
-For this example, click on the large "Translate" icon and then
-on the "Next" button. Step 2 of the wizard will pass by automatically
-since we are translating in a single language. Step 3 provides
-a summary of the elements that will be translated. Hit the
-"Start processing" button to get started. You should see the
-following result:
+   The German version of the content element is now prepended with *[Translate
+   to German:]*. The element is hidden by default, so that incomplete
+   translations aren't displayed on the frontend until you are ready.
 
-.. figure:: ../Images/LanguagesNewContentTranslation.png
-   :alt: A newly created content element translation
+   .. figure:: ../Images/LanguagesNewContentTranslation.png
+      :alt: A newly created content element translation
+      :class: with-border
 
+      A newly created content element translation
 
-You can observe how the new element's content has been prepended
-with *[Translate to German:]*. Also note that it is hidden by
-default, so that incomplete translations don't turn up on the
-web site.
+.. _Adjusting-the-View:
 
-.. figure:: ../Images/LanguagesTranslatedContentElement.png
-   :alt: A translated content element, with reference to its original
+Adjusting the view
+==================
 
-
-You can see how the new content element is related to the one
-in the default language (in the field "Transl.Orig"). Under
-most fields is also an indication of the content in the default
-language.
-
-The *Page* module may now seem cluttered, with one column per existing
-translation. It is possible to view a single language at a time
-and with the original layout, by switching back to the "Columns"
-mode and choosing a specific language in the docheader.
+The *Page* module may now seem cluttered, with one column for each
+translation. You can view a single language at a time with the original
+layout, by switching back to the "Columns" mode and choosing a specific
+language in the docheader.
 
 .. figure:: ../Images/LanguagesColumnModeWithTranslation.png
-   :alt: The "Column" mode displaying a translation
+   :alt: The "Columns" mode displaying a translation
+   :class: with-border
 
-   .. _next-steps-l10n:
+   The "Columns" mode displaying a translation
 
-   Next Steps
-   ==========
-   Tthe :ref:`Frontend Localization Guide <t3l10n:start>` contains detailed
-   information about setting up a multilingual web site and how to actually
-   do the translation and localization.
+.. _next-steps-l10n:
+
+Next steps
+==========
+The :ref:`Frontend Localization Guide <t3l10n:start>` contains detailed
+information about setting up a multilingual web site and how to actually
+do the translation and localization.
