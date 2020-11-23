@@ -21,8 +21,12 @@ Adding Multiple Pages at Once
       :alt: Select "Create multiple pages" in the context menu.
       :class: with-border
 
-      The **Create Multiple Pages** screen displays, with five new pages by
-      default.
+   The **Create Multiple Pages** screen displays, with five new pages by
+   default.
+
+   .. figure:: ../../Images/MultiplePagesCreatePages.png
+      :alt: The "Create Multiple Pages" screen.
+      :class: with-border
 
 #. Give each new page a title and choose its type.
 
@@ -35,7 +39,7 @@ Adding Multiple Pages at Once
       placed above the current pages.
 
    *  The :guilabel:`Hide new pages` and :guilabel:`Hide new pages in menus`
-      options` let you manage the visibility of your new pages.
+      options let you manage the visibility of your new pages.
 
       A hidden page cannot be accessed by anyone via the web site. A page which
       is hidden in menus does not appear in the site navigation but can be
