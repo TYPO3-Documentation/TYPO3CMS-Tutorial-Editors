@@ -30,7 +30,7 @@ This guides assumes you have read the :ref:`Getting Started Tutorial <t3start:st
 Examples
 ========
 
-The examples in this guide are from a TYPO3 installation based on The `Official Introduction Package
+The examples in this guide are from a TYPO3 installation based on the `Official Introduction Package
 <https://extensions.typo3.org/extension/introduction/>`__.
 
 .. _credits:
