@@ -21,14 +21,12 @@ Defining a new language
 Languages are defined per site.
 
 Adding a new language is done in the :guilabel:`Site Management > Sites`
-module, which is restricted to admin users. The `Introduction Package's
-<https://extensions.typo3.org/extension/introduction/>`__ default
-languages are English, Danish and German languages.
+module, which is restricted to admin users. Detailed information on how to
+configure your site to add more languages can be found in the :ref:`Site
+Handling <coreapi:sitehandling-basics>` documentation.
 
-Detailed information on how to configure your site to add more languages
-can be found in the :ref:`Site Handling <coreapi:sitehandling-basics>`
-documentation.
-
+The `Introduction Package's <https://extensions.typo3.org/extension/
+introduction/>`__ default languages are English, Danish and German languages.
 
 .. _Translation-modes:
 
@@ -93,12 +91,11 @@ Working with translations
       :alt: First step of the Localize wizard
       :class: with-border
 
-      Step 1 of the Localize wizard
-
 #. For this example, click the :guilabel:`Translate` button then click
-   **Next**. Step 2 of the wizard will pass by automatically since we are
-   translating in a single language. Step 3 provides a summary of the elements
-   that will be translated.
+   **Next**.
+   Step 2 of the wizard will pass by automatically since we are translating in
+   a single language.
+   Step 3 provides a summary of the elements that will be translated.
 #. Click **Next** to complete the wizard.
 
    The German version of the content element is now prepended with *[Translate
@@ -133,3 +130,6 @@ Next steps
 The :ref:`Frontend Localization Guide <t3l10n:start>` contains detailed
 information about setting up a multilingual web site and how to actually
 do the translation and localization.
+
+The :ref:`Site Handling <coreapi:sitehandling-basics>` documentation contains
+information about how to configure your site to add more languages.
