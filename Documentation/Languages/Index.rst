@@ -1,4 +1,4 @@
-﻿.. include:: /Includes.rst.txt
+.. include:: /Includes.rst.txt
 
 
 .. _languages:
@@ -112,8 +112,10 @@ mode and choosing a specific language in the docheader.
 .. figure:: ../Images/LanguagesColumnModeWithTranslation.png
    :alt: The "Column" mode displaying a translation
 
+   .. _next-steps-l10n:
 
-.. tip::
-
-   Detailed information about setting up a multilingual web site is
-   found in the :ref:`Frontend Localization Guide <t3l10n:start>`.
+   Next Steps
+   ==========
+   Tthe :ref:`Frontend Localization Guide <t3l10n:start>` contains detailed
+   information about setting up a multilingual web site and how to actually
+   do the translation and localization.
