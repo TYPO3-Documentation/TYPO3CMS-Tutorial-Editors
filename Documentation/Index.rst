@@ -88,6 +88,5 @@ their `landing page
    AccessControl/Index
    Languages/Index
    NextSteps/Index
-   Targets
 
 .. _SkillDisplay: https://www.skilldisplay.eu/
