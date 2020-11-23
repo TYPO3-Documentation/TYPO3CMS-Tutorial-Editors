@@ -14,12 +14,8 @@ Adding Multiple Pages at Once
 #. In the page tree, position your cursor on the page you want to be the
    parent of the new pages.
 
-#. In the right-click context menu, select :guilabel:`More options > Create
-   multiple pages`.
-
-   .. figure:: ../../Images/MultiplePagesContextMenu.png
-      :alt: Select "Create multiple pages" in the context menu.
-      :class: with-border
+#. Right-click the page then select :guilabel:`More options > Create
+   multiple pages` from the context menu.
 
    The **Create Multiple Pages** screen displays, with five new pages by
    default.
