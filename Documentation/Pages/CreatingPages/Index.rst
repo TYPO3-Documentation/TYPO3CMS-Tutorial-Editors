@@ -51,8 +51,7 @@ Adding pages with the context menu
       :alt: Creating pages with context menu
       :class: with-border
 
-
-      The **New record** screen displays.
+   The **New record** screen displays.
 
 #. Click an arrow in the tree to select the position where you want the new
    page to be created.
@@ -61,8 +60,7 @@ Adding pages with the context menu
       :alt: Selecting a position for the new page using the wizard
       :class: with-border
 
-
-      The **Create new Page** screen displays.
+   The **Create new Page** screen displays.
 
 #. Type a title for the page and you may also like to go to the **Access** tab
    and enable the page to make it visible on the frontend.

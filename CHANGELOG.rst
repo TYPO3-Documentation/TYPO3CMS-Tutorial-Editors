@@ -2,7 +2,7 @@
 CHANGELOG
 =========
 
-* **30/11/20** Worked on Creating pages page.
+* **30/11/20** Worked on Creating pages page, access control, visibility and frontend login.
 * **23/11/20** Worked on Translation page to edit it and update images. Also
 modified Next Steps, and removed x-ref from the TOC
 * **17/11/20** More work on Page Properties. Ugh, it's bigger than Ben Hur.
