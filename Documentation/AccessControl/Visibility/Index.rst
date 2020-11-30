@@ -7,40 +7,38 @@
 Elements visibility
 ===================
 
-The foremost option which acts on an element's visibility is the
-"Hidden" check box, which we already saw before. A hidden element,
-be it a page, a content element or a news item, will never show
-up in the frontend, unless you are previewing from the backend.
+When an element is hidden, be it a page, a content element or a news item, it
+will not display in the frontend. You can, however, preview it in the backend.
 
-As we saw in the :ref:`page properties <pages-properties>`,
-a page can also be excluded from appearing in menus and
-excluded from the TYPO3 CMS built-in search engine.
+In the Core, and in extensions that follow best practice, all options related
+to visibility are controlled in the **Access** tab of the :ref:`page
+properties <pages-properties>`. Here a page can also be excluded from
+appearing in menus and also excluded from the TYPO3 CMS built-in search
+engine.
 
-In the Core - and in extensions that follow best practices -
-all options related to visibility are grouped into a tab
-named "Access".
-
+.. figure:: ../../Images/PageCreateEnable.png
+   :alt: Making a new page publicly visible
+   :class: with-border
 
 .. _visibility-dates:
 
 Publication dates
 =================
 
-A finer control can be exerted with publication start and end
-dates. Any page or content element with a defined "Publish date"
+You can specify a period of time for content to be visible. This might be
+useful for seasonal announcements or festive periods.
+Any page or content element with a defined "Publish date"
 will not be visible before that date. If it has an "Expiration
-date", it will disappear from the web site at that point.
+date", it will be hidden from that point onward.
 
 .. figure:: ../../Images/AccessPublicationDate.png
    :alt: Setting a publication date for a page
+   :class: with-border
 
+When you set a publication date in the future then try to navigate to that
+page, you are redirected to the home page.
 
-Set a publication date in the future and try to navigate to that
-page. You should be redirected to the home page, which is the
-default behaviour when trying to access a page that is
-unreachable (for whatever reason).
-
-Note the "Extend to Subpages" check box. If checked the
-publication date (and other access restrictions) will also apply
+When you enable the :guilabel:`Extend to Subpages` setting, the
+publication date (and other access restrictions) also apply
 to all child pages of the current page. This makes it possible
 to apply restrictions to a whole branch of the page tree.
