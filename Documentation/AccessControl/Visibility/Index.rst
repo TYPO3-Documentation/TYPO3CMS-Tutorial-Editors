@@ -12,9 +12,7 @@ will not display in the frontend. You can, however, preview it in the backend.
 
 In the Core, and in extensions that follow best practice, all options related
 to visibility are controlled in the **Access** tab of the :ref:`page
-properties <pages-properties>`. Here a page can also be excluded from
-appearing in menus and also excluded from the TYPO3 CMS built-in search
-engine.
+properties <pages-properties>`.
 
 .. figure:: ../../Images/PageCreateEnable.png
    :alt: Making a new page publicly visible

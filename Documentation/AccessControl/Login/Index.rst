@@ -16,11 +16,9 @@ have logged in.
 Frontend users
 ==============
 
-The concept of the TYPO3 :ref:`backend and frontend <t3start:backend-and-
-frontend>` is explained in the Getting Started Tutorial.
+The concept of the TYPO3 :ref:`backend and frontend <t3start:backend-and-frontend>` is explained in the Getting Started Tutorial.
 
-You can use the concept of frontend users (website visitors) to create member-
-only content and restrict access to pages and content elements by requiring a
+You can use the concept of frontend users (website visitors) to create member-only content and restrict access to pages and content elements by requiring a
 log in.
 
 Frontend users are always part of frontend groups. Access is granted to
@@ -38,7 +36,7 @@ Create a Usergroup and user
       :class: with-border
 
 #. Navigate to the :guilabel:`Web > List` module, and select your new folder.
-#. Click the :guilabel:`**+** Create new record` icon at the top left of the
+#. Click the **+** :guilabel:`Create new record` icon at the top left of the
    Docheader. The "New record" wizard displays.
 
    .. figure:: ../../Images/AccessNewRecordWizard.png
@@ -70,7 +68,7 @@ Assign access rights
 ====================
 
 Now that we have at least one group, and a user assigned to that group, we can
-assign access restrictions. This is done on the **Access** tab.
+assign access restrictions. This is done on the **Access** tab of the page or content element properties.
 
 .. figure:: ../../Images/AccessRightsItems.png
    :alt: Usergroup access rights
@@ -82,18 +80,18 @@ assign access restrictions. This is done on the **Access** tab.
    strictly groups, in the sense that they are always available
    and cannot be edited or removed.
 
-   The "Hide at login" group means that the element is only visible
-   when the user is not authenticated.
-   The "Show at any login" group is used for elements which require
-   authentication to access, but are okay for all groups to see.
+   * The "Hide at login" group means that the element is only visible
+     when the user is not authenticated.
+   * The "Show at any login" group is used for elements which require
+     authentication to access, but are okay for all groups to see.
 
 #. Navigate to the :guilabel:`Web > Page` module, and create a new page called
    "Members only".
-#. Add a text content element to the Members Only page, which says something
+#. Add a text content element to the Members Only page, with text something
    like "You need to authenticate to access the members area".
 #. On the **Access** tab, select the "Hide at login" group for it.
 #. Save and close the record.
-#. Add another text content element to the page, which says something
+#. Add another text content element to the page, with text something
    like "Welcome to the members area".
 #. On the **Access** tab, select the "Private area" group for it.
 #. Save and close the record.
@@ -129,21 +127,24 @@ can log in to view the restricted content.
 
 .. figure:: ../../Images/AccessLoginForm.png
    :alt: Defining a new login form
+   :class: with-border
 
 #. Save and close the record.
 #. View the page. You should have something like this:
 
 .. figure:: ../../Images/AccessPageWithLoginBox.png
    :alt: The page with the login box
+   :class: with-border
 
 Enter the user name and the password you defined earlier for the
 new frontend user and you should see the following:
 
 .. figure:: ../../Images/AccessPageWithAuthenticatedUser.png
    :alt: The page with the authenticated user
+   :class: with-border
 
 Note how the content element requesting authentication has disappeared,
 replaced by the one welcoming the user.
 
-This is just a quick overview of the login box provided by TYPO3 CMS. It has a
+This is just a quick overview of the login form provided by TYPO3 CMS. It has a
 rich feature set described in :ref:`its own manual <felogin:start>`.
