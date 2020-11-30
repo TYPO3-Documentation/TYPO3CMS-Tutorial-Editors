@@ -4,7 +4,7 @@
 .. _pages-multiple:
 
 =============================
-Adding Multiple Pages at Once
+Adding multiple pages at once
 =============================
 
 .. versionchanged:: 9.0

@@ -9,7 +9,7 @@ Create Pages
 
 There are two main ways to add a new page to your site.
 
-First make sure that you currently are in a **WEB** module
+First make sure that you currently are in a **Web** module
 so that you see the page tree.
 
 
@@ -18,27 +18,27 @@ so that you see the page tree.
 Adding pages within the page tree
 =================================
 
-As we saw before, you can create a new page by dragging and
-dropping a page type from the top of the page tree.
+You can create a new page by dragging and dropping a page type from the top of
+the page tree.
 
 .. figure:: ../../Images/PageCreateDragDrop.png
    :alt: Creating a page using drag and drop
-
+   :class: with-border
 
 #. Choose a page type by selecting one of the icons (here a standard page,
-   see the :ref:`Page types chapter <pages-types>`).
+   see :ref:`Page types <pages-types>`).
 
-#. Drop the icon either between two existing pages (will create a sibling)
-   or on an existing page (will create a child).
+#. Drop the icon either between two existing pages (to create a sibling)
+   or on an existing page (to create a child).
 
-#. Insert a title for the new page
+#. Type a title for the new page.
 
-.. figure:: ../../Images/PageCreateTitle.png
-   :alt: Inserting a page title
+   .. figure:: ../../Images/PageCreateTitle.png
+      :alt: Inserting a page title
+      :class: with-border
 
-
-A new page is disabled by default. To enable a page, use the context menu or
-the page properties.
+New pages are disabled by default. Use the context menu or the page properties
+to enable a page.
 
 
 .. _pages-creating-context:
@@ -46,34 +46,29 @@ the page properties.
 Adding pages with the context menu
 ==================================
 
-Click on the icon of any existing page and choose
-"Page Actions > New" from the context menu.
+#. Right-click any existing page and choose :guilable:`More options > 'Create
+   New' Wizard" from the context menu.
 
-.. figure:: ../../Images/PageCreateContextMenu.png
-   :alt: Creating pages with context menu
+   .. figure:: ../../Images/PageCreateContextMenu.png
+      :alt: Creating pages with context menu
+      :class: with-border
 
+      The **New record** screen displays.
 
-You will be taken to the new page wizard, which asks you
-to select a position for the new page.
+#. Click an arrow in the tree to select the position where you want the new
+   page to be created.
 
-.. figure:: ../../Images/PageCreateWizard.png
-   :alt: Selecting a position for the new page using the wizard
+   .. figure:: ../../Images/PageCreateWizard.png
+      :alt: Selecting a position for the new page using the wizard
+      :class: with-border
 
+      The **Create new Page** screen displays.
 
-After selecting a position, you will be taken to the form which
-lets you define the properties of the new page. For now, let's
-just set the title which is mandatory.
+#. Type a title for the page and you may also like to go to the *Access* tab
+   and enable the page to make it visible on the frontend.
 
-.. figure:: ../../Images/PageCreateProperties.png
-   :alt: Editing the page properties
+   .. figure:: ../../Images/PageCreateEnable.png
+      :alt: Making the new page publicly visible
+      :class: with-border
 
-
-You may also want to move to the *Access* tab and
-uncheck the "Disable" box, so that your new page is visible
-in your web site.
-
-.. figure:: ../../Images/PageCreateEnable.png
-   :alt: Unchecking this box will make the page publicly visible
-
-
-More properties are explored in the :ref:`Page properties chapter <pages-properties>`.
+More page properties are explained in the :ref:`Page properties <pages-properties>` section.
