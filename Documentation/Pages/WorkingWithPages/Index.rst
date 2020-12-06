@@ -67,8 +67,7 @@ Context menu
 ============
 
 A variety of functions are also available from the right-click context
-menu, as explained in the :ref:`Getting Started Tutorial <t3start:the-context-
-menu>`.
+menu, as explained in the :ref:`Getting Started Tutorial <t3start:the-context-menu>`.
 
 .. _pages-other-features:
 .. _Filter-the-page-tree:
