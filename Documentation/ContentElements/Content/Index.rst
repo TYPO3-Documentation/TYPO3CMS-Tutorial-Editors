@@ -1,4 +1,4 @@
-﻿.. include:: /Includes.rst.txt
+.. include:: /Includes.rst.txt
 
 
 .. _content-working:
@@ -7,67 +7,62 @@
 Working with content
 ====================
 
-Working with content happens essentially in the **WEB > Page** module.
-We will start by taking a tour of the module, which is quite rich.
+In TYPO3, working with content happens mostly in the :guilabel:`Web > Page`
+module.
 
-The *Page* module has two different modes or functions: "Columns"
-and "Languages". The "Languages" mode will be discussed later when talking
-about translations.
+This module has two different modes: "Columns" and "Languages". See
+:ref:`Working with languages <languages>`for more information about the
+"Languages" mode.
 
-For now we want to be in "Columns" mode. If that is not the case when
-you move to the *Page* module, please use the menu in the docheader to
-switch mode.
+For now we want to be in "Columns" mode. Use the menu in the docheader to
+switch modes.
 
 .. figure:: ../../Images/PageModuleFunctions.png
    :alt: Changing mode in the Page module
-
+   :class: with-border
 
 The screenshot below shows how the home page of the Introduction
-Package looks like in the TYPO3 CMS backend. Content is distributed
-among various content areas ("Border", "Middle: Left", "Middle: Center", etc.)
-which are called **columns**.
+Package looks in the TYPO3 backend. Content is distributed
+across various content areas on the page - these are called  **columns**. For
+example, "Border", "Middle: Left", "Middle: Center", etc.
 
 Many icons are greyed out to make the interface look less cluttered.
-Some icons don't appear at all until your hover over specific areas.
+Some icons don't display at all until your hover over specific areas.
 
 .. figure:: ../../Images/PageModuleColumns.png
    :alt: A typical view of the Page module with various content columns
+   :class: with-border
 
+Common page icons explained:
 
-What can be seen in this view?
+#. Use this icon to edit all the content elements of a column.
 
-#. This icon is used to edit all content elements of that column.
+#. Add a new content element to the column at this specific position.
 
-#. Adds a new content element to this column at precisely that position.
+#. Content element icon. This can provide a visual clue to the type of content
+   element. Click to access the context menu for the element (to perform
+   actions like *copy*).
 
-#. This icon represents the type of the content element. In that case
-   it is a custom content element which relies on the default icon,
-   but it may vary and provides a visual clue to the type.
-
-#. These icons light up when hovering over the whole element.
-   They are used to edit this content element, enable/disable it
-   or delete it respectively.
-
-You can click on the pencil icon of a content element to edit it (4).
-
+#. This group of icons is enabled when hovering over the whole element.
+   *  Use the pencil icon to edit the element.
+   *  Enable/disable the element to show or hide it in teh frontend
+   *  Delete the element.
 
 .. _content-working-moving:
 
 Moving content elements
 =======================
 
-Content elements can be moved around simply using drag and drop.
+You can move content elements using drag and drop.
 
 .. figure:: ../../Images/PageModuleMoveElements.png
    :alt: Moving content elements around using drag and drop
+   :class: with-border
 
+Click in the grey bar at the top of a content element to start dragging it.
+The *Page* module will then show you where you can drop it.
 
-Click in the grey bar at the top of a content element to start
-dragging it. The *Page* module will then show you where you can
-drop it.
-
-Moving a content element from one page to another is more
-convoluted, as you have to use the *List* module to perform
-a cut and paste operation. Please refer to the
-:ref:`Getting Started Tutorial <t3start:clipboard>` for
-usage of the *List* module.
+You can move a content element from one page to another in the :guilabel:`Web
+> List` module using cut and paste. Refer to the :ref:`Getting Started
+Tutorial <t3start:clipboard>` for information about using the clipboard in the
+the **List** module.
