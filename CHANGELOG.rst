@@ -2,6 +2,7 @@
 CHANGELOG
 =========
 
+*  **07/12/20** Worked on RTE and adding images.
 *  **06/12/20** Worked on Working with content page, create content page.
 *  **30/11/20** Worked on Creating pages page, access control, visibility and frontend login.
 *  **23/11/20** Worked on Translation page to edit it and update images. Also

@@ -1,102 +1,92 @@
 .. include:: /Includes.rst.txt
 
-
+.. _images-new:
 .. _images:
 
 ===================
 Working with Images
 ===================
 
-Since we are working with a "Text & Images" content element,
-let's add images to it!
+For content elements that support images (for example, Text & Images, Text &
+Media, Images Only), you will see an **Images** tab when you create or edit
+the content element.
 
-Move to the "Images" tab.
-
-.. figure:: ../../Images/EditContentAddImage.png
-   :alt: Adding an image to the content element
-
-
-Clicking the "Add image" button will open a window for selecting
-an image.
-
-.. figure:: ../../Images/ImageSelector.png
-   :alt: The window for selecting images
+.. figure:: ../../Images/EditContentImagesTab.png
+   :alt: The Images tab for a content element
+   :class: with-border
 
 
-Navigate the file tree to get to the :file:`examples` folder.
-Clicking on it will trigger the display of the files it contains
-in the right part of the window. You may want to check the
-"Display thumbnails" box to get a preview of each image.
+It is best practice to add new images using the :guilabel:`File > Filelist`
+module, which is covered in the :ref:`Getting Started Tutorial <t3start:the-file-module-or-image-archives>`. This method means files are centrally stored
+and any information or metadata you add to the image is used wherever that
+image is used on the site.
+When you use the :guilabel:`Select & upload files` button, the image is
+attached to the page, and any information or metadata is stored only for the
+image use on this page.
 
-You have two ways of selecting an image. Clicking on its name
-will select the image and close the window. Clicking on the "+"
-icon will only select the image, making it possible to select
-multiple images before closing the window.
+.. _add-image-to-page:
 
-Once you are back in your content element, you can perform
-a number of actions or configure the image further.
+Add an image to a page
+======================
+
+#. On the **Images** tab, click the :guilabel:`Add image` button. The **File
+   selector** window displays to let you browse for an image.
+
+   .. figure:: ../../Images/ImageSelector.png
+      :alt: The window for selecting images
+      :class: with-border
+
+#. Browse the file tree then select a folder.
+#. Tick the :guilabel:`Display thumbnails` box to show a preview of each image
+   in the folder.
+#. Click the name of an image to select it. Alternatively, click the
+   :guilabel:`+` icon to select multiple images before closing the window.
+
+Configure the image
+===================
+
+The **Images** tab lets you perform a number of actions to configure an image.
 
 .. figure:: ../../Images/EditContentImageProperties.png
-   :alt: Working with the image attached to the content element
+   :alt: Working with an image attached to the content element
+   :class: with-border
 
+Image metadata
+--------------
 
-First of all some information is display about the image (1):
-thumbnail and file name. The arrow next to the thumbnail is used
-to collapse the display of the image details.
+Use the small arrow next to the thumbnail to collapse and expand this section.
 
-A series of icons (2) let you act the image or its relation to the content element:
+Here you can set general metadata including description and alt text, and
+insert a link to the image.
 
-- The "Edit" icon lets you edit the chosen image's metadata.
-  Beware as this might impact other places where the image is used.
+If the file was added using the :guilabel:`File > Filelist`
+module (which is best practice), the information displayed here is drawn from
+the Filelist. If required, you can override this metadata to set specific
+values for the image for the current content element.
 
-- The "Delete" icon will remove the image from the content element,
-  not delete the image itself.
-
-- The "Move" icon (rightmost) is used by dragging and dropping for
-  changing the order of images
-
-The central area (3) lets you edit the image's metadata with
-regards to its current relation to the content element. If you
-check the corresponding "Override?" boxes, you can set a specific
-title, alternative text and caption for the relation of that image
-to the current content element.
-
-You can experiment with the image editor (4), which will let you
-crop the image.
-
-Finally if you check the "Enlarge on click" box (5), the image
-will be linked to the original file in a lightbox display.
+You can experiment with the image manipulation editor to crop or resize the
+image. Making changes here won't impact the original image file in Filelist.
 
 
 .. _images-appearance:
 
-Image appearance
-================
+Media Adjustments
+-----------------
 
-Moving the "Appearance" tab of the content element, you can set further
-behaviors of the images attached to the content element.
+Manually specify the width and height of the image in pixels, and apply a
+border.
 
-.. figure:: ../../Images/EditContentAppearance.png
-   :alt: Changing the appearance of images
+Gallery Settings
+----------------
 
-In "Image Adjustments" you can choose to apply a border or a
-special effect to the images. You can also choose a specific
-quality for these images.
+Choose where to position the image in relation to the text.
 
-In "Image Alignment" you can choose where the images should
-be positioned with regards to the text. Images are automatically
-arranged in columns, two by two. You can change this behaviour
-with the "Number of Columns" field.
+Images are automatically arranged in columns, two by two. You can change this
+behaviour with the :guilabel:`Number of Columns` field.
 
 
-.. _images-new:
+Behavior
+--------
 
-New images
-==========
-
-New images can be added using upload buttons found in the
-image selector window or by using the **FILE > Filelist**
-module.
-
-Usage of the *Filelist* module is covered in the
-:ref:`Getting Started Tutorial <t3start:the-file-module-or-image-archives>`.
+Use the :guilabel:`Enlarge on Click` setting to link the image
+will be linked to the original file in a lightbox display.
