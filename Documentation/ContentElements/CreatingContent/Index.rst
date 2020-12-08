@@ -104,8 +104,8 @@ Add new content to a page
 #. On a page, click the :guilabel:`"+ Content` icon where you want to insert
 content.
 #. On the **Typical Page Content** tab, choose the "Text & Media" element.
-   This is the most commonly used content type.
-   The **Create new Page Content** screen displays.
+   This is the most commonly used content type. The **Create new Page
+   Content** screen displays.
 
 .. figure:: ../../Images/NewContentElement.png
    :alt: Empty input form for a Text & Media content element

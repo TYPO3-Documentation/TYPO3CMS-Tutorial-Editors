@@ -10,8 +10,8 @@ Working with content
 In TYPO3, working with content happens mostly in the :guilabel:`Web > Page`
 module.
 
-This module has two different modes - "Columns" and "Languages". See
-:ref:`Working with languages <languages>`for more information about the
+This module has two different modes: "Columns" and "Languages". See
+:ref:`Working with languages <languages>` for more information about the
 "Languages" mode.
 
 For now we want to be in "Columns" mode. Use the menu in the docheader to
