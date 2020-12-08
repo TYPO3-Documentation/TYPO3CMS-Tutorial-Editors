@@ -72,4 +72,4 @@ Removing a Link
 ===============
 
 To remove a link from text, put your cursor anywhere in the linked text then
-click the :guilable:`Unlink` icon on the toolbar.
+click the :guilabel:`Unlink` icon on the toolbar.

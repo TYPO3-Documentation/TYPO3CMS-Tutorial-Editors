@@ -87,7 +87,7 @@ assign access restrictions. This is done on the **Access** tab of the page prope
 #. Navigate to the :guilabel:`Web > Page` module, and create a new page called
    "Members only".
 #. Add a text content element to the Members Only page, with text similar to
-"You need to authenticate to access the members area".
+   "You need to authenticate to access the members area".
 #. On the **Access** tab, select the "Hide at login" group for it.
 #. Save and close the record.
 #. Add another text content element to the page, with text similar to
