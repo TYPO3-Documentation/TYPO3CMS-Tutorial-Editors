@@ -42,6 +42,8 @@ Add an image to a page
 #. Click the name of an image to select it. Alternatively, click the
    :guilabel:`+` icon to select multiple images before closing the window.
 
+.. _Configure-the-image:
+
 Configure the image
 ===================
 
