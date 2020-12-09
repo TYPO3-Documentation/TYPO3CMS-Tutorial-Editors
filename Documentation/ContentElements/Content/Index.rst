@@ -44,8 +44,9 @@ Common page icons explained:
    actions like *copy*).
 
 #. This group of icons is enabled when hovering over the whole element.
+
    *  Use the pencil icon to edit the element.
-   *  Enable/disable the element to show or hide it in teh frontend
+   *  Enable/disable the element to show or hide it in the frontend
    *  Delete the element.
 
 .. _content-working-moving:
@@ -60,7 +61,7 @@ You can move content elements using drag and drop.
    :class: with-border
 
 Click in the grey bar at the top of a content element to start dragging it.
-The *Page* module will then show you where you can drop it.
+Highlighted areas will then show you where you can drop it.
 
 You can move a content element from one page to another in the :guilabel:`Web
 > List` module using cut and paste. Refer to the :ref:`Getting Started
