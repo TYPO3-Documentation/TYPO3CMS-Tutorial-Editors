@@ -21,7 +21,7 @@ Add a video to a page
 =====================
 
 On the **Media** tab, click the :guilabel:`Add media file` button, then follow
-the same process as you would to :ref:<add-image-to-page>.
+the same process as you would to :ref:`<add-image-to-page`.
 
 .. figure:: ../../Images/EditContentMediaTab.png
    :alt: The Media tab for a content element
@@ -41,4 +41,4 @@ start playing as soon as the page loads.
 
 You can configure various settings for media files (for example, adding a
 border, setting page position and behavior) just as you would to
-:ref:`configure an image<Configure-the-image>`.
+:ref:`configure an image:Configure-the-image`.
