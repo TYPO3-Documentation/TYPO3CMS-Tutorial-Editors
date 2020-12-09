@@ -7,8 +7,8 @@
 Creating Content
 ================
 
-On a page, click the :guilabel:`"+ Content` icon where you want to insert
-content.
+In the :guilabel:`Web > Page` module, on any page, click the :guilabel:`"+
+Content` icon where you want to insert content.
 
 .. figure:: ../../Images/NewContentCreateNew.png
    :alt: The Typical Page Content tab of the new content element wizard
@@ -36,11 +36,11 @@ This page describes the TYPO3 Core content elements.
 Typical Page Content
 --------------------
 
+Insert regular text and image content types to build standard web pages.
+
 .. figure:: ../../Images/NewContentWizardTabTypical.png
    :alt: The Typical Page Content tab of the new content element window
    :class: with-border
-
-Insert regular text and image content types to build standard web pages.
 
 
 .. _content-form:
@@ -48,11 +48,11 @@ Insert regular text and image content types to build standard web pages.
 Form Elements
 -------------
 
+Create a login form or a simple contact form.
+
 .. figure:: ../../Images/NewContentWizardTabForm.png
    :alt: The Form Elements tab of the new content element window
    :class: with-border
-
-Create a login form or a simple contact form.
 
 
 .. _content-menu:
@@ -60,25 +60,26 @@ Create a login form or a simple contact form.
 Menu Elements
 -------------
 
+Present a menu or list of page links in different ways.
+
 .. figure:: ../../Images/NewContentWizardTabMenu.png
    :alt: The Menu Elements tab of the new content element window
    :class: with-border
 
-Present a menu or list of page links in different ways.
 
 .. _content-plugin:
 
 Plugins
 -------
 
-.. figure:: ../../Images/NewContentWizardTabPlugins.png
-   :alt: The Plugins tab of the new content element window
-   :class: with-border
-
 Plugins are provided by extensions. Not all plugins are available on this tab.
 It depends on their architecture or on backend configuration. In some cases
 you insert the General Plugin content element, then go to the **Plugin** tab
 to select a specific plugin.
+
+.. figure:: ../../Images/NewContentWizardTabPlugins.png
+   :alt: The Plugins tab of the new content element window
+   :class: with-border
 
 
 .. _content-special:
@@ -86,13 +87,13 @@ to select a specific plugin.
 Special Elements
 ----------------
 
-.. figure:: ../../Images/NewContentWizardTabSpecial.png
-   :alt: The Special Elements tab of the new content element window
-   :class: with-border
-
 Insert plain HTML, or a horizontal divider on the page. The "Insert records"
 element lets you reference other content elements, so you can reuse content
 from another page without duplicating it.
+
+.. figure:: ../../Images/NewContentWizardTabSpecial.png
+   :alt: The Special Elements tab of the new content element window
+   :class: with-border
 
 
 .. _content-new-element:
@@ -100,9 +101,8 @@ from another page without duplicating it.
 Add new content to a page
 =========================
 
-
 #. On a page, click the :guilabel:`"+ Content` icon where you want to insert
-content.
+   content.
 #. On the **Typical Page Content** tab, choose the "Text & Media" element.
    This is the most commonly used content type. The **Create new Page
    Content** screen displays.
@@ -120,3 +120,4 @@ content.
 
 .. figure:: ../../Images/NewContentElementSaved.png
    :alt: The new content element appears in the Page module
+   :class: with-border

@@ -9,7 +9,7 @@ The Rich Text Editor
 
 The TYPO3 text editing interface is not much different from a word processor.
 The options available in the toolbars vary depending on how your TYPO3
-installation is conifgured.
+installation is configured.
 
 .. figure:: ../../Images/EditContentRichTextEditor.png
    :alt: A typical view of the Rich Text Editor
@@ -28,18 +28,18 @@ Creating a Link
 #. Click the :guilabel:`Link` icon in the toolbar.
    The **Link Browser** window displays.
 
-.. figure:: ../../Images/LinkBrowser.png
-   :alt: The TYPO3 CMS link browser
-   :class: with-border
+   .. figure:: ../../Images/LinkBrowser.png
+      :alt: The TYPO3 CMS link browser
+      :class: with-border
 
-This window lets you link to an internal page, file, folder, external URL,
-email address or phone number.
+This window lets you link to an internal page, file, folder, external
+URL, email address or phone number.
 
 Internal links
 --------------
 You can link to an internal file, folder, page or content element on a page.
 
-On the Page tab, select the page in the page tree that you want to link to.
+On the **Page** tab, select the page in the page tree that you want to link to.
 
 Alternatively, you can link to a specific point (anchor) on the page. Browse
 to the page you want to link to, then click the arrow icon next to the page
