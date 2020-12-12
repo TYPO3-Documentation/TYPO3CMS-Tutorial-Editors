@@ -45,7 +45,7 @@ pre-defined form already built, which you can use to get started.
 
 #. Add your form to a page the same way you would add any :ref:`content       element<content-form>`. On the  **Form elements** tab, choose 'Form'.
 #. In the form content element, go to the **Plugin** tab and in the
-   :guilabel:`Form definition' list, choose your form.
+   :guilabel:`Form definition` list, choose your form.
 
    .. figure:: ../../Images/FormsFormDefinition.png
       :alt: Choose your form on the Plugin tab
