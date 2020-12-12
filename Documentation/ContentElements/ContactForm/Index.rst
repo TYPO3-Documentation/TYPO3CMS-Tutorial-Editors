@@ -10,11 +10,11 @@ Creating a contact form
 
 You can create a form from the :guilabel:`Web > Forms` module. This is a
 system extension which needs to be activated by your administrator. It is
-written in TypoScript and is fully documented in the :ref:`"Form Framework"<form:start>` system extension manual.
+written in TypoScript and is fully documented in the :ref:`Form Framework<form:start>` system extension manual.
 
-This module provides a guided interface for editors to create forms such as
-a contact form, newsletter subscription or even a survey. TYPO3 comes with one
-pre-defined form already built, which you can use to get started.
+This module provides a guided interface for editors to create any kind of form
+such as a contact form, newsletter subscription or even a survey. TYPO3 comes
+with one pre-defined form already built, which you can use to get started.
 
 #. In the :guilabel:`Web > Forms` module, click the :guilabel:`+ Create new
    form` button. The **Create new form** wizard displays.
@@ -25,13 +25,13 @@ pre-defined form already built, which you can use to get started.
 
 #. Choose whether you want to create a blank form or use a predefined form.
    In this case, choose the predefined option. The **Settings** step displays.
-#. In the :guilabel:`Start template` list, select 'Simple contact form', and
-   then type a name for the form.
 
    .. figure:: ../../Images/FormsSettingsStep.png
       :alt: The Settings step of the Create new form wizard.
       :class: with-border
 
+#. In the :guilabel:`Start template` list, select 'Simple contact form', and
+   then type a name for the form.
 #. Click **Next** and then click **Finish**. Your new form displays.
 
    .. figure:: ../../Images/FormsNewForm.png
@@ -40,7 +40,7 @@ pre-defined form already built, which you can use to get started.
 
    The predefined 'Simple contact form' comes with some settings already
    configured, but you can edit these settings and add more fields. For
-   example, you might want to delete the Summary page on this form, and change
+   example, you might want to delete the Summary page, and change
    the labels on the buttons.
 
 #. Add your form to a page the same way you would add any :ref:`content       element<content-form>`. On the  **Form elements** tab, choose 'Form'.
@@ -53,6 +53,7 @@ pre-defined form already built, which you can use to get started.
 
 #. On the **General** tab, type a header for your form, then save and close
    the record.
+
    Preview the page and it should look something like this:
 
    .. figure:: ../../Images/EditContentFormOutput.png
@@ -68,8 +69,9 @@ Create a form from scratch
 #. In the :guilabel:`Web > Forms` module, click the :guilabel:`+ Create new
    form` button.
 #. In the **Create new form** wizard, choose to create a blank form.
-#. Give your form a name, then click **Next** and **Finish**. A blank form
-   is displays.
+#. Give your form a name, then click **Next** and **Finish**.
+
+   A blank form displays.
 
    .. figure:: ../../Images/FormsBlankForm.png
       :alt: Create a new form from scratch
@@ -82,14 +84,15 @@ Create a form from scratch
       :alt: Create a new form from scratch
       :class: with-border
 
-   *  TYPO3 comes with over twenty form fields by default, including:
-   *  Basic elements, like text or password fields
-   *  Special elements requiring specific format validation, like phone
+   TYPO3 comes with over twenty form fields by default, including:
+
+   *  **Basic elements** like text or password fields
+   *  **Special elements** requiring specific format validation, like phone
       numbers or dates
-   *  Select elements, like checkboxes or multiple choice
-   *  Advanced elements that have special rules, like user uploads or calendar
-      date pickers
-   *  Container elements to visually organize surveys
+   *  **Select elements** like checkboxes or multiple choice
+   *  **Advanced elements** that have special rules, like user uploads or
+      calendar date pickers
+   *  **Container elements** to visually organize surveys
 
    Once you’ve selected a form element, you can customize the settings for how the field is displayed.
 
@@ -102,13 +105,12 @@ Create a form from scratch
       :class: with-border
 
 #. Click the :guilabel:`Preview mode` icon to see an indication of how your
-   form will display  on the frontend.
+   form will display on the frontend. Use the :guilabel:`Edit mode` icon to
+   return to editing your form.
 
    .. figure:: ../../Images/FormsPreview.png
       :alt: Create a new form from scratch
       :class: with-border
-
-   Use the :guilabel:`Edit mode` icon to return to editing your form.
 
 
 .. _Working-with-Forms:
