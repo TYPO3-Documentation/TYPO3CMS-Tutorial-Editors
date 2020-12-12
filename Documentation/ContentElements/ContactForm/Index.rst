@@ -17,7 +17,7 @@ a contact form, newsletter subscription or even a survey. TYPO3 comes with one
 pre-defined form already built, which you can use to get started.
 
 #. In the :guilabel:`Web > Forms` module, click the :guilabel:`+ Create new
-   form` button. The ** Create new form** wizard displays.
+   form` button. The **Create new form** wizard displays.
 
    .. figure:: ../../Images/FormCreateNew.png
       :alt: Launching the create new form wizard
@@ -60,13 +60,74 @@ pre-defined form already built, which you can use to get started.
       :class: with-border
 
 
-.. _blank-form:
+.. _Create-form-scratch:
 
 Create a form from scratch
 ==========================
 
+#. In the :guilabel:`Web > Forms` module, click the :guilabel:`+ Create new
+   form` button.
+#. In the **Create new form** wizard, choose to create a blank form.
+#. Give your form a name, then click **Next** and **Finish**. A blank form
+   is displays.
+
+   .. figure:: ../../Images/FormsBlankForm.png
+      :alt: Create a new form from scratch
+      :class: with-border
+
+#. Click the :guilabel:`Create new element` button. The **New element** window
+   displays.
+
+   .. figure:: ../../Images/FormsNewElement.png
+      :alt: Create a new form from scratch
+      :class: with-border
+
+   *  TYPO3 comes with over twenty form fields by default, including:
+   *  Basic elements, like text or password fields
+   *  Special elements requiring specific format validation, like phone
+      numbers or dates
+   *  Select elements, like checkboxes or multiple choice
+   *  Advanced elements that have special rules, like user uploads or calendar
+      date pickers
+   *  Container elements to visually organize surveys
+
+   Once you’ve selected a form element, you can customize the settings for how the field is displayed.
+
+#. Choose the **Text** element and the field is added to your form. You can
+   configure settings for the field (such as placeholder text and field
+   validation) on the right-hand side of the screen .
+
+   .. figure:: ../../Images/FormsFieldSettings.png
+      :alt: Create a new form from scratch
+      :class: with-border
+
+#. Click the :guilabel:`Preview mode` icon to see an indication of how your
+   form will display  on the frontend.
+
+   .. figure:: ../../Images/FormsPreview.png
+      :alt: Create a new form from scratch
+      :class: with-border
+
+   Use the :guilabel:`Edit mode` icon to return to editing your form.
 
 
+.. _Working-with-Forms:
+
+Working with forms
+==================
+
+When you have added multiple fields to your form, you can drag and drop them
+to rearrange their order.
+
+Click the :guilabel:`Settings` button at the top of the form to add **Finishers** like a confirmation message or redirection to another page.
+
+.. figure:: ../../Images/FormsFinishers.png
+   :alt: Add finishers to a form
+   :class: with-border
+
+You can integrate extensions with existing forms. For example, if you're
+running a sales operation, you can integrate with Mautic and any changes to a
+TYPO3 form will update Mautic to give you seamless lead tracking.
 
 .. tip::
 
