@@ -2,6 +2,8 @@
 CHANGELOG
 =========
 
+*  **12/12/20** Worked on Creating a contact form.
+*  **09/12/20** Worked on embedding video.
 *  **07/12/20** Worked on RTE and adding images.
 *  **06/12/20** Worked on Working with content page, create content page.
 *  **30/11/20** Worked on Creating pages page, access control, visibility and frontend login.
