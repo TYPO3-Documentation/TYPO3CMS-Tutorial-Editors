@@ -47,7 +47,7 @@ instances of :guilabel:`Page Title` usage are left unchanged.
    :alt: The General tab of the page properties
    :class: with-border
 
-   The :guilabel:`General` tab of the page properties
+   The **General** tab of the page properties
 
 .. _pages-properties-seo:
 
@@ -91,7 +91,7 @@ frontend.
    :alt: The "Appearance" tab of the page properties
    :class: with-border
 
-   The :guilabel:`Appearance` tab of the page properties
+   The **Appearance** tab of the page properties
 
 Backend layouts determine what content areas are made available for editors
 in the :guilabel:`Web > Page` module. They can also be used to influence the
@@ -112,7 +112,7 @@ This tab influences a variety of different aspects of the page.
    :alt: The Behaviour tab of the page properties
    :class: with-border
 
-   The :guilabel:`Behaviour` tab of the page properties
+   The **Behaviour** tab of the page properties
 
 Here are some of the common fields of the Behaviour tab:
 
@@ -157,7 +157,7 @@ configuration.
    :alt: The Resources tab of the page properties
    :class: with-border
 
-   The :guilabel:`Resources` tab of the page properties
+   The **Resources** tab of the page properties
 
 The rest of the properties on this tab are related to :ref:`Page TSconfig
 <t3tsconfig:pagetsconfig>`.
@@ -169,7 +169,7 @@ Language
 
 This tab lets you control the visibility of the page based on localization.
 
-For more information about translation, see :ref:'Working with Languages <_languages>.
+For more information about translation, see :ref:'Working with Languages <languages>.
 
 
 .. _pages-properties-accesss:
@@ -179,7 +179,7 @@ Access
 
 This tab lets you control the visibility of the page.
 
-For more information, see :ref:<_visibility>.
+For more information, see :ref:<visibility>.
 
 
 .. _pages-properties-categories:
@@ -194,7 +194,7 @@ categories can be applied to pages, content elements, and files.
    :alt: The Categories tab of the page properties
    :class: with-border
 
-   The :guilabel:`Categories` tab of the page properties
+   The **Categories** tab of the page properties
 
 
 Categories should be defined in some folder and can then be assigned to
@@ -208,5 +208,6 @@ Notes
 
 Use this tab for your own editorial notes and internal comments, such as
 reminders or to-do lists.
+
 Notes display in the backend above the Page Properties tabs. Notes do not
 display on the frontend.
