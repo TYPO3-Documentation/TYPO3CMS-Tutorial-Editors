@@ -89,4 +89,9 @@ their `landing page
    Languages/Index
    NextSteps/Index
 
+
+Links for this manual
+:ref:`Index` | :ref:`Sitemap` | :ref:Targets\
+
+
 .. _SkillDisplay: https://www.skilldisplay.eu/
