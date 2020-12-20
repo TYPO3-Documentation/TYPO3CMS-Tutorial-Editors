@@ -34,7 +34,7 @@ Package for the *Standard* page type include:
 General
 =======
 
-The **General** tab contains general information about the page. You
+This tab contains general information about the page. You
 can change the :guilabel:`Page Type`, and edit titles for the page and the URL.
 
 The :guilabel:`Page Title` is used directly to generate speaking URLs. It is
@@ -54,7 +54,9 @@ instances of :guilabel:`Page Title` usage are left unchanged.
 SEO
 ===
 
-The **SEO** tab uses the cs_seo system extension. https://docs.typo3.org/c/typo3/cms-seo/master/en-us/Index.html
+This tab is used for search engine optimization. It uses the cs_seo system
+extension. See the :ref:'SEO Core extension <cs_seo:for-editors>' manual for
+more information.
 
 
 .. _pages-properties-social-media:
@@ -62,13 +64,15 @@ The **SEO** tab uses the cs_seo system extension. https://docs.typo3.org/c/typo3
 Social media
 ============
 
+This tab is used to enrich social media snippets for the URL of the page It
+uses the cs_seo system extension. See the :ref:'SEO Core extension <cs_seo:for-editors>' manual for more information.
 
 .. _pages-properties-metadata:
 
 Metadata
 ========
 
-The fields that are available on the :guilabel:`Metadata` tab depends on how
+The fields that are available on this tab depend on how
 your site is configured. How the data is used by the frontend is driven by
 TypoScript, and again, depends on your site configuration.
 
@@ -80,8 +84,8 @@ details like :guilabel:`Author Name` and :guilabel:`Last Update`.
 Appearance
 ==========
 
-The :guilabel:`Appearance` tab contains properties that influence how the
-page is rendered in the frontend.
+This tab contains properties that influence how the page is rendered in the
+frontend.
 
 .. figure:: ../../Images/PagePropertiesAppearance.png
    :alt: The "Appearance" tab of the page properties
@@ -102,8 +106,7 @@ the content of a single page than using :ref:`mount points <pages-types>`.
 Behaviour
 =========
 
-The :guilabel:`Behaviour` tab influences a variety of different aspects of
-the page.
+This tab influences a variety of different aspects of the page.
 
 .. figure:: ../../Images/PagePropertiesBehaviour.png
    :alt: The Behaviour tab of the page properties
@@ -111,25 +114,16 @@ the page.
 
    The :guilabel:`Behaviour` tab of the page properties
 
-Here is an explanation of some of the common sections and fields of the
-Behaviour tab:
+Here are some of the common fields of the Behaviour tab:
 
-Links to this Page
-------------------
+Link Target
+   Set the default Link Target for menu items linking to the page. You can
+   also specify for the page to open in a new window.
 
-In this section you can set the default Link Target for menu items
-linking to the page. You can also specify for the page to open in a new
-window.
-
-Caching
--------
-
-This section lets you define a specific cache duration as well as assign
-cache tags to the page. Some TYPO3 extensions can flush pages from the
-cache based on their cache tag.
-
-Miscellaneous
--------------
+Cache Lifetime
+   Define a specific cache duration as well as assign cache tags to the page.
+   Some TYPO3 extensions can flush pages from the cache based on their cache
+   tag.
 
 Use as Root Page
   Indicates that this page is the start of a new web site. The page icon
@@ -146,18 +140,16 @@ Hide child pages in page tree
   rendering in page tree of the backend. This can be useful if you have a
   lot of subpages.
 
-Use as Container
-----------------
+Contains Plugin
+   Lets you define the page as a container for a frontend plugin.
 
-The :guilabel:`Contains Plugin` field lets you define the page as containing
-a frontend plugin.
 
 .. _pages-properties-resources:
 
 Resources
 =========
 
-The :guilabel:`Resources` tab lets you link media files to the current page.
+This tab lets you link media files to the current page.
 How those files are handled depends on your frontend rendering
 configuration.
 
@@ -175,11 +167,20 @@ The rest of the properties on this tab are related to :ref:`Page TSconfig
 Language
 ========
 
+This tab lets you control the visibility of the page based on localization.
+
+For more information about translation, see :ref:'Working with Languages <_languages>.
+
 
 .. _pages-properties-accesss:
 
 Access
 ======
+
+This tab lets you control the visibility of the page.
+
+For more information, see :ref:<_visibility>.
+
 
 .. _pages-properties-categories:
 
@@ -204,3 +205,8 @@ for example, can display a list of pages from a selected category.
 
 Notes
 ==========
+
+Use this tab for your own editorial notes and internal comments, such as
+reminders or to-do lists.
+Notes display in the backend above the Page Properties tabs. Notes do not
+display on the frontend.
