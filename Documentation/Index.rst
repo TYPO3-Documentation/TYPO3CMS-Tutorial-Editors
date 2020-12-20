@@ -70,7 +70,7 @@ their `landing page
 
 
 Links for this manual
-:ref:`genindex` | :ref:`Sitemap` | :ref:`Targets`
+:ref:`genindex` | :ref:`Sitemap` | :ref:`Targets-for-Cross-Referencing`
 
 
 .. _SkillDisplay: https://www.skilldisplay.eu/
