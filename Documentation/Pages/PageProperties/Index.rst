@@ -169,7 +169,7 @@ Language
 
 This tab lets you control the visibility of the page based on localization.
 
-For more information about translation, see :ref:`Working with Language <languages>`
+For more information about translation, see :ref:`Working with Languages <languages>`
 
 
 .. _pages-properties-accesss:
@@ -179,7 +179,7 @@ Access
 
 This tab lets you control the visibility of the page.
 
-For more information, see :ref:<visibility>.
+For more information, see :ref:`Elements visibility <visibility>`.
 
 
 .. _pages-properties-categories:
