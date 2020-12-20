@@ -55,7 +55,7 @@ SEO
 ===
 
 This tab is used for search engine optimization. It uses the cs_seo system
-extension. See the :ref:'SEO Core extension <cs_seo:for-editors>' manual for
+extension. See the :ref:'SEO Core extension <cs_seo>' manual for
 more information.
 
 
