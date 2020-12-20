@@ -91,7 +91,7 @@ their `landing page
 
 
 Links for this manual
-:ref:`Index` | :ref:`Sitemap` | :ref:Targets\
+:ref:`genindex` | :ref:`Sitemap` | :ref:Targets\
 
 
 .. _SkillDisplay: https://www.skilldisplay.eu/
