@@ -55,7 +55,7 @@ SEO
 ===
 
 This tab is used for search engine optimization. It uses the cs_seo system
-extension. See the :ref:'SEO Core extension <cs_seo>' manual for
+extension. See the :ref:`SEO Core extension <cs_seo:for-editors>` manual for
 more information.
 
 
@@ -65,7 +65,7 @@ Social media
 ============
 
 This tab is used to enrich social media snippets for the URL of the page It
-uses the cs_seo system extension. See the :ref:'SEO Core extension <cs_seo:for-editors>' manual for more information.
+uses the cs_seo system extension. See the :ref:`SEO Core extension <cs_seo:for-editors>` manual for more information.
 
 .. _pages-properties-metadata:
 
@@ -169,7 +169,7 @@ Language
 
 This tab lets you control the visibility of the page based on localization.
 
-For more information about translation, see :ref:'Working with Languages <languages>.
+For more information about translation, see :ref:`Working with Language <languages>`
 
 
 .. _pages-properties-accesss:
