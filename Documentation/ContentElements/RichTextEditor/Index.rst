@@ -4,7 +4,7 @@
 .. _rte:
 
 ====================
-The Rich Text Editor
+The rich text editor
 ====================
 
 The TYPO3 text editing interface is not much different from a word processor.
@@ -21,7 +21,7 @@ internal and external links to text.
 
 .. _rte-linking:
 
-Creating a Link
+Creating a link
 ===============
 
 #. Select the text you want to link.
@@ -68,7 +68,7 @@ External links
 #. Click the :guilabel:`Set Link` button to close the **Link Browser** window.
 
 
-Removing a Link
+Removing a link
 ===============
 
 To remove a link from text, put your cursor anywhere in the linked text then
