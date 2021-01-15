@@ -4,7 +4,7 @@
 .. _content-creating:
 
 ================
-Creating Content
+Creating content
 ================
 
 In the :guilabel:`Web > Page` module, on any page, click the :guilabel:`"+
@@ -33,7 +33,7 @@ This page describes the TYPO3 Core content elements.
 
 .. _content-typical:
 
-Typical Page Content
+Typical page content
 --------------------
 
 Insert regular text and image content types to build standard web pages.
@@ -45,7 +45,7 @@ Insert regular text and image content types to build standard web pages.
 
 .. _content-form:
 
-Form Elements
+Form elements
 -------------
 
 Create a login form or a simple contact form.
@@ -57,7 +57,7 @@ Create a login form or a simple contact form.
 
 .. _content-menu:
 
-Menu Elements
+Menu elements
 -------------
 
 Present a menu or list of page links in different ways.
@@ -84,7 +84,7 @@ to select a specific plugin.
 
 .. _content-special:
 
-Special Elements
+Special elements
 ----------------
 
 Insert plain HTML, or a horizontal divider on the page. The "Insert records"
