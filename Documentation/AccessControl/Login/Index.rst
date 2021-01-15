@@ -27,8 +27,9 @@ record, and stored in a suitable page in the backend.
 
 .. _Create-a-Usergroup:
 
-Create a Usergroup and user
-===========================
+Create a user group and user
+============================
+
 #. Create a new folder in the page tree, and name it "Web site users".
 
    .. figure:: ../../Images/AccessUserFolder.png
@@ -108,7 +109,7 @@ frontend, the TYPO3 error message "Page Not Found" will display.
 
 .. _frontend-login-form:
 
-Add a Login form
+Add a login form
 ================
 
 The next step is to place a login box somewhere on the site so that visitors
