@@ -25,8 +25,8 @@ Publication dates
 
 You can specify a period of time for content to be visible. This might be
 useful for seasonal announcements or festive periods.
-Any page or content element with a defined "Publish date"
-will not be visible before that date. If it has an "Expiration
+Any page or content element with a defined :guilabel:`Publish date"
+will not be visible before that date. If it has an :guilabel:`Expiration``
 date", it will be hidden from that point onward.
 
 .. figure:: ../../Images/AccessPublicationDate.png
