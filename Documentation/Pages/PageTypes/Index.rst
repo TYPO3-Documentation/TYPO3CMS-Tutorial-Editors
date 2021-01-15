@@ -1,5 +1,4 @@
-.. include:: ../../Includes.txt
-
+.. include:: /Includes.rst.txt
 
 .. _pages-types:
 
@@ -7,48 +6,52 @@
 Page types
 ==========
 
-TYPO3 CMS offers many useful page types by default. They are
-shortly described in this chapter.
+By default, TYPO3 CMS includes the following page types.
+
+Page
+====
 
 Standard
-  As the name implies this is the default page type and the most common
-  you will use. It covers all basic needs.
+  This is the default page type, and the most common. It covers all basic
+  needs.
+
+Backend User Section
+  This page type only displays in the frontend for a specific group of backend
+  users. You have to be logged in to the backend to see this type of page.
+
+Link
+====
 
 Shortcut
-  A shortcut to another page in the page tree. When users navigate
-  to such a page, they will be taken transparently to the shortcut's
-  destination.
-
-Link to External URL
-  This is similar to the "Shortcut" type but leads the user to a
-  page on another web site.
+  This page type is a shortcut to another page in the page tree. When users
+  navigate to this page in the frontend, they will be taken seamlessly to the
+  shortcut's destination.
 
 Mount point
   A mount point lets you select any other page in the page tree. All
-  child pages of the chosen page will appear as child pages of the mount
-  point. In effect this lets you duplicate a part your page tree
-  in terms of navigation, without actually duplicating pages and content
-  in the backend.
+  child pages of the chosen page will display as child pages of the mount
+  point. This lets you duplicate parts of your page tree in terms of
+  navigation, without actually duplicating pages and content.
 
-  Mount points are a very powerful feature of TYPO3 CMS, although sometimes
-  tricky to use.
+  See the :ref:`Mounts <coreapi:access-options-mounts>` section in TYPO3
+  Explained for more information about mount points.
+
+Link to External URL
+  This page type is similar to the :guilabel:`Shortcut` type but leads the
+  user to a page on another web site.
+
+Special
+=======
 
 Folder
-  A folder-type page is simply a container. It will not appear in the
-  frontend. It is generally used to store other types of records than
-  pages or content elements.
-
-Menu separator
-  Creates a visual separation in the page tree and, if configured, also
-  in the frontend navigation. Configuring usage of menu separators in the
-  frontend is achieved using TypoScript.
+  A folder page type is a container. It is generally used to store records
+  other than pages or content elements. It will not display in the frontend.
 
 Recycler
-  This is similar to the "Folder" type, but indicates that the content
-  is meant for removal. However it offers no cleanup function. It is just
-  a visual indication.
+  This is similar to the :guilabel:`Folder` type, but indicates that the
+  content is meant for removal. There is no clean-up function, it is just a
+  visual indicator.
 
-Backend User Section
-  Such a page will appear in the frontend only for a specific group
-  of backend users (which means you have to be logged into the
-  backend to see such pages).
+Menu separator
+  This page type creates a visual separation in the page tree. You can use
+  TypoScript to also display these separators in the frontend navigation.

@@ -1,25 +1,22 @@
-.. include:: ../../Includes.txt
+.. include:: /Includes.rst.txt
 
 
 .. _content-creating:
 
 ================
-Creating Content
+Creating content
 ================
 
-Click any of the "Add content" icons. You will then be presented
-with a wizard for choosing the type of content element that you
-want to add to your page. This list may vary depending on your
-setup and on extensions that may be installed.
+In the :guilabel:`Web > Page` module, on any page, click the :guilabel:`"+
+Content` icon where you want to insert content.
 
-We will take this opportunity to briefly go through the
-various types of content elements as needed. The wizard
-itself already provides mostly self-explanatory descriptions.
+.. figure:: ../../Images/NewContentCreateNew.png
+   :alt: The Typical Page Content tab of the new content element wizard
+   :class: with-border
 
-.. tip::
-
-   **Advanced topic:** this whole wizard is configurable using
-   so-called :ref:`Page TSConfig <t3tsconfig:pagenewcontentelementwizard>`.
+This action displays the **Create new content element** window. The
+content elements that are available depends on the setup of your TYPO3
+installation, and any extensions that may be installed.
 
 
 .. _content-types:
@@ -27,37 +24,47 @@ itself already provides mostly self-explanatory descriptions.
 Types of content elements
 =========================
 
-If you are working with the *Introduction Package*, you will see
-more content elements than described here, because the *Introduction
-Package* (or rather the *Bootstrap Package*) comes with several
-content elements of its own.
+If you are working with the `Introduction Package <https://extensions.typo3.org/extension/introduction/>`__, you will see more
+content elements than described here. That's because the *Bootstrap Package*
+comes with has several content elements of its own.
 
-But, on this page we only show the TYPO3 core content elements.
+This page describes the TYPO3 Core content elements.
+
 
 .. _content-typical:
 
-Typical Page Content
+Typical page content
 --------------------
 
+Insert regular text and image content types to build standard web pages.
+
 .. figure:: ../../Images/NewContentWizardTabTypical.png
-   :alt: The Typical Page Content tab of the new content element wizard
+   :alt: The 'Typical Page Content' tab of the new content element window
+   :class: with-border
+
 
 .. _content-form:
 
-Form Elements
+Form elements
 -------------
 
+Create a login form or a simple contact form.
+
 .. figure:: ../../Images/NewContentWizardTabForm.png
-   :alt: The Form Elements tab of the new content element wizard
+   :alt: The 'Form Elements' tab of the new content element window
+   :class: with-border
 
 
 .. _content-menu:
 
-Menu Elements
+Menu elements
 -------------
 
+Present a menu or list of page links in different ways.
+
 .. figure:: ../../Images/NewContentWizardTabMenu.png
-   :alt: The Menu Elements tab of the new content element wizard
+   :alt: The 'Menu Elements' tab of the new content element window
+   :class: with-border
 
 
 .. _content-plugin:
@@ -65,51 +72,52 @@ Menu Elements
 Plugins
 -------
 
+Plugins are provided by extensions. Not all plugins are available on this tab.
+It depends on their architecture or on backend configuration. In some cases
+you insert the General Plugin content element, then go to the **Plugin** tab
+to select a specific plugin.
+
 .. figure:: ../../Images/NewContentWizardTabPlugins.png
-   :alt: The Plugins tab of the new content element wizard
-
-
-Plugins are provided by extensions. Not all plugins appear
-in this tab. It depends on their architecture or on backend
-configuration.
+   :alt: The 'Plugins' tab of the new content element window
+   :class: with-border
 
 
 .. _content-special:
 
-Special Elements
+Special elements
 ----------------
 
+Insert plain HTML, or a horizontal divider on the page. The "Insert records"
+element lets you reference other content elements, so you can reuse content
+from another page without duplicating it.
+
 .. figure:: ../../Images/NewContentWizardTabSpecial.png
-   :alt: The Special Elements tab of the new content element wizard
-
-
-The "Insert records" element is used to make references to
-other content elements. This way you can reuse content in
-an other page without duplicating it.
+   :alt: The 'Special Elements' tab of the new content element window
+   :class: with-border
 
 
 .. _content-new-element:
 
-Creating a new content element
-==============================
+Add new content to a page
+=========================
 
-Go back to the "Typical Page Content" and choose "Text & Media",
-which is probably the most used content type. You should see the
-following input form:
+#. On a page, click the :guilabel:`"+ Content` icon where you want to insert
+   content.
+#. On the **Typical Page Content** tab, choose the "Text & Media" element.
+   This is the most commonly used content type. The **Create new Page
+   Content** screen displays.
 
 .. figure:: ../../Images/NewContentElement.png
    :alt: Empty input form for a Text & Media content element
+   :class: with-border
 
+#. In the :guilabel:`Header` field, type *New content*.
+#. In the :guilabel:`Text` area, type some content. This field uses a
+   :ref:`Rich Text Editor<rte>` (RTE).
 
-The most important fields are the "Header", which is going to be the
-title of your content element, and the "Text", which will be the
-content itself. This field uses a Rich-Text Editor (RTE), which
-is :ref:`described in more details later <rte>`.
-
-We will not look at the other fields in detail just yet.
-For now please enter some text in both the "Header" and "Text"
-fields, save your work and hit the "Close" icon, so that we get back to
-the *Page* module. You should be able to see your new content:
+#. Save and close the content element.
+   You can see the newly added element on the page:
 
 .. figure:: ../../Images/NewContentElementSaved.png
    :alt: The new content element appears in the Page module
+   :class: with-border

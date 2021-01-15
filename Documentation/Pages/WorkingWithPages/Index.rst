@@ -1,44 +1,86 @@
-.. include:: ../../Includes.txt
+.. include:: /Includes.rst.txt
 
 .. _pages-working-with:
-
-==================
-Working with Pages
-==================
-
-You have already seen the page tree, this chapter shows how easily pages are
-created, moved around, hidden and deleted. Most can be achieved by
-dragging and dropping.
-
 .. _pages-drag-drop:
 
-Drag and Drop
-=============
+==================
+Working with pages
+==================
 
-.. figure:: ../../Images/PageTreeDragDrop.png
-   :alt: Working in the page tree with drag and drop
+You can manage pages directly in the page tree.
 
-#. Click on the "new page" icon to display icons corresponding to the various
-   page types. Drag and drop any of these icons in your page tree to create
-   a new page of that type.
+.. _Move-Pages:
 
-#. To move an existing page, grab the page title (not the icon!) and drop it anywhere
-   in the page tree.
+Move pages
+==========
 
-#. The page tree shows the point where the page will be inserted once
-   you drop it. A bubble help displays information about possible
-   actions options (i.e. copy instead of move)
+#. Choose the page you want to move, then drag it anywhere in the page
+   tree.
 
-#. This page is being copied. Note the page highlighted with the light blue
-   background. If the page is dropped now, it will become of child of that
-   page.
+   A horizontal line displays to indicate the potential new
+   position of the page.
 
-#. When you move a page to the bottom of the screen, a "delete" zone appears.
-   Drop the page there to delete it. There is no confirmation dialog box,
-   but the "delete" zone offers to undo the operation for a little while.
+   .. figure:: ../../Images/CopyMovePage.png
+      :alt: Drag a page to move it on the page tree
+      :class: with-border
 
+      Drag a page to move it on the page tree
 
-.. note::
+   A blue background on existing pages indicates that your page will
+   become a child of that page.
 
-   A lot can also be achieved using the context menu, as is explained
-   in the :ref:`Getting Started Tutorial <t3start:the-context-menu>`.
+   .. figure:: ../../Images/CopyMoveChildPage.png
+      :alt: Drop a page on another page to make it a child page
+      :class: with-border
+
+      Drop a page on another page to make it a child page
+
+#. Release your mouse. A confirmation message displays the option to copy or
+   move the page.
+#. Select :guilabel:`Move this item`.
+
+.. _Copy-Pages:
+
+Copy pages
+==========
+
+#. Choose the page you want to copy, then drag it to the position on the
+   page tree you want to copy it.
+#. Release your mouse, then select :guilabel:`Copy` in the confirmation
+   message.
+
+.. _Delete-Pages:
+
+Delete pages
+============
+
+Choose the page you want to delete. Drag it directly to the right to display
+the :guilabel:`Delete` option.
+
+.. figure:: ../../Images/DeletePage.png
+   :alt: Drag a page to the right to delete it
+   :class: with-border
+
+   Drag a page to the right to delete it
+
+Context menu
+============
+
+A variety of functions are also available from the right-click context
+menu, as explained in the :ref:`Getting Started Tutorial <t3start:the-context-menu>`.
+
+.. _pages-other-features:
+.. _Filter-the-page-tree:
+
+Filter the page tree
+====================
+
+At the top of the page tree is a filtering tool. Click the filter icon, then
+type a word or numbers to filter the page tree based on matching page titles
+or page ID.
+
+.. figure:: ../../Images/PageTreeFilter.png
+   :alt: Filtering pages in the page tree
+   :class: with-border
+
+   Filtering pages in the page tree
