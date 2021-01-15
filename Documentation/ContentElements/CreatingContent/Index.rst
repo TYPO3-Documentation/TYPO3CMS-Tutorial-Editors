@@ -39,7 +39,7 @@ Typical page content
 Insert regular text and image content types to build standard web pages.
 
 .. figure:: ../../Images/NewContentWizardTabTypical.png
-   :alt: The Typical Page Content tab of the new content element window
+   :alt: The 'Typical Page Content' tab of the new content element window
    :class: with-border
 
 
@@ -51,7 +51,7 @@ Form elements
 Create a login form or a simple contact form.
 
 .. figure:: ../../Images/NewContentWizardTabForm.png
-   :alt: The Form Elements tab of the new content element window
+   :alt: The 'Form Elements' tab of the new content element window
    :class: with-border
 
 
@@ -63,7 +63,7 @@ Menu elements
 Present a menu or list of page links in different ways.
 
 .. figure:: ../../Images/NewContentWizardTabMenu.png
-   :alt: The Menu Elements tab of the new content element window
+   :alt: The 'Menu Elements' tab of the new content element window
    :class: with-border
 
 
@@ -78,7 +78,7 @@ you insert the General Plugin content element, then go to the **Plugin** tab
 to select a specific plugin.
 
 .. figure:: ../../Images/NewContentWizardTabPlugins.png
-   :alt: The Plugins tab of the new content element window
+   :alt: The 'Plugins' tab of the new content element window
    :class: with-border
 
 
@@ -92,7 +92,7 @@ element lets you reference other content elements, so you can reuse content
 from another page without duplicating it.
 
 .. figure:: ../../Images/NewContentWizardTabSpecial.png
-   :alt: The Special Elements tab of the new content element window
+   :alt: The 'Special Elements' tab of the new content element window
    :class: with-border
 
 
