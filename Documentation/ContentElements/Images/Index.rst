@@ -72,13 +72,13 @@ image. Making changes here won't impact the original image file in Filelist.
 
 .. _images-appearance:
 
-Media Adjustments
+Media adjustments
 -----------------
 
 Manually specify the width and height of the image in pixels, and apply a
 border.
 
-Gallery Settings
+Gallery settings
 ----------------
 
 Choose where to position the image in relation to the text.
