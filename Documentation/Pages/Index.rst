@@ -1,4 +1,4 @@
-.. include:: ../Includes.txt
+.. include:: /Includes.rst.txt
 
 
 .. _pages:
@@ -13,9 +13,8 @@ Pages
    :titlesonly:
    :glob:
 
-   WorkingWithPages/Index
    CreatingPages/Index
    AddingMultiple/Index
+   WorkingWithPages/Index
    PageTypes/Index
    PageProperties/Index
-   OtherFeatures/Index

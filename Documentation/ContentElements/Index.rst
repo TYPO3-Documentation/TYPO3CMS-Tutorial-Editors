@@ -1,4 +1,4 @@
-.. include:: ../Includes.txt
+.. include:: /Includes.rst.txt
 
 
 .. _content-elements:
@@ -18,5 +18,5 @@ Content Elements
    EditingContent/Index
    RichTextEditor/Index
    Images/Index
+   Media/Index
    ContactForm/Index
-

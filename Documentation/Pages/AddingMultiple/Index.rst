@@ -1,53 +1,48 @@
-﻿.. include:: ../../Includes.txt
+.. include:: /Includes.rst.txt
 
 
 .. _pages-multiple:
 
 =============================
-Adding Multiple Pages at Once
+Adding multiple pages at once
 =============================
 
 .. versionchanged:: 9.0
 
-   This functionality used to be in the **WEB > Functions** module.
+   This functionality used to be in the :guilabel:`Web > Functions` module.
 
-You can create more than one page at a time.
+#. In the page tree, position your cursor on the page you want to be the
+   parent of the new pages.
 
-Place yourself on the page which should be the parent
-of the new pages.
+#. Right-click the page then select :guilabel:`More options > Create
+   multiple pages` from the context menu.
 
-Select :guilabel:`More options > Create multiple pages` in the
-context menu.
+   .. figure:: ../../Images/MultiplePagesContextMenu.png
+      :alt: Select "Create multiple pages" in the context menu
+      :class: with-border
 
-.. figure:: ../../Images/MultiplePagesContextMenu.png
-   :alt: Select "Create multiple pages" in the context menu.
+   The **Create Multiple Pages** screen displays, with five new pages by
+   default.
 
+   .. figure:: ../../Images/MultiplePagesCreatePages.png
+      :alt: The "Create Multiple Pages" screen
+      :class: with-border
 
-For each page you can define its title and choose its type.
+#. Give each new page a title and choose its type.
 
-At the bottom of the wizard are several options:
+#. Click the :guilabel:`Add more lines` button to add five more new pages.
 
-.. figure:: ../../Images/FunctionsCreateWizardBottom.png
-   :alt: Options at the bottom of the Create new pages wizard
+#. Configure the new pages using the options at the bottom of the screen:
 
+   *  The :guilabel:`Place new pages after the existing subpages` option adds
+      new pages below the currently existing subpages. Otherwise they will be
+      placed above the current pages.
 
-By checking the **Place new pages after the existing subpages** box,
-the new pages will be added below the currently existing subpages.
-Otherwise they will be placed above the current pages.
+   *  The :guilabel:`Hide new pages` and :guilabel:`Hide new pages in menus`
+      options let you manage the visibility of your new pages.
 
-You can choose to add more pages than proposed (5 by default)
-by clicking on the "Add more lines" button.
+      A hidden page cannot be accessed by anyone via the web site. A page which
+      is hidden in menus does not appear in the site navigation but can be
+      accessed by someone having the direct URL  of that page.
 
-Options **Hide new pages** and **Hide new pages in menus** let you
-manage the visibility of your new pages.
-
-.. tip::
-
-   A hidden page cannot be accessed by anyone via the web site.
-   A page which is hidden in menus does not appear in the site
-   navigation but can be accessed by someone having the direct URL
-   of that page.
-
-Once you are done click the  **Create pages** button.
-
-
+#. Click the :guilabel:`Create pages` button to create the pages.
