@@ -4,7 +4,7 @@
 .. _images:
 
 ===================
-Working with Images
+Working with images
 ===================
 
 For content elements that support images (for example, Text & Images, Text &
