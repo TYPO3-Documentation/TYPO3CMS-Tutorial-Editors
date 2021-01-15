@@ -3,13 +3,13 @@
 .. _pages-types:
 
 ==========
-Page Types
+Page types
 ==========
 
 By default, TYPO3 CMS includes the following page types.
 
 Page
-----
+====
 
 Standard
   This is the default page type, and the most common. It covers all basic
@@ -20,7 +20,7 @@ Backend User Section
   users. You have to be logged in to the backend to see this type of page.
 
 Link
------
+====
 
 Shortcut
   This page type is a shortcut to another page in the page tree. When users
@@ -41,7 +41,7 @@ Link to External URL
   user to a page on another web site.
 
 Special
--------
+=======
 
 Folder
   A folder page type is a container. It is generally used to store records
