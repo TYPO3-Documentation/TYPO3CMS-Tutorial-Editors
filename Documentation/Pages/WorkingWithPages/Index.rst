@@ -4,14 +4,14 @@
 .. _pages-drag-drop:
 
 ==================
-Working with Pages
+Working with pages
 ==================
 
 You can manage pages directly in the page tree.
 
 .. _Move-Pages:
 
-Move Pages
+Move pages
 ==========
 
 #. Choose the page you want to move, then drag it anywhere in the page
@@ -41,7 +41,7 @@ Move Pages
 
 .. _Copy-Pages:
 
-Copy Pages
+Copy pages
 ==========
 
 #. Choose the page you want to copy, then drag it to the position on the
@@ -51,7 +51,7 @@ Copy Pages
 
 .. _Delete-Pages:
 
-Delete Pages
+Delete pages
 ============
 
 Choose the page you want to delete. Drag it directly to the right to display
