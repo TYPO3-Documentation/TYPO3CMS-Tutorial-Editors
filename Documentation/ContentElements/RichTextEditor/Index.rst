@@ -12,7 +12,7 @@ The options available in the toolbars vary depending on how your TYPO3
 installation is configured.
 
 .. figure:: ../../Images/EditContentRichTextEditor.png
-   :alt: A typical view of the Rich Text Editor
+   :alt: A typical view of the rich text editor
    :class: with-border
 
 You can format text, set the alignment, insert tables and symbols and add
