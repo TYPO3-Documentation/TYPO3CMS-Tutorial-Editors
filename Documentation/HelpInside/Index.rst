@@ -19,7 +19,7 @@ Hover your mouse pointer over buttons and icons to display a short description o
 
    See the Tooltip help for the Forms module
 
-Context Sensitive help
+Context sensitive help
 ======================
 
 *  When you hover your mouse pointer over some field labels, your cursor changes into a question mark. This indicates that you can click on the label to display a help pop-up.
@@ -40,10 +40,10 @@ Context Sensitive help
 
       Context help window for the editing interface
 
-TYPO3 Manual
+TYPO3 manual
 ============
 
-The TYPO3 Manual is a module that provides more extensive descriptions of features and functions in the backend.
+The TYPO3 manual is a module that provides more extensive descriptions of features and functions in the backend.
 
 In the top bar, click the question mark icon to access the Help section, then select the **TYPO3 Manual** module.
 
