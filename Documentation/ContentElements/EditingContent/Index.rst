@@ -4,7 +4,7 @@
 .. _content-editing:
 
 ===============
-Editing Content
+Editing content
 ===============
 
 On a page, click the pencil icon for the content element you want to edit,
@@ -17,7 +17,7 @@ the :guilabel:`Type` list.
    :alt: Editing a content element to change its type
    :class: with-border
 
-When you change a content element's type, TYPO3 CMS reloads the screen to
+When you change a content element's type, the TYPO3 CMS reloads the screen to
 display different input fields.
 
 .. figure:: ../../Images/EditContentChangeTypeConfirm.png
