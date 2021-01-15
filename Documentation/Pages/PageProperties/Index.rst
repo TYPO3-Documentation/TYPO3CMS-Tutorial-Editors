@@ -3,7 +3,7 @@
 .. _pages-properties:
 
 ===============
-Page Properties
+Page properties
 ===============
 
 To access the page properties, click on the :guilabel:`Edit page properties`
@@ -204,7 +204,7 @@ for example, can display a list of pages from a selected category.
 .. _pages-properties-notes:
 
 Notes
-==========
+=====
 
 Use this tab for your own editorial notes and internal comments, such as
 reminders or to-do lists.
