@@ -4,7 +4,7 @@
 .. _pages-creating:
 
 ==============
-Create Pages
+Create pages
 ==============
 
 There are two main ways to add a new page to your site.
