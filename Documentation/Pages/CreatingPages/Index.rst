@@ -19,7 +19,7 @@ Adding pages within the page tree
 You can create a new page by dragging and dropping a page type from the top of
 the page tree.
 
-.. figure:: ../../Images/PageCreateDragDrop.png
+.. figure:: ../../Images/ManualScreenshots/PageCreateDragDrop.png
    :alt: Creating a page using drag and drop
    :class: with-border
 
@@ -31,7 +31,7 @@ the page tree.
 
 #. Type a title for the new page.
 
-   .. figure:: ../../Images/PageCreateTitle.png
+   .. figure:: ../../Images/ManualScreenshots/PageCreateTitle.png
       :alt: Inserting a page title
       :class: with-border
 
@@ -47,7 +47,7 @@ Adding pages with the context menu
 #. Right-click any existing page and choose :guilabel:`More options > 'Create
    New' Wizard` from the context menu.
 
-   .. figure:: ../../Images/PageCreateContextMenu.png
+   .. figure:: ../../Images/ManualScreenshots/PageCreateContextMenu.png
       :alt: Creating pages with context menu
       :class: with-border
 
@@ -56,7 +56,7 @@ Adding pages with the context menu
 #. Click an arrow in the tree to select the position where you want the new
    page to be created.
 
-   .. figure:: ../../Images/PageCreateWizard.png
+   .. figure:: ../../Images/ManualScreenshots/PageCreateWizard.png
       :alt: Selecting a position for the new page using the wizard
       :class: with-border
 
@@ -65,7 +65,7 @@ Adding pages with the context menu
 #. Type a title for the page and you may also like to go to the **Access** tab
    and enable the page to make it visible on the frontend.
 
-   .. figure:: ../../Images/PageCreateEnable.png
+   .. figure:: ../../Images/ManualScreenshots/PageCreateEnable.png
       :alt: Making the new page publicly visible
       :class: with-border
 

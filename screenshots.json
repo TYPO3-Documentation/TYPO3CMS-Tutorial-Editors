@@ -1,0 +1,55 @@
+{
+    "suites": {
+        "Introduction": {
+            "screenshots": {
+                "feLogin": [
+                    {
+                        "action": "setScreenshotsImagePath",
+                        "path": "Images/AutomaticScreenshots/Access"
+                    },
+                    {
+                        "action": "setScreenshotsRstPath",
+                        "path": "Images/AutomaticScreenshots/Access"
+                    },
+                    {"action": "resizeWindow", "width": 1024,"height": 512},
+                    {"action": "see", "text": "List"},
+                    {"action": "click", "link": "List"},
+                    {"action": "openPageTreePath", "path": ["Congratulations", "Frontend User"]},
+                    {"action": "switchToContentFrame"},
+                    {"action": "waitForText", "text": "Frontend User", "timeout": 5},
+                    {"action": "drawArrow", "selector": "a[title=\"Create new record\"]", "position": "right-top"},
+                    {"action": "drawBox", "selector": "a[title=\"Create new record\"]"},
+                    {
+                        "action": "makeScreenshotOfElement",
+                        "fileName": "AccessUserFolder",
+                        "altText": "Creating a folder for storing the users and groups"
+                    },
+                    {"action": "clearDrawings"},
+                    {"action": "click", "link": "a[title=\"Create new record\"]"},
+                    {"action": "waitForText", "text": "New record", "timeout": 5},
+                    {"action": "drawBox", "selector": "//a[contains(.,'Website Usergroup')]"},
+
+                    {
+                        "action": "makeScreenshotOfElement",
+                        "selector": ".module-body",
+                        "fileName": "AccessNewRecordWizard",
+                        "altText": "Select \"Usergroup\" with the new record wizard"
+                    },
+                    {"action": "clearDrawings"},
+                    {
+                        "action": "makeScreenshotOfRecord",
+                        "table": "fe_groups",
+                        "uid": {"action": "getUidByField", "table": "fe_groups", "field": "title", "value": "Usergroup"},
+                        "fileName": "AccessNewGroup"
+                    },
+                    {
+                        "action": "makeScreenshotOfRecord",
+                        "table": "fe_users",
+                        "uid": {"action": "getUidByField", "table": "fe_users", "field": "username", "value": "admin"},
+                        "fileName": "AccessNewUser"
+                    }
+                ]
+            }
+        }
+    }
+}

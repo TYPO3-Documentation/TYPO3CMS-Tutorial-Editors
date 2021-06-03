@@ -9,7 +9,7 @@ Page properties
 To access the page properties, click on the :guilabel:`Edit page properties`
 icon in the Docheader.
 
-.. figure:: ../../Images/EditPageProperties.png
+.. figure:: ../../Images/ManualScreenshots/EditPageProperties.png
   :alt: Edit Page Properties icon
   :class: with-border
 
@@ -43,7 +43,7 @@ also used in menus and in the `<title>` tag.
 When you specify an :guilabel:`Alternative Navigation Title` all other
 instances of :guilabel:`Page Title` usage are left unchanged.
 
-.. figure:: ../../Images/PagePropertiesGeneral.png
+.. figure:: ../../Images/ManualScreenshots/PagePropertiesGeneral.png
    :alt: The General tab of the page properties
    :class: with-border
 
@@ -87,7 +87,7 @@ Appearance
 This tab contains properties that influence how the page is rendered in the
 frontend.
 
-.. figure:: ../../Images/PagePropertiesAppearance.png
+.. figure:: ../../Images/ManualScreenshots/PagePropertiesAppearance.png
    :alt: The "Appearance" tab of the page properties
    :class: with-border
 
@@ -108,7 +108,7 @@ Behaviour
 
 This tab influences a variety of different aspects of the page.
 
-.. figure:: ../../Images/PagePropertiesBehaviour.png
+.. figure:: ../../Images/ManualScreenshots/PagePropertiesBehaviour.png
    :alt: The Behaviour tab of the page properties
    :class: with-border
 
@@ -153,7 +153,7 @@ This tab lets you link media files to the current page.
 How those files are handled depends on your frontend rendering
 configuration.
 
-.. figure:: ../../Images/PagePropertiesResources.png
+.. figure:: ../../Images/ManualScreenshots/PagePropertiesResources.png
    :alt: The Resources tab of the page properties
    :class: with-border
 
@@ -190,7 +190,7 @@ Categories
 TYPO3 CMS provides a system-wide categorisation tool. By default
 categories can be applied to pages, content elements, and files.
 
-.. figure:: ../../Images/PagePropertiesCategories.png
+.. figure:: ../../Images/ManualScreenshots/PagePropertiesCategories.png
    :alt: The Categories tab of the page properties
    :class: with-border
 

@@ -17,6 +17,6 @@ Content Elements
    CreatingContent/Index
    EditingContent/Index
    RichTextEditor/Index
-   Images/Index
+   Images/ManualScreenshots/Index
    Media/Index
    ContactForm/Index

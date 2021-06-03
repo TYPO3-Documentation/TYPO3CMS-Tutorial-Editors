@@ -64,7 +64,7 @@ Working with translations
    extension/introduction/>`__, in the :guilabel:`Web > Pages` module, go to the "Congratulations" home page.
 #. Using the menu in the docheader, switch to the "Languages" view.
 
-   .. figure:: ../Images/LanguagesPageLanguages.png
+   .. figure:: ../Images/ManualScreenshots/LanguagesPageLanguages.png
       :alt: The "Languages" view of the Page module
       :class: with-border
 
@@ -73,21 +73,21 @@ Working with translations
    the German version of the page.
 #. Type the German translation in the :guilabel:`Page Title` field.
 
-   .. figure:: ../Images/LanguagesNewPageTranslation.png
+   .. figure:: ../Images/ManualScreenshots/LanguagesNewPageTranslation.png
       :alt: Creating a new page translation
       :class: with-border
 
 #. Save and close the page. The screen now displays two versions of the content
    elements showing the default language and the German version side by side.
 
-   .. figure:: ../Images/LanguagesPageVersions.png
+   .. figure:: ../Images/ManualScreenshots/LanguagesPageVersions.png
       :alt: Viewing languages side by side in the page module
       :class: with-border
 
 #. In the German column, click the :guilabel:`Translate` button for a content
    element. The **Localize** wizard displays.
 
-   .. figure:: ../Images/LanguagesTranslateContentElementsStep1.png
+   .. figure:: ../Images/ManualScreenshots/LanguagesTranslateContentElementsStep1.png
       :alt: First step of the Localize wizard
       :class: with-border
 
@@ -102,7 +102,7 @@ Working with translations
    to German:]*. The element is hidden by default, so that incomplete
    translations aren't displayed on the frontend until you are ready.
 
-   .. figure:: ../Images/LanguagesNewContentTranslation.png
+   .. figure:: ../Images/ManualScreenshots/LanguagesNewContentTranslation.png
       :alt: A newly created content element translation
       :class: with-border
 
@@ -117,7 +117,7 @@ The *Page* module may now seem cluttered, with one column for each
 translation. You can view a single language at a time by switching back to the
 "Columns" mode and choosing a specific language in the docheader.
 
-.. figure:: ../Images/LanguagesColumnModeWithTranslation.png
+.. figure:: ../Images/ManualScreenshots/LanguagesColumnModeWithTranslation.png
    :alt: The "Columns" mode displaying a translation
    :class: with-border
 
