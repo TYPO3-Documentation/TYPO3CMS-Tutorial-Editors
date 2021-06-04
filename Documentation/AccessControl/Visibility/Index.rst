@@ -14,7 +14,7 @@ In the Core, and in extensions that follow best practice, all options related
 to visibility are controlled in the **Access** tab of the :ref:`page
 properties <pages-properties>`.
 
-.. figure:: ../../Images/PageCreateEnable.png
+.. figure:: ../../Images/ManualScreenshots/PageCreateEnable.png
    :alt: Making a new page publicly visible
    :class: with-border
 
@@ -29,7 +29,7 @@ Any page or content element with a defined :guilabel:`Publish Date`
 will not be visible before that date. If it has an :guilabel:`Expiration
 Date`, it will be hidden from that point onward.
 
-.. figure:: ../../Images/AccessPublicationDate.png
+.. figure:: ../../Images/ManualScreenshots/AccessPublicationDate.png
    :alt: Setting a publication date for a page
    :class: with-border
 

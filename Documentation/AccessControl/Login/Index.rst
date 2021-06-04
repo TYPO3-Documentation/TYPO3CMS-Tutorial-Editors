@@ -32,22 +32,18 @@ Create a user group and user
 
 #. Create a new folder in the page tree, and name it "Web site users".
 
-   .. figure:: ../../Images/AccessUserFolder.png
-      :alt: Creating a folder for storing the users and groups
-      :class: with-border
+   .. include:: /Images/AutomaticScreenshots/Access/AccessUserFolder.rst.txt
 
 #. Navigate to the :guilabel:`Web > List` module, and select your new folder.
 #. Click the **+** :guilabel:`Create new record` icon at the top left of the
    Docheader. The "New record" wizard displays.
 
-   .. figure:: ../../Images/AccessNewRecordWizard.png
-      :alt: Selecting what type of record to create with the new record wizard
-      :class: with-border
+   .. include:: /Images/AutomaticScreenshots/Access/AccessUserFolder.rst.txt
 
 #. Click **Website Usergroup** to create a new frontend group.
 #. Name it *Private Area*.
 
-   .. figure:: ../../Images/AccessNewGroup.png
+   .. figure:: ../../Images/ManualScreenshots/AccessNewGroup.png
       :alt: Creating a new frontend group
       :class: with-border
 
@@ -55,7 +51,7 @@ Create a user group and user
 #. Use the "New record" wizard again, but this time create a **Website User**.
 #. Type a username, a password and click the "Private Area" group to select it.
 
-   .. figure:: ../../Images/AccessNewUser.png
+   .. figure:: ../../Images/ManualScreenshots/AccessNewUser.png
       :alt: Creating a new frontend user
       :class: with-border
 
@@ -71,7 +67,7 @@ Assign access rights
 Now that we have at least one group, and a user assigned to that group, we can
 assign access restrictions. This is done on the **Access** tab of the page properties or content element properties.
 
-.. figure:: ../../Images/AccessRightsItems.png
+.. figure:: ../../Images/ManualScreenshots/AccessRightsItems.png
    :alt: Usergroup access rights
    :class: with-border
 
@@ -98,7 +94,7 @@ assign access restrictions. This is done on the **Access** tab of the page prope
 
 You should have something like this:
 
-.. figure:: ../../Images/AccessRestrictContent.png
+.. figure:: ../../Images/ManualScreenshots/AccessRestrictContent.png
    :alt: Placing access restriction on individual content elements
    :class: with-border
 
@@ -125,21 +121,21 @@ can log in to view the restricted content.
 #. Use the :guilabel:`Browse for records` icon to browse the page tree and
    select the "Web site users" folder.
 
-   .. figure:: ../../Images/AccessLoginForm.png
+   .. figure:: ../../Images/ManualScreenshots/AccessLoginForm.png
       :alt: Defining a new login form
       :class: with-border
 
 #. Save and close the record.
 #. View the page. You should have something like this:
 
-   .. figure:: ../../Images/AccessPageWithLoginBox.png
+   .. figure:: ../../Images/ManualScreenshots/AccessPageWithLoginBox.png
       :alt: The page with the login box
       :class: with-border
 
 #. Enter the user name and the password you defined earlier for the
    frontend user, and you should see the following:
 
-   .. figure:: ../../Images/AccessPageWithAuthenticatedUser.png
+   .. figure:: ../../Images/ManualScreenshots/AccessPageWithAuthenticatedUser.png
       :alt: The page with the authenticated user
       :class: with-border
 

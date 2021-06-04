@@ -11,7 +11,7 @@ For content elements that support images (for example, Text & Images, Text &
 Media, Images Only), you will see an **Images** tab when you create or edit
 the content element.
 
-.. figure:: ../../Images/EditContentImagesTab.png
+.. figure:: ../../Images/ManualScreenshots/EditContentImagesTab.png
    :alt: The Images tab for a content element
    :class: with-border
 
@@ -32,7 +32,7 @@ Add an image to a page
 #. On the **Images** tab, click the :guilabel:`Add image` button. The **File
    selector** window displays to let you browse for an image.
 
-   .. figure:: ../../Images/ImageSelector.png
+   .. figure:: ../../Images/ManualScreenshots/ImageSelector.png
       :alt: The window for selecting images
       :class: with-border
 
@@ -49,7 +49,7 @@ Configure the image
 
 The **Images** tab lets you perform a number of actions to configure an image.
 
-.. figure:: ../../Images/EditContentImageProperties.png
+.. figure:: ../../Images/ManualScreenshots/EditContentImageProperties.png
    :alt: Working with an image attached to the content element
    :class: with-border
 

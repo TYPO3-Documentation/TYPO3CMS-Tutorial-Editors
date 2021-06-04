@@ -17,7 +17,7 @@ This module has two different modes: "Columns" and "Languages". See
 For now we want to be in "Columns" mode. Use the menu in the docheader to
 switch modes.
 
-.. figure:: ../../Images/PageModuleFunctions.png
+.. figure:: ../../Images/ManualScreenshots/PageModuleFunctions.png
    :alt: Changing mode in the Page module
    :class: with-border
 
@@ -29,7 +29,7 @@ example, "Border", "Middle: Left", "Middle: Center", etc.
 Many icons are greyed out to make the interface look less cluttered.
 Some icons don't display at all until your hover over specific areas.
 
-.. figure:: ../../Images/PageModuleColumns.png
+.. figure:: ../../Images/ManualScreenshots/PageModuleColumns.png
    :alt: A typical view of the Page module with various content columns
    :class: with-border
 
@@ -56,7 +56,7 @@ Moving content elements
 
 You can move content elements using drag and drop.
 
-.. figure:: ../../Images/PageModuleMoveElements.png
+.. figure:: ../../Images/ManualScreenshots/PageModuleMoveElements.png
    :alt: Moving content elements around using drag and drop
    :class: with-border
 
