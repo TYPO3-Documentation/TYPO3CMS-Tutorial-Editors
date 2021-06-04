@@ -1,7 +1,5 @@
 .. Automatic screenshot: Remove this line if you want to manually change this file
 
 .. figure:: /Images/AutomaticScreenshots/Access/AccessUserFolder.png
-   :alt: 
+   :alt: Creating a folder for storing the users and groups
    :class: with-shadow
-
-   Creating a folder for storing the users and groups

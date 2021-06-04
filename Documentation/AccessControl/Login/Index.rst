@@ -43,17 +43,13 @@ Create a user group and user
 #. Click **Website Usergroup** to create a new frontend group.
 #. Name it *Private Area*.
 
-   .. figure:: ../../Images/ManualScreenshots/AccessNewGroup.png
-      :alt: Creating a new frontend group
-      :class: with-border
+   .. include:: /Images/AutomaticScreenshots/Access/AccessNewGroup.rst.txt
 
 #. Save and close the record.
 #. Use the "New record" wizard again, but this time create a **Website User**.
 #. Type a username, a password and click the "Private Area" group to select it.
 
-   .. figure:: ../../Images/ManualScreenshots/AccessNewUser.png
-      :alt: Creating a new frontend user
-      :class: with-border
+   .. include:: /Images/AutomaticScreenshots/Access/AccessNewUser.rst.txt
 
    You can add further information on the **Personal Data** tab if required.
 

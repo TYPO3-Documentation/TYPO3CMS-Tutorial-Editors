@@ -36,18 +36,34 @@
                         "altText": "Select \"Usergroup\" with the new record wizard"
                     },
                     {"action": "clearDrawings"},
+                    {"action": "click", "link": "//a[contains(.,'Website Usergroup')]"},
+                    {"action": "waitForText", "text": "Create new Website Usergroup", "timeout": 5},
+                    {"action": "fillField", "field": "input[data-formengine-input-name*='[title]']", "value": "Private Area"},
+                    {"action": "resizeWindow", "width": 1524,"height": 1024},
                     {
-                        "action": "makeScreenshotOfRecord",
-                        "table": "fe_groups",
-                        "uid": {"action": "getUidByField", "table": "fe_groups", "field": "title", "value": "Usergroup"},
-                        "fileName": "AccessNewGroup"
+                        "action": "makeScreenshotOfElement",
+                        "selector": ".module-body",
+                        "fileName": "AccessNewGroup",
+                        "altText": "Creating a new frontend group"
                     },
+
+                    {"action": "click", "link": "Save"},
+                    {"action": "waitForText", "text": "Edit Website Usergroup", "timeout": 5},
+                    {"action": "click", "link": "Close"},
+                    {"action": "waitForText", "text": "Frontend User", "timeout": 5},
+                    {"action": "click", "link": "a[title=\"Create new record\"]"},
+                    {"action": "waitForText", "text": "New record", "timeout": 5},
+                    {"action": "click", "link": "span.icon-status-user-frontend"},
+                    {"action": "waitForText", "text": "Create new", "timeout": 5},
+                    {"action": "fillField", "field": "input[data-formengine-input-name*='[username]']", "value": "Jon Doe"},
+                    {"action": "fillField", "field": "input[data-formengine-input-name*='[password]']", "value": "eFNrTW3jQeSgSJ4u"},
                     {
-                        "action": "makeScreenshotOfRecord",
-                        "table": "fe_users",
-                        "uid": {"action": "getUidByField", "table": "fe_users", "field": "username", "value": "admin"},
-                        "fileName": "AccessNewUser"
-                    }
+                        "action": "makeScreenshotOfElement",
+                        "selector": ".module-body",
+                        "fileName": "AccessNewUser",
+                        "altText": "Creating a new frontend user"
+                    },
+                    {"action": "resizeWindow", "width": 1024,"height": 512}
                 ]
             }
         }
