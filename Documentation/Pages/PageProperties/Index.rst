@@ -43,11 +43,7 @@ also used in menus and in the `<title>` tag.
 When you specify an :guilabel:`Alternative Navigation Title` all other
 instances of :guilabel:`Page Title` usage are left unchanged.
 
-.. figure:: ../../Images/ManualScreenshots/PagePropertiesGeneral.png
-   :alt: The General tab of the page properties
-   :class: with-border
-
-   The **General** tab of the page properties
+.. include:: /Images/AutomaticScreenshots/PageProperties/General.rst.txt
 
 .. _pages-properties-seo:
 
@@ -87,11 +83,7 @@ Appearance
 This tab contains properties that influence how the page is rendered in the
 frontend.
 
-.. figure:: ../../Images/ManualScreenshots/PagePropertiesAppearance.png
-   :alt: The "Appearance" tab of the page properties
-   :class: with-border
-
-   The **Appearance** tab of the page properties
+.. include:: /Images/AutomaticScreenshots/PageProperties/Appearance.rst.txt
 
 Backend layouts determine what content areas are made available for editors
 in the :guilabel:`Web > Page` module. They can also be used to influence the
@@ -108,11 +100,7 @@ Behaviour
 
 This tab influences a variety of different aspects of the page.
 
-.. figure:: ../../Images/ManualScreenshots/PagePropertiesBehaviour.png
-   :alt: The Behaviour tab of the page properties
-   :class: with-border
-
-   The **Behaviour** tab of the page properties
+.. include:: /Images/AutomaticScreenshots/PageProperties/Appearance.rst.txt
 
 Here are some of the common fields of the Behaviour tab:
 
@@ -153,11 +141,7 @@ This tab lets you link media files to the current page.
 How those files are handled depends on your frontend rendering
 configuration.
 
-.. figure:: ../../Images/ManualScreenshots/PagePropertiesResources.png
-   :alt: The Resources tab of the page properties
-   :class: with-border
-
-   The **Resources** tab of the page properties
+.. include:: /Images/AutomaticScreenshots/PageProperties/Resources.rst.txt
 
 The rest of the properties on this tab are related to :ref:`Page TSconfig
 <t3tsconfig:pagetsconfig>`.
@@ -190,11 +174,7 @@ Categories
 TYPO3 CMS provides a system-wide categorisation tool. By default
 categories can be applied to pages, content elements, and files.
 
-.. figure:: ../../Images/ManualScreenshots/PagePropertiesCategories.png
-   :alt: The Categories tab of the page properties
-   :class: with-border
-
-   The **Categories** tab of the page properties
+.. include:: /Images/AutomaticScreenshots/PageProperties/Categories.rst.txt
 
 
 Categories should be defined in some folder and can then be assigned to

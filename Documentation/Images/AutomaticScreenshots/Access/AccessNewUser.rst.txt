@@ -1,4 +1,5 @@
 .. Automatic screenshot: Remove this line if you want to manually change this file
 
 .. figure:: /Images/AutomaticScreenshots/Access/AccessNewUser.png
+   :alt: Creating a new frontend user
    :class: with-shadow

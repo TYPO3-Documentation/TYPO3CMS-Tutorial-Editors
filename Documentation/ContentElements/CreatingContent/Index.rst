@@ -38,9 +38,7 @@ Typical page content
 
 Insert regular text and image content types to build standard web pages.
 
-.. figure:: ../../Images/ManualScreenshots/NewContentWizardTabTypical.png
-   :alt: The 'Typical Page Content' tab of the new content element window
-   :class: with-border
+.. include:: /Images/AutomaticScreenshots/NewContentElement/WizardTabTypical.rst.txt
 
 
 .. _content-form:
@@ -91,9 +89,7 @@ Insert plain HTML, or a horizontal divider on the page. The "Insert records"
 element lets you reference other content elements, so you can reuse content
 from another page without duplicating it.
 
-.. figure:: ../../Images/ManualScreenshots/NewContentWizardTabSpecial.png
-   :alt: The 'Special Elements' tab of the new content element window
-   :class: with-border
+.. include:: /Images/AutomaticScreenshots/NewContentElement/WizardTabSpecialElements.rst.txt
 
 
 .. _content-new-element:

@@ -2,7 +2,127 @@
     "suites": {
         "Introduction": {
             "screenshots": {
+                "pageProperties": [
+                    {
+                        "action": "setScreenshotsImagePath",
+                        "path": "Images/AutomaticScreenshots/PageProperties"
+                    },
+                    {
+                        "action": "setScreenshotsRstPath",
+                        "path": "Images/AutomaticScreenshots/PageProperties"
+                    },
+                    {"action": "resizeWindow", "width": 1024,"height": 780},
+                    {
+                        "action": "goToRecord",
+                        "table": "pages",
+                        "uid": 1
+                    },
+                    {
+                        "action": "makeScreenshotOfElement",
+                        "selector": ".module-body",
+                        "fileName": "General",
+                        "altText": "The General tab of the page properties",
+                        "captionText": "The **General** tab of the page properties"
+                    },
+                    {
+                        "action": "click",
+                        "link": "Appearance"
+                    },
+                    {
+                        "action": "makeScreenshotOfElement",
+                        "selector": ".module-body",
+                        "fileName": "Appearance",
+                        "altText": "The Appearance tab of the page properties",
+                        "captionText": "The **Appearance** tab of the page properties"
+                    },
+                    {
+                        "action": "click",
+                        "link": "Behaviour"
+                    },
+                    {
+                        "action": "makeScreenshotOfElement",
+                        "selector": ".module-body",
+                        "fileName": "Behaviour",
+                        "altText": "The Behaviour tab of the page properties",
+                        "captionText": "The **Behaviour** tab of the page properties"
+                    },
+                    {
+                        "action": "click",
+                        "link": "Resources"
+                    },
+                    {
+                        "action": "makeScreenshotOfElement",
+                        "selector": ".module-body",
+                        "fileName": "Resources",
+                        "altText": "The Resources tab of the page properties",
+                        "captionText": "The **Resources** tab of the page properties"
+                    },
+                    {
+                        "action": "click",
+                        "link": "Categories"
+                    },
+                    {
+                        "action": "makeScreenshotOfElement",
+                        "selector": ".module-body",
+                        "fileName": "Categories",
+                        "altText": "The Categories tab of the page properties",
+                        "captionText": "The **Categories** tab of the page properties"
+                    },
+                    {
+                        "action": "click",
+                        "link": "Access"
+                    },
+                    {"action": "resizeWindow", "width": 1024,"height": 280},
+                    {
+                        "action": "makeScreenshotOfElement",
+                        "selector": ".module-body",
+                        "fileName": "Enable",
+                        "altText": "Making the new page publicly visible"
+                    },
+                    {"action": "resizeWindow", "width": 1024,"height": 780}
+                ],
+                "newContent": [
+                    {
+                        "action": "amOnPage",
+                        "page": "typo3/index.php"
+                    },
+                    {
+                        "action": "setScreenshotsImagePath",
+                        "path": "Images/AutomaticScreenshots/NewContentElement"
+                    },
+                    {
+                        "action": "setScreenshotsRstPath",
+                        "path": "Images/AutomaticScreenshots/NewContentElement"
+                    },
+                    {"action": "resizeWindow", "width": 1024,"height": 512},
+                    {"action": "see", "text": "Page"},
+                    {"action": "click", "link": "Page"},
+                    {"action": "openPageTreePath", "path": ["Congratulations"]},
+                    {"action": "switchToContentFrame"},
+                    {"action": "waitForText", "text": "Congratulations", "timeout": 5},
+                    {"action": "click", "link": "a.t3js-toggle-new-content-element-wizard"},
+                    {
+                        "action": "waitForModalDialogInMainFrame"
+                    },
+                    {"action": "waitForText", "text": "Create new content element\n", "timeout": 5},
+                    {
+                        "action": "makeScreenshotOfElement",
+                        "fileName": "WizardTabTypical",
+                        "altText": "The 'Typical Page Content' tab of the new content element window"
+                    },
+                    {"action": "click", "link": "Special elements"},
+                    {"action": "wait", "timeout":  0.1},
+                    {
+                        "action": "makeScreenshotOfElement",
+                        "fileName": "WizardTabSpecialElements",
+                        "altText": "The 'Special Elements' tab of the new content element window"
+                    }
+                ],
                 "feLogin": [
+                    {
+                        "action": "amOnPage",
+                        "page": "typo3/index.php"
+                    },
                     {
                         "action": "setScreenshotsImagePath",
                         "path": "Images/AutomaticScreenshots/Access"

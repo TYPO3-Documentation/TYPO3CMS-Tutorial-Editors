@@ -65,8 +65,6 @@ Adding pages with the context menu
 #. Type a title for the page and you may also like to go to the **Access** tab
    and enable the page to make it visible on the frontend.
 
-   .. figure:: ../../Images/ManualScreenshots/PageCreateEnable.png
-      :alt: Making the new page publicly visible
-      :class: with-border
+   .. include:: /Images/AutomaticScreenshots/PageProperties/Enable.rst.txt
 
 More page properties are explained in the :ref:`Page properties <pages-properties>` section.

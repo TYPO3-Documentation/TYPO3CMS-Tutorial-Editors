@@ -1,0 +1,7 @@
+.. Automatic screenshot: Remove this line if you want to manually change this file
+
+.. figure:: /Images/AutomaticScreenshots/PageProperties/Appearance.png
+   :alt: The Appearance tab of the page properties
+   :class: with-shadow
+
+   The **Appearance** tab of the page properties

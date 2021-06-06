@@ -14,9 +14,7 @@ In the Core, and in extensions that follow best practice, all options related
 to visibility are controlled in the **Access** tab of the :ref:`page
 properties <pages-properties>`.
 
-.. figure:: ../../Images/ManualScreenshots/PageCreateEnable.png
-   :alt: Making a new page publicly visible
-   :class: with-border
+.. include:: /Images/AutomaticScreenshots/PageProperties/Enable.rst.txt
 
 .. _visibility-dates:
 
