@@ -1,0 +1,5 @@
+.. Automatic screenshot: Remove this line if you want to manually change this file
+
+.. figure:: /Images/AutomaticScreenshots/NewContentElement/NewContentElement.png
+   :alt: Empty input form for a Text & Media content element
+   :class: with-shadow

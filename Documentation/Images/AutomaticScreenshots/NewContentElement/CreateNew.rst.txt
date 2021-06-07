@@ -1,0 +1,5 @@
+.. Automatic screenshot: Remove this line if you want to manually change this file
+
+.. figure:: /Images/AutomaticScreenshots/NewContentElement/CreateNew.png
+   :alt: Create a new Content Element by clicking the button
+   :class: with-shadow

@@ -1,0 +1,5 @@
+.. Automatic screenshot: Remove this line if you want to manually change this file
+
+.. figure:: /Images/AutomaticScreenshots/NewContentElement/ContentSaved.png
+   :alt: The new content element appears in the Page module
+   :class: with-shadow
