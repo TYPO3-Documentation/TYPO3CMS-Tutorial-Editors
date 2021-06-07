@@ -10,9 +10,7 @@ Creating content
 In the :guilabel:`Web > Page` module, on any page, click the :guilabel:`"+
 Content` icon where you want to insert content.
 
-.. figure:: ../../Images/ManualScreenshots/NewContentCreateNew.png
-   :alt: The Typical Page Content tab of the new content element wizard
-   :class: with-border
+.. include:: /Images/AutomaticScreenshots/NewContentElement/CreateNew.rst.txt
 
 This action displays the **Create new content element** window. The
 content elements that are available depends on the setup of your TYPO3
@@ -48,9 +46,7 @@ Form elements
 
 Create a login form or a simple contact form.
 
-.. figure:: ../../Images/ManualScreenshots/NewContentWizardTabForm.png
-   :alt: The 'Form Elements' tab of the new content element window
-   :class: with-border
+.. include:: /Images/AutomaticScreenshots/NewContentElement/WizardTabForm.rst.txt
 
 
 .. _content-menu:
@@ -60,9 +56,7 @@ Menu elements
 
 Present a menu or list of page links in different ways.
 
-.. figure:: ../../Images/ManualScreenshots/NewContentWizardTabMenu.png
-   :alt: The 'Menu Elements' tab of the new content element window
-   :class: with-border
+.. include:: /Images/AutomaticScreenshots/NewContentElement/WizardTabMenu.rst.txt
 
 
 .. _content-plugin:
@@ -75,9 +69,7 @@ It depends on their architecture or on backend configuration. In some cases
 you insert the General Plugin content element, then go to the **Plugin** tab
 to select a specific plugin.
 
-.. figure:: ../../Images/ManualScreenshots/NewContentWizardTabPlugins.png
-   :alt: The 'Plugins' tab of the new content element window
-   :class: with-border
+.. include:: /Images/AutomaticScreenshots/NewContentElement/WizardTabPlugins.rst.txt
 
 
 .. _content-special:
@@ -103,9 +95,7 @@ Add new content to a page
    This is the most commonly used content type. The **Create new Page
    Content** screen displays.
 
-.. figure:: ../../Images/ManualScreenshots/NewContentElement.png
-   :alt: Empty input form for a Text & Media content element
-   :class: with-border
+.. include:: /Images/AutomaticScreenshots/NewContentElement/NewContentElement.rst.txt
 
 #. In the :guilabel:`Header` field, type *New content*.
 #. In the :guilabel:`Text` area, type some content. This field uses a
@@ -114,6 +104,4 @@ Add new content to a page
 #. Save and close the content element.
    You can see the newly added element on the page:
 
-.. figure:: ../../Images/ManualScreenshots/NewContentElementSaved.png
-   :alt: The new content element appears in the Page module
-   :class: with-border
+.. include:: /Images/AutomaticScreenshots/NewContentElement/ContentSaved.rst.txt
