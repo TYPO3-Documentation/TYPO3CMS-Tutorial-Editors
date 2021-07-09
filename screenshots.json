@@ -2,6 +2,39 @@
     "suites": {
         "Introduction": {
             "screenshots": {
+                "EditContent": [
+                    {"action": "setScreenshotsImagePath", "path": "Images/AutomaticScreenshots/EditContent"},
+                    {"action": "setScreenshotsRstPath", "path": "Images/AutomaticScreenshots/EditContent"},
+
+                    {"action": "resizeWindow", "width": 1250,"height": 780},
+                    {"action": "see", "text": "Page"},
+                    {"action": "click", "link": "Page"},
+                    {"action": "openPageTreePath", "path": ["Congratulations"]},
+                    {"action": "switchToContentFrame"},
+                    {"action": "waitForText", "text": "Congratulations", "timeout": 5},
+                    {"action": "click", "link": "Content"},
+                    {"action": "waitForModalDialogInMainFrame"},
+                    {"action": "click", "link": "Text & Images"},
+                    {"action": "switchToContentFrame"},
+                    {"action": "waitForText", "text": "Create new Page Content on page \"Congratulations\"", "timeout": 5},
+                    {"action": "click", "link": "(//*[contains(@class, \"form-select\")])[1]"},
+                    {"action": "makeScreenshotOfWindow", "fileName": "EditContentChangeType"},
+
+                    {"action": "resizeWindow", "width": 1150, "height": 780},
+                    {"action": "click", "link": "Images"},
+                    {"action": "drawArrow", "selector": "(//*[contains(@class, \"t3js-tabmenu-item\")])[2]", "position": "right-middle"},
+                    {"action": "drawArrow", "selector": "(//*[contains(@class, \"t3js-element-browser\")])[1]", "position": "right-middle"},
+                    {"action": "makeScreenshotOfWindow", "fileName": "EditContentAddImage"},
+                    {"action": "clearDrawings"},
+
+                    {"action": "resizeWindow", "width": 1024,"height": 780},
+                    {"action": "click", "link": "General"},
+                    {"action": "click", "link": "option[value=text]"},
+                    {"action": "waitForModalDialogInMainFrame"},
+                    {"action": "makeScreenshotOfWindow", "fileName": "EditContentChangeTypeConfirm"}
+                ],
+
+
                 "pageProperties": [
                     {
                         "action": "setScreenshotsImagePath",
