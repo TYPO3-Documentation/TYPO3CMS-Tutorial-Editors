@@ -13,7 +13,7 @@ Tooltips
 
 Hover your mouse pointer over buttons and icons to display a short description of the function.
 
-.. figure:: ../Images/ManualScreenshots/Tooltip.png
+.. figure:: ../Images/ManualScreenshots/Help/Tooltip.png
    :alt: Tooltip for the Forms module
    :class: with-border
 
@@ -47,7 +47,7 @@ The TYPO3 manual is a module that provides more extensive descriptions of featur
 
 In the top bar, click the question mark icon to access the Help section, then select the **TYPO3 Manual** module.
 
-.. figure:: ../Images/ManualScreenshots/Typo3Manual.png
+.. figure:: ../Images/ManualScreenshots/Help/Typo3Manual.png
    :alt: The **TYPO3 Manual** in the :guilabel:`Help` menu
    :class: with-border
 

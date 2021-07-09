@@ -19,7 +19,7 @@ Adding pages within the page tree
 You can create a new page by dragging and dropping a page type from the top of
 the page tree.
 
-.. figure:: ../../Images/ManualScreenshots/PageCreateDragDrop.png
+.. figure:: ../../Images/ManualScreenshots/PageTree/PageCreateDragDrop.png
    :alt: Creating a page using drag and drop
    :class: with-border
 
@@ -31,7 +31,7 @@ the page tree.
 
 #. Type a title for the new page.
 
-   .. figure:: ../../Images/ManualScreenshots/PageCreateTitle.png
+   .. figure:: ../../Images/ManualScreenshots/PageTree/PageCreateTitle.png
       :alt: Inserting a page title
       :class: with-border
 
@@ -47,7 +47,7 @@ Adding pages with the context menu
 #. Right-click any existing page and choose :guilabel:`More options > 'Create
    New' Wizard` from the context menu.
 
-   .. figure:: ../../Images/ManualScreenshots/PageCreateContextMenu.png
+   .. figure:: ../../Images/ManualScreenshots/PageTree/PageCreateContextMenu.png
       :alt: Creating pages with context menu
       :class: with-border
 
@@ -56,7 +56,7 @@ Adding pages with the context menu
 #. Click an arrow in the tree to select the position where you want the new
    page to be created.
 
-   .. figure:: ../../Images/ManualScreenshots/PageCreateWizard.png
+   .. figure:: ../../Images/ManualScreenshots/Page/PageCreateWizard.png
       :alt: Selecting a position for the new page using the wizard
       :class: with-border
 

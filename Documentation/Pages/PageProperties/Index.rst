@@ -9,7 +9,7 @@ Page properties
 To access the page properties, click on the :guilabel:`Edit page properties`
 icon in the Docheader.
 
-.. figure:: ../../Images/ManualScreenshots/EditPageProperties.png
+.. figure:: ../../Images/ManualScreenshots/EditContent/EditPageProperties.png
   :alt: Edit Page Properties icon
   :class: with-border
 

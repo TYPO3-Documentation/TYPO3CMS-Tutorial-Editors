@@ -17,14 +17,14 @@ Adding multiple pages at once
 #. Right-click the page then select :guilabel:`More options > Create
    multiple pages` from the context menu.
 
-   .. figure:: ../../Images/ManualScreenshots/MultiplePagesContextMenu.png
+   .. figure:: ../../Images/ManualScreenshots/PageTree/MultiplePagesContextMenu.png
       :alt: Select "Create multiple pages" in the context menu
       :class: with-border
 
    The **Create Multiple Pages** screen displays, with five new pages by
    default.
 
-   .. figure:: ../../Images/ManualScreenshots/MultiplePagesCreatePages.png
+   .. figure:: ../../Images/ManualScreenshots/Page/MultiplePagesCreatePages.png
       :alt: The "Create Multiple Pages" screen
       :class: with-border
 
