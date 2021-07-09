@@ -2,6 +2,35 @@
     "suites": {
         "Introduction": {
             "screenshots": {
+                "EditContent": [
+                    {"action": "setScreenshotsImagePath", "path": "Images/AutomaticScreenshots/EditContent"},
+                    {"action": "setScreenshotsRstPath", "path": "Images/AutomaticScreenshots/EditContent"},
+
+                    {"action": "resizeWindow", "width": 640,"height": 480},
+
+                    {"action": "amOnPage", "page": "/typo3/record/edit?token=x&edit[tt_content][1]=new&defVals[tt_content][CType]=textpic"},
+                    {"action": "waitForText", "text": "Create new Page Content", "timeout": 5},
+                    {"action": "click", "link": "(//*[contains(@class, \"form-select\")])[1]"},
+                    {
+                        "action": "makeScreenshotOfWindow",
+                        "fileName": "EditContentChangeType",
+                        "captionText": "Editing a content element to change its type"
+                    },
+                    {"action": "clearDrawings"},
+
+                    {"action": "resizeWindow", "width": 640,"height": 480},
+                    {"action": "click", "link": "General"},
+                    {"action": "click", "link": "option[value=text]"},
+                    {"action": "waitForModalDialogInMainFrame"},
+                    {
+                        "action": "makeScreenshotOfElement",
+                        "selector": ".t3js-module-body",
+                        "fileName": "EditContentChangeTypeConfirm",
+                        "captionText": "Editing a content element to change its type"
+                    }
+                ],
+
+
                 "pageProperties": [
                     {
                         "action": "setScreenshotsImagePath",
