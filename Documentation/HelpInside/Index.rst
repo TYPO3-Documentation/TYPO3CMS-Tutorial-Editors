@@ -24,7 +24,7 @@ Context sensitive help
 
 *  When you hover your mouse pointer over some field labels, your cursor changes into a question mark. This indicates that you can click on the label to display a help pop-up.
 
-   .. figure:: ../Images/ManualScreenshots/BackendLabelHelp.png
+   .. figure:: ../Images/ManualScreenshots/Help/BackendLabelHelp.png
       :alt: Context help pop-up for the :guilabel:`Column` label
       :class: with-border
       :scale: 90%
@@ -33,7 +33,7 @@ Context sensitive help
 
 *  Most content elements include a **question mark icon**. Click the icon to display a help window about the item or function it is next to.
 
-   .. figure:: ../Images/ManualScreenshots/BackendElementHelp.png
+   .. figure:: ../Images/ManualScreenshots/Help/BackendElementHelp.png
       :alt: Context help window for the editing interface
       :class: with-border
       :scale: 90%
