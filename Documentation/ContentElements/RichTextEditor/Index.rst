@@ -11,7 +11,7 @@ The TYPO3 text editing interface is not much different from a word processor.
 The options available in the toolbars vary depending on how your TYPO3
 installation is configured.
 
-.. figure:: ../../Images/ManualScreenshots/EditContentRichTextEditor.png
+.. figure:: ../../Images/ManualScreenshots/EditContent/EditContentRichTextEditor.png
    :alt: A typical view of the rich text editor
    :class: with-border
 
@@ -28,7 +28,7 @@ Creating a link
 #. Click the :guilabel:`Link` icon in the toolbar.
    The **Link Browser** window displays.
 
-   .. figure:: ../../Images/ManualScreenshots/LinkBrowser.png
+   .. figure:: ../../Images/ManualScreenshots/Link/LinkBrowser.png
       :alt: The TYPO3 CMS link browser
       :class: with-border
 
@@ -46,7 +46,7 @@ to the page you want to link to, then click the arrow icon next to the page
 name. The content elements on that page are displayed and you can select the
 content element you want to link to.
 
-.. figure:: ../../Images/ManualScreenshots/LinkBrowserAnchor.png
+.. figure:: ../../Images/ManualScreenshots/Link/LinkBrowserAnchor.png
    :alt: Display the anchors on a page
    :class: with-border
 
@@ -61,7 +61,7 @@ External links
 #. In the Target drop-down list, select :guilabel:`New window` to open the
    link in a new browser window.
 
-   .. figure:: ../../Images/ManualScreenshots/LinkBrowserExternal.png
+   .. figure:: ../../Images/ManualScreenshots/Link/LinkBrowserExternal.png
       :alt: Display the anchors on a page
       :class: with-border
 

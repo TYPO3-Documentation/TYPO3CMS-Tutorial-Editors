@@ -63,7 +63,7 @@ Assign access rights
 Now that we have at least one group, and a user assigned to that group, we can
 assign access restrictions. This is done on the **Access** tab of the page properties or content element properties.
 
-.. figure:: ../../Images/ManualScreenshots/AccessRightsItems.png
+.. figure:: ../../Images/ManualScreenshots/Access/AccessRightsItems.png
    :alt: Usergroup access rights
    :class: with-border
 
@@ -90,7 +90,7 @@ assign access restrictions. This is done on the **Access** tab of the page prope
 
 You should have something like this:
 
-.. figure:: ../../Images/ManualScreenshots/AccessRestrictContent.png
+.. figure:: ../../Images/ManualScreenshots/Access/AccessRestrictContent.png
    :alt: Placing access restriction on individual content elements
    :class: with-border
 
@@ -117,21 +117,21 @@ can log in to view the restricted content.
 #. Use the :guilabel:`Browse for records` icon to browse the page tree and
    select the "Web site users" folder.
 
-   .. figure:: ../../Images/ManualScreenshots/AccessLoginForm.png
+   .. figure:: ../../Images/ManualScreenshots/Access/AccessLoginForm.png
       :alt: Defining a new login form
       :class: with-border
 
 #. Save and close the record.
 #. View the page. You should have something like this:
 
-   .. figure:: ../../Images/ManualScreenshots/AccessPageWithLoginBox.png
+   .. figure:: ../../Images/ManualScreenshots/Access/AccessPageWithLoginBox.png
       :alt: The page with the login box
       :class: with-border
 
 #. Enter the user name and the password you defined earlier for the
    frontend user, and you should see the following:
 
-   .. figure:: ../../Images/ManualScreenshots/AccessPageWithAuthenticatedUser.png
+   .. figure:: ../../Images/ManualScreenshots/Access/AccessPageWithAuthenticatedUser.png
       :alt: The page with the authenticated user
       :class: with-border
 

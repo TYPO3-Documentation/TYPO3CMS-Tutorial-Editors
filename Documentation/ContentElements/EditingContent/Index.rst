@@ -13,14 +13,14 @@ then edit the text and make other changes as required.
 You can also change the content element type by selecting a new element from
 the :guilabel:`Type` list.
 
-.. figure:: ../../Images/ManualScreenshots/EditContentChangeType.png
+.. figure:: ../../Images/ManualScreenshots/EditContent/EditContentChangeType.png
    :alt: Editing a content element to change its type
    :class: with-border
 
 When you change a content element's type, the TYPO3 CMS reloads the screen to
 display different input fields.
 
-.. figure:: ../../Images/ManualScreenshots/EditContentChangeTypeConfirm.png
+.. figure:: ../../Images/ManualScreenshots/EditContent/EditContentChangeTypeConfirm.png
    :alt: Editing a content element to change its type
    :class: with-border
 

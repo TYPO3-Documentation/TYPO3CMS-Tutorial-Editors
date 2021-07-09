@@ -20,7 +20,7 @@ Move pages
    A horizontal line displays to indicate the potential new
    position of the page.
 
-   .. figure:: ../../Images/ManualScreenshots/CopyMovePage.png
+   .. figure:: ../../Images/ManualScreenshots/PageTree/CopyMovePage.png
       :alt: Drag a page to move it on the page tree
       :class: with-border
 
@@ -29,7 +29,7 @@ Move pages
    A blue background on existing pages indicates that your page will
    become a child of that page.
 
-   .. figure:: ../../Images/ManualScreenshots/CopyMoveChildPage.png
+   .. figure:: ../../Images/ManualScreenshots/PageTree/CopyMoveChildPage.png
       :alt: Drop a page on another page to make it a child page
       :class: with-border
 
@@ -57,7 +57,7 @@ Delete pages
 Choose the page you want to delete. Drag it directly to the right to display
 the :guilabel:`Delete` option.
 
-.. figure:: ../../Images/ManualScreenshots/DeletePage.png
+.. figure:: ../../Images/ManualScreenshots/PageTree/DeletePage.png
    :alt: Drag a page to the right to delete it
    :class: with-border
 
@@ -79,7 +79,7 @@ At the top of the page tree is a filtering tool. Click the filter icon, then
 type a word or numbers to filter the page tree based on matching page titles
 or page ID.
 
-.. figure:: ../../Images/ManualScreenshots/PageTreeFilter.png
+.. figure:: ../../Images/ManualScreenshots/PageTree/PageTreeFilter.png
    :alt: Filtering pages in the page tree
    :class: with-border
 

@@ -19,14 +19,14 @@ with one pre-defined form already built, which you can use to get started.
 #. In the :guilabel:`Web > Forms` module, click the :guilabel:`+ Create new
    form` button. The **Create new form** wizard displays.
 
-   .. figure:: ../../Images/ManualScreenshots/FormCreateNew.png
+   .. figure:: ../../Images/ManualScreenshots/Forms/FormCreateNew.png
       :alt: Launching the create new form wizard
       :class: with-border
 
 #. Choose whether you want to create a blank form or use a predefined form.
    In this case, choose the predefined option. The **Settings** step displays.
 
-   .. figure:: ../../Images/ManualScreenshots/FormsSettingsStep.png
+   .. figure:: ../../Images/ManualScreenshots/Forms/FormsSettingsStep.png
       :alt: The Settings step of the Create new form wizard.
       :class: with-border
 
@@ -34,7 +34,7 @@ with one pre-defined form already built, which you can use to get started.
    then type a name for the form.
 #. Click **Next** and then click **Finish**. Your new form displays.
 
-   .. figure:: ../../Images/ManualScreenshots/FormsNewForm.png
+   .. figure:: ../../Images/ManualScreenshots/Forms/FormsNewForm.png
       :alt: New form based on template
       :class: with-border
 
@@ -47,7 +47,7 @@ with one pre-defined form already built, which you can use to get started.
 #. In the form content element, go to the **Plugin** tab and in the
    :guilabel:`Form definition` list, choose your form.
 
-   .. figure:: ../../Images/ManualScreenshots/FormsFormDefinition.png
+   .. figure:: ../../Images/ManualScreenshots/Forms/FormsFormDefinition.png
       :alt: Choose your form on the Plugin tab
       :class: with-border
 
@@ -56,7 +56,7 @@ with one pre-defined form already built, which you can use to get started.
 
    Preview the page and it should look something like this:
 
-   .. figure:: ../../Images/ManualScreenshots/EditContentFormOutput.png
+   .. figure:: ../../Images/ManualScreenshots/EditContent/EditContentFormOutput.png
       :alt: The contact form in the frontend
       :class: with-border
 
@@ -73,14 +73,14 @@ Create a form from scratch
 
    A blank form displays.
 
-   .. figure:: ../../Images/ManualScreenshots/FormsBlankForm.png
+   .. figure:: ../../Images/ManualScreenshots/Forms/FormsBlankForm.png
       :alt: Create a new form from scratch
       :class: with-border
 
 #. Click the :guilabel:`Create new element` button. The **New element** window
    displays.
 
-   .. figure:: ../../Images/ManualScreenshots/FormsNewElement.png
+   .. figure:: ../../Images/ManualScreenshots/Forms/FormsNewElement.png
       :alt: Create a new form from scratch
       :class: with-border
 
@@ -100,7 +100,7 @@ Create a form from scratch
    configure settings for the field (such as placeholder text and field
    validation) on the right-hand side of the screen .
 
-   .. figure:: ../../Images/ManualScreenshots/FormsFieldSettings.png
+   .. figure:: ../../Images/ManualScreenshots/Forms/FormsFieldSettings.png
       :alt: Create a new form from scratch
       :class: with-border
 
@@ -108,7 +108,7 @@ Create a form from scratch
    form will display on the frontend. Use the :guilabel:`Edit mode` icon to
    return to editing your form.
 
-   .. figure:: ../../Images/ManualScreenshots/FormsPreview.png
+   .. figure:: ../../Images/ManualScreenshots/Forms/FormsPreview.png
       :alt: Create a new form from scratch
       :class: with-border
 
@@ -123,7 +123,7 @@ to rearrange their order.
 
 Click the :guilabel:`Settings` button at the top of the form to add **Finishers** like a confirmation message or redirection to another page.
 
-.. figure:: ../../Images/ManualScreenshots/FormsFinishers.png
+.. figure:: ../../Images/ManualScreenshots/Forms/FormsFinishers.png
    :alt: Add finishers to a form
    :class: with-border
 
