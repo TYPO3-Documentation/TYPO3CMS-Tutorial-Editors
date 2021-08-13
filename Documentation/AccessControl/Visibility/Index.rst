@@ -27,9 +27,7 @@ Any page or content element with a defined :guilabel:`Publish Date`
 will not be visible before that date. If it has an :guilabel:`Expiration
 Date`, it will be hidden from that point onward.
 
-.. figure:: ../../Images/ManualScreenshots/Access/AccessPublicationDate.png
-   :alt: Setting a publication date for a page
-   :class: with-border
+.. include:: /Images/AutomaticScreenshots/Access/AccessPublicationDate.rst.txt
 
 When you set a publication date in the future then try to navigate to that
 page, you are redirected to the home page.

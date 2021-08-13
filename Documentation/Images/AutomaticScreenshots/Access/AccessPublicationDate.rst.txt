@@ -1,0 +1,5 @@
+.. Automatic screenshot: Remove this line if you want to manually change this file
+
+.. figure:: /Images/AutomaticScreenshots/Access/AccessPublicationDate.png
+   :alt: Setting a publication date for a page
+   :class: with-shadow
