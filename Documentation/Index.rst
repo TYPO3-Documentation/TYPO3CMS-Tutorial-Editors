@@ -64,10 +64,11 @@ their `landing page
    HelpInside/Index
    Pages/Index
    ContentElements/Index
+   ListModule/Index
+   FileModule/Index
    AccessControl/Index
    Languages/Index
    NextSteps/Index
-
 
 Links for this manual
 :ref:`genindex` | :ref:`Sitemap` | :ref:`Targets-for-Cross-Referencing`
