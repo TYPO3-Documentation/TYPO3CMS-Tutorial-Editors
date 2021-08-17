@@ -34,12 +34,9 @@
                     }, {
                         "action": "setScreenshotsRstPath",
                         "path": "Images/AutomaticScreenshots/FilelistModule"
-                    }, {
-                        "action": "amOnPage",
-                        "page": "/typo3/"
                     },
                     {
-                        "action": "switchToMainFrame"
+                        "action": "reloadBackend"
                     },
                     {
                         "action": "scrollModuleMenuTo",
@@ -403,7 +400,7 @@
                         "width": 1024,
                         "height": 480
                     }, {
-                        "action": "makeScreenshotOfElement",
+                        "action": "makeScreenshotOfWindow",
                         "fileName": "ClipboardWarning",
                         "captionText": "The dialog box for confirming the paste action"
                     }, {
@@ -414,7 +411,7 @@
                         "width": 1232,
                         "height": 950
                     }, {
-                        "action": "makeScreenshotOfElement",
+                        "action": "makeScreenshotOfWindow",
                         "fileName": "MovedContentEmptyClipboard",
                         "captionText": "Moved records and empty clipboard"
                     }
