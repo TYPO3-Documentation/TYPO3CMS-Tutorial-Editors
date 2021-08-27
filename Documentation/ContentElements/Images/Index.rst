@@ -32,9 +32,7 @@ Add an image to a page
 #. On the **Images** tab, click the :guilabel:`Add image` button. The **File
    selector** window displays to let you browse for an image.
 
-   .. figure:: ../../Images/ManualScreenshots/Fileadmin/ImageSelector.png
-      :alt: The window for selecting images
-      :class: with-border
+   .. include:: /Images/AutomaticScreenshots/Fileadmin/ImageSelector.rst.txt
 
 #. Browse the file tree then select a folder.
 #. Tick the :guilabel:`Display thumbnails` box to show a preview of each image
