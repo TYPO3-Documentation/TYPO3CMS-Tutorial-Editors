@@ -63,9 +63,7 @@ Assign access rights
 Now that we have at least one group, and a user assigned to that group, we can
 assign access restrictions. This is done on the **Access** tab of the page properties or content element properties.
 
-.. figure:: ../../Images/ManualScreenshots/Access/AccessRightsItems.png
-   :alt: Usergroup access rights
-   :class: with-border
+.. include:: /Images/AutomaticScreenshots/Access/AccessRightsItems.rst.txt
 
 .. note::
 

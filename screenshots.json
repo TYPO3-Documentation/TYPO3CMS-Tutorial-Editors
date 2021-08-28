@@ -705,7 +705,7 @@
                         "captionText": "Editing a content element to change its type"
                     }
                 ],
-                "pageProperties": [
+                "PageProperties": [
                     {
                         "action": "setScreenshotsImagePath",
                         "path": "Images/AutomaticScreenshots/PageProperties"
@@ -784,7 +784,7 @@
                     },
                     {"action": "resizeWindow", "width": 1024,"height": 780}
                 ],
-                "newContent": [
+                "NewContentElement": [
                     {
                         "action": "amOnPage",
                         "page": "typo3/index.php"
@@ -813,12 +813,13 @@
                     {
                         "action": "waitForModalDialogInMainFrame"
                     },
-                    {"action": "waitForText", "text": "Create new content element\n", "timeout": 5},
+                    {"action": "waitForText", "text": "Create new content element", "timeout": 5},
                     {
                         "action": "makeScreenshotOfElement",
                         "fileName": "WizardTabTypical",
                         "altText": "The 'Typical Page Content' tab of the new content element window"
                     },
+                    {"action": "waitForText", "text":  "Special elements"},
                     {"action": "click", "link": "Special elements"},
                     {"action": "wait", "timeout":  0.1},
                     {
@@ -876,7 +877,7 @@
                         "altText": "The new content element appears in the Page module"
                     }
                 ],
-                "feLogin": [
+                "Access": [
                     {
                         "action": "amOnPage",
                         "page": "typo3/index.php"
@@ -941,7 +942,92 @@
                         "fileName": "AccessNewUser",
                         "altText": "Creating a new frontend user"
                     },
-                    {"action": "resizeWindow", "width": 1024,"height": 512}
+
+                    {"action": "switchToMainFrame"},
+                    {"action": "see", "text": "Page"},
+                    {"action": "click", "link": "Page"},
+                    {"action": "waitForModalDialogInMainFrame"},
+                    {"action": "waitForText", "text": "Yes, discard my changes", "timeout": 5},
+                    {"action": "click", "link": "Yes, discard my changes"},
+                    {"action": "openPageTreePath", "path": ["Congratulations"]},
+                    {"action": "switchToContentFrame"},
+                    {"action": "waitForText", "text": "Congratulations", "timeout": 5},
+                    {"action": "click", "link": "a[title='Edit page properties']"},
+                    {"action": "waitForText", "text": "Access", "timeout": 5},
+                    {"action": "click", "link": "Access"},
+                    {"action": "waitForText", "text": "Publish Dates and Access Rights", "timeout": 5},
+                    {
+                        "action": "makeScreenshotOfElement",
+                        "selector": "div.tab-pane.active fieldset:nth-child(2)",
+                        "fileName": "AccessPublicationDate",
+                        "altText": "Setting a publication date for a page"
+                    },
+                    {"action": "cropScreenshot", "fileName": "AccessPublicationDate", "height": 115},
+
+                    {"action": "resizeWindow", "width": 500,"height": 1024},
+                    {
+                        "action": "makeScreenshotOfElement",
+                        "selector": "div.tab-pane.active fieldset:nth-child(2) div.t3js-formengine-palette-field:nth-child(5)",
+                        "fileName": "AccessRightsItems",
+                        "altText": "Usergroup access rights"
+                    }
+                ],
+                "Fileadmin": [
+                    {
+                        "action": "amOnPage",
+                        "page": "typo3/index.php"
+                    },
+                    {
+                        "action": "setScreenshotsImagePath",
+                        "path": "Images/AutomaticScreenshots/Fileadmin"
+                    },
+                    {
+                        "action": "setScreenshotsRstPath",
+                        "path": "Images/AutomaticScreenshots/Fileadmin"
+                    },
+                    {"action": "resizeWindow", "width": 1000,"height": 757},
+
+                    {"action": "switchToMainFrame"},
+                    {"action": "see", "text": "Page"},
+                    {"action": "click", "link": "Page"},
+                    {"action": "openPageTreePath", "path": ["Congratulations", "Content Examples", "Media", "Images"]},
+                    {"action": "switchToContentFrame"},
+                    {"action": "waitForText", "text": "6 Images in 3 Columns", "timeout": 5},
+                    {"action": "click", "link": "6 Images in 3 Columns"},
+                    {"action": "click", "link": "Images"},
+                    {"action": "click", "link": "button[title='Add image']"},
+                    {"action": "waitForModalDialogInMainFrame"},
+                    {"action": "switchToModalDialogFrame"},
+                    {"action": "waitForText", "text": "introduction"},
+                    {"action": "click", "link": "g[title='introduction'] g.toggle"},
+                    {"action": "waitForText", "text": "images"},
+                    {"action": "click", "link": "g[title='images'] text.node-name"},
+                    {"action": "waitForText", "text": "/introduction/images/"},
+                    {
+                        "action": "makeScreenshotOfElement",
+                        "fileName": "ImageSelector",
+                        "altText": "The window for selecting images"
+                    }
+                ],
+                "Login": [
+                    {
+                        "action": "amOnPage",
+                        "page": "typo3/logout"
+                    },
+                    {
+                        "action": "setScreenshotsImagePath",
+                        "path": "Images/AutomaticScreenshots/Login"
+                    },
+                    {
+                        "action": "setScreenshotsRstPath",
+                        "path": "Images/AutomaticScreenshots/Login"
+                    },
+                    {"action": "resizeWindow", "width": 1000,"height": 757},
+                    {
+                        "action": "makeScreenshotOfElement",
+                        "selector": ".card-login",
+                        "fileName": "BackendLoginPage"
+                    }
                 ]
             }
         }
