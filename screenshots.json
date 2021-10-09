@@ -40,7 +40,7 @@
                     },
                     {
                         "action": "scrollModuleMenuTo",
-                        "toSelector": "//button[contains(., 'Filelist')]"
+                        "toSelector": "//a[contains(., 'Filelist')]"
                     },
                     {
                         "action": "click",
@@ -61,7 +61,7 @@
                         "timeout": 1
                     }, {
                         "action": "drawBox",
-                        "selector": ".float-end"
+                        "selector": ".form-switch"
                     }, {
                         "action": "makeScreenshotOfWindow",
                         "fileName": "FilelistModule",
@@ -95,12 +95,12 @@
                         "height": 780
                     }, {
                         "action": "openFileTreePath",
-                        "path": ["introduction", "audio"]
+                        "path": ["introduction", "images", "background"]
                     }, {
                         "action": "switchToContentFrame"
                     }, {
                         "action": "waitForText",
-                        "text": "audio"
+                        "text": "background"
                     }, {
                         "action": "scrollTo",
                         "selector": ".form-switch"
@@ -118,13 +118,22 @@
                         "link": "Clipboard #1"
                     }, {
                         "action": "waitForElement",
-                        "element": "a.t3js-toggle-all-checkboxes"
+                        "element": "button.t3js-multi-record-selection-check-actions-toggle"
                     }, {
                         "action": "click",
-                        "link": "a.t3js-toggle-all-checkboxes"
+                        "link": "button.t3js-multi-record-selection-check-actions-toggle"
+                    }, {
+                        "action": "waitForElement",
+                        "element": "button[data-multi-record-selection-check-action=\"toggle\"]"
                     }, {
                         "action": "click",
-                        "link": "button[data-filelist-clipboard-cmd=\"setCB\"]"
+                        "link": "button[data-multi-record-selection-check-action=\"toggle\"]"
+                    }, {
+                        "action": "waitForElement",
+                        "element": "button[data-multi-record-selection-action=\"copyMarked\"]"
+                    }, {
+                        "action": "click",
+                        "link": "button[data-multi-record-selection-action=\"copyMarked\"]"
                     }, {
                         "action": "waitForText",
                         "text": "Remove item"
@@ -173,7 +182,7 @@
                         "action": "switchToMainFrame"
                     }, {
                         "action": "scrollModuleMenuTo",
-                        "toSelector": "//button[contains(., 'List')]"
+                        "toSelector": "//a[contains(., 'List')]"
                     }, {
                         "action": "click",
                         "link": "List"
@@ -312,7 +321,7 @@
                         "text": "Remove item"
                     }, {
                         "action": "drawBox",
-                        "selector": "#clipboard_form"
+                        "selector": ".clipboard-panel"
                     }, {
                         "action": "makeScreenshotOfWindow",
                         "fileName": "SimpleClipboard"
@@ -320,34 +329,47 @@
                         "action": "click",
                         "link": "Clipboard #1"
                     }, {
-                        "action": "wait",
-                        "timeout": "1"
+                        "action": "click",
+                        "link": ".t3js-multi-record-selection-check-actions-toggle"
+                    }, {
+                        "action": "waitForText",
+                        "text": "Check all"
+                    }, {
+                        "action": "makeScreenshotOfElement",
+                        "selector": ".module",
+                        "fileName": "ToggleCheckClipboardPad"
+                    }, {
+                        "action": "click",
+                        "link": "Check all"
+                    }, {
+                        "action": "waitForText",
+                        "text": "Selection"
                     }, {
                         "action": "drawBadge",
-                        "selector": ".col-clipboard .t3js-record-edit-multiple",
+                        "selector": "button[data-multi-record-selection-action=\"edit\"]",
                         "label": "1",
                         "position": "bottom"
                     }, {
                         "action": "drawBadge",
-                        "selector": ".col-clipboard button[title=\"Delete marked\"]",
+                        "selector": "button[data-multi-record-selection-action=\"copyMarked\"]",
                         "label": "2",
                         "position": "bottom"
                     }, {
                         "action": "drawBadge",
-                        "selector": ".col-clipboard [aria-label=\"Transfer the selection of records to clipboard\"]",
+                        "selector": "button[data-multi-record-selection-action=\"removeMarked\"]",
                         "label": "3",
                         "position": "bottom"
                     }, {
                         "action": "drawBadge",
-                        "selector": ".col-clipboard button.t3js-toggle-all-checkboxes",
+                        "selector": "button[data-multi-record-selection-action=\"delete\"]",
                         "label": "4",
                         "position": "bottom"
                     }, {
                         "action": "drawBox",
-                        "selector": "#clipboard_form tr:nth-child(3) td"
+                        "selector": ".clipboard-panel tr:nth-child(3) td"
                     }, {
                         "action": "drawArrow",
-                        "selector": "#clipboard_form tr:nth-child(3) td",
+                        "selector": ".clipboard-panel tr:nth-child(3) td",
                         "position": "center-bottom"
                     }, {
                         "action": "makeScreenshotOfElement",
@@ -357,19 +379,13 @@
                         "action": "clearDrawings"
                     }, {
                         "action": "click",
-                        "link": ".col-clipboard button.t3js-toggle-all-checkboxes"
-                    }, {
-                        "action": "wait",
-                        "timeout": "1"
-                    }, {
-                        "action": "click",
-                        "link": ".col-clipboard [aria-label=\"Transfer the selection of records to clipboard\"]"
+                        "link": "button[data-multi-record-selection-action=\"copyMarked\"]"
                     }, {
                         "action": "waitForText",
                         "text": "Remove item"
                     }, {
                         "action": "makeScreenshotOfElement",
-                        "selector": "#clipboard_form",
+                        "selector": ".clipboard-panel",
                         "fileName": "ClipboardWithMultipleItems",
                         "captionText": "Multiple items stored in the clipboard"
                     }, {
@@ -384,7 +400,7 @@
                         "text": "Shared Content"
                     }, {
                         "action": "drawBox",
-                        "selector": "button[title=\"Paste in clipboard content\"]"
+                        "selector": "a[title=\"Paste in clipboard content\"]"
                     }, {
                         "action": "makeScreenshotOfElement",
                         "selector": ".module",
@@ -392,7 +408,7 @@
                         "captionText": "The \"Paste into\" icon at the top of the list"
                     }, {
                         "action": "click",
-                        "link": "button[title=\"Paste in clipboard content\"]"
+                        "link": "a[title=\"Paste in clipboard content\"]"
                     }, {
                         "action": "waitForModalDialogInMainFrame"
                     }, {
@@ -433,7 +449,7 @@
                         "action": "switchToMainFrame"
                     }, {
                         "action": "scrollModuleMenuTo",
-                        "toSelector": "//button[contains(., 'List')]"
+                        "toSelector": "//a[contains(., 'List')]"
                     }, {
                         "action": "click",
                         "link": "List"
@@ -487,7 +503,7 @@
                         "action": "switchToContentFrame"
                     }, {
                         "action": "drawBox",
-                        "selector": ".recordlist-heading .col:first-child a"
+                        "selector": ".recordlist-heading .col.ms-2 a"
                     }, {
                         "action": "makeScreenshotOfElement",
                         "selector": ".module-body",
@@ -495,7 +511,7 @@
                         "captionText": "Click on the title to enable mass edit mode"
                     }, {
                         "action": "click",
-                        "link": ".recordlist-heading .col:first-child a"
+                        "link": ".recordlist-heading .col.ms-2 a"
                     }, {
                         "action": "waitForElement",
                         "element": "button.t3js-record-edit-multiple"
@@ -569,16 +585,16 @@
                         "action": "click",
                         "link": "Clipboard #1"
                     }, {
+                        "action": "waitForText",
+                        "text": "Copy elements"
+                    }, {
                         "action": "scrollModuleBodyToTop"
                     }, {
-                        "action": "wait",
-                        "timeout": 1
+                        "action": "click",
+                        "link": "tr.t3js-entity:nth-child(2) td.col-selector .t3js-multi-record-selection-check"
                     }, {
                         "action": "click",
-                        "link": "tr.t3js-entity:nth-child(2) td.col-clipboard label.btn-checkbox"
-                    }, {
-                        "action": "click",
-                        "link": "tr.t3js-entity:nth-child(3) td.col-clipboard label.btn-checkbox"
+                        "link": "tr.t3js-entity:nth-child(3) td.col-selector .t3js-multi-record-selection-check"
                     }, {
                         "action": "drawBox",
                         "selector": "button[title=\"Edit all shown fields of the listed records\"]"
@@ -606,7 +622,7 @@
                         "action": "switchToMainFrame"
                     }, {
                         "action": "scrollModuleMenuTo",
-                        "toSelector": "//button[contains(., 'Info')]"
+                        "toSelector": "//a[contains(., 'Info')]"
                     }, {
                         "action": "click",
                         "link": "Info"
@@ -625,9 +641,6 @@
                         "action": "selectOption",
                         "select": "select.t3-js-jumpMenuBox",
                         "option": "Localization Overview"
-                    }, {
-                        "action": "waitForText",
-                        "text": "Localization overview"
                     }, {
                         "action": "wait",
                         "timeout": "1"
@@ -949,9 +962,9 @@
                     {"action": "waitForModalDialogInMainFrame"},
                     {"action": "waitForText", "text": "Yes, discard my changes", "timeout": 5},
                     {"action": "click", "link": "Yes, discard my changes"},
-                    {"action": "openPageTreePath", "path": ["Congratulations"]},
+                    {"action": "openPageTreePath", "path": ["Congratulations", "Features"]},
                     {"action": "switchToContentFrame"},
-                    {"action": "waitForText", "text": "Congratulations", "timeout": 5},
+                    {"action": "waitForText", "text": "Features", "timeout": 5},
                     {"action": "click", "link": "a[title='Edit page properties']"},
                     {"action": "waitForText", "text": "Access", "timeout": 5},
                     {"action": "click", "link": "Access"},
@@ -964,10 +977,9 @@
                     },
                     {"action": "cropScreenshot", "fileName": "AccessPublicationDate", "height": 115},
 
-                    {"action": "resizeWindow", "width": 500,"height": 1024},
                     {
                         "action": "makeScreenshotOfElement",
-                        "selector": "div.tab-pane.active fieldset:nth-child(2) div.t3js-formengine-palette-field:nth-child(5)",
+                        "selector": "div.tab-pane.active fieldset:nth-child(2)",
                         "fileName": "AccessRightsItems",
                         "altText": "Usergroup access rights"
                     }
@@ -998,11 +1010,6 @@
                     {"action": "click", "link": "button[title='Add image']"},
                     {"action": "waitForModalDialogInMainFrame"},
                     {"action": "switchToModalDialogFrame"},
-                    {"action": "waitForText", "text": "introduction"},
-                    {"action": "click", "link": "g[title='introduction'] g.toggle"},
-                    {"action": "waitForText", "text": "images"},
-                    {"action": "click", "link": "g[title='images'] text.node-name"},
-                    {"action": "waitForText", "text": "/introduction/images/"},
                     {
                         "action": "makeScreenshotOfElement",
                         "fileName": "ImageSelector",
