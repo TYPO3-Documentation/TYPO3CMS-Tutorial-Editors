@@ -329,15 +329,38 @@
                         "action": "click",
                         "link": "Clipboard #1"
                     }, {
+                        "action": "waitForElement",
+                        "element": "label[for=\"checkShowClipBoard\"]"
+                    }, {
+                        "action": "drawBadge",
+                        "selector": "label[for=\"checkShowClipBoard\"]",
+                        "label": "1",
+                        "position": "right"
+                    }, {
+                        "action": "drawBox",
+                        "selector": "//typo3-backend-clipboard-panel//tr[contains(., 'Clipboard #1')]"
+                    }, {
+                        "action": "drawBadge",
+                        "selector": "//typo3-backend-clipboard-panel//tr[contains(., 'Clipboard #1')]",
+                        "label": "2",
+                        "position": "bottom"
+                    }, {
+                        "action": "drawBadge",
+                        "selector": ".t3js-multi-record-selection-check-actions-toggle",
+                        "label": "3",
+                        "position": "top"
+                    }, {
                         "action": "click",
                         "link": ".t3js-multi-record-selection-check-actions-toggle"
                     }, {
                         "action": "waitForText",
                         "text": "Check all"
                     }, {
+                        "action": "clearDrawings"
+                    }, {
                         "action": "makeScreenshotOfElement",
-                        "selector": ".module",
-                        "fileName": "ToggleCheckClipboardPad"
+                        "selector": ".module-body",
+                        "fileName": "ActivateClipboardPad"
                     }, {
                         "action": "click",
                         "link": "Check all"
@@ -345,36 +368,17 @@
                         "action": "waitForText",
                         "text": "Selection"
                     }, {
-                        "action": "drawBadge",
-                        "selector": "button[data-multi-record-selection-action=\"edit\"]",
-                        "label": "1",
-                        "position": "bottom"
-                    }, {
-                        "action": "drawBadge",
-                        "selector": "button[data-multi-record-selection-action=\"copyMarked\"]",
-                        "label": "2",
-                        "position": "bottom"
-                    }, {
-                        "action": "drawBadge",
-                        "selector": "button[data-multi-record-selection-action=\"removeMarked\"]",
-                        "label": "3",
-                        "position": "bottom"
-                    }, {
-                        "action": "drawBadge",
-                        "selector": "button[data-multi-record-selection-action=\"delete\"]",
-                        "label": "4",
-                        "position": "bottom"
-                    }, {
-                        "action": "drawBox",
-                        "selector": ".clipboard-panel tr:nth-child(3) td"
-                    }, {
-                        "action": "drawArrow",
-                        "selector": ".clipboard-panel tr:nth-child(3) td",
-                        "position": "center-bottom"
+                        "action": "resizeWindow",
+                        "width": 1232,
+                        "height": 400
                     }, {
                         "action": "makeScreenshotOfElement",
                         "selector": ".module",
-                        "fileName": "ActivateClipboardPad"
+                        "fileName": "EditSelection"
+                    }, {
+                        "action": "resizeWindow",
+                        "width": 1232,
+                        "height": 950
                     }, {
                         "action": "clearDrawings"
                     }, {
@@ -382,7 +386,7 @@
                         "link": "button[data-multi-record-selection-action=\"copyMarked\"]"
                     }, {
                         "action": "waitForText",
-                        "text": "Remove item"
+                        "text": "Clipboard #1"
                     }, {
                         "action": "makeScreenshotOfElement",
                         "selector": ".clipboard-panel",
@@ -402,10 +406,18 @@
                         "action": "drawBox",
                         "selector": "a[title=\"Paste in clipboard content\"]"
                     }, {
+                        "action": "resizeWindow",
+                        "width": 1232,
+                        "height": 400
+                    }, {
                         "action": "makeScreenshotOfElement",
                         "selector": ".module",
                         "fileName": "PasteClipboardContent",
                         "captionText": "The \"Paste into\" icon at the top of the list"
+                    }, {
+                        "action": "resizeWindow",
+                        "width": 1232,
+                        "height": 950
                     }, {
                         "action": "click",
                         "link": "a[title=\"Paste in clipboard content\"]"
