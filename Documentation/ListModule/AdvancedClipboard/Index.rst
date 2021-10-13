@@ -8,14 +8,14 @@ Advanced clipboard usage
 ========================
 
 Select a page, in the :guilabel:`List` view. If not activated, click on
-:guilabel:`Show Clipboard` (1). Choose
+:guilabel:`Show Clipboard` (1). Select
 :guilabel:`"Clipboard #1 (multi-selection mode)"` in the clipboard panel on the
 bottom of the page. You can now check all records (3) or check just the ones
 you want to work on. Each record now has a checkbox.
 
 .. include:: /Images/AutomaticScreenshots/ListModule/ActivateClipboardPad.rst.txt
 
-Once at least one record is checked new buttons appear at the top of the list:
+As soon as one or more records are checked, new buttons will appear at the top of the list:
 
 .. include::
 
@@ -33,8 +33,8 @@ Your clipboard should look like this:
 .. include:: /Images/AutomaticScreenshots/ListModule/ClipboardWithMultipleItems.rst.txt
 
 The button :guilabel:`Move Elements`is selected by default. Select the button
-:guilabel:`Copy Elements` instead. The selected elements will now be copied on
-pasting and the current page will stay unchanged.
+:guilabel:`Copy Elements` instead. The selected elements will now be copied
+and the current page will remain unchanged.
 
 Move to another page and click the "Paste into" icon:
 
