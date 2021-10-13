@@ -55,7 +55,7 @@ There's a clipboard just like in the :guilabel:`List` module.
 
 .. include:: /Images/AutomaticScreenshots/FilelistModule/FileClipboard.rst.txt
 
-The handling is the same like described for the :ref:`Advanced clipboard usage
+The handling is the same as the description used in the :ref:`Advanced clipboard usage
 <advanced_clipboard_usage>`.
 
 
