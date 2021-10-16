@@ -51,12 +51,12 @@ or link to them in your web site is covered in the
 Clipboard
 ---------
 
-There's a clipboard just like in the *List* module.
+There's a clipboard just like in the :guilabel:`List` module.
 
 .. include:: /Images/AutomaticScreenshots/FilelistModule/FileClipboard.rst.txt
 
-Using the action icons, files can be renamed or replaced
-(just hover over the icons and you will get a help text).
+The handling is the same as the description used in the :ref:`Advanced clipboard usage
+<advanced_clipboard_usage>`.
 
 
 .. index:: Files; Upload
@@ -71,7 +71,7 @@ or to the current directory by using the action icon in the docheader.
 .. include:: /Images/AutomaticScreenshots/FilelistModule/FileUpload.rst.txt
 
 
-Next Steps
+Next steps
 ==========
 
 The next chapters cover configuration and administration tasks that

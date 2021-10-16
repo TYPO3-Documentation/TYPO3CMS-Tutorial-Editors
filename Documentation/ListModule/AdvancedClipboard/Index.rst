@@ -7,33 +7,34 @@
 Advanced clipboard usage
 ========================
 
-Select a page (here, we use "Customizings"), the :guilabel:`List`
-view and :guilabel:`"Clipboard #1 (multi-selection mode)"` on the
-bottom of the page.
+Select a page, in the :guilabel:`List` view. If not activated, click on
+:guilabel:`Show Clipboard` (1). Select
+:guilabel:`"Clipboard #1 (multi-selection mode)"` in the clipboard panel on the
+bottom of the page. You can now check all records (3) or check just the ones
+you want to work on. Each record now has a checkbox.
 
 .. include:: /Images/AutomaticScreenshots/ListModule/ActivateClipboardPad.rst.txt
 
-Note how the List view was changed. Each record now has a checkbox
-and action icons have been moved to the list header. With them
-you can:
+As soon as one or more records are checked, new buttons will appear at the top of the list:
 
+.. include::
 
-#. **Edit** all marked (selected) items at once
+#. :guilabel:`Edit` all selected items at once
 
-#. **Delete** all marked (selected) items at once
+#. :guilabel:`Transfer to Clipboard` all selected items at once
 
-#. **Transfer** selected items to the clipboard
+#. :guilabel:`Remove from Clipboard` all selected items at once
 
-#. **Mark all / Mark none** items in the list
+#. :guilabel:`Delete` all selected items at once
 
-Now check several boxes and click the "Transfer" icon.
+Now check several boxes and click the :guilabel:`Transfer to Clipboard` button.
 Your clipboard should look like this:
 
 .. include:: /Images/AutomaticScreenshots/ListModule/ClipboardWithMultipleItems.rst.txt
 
-Note how the elements are registered for "Move". The dropdown
-menu can be used to change the behaviour to "Copy" (which you can do
-if you don't want to change the current page).
+The button :guilabel:`Move Elements`is selected by default. Select the button
+:guilabel:`Copy Elements` instead. The selected elements will now be copied
+and the current page will remain unchanged.
 
 Move to another page and click the "Paste into" icon:
 
@@ -46,4 +47,4 @@ A warning appears to confirm the operation:
 After confirmation, you can see that the two elements have been moved
 to the top of the list and that the clipboard pane is empty:
 
-.. include:: /Images/AutomaticScreenshots/ListModule/MovedContentEmpyClipboard.rst.txt
+.. include:: /Images/AutomaticScreenshots/ListModule/MovedContentEmptyClipboard.rst.txt
