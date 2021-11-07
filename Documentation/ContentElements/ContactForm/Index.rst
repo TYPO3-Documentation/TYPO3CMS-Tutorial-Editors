@@ -19,46 +19,45 @@ with one pre-defined form already built, which you can use to get started.
 #. In the :guilabel:`Web > Forms` module, click the :guilabel:`+ Create new
    form` button. The **Create new form** wizard displays.
 
-   .. figure:: ../../Images/ManualScreenshots/Forms/FormCreateNew.png
-      :alt: Launching the create new form wizard
-      :class: with-border
+   .. include:: /Images/AutomaticScreenshots/Forms/FormCreateNew.rst.txt
 
 #. Choose whether you want to create a blank form or use a predefined form.
-   In this case, choose the predefined option. The **Settings** step displays.
+   In this case, choose :guilabel:`Predefined Form`.
 
-   .. figure:: ../../Images/ManualScreenshots/Forms/FormsSettingsStep.png
-      :alt: The Settings step of the Create new form wizard.
-      :class: with-border
+   .. include:: /Images/AutomaticScreenshots/Forms/FormsSettingsStep1.rst.txt
+
+#. Choose the predefined :guilabel:`Simple contact form` and enter a name.
+
+   .. include:: /Images/AutomaticScreenshots/Forms/FormsSettingsStep2.rst.txt
+
+#. Check the settings and click :guilabel:`Next` once more.
+
+   .. include:: /Images/AutomaticScreenshots/Forms/FormsSettingsStep3.rst.txt
 
 #. In the :guilabel:`Start template` list, select 'Simple contact form', and
    then type a name for the form.
 #. Click **Next** and then click **Finish**. Your new form displays.
 
-   .. figure:: ../../Images/ManualScreenshots/Forms/FormsNewForm.png
-      :alt: New form based on template
-      :class: with-border
+   .. include:: /Images/AutomaticScreenshots/Forms/FormsNewForm.rst.txt
 
    The predefined 'Simple contact form' comes with some settings already
    configured, but you can edit these settings and add more fields. For
    example, you might want to delete the Summary page, and change
    the labels on the buttons.
 
-#. Add your form to a page the same way you would add any :ref:`content       element<content-form>`. On the  **Form elements** tab, choose 'Form'.
+#. Add your form to a page the same way you would add any
+   :ref:`content element<content-form>`. On the  **Form elements** tab, choose 'Form'.
 #. In the form content element, go to the **Plugin** tab and in the
    :guilabel:`Form definition` list, choose your form.
 
-   .. figure:: ../../Images/ManualScreenshots/Forms/FormsFormDefinition.png
-      :alt: Choose your form on the Plugin tab
-      :class: with-border
+   .. include:: /Images/AutomaticScreenshots/Forms/FormsFormDefinition.rst.txt
 
 #. On the **General** tab, type a header for your form, then save and close
    the record.
 
    Preview the page and it should look something like this:
 
-   .. figure:: /Images/ManualScreenshots/Forms/FormOutput.png
-      :alt: The contact form in the frontend
-      :class: with-border
+   .. include:: /Images/AutomaticScreenshots/Forms/FormOutput.rst.txt
 
 
 .. _Create-form-scratch:
@@ -73,16 +72,12 @@ Create a form from scratch
 
    A blank form displays.
 
-   .. figure:: ../../Images/ManualScreenshots/Forms/FormsBlankForm.png
-      :alt: Create a new form from scratch
-      :class: with-border
+   .. include:: /Images/AutomaticScreenshots/FormsBlank/FormsBlankForm.rst.txt
 
 #. Click the :guilabel:`Create new element` button. The **New element** window
    displays.
 
-   .. figure:: ../../Images/ManualScreenshots/Forms/FormsNewElement.png
-      :alt: Create a new form from scratch
-      :class: with-border
+   .. include:: /Images/AutomaticScreenshots/FormsBlank/FormsNewElement.rst.txt
 
    TYPO3 comes with over twenty form fields by default, including:
 
@@ -100,17 +95,13 @@ Create a form from scratch
    configure settings for the field (such as placeholder text and field
    validation) on the right-hand side of the screen .
 
-   .. figure:: ../../Images/ManualScreenshots/Forms/FormsFieldSettings.png
-      :alt: Create a new form from scratch
-      :class: with-border
+   .. include:: /Images/AutomaticScreenshots/FormsBlank/FormsFieldSettings.rst.txt
 
 #. Click the :guilabel:`Preview mode` icon to see an indication of how your
    form will display on the frontend. Use the :guilabel:`Edit mode` icon to
    return to editing your form.
 
-   .. figure:: ../../Images/ManualScreenshots/Forms/FormsPreview.png
-      :alt: Create a new form from scratch
-      :class: with-border
+   .. include:: /Images/AutomaticScreenshots/FormsBlank/FormsPreview.rst.txt
 
 
 .. _Working-with-Forms:

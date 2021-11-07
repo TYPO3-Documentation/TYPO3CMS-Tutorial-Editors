@@ -1,5 +1,28 @@
 {
     "suites": {
+        "Core": {
+            "screenshots": {
+                "_default": [
+                    {
+                        "action": "resizeWindow",
+                        "width": 1024,
+                        "height": 768
+                    },
+                    {
+                        "action": "setScreenshotsImagePath",
+                        "path": "Images/AutomaticScreenshots"
+                    },
+                    {
+                        "action": "setScreenshotsRstPath",
+                        "path": "Images/AutomaticScreenshots"
+                    },
+                    {
+                        "action": "setCodeSnippetsTargetPath",
+                        "path": "CodeSnippets"
+                    }
+                ]
+            }
+        },
         "Introduction": {
             "screenshots": {
                 "_default": [
@@ -1156,6 +1179,158 @@
                         "action": "makeScreenshotOfElement",
                         "selector": ".card-login",
                         "fileName": "BackendLoginPage"
+                    }
+                ],
+                "Forms": [
+                    {
+                        "include": "_default"
+                    },
+                    {
+                        "action": "setScreenshotsImagePath",
+                        "path": "Images/AutomaticScreenshots/Forms"
+                    }, {
+                        "action": "setScreenshotsRstPath",
+                        "path": "Images/AutomaticScreenshots/Forms"
+                    },
+
+                    {
+                        "action": "resizeWindow",
+                        "width": 1024,
+                        "height": 300
+                    },
+                    {"action": "goToModule", "module": "Forms"},
+                    {"action": "drawBox", "selector": "a[title=\"Create new form\"]"},
+                    {"action": "drawBadge", "selector": "a[title=\"Create new form\"]", "label": "Create new form", "position": "right"},
+                    {
+                        "action": "makeScreenshotOfWindow",
+                        "fileName": "FormCreateNew",
+                        "captionText": "Launching the :guilabel:`Create new form` wizard"
+                    },
+                    {"action": "clearDrawings"},
+                    {"action": "resizeWindow", "width": 1024, "height": 640},
+                    {
+                        "action": "click",
+                        "link": "Create new form"
+                    },
+                    {"action": "waitForModalDialogInMainFrame"},
+                    {
+                        "action": "makeScreenshotOfWindow",
+                        "fileName": "FormsSettingsStep1",
+                        "captionText": "Choose :guilabel:`Predefined form`"
+                    },
+                    {"action": "click","link": "Predefined form"},
+                    {"action": "waitForText","text": "Select a template"},
+                    {"action": "fillField", "field": "#new-form-name", "value": "Get in touch!"},
+                    {
+                        "action": "selectOption",
+                        "select": "#new-form-template",
+                        "option": "Simple contact form (ext:form example)"
+                    },
+                    {
+                        "action": "makeScreenshotOfWindow",
+                        "fileName": "FormsSettingsStep2"
+                    },
+                    {"action": "click", "link": "Next"},
+                    {"action": "waitForText","text": "Check and confirm"},
+                    {
+                        "action": "makeScreenshotOfWindow",
+                        "fileName": "FormsSettingsStep3"
+                    },
+                    {"action": "clickButtonInModalDialog", "buttonLink": "Next"},
+                    {"action": "switchToContentFrame"},
+                    {"action": "waitForText","text": "Get in touch"},
+                    {"action": "switchToMainFrame"},
+                    {"action": "click", "link": ".t3js-topbar-button-modulemenu"},
+                    {
+                        "action": "makeScreenshotOfWindow",
+                        "fileName": "FormsNewForm",
+                        "captionText": "New form based on template"
+                    },
+                    {"action": "switchToMainFrame"},
+                    {"action": "click", "link": ".t3js-topbar-button-modulemenu"},
+                    {
+                        "action": "goToRecord",
+                        "table": "tt_content",
+                        "uid": {"action": "getUidByField", "table": "tt_content", "field": "header", "value": "Contactform"}
+                    },
+                    {"action": "click", "link": "Plugin"},
+                    {
+                        "action": "selectOption",
+                        "select": "//select[contains(@name, '[settings.persistenceIdentifier]')]",
+                        "option": "Get in touch!"
+                    },
+                    {"action": "click", "link": "Save"},
+                    {"action": "wait", "timeout": 1},
+                    {
+                        "action": "makeScreenshotOfElement",
+                        "selector": ".module-body",
+                        "fileName": "FormsFormDefinition",
+                        "captionText": "Choose your form on the Plugin tab"
+                    },
+                    {
+                        "action": "amOnPage",
+                        "page": "index.php?id=37"
+                    },
+                    {
+                        "action": "makeScreenshotOfWindow",
+                        "fileName": "FormOutput",
+                        "captionText": "The contact form in the frontend"
+                    }
+                ],
+                "FormsBlank": [
+                    {
+                        "include": "_default"
+                    },
+                    {
+                        "action": "setScreenshotsImagePath",
+                        "path": "Images/AutomaticScreenshots/FormsBlank"
+                    }, {
+                        "action": "setScreenshotsRstPath",
+                        "path": "Images/AutomaticScreenshots/FormsBlank"
+                    },
+                    {"action": "goToModule", "module": "Forms"},
+                    {"action": "click", "link": "Create new form"},
+                    {"action": "waitForModalDialogInMainFrame"},
+                    {"action": "click", "link": "Blank form"},
+                    {"action": "waitForText","text": "Storage"},
+                    {"action": "fillField", "field": "#new-form-name", "value": "Talk to us"},
+                    {"action": "click", "link": "Next"},
+                    {"action": "waitForText","text": "Talk to us"},
+                    {"action": "clickButtonInModalDialog", "buttonLink": "Next"},
+                    {"action": "switchToContentFrame"},
+                    {"action": "waitForText","text": "Talk to us"},
+                    {"action": "switchToMainFrame"},
+                    {"action": "click", "link": ".t3js-topbar-button-modulemenu"},
+                    {"action": "resizeWindow", "width": 1500, "height": 500},
+                    {
+                        "action": "makeScreenshotOfWindow",
+                        "fileName": "FormsBlankForm",
+                        "captionText": "Create a new form from scratch"
+                    },
+                    {"action": "resizeWindow", "width": 1024, "height": 640},
+                    {"action": "switchToContentFrame"},
+                    {"action": "click", "link": "Create new element"},
+                    {"action": "waitForModalDialogInMainFrame"},
+                    {
+                        "action": "makeScreenshotOfWindow",
+                        "fileName": "FormsNewElement",
+                        "captionText": "Create new element in form"
+                    },
+                    {"action": "click", "link": "Text"},
+                    {"action": "wait", "timeout": 1},
+                    {"action": "switchToContentFrame"},
+                    {
+                        "action": "makeScreenshotOfWindow",
+                        "fileName": "FormsFieldSettings",
+                        "captionText": "Create a new form from scratch"
+                    },
+                    {"action": "click", "link": "Preview mode"},
+                    {"action": "waitForElement", "element": ".t3-form-stage-viewmode-preview"},
+                    {"action": "wait", "timeout": 0.5},
+                    {
+                        "action": "makeScreenshotOfWindow",
+                        "fileName": "FormsPreview",
+                        "captionText": "Create a new form from scratch"
                     }
                 ]
             }
