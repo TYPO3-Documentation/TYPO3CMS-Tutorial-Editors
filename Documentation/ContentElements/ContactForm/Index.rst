@@ -56,7 +56,7 @@ with one pre-defined form already built, which you can use to get started.
 
    Preview the page and it should look something like this:
 
-   .. figure:: ../../Images/ManualScreenshots/EditContent/EditContentFormOutput.png
+   .. figure:: /Images/ManualScreenshots/Forms/FormOutput.png
       :alt: The contact form in the frontend
       :class: with-border
 

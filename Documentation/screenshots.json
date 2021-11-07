@@ -688,9 +688,7 @@
                         "action": "resizeWindow",
                         "width": 640,
                         "height": 480
-                    },
-
-                    {
+                    },{
                         "action": "amOnPage",
                         "page": "/typo3/record/edit?token=x&edit[tt_content][1]=new&defVals[tt_content][CType]=textpic"
                     }, {
@@ -706,9 +704,7 @@
                         "captionText": "Editing a content element to change its type"
                     }, {
                         "action": "clearDrawings"
-                    },
-
-                    {
+                    },{
                         "action": "resizeWindow",
                         "width": 640,
                         "height": 480
@@ -720,11 +716,81 @@
                         "link": "option[value=text]"
                     }, {
                         "action": "waitForModalDialogInMainFrame"
-                    }, {
+                    },
+                    {"action": "wait", "timeout": 0.1},
+                    {
                         "action": "makeScreenshotOfElement",
                         "selector": ".t3js-module-body",
                         "fileName": "EditContentChangeTypeConfirm",
                         "captionText": "Editing a content element to change its type"
+                    },{
+                        "action": "resizeWindow",
+                        "width": 960,
+                        "height": 960
+                    }, {
+                        "action": "amOnPage",
+                        "page": "/typo3/record/edit?token=x&edit[tt_content][1]=new&defVals[tt_content][CType]=image"
+                    }, {
+                        "action": "click",
+                        "link": "Image"
+                    }, {
+                        "action": "makeScreenshotOfElement",
+                        "selector": ".t3js-module-body",
+                        "fileName": "EditContentImagesTab",
+                        "captionText": "The :guilabel:`Images` tab for a content element"
+                    },
+                    {
+                        "action": "goToRecord",
+                        "table": "tt_content",
+                        "uid": {"action": "getUidByField", "table": "tt_content", "field": "header", "value": "3 Videos in 3 Columns"}
+                    },
+                    {"action": "click", "link": "Media"},
+                    {
+                        "action": "makeScreenshotOfElement",
+                        "selector": ".module-body",
+                        "fileName": "EditContentMediaTab",
+                        "captionText": "The :guilabel:`Media` tab for a content element"
+                    },
+                    {
+                        "action": "goToField",
+                        "table": "tt_content",
+                        "uid": {"action": "getUidByField", "table": "tt_content", "field": "header", "value": "Examples of Rich Text Content Elements "},
+                        "fields": "bodytext"
+                    },
+                    {"action": "wait", "timeout": 0.1},
+                    {
+                        "action": "makeScreenshotOfElement",
+                        "selector": ".module-body",
+                        "fileName": "EditContentRichTextEditor",
+                        "captionText": "A typical rich text editor"
+                    },
+                    {
+                        "action": "goToRecord",
+                        "table": "tt_content",
+                        "uid": {"action": "getUidByField", "table": "tt_content", "field": "header", "value": "Deliver business value"}
+                    },
+                    {"action": "click", "link": "Images"},
+                    {"action": "click", "link": "Filename"},
+                    {"action": "waitForText", "text": "Image Metadata"},
+                    {
+                        "action": "makeScreenshotOfElement",
+                        "selector": ".module-body",
+                        "fileName": "EditContentImageProperties",
+                        "captionText": "Working with an image attached to the content element"
+                    },
+                    {
+                        "action": "resizeWindow",
+                        "width": 1024,
+                        "height": 300
+                    },
+                    {"action": "goToModule", "module": "Page", "path": ["Congratulations"]},
+                    {"action": "waitForText", "text": "Congratulations"},
+                    {"action": "drawBox", "selector": "a[title=\"Edit page properties\"]"},
+                    {"action": "drawBadge", "selector": "a[title=\"Edit page properties\"]", "label": "Edit page properties", "position": "right"},
+                    {
+                        "action": "makeScreenshotOfWindow",
+                        "fileName": "EditPageProperties",
+                        "captionText": ":guilabel:`Edit Page Properties` icon"
                     }
                 ],
                 "PageProperties": [
@@ -956,7 +1022,7 @@
                     {"action": "waitForText", "text": "New record", "timeout": 5},
                     {"action": "click", "link": "span.icon-status-user-frontend"},
                     {"action": "waitForText", "text": "Create new", "timeout": 5},
-                    {"action": "fillField", "field": "input[data-formengine-input-name*='[username]']", "value": "Jon Doe"},
+                    {"action": "fillField", "field": "input[data-formengine-input-name*='[username]']", "value": "jon-doe"},
                     {"action": "fillField", "field": "input[data-formengine-input-name*='[password]']", "value": "eFNrTW3jQeSgSJ4u"},
                     {
                         "action": "makeScreenshotOfElement",
@@ -991,6 +1057,53 @@
                         "selector": "div.tab-pane.active fieldset:nth-child(2)",
                         "fileName": "AccessRightsItems",
                         "altText": "Usergroup access rights"
+                    },
+                    {
+                        "action": "amOnPage",
+                        "page": "/typo3/record/edit?edit[tt_content][36]=new&token=x&defVals[tt_content][colPos]=8&defVals[tt_content][sys_language_uid]=0&defVals[tt_content][CType]=text&defVals[tt_content][header]=Please%20Login&defVals[tt_content][fe_group]=-1"
+                    },
+                    {"action": "click", "link": "Save"},
+                    {"action": "waitForText", "text": "Edit Page Content"},
+                    {
+                        "action": "amOnPage",
+                        "page": "/typo3/record/edit?edit[tt_content][36]=new&token=x&defVals[tt_content][colPos]=8&defVals[tt_content][sys_language_uid]=0&defVals[tt_content][CType]=text&defVals[tt_content][header]=Members%20Only&defVals[tt_content][fe_group]=-2"
+                    },
+                    {"action": "click", "link": "Save"},
+                    {"action": "waitForText", "text": "Edit Page Content"},
+
+                    {"action": "goToModule", "module": "Page", "path": ["Congratulations", "Content Examples","Form elements","Login"]},
+                    {"action": "waitForText", "text": "Login"},
+                    {
+                        "action": "makeScreenshotOfElement",
+                        "selector": "div[data-colpos=\"8\"]",
+                        "fileName": "AccessRestrictContent",
+                        "altText": "Placing access restriction on individual content elements"
+                    },
+                    {
+                        "action": "resizeWindow",
+                        "width": 1024,
+                        "height": 768
+                    },
+                    {
+                        "action": "goToRecord",
+                        "table": "tt_content",
+                        "uid": {"action": "getUidByField", "table": "tt_content", "field": "CType", "value": "felogin_login"}
+                    },
+                    {"action": "click", "link": "Plugin"},
+                    {
+                        "action": "makeScreenshotOfElement",
+                        "selector": ".module-body",
+                        "fileName": "AccessLoginForm",
+                        "altText": "Defining a new login form"
+                    },
+                    {
+                        "action": "amOnPage",
+                        "page": "index.php?id=36"
+                    },
+                    {
+                        "action": "makeScreenshotOfWindow",
+                        "fileName": "AccessPageWithLoginBox",
+                        "altText": "The page with the login box"
                     }
                 ],
                 "Fileadmin": [

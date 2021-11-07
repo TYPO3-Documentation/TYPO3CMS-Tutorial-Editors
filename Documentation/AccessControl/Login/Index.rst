@@ -88,9 +88,7 @@ assign access restrictions. This is done on the **Access** tab of the page prope
 
 You should have something like this:
 
-.. figure:: ../../Images/ManualScreenshots/Access/AccessRestrictContent.png
-   :alt: Placing access restriction on individual content elements
-   :class: with-border
+.. include:: /Images/AutomaticScreenshots/Access/AccessRestrictContent.png
 
 Try setting the access for an entire page to "Private area". When you save the
 page, notice how the icon in the page tree changes. This is a visual reminder
@@ -115,16 +113,12 @@ can log in to view the restricted content.
 #. Use the :guilabel:`Browse for records` icon to browse the page tree and
    select the "Web site users" folder.
 
-   .. figure:: ../../Images/ManualScreenshots/Access/AccessLoginForm.png
-      :alt: Defining a new login form
-      :class: with-border
+   .. include:: /Images/AutomaticScreenshots/Access/AccessLoginForm.rst.txt
 
 #. Save and close the record.
 #. View the page. You should have something like this:
 
-   .. figure:: ../../Images/ManualScreenshots/Access/AccessPageWithLoginBox.png
-      :alt: The page with the login box
-      :class: with-border
+   .. include:: /Images/AutomaticScreenshots/Access/AccessPageWithLoginBox.rst.txt
 
 #. Enter the user name and the password you defined earlier for the
    frontend user, and you should see the following:

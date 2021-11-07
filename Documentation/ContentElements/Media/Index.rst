@@ -23,9 +23,7 @@ Add a video to a page
 On the **Media** tab, click the :guilabel:`Add media file` button, then follow
 the same process as you would to :ref:<add-image-to-page>.
 
-.. figure:: ../../Images/ManualScreenshots/EditContent/EditContentMediaTab.png
-   :alt: The Media tab for a content element
-   :class: with-border
+.. include:: /Images/AutomaticScreenshots/EditContent/EditContentMediaTab.rst.txt
 
 Alternatively, you can click the :guilabel:`Add media by URL` button to paste
 a link to a video or audio file from the web.
