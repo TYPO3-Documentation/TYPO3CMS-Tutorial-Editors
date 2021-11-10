@@ -69,6 +69,9 @@ their `landing page
    AccessControl/Index
    Languages/Index
    NextSteps/Index
+   Sitemap
+   Targets
+   genindex
 
 Links for this manual
 :ref:`genindex` | :ref:`Sitemap` | :ref:`Targets-for-Cross-Referencing`

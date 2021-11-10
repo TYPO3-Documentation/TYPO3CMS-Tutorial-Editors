@@ -7,7 +7,7 @@ Embedding video and audio
 =========================
 
 Like images, it is best practice to add new video and audio files using the
-:guilabel:`File > Filelist` module, which is covered in the :ref:`Getting Started Tutorial <t3start:the-file-module-or-image-archives>`. This method
+:guilabel:`File > Filelist` module, which is covered in the :ref:`chapter about the file module <file-module>`. This method
 means files are centrally stored and any information or metadata you add to
 the file is used wherever that media file is used on the site.
 

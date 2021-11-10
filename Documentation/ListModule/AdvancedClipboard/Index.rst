@@ -17,8 +17,6 @@ you want to work on. Each record now has a checkbox.
 
 As soon as one or more records are checked, new buttons will appear at the top of the list:
 
-.. include::
-
 #. :guilabel:`Edit` all selected items at once
 
 #. :guilabel:`Transfer to Clipboard` all selected items at once
