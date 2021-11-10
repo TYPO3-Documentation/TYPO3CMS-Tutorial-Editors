@@ -17,7 +17,7 @@ the content element.
 
 
 It is best practice to add new images using the :guilabel:`File > Filelist`
-module, which is covered in the :ref:`Getting Started Tutorial <t3start:the-file-module-or-image-archives>`. This method means files are centrally stored
+module, which is covered in the :ref:`chapter about the file module <file-module>`. This method means files are centrally stored
 and any information or metadata you add to the image is used wherever that
 image is used on the site.
 When you use the :guilabel:`Select & upload files` button, the image is
