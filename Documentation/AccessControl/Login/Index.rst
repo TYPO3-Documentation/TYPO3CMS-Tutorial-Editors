@@ -16,7 +16,7 @@ have logged in.
 Frontend users
 ==============
 
-The concept of the TYPO3 :ref:`backend and frontend <t3start:backend-and-frontend>` is explained in the Getting Started Tutorial.
+The concept of the TYPO3 :ref:`backend and frontend <t3start:concepts>` is explained in the Getting Started Tutorial.
 
 You can use the concept of frontend users (website visitors) to create member-only content and restrict access to pages and content elements by requiring a
 log in.
