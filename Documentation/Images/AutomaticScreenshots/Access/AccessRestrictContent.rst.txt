@@ -1,0 +1,5 @@
+.. Automatic screenshot: Remove this line if you want to manually change this file
+
+.. figure:: /Images/AutomaticScreenshots/Access/AccessRestrictContent.png
+   :alt: Placing access restriction on individual content elements
+   :class: with-shadow

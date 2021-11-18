@@ -1,0 +1,6 @@
+.. Automatic screenshot: Remove this line if you want to manually change this file
+
+.. figure:: /Images/AutomaticScreenshots/Forms/FormOutput.png
+   :class: with-shadow
+
+   The contact form in the frontend
