@@ -11,9 +11,7 @@ The TYPO3 text editing interface is not much different from a word processor.
 The options available in the toolbars vary depending on how your TYPO3
 installation is configured.
 
-.. figure:: ../../Images/ManualScreenshots/EditContent/EditContentRichTextEditor.png
-   :alt: A typical view of the rich text editor
-   :class: with-border
+.. include:: /Images/AutomaticScreenshots/EditContent/EditContentRichTextEditor.rst.txt
 
 You can format text, set the alignment, insert tables and symbols and add
 internal and external links to text.

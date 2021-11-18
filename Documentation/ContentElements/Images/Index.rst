@@ -11,10 +11,7 @@ For content elements that support images (for example, Text & Images, Text &
 Media, Images Only), you will see an **Images** tab when you create or edit
 the content element.
 
-.. figure:: ../../Images/ManualScreenshots/EditContent/EditContentImagesTab.png
-   :alt: The Images tab for a content element
-   :class: with-border
-
+.. include:: /Images/AutomaticScreenshots/EditContent/EditContentImagesTab.rst.txt
 
 It is best practice to add new images using the :guilabel:`File > Filelist`
 module, which is covered in the :ref:`chapter about the file module <file-module>`. This method means files are centrally stored
@@ -47,9 +44,7 @@ Configure the image
 
 The **Images** tab lets you perform a number of actions to configure an image.
 
-.. figure:: ../../Images/ManualScreenshots/EditContent/EditContentImageProperties.png
-   :alt: Working with an image attached to the content element
-   :class: with-border
+.. include:: /Images/AutomaticScreenshots/EditContent/EditContentImageProperties.rst.txt
 
 Image metadata
 --------------
