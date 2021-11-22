@@ -15,7 +15,7 @@ to your domain name and append "/typo3" to get to the log in screen.
    Make sure JavaScript and cookies are enabled in your browser or nothing will work.
 
 Enter your domain name into the address bar of your internet browser and append "/typo3" to it to get to the "log in" page of your site.
-For example: http://www.example.com/typo3.
+For example: :samp:`https://example.org/typo3`.
 
 .. figure:: ../Images/BackendLoginPage.png
    :alt: The TYPO3 CMS backend login screen
