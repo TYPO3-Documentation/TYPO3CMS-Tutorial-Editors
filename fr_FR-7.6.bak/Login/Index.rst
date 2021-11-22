@@ -18,7 +18,7 @@ et ajouter "/typo3" pour accéder à l'écran de connexion.
 Entrez votre nom de domaine dans la barre d'adresse
 de votre navigateur Internet et y ajouter "/typo3"
 pour vous rendre à la page "Connexion" de votre site.
-Par exemple: http://www.votre-site.example.org/typo3.
+Par exemple: :samp:`https://example.org/typo3`.
 
 .. figure:: ../Images/BackendLoginPage.png
    :alt: L'écran de connexion au backend de TYPO3 CMS

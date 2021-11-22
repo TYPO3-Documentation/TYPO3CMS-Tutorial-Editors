@@ -113,7 +113,7 @@ La première partie est liée aux liens. Elle définit si un alias
 peut être utilisé pour un lien vers cette page.
 Ce n'est pas lié aux URL parlantes.
 Si vous définissez "foo" comme alias, on peut appeler la page
-à l'aide de `http://www.votre-site.example.org/index.php?id=foo`.
+à l'aide de :samp:`https://example.org/index.php?id=foo`.
 Une cible par défaut pour appeler cette page peut également être définie,
 ainsi qu'un protocole spécifique.
 
