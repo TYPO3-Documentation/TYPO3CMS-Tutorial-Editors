@@ -66,6 +66,7 @@ their `landing page
    ContentElements/Index
    ListModule/Index
    FileModule/Index
+   DeepLinking/Index
    AccessControl/Index
    Languages/Index
    NextSteps/Index
