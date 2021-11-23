@@ -50,7 +50,8 @@ on the `About Us` page:
 Linking to backend modules
 --------------------------
 
-It is possible to create links to places within Modules. This example would crea
+It is possible to create links to places within backend modules. This example would create a link
+to the `Site Configuration` module.
 
 .. figure:: ../Images/ManualScreenshots/DeepLinking/DeepLinkingSiteModuleLink.png
   :alt: Creating a link to the backend Sites module
