@@ -113,7 +113,7 @@ different aspects of the page.
 The first part is related to linking. It defines if an alias can be
 used for linking to this page. This is not related to speaking URLs.
 If you define "foo" as an alias, the page can be called up using
-`http://www.mysite.com/index.php?id=foo`. A default target for calling
+:samp:`https://example.org/index.php?id=foo`. A default target for calling
 this page can also be defined, as well as a specific protocol.
 
 The caching part lets you define a specific cache duration for this
