@@ -69,11 +69,9 @@ et soumettre une demande de récupération via GitHub .
 Sinon, vous pouvez simplement signaler le problème en utilisant le bug tracker sur
 : https://github.com/TYPO3-Documentation/TYPO3CMS-Tutorial-Editors/issues.
 
-Pour participer à la traduction dans d'autres langues voir
-`http://wiki.typo3.org/TYPO3_Tutorial_for_Editors
-<http://wiki.typo3.org/TYPO3_Tutorial_for_Editors>`_
+Pour participer à la traduction dans d'autres langues voir https://wiki.typo3.org/TYPO3_Tutorial_for_Editors.
 
 Maintenir une documentation de haute qualité nécessite du temps et des efforts
 que l' équipe de documentation de TYPO3 apprécie toujours .
 Si vous voulez nous aider, merci de joindre la liste de diffusion / forum
-de la documentation (http://forum.typo3.org/index.php/f/44/).
+de la documentation (https://forum.typo3.org/index.php/f/44/).
