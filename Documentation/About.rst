@@ -51,9 +51,7 @@ Feedback
 
 If you find a bug in this guide, please use the "Edit on GitHub" button in the top right corner and submit a pull request via GitHub. Alternatively you can file an issue using the bug tracker: https://github.com/TYPO3-Documentation/TYPO3CMS-Tutorial-Editors/issues.
 
-To support the translation to other languages see
-`http://wiki.typo3.org/TYPO3_Tutorial_for_Editors
-<http://wiki.typo3.org/TYPO3_Tutorial_for_Editors>`_
+To support the translation to other languages see https://wiki.typo3.org/TYPO3_Tutorial_for_Editors.
 
 Maintaining high quality documentation requires time and effort and the TYPO3 Documentation Team always appreciates support. If you want to support us, please contact us as described in the next section.
 
