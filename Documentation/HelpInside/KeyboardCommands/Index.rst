@@ -12,13 +12,13 @@ Navigating the Page Tree using a keyboard
 It is possible to navigate the page tree using only a keyboard and it adheres to
 the guidelines set out in `WAI-ARIA Authoring Practices 1.1. <https://www.w3.org/TR/wai-aria-practices-1.1/#keyboard-interaction-22>`__
 
-* `Home` moves the focus to the first item in the page tree.
-* `End` moves the focus to the last item in the page tree.
-* `Enter` either expands the item or selects it.
+*  :kbd:`Home` moves the focus to the first item in the page tree.
+*  :kbd:`End` moves the focus to the last item in the page tree.
+*  :kbd:`Enter` either expands the item or selects it.
 
-* `Up` and `Down` arrow keys will move the focus up and down the page tree.
-* `Right` arrow key will expand the focus if possible.
-* `Left` arrow key will close the focus if possible.
+*  :kbd:`Up` and  :kbd:`Down` arrow keys will move the focus up and down the page tree.
+*  :kbd:`Right` arrow key will expand the focus if possible.
+*  :kbd:`Left` arrow key will close the focus if possible.
 
 Editing text in the Rich Text Editor (RTE)
 ==========================================
@@ -29,24 +29,24 @@ text in TYPO3's RTE.
 macOS
 -----
 
-* cmd (⌘) + a = Select all text
-* cmd (⌘) + c = Copy
-* cmd (⌘) + v = Paste
-* cmd (⌘) + x = Cut
-* cmd (⌘) + z = Undo
-* cmd (⌘) + i = Italic
-* cmd (⌘) + b = Bold
+* :kbd:`cmd (⌘)` + :kbd:`a` = Select all text
+* :kbd:`cmd (⌘)` + :kbd:`c` = Copy
+* :kbd:`cmd (⌘)` + :kbd:`v` = Paste
+* :kbd:`cmd (⌘)` + :kbd:`x` = Cut
+* :kbd:`cmd (⌘)` + :kbd:`z` = Undo
+* :kbd:`cmd (⌘)` + :kbd:`i` = Italic
+* :kbd:`cmd (⌘)` + :kbd:`b` = Bold
 
 Windows
 -------
 
-* ctrl + a = Select all text
-* ctrl + c = Copy
-* ctrl + v = Paste
-* ctrl + x = Cut
-* ctrl + z = Undo
-* ctrl + i = Italic
-* ctrl + b = Bold
+* :kbd:`ctrl` + :kbd:`a` = Select all text
+* :kbd:`ctrl` + :kbd:`c` = Copy
+* :kbd:`ctrl` + :kbd:`v` = Paste
+* :kbd:`ctrl` + :kbd:`x` = Cut
+* :kbd:`ctrl` + :kbd:`z` = Undo
+* :kbd:`ctrl` + :kbd:`i` = Italic
+* :kbd:`ctrl` + :kbd:`b` = Bold
 
 Reloading pages and clearing browser cache
 ==========================================
@@ -54,11 +54,11 @@ Reloading pages and clearing browser cache
 macOS
 ------
 
-* cmd (⌘) + r = Reload page
-* cmd (⌘) + option (⌥) + r = Reload page and clear browser cache
+* :kbd:`cmd (⌘)` + :kbd:`r` = Reload page
+* :kbd:`cmd (⌘)` + :kbd:`option (⌥)` + :kbd:`r` = Reload page and clear browser cache
 
 Windows
 -------
 
-* F5 = Reload
-* ctrl + F5 = Reload page and clear browser cache
+* :kbd:`F5` = Reload
+* :kbd:`ctrl` + :kbd:`F5` = Reload page and clear browser cache
