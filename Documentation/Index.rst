@@ -67,7 +67,6 @@ their `landing page
    AccessControl/Index
    Languages/Index
    NextSteps/Index
-   genindex
 
 
 Links for this manual
