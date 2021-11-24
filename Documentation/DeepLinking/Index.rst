@@ -20,7 +20,7 @@ their work and send it to another member of the team for review.
 Sharing links
 =============
 
-To share a link, look for the Share icon located at the top right hand side of any
+To share a link, look for the :guilabel:`Share` icon located at the top right hand side of any
 page in the backend.
 
 .. figure:: ../Images/ManualScreenshots/DeepLinking/DeepLinkingIcon.png
@@ -63,6 +63,6 @@ URLs and deep links
 ===================
 
 When creating links to anything in the backend, it is recommended that the
-`Share` button is used to generate the link. Copying the URL from the browser
+:guilabel:`Share` button is used to generate the link. Copying the URL from the browser
 is not recommended.
 
