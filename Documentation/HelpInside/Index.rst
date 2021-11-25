@@ -52,3 +52,11 @@ In the top bar, click the question mark icon to access the Help section, then se
    :class: with-border
 
    The **TYPO3 Manual** in the :guilabel:`Help` menu
+
+.. toctree::
+   :maxdepth: 5
+   :titlesonly:
+   :glob:
+
+   Index
+   KeyboardCommands/Index
