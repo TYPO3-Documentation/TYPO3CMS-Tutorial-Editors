@@ -98,8 +98,6 @@ Behaviour
 
 This tab influences a variety of different aspects of the page.
 
-.. include:: /Images/AutomaticScreenshots/PageProperties/Appearance.rst.txt
-
 Here are some of the common fields of the Behaviour tab:
 
 Link Target
