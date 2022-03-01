@@ -58,5 +58,4 @@ In the top bar, click the question mark icon to access the Help section, then se
    :titlesonly:
    :glob:
 
-   Index
    KeyboardCommands/Index
