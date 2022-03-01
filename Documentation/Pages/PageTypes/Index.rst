@@ -33,7 +33,7 @@ Mount point
   point. This lets you duplicate parts of your page tree in terms of
   navigation, without actually duplicating pages and content.
 
-  See the :ref:`Mounts <coreapi:access-options-mounts>` section in TYPO3
+  See the :ref:`Mounts <t3coreapi:access-options-mounts>` section in TYPO3
   Explained for more information about mount points.
 
 Link to External URL
