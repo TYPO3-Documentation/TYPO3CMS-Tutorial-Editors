@@ -23,7 +23,7 @@ Languages are defined per site.
 Adding a new language is done in the :guilabel:`Site Management > Sites`
 module, which is restricted to admin users. Detailed information on how to
 configure your site to add more languages can be found in the :ref:`Site
-Handling <coreapi:sitehandling-basics>` documentation.
+Handling <t3coreapi:sitehandling-basics>` documentation.
 
 The `Introduction Package's <https://extensions.typo3.org/extension/
 introduction/>`__ default languages are English, Danish and German languages.
@@ -131,5 +131,5 @@ The :ref:`Frontend Localization Guide <t3l10n:start>` contains detailed
 information about setting up a multilingual web site and how to actually
 do the translation and localization.
 
-The :ref:`Site Handling <coreapi:sitehandling-basics>` documentation contains
+The :ref:`Site Handling <t3coreapi:sitehandling-basics>` documentation contains
 information about how to configure your site to add more languages.
