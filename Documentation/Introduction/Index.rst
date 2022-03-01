@@ -66,7 +66,8 @@ From there you can hit the "Edit me on GitHub" button in the top right corner
 and submit a pull request via GitHub. Alternatively you can just file an issue
 using the bug tracker: https://github.com/TYPO3-Documentation/TYPO3CMS-Tutorial-Editors/issues.
 
-To support the translation to other languages see https://wiki.typo3.org/TYPO3_Tutorial_for_Editors.
+To support the translation to other languages see
+:ref:`Internationalization and Localization <t3coreapi:internationalization>`.
 
 Maintaining high quality documentation requires time and effort
 and the TYPO3 Documentation Team always appreciates support.
