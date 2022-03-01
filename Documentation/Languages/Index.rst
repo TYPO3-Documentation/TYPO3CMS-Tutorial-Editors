@@ -31,7 +31,7 @@ and German languages. Adding a new language is done in the
 
    Detailed information on how to extend the site configuration
    with additional languages can be found in the
-   :ref:`Site Handling Documentation <coreapi:sitehandling-basics>`.
+   :ref:`Site Handling Documentation <t3coreapi:sitehandling-basics>`.
 
 .. _languages-translations:
 
