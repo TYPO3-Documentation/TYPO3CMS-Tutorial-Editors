@@ -88,7 +88,7 @@ assign access restrictions. This is done on the **Access** tab of the page prope
 
 You should have something like this:
 
-.. include:: /Images/AutomaticScreenshots/Access/AccessRestrictContent.png
+.. include:: /Images/AutomaticScreenshots/Access/AccessRestrictContent.rst.txt
 
 Try setting the access for an entire page to "Private area". When you save the
 page, notice how the icon in the page tree changes. This is a visual reminder
