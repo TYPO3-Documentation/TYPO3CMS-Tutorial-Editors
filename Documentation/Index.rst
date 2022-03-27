@@ -1,76 +1,37 @@
-.. include:: Includes.txt
-
-
-.. _start:
+.. include:: /Includes.txt
 
 ==========================
 TYPO3 Tutorial for Editors
 ==========================
 
-:Previous Key:
-      doc_tut_editors
-
 :Version:
-      7 LTS
+   |release|
 
 :Language:
-      en
-
-:Description:
-      This tutorial explains how to add or change content on an existing website using TYPO3 CMS. It provides the most basic instructions step by step and illustrated with screenshots.
-
-:Keywords:
-      forEditors, forBeginners, tutorial
-
-:Copyright:
-      2000-2016
+   en
 
 :Author:
-      Documentation Team
-
-:Email:
-      documentation@typo3.org
+   TYPO3 contributors
 
 :License:
-      Open Publication License available from `www.opencontent.org/openpub/
-      <https://www.opencontent.org/openpub/>`_
+   This document is published under the
+   `Open Publication License <https://www.opencontent.org/openpub/>`__.
 
 :Rendered:
-      |today|
+   |today|
 
-The content of this document is related to TYPO3,
+----
 
-a GNU/GPL CMS/Framework available from `www.typo3.org
-<https://typo3.org/>`_
+This tutorial explains common editorial tasks like working with pages and
+content using TYPO3 CMS.
 
+----
 
-**Official documentation**
-
-This document is included as part of the official TYPO3 documentation.
-It has been approved by the TYPO3 Documentation Team following a peer-
-review process. The reader should expect the information in this
-document to be accurate - please report discrepancies to the
-Documentation Team (documentation@typo3.org). Official documents are
-kept up-to-date to the best of the Documentation Team's abilities.
-
-
-**Tutorial**
-
-This document is a Tutorial. Tutorials are designed to be step-by-step
-instructions specifically created to walk a beginner through a
-particular task from beginning to end. To facilitate effective
-learning, Tutorials provide examples to illustrate the subjects they
-cover. In addition, Tutorials provide guidance on how to avoid common
-pitfalls and highlight key concepts that should be remembered for
-future reference.
-
-
-**Table of Contents**
+**Table of Contents:**
 
 .. toctree::
-   :maxdepth: 5
+   :maxdepth: 2
    :titlesonly:
-   :glob:
 
    Introduction/Index
    Login/Index
@@ -79,4 +40,11 @@ future reference.
    AccessControl/Index
    Languages/Index
    NextSteps/Index
-   Targets
+
+.. Meta Menu
+
+.. toctree::
+   :hidden:
+
+   Sitemap
+   genindex
