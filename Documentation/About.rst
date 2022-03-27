@@ -18,7 +18,7 @@ This guide touches briefly on access restriction concepts, as well as content tr
 Prerequisite
 ============
 
-This guides assumes you have read the :ref:`Getting Started Tutorial <t3start:start>` and are familiar with the following general :ref:`concepts of TYPO3 CMS<t3start:concepts>`:
+This guides assumes you have read the :doc:`Getting Started Tutorial <t3start:Index>` and are familiar with the following general :ref:`concepts of TYPO3 CMS<t3start:concepts>`:
 
 * Backend and Frontend
 * General Backend Structure
