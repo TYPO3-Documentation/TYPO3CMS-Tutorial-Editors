@@ -128,4 +128,4 @@ can log in to view the restricted content.
       :class: with-border
 
 This is just a quick overview of the login form provided by TYPO3 CMS. It has a
-rich set of features that are described in the :ref:`Frontend Login <ext_felogin:start>` manual.
+rich set of features that are described in the :doc:`Frontend Login <ext_felogin:Index>` manual.
