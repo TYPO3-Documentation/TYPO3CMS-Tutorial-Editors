@@ -10,7 +10,7 @@ Creating a contact form
 
 You can create a form from the :guilabel:`Web > Forms` module. This is a
 system extension which needs to be activated by your administrator. It is
-written in TypoScript and is fully documented in the :ref:`Form Framework<form:start>` system extension manual.
+written in TypoScript and is fully documented in the :doc:`Form Framework <ext_form:Index>` system extension manual.
 
 This module provides a guided interface for editors to create any kind of form
 such as a contact form, newsletter subscription or even a survey. TYPO3 comes
@@ -134,5 +134,5 @@ TYPO3 form will update Mautic to give you seamless lead tracking.
 .. tip::
 
    There are many more properties that can be defined. They are
-   described in the :ref:`"Form Framework"<form:start>` system extension
+   described in the :doc:`"Form Framework" <ext_form:Index>` system extension
    manual.
