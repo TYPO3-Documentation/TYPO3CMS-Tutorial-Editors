@@ -25,7 +25,7 @@ Give it a header and save it. Then move to the "Form" tab.
 
 The text field contains the form configuration. This is written
 in TypoScript and is fully documented in the
-:ref:`"form" system extension manual <form:start>`.
+:ref:`"form" system extension manual <ext_form:start>`.
 This will seem daunting at first, but a wizard is provided for
 WYSIWYG creation of the form. Click on the icon at the top right
 of the configuration field.
@@ -86,4 +86,4 @@ The values given to the "senderEmailField", "senderEmailName" and
 gave to the fields in your form.
 
 There are many more properties which can be defined. They are
-described in the :ref:`"form" system extension manual <form:start>`.
+described in the :ref:`"form" system extension manual <ext_form:start>`.
