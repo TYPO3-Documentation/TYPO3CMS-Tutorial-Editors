@@ -159,4 +159,4 @@ replaced by the one welcoming the user.
 
 This is just a quick overview of the login box provided by
 TYPO3 CMS. It has a rich feature set described in
-:ref:`its own manual <ext_felogin:start>`.
+:doc:`its own manual <ext_felogin:Index>`.
