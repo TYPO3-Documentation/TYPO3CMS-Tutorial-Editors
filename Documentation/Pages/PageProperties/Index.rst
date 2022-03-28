@@ -124,7 +124,7 @@ used by extensions.
 
 The language part overrides the default behaviour of translations.
 This is covered in more depth in the
-:ref:`Frontend Localization Guide <t3l10n:start>`.
+:doc:`Frontend Localization Guide <t3l10n:Index>`.
 
 Next come a bunch of flags with various meanings:
 
