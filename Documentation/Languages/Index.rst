@@ -1,4 +1,4 @@
-﻿.. include:: ../Includes.txt
+﻿.. include:: /Includes.rst.txt
 
 
 .. _languages:
@@ -117,4 +117,4 @@ mode and choosing a specific language in the docheader.
 .. tip::
 
    Detailed information about setting up a multilingual web site is
-   found in the :ref:`Frontend Localization Guide <t3l10n:start>`.
+   found in the :doc:`Frontend Localization Guide <t3l10n:Index>`.
