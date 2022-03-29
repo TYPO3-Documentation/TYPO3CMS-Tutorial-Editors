@@ -49,7 +49,7 @@ SEO
 ===
 
 This tab is used for search engine optimization. It uses the cs_seo system
-extension. See the :ref:`SEO Core extension <cs_seo:for-editors>` manual for
+extension. See the :ref:`SEO Core extension <ext_seo:for-editors>` manual for
 more information.
 
 
@@ -59,7 +59,7 @@ Social media
 ============
 
 This tab is used to enrich social media snippets for the URL of the page It
-uses the cs_seo system extension. See the :ref:`SEO Core extension <cs_seo:for-editors>` manual for more information.
+uses the ext_seo system extension. See the :ref:`SEO Core extension <ext_seo:for-editors>` manual for more information.
 
 .. _pages-properties-metadata:
 
