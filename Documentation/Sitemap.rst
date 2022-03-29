@@ -1,11 +1,9 @@
-:orphan:
 :template: sitemap.html
 
-.. _sitemap:
+.. include:: /Includes.rst.txt
 
 =======
 Sitemap
 =======
 
-.. template 'sitemap.html' will insert the toctree as a sitemap here
-   below normal contents
+.. The sitemap.html template will insert here the page tree automatically.
