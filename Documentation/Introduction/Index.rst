@@ -1,4 +1,4 @@
-.. include:: ../Includes.txt
+.. include:: /Includes.rst.txt
 
 
 .. _introduction:
@@ -26,7 +26,7 @@ The tutorial provides the most basic instructions step-by-step.
 It does not cover all available functions, but the most common ones.
 
 It is assumed that you have been through the
-:ref:`Getting Started Tutorial <t3start:start>` and are thus
+:doc:`Getting Started Tutorial <t3start:Index>` and are thus
 familiar with the general concepts of TYPO3 CMS, in particular
 the separation of frontend and backend.
 
