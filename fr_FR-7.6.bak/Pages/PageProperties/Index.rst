@@ -127,7 +127,7 @@ mais peut être utilisé par des extensions.
 
 La partie "Langue" remplace le comportement par défaut des traductions.
 Ceci est couvert de manière plus approfondie dans le
-:ref:`Guide de localisation Frontend <t3l10n:start>`.
+:doc:`Guide de localisation Frontend <t3l10n:Index>`.
 
 Viennent ensuite plusieurs cases à cocher avec des significations différentes :
 

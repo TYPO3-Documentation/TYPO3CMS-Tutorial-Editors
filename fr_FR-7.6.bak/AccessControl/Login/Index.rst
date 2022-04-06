@@ -171,4 +171,4 @@ remplacé par celui accueillant l'utilisateur.
 
 Ceci est juste un aperçu rapide de la boîte de connexion
 fournie par TYPO3 CMS. Elle dispose d'un riche ensemble de fonctionnalités
-décrites dans :ref:`son propre manuel <felogin:start>`.
+décrites dans :doc:`son propre manuel <felogin:Index>`.

@@ -26,7 +26,7 @@ la visibilité, le temps de publication et les pages protégées par mot de pass
 Le tutoriel fournit les instructions les plus élémentaires, étape par étape.
 Elle ne couvre pas toutes les fonctions disponibles, mais les plus courantes.
 
-Nous supposons que vous avez parcouru le tutoriel de :ref:`démarrage rapide <t3start:start>`
+Nous supposons que vous avez parcouru le tutoriel de :doc:`démarrage rapide <t3start:Index>`
 et que vous êtes donc familiers avec les concepts généraux de CMS TYPO3,
 en particulier la séparation des frontend et backend.
 
