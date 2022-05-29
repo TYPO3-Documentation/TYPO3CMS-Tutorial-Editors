@@ -30,7 +30,7 @@ record, and stored in a suitable page in the backend.
 Create a user group and user
 ============================
 
-#. Create a new folder in the page tree, and name it "Web site users".
+#. Create a new folder in the page tree, and name it "Frontend users".
 
    .. include:: /Images/AutomaticScreenshots/Access/AccessUserFolder.rst.txt
 
@@ -38,20 +38,20 @@ Create a user group and user
 #. Click the **+** :guilabel:`Create new record` icon at the top left of the
    Docheader. The "New record" wizard displays.
 
-   .. include:: /Images/AutomaticScreenshots/Access/AccessUserFolder.rst.txt
+   .. include:: /Images/AutomaticScreenshots/Access/AccessNewRecordWizard.rst.txt
 
-#. Click **Website Usergroup** to create a new frontend group.
-#. Name it *Private Area*.
+#. Click :guilabel:`Website Usergroup` to create a new frontend group.
+#. Name it "Private Area".
 
    .. include:: /Images/AutomaticScreenshots/Access/AccessNewGroup.rst.txt
 
 #. Save and close the record.
-#. Use the "New record" wizard again, but this time create a **Website User**.
+#. Use the "New record" wizard again, but this time create a :guilabel:`Website User`.
 #. Type a username, a password and click the "Private Area" group to select it.
 
    .. include:: /Images/AutomaticScreenshots/Access/AccessNewUser.rst.txt
 
-   You can add further information on the **Personal Data** tab if required.
+   You can add further information on the :guilabel:`Personal Data` tab if required.
 
 #. Save and close the record.
 
@@ -61,7 +61,8 @@ Assign access rights
 ====================
 
 Now that we have at least one group, and a user assigned to that group, we can
-assign access restrictions. This is done on the **Access** tab of the page properties or content element properties.
+assign access restrictions. This is done on the :guilabel:`Access` tab of
+the page properties or content element properties.
 
 .. include:: /Images/AutomaticScreenshots/Access/AccessRightsItems.rst.txt
 
@@ -79,11 +80,11 @@ assign access restrictions. This is done on the **Access** tab of the page prope
    "Members only".
 #. Add a text content element to the Members Only page, with text similar to
    "You need to authenticate to access the members area".
-#. On the **Access** tab, select the "Hide at login" group for it.
+#. On the :guilabel:`Access` tab, select the "Hide at login" group for it.
 #. Save and close the record.
 #. Add another text content element to the page, with text similar to
    "Welcome to the members area".
-#. On the **Access** tab, select the "Private area" group for it.
+#. On the :guilabel:`Access` tab, select the "Private area" group for it.
 #. Save and close the record.
 
 You should have something like this:
@@ -105,10 +106,10 @@ can log in to view the restricted content.
 
 #. On the "Members only" page, click the :guilabel:`+ Content` button between
    the two existing content elements.
-#. In the new content element wizard, go to the **Form elements** tab and
+#. In the new content element wizard, go to the :guilabel:`Form elements` tab and
    select "Login Form".
 #. Give it a header (for example, *Log in*).
-#. Go to the **Plugin** tab. There are several options for the Login Form, but
+#. Go to the :guilabel:`Plugin` tab. There are several options for the Login Form, but
    the only one which is absolutely necessary is the "User Storage Page".
 #. Use the :guilabel:`Browse for records` icon to browse the page tree and
    select the "Web site users" folder.
