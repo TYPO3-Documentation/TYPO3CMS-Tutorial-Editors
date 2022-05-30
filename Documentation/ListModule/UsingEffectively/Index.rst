@@ -17,21 +17,25 @@ depends on which field is used as label. For "pages", the field is
 
 The list view offers several different action icons in the **Docheader**:
 
-#. **Create** a new record (a wizard appears to let you choose which type)
+1. **Create** a new record (a wizard appears to let you choose which type)
 
-#. **View** the current page (in the frontend)
+2. **View** the current page (in the frontend)
 
-#. **Edit** the current page
+3. **Edit** the current page
 
-#. **Search** in the current page
+4. **Search** in the current page
 
-#. **Clear the cache** of the current page
+5. **Clear the cache** of the current page
 
-#. **Refresh** the List view
+6. **Refresh** the List view
 
-#. **Bookmark** this view
+7. **Bookmark** this view
 
-#. Access **contextual help**
+8. **Copy URL** to this view
+
+9. Access **contextual help** (removed with 12.0)
+
+.. todo: update screenshot
 
 In the **Content Area**, action icons are also available:
 
