@@ -34,6 +34,7 @@ content using TYPO3 CMS.
    :titlesonly:
 
    About
+   Login/Index
    HelpInside/Index
    Pages/Index
    ContentElements/Index
