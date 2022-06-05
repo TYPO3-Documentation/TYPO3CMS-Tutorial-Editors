@@ -6,8 +6,7 @@
 Login
 =====
 
-In TYPO3 CMS an editor's work is done in the backend. So point your browser
-to your domain name and append `/typo3` to get to the log in screen.
+In TYPO3 CMS an editor's work is done in the backend. 
 
 .. important::
 
