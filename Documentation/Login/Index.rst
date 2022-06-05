@@ -1,4 +1,4 @@
-.. include:: ../Includes.txt
+.. include:: /Includes.rst.txt
 
 .. _login:
 
@@ -6,7 +6,7 @@
 Login
 =====
 
-In TYPO3 CMS an editor's work is done in the backend. 
+In TYPO3 CMS an editor's work is done in the backend.
 
 .. important::
 
