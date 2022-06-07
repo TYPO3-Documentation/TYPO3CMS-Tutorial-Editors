@@ -79,4 +79,4 @@ Troubleshooting: Forgot password for backend login
       :alt: Enter the secure new password twice
       :class: with-shadow
       
-      Enter the secure new password twice
+      Enter a secure new password twice
