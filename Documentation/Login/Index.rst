@@ -74,3 +74,9 @@ Troubleshooting: Forgot password for backend login
    After you clicked on the password recovery link in the email you received
    you can enter a new password. Always use a
    :ref:`secure password <t3coreapi:security-secure-passwords>`.
+   
+   .. figure:: /Images/ManualScreenshots/Login/ForgotPasswordChangePassword.png
+      :alt: Enter the secure new password twice
+      :class: with-shadow
+      
+      Enter the secure new password twice
