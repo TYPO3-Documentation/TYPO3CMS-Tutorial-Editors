@@ -38,7 +38,7 @@ You can conveniently open this documentation from your TYPO3 backend:
 In the top bar, click the question mark icon to access the
 Help section, then select the :guilabel:`TYPO3 Online Documentation` module.
 
-.. figure:: ../Images/ManualScreenshots/Help/Typo3OnlineDocumentation.png
+.. figure:: /Images/ManualScreenshots/Help/Typo3OnlineDocumentation.png
    :alt: The TYPO3 Online Documentation in the Help menu
    :class: with-border
 
