@@ -33,7 +33,7 @@ The list view offers several different action icons in the **Docheader**:
 
 8. **Copy URL** to this view
 
-9. Access **contextual help** (removed with 12.0)
+9. Access **contextual help** (removed with version 12.0)
 
 .. todo: update screenshot
 
