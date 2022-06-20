@@ -39,13 +39,3 @@ does.
 
 The presentation is influenced by the :doc:`sitepackage <t3sitepackage/Index>`
 that your integrator or developer configured.
-
-
-.. _fal:
-
-Working with multi media: Digital asset management
-==================================================
-
-Working with multi media is important for many web pages.
-
-
