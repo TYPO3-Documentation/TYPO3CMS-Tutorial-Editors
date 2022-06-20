@@ -60,10 +60,10 @@ and the format of the file):
 *  Texts to be displayed to all users in some contexts (:guilabel:`Title`,
    :guilabel:`Description`)
 *  Text for :ref:`accessibility` such as the :guilabel:`alternative text`
-   for an image or a :guilabel:`download name`.
+   for an image or a :guilabel:`download name`
 *  Data required due to copyright issues
 *  Metadata attached to the uploaded file such as information about the
-   camera used or the location.
+   camera used or the location
 
 .. index:: pair: Files; Clipboard
 
