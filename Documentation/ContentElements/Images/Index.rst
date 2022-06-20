@@ -42,9 +42,12 @@ Add an image to a page
 Configure the image
 ===================
 
-The **Images** tab lets you perform a number of actions to configure an image.
+The :guilabel:`Images` tab lets you perform a number of actions to configure
+an image.
 
 .. include:: /Images/AutomaticScreenshots/EditContent/EditContentImageProperties.rst.txt
+
+.. _override_image_metadata:
 
 Image metadata
 --------------
