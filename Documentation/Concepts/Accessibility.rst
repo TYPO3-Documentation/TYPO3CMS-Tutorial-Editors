@@ -28,7 +28,7 @@ Provide informative, unique page titles
 
 The title of a page can - in most cases - be influenced in the
 :ref:`page properties <pages-properties>`. Part of the page title - such as the
-name of the organization might be added automatically. Ask your developer
+name of the organization - might be added automatically. Ask your developer
 about this.
 
 Use headings to convey meaning and structure
@@ -36,7 +36,7 @@ Use headings to convey meaning and structure
 
 Almost all content elements have the possibility to provide a heading.
 
-Depending on your user-rights you may also be able to influence the level of
+Depending on your user rights you may also be able to influence the level of
 the heading (:guilabel:`Headlines > Type`). The choice of the level of the
 heading should be made regarding the semantics of the text and not according to
 design choices.

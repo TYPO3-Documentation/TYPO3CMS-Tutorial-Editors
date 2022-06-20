@@ -9,7 +9,7 @@ CMS - content management system
 TYPO3 is a content management system, also called CMS for short. It is mainly
 used to display content (texts and media).
 
-As an enterprise content management system TYPO3 supports multiple users in
+As an enterprise content management system, TYPO3 supports multiple users in
 a collaborative environment and :ref:`digital asset management <fal>`.
 
 
@@ -32,8 +32,8 @@ presentation is achieved in the frontend:
 
    Backend and frontend of TYPO3 as an illustration
 
-In the backend you could for example define that a headline should have level 2.
-This would be a content decision. However in the frontend this headline is
+In the backend, for example, you could define that a headline should have level
+2. This would be a content decision. However, in the frontend this headline is
 displayed in red and underlined. This is one example of what the presentation
 does.
 

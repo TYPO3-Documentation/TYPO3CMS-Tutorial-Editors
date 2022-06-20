@@ -10,7 +10,7 @@ TYPO3 has a file abstraction layer (FAL) integrated which abstracts technical
 details (where the file is stored) and allows to work with different storage
 forms.
 
-FAL also allows the editors to manage meta data that can be displayed where ever
+FAL also allows the editors to manage meta data that can be displayed wherever
 an asset is displayed. The metadata can also be used for
 :ref:`copyright notices <copyright>`.
 

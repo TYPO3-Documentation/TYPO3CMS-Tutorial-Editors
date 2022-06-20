@@ -14,7 +14,7 @@ the copyright **must** be considered.
 
 .. attention::
    Using a file or even a text without proper copyright lead to high fines.
-   If in doubt do not use a content without consulting legal advice first.
+   If in doubt, do not use a content without consulting legal advice first.
 
 Even images that you created yourself might infringe someones copyright. For
 example you may not take pictures of certain artwork or draw a picture of
@@ -26,7 +26,7 @@ Have a look at the related
 Data privacy
 ============
 
-In different countries there are different laws about data privacy. In general
+In different countries there are different laws about data privacy. In general,
 you may not publish pictures of or data from any person alive or dead unless
 the person consented. There are some exceptions for persons of public interest
 such as politicians, scientists or movie stars.
@@ -40,5 +40,5 @@ which explains the situation in different countries.
 
 .. attention::
    Publishing personal information without consent might lead to high fines in
-   some countries. If in doubt do not use a any personal information
+   some countries. If in doubt, do not use any personal information
    without consulting legal advice first.
