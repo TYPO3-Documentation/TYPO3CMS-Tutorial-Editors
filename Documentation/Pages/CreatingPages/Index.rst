@@ -9,7 +9,7 @@ Create pages
 
 There are two main ways to add a new page to your site.
 
-First make sure that you are in a **Web** module so that you see the page tree.
+First make sure that you are in a :guilabel:`Web` module so that you see the page tree.
 
 .. _pages-creating-tree:
 
@@ -51,7 +51,7 @@ Adding pages with the context menu
       :alt: Creating pages with context menu
       :class: with-border
 
-   The **New record** screen displays.
+   The :guilabel:`New record` screen displays.
 
 #. Click an arrow in the tree to select the position where you want the new
    page to be created.
@@ -60,9 +60,9 @@ Adding pages with the context menu
       :alt: Selecting a position for the new page using the wizard
       :class: with-border
 
-   The **Create new Page** screen displays.
+   The :guilabel:`Create new Page` screen displays.
 
-#. Type a title for the page and you may also like to go to the **Access** tab
+#. Type a title for the page and you may also like to go to the :guilabel:`Access` tab
    and enable the page to make it visible on the frontend.
 
    .. include:: /Images/AutomaticScreenshots/PageProperties/Enable.rst.txt

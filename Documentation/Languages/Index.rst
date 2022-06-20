@@ -35,7 +35,7 @@ Translation modes
 
 When you choose to translate content, TYPO3 offers two methods:
 
-*  **Translate** - Use this option when you have a strict translation workflow
+*  :guilabel:`Translate` - Use this option when you have a strict translation workflow
    or content structure.
 
    TYPO3 will create a direct connection between the
@@ -47,7 +47,7 @@ When you choose to translate content, TYPO3 offers two methods:
    separate teams localizing content. This mode also allows TYPO3 to
    automatically mark translated content for review, and notify translators
    when the original text changes.
-*  **Copy** - Use this option when you would like the content structure to be
+*  :guilabel:`Copy` - Use this option when you would like the content structure to be
    free and independent between languages.
 
    TYPO3 creates a copy of the content in the target language. No connection
@@ -85,18 +85,18 @@ Working with translations
       :class: with-border
 
 #. In the German column, click the :guilabel:`Translate` button for a content
-   element. The **Localize** wizard displays.
+   element. The :guilabel:`Localize` wizard displays.
 
    .. figure:: ../Images/ManualScreenshots/Language/LanguagesTranslateContentElementsStep1.png
       :alt: First step of the Localize wizard
       :class: with-border
 
 #. For this example, click the :guilabel:`Translate` button then click
-   **Next**.
+   :guilabel:`Next`.
    Step 2 of the wizard will pass by automatically since we are translating in
    a single language.
    Step 3 provides a summary of the elements that will be translated.
-#. Click **Next** to complete the wizard.
+#. Click :guilabel:`Next` to complete the wizard.
 
    The German version of the content element is now prepended with *[Translate
    to German:]*. The element is hidden by default, so that incomplete

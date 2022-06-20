@@ -21,7 +21,7 @@ Adding multiple pages at once
       :alt: Select "Create multiple pages" in the context menu
       :class: with-border
 
-   The **Create Multiple Pages** screen displays, with five new pages by
+   The :guilabel:`Create Multiple Pages` screen displays, with five new pages by
    default.
 
    .. figure:: ../../Images/ManualScreenshots/Page/MultiplePagesCreatePages.png

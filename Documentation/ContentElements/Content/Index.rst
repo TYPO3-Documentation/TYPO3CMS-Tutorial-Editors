@@ -65,4 +65,4 @@ Highlighted areas will then show you where you can drop it.
 
 You can move a content element from one page to another in the :guilabel:`Web
 > List` module using cut and paste. Refer to the :ref:`clipboard chapter <clipboard>` for information about using the clipboard in the
-the **List** module.
+the :guilabel:`List` module.
