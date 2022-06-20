@@ -60,6 +60,10 @@ text of the headline itself becomes the link text.
 Write meaningful text alternatives for images
 ----------------------------------------------
 
+.. seealso::
+   Many editors struggle with providing sensible alternative texts. here is a
+   helpful guide: https://axesslab.com/alt-texts/ .
+
 In TYPO3 when you are uploading or managing an image file in the module
 :guilabel:`File > Filelist` you can provide an alternative text in the
 :ref:`metadata <file-metadata>` of this file.
@@ -73,3 +77,4 @@ context or use the default.
    of an image is usually displayed below the image. Therefore the alternative
    text shall supply the information supplied by the image to most users. The
    description text supply additional information to all users.
+
