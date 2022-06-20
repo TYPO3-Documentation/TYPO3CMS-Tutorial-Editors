@@ -107,5 +107,8 @@ Previewing a page without clearing the cache
 
 If you need to preview a page and cannot clear its cache you can use the
 parameter :code:`no_cache=1` to preview the page as it will look once the
-cache is cleared. For example, open
+cache is cleared. This option might have been disabled by the administrator
+however.
+
+For example, open
 :samp:`https://example.org/community/events?no_cache=1`.
