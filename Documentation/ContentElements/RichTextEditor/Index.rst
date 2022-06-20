@@ -24,7 +24,7 @@ Creating a link
 
 #. Select the text you want to link.
 #. Click the :guilabel:`Link` icon in the toolbar.
-   The **Link Browser** window displays.
+   The :guilabel:`Link Browser` window displays.
 
    .. figure:: ../../Images/ManualScreenshots/Link/LinkBrowser.png
       :alt: The TYPO3 CMS link browser
@@ -37,7 +37,7 @@ Internal links
 --------------
 You can link to an internal file, folder, page or content element on a page.
 
-On the **Page** tab, select the page in the page tree that you want to link to.
+On the :guilabel:`Page` tab, select the page in the page tree that you want to link to.
 
 Alternatively, you can link to a specific point (anchor) on the page. Browse
 to the page you want to link to, then click the arrow icon next to the page
@@ -48,13 +48,13 @@ content element you want to link to.
    :alt: Display the anchors on a page
    :class: with-border
 
-The **Link Browser** window closes and the link is added to your text.
+The :guilabel:`Link Browser` window closes and the link is added to your text.
 
 
 External links
 --------------
 
-#. In the **Link Browser** window, go to the **External URL** tab.
+#. In the :guilabel:`Link Browser` window, go to the :guilabel:`*External URL` tab.
 #. Type your link in the :guilabel:`URL` field.
 #. In the Target drop-down list, select :guilabel:`New window` to open the
    link in a new browser window.
@@ -63,7 +63,8 @@ External links
       :alt: Display the anchors on a page
       :class: with-border
 
-#. Click the :guilabel:`Set Link` button to close the **Link Browser** window.
+#. Click the :guilabel:`Set Link` button to close the :guilabel:`Link Browser`
+   window.
 
 
 Removing a link
