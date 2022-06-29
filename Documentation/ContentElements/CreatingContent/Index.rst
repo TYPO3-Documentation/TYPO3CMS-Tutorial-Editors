@@ -12,7 +12,7 @@ Content` icon where you want to insert content.
 
 .. include:: /Images/AutomaticScreenshots/NewContentElement/CreateNew.rst.txt
 
-This action displays the **Create new content element** window. The
+This action displays the :guilabel:`Create new content element` window. The
 content elements that are available depends on the setup of your TYPO3
 installation, and any extensions that may be installed.
 
@@ -66,7 +66,7 @@ Plugins
 
 Plugins are provided by extensions. Not all plugins are available on this tab.
 It depends on their architecture or on backend configuration. In some cases
-you insert the General Plugin content element, then go to the **Plugin** tab
+you insert the General Plugin content element, then go to the :guilabel:`Plugin` tab
 to select a specific plugin.
 
 .. include:: /Images/AutomaticScreenshots/NewContentElement/WizardTabPlugins.rst.txt
@@ -91,9 +91,9 @@ Add new content to a page
 
 #. On a page, click the :guilabel:`"+ Content` icon where you want to insert
    content.
-#. On the **Typical Page Content** tab, choose the "Text & Media" element.
-   This is the most commonly used content type. The **Create new Page
-   Content** screen displays.
+#. On the :guilabel:`Typical Page Content` tab, choose the "Text & Media" element.
+   This is the most commonly used content type. The
+   :guilabel:`Create new Page Content` screen displays.
 
 .. include:: /Images/AutomaticScreenshots/NewContentElement/NewContentElement.rst.txt
 

@@ -26,8 +26,8 @@ image use on this page.
 Add an image to a page
 ======================
 
-#. On the **Images** tab, click the :guilabel:`Add image` button. The **File
-   selector** window displays to let you browse for an image.
+#. On the :guilabel:`Images` tab, click the :guilabel:`Add image` button. The
+   :guilabel:`File selector` window displays to let you browse for an image.
 
    .. include:: /Images/AutomaticScreenshots/Fileadmin/ImageSelector.rst.txt
 
@@ -42,7 +42,7 @@ Add an image to a page
 Configure the image
 ===================
 
-The **Images** tab lets you perform a number of actions to configure an image.
+The :guilabel:`Images` tab lets you perform a number of actions to configure an image.
 
 .. include:: /Images/AutomaticScreenshots/EditContent/EditContentImageProperties.rst.txt
 

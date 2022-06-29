@@ -11,7 +11,7 @@ When an element is hidden, be it a page, a content element or a news item, it
 will not display in the frontend. You can, however, preview it in the backend.
 
 In the Core, and in extensions that follow best practice, all options related
-to visibility are controlled in the **Access** tab of the :ref:`page
+to visibility are controlled in the :guilabel:`Access` tab of the :ref:`page
 properties <pages-properties>`.
 
 .. include:: /Images/AutomaticScreenshots/PageProperties/Enable.rst.txt
