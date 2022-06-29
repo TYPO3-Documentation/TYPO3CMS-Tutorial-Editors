@@ -17,7 +17,7 @@ such as a contact form, newsletter subscription or even a survey. TYPO3 comes
 with one pre-defined form already built, which you can use to get started.
 
 #. In the :guilabel:`Web > Forms` module, click the :guilabel:`+ Create new
-   form` button. The **Create new form** wizard displays.
+   form` button. The :guilabel:`Create new form` wizard displays.
 
    .. include:: /Images/AutomaticScreenshots/Forms/FormCreateNew.rst.txt
 
@@ -36,7 +36,7 @@ with one pre-defined form already built, which you can use to get started.
 
 #. In the :guilabel:`Start template` list, select 'Simple contact form', and
    then type a name for the form.
-#. Click **Next** and then click **Finish**. Your new form displays.
+#. Click :guilabel:`Next` and then click :guilabel:`Finish`. Your new form displays.
 
    .. include:: /Images/AutomaticScreenshots/Forms/FormsNewForm.rst.txt
 
@@ -46,13 +46,13 @@ with one pre-defined form already built, which you can use to get started.
    the labels on the buttons.
 
 #. Add your form to a page the same way you would add any
-   :ref:`content element<content-form>`. On the  **Form elements** tab, choose 'Form'.
-#. In the form content element, go to the **Plugin** tab and in the
+   :ref:`content element<content-form>`. On the  :guilabel:`Form elements` tab, choose 'Form'.
+#. In the form content element, go to the :guilabel:`Plugin` tab and in the
    :guilabel:`Form definition` list, choose your form.
 
    .. include:: /Images/AutomaticScreenshots/Forms/FormsFormDefinition.rst.txt
 
-#. On the **General** tab, type a header for your form, then save and close
+#. On the :guilabel:`General` tab, type a header for your form, then save and close
    the record.
 
    Preview the page and it should look something like this:
@@ -67,15 +67,15 @@ Create a form from scratch
 
 #. In the :guilabel:`Web > Forms` module, click the :guilabel:`+ Create new
    form` button.
-#. In the **Create new form** wizard, choose to create a blank form.
-#. Give your form a name, then click **Next** and **Finish**.
+#. In the :guilabel:`Create new form` wizard, choose to create a blank form.
+#. Give your form a name, then click :guilabel:`Next` and :guilabel:`Finish`.
 
    A blank form displays.
 
    .. include:: /Images/AutomaticScreenshots/FormsBlank/FormsBlankForm.rst.txt
 
-#. Click the :guilabel:`Create new element` button. The **New element** window
-   displays.
+#. Click the :guilabel:`Create new element` button. The :guilabel:`New element`
+   window displays.
 
    .. include:: /Images/AutomaticScreenshots/FormsBlank/FormsNewElement.rst.txt
 
@@ -91,7 +91,7 @@ Create a form from scratch
 
    Once you’ve selected a form element, you can customize the settings for how the field is displayed.
 
-#. Choose the **Text** element and the field is added to your form. You can
+#. Choose the :guilabel:`Text` element and the field is added to your form. You can
    configure settings for the field (such as placeholder text and field
    validation) on the right-hand side of the screen .
 
@@ -112,7 +112,8 @@ Working with forms
 When you have added multiple fields to your form, you can drag and drop them
 to rearrange their order.
 
-Click the :guilabel:`Settings` button at the top of the form to add **Finishers** like a confirmation message or redirection to another page.
+Click the :guilabel:`Settings` button at the top of the form to add
+:guilabel:`Finishers` like a confirmation message or redirection to another page.
 
 .. figure:: ../../Images/ManualScreenshots/Forms/FormsFinishers.png
    :alt: Add finishers to a form

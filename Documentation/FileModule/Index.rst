@@ -10,7 +10,7 @@
 Files
 =====
 
-The **FILE > Filelist** module is where you can manage
+The :guilabel:`File > Filelist` module is where you can manage
 all the media associated with your TYPO3 web site.
 
 .. index::
@@ -23,7 +23,7 @@ Managing files in the TYPO3 CMS
 ===============================
 
 Files including documents and images are managed in the
-Filelist module. Similar to the **WEB > List** module,
+Filelist module. Similar to the :guilabel:`Web > List` module,
 it displays a navigation tree, which corresponds to the file
 structure on the server, and a list of all files for the
 selected directory.
