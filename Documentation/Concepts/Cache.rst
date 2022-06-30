@@ -20,7 +20,7 @@ to the visitor and stored for future use.
 .. _browser-cache:
 
 Browser cache
-===========
+=============
 
 The browser on the client machine (Chrome, Edge, Firefox, etc) also caches pages.
 Sometimes you cannot see changes you have made to a page because your browser
@@ -33,7 +33,7 @@ On Windows in most browsers you can press :kbd:`Ctrl` + :kbd:`F5` to clear the
 browser cache.
 
 Automatic cache clearing
-===================
+========================
 
 With TYPO3, the cache of a page is cleared automatically in the following cases:
 
@@ -44,7 +44,7 @@ With TYPO3, the cache of a page is cleared automatically in the following cases:
 *  In some other cases that your integrator or developer might have defined
 
 Scenario: Changes are not visible in the frontend
-=====================================
+=================================================
 
 If the cache did not get automatically cleared, the changes you made might not
 be visible right away in the frontend.
@@ -66,7 +66,7 @@ Some scenarios in which manual cache clearing might be necessary:
    such as the footer, a carousel in the header, etc.
 
 Manual cache clearing
-=================
+=====================
 
 Clearing the cache of a single page can be done without ill effect in most
 installations.
@@ -102,7 +102,7 @@ button in the toolbar you might not have the rights to carry out this action:
    preferred strategy here.
 
 Previewing a page without clearing the cache
-==================================
+============================================
 
 If you need to preview a page and cannot clear its cache you can use the
 parameter :code:`no_cache=1` to preview the page as it will look once the
