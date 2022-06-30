@@ -2,9 +2,9 @@
 
 .. _accessibility:
 
-=========
+=============
 Accessibility
-=========
+=============
 
    Accessibility is the design of products, services, [...]
    or environments so as to be usable by people with disabilities.
