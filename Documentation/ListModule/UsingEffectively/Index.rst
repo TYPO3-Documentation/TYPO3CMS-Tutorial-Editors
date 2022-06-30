@@ -5,7 +5,7 @@
 Using the list module effectively
 =================================
 
-Select the **WEB > List** module and browse to the
+Select the :guilabel:`Web > List` module and browse to the
 "Congratulations" page. You should see the following:
 
 .. include:: /Images/AutomaticScreenshots/ListModule/ListModule.rst.txt
@@ -33,7 +33,7 @@ The list view offers several different action icons in the **Docheader**:
 
 8. **Copy URL** to this view
 
-9. Access **contextual help** (removed with 12.0)
+9. Access **contextual help** (removed with version 12.0)
 
 .. todo: update screenshot
 
@@ -57,10 +57,10 @@ In the **Content Area**, action icons are also available:
 .. todo: the "Extended view" option does not exist anymore
 
 If you wish to have the list of icons expanded all the time, you can check the
-**"Extended view"** box at the very bottom of the view.
+:guilabel:`Extended view` box at the very bottom of the view.
 
-Also make sure that the **"Show clipboard"** box is checked, as we will explore
-this next.
+Also make sure that the :guilabel:`Show clipboard` box is checked, as we
+will explore this next.
 
 If you plan to manage a multilingual web site, you will want to
-check the **"Localization view"** checkbox.
+check the :guilabel:`Localization view` checkbox.
