@@ -45,6 +45,25 @@ or link to them in your web site is covered in the
    storage pools (like a WebDAV server or an Amazon S3 account) and work
    with the files as if they were on the TYPO3 CMS server.
 
+.. index:: pair: Files; Metadata
+.. _file-metadata:
+
+File metadata
+-------------
+
+You can provide metadata for the file by clicking on the button that looka like
+a pencil with the title text :guilabel:`Edit Metadata of this file`.
+
+The metadata you provide can include (depending on the setup of the system
+and the format of the file):
+
+*  Text to be displayed to all users in some contexts (:guilabel:`Title`,
+   :guilabel:`Description`)
+*  Text for :ref:`accessibility` such as the :guilabel:`alternative text`
+   for an image or a :guilabel:`download name`
+*  Data required due to copyright issues
+*  Metadata attached to the uploaded file such as information about the
+   camera used or the location
 
 .. index:: pair: Files; Clipboard
 
