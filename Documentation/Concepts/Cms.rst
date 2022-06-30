@@ -2,12 +2,12 @@
 
 .. _cms:
 
-================================
-CMS - content management system
-================================
+============================
+CMS - Content Management System
+============================
 
 TYPO3 is a content management system, also called CMS for short. It is mainly
-used to display content (texts and media).
+used to display content (text and media).
 
 As an enterprise content management system, TYPO3 supports multiple users in
 a collaborative environment and :ref:`digital asset management <fal>`.
@@ -16,7 +16,7 @@ a collaborative environment and :ref:`digital asset management <fal>`.
 .. _content-presentation:
 
 Separation of content and presentation
-=======================================
+==============================
 
    Separation of content and presentation is the separation of concerns design
    principle as applied to the authoring and presentation of content.
@@ -32,7 +32,7 @@ presentation is achieved in the frontend:
 
    Backend and frontend of TYPO3 as an illustration
 
-In the backend, for example, you could define that a headline should have level
+In the backend, for example, you can state that a headline should have level
 2. This would be a content decision. However, in the frontend this headline is
 displayed in red and underlined. This is one example of what the presentation
 does.
