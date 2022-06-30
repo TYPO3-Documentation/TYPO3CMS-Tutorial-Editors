@@ -51,6 +51,8 @@ The :guilabel:`Images` tab lets you perform a number of actions to configure an 
 
 .. include:: /Images/AutomaticScreenshots/EditContent/EditContentImageProperties.rst.txt
 
+.. _override_image_metadata:
+
 Image metadata
 --------------
 

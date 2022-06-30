@@ -29,6 +29,7 @@ the `Official Introduction Package <https://extensions.typo3.org/extension/intro
    :maxdepth: 2
    :titlesonly:
 
+   Concepts/Index
    Login/Index
    HelpInside/Index
    Pages/Index
