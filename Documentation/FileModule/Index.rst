@@ -51,13 +51,13 @@ or link to them in your web site is covered in the
 File metadata
 -------------
 
-You can provide metadata for the file by clicking on the button looking like
+You can provide metadata for the file by clicking on the button that looka like
 a pencil with the title text :guilabel:`Edit Metadata of this file`.
 
-The metadata you can provide may include (depending on the setup of the system
+The metadata you provide can include (depending on the setup of the system
 and the format of the file):
 
-*  Texts to be displayed to all users in some contexts (:guilabel:`Title`,
+*  Text to be displayed to all users in some contexts (:guilabel:`Title`,
    :guilabel:`Description`)
 *  Text for :ref:`accessibility` such as the :guilabel:`alternative text`
    for an image or a :guilabel:`download name`
