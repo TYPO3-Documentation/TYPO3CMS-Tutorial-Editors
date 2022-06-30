@@ -28,7 +28,7 @@ Creating a link
 #. Click the :guilabel:`Link` icon in the toolbar.
    The **Link Browser** window displays.
 
-   .. figure:: ../../Images/LinkBrowser.png
+   .. figure:: /Images/ManualScreenshots/Link/LinkBrowser.png
       :alt: The TYPO3 CMS link browser
       :class: with-border
 

@@ -53,6 +53,8 @@ The **Images** tab lets you perform a number of actions to configure an image.
    :alt: Working with an image attached to the content element
    :class: with-border
 
+.. _override_image_metadata:
+
 Image metadata
 --------------
 
