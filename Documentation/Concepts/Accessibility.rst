@@ -15,16 +15,16 @@ Accessibility
 
    https://en.wikipedia.org/wiki/Accessibility
 
-As an editor your responsibility is to provide accessible content.
+As an editor, it is your responsibility to help provide accessible content.
 
 Writing accessible text
-=================
+=======================
 
 See also the following W3C page:
 `Writing for Web Accessibility <https://www.w3.org/WAI/tips/writing/>`__
 
 Provide informative, unique page titles
----------------------------------------------------
+---------------------------------------
 
 The title of a page can - in most cases - be influenced in the
 :ref:`page properties <pages-properties>`. Part of the page title - such as the
@@ -32,7 +32,7 @@ name of the organization - might be added automatically. Ask your developer
 about this.
 
 Use headings to convey meaning and structure
---------------------------------------------------------------
+--------------------------------------------
 
 Almost all content elements have the ability to provide a heading.
 
@@ -47,7 +47,7 @@ The :ref:`rich text editor (RTE) <rte>` also offers the ability to create
 headlines of different levels.
 
 Make link text meaningful
----------------------------------
+-------------------------
 
 When :ref:`creating links in the RTE <rte-linking>` write the meaningful link
 text, highlight it and then click the link button.
@@ -58,7 +58,7 @@ It is also possible to link headlines of content elements. In this case the
 text of the headline itself becomes the link text.
 
 Write meaningful text alternatives for images
-----------------------------------------------------------
+---------------------------------------------
 
 .. seealso::
    Writing alternative text can prove difficult. Here is a
