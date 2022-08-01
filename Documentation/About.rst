@@ -9,30 +9,6 @@
 About this guide
 ================
 
-This guide covers working with content in TYPO3. It includes common tasks an editor might perform, such as working with content elements, editing existing text and images, working with forms, and working with pages.
-
-This guide touches briefly on access restriction concepts, as well as content translation.
-
-.. _prerequisite:
-
-Prerequisite
-============
-
-This guides assumes you have read the :doc:`Getting Started Tutorial <t3start:Index>` and are familiar with the following general :ref:`concepts of TYPO3 CMS<t3start:concepts>`:
-
-* Backend and Frontend
-* General Backend Structure
-* The Page Tree
-* Pages and Page Content
-
-.. _examples:
-
-Examples
-========
-
-The examples in this guide are from a TYPO3 installation based on the `Official Introduction Package
-<https://extensions.typo3.org/extension/introduction/>`__.
-
 .. _credits:
 
 Credits
