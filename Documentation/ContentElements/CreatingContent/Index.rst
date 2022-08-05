@@ -25,7 +25,7 @@ Types of content elements
 .. note::
    If you are working with the `Introduction Package <https://extensions.typo3.org/extension/introduction/>`__, you will see more
    content elements than described here. That's because the `Bootstrap Package <https://extensions.typo3.org/extension/bootstrap_package/>`__
-   (which is a dependencies of the `Introduction Package <https://extensions.typo3.org/extension/introduction/>`__) comes with several content elements of its own.
+   (which is a dependency of the `Introduction Package <https://extensions.typo3.org/extension/introduction/>`__) comes with several content elements of its own.
 
    This page describes the **TYPO3 Core** content elements.
 
