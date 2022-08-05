@@ -7,7 +7,7 @@
 Creating content
 ================
 
-In the :guilabel:`Web > Page` module, on any page, click the :guilabel:`"+
+In the :guilabel:`Web > Page` module, on any page, click the :guilabel:`+
 Content` icon where you want to insert content.
 
 .. include:: /Images/AutomaticScreenshots/NewContentElement/CreateNew.rst.txt
@@ -22,11 +22,12 @@ installation, and any extensions that may be installed.
 Types of content elements
 =========================
 
-If you are working with the `Introduction Package <https://extensions.typo3.org/extension/introduction/>`__, you will see more
-content elements than described here. That's because the *Bootstrap Package*
-comes with has several content elements of its own.
+.. note::
+   If you are working with the `Introduction Package <https://extensions.typo3.org/extension/introduction/>`__, you will see more
+   content elements than described here. That's because the `Bootstrap Package <https://extensions.typo3.org/extension/bootstrap_package/>`__
+   (which is a dependency of the `Introduction Package <https://extensions.typo3.org/extension/introduction/>`__) comes with several content elements of its own.
 
-This page describes the TYPO3 Core content elements.
+   This page describes the **TYPO3 Core** content elements.
 
 
 .. _content-typical:
@@ -89,11 +90,11 @@ from another page without duplicating it.
 Add new content to a page
 =========================
 
-#. On a page, click the :guilabel:`"+ Content` icon where you want to insert
+#. On a page, click the :guilabel:`+ Content` icon where you want to insert
    content.
 #. On the :guilabel:`Typical Page Content` tab, choose the "Text & Media" element.
    This is the most commonly used content type. The
-   :guilabel:`Create new Page Content` screen displays.
+   :guilabel:`Create new Page Content` screen appears.
 
 .. include:: /Images/AutomaticScreenshots/NewContentElement/NewContentElement.rst.txt
 
