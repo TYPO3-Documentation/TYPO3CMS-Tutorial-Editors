@@ -93,7 +93,7 @@ Add new content to a page
    content.
 #. On the :guilabel:`Typical Page Content` tab, choose the "Text & Media" element.
    This is the most commonly used content type. The
-   :guilabel:`Create new Page Content` screen displays.
+   :guilabel:`Create new Page Content` screen appears.
 
 .. include:: /Images/AutomaticScreenshots/NewContentElement/NewContentElement.rst.txt
 
