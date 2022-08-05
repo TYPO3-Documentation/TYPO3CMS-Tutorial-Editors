@@ -17,9 +17,14 @@ It's best practice to add new images using the :guilabel:`File > Filelist`
 module, which is covered in the :ref:`chapter about the file module <file-module>`. This method means files are stored centrally
 and any information or metadata you add to the image is used wherever that
 image is used on the site.
-When you use the :guilabel:`Select & upload files` button, the image is
-attached to the page, and any information or metadata is stored only for the
-image use on this page.
+
+When you use the :guilabel:`Select & upload files` button, the image file is
+attached to the page and gets uploaded to the :guilabel:`user_uploads` folder in the :guilabel:`Filelist`.
+
+.. tip::
+   By only using :guilabel:`Select & upload files`, your files pile up in the :guilabel:`user_uploads` folder pretty quickly.
+   Therefore you should rather upload and organize the files via the :guilabel:`Add Image` button or upload it with the :guilabel:`File > Filelist`
+   module directly, as described above.
 
 .. _add-image-to-page:
 
