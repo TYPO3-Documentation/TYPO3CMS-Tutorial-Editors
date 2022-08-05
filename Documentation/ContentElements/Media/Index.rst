@@ -6,14 +6,18 @@
 Embedding video and audio
 =========================
 
-Like images, it is best practice to add new video and audio files using the
+Like images, it's best practice to add new video and audio files using the
 :guilabel:`File > Filelist` module, which is covered in the :ref:`chapter about the file module <file-module>`. This method
-means files are centrally stored and any information or metadata you add to
+means files are stored centrally and any information or metadata you add to
 the file is used wherever that media file is used on the site.
 
 When you use the :guilabel:`Select & upload files` button, the media file is
-attached to the page, and any information or metadata is stored only for use
-on this page.
+attached to the page and gets uploaded to the :guilabel:`user_uploads` folder in the :guilabel:`Filelist`.
+
+.. tip::
+   By only using :guilabel:`Select & upload files`, your files pile up in the :guilabel:`user_uploads` folder pretty quickly.
+   Therefore you should rather upload and organize the files via the :guilabel:`Add Media` button or upload it with the :guilabel:`File > Filelist`
+   module directly, as described above.
 
 .. _add-video-to-page:
 
