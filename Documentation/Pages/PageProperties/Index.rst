@@ -58,7 +58,7 @@ more information.
 Social media
 ============
 
-This tab is used to enrich social media snippets for the URL of the page It
+This tab is used to enrich social media snippets for the URL of the page. It
 uses the cs_seo system extension. See the :ref:`SEO Core extension <ext_seo:for-editors>` manual for more information.
 
 .. _pages-properties-metadata:
@@ -98,7 +98,7 @@ Behaviour
 
 This tab influences a variety of different aspects of the page.
 
-.. include:: /Images/AutomaticScreenshots/PageProperties/Behaviour.rst.txt
+.. include:: /Images/AutomaticScreenshots/PageProperties/Appearance.rst.txt
 
 Here are some of the common fields of the Behaviour tab:
 
