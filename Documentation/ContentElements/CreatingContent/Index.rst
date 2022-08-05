@@ -22,11 +22,12 @@ installation, and any extensions that may be installed.
 Types of content elements
 =========================
 
-If you are working with the `Introduction Package <https://extensions.typo3.org/extension/introduction/>`__, you will see more
-content elements than described here. That's because the *Bootstrap Package*
-comes with has several content elements of its own.
+.. note::
+   If you are working with the `Introduction Package <https://extensions.typo3.org/extension/introduction/>`__, you will see more
+   content elements than described here. That's because the `Bootstrap Package <https://extensions.typo3.org/extension/bootstrap_package/>`__
+   (which is a dependencies of the `Introduction Package <https://extensions.typo3.org/extension/introduction/>`__) comes with several content elements of its own.
 
-This page describes the TYPO3 Core content elements.
+   This page describes the **TYPO3 Core** content elements.
 
 
 .. _content-typical:
