@@ -7,7 +7,7 @@
 Creating content
 ================
 
-In the :guilabel:`Web > Page` module, on any page, click the :guilabel:`"+
+In the :guilabel:`Web > Page` module, on any page, click the :guilabel:`+
 Content` icon where you want to insert content.
 
 .. include:: /Images/AutomaticScreenshots/NewContentElement/CreateNew.rst.txt
@@ -89,7 +89,7 @@ from another page without duplicating it.
 Add new content to a page
 =========================
 
-#. On a page, click the :guilabel:`"+ Content` icon where you want to insert
+#. On a page, click the :guilabel:`+ Content` icon where you want to insert
    content.
 #. On the :guilabel:`Typical Page Content` tab, choose the "Text & Media" element.
    This is the most commonly used content type. The
