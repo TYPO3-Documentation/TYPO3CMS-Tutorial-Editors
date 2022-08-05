@@ -4,6 +4,8 @@
 TYPO3 Tutorial for Editors
 ==========================
 
+Hello world
+
 Once you have installed TYPO3 using our :doc:`Getting Started Guide <t3start:Index>`;
 the next logical step is to log in to the backend of the CMS and start adding pages and create
 some content.
