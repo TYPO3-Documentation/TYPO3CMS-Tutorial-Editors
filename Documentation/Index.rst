@@ -132,7 +132,7 @@ the `Official Introduction Package <https://extensions.typo3.org/extension/intro
             *  :ref:`File abstraction layer (FAL) <fal>`
 
 .. toctree::
-   :hidden:
+   :maxdepth: 2
    :titlesonly:
 
    Login/Index
