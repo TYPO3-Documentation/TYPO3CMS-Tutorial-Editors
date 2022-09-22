@@ -17,7 +17,7 @@ Move pages
 #. Choose the page you want to move, then drag it anywhere in the page
    tree.
 
-   A horizontal line displays to indicate the potential new
+   A horizontal line displays to indicate the new
    position of the page.
 
    .. figure:: ../../Images/ManualScreenshots/PageTree/CopyMovePage.png
@@ -35,7 +35,7 @@ Move pages
 
       Drop a page on another page to make it a child page
 
-#. Release your mouse. A confirmation message displays the option to copy or
+#. Release your mouse. A confirmation message will appear displaying the option to copy or
    move the page.
 #. Select :guilabel:`Move this item`.
 
@@ -44,8 +44,8 @@ Move pages
 Copy pages
 ==========
 
-#. Choose the page you want to copy, then drag it to the position on the
-   page tree you want to copy it.
+#. Choose the page you want to copy, then drag it to its new position on the
+   page tree.
 #. Release your mouse, then select :guilabel:`Copy` in the confirmation
    message.
 

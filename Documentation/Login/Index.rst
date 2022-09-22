@@ -2,19 +2,18 @@
 
 .. _login:
 
-=====
-Login
-=====
+=========================
+Logging in to the backend
+=========================
 
 With TYPO3, an editor's work is done via the backend and having
 an active backend account is required.
-
-Check that JavaScript and cookies are enabled in your browser as they are required by TYPO3's Backend.
 
 Enter your domain name into the address bar of your browser and
 append "/typo3" to the end of it to access the backend login page.
 For example: :samp:`http://www.example.org/typo3`.
 
+Check that JavaScript and cookies are enabled in your browser as they are required by TYPO3's Backend.
 
 .. figure:: /Images/AutomaticScreenshots/Login/BackendLoginPage.png
    :alt: The TYPO3 CMS backend login screen

@@ -9,22 +9,6 @@ Help within TYPO3 CMS
 There are several features built-in to the user interface of the backend to
 help guide you when using the TYPO3 CMS.
 
-.. versionchanged:: 12.0
-   The context sensitive help, also called "CSH" has been removed as it was 
-   outdated and not maintained. Refer to the
-   :ref:`typo3-online-documentation` instead.
-
-Tooltips
-========
-
-Hover your mouse pointer over buttons and icons to display a short description of the function.
-
-.. figure:: /Images/ManualScreenshots/Help/Tooltip.png
-   :alt: Tooltip for the Forms module
-   :class: with-border
-
-   See the Tooltip help for the Forms module
-
 .. _typo3-online-documentation:
 
 TYPO3 online documentation
@@ -43,6 +27,20 @@ Help section, then select the :guilabel:`TYPO3 Online Documentation` module.
    :class: with-border
 
    The :guilabel:`TYPO3 Online Documentation` in the :guilabel:`Help` menu
+
+Keyboard commands
+=================
+
+Tooltips
+========
+
+Hover your mouse pointer over buttons and icons to display a short description of the function.
+
+.. figure:: /Images/ManualScreenshots/Help/Tooltip.png
+   :alt: Tooltip for the Forms module
+   :class: with-border
+
+   See the Tooltip help for the Forms module
 
 .. toctree::
    :maxdepth: 5
