@@ -57,7 +57,7 @@ the toolbar or - starting with TYPO3 v12 - by hitting :kbd:`Shift` twice in a
 row.
 
 ..  figure:: /Images/ManualScreenshots/Help/BackendSearch.png
-    :alt: TThe backend search modal with some search results.
+    :alt: The backend search modal with some search results.
     :class: with-border
 
     The backend search modal with some search results.
