@@ -10,7 +10,7 @@ There are several features built-in to the user interface of the backend to
 help guide you when using the TYPO3 CMS.
 
 .. versionchanged:: 12.0
-   The context sensitive help, also called "CSH" has been removed as it was 
+   The context sensitive help, also called "CSH" has been removed as it was
    outdated and not maintained. Refer to the
    :ref:`typo3-online-documentation` instead.
 
@@ -43,6 +43,24 @@ Help section, then select the :guilabel:`TYPO3 Online Documentation` module.
    :class: with-border
 
    The :guilabel:`TYPO3 Online Documentation` in the :guilabel:`Help` menu
+
+.. _backend-search:
+
+Backend search
+==============
+
+The backend search is useful in searching for a string across different
+records. This can help you finding your way in the backend.
+
+The search can be opened by the magnifying glass in the top right corner of
+the toolbar or - starting with TYPO3 v12 - by hitting :kbd:`Shift` twice in a
+row.
+
+..  figure:: /Images/ManualScreenshots/Help/BackendSearch.png
+    :alt: TThe backend search modal with some search results.
+    :class: with-border
+
+    The backend search modal with some search results.
 
 .. toctree::
    :maxdepth: 5
