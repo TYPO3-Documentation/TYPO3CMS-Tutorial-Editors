@@ -49,10 +49,10 @@ Help section, then select the :guilabel:`TYPO3 Online Documentation` module.
 Backend search
 ==============
 
-The backend search is useful in searching for a string across different
-records. This can help you finding your way in the backend.
+The backend search tool accepts text and searches against
+various types of records in the backend.
 
-The search can be opened by the magnifying glass in the top right corner of
+The search can be opened by selecting the magnifying glass in the top right corner of
 the toolbar or - starting with TYPO3 v12 - by hitting :kbd:`Shift` twice in a
 row.
 
