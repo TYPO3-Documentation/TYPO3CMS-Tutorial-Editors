@@ -62,3 +62,10 @@ Windows
 
 * :kbd:`F5` = Reload
 * :kbd:`ctrl` + :kbd:`F5` = Reload page and clear browser cache
+
+Opening the backend search modal
+================================
+
+..  versionadded:: 12.0
+
+The modal for the backend search opens on pressing :kbd:`Shift` twice in a row.
