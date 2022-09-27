@@ -1,9 +1,9 @@
 .. include:: /Includes.rst.txt
 .. _using-the-list-module-effectively:
 
-=================================
-Using the list module effectively
-=================================
+=====================
+Using the list module
+=====================
 
 Select the :guilabel:`Web > List` module and browse to the
 "Congratulations" page. You should see the following:

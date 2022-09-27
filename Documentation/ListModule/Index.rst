@@ -19,11 +19,55 @@ For example, a typical page would consist of several content elements that
 contain text and images. By using the list module, you can see every content element
 stored on that page, even if its set to hidden.
 
+.. container:: row m-0 p-0
+
+   .. container:: col-md-6 pl-0 pr-3 py-3 m-0
+
+      .. container:: card px-0 h-100
+
+         .. rst-class:: card-header h3
+
+            .. rubric:: :ref:`Using The List Module<using-the-list-module-effectively>`
+
+         .. container:: card-body
+
+   .. container:: col-md-6 pl-0 pr-3 py-3 m-0
+
+      .. container:: card px-0 h-100
+
+         .. rst-class:: card-header h3
+
+            .. rubric:: :ref:`The Clipboard<clipboard>`
+
+         .. container:: card-body
+
+   .. container:: col-md-6 pl-0 pr-3 py-3 m-0
+
+      .. container:: card px-0 h-100
+
+         .. rst-class:: card-header h3
+
+            .. rubric:: :ref:`Advanced Clipboard Usage<advanced_clipboard_usage>`
+
+         .. container:: card-body
+
+
+   .. container:: col-md-6 pl-0 pr-3 py-3 m-0
+
+      .. container:: card px-0 h-100
+
+         .. rst-class:: card-header h3
+
+            .. rubric:: :ref:`Mass Editing<mass-editing>`
+
+         .. container:: card-body
+
+
 
 .. toctree::
-   :maxdepth: 5
+   :maxdepth: 2
    :titlesonly:
-   :glob:
+   :hidden:
 
    UsingEffectively/Index
    Clipboard/Index
