@@ -40,7 +40,6 @@ The following concepts are of interest:
 
          .. container:: card-body
 
-
    .. container:: col-md-6 pl-0 pr-3 py-3 m-0
 
       .. container:: card px-0 h-100

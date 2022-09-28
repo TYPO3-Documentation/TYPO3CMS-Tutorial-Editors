@@ -2,9 +2,9 @@
 
 .. _login:
 
-=========================
-Logging in to the backend
-=========================
+===================
+Logging in to TYPO3
+===================
 
 With TYPO3, an editor's work is done via the backend and having
 an active backend account is required.

@@ -125,8 +125,6 @@ the `Official Introduction Package <https://extensions.typo3.org/extension/intro
 
             *  :ref:`Caching <cache>`
 
-            *  :ref:`What is a CMS? <cms>`
-
             *  :ref:`Copyright and data privacy <copyright>`
 
             *  :ref:`File abstraction layer (FAL) <fal>`
