@@ -28,7 +28,8 @@ These various options are presented in this chapter.
 
          .. container:: card-body
 
-
+            When an element is hidden, be it a page, a content element or a news item,
+            it will not display in the frontend. You can, however, preview it in the backend.
 
    .. container:: col-md-6 pl-0 pr-3 py-3 m-0
 
@@ -40,7 +41,8 @@ These various options are presented in this chapter.
 
          .. container:: card-body
 
-
+            You can specify a period of time for content to be visible.
+            This might be useful for seasonal announcements or festive periods.
 
 .. toctree::
    :maxdepth: 2
