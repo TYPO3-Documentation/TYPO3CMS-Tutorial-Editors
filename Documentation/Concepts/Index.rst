@@ -20,6 +20,8 @@ The following concepts are of interest:
 
          .. container:: card-body
 
+            A beginners guide to browser caching and managing TYPO3's cache.
+
    .. container:: col-md-6 pl-0 pr-3 py-3 m-0
 
       .. container:: card px-0 h-100
@@ -29,6 +31,8 @@ The following concepts are of interest:
             .. rubric:: :ref:`File Abstraction Layer<fal>`
 
          .. container:: card-body
+
+            Information about TYPO3's File Abstraction Layer (FAL) and how editors can modify meta data for individual files.
 
    .. container:: col-md-6 pl-0 pr-3 py-3 m-0
 
@@ -40,6 +44,8 @@ The following concepts are of interest:
 
          .. container:: card-body
 
+            In an introduction to writing accessible content with links to third party resources.
+
    .. container:: col-md-6 pl-0 pr-3 py-3 m-0
 
       .. container:: card px-0 h-100
@@ -49,6 +55,8 @@ The following concepts are of interest:
             .. rubric:: :ref:`Copyright<copyright>`
 
          .. container:: card-body
+
+            Information on copyright and data privacy.
 
 
 .. toctree::
