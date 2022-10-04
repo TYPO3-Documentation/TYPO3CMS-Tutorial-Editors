@@ -1,11 +1,11 @@
 .. include:: /Includes.rst.txt
 
-==========================
-TYPO3 Tutorial for Editors
-==========================
+===================
+TYPO3 Editors Guide
+===================
 
-Once you have installed TYPO3 using our :doc:`Getting Started Guide <t3start:Index>`;
-the next logical step is to log in to the backend of the CMS and start adding pages and create
+Once you have installed TYPO3 using the :doc:`Getting Started Guide <t3start:Index>`;
+the next step is to log in to the backend of the CMS and start adding pages and create
 some content. In the TYPO3 world we often call users who carry out these tasks "Editors".
 
 This guide contains detailed information about all of the common tasks an Editor
@@ -29,7 +29,7 @@ the `Official Introduction Package <https://extensions.typo3.org/extension/intro
 
          .. rst-class:: card-header h3
 
-            .. rubric:: Getting Started
+            .. rubric:: :ref:`Getting Started`
 
          .. container:: card-body
 
@@ -45,7 +45,7 @@ the `Official Introduction Package <https://extensions.typo3.org/extension/intro
 
          .. rst-class:: card-header h3
 
-            .. rubric:: Working With The Page Tree
+            .. rubric:: :ref:`Working With The Page Tree<pages>`
 
          .. container:: card-body
 
@@ -63,7 +63,7 @@ the `Official Introduction Package <https://extensions.typo3.org/extension/intro
 
          .. rst-class:: card-header h3
 
-            .. rubric:: Creating & Managing Content
+            .. rubric:: :ref:`Creating & Managing Content<content-elements>`
 
          .. container:: card-body
 
@@ -81,7 +81,7 @@ the `Official Introduction Package <https://extensions.typo3.org/extension/intro
 
          .. rst-class:: card-header h3
 
-            .. rubric:: Record Management
+            .. rubric:: :ref:`Record Management<list-module>`
 
          .. container:: card-body
 
@@ -117,7 +117,7 @@ the `Official Introduction Package <https://extensions.typo3.org/extension/intro
 
          .. rst-class:: card-header h3
 
-            .. rubric:: Concepts
+            .. rubric:: :ref:`Concepts<>`
 
          .. container:: card-body
 
@@ -139,9 +139,9 @@ the `Official Introduction Package <https://extensions.typo3.org/extension/intro
    ContentElements/Index
    ListModule/Index
    FileModule/Index
-   DeepLinking/Index
-   AccessControl/Index
    Languages/Index
+   AccessControl/Index
+   DeepLinking/Index
    HelpInside/Index
    Concepts/Index
    About

@@ -48,7 +48,7 @@ Pages
          .. container:: card-body
 
             This chapter contains information on how pages can be moved, copied and
-            deleted in the page tree.
+            deleted in the page tree as well as showing you how to use the filter tool.
 
    .. container:: col-md-6 pl-0 pr-3 py-3 m-0
 
