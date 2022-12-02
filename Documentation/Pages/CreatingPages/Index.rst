@@ -17,7 +17,7 @@ an existing page and using the contextual menu.
 
 To start adding pages:
 
-* Select the :guilabel:`Web` module in the backend.
+* Select the :guilabel:`Web > Page` module in the backend.
 * Expand the page tree so that all of its subpages are visible (optional).
 
 
