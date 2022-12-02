@@ -44,7 +44,7 @@ The following concepts are of interest:
 
          .. container:: card-body
 
-            In an introduction to writing accessible content with links to third party resources.
+            An introduction to writing accessible content with links to third party resources.
 
    .. container:: col-md-6 pl-0 pr-3 py-3 m-0
 
