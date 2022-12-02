@@ -46,7 +46,7 @@ the page tree.
       :class: with-border
 
 New pages are disabled by default. To enable a newly created page, right-click on the page
-and select `Enable`. You can also enable a page from the :guilabel:`Access` tab in page properties.
+and select :guilabel:`Enable`. You can also enable a page from the :guilabel:`Access` tab in page properties.
 
 
 .. _pages-creating-context:
