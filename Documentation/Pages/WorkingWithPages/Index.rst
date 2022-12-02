@@ -7,6 +7,10 @@
 Working with pages
 ==================
 
+..  youtube:: 1NKE7Pev-D8
+
+------------
+
 You can manage pages directly in the page tree.
 
 .. _Move-Pages:

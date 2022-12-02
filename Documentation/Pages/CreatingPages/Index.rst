@@ -7,6 +7,10 @@
 Creating Pages
 ==============
 
+..  youtube:: 7SJh4IQRrj4
+
+------------
+
 There are two ways to add a new page to your site. It can be done either by dragging the new page
 icon to the desired location in the page tree or by right-clicking on
 an existing page and using the contextual menu.
@@ -15,6 +19,7 @@ To start adding pages:
 
 * Select the :guilabel:`Web` module in the backend.
 * Expand the page tree so that all of its subpages are visible (optional).
+
 
 .. _pages-creating-tree:
 
