@@ -24,41 +24,56 @@ Editing text in the Rich Text Editor (RTE)
 ==========================================
 
 Below is a list of common keyboard commands that can be used when editing
-text in TYPO3's RTE.
+text in TYPO3's :ref:`RTE <rte>`.
 
-macOS
------
+..  tabs::
 
-* :kbd:`cmd (⌘)` + :kbd:`a` = Select all text
-* :kbd:`cmd (⌘)` + :kbd:`c` = Copy
-* :kbd:`cmd (⌘)` + :kbd:`v` = Paste
-* :kbd:`cmd (⌘)` + :kbd:`x` = Cut
-* :kbd:`cmd (⌘)` + :kbd:`z` = Undo
-* :kbd:`cmd (⌘)` + :kbd:`i` = Italic
-* :kbd:`cmd (⌘)` + :kbd:`b` = Bold
+    ..  group-tab:: Windows / Linux
 
-Windows
--------
+        * :kbd:`ctrl` + :kbd:`a` = Select all text
+        * :kbd:`ctrl` + :kbd:`c` = Copy
+        * :kbd:`ctrl` + :kbd:`v` = Paste
+        * :kbd:`ctrl` + :kbd:`x` = Cut
+        * :kbd:`ctrl` + :kbd:`z` = Undo
+        * :kbd:`ctrl` + :kbd:`i` = Italic
+        * :kbd:`ctrl` + :kbd:`b` = Bold
 
-* :kbd:`ctrl` + :kbd:`a` = Select all text
-* :kbd:`ctrl` + :kbd:`c` = Copy
-* :kbd:`ctrl` + :kbd:`v` = Paste
-* :kbd:`ctrl` + :kbd:`x` = Cut
-* :kbd:`ctrl` + :kbd:`z` = Undo
-* :kbd:`ctrl` + :kbd:`i` = Italic
-* :kbd:`ctrl` + :kbd:`b` = Bold
+    ..  group-tab:: macOs
+
+        * :kbd:`cmd (⌘)` + :kbd:`a` = Select all text
+        * :kbd:`cmd (⌘)` + :kbd:`c` = Copy
+        * :kbd:`cmd (⌘)` + :kbd:`v` = Paste
+        * :kbd:`cmd (⌘)` + :kbd:`x` = Cut
+        * :kbd:`cmd (⌘)` + :kbd:`z` = Undo
+        * :kbd:`cmd (⌘)` + :kbd:`i` = Italic
+        * :kbd:`cmd (⌘)` + :kbd:`b` = Bold
 
 Reloading pages and clearing browser cache
 ==========================================
 
-macOS
-------
+..  tabs::
 
-* :kbd:`cmd (⌘)` + :kbd:`r` = Reload page
-* :kbd:`cmd (⌘)` + :kbd:`option (⌥)` + :kbd:`r` = Reload page and clear browser cache
+    ..  group-tab:: Windows / Linux
 
-Windows
--------
+        * :kbd:`F5` = Reload
+        * :kbd:`ctrl` + :kbd:`F5` = Reload page and clear browser cache
 
-* :kbd:`F5` = Reload
-* :kbd:`ctrl` + :kbd:`F5` = Reload page and clear browser cache
+    ..  group-tab:: macOS
+
+        * :kbd:`cmd (⌘)` + :kbd:`r` = Reload page
+        * :kbd:`cmd (⌘)` + :kbd:`option (⌥)` + :kbd:`r` = Reload page and clear browser cache
+
+Opening the backend search modal
+================================
+
+..  versionadded:: 12.0
+
+..  tabs::
+
+    ..  group-tab:: Windows / Linux
+
+        * :kbd:`ctrl` + :kbd:`k`
+
+    ..  group-tab:: macOS
+
+        * :kbd:`cmd (⌘)` + :kbd:`k`
