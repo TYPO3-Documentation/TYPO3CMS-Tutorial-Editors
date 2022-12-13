@@ -41,8 +41,8 @@ These various options are presented in this chapter.
 
          .. container:: card-body
 
-            You can specify a period of time for content to be visible.
-            This might be useful for seasonal announcements or festive periods.
+            Find out how to configure content and pages to only be visible
+            to frontend users who have logged in to a restricted area.
 
 .. toctree::
    :maxdepth: 2
