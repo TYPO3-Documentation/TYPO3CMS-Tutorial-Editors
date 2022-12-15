@@ -7,6 +7,10 @@
 Creating content
 ================
 
+..  youtube:: RuQ4CikixdY
+
+------------
+
 In the :guilabel:`Web > Page` module, on any page, click the :guilabel:`+
 Content` icon where you want to insert content.
 

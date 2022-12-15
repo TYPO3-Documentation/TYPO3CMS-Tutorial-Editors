@@ -12,9 +12,9 @@ Copyright
 Whenever you use files not created by yourself, for example images or videos,
 the copyright **must** be considered.
 
-.. attention::
-   Using a file or even a text without proper copyright lead to high fines.
-   If in doubt, do not use a content without consulting legal advice first.
+
+Using a file or even a text without proper copyright lead to high fines.
+If in doubt, do not use a content without consulting legal advice first.
 
 Even images that you created yourself might infringe someones copyright. For
 example you may not take pictures of certain artwork or draw a picture of
@@ -38,7 +38,5 @@ address, IP address, nick names, pictures, car license plates etc.
 Wikipedia has a good article on `Personal Data <https://en.wikipedia.org/wiki/Personal_data>`__
 which explains the situation in different countries.
 
-.. attention::
-   Publishing personal information without consent might lead to high fines in
-   some countries. If in doubt, do not use any personal information
-   without consulting legal advice first.
+Publishing personal information without consent might lead to high fines in
+some countries. If in doubt, do not use any personal information without consulting legal advice first.

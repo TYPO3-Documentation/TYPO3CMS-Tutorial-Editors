@@ -44,6 +44,21 @@ Help section, then select the :guilabel:`TYPO3 Online Documentation` module.
 
    The :guilabel:`TYPO3 Online Documentation` in the :guilabel:`Help` menu
 
+
+Keyboard commands
+=================
+
+Tooltips
+========
+
+Hover your mouse pointer over buttons and icons to display a short description of the function.
+
+.. figure:: /Images/ManualScreenshots/Help/Tooltip.png
+   :alt: Tooltip for the Forms module
+   :class: with-border
+
+   See the Tooltip help for the Forms module
+
 .. _backend-search:
 
 Backend search

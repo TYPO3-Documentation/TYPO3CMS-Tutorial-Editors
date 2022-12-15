@@ -7,6 +7,10 @@
 Editing content
 ===============
 
+..  youtube:: JR3sOeRImTo
+
+------------
+
 On a page, click the pencil icon for the content element you want to edit,
 then edit the text and make other changes as required.
 

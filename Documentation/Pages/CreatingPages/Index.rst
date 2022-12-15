@@ -4,39 +4,49 @@
 .. _pages-creating:
 
 ==============
-Create pages
+Creating Pages
 ==============
 
-There are two main ways to add a new page to your site.
+..  youtube:: 7SJh4IQRrj4
 
-First make sure that you are in a :guilabel:`Web` module so that you see the page tree.
+------------
+
+There are two ways to add a new page to your site. It can be done either by dragging the new page
+icon to the desired location in the page tree or by right-clicking on
+an existing page and using the contextual menu.
+
+To start adding pages:
+
+* Select the :guilabel:`Web > Page` module in the backend.
+* Expand the page tree so that all of its subpages are visible (optional).
+
 
 .. _pages-creating-tree:
 
 Adding pages within the page tree
 =================================
 
-You can create a new page by dragging and dropping a page type from the top of
+You can create a new page by dragging and dropping a page from the top of
 the page tree.
 
 .. figure:: ../../Images/ManualScreenshots/PageTree/PageCreateDragDrop.png
    :alt: Creating a page using drag and drop
    :class: with-border
 
-#. Choose a page type by selecting one of the icons (here a standard page,
-   see :ref:`Page types <pages-types>`).
+#. Select the type of page you want to add by choosing from one of the icons. In this example
+   we are creating a standard page.
 
-#. Drop the icon either between two existing pages (to create a sibling)
-   or on an existing page (to create a child).
+#. Drop the icon either between two existing pages to create a sibling
+   or on top of an existing page to create a child.
 
-#. Type a title for the new page.
+#. Give the new page a title.
 
    .. figure:: ../../Images/ManualScreenshots/PageTree/PageCreateTitle.png
       :alt: Inserting a page title
       :class: with-border
 
-New pages are disabled by default. Use the right-click context menu or the
-page properties to enable a page.
+New pages are disabled by default. To enable a newly created page, right-click on the page
+and select :guilabel:`Enable`. You can also enable a page from the :guilabel:`Access` tab in page properties.
 
 
 .. _pages-creating-context:
@@ -51,20 +61,19 @@ Adding pages with the context menu
       :alt: Creating pages with context menu
       :class: with-border
 
-   The :guilabel:`New record` screen displays.
+   The :guilabel:`New record` screen will appear.
 
-#. Click an arrow in the tree to select the position where you want the new
-   page to be created.
+#. Decide where you want your new page to appear in the page tree by selecting one of the black arrows.
 
    .. figure:: ../../Images/ManualScreenshots/Page/PageCreateWizard.png
       :alt: Selecting a position for the new page using the wizard
       :class: with-border
 
-   The :guilabel:`Create new Page` screen displays.
+   The :guilabel:`Create new Page` screen will appear.
 
-#. Type a title for the page and you may also like to go to the :guilabel:`Access` tab
-   and enable the page to make it visible on the frontend.
+#. Provide a title for the page. You can also go to the :guilabel:`Access` tab
+   and enable the page to make it visible in the frontend.
 
    .. include:: /Images/AutomaticScreenshots/PageProperties/Enable.rst.txt
 
-More page properties are explained in the :ref:`Page properties <pages-properties>` section.
+Visit the :ref:`page types <pages-types>` chapter for more information on the different types of pages that can be created.
