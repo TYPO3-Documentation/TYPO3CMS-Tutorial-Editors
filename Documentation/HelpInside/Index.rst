@@ -40,8 +40,22 @@ Context sensitive help
 
       Context help window for the editing interface
 
-TYPO3 manual
-============
+
+Keyboard commands
+=================
+
+Tooltips
+========
+
+Hover your mouse pointer over buttons and icons to display a short description of the function.
+
+.. figure:: /Images/ManualScreenshots/Help/Tooltip.png
+   :alt: Tooltip for the Forms module
+   :class: with-border
+
+   See the Tooltip help for the Forms module
+
+.. _backend-search:
 
 The TYPO3 manual is a module that provides more extensive descriptions of features and functions in the backend.
 

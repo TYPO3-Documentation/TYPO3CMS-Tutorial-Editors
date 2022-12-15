@@ -6,6 +6,10 @@
 Page types
 ==========
 
+..  youtube:: 9J_URJXkk-4
+
+------------
+
 By default, TYPO3 CMS includes the following page types.
 
 Page
