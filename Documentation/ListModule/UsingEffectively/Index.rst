@@ -8,7 +8,7 @@ Introduction
 The :guilabel:`Web > List` module allows you to browse through
 each page or folder within your site and view all of the records that
 are stored within it. The :guilabel:`List` module also gives you the ability to
-create and manage records that don't have a dedicated Module.
+create and manage records that don't have a dedicated module.
 
 Sub pages, content elements and news stories are examples of the different
 kinds of records that can be stored on any given page.
