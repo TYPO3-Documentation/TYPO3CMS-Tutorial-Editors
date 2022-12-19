@@ -5,7 +5,7 @@
 Introduction
 ============
 
-The list module allows you to browse through
+The :guilabel:`Web > List` module allows you to browse through
 each page or folder within your site and view all of the records that
 are stored within it. The List Module also gives you the ability to
 create and manage records that don't have a dedicated Module.
