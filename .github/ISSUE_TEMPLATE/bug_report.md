@@ -1,12 +1,12 @@
 ---
 name: 🐛 Bug Report
-about: If something isn't documented correctly 🤔
+about: If something isn't documented correctly 🤔 Preferred is to submit a suggestion via pull request ("Edit on GitHub")
 
 ---
 
 ### Current behavior
 
-A clear and concise description of what the bug is.
+A clear and concise description of what the problem is.
 
 ### Expected behavior/output
 
@@ -16,7 +16,7 @@ A clear and concise description of what you expected to happen.
 
 One or more links to the documentation page, preferably to the according
 section. If applicable, link also to other resources which might be helpful
-to process your bug report.
+to process your report.
 
 ### TYPO3 versions
 
@@ -24,8 +24,8 @@ to process your bug report.
 
 ### Possible Solution
 
-Only if you have suggestions on a fix for the bug.
+Only if you have concrete suggestions to solve the problem.
 
 ### Additional context
 
-Add any other context or screenshots about the feature request here.
+Add any other context or screenshots about the request here.
