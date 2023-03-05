@@ -22,4 +22,4 @@ Provide links to resources which might help to implement this feature.
 
 ### Additional context
 
-Add any other context or screenshots about the feature request here.
+Add any other context or screenshots about the feature proposal here.

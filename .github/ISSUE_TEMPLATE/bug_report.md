@@ -16,7 +16,7 @@ A clear and concise description of what you expected to happen.
 
 One or more links to the documentation page, preferably to the according
 section. If applicable, link also to other resources which might be helpful
-to process your report.
+to process your proposal.
 
 ### TYPO3 versions
 
@@ -28,4 +28,4 @@ Only if you have concrete suggestions to solve the problem.
 
 ### Additional context
 
-Add any other context or screenshots about the request here.
+Add any other context or screenshots about your proposal here.
