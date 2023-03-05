@@ -1,8 +1,14 @@
 ---
 name: 🐛 Bug Report
-about: If something isn't documented correctly 🤔 Preferred is to submit a suggestion via pull request ("Edit on GitHub")
+about: If something isn't documented correctly 🤔
 
 ---
+
+Preferred is to submit a suggestion via pull request: For small changes the
+"Edit on GitHub" button on the top of every documentation
+page can be used. You can find more information about contributing to the
+documentation on the page:
+https://docs.typo3.org/m/typo3/docs-how-to-document/main/en-us/WritingDocsOfficial/Index.html
 
 ### Current behavior
 
