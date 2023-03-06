@@ -1,6 +1,6 @@
 ---
-name: 🐛 Bug Report
-about: If something isn't documented correctly 🤔
+name: 🐛 Issue Report
+about: If something is missing or not documented correctly 🤔
 
 ---
 
@@ -16,13 +16,13 @@ A clear and concise description of what the problem is.
 
 ### Expected behavior/output
 
-A clear and concise description of what you expected to happen.
+A clear and concise description of what you expect to happen.
 
 ### Links
 
-One or more links to the documentation page, preferably to the according
-section. If applicable, link also to other resources which might be helpful
-to process your proposal.
+One or more links to the documentation page (if available), preferably to the
+according section. If applicable, link also to other resources which might be
+helpful to process your proposal.
 
 ### TYPO3 versions
 
@@ -30,7 +30,7 @@ to process your proposal.
 
 ### Possible Solution
 
-Only if you have concrete suggestions to solve the problem.
+Only if you have concrete suggestions to solve the issue.
 
 ### Additional context
 
