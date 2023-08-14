@@ -55,9 +55,9 @@ Folder
     other than pages or content elements. It will not display in the frontend.
 
 Recycler
-    This is similar to the :guilabel:`Folder` type, but indicates that the
-    content is meant for removal. There is no clean-up function, it is just a
-    visual indicator.
+    ..  versionchanged:: 13.0
+        The recycler type was removed. As a substitution use the
+        :doc:`recycler module <ext_recycler:Index>`.
 
 Menu separator
     This page type creates a visual separation in the page tree. You can use
