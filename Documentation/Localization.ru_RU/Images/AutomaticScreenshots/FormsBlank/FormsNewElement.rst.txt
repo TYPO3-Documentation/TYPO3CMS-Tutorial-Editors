@@ -1,0 +1,6 @@
+.. Automatic screenshot: Remove this line if you want to manually change this file
+
+.. figure:: /Images/AutomaticScreenshots/FormsBlank/FormsNewElement.png
+   :class: with-shadow
+
+   Create new element in form

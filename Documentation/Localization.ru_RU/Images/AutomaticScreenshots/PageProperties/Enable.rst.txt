@@ -1,0 +1,5 @@
+.. Automatic screenshot: Remove this line if you want to manually change this file
+
+.. figure:: /Images/AutomaticScreenshots/PageProperties/Enable.png
+   :alt: Making the new page publicly visible
+   :class: with-shadow

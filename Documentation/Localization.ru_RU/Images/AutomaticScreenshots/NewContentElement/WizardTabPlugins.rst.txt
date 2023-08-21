@@ -1,0 +1,5 @@
+.. Automatic screenshot: Remove this line if you want to manually change this file
+
+.. figure:: /Images/AutomaticScreenshots/NewContentElement/WizardTabPlugins.png
+   :alt: The 'Plugins' tab of the new content element window
+   :class: with-shadow
