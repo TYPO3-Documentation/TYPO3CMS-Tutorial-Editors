@@ -1,0 +1,7 @@
+.. Automatic screenshot: Remove this line if you want to manually change this file
+
+.. figure:: /Images/AutomaticScreenshots/PageProperties/Categories.png
+   :alt: The Categories tab of the page properties
+   :class: with-shadow
+
+   The **Categories** tab of the page properties

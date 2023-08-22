@@ -1,0 +1,5 @@
+.. Automatic screenshot: Remove this line if you want to manually change this file
+
+.. figure:: /Images/AutomaticScreenshots/Access/AccessNewRecordWizard.png
+   :alt: Select "Usergroup" with the new record wizard
+   :class: with-shadow

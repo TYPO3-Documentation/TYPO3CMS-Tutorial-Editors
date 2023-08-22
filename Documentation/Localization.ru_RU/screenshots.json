@@ -1,0 +1,1339 @@
+{
+    "suites": {
+        "Core": {
+            "screenshots": {
+                "_default": [
+                    {
+                        "action": "resizeWindow",
+                        "width": 1024,
+                        "height": 768
+                    },
+                    {
+                        "action": "setScreenshotsImagePath",
+                        "path": "Images/AutomaticScreenshots"
+                    },
+                    {
+                        "action": "setScreenshotsRstPath",
+                        "path": "Images/AutomaticScreenshots"
+                    },
+                    {
+                        "action": "setCodeSnippetsTargetPath",
+                        "path": "CodeSnippets"
+                    }
+                ]
+            }
+        },
+        "Introduction": {
+            "screenshots": {
+                "_default": [
+                    {
+                        "action": "resizeWindow",
+                        "width": 1024,
+                        "height": 768
+                    }, {
+                        "action": "setScreenshotsImagePath",
+                        "path": "Images/AutomaticScreenshots"
+                    }, {
+                        "action": "setScreenshotsRstPath",
+                        "path": "Images/AutomaticScreenshots"
+                    }, {
+                        "action": "setCodeSnippetsTargetPath",
+                        "path": "CodeSnippets"
+                    }
+                ],
+                "FilelistModule": [
+                    {
+                        "include": "_default"
+                    }, {
+                        "action": "resizeWindow",
+                        "width": 1232,
+                        "height": 600
+                    }, {
+                        "action": "setScreenshotsImagePath",
+                        "path": "Images/AutomaticScreenshots/FilelistModule"
+                    }, {
+                        "action": "setScreenshotsRstPath",
+                        "path": "Images/AutomaticScreenshots/FilelistModule"
+                    },
+                    {
+                        "action": "reloadBackend"
+                    },
+                    {
+                        "action": "scrollModuleMenuTo",
+                        "toSelector": "//a[contains(., 'Filelist')]"
+                    },
+                    {
+                        "action": "click",
+                        "link": "Filelist"
+                    }, {
+                        "action": "drawBox",
+                        "selector": "#file_FilelistList"
+                    }, {
+                        "action": "openFileTreePath",
+                        "path": ["introduction", "images"]
+                    }, {
+                        "action": "switchToContentFrame"
+                    }, {
+                        "action": "waitForText",
+                        "text": "fileadmin/"
+                    }, {
+                        "action": "wait",
+                        "timeout": 1
+                    }, {
+                        "action": "drawBox",
+                        "selector": ".form-switch"
+                    }, {
+                        "action": "makeScreenshotOfWindow",
+                        "fileName": "FilelistModule",
+                        "captionText": "Типовой вид модуля Список файлов / Filelist"
+                    }, {
+                        "action": "clearDrawings"
+                    },
+
+                    {
+                        "action": "drawBox",
+                        "selector": ".t3js-drag-uploader-trigger"
+                    }, {
+                        "action": "click",
+                        "link": "a.t3js-drag-uploader-trigger"
+                    }, {
+                        "action": "waitForText",
+                        "text": "upload files"
+                    }, {
+                        "action": "drawBox",
+                        "selector": ".dropzone"
+                    }, {
+                        "action": "makeScreenshotOfWindow",
+                        "fileName": "FileUpload",
+                        "captionText": "Возможности загрузки в модуле Список файлов / Filelist"
+                    }, {
+                        "action": "clearDrawings"
+                    },
+                    {
+                        "action": "resizeWindow",
+                        "width": 1232,
+                        "height": 780
+                    }, {
+                        "action": "openFileTreePath",
+                        "path": ["introduction", "images", "background"]
+                    }, {
+                        "action": "switchToContentFrame"
+                    }, {
+                        "action": "waitForText",
+                        "text": "background"
+                    }, {
+                        "action": "scrollTo",
+                        "selector": ".form-switch"
+                    }, {
+                        "action": "drawBox",
+                        "selector": ".form-switch"
+                    }, {
+                        "action": "checkOption",
+                        "option": "#checkClipBoard"
+                    }, {
+                        "action": "waitForText",
+                        "text": "single record mode"
+                    }, {
+                        "action": "click",
+                        "link": "Clipboard #1"
+                    }, {
+                        "action": "waitForElement",
+                        "element": "button.t3js-multi-record-selection-check-actions-toggle"
+                    }, {
+                        "action": "click",
+                        "link": "button.t3js-multi-record-selection-check-actions-toggle"
+                    }, {
+                        "action": "waitForElement",
+                        "element": "button[data-multi-record-selection-check-action=\"toggle\"]"
+                    }, {
+                        "action": "click",
+                        "link": "button[data-multi-record-selection-check-action=\"toggle\"]"
+                    }, {
+                        "action": "waitForElement",
+                        "element": "button[data-multi-record-selection-action=\"copyMarked\"]"
+                    }, {
+                        "action": "click",
+                        "link": "button[data-multi-record-selection-action=\"copyMarked\"]"
+                    }, {
+                        "action": "waitForText",
+                        "text": "Remove item"
+                    }, {
+                        "action": "makeScreenshotOfElement",
+                        "fileName": "FileClipboard",
+                        "captionText": "Буфер обмена модуля Список файлов / Filelist"
+                    }, {
+                        "action": "resizeWindow",
+                        "width": 1232,
+                        "height": 500
+                    }, {
+                        "action": "clearDrawings"
+                    }, {
+                        "action": "uncheckOption",
+                        "option": "#checkClipBoard"
+                    }, {
+                        "action": "wait",
+                        "timeout": 1
+                    }, {
+                        "action": "click",
+                        "link": ".filelist-main a.t3js-contextmenutrigger"
+                    }, {
+                        "action": "wait",
+                        "timeout": 1
+                    }, {
+                        "action": "makeScreenshotOfWindow",
+                        "fileName": "ContextMenu",
+                        "captionText": "Контекстное меню в Списке файлов / Filelist"
+                    }
+                ],
+                "ListModule": [
+                    {
+                        "include": "_default"
+                    }, {
+                        "action": "resizeWindow",
+                        "width": 1232,
+                        "height": 400
+                    }, {
+                        "action": "setScreenshotsImagePath",
+                        "path": "Images/AutomaticScreenshots/ListModule"
+                    }, {
+                        "action": "setScreenshotsRstPath",
+                        "path": "Images/AutomaticScreenshots/ListModule"
+                    }, {
+                        "action": "switchToMainFrame"
+                    }, {
+                        "action": "scrollModuleMenuTo",
+                        "toSelector": "//a[contains(., 'List')]"
+                    }, {
+                        "action": "click",
+                        "link": "List"
+                    }, {
+                        "action": "drawBox",
+                        "selector": "#web_list"
+                    }, {
+                        "action": "openPageTreePath",
+                        "path": ["Congratulations"]
+                    }, {
+                        "action": "switchToContentFrame"
+                    }, {
+                        "action": "waitForText",
+                        "text": "Congratulations",
+                        "selector": "h1"
+                    }, {
+                        "action": "drawBadge",
+                        "selector": ".module-docheader-bar-column-left a[title=\"Create new record\"]",
+                        "label": "1",
+                        "position": "bottom"
+                    }, {
+                        "action": "drawBadge",
+                        "selector": ".module-docheader-bar-column-left a[title=\"View webpage\"]",
+                        "label": "2",
+                        "position": "bottom"
+                    }, {
+                        "action": "drawBadge",
+                        "selector": ".module-docheader-bar-column-left a[title=\"Edit page properties\"]",
+                        "label": "3",
+                        "position": "bottom"
+                    }, {
+                        "action": "drawBadge",
+                        "selector": ".module-docheader-bar-column-left a[title=\"Toggle search toolbar\"]",
+                        "label": "4",
+                        "position": "bottom"
+                    }, {
+                        "action": "drawBadge",
+                        "selector": ".module-docheader-bar-column-right a[title=\"Clear cache for this page\"]",
+                        "label": "5",
+                        "position": "bottom"
+                    }, {
+                        "action": "drawBadge",
+                        "selector": ".module-docheader-bar-column-right a[title=\"Reload\"]",
+                        "label": "6",
+                        "position": "bottom"
+                    }, {
+                        "action": "drawBadge",
+                        "selector": ".module-docheader-bar-column-right a[title=\"Create internal note for this page\"]",
+                        "label": "7",
+                        "position": "bottom"
+                    }, {
+                        "action": "drawBadge",
+                        "selector": ".module-docheader-bar-column-right #dropdownShortcutMenu",
+                        "label": "8",
+                        "position": "bottom"
+                    }, {
+                        "action": "drawBadge",
+                        "selector": ".module-docheader-bar-column-right .help-link",
+                        "label": "9",
+                        "position": "bottom"
+                    }, {
+                        "action": "makeScreenshotOfWindow",
+                        "fileName": "ListModule",
+                        "captionText": "Типичный внешний вид модуля Список / List"
+                    }, {
+                        "action": "clearDrawings"
+                    },
+
+                    {
+                        "action": "drawBox",
+                        "selector": ".module-body"
+                    }, {
+                        "action": "drawBox",
+                        "selector": ".t3js-entity:first-child .col-control"
+                    }, {
+                        "action": "drawBadge",
+                        "selector": ".t3js-entity:first-child .col-control",
+                        "label": "Action icons",
+                        "position": "bottom"
+                    }, {
+                        "action": "makeScreenshotOfWindow",
+                        "fileName": "ListModuleContentArea",
+                        "captionText": "Область содержимого модуля Список с пиктограммами действий"
+                    }, {
+                        "action": "clearDrawings"
+                    }, {
+                        "action": "resizeWindow",
+                        "width": 1232,
+                        "height": 780
+                    }, {
+                        "action": "click",
+                        "link": ".t3js-entity:first-child .t3js-contextmenutrigger"
+                    }, {
+                        "action": "wait",
+                        "timeout": 1
+                    }, {
+                        "action": "makeScreenshotOfWindow",
+                        "fileName": "ContextMenu",
+                        "captionText": "Контекстное меню в модуле Список"
+                    }, {
+                        "action": "clearDrawings"
+                    }, {
+                        "action": "switchToMainFrame"
+                    }, {
+                        "action": "openPageTreePath",
+                        "path": ["Congratulations", "404"]
+                    }, {
+                        "action": "switchToContentFrame"
+                    }, {
+                        "action": "waitForText",
+                        "text": "404"
+                    }, {
+                        "action": "resizeWindow",
+                        "width": 1232,
+                        "height": 950
+                    }, {
+                        "action": "click",
+                        "link": "tr.t3js-entity:first-child .dropdown-toggle"
+                    },
+                    {
+                        "action": "drawBox",
+                        "selector": "tr.t3js-entity:first-child a[aria-label=\"Copy\"]"
+                    }, {
+                        "action": "drawBadge",
+                        "selector": "tr.t3js-entity:first-child a[aria-label=\"Copy\"]",
+                        "label": "Copy to clipboard",
+                        "position": "bottom"
+                    }, {
+                        "action": "makeScreenshotOfWindow",
+                        "fileName": "CopyToClipboard"
+                    }, {
+                        "action": "click",
+                        "link": "tr.t3js-entity:first-child a[aria-label=\"Copy\"]"
+                    }, {
+                        "action": "waitForText",
+                        "text": "Remove item"
+                    }, {
+                        "action": "drawBox",
+                        "selector": ".clipboard-panel"
+                    }, {
+                        "action": "makeScreenshotOfWindow",
+                        "fileName": "SimpleClipboard"
+                    }, {
+                        "action": "click",
+                        "link": "Clipboard #1"
+                    }, {
+                        "action": "waitForElement",
+                        "element": "label[for=\"checkShowClipBoard\"]"
+                    }, {
+                        "action": "drawBadge",
+                        "selector": "label[for=\"checkShowClipBoard\"]",
+                        "label": "1",
+                        "position": "right"
+                    }, {
+                        "action": "drawBox",
+                        "selector": "//typo3-backend-clipboard-panel//tr[contains(., 'Clipboard #1')]"
+                    }, {
+                        "action": "drawBadge",
+                        "selector": "//typo3-backend-clipboard-panel//tr[contains(., 'Clipboard #1')]",
+                        "label": "2",
+                        "position": "bottom"
+                    }, {
+                        "action": "drawBadge",
+                        "selector": ".t3js-multi-record-selection-check-actions-toggle",
+                        "label": "3",
+                        "position": "top"
+                    }, {
+                        "action": "click",
+                        "link": ".t3js-multi-record-selection-check-actions-toggle"
+                    }, {
+                        "action": "waitForText",
+                        "text": "Check all"
+                    }, {
+                        "action": "clearDrawings"
+                    }, {
+                        "action": "makeScreenshotOfElement",
+                        "selector": ".module-body",
+                        "fileName": "ActivateClipboardPad"
+                    }, {
+                        "action": "click",
+                        "link": "Check all"
+                    }, {
+                        "action": "waitForText",
+                        "text": "Selection"
+                    }, {
+                        "action": "resizeWindow",
+                        "width": 1232,
+                        "height": 400
+                    }, {
+                        "action": "makeScreenshotOfElement",
+                        "selector": ".module",
+                        "fileName": "EditSelection"
+                    }, {
+                        "action": "resizeWindow",
+                        "width": 1232,
+                        "height": 950
+                    }, {
+                        "action": "clearDrawings"
+                    }, {
+                        "action": "click",
+                        "link": "button[data-multi-record-selection-action=\"copyMarked\"]"
+                    }, {
+                        "action": "waitForText",
+                        "text": "Clipboard #1"
+                    }, {
+                        "action": "makeScreenshotOfElement",
+                        "selector": ".clipboard-panel",
+                        "fileName": "ClipboardWithMultipleItems",
+                        "captionText": "Сохранение нескольких элементов в буфере обмена"
+                    }, {
+                        "action": "switchToMainFrame"
+                    }, {
+                        "action": "openPageTreePath",
+                        "path": ["Congratulations", "Shared Content"]
+                    }, {
+                        "action": "switchToContentFrame"
+                    }, {
+                        "action": "waitForText",
+                        "text": "Shared Content"
+                    }, {
+                        "action": "drawBox",
+                        "selector": "a[title=\"Paste in clipboard content\"]"
+                    }, {
+                        "action": "resizeWindow",
+                        "width": 1232,
+                        "height": 400
+                    }, {
+                        "action": "makeScreenshotOfElement",
+                        "selector": ".module",
+                        "fileName": "PasteClipboardContent",
+                        "captionText": "Значок \"Вставить в\" в верхней части списка"
+                    }, {
+                        "action": "resizeWindow",
+                        "width": 1232,
+                        "height": 950
+                    }, {
+                        "action": "click",
+                        "link": "a[title=\"Paste in clipboard content\"]"
+                    }, {
+                        "action": "waitForModalDialogInMainFrame"
+                    }, {
+                        "action": "resizeWindow",
+                        "width": 1024,
+                        "height": 480
+                    }, {
+                        "action": "makeScreenshotOfWindow",
+                        "fileName": "ClipboardWarning",
+                        "captionText": "Диалог подтверждения действия вставки"
+                    }, {
+                        "action": "clickButtonInModalDialog",
+                        "buttonLink": "OK"
+                    }, {
+                        "action": "resizeWindow",
+                        "width": 1232,
+                        "height": 950
+                    }, {
+                        "action": "makeScreenshotOfWindow",
+                        "fileName": "MovedContentEmptyClipboard",
+                        "captionText": "Перемещение записей и пустой буфер обмена"
+                    }
+                ],
+                "ListModuleMassEdit": [
+                    {
+                        "include": "_default"
+                    }, {
+                        "action": "resizeWindow",
+                        "width": 1232,
+                        "height": 400
+                    }, {
+                        "action": "setScreenshotsImagePath",
+                        "path": "Images/AutomaticScreenshots/ListModule/MassEdit"
+                    }, {
+                        "action": "setScreenshotsRstPath",
+                        "path": "Images/AutomaticScreenshots/ListModule/MassEdit"
+                    }, {
+                        "action": "switchToMainFrame"
+                    }, {
+                        "action": "scrollModuleMenuTo",
+                        "toSelector": "//a[contains(., 'List')]"
+                    }, {
+                        "action": "click",
+                        "link": "List"
+                    }, {
+                        "action": "openPageTreePath",
+                        "path": ["Congratulations", "Customize"]
+                    }, {
+                        "action": "switchToContentFrame"
+                    }, {
+                        "action": "waitForText",
+                        "text": "Customize"
+                    }, {
+                        "action": "drawBox",
+                        "selector": "button[title=\"Show columns for Page Content\"]"
+                    }, {
+                        "action": "makeScreenshotOfWindow",
+                        "fileName": "ShowColumnsButton",
+                        "captionText": "Кнопка Показать столбцы"
+                    }, {
+                        "action": "resizeWindow",
+                        "width": 1024,
+                        "height": 680
+                    }, {
+                        "action": "click",
+                        "link": "button[title=\"Show columns for Page Content\"]"
+                    }, {
+                        "action": "waitForModalDialogInMainFrame"
+                    }, {
+                        "action": "scrollModalDialogBodyTo",
+                        "toSelector": "label[for=\"select-column-tt_content-CType\"]"
+                    }, {
+                        "action": "click",
+                        "link": "label[for=\"select-column-tt_content-CType\"]"
+                    }, {
+                        "action": "wait",
+                        "timeout": 1
+                    }, {
+                        "action": "makeScreenshotOfWindow",
+                        "fileName": "ShowColumnsModal",
+                        "captionText": "Выберите поля, которые будут отображаться, и нажмите кнопку \"Обновить\""
+                    }, {
+                        "action": "clickButtonInModalDialog",
+                        "buttonLink": "Update"
+                    },
+
+                    {
+                        "action": "resizeWindow",
+                        "width": 1500,
+                        "height": 600
+                    }, {
+                        "action": "switchToContentFrame"
+                    }, {
+                        "action": "drawBox",
+                        "selector": ".recordlist-heading .col.ms-2 a"
+                    }, {
+                        "action": "makeScreenshotOfElement",
+                        "selector": ".module-body",
+                        "fileName": "RecordListWithAdditionalFields",
+                        "captionText": "Щелкните на заголовке, чтобы включить режим массового редактирования"
+                    }, {
+                        "action": "click",
+                        "link": ".recordlist-heading .col.ms-2 a"
+                    }, {
+                        "action": "waitForElement",
+                        "element": "button.t3js-record-edit-multiple"
+                    }, {
+                        "action": "drawBox",
+                        "selector": "button.t3js-record-edit-multiple"
+                    }, {
+                        "action": "makeScreenshotOfElement",
+                        "selector": ".module",
+                        "fileName": "MassEditingEnabled",
+                        "captionText": "Щелкните на одной из этих кнопок для массового редактирования соответствующих столбцов"
+                    }, {
+                        "action": "clearDrawings"
+                    }, {
+                        "action": "drawBox",
+                        "selector": "button[title=\"Edit the 'Header' field of the listed records\"]"
+                    }, {
+                        "action": "makeScreenshotOfElement",
+                        "selector": ".module-body",
+                        "fileName": "MassEditHeaderButton",
+                        "captionText": "Нажмите кнопку рядом с колонкой Заголовок для массового редактирования полей"
+                    }, {
+                        "action": "click",
+                        "link": "button[title=\"Edit the 'Header' field of the listed records\"]"
+                    }, {
+                        "action": "waitForText",
+                        "text": "Edit Page Content"
+                    }, {
+                        "action": "makeScreenshotOfElement",
+                        "selector": ".module",
+                        "fileName": "MassEditHeader",
+                        "captionText": "Изменения применяются ко всем полям"
+                    }, {
+                        "action": "click",
+                        "link": "Close"
+                    }, {
+                        "action": "waitForText",
+                        "text": "Show clipboard"
+                    }, {
+                        "action": "drawBox",
+                        "selector": "button[title=\"Edit all shown fields of the listed records\"]"
+                    }, {
+                        "action": "makeScreenshotOfElement",
+                        "selector": ".module-body",
+                        "fileName": "MassEditMultipleFieldsButton",
+                        "captionText": "Нажмите кнопку рядом с колонкой Заголовок для массового редактирования полей"
+                    }, {
+                        "action": "click",
+                        "link": "button[title=\"Edit all shown fields of the listed records\"]"
+                    }, {
+                        "action": "waitForText",
+                        "text": "Edit Page Content"
+                    }, {
+                        "action": "makeScreenshotOfElement",
+                        "selector": ".module",
+                        "fileName": "MassMultipleFields",
+                        "captionText": "Нажмите кнопку рядом с колонкой Заголовок для массового редактирования полей"
+                    }, {
+                        "action": "click",
+                        "link": "Close"
+                    }, {
+                        "action": "waitForText",
+                        "text": "Show clipboard"
+                    },
+
+                    {
+                        "action": "resizeWindow",
+                        "width": 1500,
+                        "height": 1500
+                    }, {
+                        "action": "click",
+                        "link": "Clipboard #1"
+                    }, {
+                        "action": "waitForText",
+                        "text": "Copy elements"
+                    }, {
+                        "action": "scrollModuleBodyToTop"
+                    }, {
+                        "action": "click",
+                        "link": "tr.t3js-entity:nth-child(2) td.col-selector .t3js-multi-record-selection-check"
+                    }, {
+                        "action": "click",
+                        "link": "tr.t3js-entity:nth-child(3) td.col-selector .t3js-multi-record-selection-check"
+                    }, {
+                        "action": "drawBox",
+                        "selector": "button[title=\"Edit all shown fields of the listed records\"]"
+                    }, {
+                        "action": "makeScreenshotOfElement",
+                        "selector": ".module",
+                        "fileName": "SelectiveEditing",
+                        "captionText": "Выбор записей для редактирования"
+                    }
+                ],
+                "InfoModule": [
+                    {
+                        "include": "_default"
+                    }, {
+                        "action": "resizeWindow",
+                        "width": 1232,
+                        "height": 780
+                    }, {
+                        "action": "setScreenshotsImagePath",
+                        "path": "Images/AutomaticScreenshots/Modules"
+                    }, {
+                        "action": "setScreenshotsRstPath",
+                        "path": "Images/AutomaticScreenshots/Modules"
+                    }, {
+                        "action": "switchToMainFrame"
+                    }, {
+                        "action": "scrollModuleMenuTo",
+                        "toSelector": "//a[contains(., 'Info')]"
+                    }, {
+                        "action": "click",
+                        "link": "Info"
+                    }, {
+                        "action": "drawBox",
+                        "selector": "#web_info"
+                    }, {
+                        "action": "openPageTreePath",
+                        "path": ["Congratulations"]
+                    }, {
+                        "action": "switchToContentFrame"
+                    }, {
+                        "action": "waitForText",
+                        "text": "Congratulations"
+                    }, {
+                        "action": "selectOption",
+                        "select": "select.t3-js-jumpMenuBox",
+                        "option": "Localization Overview"
+                    }, {
+                        "action": "wait",
+                        "timeout": "1"
+                    },
+                    {
+                        "action": "selectOption",
+                        "select": "select[name=\"SET[depth]\"]",
+                        "option": "2"
+                    }, {
+                        "action": "drawBox",
+                        "selector": "select.t3-js-jumpMenuBox"
+                    }, {
+                        "action": "drawBox",
+                        "selector": "select[name=\"SET[depth]\"]"
+                    },{
+                        "action": "waitForText",
+                        "text": "Customize"
+                    }, {
+                        "action": "makeScreenshotOfWindow",
+                        "fileName": "LocalizationOverview",
+                        "captionText": "Просмотр состояния перевода на двух уровнях"
+                    }, {
+                        "action": "clearDrawings"
+                    }
+                ],
+                "EditContent": [
+                    {
+                        "action": "setScreenshotsImagePath",
+                        "path": "Images/AutomaticScreenshots/EditContent"
+                    }, {
+                        "action": "setScreenshotsRstPath",
+                        "path": "Images/AutomaticScreenshots/EditContent"
+                    },
+
+                    {
+                        "action": "resizeWindow",
+                        "width": 640,
+                        "height": 480
+                    },{
+                        "action": "amOnPage",
+                        "page": "/typo3/record/edit?token=x&edit[tt_content][1]=new&defVals[tt_content][CType]=textpic"
+                    }, {
+                        "action": "waitForText",
+                        "text": "Create new Page Content",
+                        "timeout": 5
+                    }, {
+                        "action": "click",
+                        "link": "(//*[contains(@class, \"form-select\")])[1]"
+                    }, {
+                        "action": "makeScreenshotOfWindow",
+                        "fileName": "EditContentChangeType",
+                        "captionText": "Редактирование элемента содержимого для изменения его типа"
+                    }, {
+                        "action": "clearDrawings"
+                    },{
+                        "action": "resizeWindow",
+                        "width": 640,
+                        "height": 480
+                    }, {
+                        "action": "click",
+                        "link": "General"
+                    }, {
+                        "action": "click",
+                        "link": "option[value=text]"
+                    }, {
+                        "action": "waitForModalDialogInMainFrame"
+                    },
+                    {"action": "wait", "timeout": 0.1},
+                    {
+                        "action": "makeScreenshotOfElement",
+                        "selector": ".t3js-module-body",
+                        "fileName": "EditContentChangeTypeConfirm",
+                        "captionText": "Редактирование элемента содержимого для изменения его типа"
+                    },{
+                        "action": "resizeWindow",
+                        "width": 960,
+                        "height": 960
+                    }, {
+                        "action": "amOnPage",
+                        "page": "/typo3/record/edit?token=x&edit[tt_content][1]=new&defVals[tt_content][CType]=image"
+                    }, {
+                        "action": "click",
+                        "link": "Image"
+                    }, {
+                        "action": "makeScreenshotOfElement",
+                        "selector": ".t3js-module-body",
+                        "fileName": "EditContentImagesTab",
+                        "captionText": "Вкладка :guilabel:`Изображения` для элемента содержимого"
+                    },
+                    {
+                        "action": "goToRecord",
+                        "table": "tt_content",
+                        "uid": {"action": "getUidByField", "table": "tt_content", "field": "header", "value": "3 Videos in 3 Columns"}
+                    },
+                    {"action": "click", "link": "Media"},
+                    {
+                        "action": "makeScreenshotOfElement",
+                        "selector": ".module-body",
+                        "fileName": "EditContentMediaTab",
+                        "captionText": "Вкладка :guilabel:`Медиа` / :guilabel:`Media` для элемента содержимого"
+                    },
+                    {
+                        "action": "goToField",
+                        "table": "tt_content",
+                        "uid": {"action": "getUidByField", "table": "tt_content", "field": "header", "value": "Examples of Rich Text Content Elements "},
+                        "fields": "bodytext"
+                    },
+                    {"action": "wait", "timeout": 0.1},
+                    {
+                        "action": "makeScreenshotOfElement",
+                        "selector": ".module-body",
+                        "fileName": "EditContentRichTextEditor",
+                        "captionText": "Типичный текстовый редактор"
+                    },
+                    {
+                        "action": "goToRecord",
+                        "table": "tt_content",
+                        "uid": {"action": "getUidByField", "table": "tt_content", "field": "header", "value": "Deliver business value"}
+                    },
+                    {"action": "click", "link": "Images"},
+                    {"action": "click", "link": "Filename"},
+                    {"action": "waitForText", "text": "Image Metadata"},
+                    {
+                        "action": "makeScreenshotOfElement",
+                        "selector": ".module-body",
+                        "fileName": "EditContentImageProperties",
+                        "captionText": "Работа с изображением, прикрепленным к элементу содержимого"
+                    },
+                    {
+                        "action": "resizeWindow",
+                        "width": 1024,
+                        "height": 300
+                    },
+                    {"action": "goToModule", "module": "Page", "path": ["Congratulations"]},
+                    {"action": "waitForText", "text": "Congratulations"},
+                    {"action": "drawBox", "selector": "a[title=\"Edit page properties\"]"},
+                    {"action": "drawBadge", "selector": "a[title=\"Edit page properties\"]", "label": "Edit page properties", "position": "right"},
+                    {
+                        "action": "makeScreenshotOfWindow",
+                        "fileName": "EditPageProperties",
+                        "captionText": "Значок :guilabel:`Редактировать свойства страницы` / :guilabel:`Edit Page Properties`"
+                    }
+                ],
+                "PageProperties": [
+                    {
+                        "action": "setScreenshotsImagePath",
+                        "path": "Images/AutomaticScreenshots/PageProperties"
+                    },
+                    {
+                        "action": "setScreenshotsRstPath",
+                        "path": "Images/AutomaticScreenshots/PageProperties"
+                    },
+                    {"action": "resizeWindow", "width": 1024,"height": 780},
+                    {
+                        "action": "goToRecord",
+                        "table": "pages",
+                        "uid": 1
+                    },
+                    {
+                        "action": "makeScreenshotOfElement",
+                        "selector": ".module-body",
+                        "fileName": "General",
+                        "altText": "Вкладка Общие свойств страницы",
+                        "captionText": "Вкладка **Общие** свойств страницы"
+                    },
+                    {
+                        "action": "click",
+                        "link": "Appearance"
+                    },
+                    {
+                        "action": "makeScreenshotOfElement",
+                        "selector": ".module-body",
+                        "fileName": "Appearance",
+                        "altText": "Вкладка Внешний вид свойств страницы",
+                        "captionText": "Вкладка **Внешний вид** свойств страницы"
+                    },
+                    {
+                        "action": "click",
+                        "link": "Behaviour"
+                    },
+                    {
+                        "action": "makeScreenshotOfElement",
+                        "selector": ".module-body",
+                        "fileName": "Behaviour",
+                        "altText": "Вкладка Поведение свойств страницы",
+                        "captionText": "Вкладка **Поведение** свойств страницы"
+                    },
+                    {
+                        "action": "click",
+                        "link": "Resources"
+                    },
+                    {
+                        "action": "makeScreenshotOfElement",
+                        "selector": ".module-body",
+                        "fileName": "Resources",
+                        "altText": "Вкладка Ресурсы свойств страницы",
+                        "captionText": "Вкладка **Ресурсы** свойств страницы"
+                    },
+                    {
+                        "action": "click",
+                        "link": "Categories"
+                    },
+                    {
+                        "action": "makeScreenshotOfElement",
+                        "selector": ".module-body",
+                        "fileName": "Categories",
+                        "altText": "Вкладка Категории свойств страницы",
+                        "captionText": "Вкладка **Категории** свойств страницы"
+                    },
+                    {
+                        "action": "click",
+                        "link": "Access"
+                    },
+                    {"action": "resizeWindow", "width": 1024,"height": 280},
+                    {
+                        "action": "makeScreenshotOfElement",
+                        "selector": ".module-body",
+                        "fileName": "Enable",
+                        "altText": "Делаем новую страницу общедоступной"
+                    },
+                    {"action": "resizeWindow", "width": 1024,"height": 780}
+                ],
+                "NewContentElement": [
+                    {
+                        "action": "amOnPage",
+                        "page": "typo3/index.php"
+                    },
+                    {
+                        "action": "setScreenshotsImagePath",
+                        "path": "Images/AutomaticScreenshots/NewContentElement"
+                    },
+                    {
+                        "action": "setScreenshotsRstPath",
+                        "path": "Images/AutomaticScreenshots/NewContentElement"
+                    },
+                    {"action": "resizeWindow", "width": 1024,"height": 512},
+                    {"action": "see", "text": "Page"},
+                    {"action": "click", "link": "Page"},
+                    {"action": "openPageTreePath", "path": ["Congratulations"]},
+                    {"action": "switchToContentFrame"},
+                    {"action": "waitForText", "text": "Congratulations", "timeout": 5},
+                    {"action": "drawBox", "selector": "a.t3js-toggle-new-content-element-wizard"},
+                    {
+                        "action": "makeScreenshotOfElement",
+                        "fileName": "CreateNew",
+                        "altText": "Создание нового элемента содержимого осуществляется нажатием кнопки"
+                    },
+                    {"action": "click", "link": "a.t3js-toggle-new-content-element-wizard"},
+                    {
+                        "action": "waitForModalDialogInMainFrame"
+                    },
+                    {"action": "waitForText", "text": "Create new content element", "timeout": 5},
+                    {
+                        "action": "makeScreenshotOfElement",
+                        "fileName": "WizardTabTypical",
+                        "altText": "Вкладка \"Типовое содержимое страницы\" окна нового элемента содержимого"
+                    },
+                    {"action": "waitForText", "text":  "Special elements"},
+                    {"action": "click", "link": "Special elements"},
+                    {"action": "wait", "timeout":  0.1},
+                    {
+                        "action": "makeScreenshotOfElement",
+                        "fileName": "WizardTabSpecialElements",
+                        "altText": "Вкладка \"Специальные элементы\" окна нового элемента содержимого"
+                    },
+                    {"action": "click", "link": "Form elements"},
+                    {"action": "wait", "timeout":  0.1},
+                    {
+                        "action": "makeScreenshotOfElement",
+                        "fileName": "WizardTabForm",
+                        "altText": "Вкладка \"Элементы форм\" окна нового элемента содержимого"
+                    },
+                    {"action": "click", "link": "Menu"},
+                    {"action": "wait", "timeout":  0.1},
+                    {
+                        "action": "makeScreenshotOfElement",
+                        "fileName": "WizardTabMenu",
+                        "altText": "Вкладка \"Меню\" окна нового элемента содержимого"
+                    },
+                    {"action": "click", "link": "Plugins"},
+                    {"action": "wait", "timeout":  0.1},
+                    {
+                        "action": "makeScreenshotOfElement",
+                        "fileName": "WizardTabPlugins",
+                        "altText": "Вкладка \"Дополнение\" окна нового элемента содержимого"
+                    },
+                    {"action": "click", "link": "Typical page content"},
+                    {"action": "wait", "timeout":  0.1},
+                    {"action": "click", "link": "Text & Media"},
+                    {"action": "wait", "timeout":  1},
+                    {
+                        "action": "resizeWindow",
+                        "width": 1232,
+                        "height": 768
+                    },
+                    {"action": "switchToContentFrame"},
+                    {"action": "fillField", "field": "input[data-formengine-input-name*='[header]']", "value": "My new content Element"},
+                    {
+                        "action": "makeScreenshotOfElement",
+                        "fileName": "NewContentElement",
+                        "selector": ".t3js-module-body",
+                        "altText": "Пустая форма ввода для элемента содержимого Текст и медиа / Text & Media"
+                    },
+                    {"action": "click", "link": "Save"},
+                    {"action": "see", "text": "Edit"},
+                    {"action": "click", "link": "Close"},
+                    {"action": "see", "text": "Border"},
+
+                    {
+                        "action": "makeScreenshotOfElement",
+                        "fileName": "ContentSaved",
+                        "selector": ".t3js-module-body",
+                        "altText": "Новый элемент содержимого появляется в модуле Страница"
+                    }
+                ],
+                "Access": [
+                    {
+                        "action": "amOnPage",
+                        "page": "typo3/index.php"
+                    },
+                    {
+                        "action": "setScreenshotsImagePath",
+                        "path": "Images/AutomaticScreenshots/Access"
+                    },
+                    {
+                        "action": "setScreenshotsRstPath",
+                        "path": "Images/AutomaticScreenshots/Access"
+                    },
+                    {"action": "resizeWindow", "width": 1024,"height": 512},
+                    {"action": "see", "text": "List"},
+                    {"action": "click", "link": "List"},
+                    {"action": "openPageTreePath", "path": ["Congratulations", "Frontend User"]},
+                    {"action": "switchToContentFrame"},
+                    {"action": "waitForText", "text": "Frontend User", "timeout": 5},
+                    {"action": "drawArrow", "selector": "a[title=\"Create new record\"]", "position": "right-top"},
+                    {"action": "drawBox", "selector": "a[title=\"Create new record\"]"},
+                    {
+                        "action": "makeScreenshotOfElement",
+                        "fileName": "AccessUserFolder",
+                        "altText": "Создание папки для хранения пользователей и групп"
+                    },
+                    {"action": "clearDrawings"},
+                    {"action": "click", "link": "a[title=\"Create new record\"]"},
+                    {"action": "waitForText", "text": "New record", "timeout": 5},
+                    {"action": "drawBox", "selector": "//a[contains(.,'Website Usergroup')]"},
+
+                    {
+                        "action": "makeScreenshotOfElement",
+                        "selector": ".module-body",
+                        "fileName": "AccessNewRecordWizard",
+                        "altText": "Выберите \"Группа пользователей\" / \"Usergroup\" с помощью мастера создания новой записи"
+                    },
+                    {"action": "clearDrawings"},
+                    {"action": "click", "link": "//a[contains(.,'Website Usergroup')]"},
+                    {"action": "waitForText", "text": "Create new Website Usergroup", "timeout": 5},
+                    {"action": "fillField", "field": "input[data-formengine-input-name*='[title]']", "value": "Private Area"},
+                    {"action": "resizeWindow", "width": 1524,"height": 1024},
+                    {
+                        "action": "makeScreenshotOfElement",
+                        "selector": ".module-body",
+                        "fileName": "AccessNewGroup",
+                        "altText": "Создание новой группы пользователей сайта"
+                    },
+
+                    {"action": "click", "link": "Save"},
+                    {"action": "waitForText", "text": "Edit Website Usergroup", "timeout": 5},
+                    {"action": "click", "link": "Close"},
+                    {"action": "waitForText", "text": "Frontend User", "timeout": 5},
+                    {"action": "click", "link": "a[title=\"Create new record\"]"},
+                    {"action": "waitForText", "text": "New record", "timeout": 5},
+                    {"action": "click", "link": "span.icon-status-user-frontend"},
+                    {"action": "waitForText", "text": "Create new", "timeout": 5},
+                    {"action": "fillField", "field": "input[data-formengine-input-name*='[username]']", "value": "jon-doe"},
+                    {"action": "fillField", "field": "input[data-formengine-input-name*='[password]']", "value": "eFNrTW3jQeSgSJ4u"},
+                    {
+                        "action": "makeScreenshotOfElement",
+                        "selector": ".module-body",
+                        "fileName": "AccessNewUser",
+                        "altText": "Создание нового пользователя внешнего интерфейса"
+                    },
+
+                    {"action": "switchToMainFrame"},
+                    {"action": "see", "text": "Page"},
+                    {"action": "click", "link": "Page"},
+                    {"action": "waitForModalDialogInMainFrame"},
+                    {"action": "waitForText", "text": "Yes, discard my changes", "timeout": 5},
+                    {"action": "click", "link": "Yes, discard my changes"},
+                    {"action": "openPageTreePath", "path": ["Congratulations", "Features"]},
+                    {"action": "switchToContentFrame"},
+                    {"action": "waitForText", "text": "Features", "timeout": 5},
+                    {"action": "click", "link": "a[title='Edit page properties']"},
+                    {"action": "waitForText", "text": "Access", "timeout": 5},
+                    {"action": "click", "link": "Access"},
+                    {"action": "waitForText", "text": "Publish Dates and Access Rights", "timeout": 5},
+                    {
+                        "action": "makeScreenshotOfElement",
+                        "selector": "div.tab-pane.active fieldset:nth-child(2)",
+                        "fileName": "AccessPublicationDate",
+                        "altText": "Установка даты публикации для страницы"
+                    },
+                    {"action": "cropScreenshot", "fileName": "AccessPublicationDate", "height": 115},
+
+                    {
+                        "action": "makeScreenshotOfElement",
+                        "selector": "div.tab-pane.active fieldset:nth-child(2)",
+                        "fileName": "AccessRightsItems",
+                        "altText": "Права доступа группы пользователей"
+                    },
+                    {
+                        "action": "amOnPage",
+                        "page": "/typo3/record/edit?edit[tt_content][36]=new&token=x&defVals[tt_content][colPos]=8&defVals[tt_content][sys_language_uid]=0&defVals[tt_content][CType]=text&defVals[tt_content][header]=Please%20Login&defVals[tt_content][fe_group]=-1"
+                    },
+                    {"action": "click", "link": "Save"},
+                    {"action": "waitForText", "text": "Edit Page Content"},
+                    {
+                        "action": "amOnPage",
+                        "page": "/typo3/record/edit?edit[tt_content][36]=new&token=x&defVals[tt_content][colPos]=8&defVals[tt_content][sys_language_uid]=0&defVals[tt_content][CType]=text&defVals[tt_content][header]=Members%20Only&defVals[tt_content][fe_group]=-2"
+                    },
+                    {"action": "click", "link": "Save"},
+                    {"action": "waitForText", "text": "Edit Page Content"},
+
+                    {"action": "goToModule", "module": "Page", "path": ["Congratulations", "Content Examples","Form elements","Login"]},
+                    {"action": "waitForText", "text": "Login"},
+                    {
+                        "action": "makeScreenshotOfElement",
+                        "selector": "div[data-colpos=\"8\"]",
+                        "fileName": "AccessRestrictContent",
+                        "altText": "Установка ограничения доступа к отдельным элементам содержимого"
+                    },
+                    {
+                        "action": "resizeWindow",
+                        "width": 1024,
+                        "height": 768
+                    },
+                    {
+                        "action": "goToRecord",
+                        "table": "tt_content",
+                        "uid": {"action": "getUidByField", "table": "tt_content", "field": "CType", "value": "felogin_login"}
+                    },
+                    {"action": "click", "link": "Plugin"},
+                    {
+                        "action": "makeScreenshotOfElement",
+                        "selector": ".module-body",
+                        "fileName": "AccessLoginForm",
+                        "altText": "Определение новой формы для авторизации"
+                    },
+                    {
+                        "action": "amOnPage",
+                        "page": "index.php?id=36"
+                    },
+                    {
+                        "action": "makeScreenshotOfWindow",
+                        "fileName": "AccessPageWithLoginBox",
+                        "altText": "Страница с окном авторизации"
+                    }
+                ],
+                "Fileadmin": [
+                    {
+                        "action": "amOnPage",
+                        "page": "typo3/index.php"
+                    },
+                    {
+                        "action": "setScreenshotsImagePath",
+                        "path": "Images/AutomaticScreenshots/Fileadmin"
+                    },
+                    {
+                        "action": "setScreenshotsRstPath",
+                        "path": "Images/AutomaticScreenshots/Fileadmin"
+                    },
+                    {"action": "resizeWindow", "width": 1000,"height": 757},
+
+                    {"action": "switchToMainFrame"},
+                    {"action": "see", "text": "Page"},
+                    {"action": "click", "link": "Page"},
+                    {"action": "openPageTreePath", "path": ["Congratulations", "Content Examples", "Media", "Images"]},
+                    {"action": "switchToContentFrame"},
+                    {"action": "waitForText", "text": "6 Images in 3 Columns", "timeout": 5},
+                    {"action": "click", "link": "6 Images in 3 Columns"},
+                    {"action": "click", "link": "Images"},
+                    {"action": "click", "link": "button[title='Add image']"},
+                    {"action": "waitForModalDialogInMainFrame"},
+                    {"action": "switchToModalDialogFrame"},
+                    {
+                        "action": "makeScreenshotOfElement",
+                        "fileName": "ImageSelector",
+                        "altText": "Окно для выбора изображений"
+                    }
+                ],
+                "Login": [
+                    {
+                        "action": "amOnPage",
+                        "page": "typo3/logout"
+                    },
+                    {
+                        "action": "setScreenshotsImagePath",
+                        "path": "Images/AutomaticScreenshots/Login"
+                    },
+                    {
+                        "action": "setScreenshotsRstPath",
+                        "path": "Images/AutomaticScreenshots/Login"
+                    },
+                    {"action": "resizeWindow", "width": 1000,"height": 757},
+                    {
+                        "action": "makeScreenshotOfElement",
+                        "selector": ".card-login",
+                        "fileName": "BackendLoginPage"
+                    }
+                ],
+                "Forms": [
+                    {
+                        "include": "_default"
+                    },
+                    {
+                        "action": "setScreenshotsImagePath",
+                        "path": "Images/AutomaticScreenshots/Forms"
+                    }, {
+                        "action": "setScreenshotsRstPath",
+                        "path": "Images/AutomaticScreenshots/Forms"
+                    },
+
+                    {
+                        "action": "resizeWindow",
+                        "width": 1024,
+                        "height": 300
+                    },
+                    {"action": "goToModule", "module": "Forms"},
+                    {"action": "drawBox", "selector": "a[title=\"Create new form\"]"},
+                    {"action": "drawBadge", "selector": "a[title=\"Create new form\"]", "label": "Create new form", "position": "right"},
+                    {
+                        "action": "makeScreenshotOfWindow",
+                        "fileName": "FormCreateNew",
+                        "captionText": "Запуск мастера :guilabel:`Создание новой формы`."
+                    },
+                    {"action": "clearDrawings"},
+                    {"action": "resizeWindow", "width": 1024, "height": 640},
+                    {
+                        "action": "click",
+                        "link": "Create new form"
+                    },
+                    {"action": "waitForModalDialogInMainFrame"},
+                    {
+                        "action": "makeScreenshotOfWindow",
+                        "fileName": "FormsSettingsStep1",
+                        "captionText": "Выберите :guilabel:`Предопределенная форма`"
+                    },
+                    {"action": "click","link": "Predefined form"},
+                    {"action": "waitForText","text": "Select a template"},
+                    {"action": "fillField", "field": "#new-form-name", "value": "Get in touch!"},
+                    {
+                        "action": "selectOption",
+                        "select": "#new-form-template",
+                        "option": "Simple contact form (ext:form example)"
+                    },
+                    {
+                        "action": "makeScreenshotOfWindow",
+                        "fileName": "FormsSettingsStep2"
+                    },
+                    {"action": "click", "link": "Next"},
+                    {"action": "waitForText","text": "Check and confirm"},
+                    {
+                        "action": "makeScreenshotOfWindow",
+                        "fileName": "FormsSettingsStep3"
+                    },
+                    {"action": "clickButtonInModalDialog", "buttonLink": "Next"},
+                    {"action": "switchToContentFrame"},
+                    {"action": "waitForText","text": "Get in touch"},
+                    {"action": "switchToMainFrame"},
+                    {"action": "click", "link": ".t3js-topbar-button-modulemenu"},
+                    {
+                        "action": "makeScreenshotOfWindow",
+                        "fileName": "FormsNewForm",
+                        "captionText": "Новая форма, созданная на основе шаблона"
+                    },
+                    {"action": "switchToMainFrame"},
+                    {"action": "click", "link": ".t3js-topbar-button-modulemenu"},
+                    {
+                        "action": "goToRecord",
+                        "table": "tt_content",
+                        "uid": {"action": "getUidByField", "table": "tt_content", "field": "header", "value": "Contactform"}
+                    },
+                    {"action": "click", "link": "Plugin"},
+                    {
+                        "action": "selectOption",
+                        "select": "//select[contains(@name, '[settings.persistenceIdentifier]')]",
+                        "option": "Get in touch!"
+                    },
+                    {"action": "click", "link": "Save"},
+                    {"action": "wait", "timeout": 1},
+                    {
+                        "action": "makeScreenshotOfElement",
+                        "selector": ".module-body",
+                        "fileName": "FormsFormDefinition",
+                        "captionText": "Выберите свою форму на вкладке Дополнение / Plugin"
+                    },
+                    {
+                        "action": "amOnPage",
+                        "page": "index.php?id=37"
+                    },
+                    {
+                        "action": "makeScreenshotOfWindow",
+                        "fileName": "FormOutput",
+                        "captionText": "Контактная форма во внешнем интерфейсе (на странице сайта)"
+                    }
+                ],
+                "FormsBlank": [
+                    {
+                        "include": "_default"
+                    },
+                    {
+                        "action": "setScreenshotsImagePath",
+                        "path": "Images/AutomaticScreenshots/FormsBlank"
+                    }, {
+                        "action": "setScreenshotsRstPath",
+                        "path": "Images/AutomaticScreenshots/FormsBlank"
+                    },
+                    {"action": "goToModule", "module": "Forms"},
+                    {"action": "click", "link": "Create new form"},
+                    {"action": "waitForModalDialogInMainFrame"},
+                    {"action": "click", "link": "Blank form"},
+                    {"action": "waitForText","text": "Storage"},
+                    {"action": "fillField", "field": "#new-form-name", "value": "Talk to us"},
+                    {"action": "click", "link": "Next"},
+                    {"action": "waitForText","text": "Talk to us"},
+                    {"action": "clickButtonInModalDialog", "buttonLink": "Next"},
+                    {"action": "switchToContentFrame"},
+                    {"action": "waitForText","text": "Talk to us"},
+                    {"action": "switchToMainFrame"},
+                    {"action": "click", "link": ".t3js-topbar-button-modulemenu"},
+                    {"action": "resizeWindow", "width": 1500, "height": 500},
+                    {
+                        "action": "makeScreenshotOfWindow",
+                        "fileName": "FormsBlankForm",
+                        "captionText": "Создание новой формы с нуля"
+                    },
+                    {"action": "resizeWindow", "width": 1024, "height": 640},
+                    {"action": "switchToContentFrame"},
+                    {"action": "click", "link": "Create new element"},
+                    {"action": "waitForModalDialogInMainFrame"},
+                    {
+                        "action": "makeScreenshotOfWindow",
+                        "fileName": "FormsNewElement",
+                        "captionText": "Создание нового элемента в форме"
+                    },
+                    {"action": "click", "link": "Text"},
+                    {"action": "wait", "timeout": 1},
+                    {"action": "switchToContentFrame"},
+                    {
+                        "action": "makeScreenshotOfWindow",
+                        "fileName": "FormsFieldSettings",
+                        "captionText": "Создание новой формы с нуля"
+                    },
+                    {"action": "click", "link": "Preview mode"},
+                    {"action": "waitForElement", "element": ".t3-form-stage-viewmode-preview"},
+                    {"action": "wait", "timeout": 0.5},
+                    {
+                        "action": "makeScreenshotOfWindow",
+                        "fileName": "FormsPreview",
+                        "captionText": "Создание новой формы с нуля"
+                    }
+                ]
+            }
+        }
+    }
+}
