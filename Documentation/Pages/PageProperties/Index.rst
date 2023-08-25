@@ -40,7 +40,7 @@ This tab contains general information about the page. You
 can change the :guilabel:`Page Type`, and edit titles for the page and the URL.
 
 The :guilabel:`Page Title` is used to generate speaking URLs (user
-friendly url format). It is also used in menus and in the `<title>` tag.
+friendly URL format). It is also used in menus and in the `<title>` tag.
 
 When you specify an :guilabel:`Alternative Navigation Title` all other
 instances of :guilabel:`Page Title` are left unchanged.
