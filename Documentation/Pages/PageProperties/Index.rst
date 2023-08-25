@@ -63,7 +63,7 @@ Social media
 ============
 
 The fields on this tab are used to enrich social media snippets for the URL of
-the page. It uses the ext_seo system extension. See the
+the page. It uses the `typo3/cms-seo` system extension. See the
 :ref:`SEO Core extension <ext_seo:for-editors>` manual for more information.
 
 .. _pages-properties-metadata:
