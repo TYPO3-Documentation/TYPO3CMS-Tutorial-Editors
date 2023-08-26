@@ -39,11 +39,11 @@ General
 This tab contains general information about the page. You
 can change the :guilabel:`Page Type`, and edit titles for the page and the URL.
 
-The :guilabel:`Page Title` is used directly to generate speaking URLs. It is
-also used in menus and in the `<title>` tag.
+The :guilabel:`Page Title` is used to generate speaking URLs (user
+friendly URL format). It is also used in menus and in the `<title>` tag.
 
 When you specify an :guilabel:`Alternative Navigation Title` all other
-instances of :guilabel:`Page Title` usage are left unchanged.
+instances of :guilabel:`Page Title` are left unchanged.
 
 .. include:: /Images/AutomaticScreenshots/PageProperties/General.rst.txt
 
@@ -62,17 +62,18 @@ more information.
 Social media
 ============
 
-This tab is used to enrich social media snippets for the URL of the page. It
-uses the ext_seo system extension. See the :ref:`SEO Core extension <ext_seo:for-editors>` manual for more information.
+The fields on this tab are used to enrich social media snippets for the URL of
+the page. It uses the `typo3/cms-seo` system extension. See the
+:ref:`SEO Core extension <ext_seo:for-editors>` manual for more information.
 
 .. _pages-properties-metadata:
 
 Metadata
 ========
 
-The fields that are available on this tab depend on how
-your site is configured. How the data is used by the frontend is driven by
-TypoScript, and again, depends on your site configuration.
+The fields available on this tab depend on how your site is configured. How the
+data is used by the frontend depends on TypoScript which depends on your site
+configuration.
 
 Typically, you might see the :guilabel:`Abstract` field, and editorial
 details like :guilabel:`Author Name` and :guilabel:`Last Update`.
@@ -82,29 +83,32 @@ details like :guilabel:`Author Name` and :guilabel:`Last Update`.
 Appearance
 ==========
 
-This tab contains properties that influence how the page is rendered in the
-frontend.
+This tab contains properties that influence how the page is rendered.
 
 .. include:: /Images/AutomaticScreenshots/PageProperties/Appearance.rst.txt
 
-Backend layouts determine what content areas are made available for editors
-in the :guilabel:`Web > Page` module. They can also be used to influence the
-rendering of the frontend.
+Backend layouts can be applied to pages in the backend (the
+:guilabel:`Web > Page` module) to provide alternatives to the standard backend
+layout. In this way the backend page can mirror the structure of the frontend
+page. Content areas are then in roughly the same place as in the frontend,
+making editing easier.
+
+Backend layouts can also be used to influence the rendering of the frontend.
 
 The :guilabel:`Show Content from Page` field tells the page to display the
-content from another selected page. This is an easier method for repeating
-the content of a single page than using :ref:`mount points <pages-types>`.
+content from another page. This is an easier method for repeating the content of
+a single page than using :ref:`mount points <pages-types>`.
 
 .. _pages-properties-behaviour:
 
 Behaviour
 =========
 
-This tab influences a variety of different aspects of the page.
+Fields on this tab set a variety of different aspects of the page.
 
 .. include:: /Images/AutomaticScreenshots/PageProperties/Behaviour.rst.txt
 
-Here are some of the common fields of the Behaviour tab:
+Here are some of the common fields:
 
 Link Target
    Set the default Link Target for menu items linking to the page. You can
@@ -179,7 +183,7 @@ categories can be applied to pages, content elements, and files.
 .. include:: /Images/AutomaticScreenshots/PageProperties/Categories.rst.txt
 
 
-Categories should be defined in some folder and can then be assigned to
+Categories should be created in a folder and then be assigned to
 pages. The :ref:`content element type <content-special>` "Special Menus",
 for example, can display a list of pages from a selected category.
 
@@ -191,5 +195,5 @@ Notes
 Use this tab for your own editorial notes and internal comments, such as
 reminders or to-do lists.
 
-Notes display in the backend above the Page Properties tabs. Notes do not
-display on the frontend.
+Notes display in the backend above the Page Properties tabs. They are not
+displayed in the frontend.
