@@ -12,13 +12,13 @@ Creating content
 ------------
 
 In the :guilabel:`Web > Page` module, on any page, click the :guilabel:`+
-Content` icon where you want to insert content.
+Content` icon in the place where you want to insert content.
 
 .. include:: /Images/AutomaticScreenshots/NewContentElement/CreateNew.rst.txt
 
-This action displays the :guilabel:`Create new content element` window. The
-content elements that are available depends on the setup of your TYPO3
-installation, and any extensions that may be installed.
+The :guilabel:`Create new content element` window will then be displayed. The
+content elements that are available depend on the setup of your TYPO3
+installation and the extensions that are installed.
 
 
 .. _content-types:
@@ -69,10 +69,10 @@ Present a menu or list of page links in different ways.
 Plugins
 -------
 
-Plugins are provided by extensions. Not all plugins are available on this tab.
-It depends on their architecture or on backend configuration. In some cases
-you insert the General Plugin content element, then go to the :guilabel:`Plugin` tab
-to select a specific plugin.
+Plugins are provided by extensions. Plugins that are available on this tab will
+depend on the individual plugin architecture or on the backend configuration.
+In some cases a plugin is made available by adding the "General Plugin" content
+element and then selecting the plugin itself on the :guilabel:`Plugin` tab.
 
 .. include:: /Images/AutomaticScreenshots/NewContentElement/WizardTabPlugins.rst.txt
 
@@ -83,8 +83,8 @@ Special elements
 ----------------
 
 Insert plain HTML, or a horizontal divider on the page. The "Insert records"
-element lets you reference other content elements, so you can reuse content
-from another page without duplicating it.
+element lets you reference other content elements, i.e. reuse a content
+element from another page without duplicating it.
 
 .. include:: /Images/AutomaticScreenshots/NewContentElement/WizardTabSpecialElements.rst.txt
 
@@ -94,16 +94,16 @@ from another page without duplicating it.
 Add new content to a page
 =========================
 
-#. On a page, click the :guilabel:`+ Content` icon where you want to insert
-   content.
+#. On a page, click the :guilabel:`+ Content` icon in the place where you want
+   to insert content.
 #. On the :guilabel:`Typical Page Content` tab, choose the "Text & Media" element.
    This is the most commonly used content type. The
    :guilabel:`Create new Page Content` screen appears.
 
 .. include:: /Images/AutomaticScreenshots/NewContentElement/NewContentElement.rst.txt
 
-#. In the :guilabel:`Header` field, type *New content*.
-#. In the :guilabel:`Text` area, type some content. This field uses a
+#. In the :guilabel:`Header` field, type *My new content element*.
+#. In the :guilabel:`Text` area, type in some text. This field uses a
    :ref:`Rich Text Editor<rte>` (RTE).
 
 #. Save and close the content element.
