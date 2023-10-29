@@ -22,7 +22,7 @@ Move pages
 
    На экране появляется горизонтальная линия, указывающая на новое положение страницы.
 
-   .. figure:: ../../Images/ManualScreenshots/PageTree/CopyMovePage.png
+   .. figure:: /Images/ManualScreenshots/PageTree/CopyMovePage.png
       :alt: Перетащите страницу в нужное положение в дереве страниц
       :class: with-border
 
@@ -30,7 +30,7 @@ Move pages
 
    Синий фон на существующих страницах означает, что страница станет дочерней по отношению к этой странице.
 
-   .. figure:: ../../Images/ManualScreenshots/PageTree/CopyMoveChildPage.png
+   .. figure:: /Images/ManualScreenshots/PageTree/CopyMoveChildPage.png
       :alt: Поместите страницу на другую страницу, чтобы сделать ее дочерней
       :class: with-border
 
@@ -54,7 +54,7 @@ Move pages
 
 Выберите страницу, которую необходимо удалить. Перетащите ее вправо, после чего появится опция :guilabel:`Удалить` / :guilabel:`Delete`.
 
-.. figure:: ../../Images/ManualScreenshots/PageTree/DeletePage.png
+.. figure:: /Images/ManualScreenshots/PageTree/DeletePage.png
    :alt: Перетащите страницу вправо для удаления
    :class: with-border
 
@@ -73,7 +73,7 @@ Move pages
 
 В верхней части дерева страниц находится инструмент фильтрации. Щелкните значок фильтра, затем введите слово или цифры, чтобы отфильтровать дерево страниц на основе совпадающих названий или идентификаторов страниц.
 
-.. figure:: ../../Images/ManualScreenshots/PageTree/PageTreeFilter.png
+.. figure:: /Images/ManualScreenshots/PageTree/PageTreeFilter.png
    :alt: Фильтрация страниц в дереве страниц
    :class: with-border
 
