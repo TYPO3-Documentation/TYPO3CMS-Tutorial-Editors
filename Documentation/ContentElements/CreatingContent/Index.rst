@@ -14,7 +14,11 @@ Creating content
 In the :guilabel:`Web > Page` module, on any page, click the :guilabel:`+
 Content` icon in the place where you want to insert content.
 
-.. include:: /Images/AutomaticScreenshots/NewContentElement/CreateNew.rst.txt
+.. figure:: /Images/ManualScreenshots/NewContentElement/CreateNew.png
+   :alt: Create a new Content Element by clicking the button
+   :class: with-shadow
+
+   Create a new Content Element by clicking the button
 
 The :guilabel:`Create new content element` window will then be displayed. The
 content elements that are available depend on the setup of your TYPO3
@@ -41,7 +45,11 @@ Typical page content
 
 Insert regular text and image content types to build standard web pages.
 
-.. include:: /Images/AutomaticScreenshots/NewContentElement/WizardTabTypical.rst.txt
+.. figure:: /Images/ManualScreenshots/NewContentElement/WizardTabTypical.png
+   :alt: The 'Typical page content' tab of the new content element window
+   :class: with-shadow
+
+   The :guilabel:`Typical page content` tab of the new content element window
 
 
 .. _content-form:
@@ -51,7 +59,12 @@ Form elements
 
 Create a login form or a simple contact form.
 
-.. include:: /Images/AutomaticScreenshots/NewContentElement/WizardTabForm.rst.txt
+.. figure:: /Images/ManualScreenshots/NewContentElement/WizardTabForm.png
+   :alt: The 'Form elements' tab of the new content element window
+   :class: with-shadow
+
+   The :guilabel:`Form elements` tab of the new content element window
+
 
 
 .. _content-menu:
@@ -61,7 +74,11 @@ Menu elements
 
 Present a menu or list of page links in different ways.
 
-.. include:: /Images/AutomaticScreenshots/NewContentElement/WizardTabMenu.rst.txt
+.. figure:: /Images/ManualScreenshots/NewContentElement/WizardTabMenu.png
+   :alt: The 'Menu' tab of the new content element window
+   :class: with-shadow
+
+   The :guilabel:`Menu` tab of the new content element window
 
 
 .. _content-plugin:
@@ -74,7 +91,11 @@ depend on the individual plugin architecture or on the backend configuration.
 In some cases a plugin is made available by adding the "General Plugin" content
 element and then selecting the plugin itself on the :guilabel:`Plugin` tab.
 
-.. include:: /Images/AutomaticScreenshots/NewContentElement/WizardTabPlugins.rst.txt
+.. figure:: /Images/ManualScreenshots/NewContentElement/WizardTabPlugins.png
+   :alt: The 'Plugins' tab of the new content element window
+   :class: with-shadow
+
+   The :guilabel:`Plugins` tab of the new content element window
 
 
 .. _content-special:
@@ -86,7 +107,11 @@ Insert plain HTML, or a horizontal divider on the page. The "Insert records"
 element lets you reference other content elements, i.e. reuse a content
 element from another page without duplicating it.
 
-.. include:: /Images/AutomaticScreenshots/NewContentElement/WizardTabSpecialElements.rst.txt
+.. figure:: /Images/ManualScreenshots/NewContentElement/WizardTabSpecialElements.png
+   :alt: The 'Special elements' tab of the new content element window
+   :class: with-shadow
+
+   The :guilabel:`Plugins` tab of the new content element window
 
 
 .. _content-new-element:
@@ -100,7 +125,11 @@ Add new content to a page
    This is the most commonly used content type. The
    :guilabel:`Create new Page Content` screen appears.
 
-.. include:: /Images/AutomaticScreenshots/NewContentElement/NewContentElement.rst.txt
+.. figure:: /Images/ManualScreenshots/NewContentElement/NewContentElement.png
+   :alt: Empty input form for a Text & Media content element
+   :class: with-shadow
+
+   Empty input form for a Text & Media content element
 
 #. In the :guilabel:`Header` field, type *My new content element*.
 #. In the :guilabel:`Text` area, type in some text. This field uses a
@@ -109,4 +138,8 @@ Add new content to a page
 #. Save and close the content element.
    You can see the newly added element on the page:
 
-.. include:: /Images/AutomaticScreenshots/NewContentElement/ContentSaved.rst.txt
+.. figure:: /Images/ManualScreenshots/NewContentElement/ContentSaved.png
+   :alt: The new content element appears in the Page module
+   :class: with-shadow
+
+   The new content element appears in the Page module
