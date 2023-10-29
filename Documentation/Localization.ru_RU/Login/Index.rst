@@ -12,10 +12,11 @@
 
 Убедитесь, что в вашем браузере включены JavaScript и cookies, так как они необходимы для работы внутреннего интерфейса TYPO3.
 
-..  figure:: /Images/AutomaticScreenshots/Login/BackendLoginPage.png
-    :alt: Окно входа во внутренний интерфейс TYPO3 CMS
+..  figure:: /Images/ManualScreenshots/Login/BackendLoginPage.png
+    :class: with-shadow
+    :alt: Окно входа во внутренний интерфейс TYPO3
 
-    Окно входа во внутренний интерфейс TYPO3 CMS
+    Окно входа во внутренний интерфейс TYPO3
 
 ..  versionadded:: 12.3
 
