@@ -882,17 +882,6 @@
                         "altText": "The Categories tab of the page properties",
                         "captionText": "The **Categories** tab of the page properties"
                     },
-                    {
-                        "action": "click",
-                        "link": "Access"
-                    },
-                    {"action": "resizeWindow", "width": 1024,"height": 280},
-                    {
-                        "action": "makeScreenshotOfElement",
-                        "selector": ".module-body",
-                        "fileName": "Enable",
-                        "altText": "Making the new page publicly visible"
-                    },
                     {"action": "resizeWindow", "width": 1024,"height": 780}
                 ],
                 "NewContentElement": [

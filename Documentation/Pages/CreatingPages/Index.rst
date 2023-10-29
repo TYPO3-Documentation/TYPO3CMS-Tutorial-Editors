@@ -29,9 +29,11 @@ Adding pages within the page tree
 You can create a new page by dragging and dropping a page from the top of
 the page tree.
 
-.. figure:: ../../Images/ManualScreenshots/PageTree/PageCreateDragDrop.png
+.. figure:: /Images/ManualScreenshots/PageTree/PageCreateDragDrop.png
    :alt: Creating a page using drag and drop
    :class: with-border
+
+   Creating a page using drag and drop
 
 #. Select the type of page you want to add by choosing from one of the icons. In this example
    we are creating a standard page.
@@ -41,9 +43,11 @@ the page tree.
 
 #. Give the new page a title.
 
-   .. figure:: ../../Images/ManualScreenshots/PageTree/PageCreateTitle.png
+   .. figure:: /Images/ManualScreenshots/PageTree/PageCreateTitle.png
       :alt: Inserting a page title
       :class: with-border
+
+      Inserting a page title
 
 New pages are disabled by default. To enable a newly created page, right-click on the page
 and select :guilabel:`Enable`. You can also enable a page from the :guilabel:`Access` tab in page properties.
@@ -57,23 +61,31 @@ Adding pages with the context menu
 #. Right-click any existing page and choose :guilabel:`More options > 'Create
    New' Wizard` from the context menu.
 
-   .. figure:: ../../Images/ManualScreenshots/PageTree/PageCreateContextMenu.png
-      :alt: Creating pages with context menu
+   .. figure:: /Images/ManualScreenshots/PageTree/PageCreateContextMenu.png
+      :alt: Creating pages with the context menu
       :class: with-border
+
+      Creating pages with the context menu
 
    The :guilabel:`New record` screen will appear.
 
 #. Decide where you want your new page to appear in the page tree by selecting one of the black arrows.
 
-   .. figure:: ../../Images/ManualScreenshots/Page/PageCreateWizard.png
+   .. figure:: /Images/ManualScreenshots/Page/PageCreateWizard.png
       :alt: Selecting a position for the new page using the wizard
       :class: with-border
+
+      Selecting a position for the new page using the wizard
 
    The :guilabel:`Create new Page` screen will appear.
 
 #. Provide a title for the page. You can also go to the :guilabel:`Access` tab
    and enable the page to make it visible in the frontend.
 
-   .. include:: /Images/AutomaticScreenshots/PageProperties/Enable.rst.txt
+   .. figure:: /Images/ManualScreenshots/PageProperties/Visibility.png
+      :alt: Making the new page publicly visible
+      :class: with-border
+
+      Making the new page publicly visible
 
 Visit the :ref:`page types <pages-types>` chapter for more information on the different types of pages that can be created.

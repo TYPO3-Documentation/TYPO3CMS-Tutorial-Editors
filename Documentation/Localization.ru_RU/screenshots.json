@@ -882,17 +882,6 @@
                         "altText": "Вкладка Категории свойств страницы",
                         "captionText": "Вкладка **Категории** свойств страницы"
                     },
-                    {
-                        "action": "click",
-                        "link": "Access"
-                    },
-                    {"action": "resizeWindow", "width": 1024,"height": 280},
-                    {
-                        "action": "makeScreenshotOfElement",
-                        "selector": ".module-body",
-                        "fileName": "Enable",
-                        "altText": "Делаем новую страницу общедоступной"
-                    },
                     {"action": "resizeWindow", "width": 1024,"height": 780}
                 ],
                 "NewContentElement": [

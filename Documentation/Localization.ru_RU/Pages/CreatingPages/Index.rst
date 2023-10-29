@@ -26,9 +26,11 @@
 
 Новую страницу можно создать, перетащив ее из верхней части дерева страниц.
 
-.. figure:: ../../Images/ManualScreenshots/PageTree/PageCreateDragDrop.png
+.. figure:: /Images/ManualScreenshots/PageTree/PageCreateDragDrop.png
    :alt: Создание страницы с помощью перетаскивания
    :class: with-border
+
+   Создание страницы с помощью перетаскивания
 
 #. Укажите тип страницы, которую вы хотите добавить, выбрав один из значков. В данном примере мы создаем стандартную страницу.
 
@@ -36,9 +38,11 @@
 
 #. Дайте название новой странице.
 
-   .. figure:: ../../Images/ManualScreenshots/PageTree/PageCreateTitle.png
+   .. figure:: /Images/ManualScreenshots/PageTree/PageCreateTitle.png
       :alt: Вставка названия страницы
       :class: with-border
+
+      Вставка названия страницы
 
 По умолчанию новые страницы отключены. Чтобы активировать только что созданную страницу, щелкните на ней правой кнопкой мыши и выберите :guilabel:`Включить` / :guilabel:`Enable`. Включить страницу можно также на вкладке :guilabel:`Доступ` / :guilabel:`Access` в свойствах страницы.
 
@@ -50,22 +54,30 @@
 
 #. Щелкните правой кнопкой мыши по любой существующей странице и выберите в контекстном меню :guilabel:`Дополнительные настройки... > Мастер создания нового` / :guilabel:`More options > 'Create New' Wizard`.
 
-   .. figure:: ../../Images/ManualScreenshots/PageTree/PageCreateContextMenu.png
+   .. figure:: /Images/ManualScreenshots/PageTree/PageCreateContextMenu.png
       :alt: Создание страниц с помощью контекстного меню
       :class: with-border
+
+      Создание страниц с помощью контекстного меню
 
    Появится диалог :guilabel:`Новая запись` / :guilabel:`New record`.
 
 #. Укажите, в каком месте дерева страниц должна появиться новая страница, выбрав одну из черных стрелок.
 
-   .. figure:: ../../Images/ManualScreenshots/Page/PageCreateWizard.png
+   .. figure:: /Images/ManualScreenshots/Page/PageCreateWizard.png
       :alt: Выбор позиции для новой страницы с помощью мастера
       :class: with-border
+
+      Выбор позиции для новой страницы с помощью мастера
 
    Появится диалог :guilabel:`Создание новой страницы` / :guilabel:`Create new Page`.
 
 #. Укажите название страницы. Также можно перейти на вкладку :guilabel:`Доступ` / :guilabel:`Access` и включить страницу, чтобы сделать ее видимой на сайте.
 
-   .. include:: /Images/AutomaticScreenshots/PageProperties/Enable.rst.txt
+   .. figure:: /Images/ManualScreenshots/PageProperties/Visibility.png
+      :alt: Делаем новую страницу общедоступной
+      :class: with-border
+
+      Делаем новую страницу общедоступной
 
 Дополнительную информацию о различных типах создаваемых страниц можно найти в главе :ref:`Типы страниц <pages-types>`.
