@@ -16,10 +16,11 @@ For example: :samp:`http://www.example.org/typo3`.
 Check that JavaScript and cookies are enabled in your browser as they are
 required by TYPO3's backend.
 
-..  figure:: /Images/AutomaticScreenshots/Login/BackendLoginPage.png
-    :alt: The TYPO3 CMS backend login screen
+..  figure:: /Images/ManualScreenshots/Login/BackendLoginPage.png
+    :class: with-shadow
+    :alt: The TYPO3 backend login screen
 
-    The TYPO3 CMS backend login screen
+    The TYPO3 backend login screen
 
 ..  versionadded:: 12.3
 

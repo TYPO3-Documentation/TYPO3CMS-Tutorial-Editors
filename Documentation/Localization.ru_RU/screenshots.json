@@ -1161,26 +1161,6 @@
                         "altText": "Окно для выбора изображений"
                     }
                 ],
-                "Login": [
-                    {
-                        "action": "amOnPage",
-                        "page": "typo3/logout"
-                    },
-                    {
-                        "action": "setScreenshotsImagePath",
-                        "path": "Images/AutomaticScreenshots/Login"
-                    },
-                    {
-                        "action": "setScreenshotsRstPath",
-                        "path": "Images/AutomaticScreenshots/Login"
-                    },
-                    {"action": "resizeWindow", "width": 1000,"height": 757},
-                    {
-                        "action": "makeScreenshotOfElement",
-                        "selector": ".card-login",
-                        "fileName": "BackendLoginPage"
-                    }
-                ],
                 "Forms": [
                     {
                         "include": "_default"
