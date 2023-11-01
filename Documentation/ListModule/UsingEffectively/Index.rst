@@ -7,8 +7,7 @@ Introduction
 
 The :guilabel:`Web > List` module allows you to browse through pages and folders
 in your site and view the records that
-are stored there. You can also create and edit records here outside of being in a
-specific module.
+are stored there. You can also create and edit records.
 
 Records stored on pages include sub pages, content elements and news articles.
 
