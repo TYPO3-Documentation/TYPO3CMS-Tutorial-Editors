@@ -7,11 +7,10 @@ Introduction
 
 The :guilabel:`Web > List` module allows you to browse through pages and folders
 in your site and view the records that
-are stored there. You can also use the :guilabel:`List` module to
-create and manage records without their own module.
+are stored there. You can also create and edit records here outside of being in a
+specific module.
 
-Records stored on pages include sub pages, content elements and news
-stories.
+Records stored on pages include sub pages, content elements and news articles.
 
 =====================
 Using the list module
@@ -64,15 +63,7 @@ Action icons are also available in the **Content Area**:
    The ellipsis icon (three consecutive dots) expands the icon list to show
    additional action icons (typically used for accessing information, moving around, etc.)
 
-   Lastly, there are cut and paste icons.
-
-.. todo: the "Extended view" option does not exist anymore
-
-If you wish to have the list of icons expanded all the time, you can check the
-:guilabel:`Extended view` box at the very bottom of the view.
+   There are also cut and paste icons.
 
 Now, make sure that the :guilabel:`Show clipboard` box is checked, as we
 will explore this next.
-
-If you plan to manage a multilingual web site, check the
-:guilabel:`Localization view` checkbox.
