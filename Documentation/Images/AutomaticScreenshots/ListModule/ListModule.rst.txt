@@ -3,4 +3,4 @@
 .. figure:: /Images/AutomaticScreenshots/ListModule/ListModule.png
    :class: with-shadow
 
-   A typical view from the List module
+   A typical view of the List module

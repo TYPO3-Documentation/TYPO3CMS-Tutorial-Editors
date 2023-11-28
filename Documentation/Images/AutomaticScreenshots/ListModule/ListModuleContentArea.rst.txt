@@ -3,4 +3,4 @@
 .. figure:: /Images/AutomaticScreenshots/ListModule/ListModuleContentArea.png
    :class: with-shadow
 
-   The "List" module content area with its actions icons
+   The "List" module content area with action icons
