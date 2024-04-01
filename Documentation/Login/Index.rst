@@ -13,6 +13,12 @@ Enter your domain name into the address bar of your browser and
 append :samp:`/typo3` to the end of it to access the backend login page.
 For example: :samp:`http://www.example.org/typo3`.
 
+..  note::
+    Since TYPO3 v13, a custom entry point for the TYPO3 backend can be
+    customized. If the path :samp:`/typo3` does not work, consult the
+    project's documentation or ask your administrator for the correct backend
+    URL.
+
 Check that JavaScript and cookies are enabled in your browser as they are
 required by TYPO3's backend.
 
