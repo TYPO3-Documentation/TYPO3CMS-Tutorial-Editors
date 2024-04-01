@@ -154,4 +154,3 @@ the `Official Introduction Package <https://extensions.typo3.org/extension/intro
    :hidden:
 
    Sitemap
-   genindex
