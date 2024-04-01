@@ -147,5 +147,4 @@
    :hidden:
 
    Sitemap
-   genindex
 
