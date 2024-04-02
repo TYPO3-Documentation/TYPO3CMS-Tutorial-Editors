@@ -111,7 +111,7 @@
 
          .. rst-class:: card-header h3
 
-            .. rubric:: :ref:`Концепции<>`
+            .. rubric:: :ref:`Концепции <concepts>`
 
          .. container:: card-body
 
