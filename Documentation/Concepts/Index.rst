@@ -68,11 +68,3 @@ The following concepts are of interest:
    FileAbstractionLayer
    Accessibility
    Copyright
-
-.. Meta Menu
-
-.. toctree::
-   :hidden:
-
-   Sitemap
-   genindex
