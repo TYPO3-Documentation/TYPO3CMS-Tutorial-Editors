@@ -118,7 +118,7 @@ the `Official Introduction Package <https://extensions.typo3.org/extension/intro
 
          .. rst-class:: card-header h3
 
-            .. rubric:: :ref:`Concepts<>`
+            .. rubric:: :ref:`Concepts <concepts>`
 
          .. container:: card-body
 
