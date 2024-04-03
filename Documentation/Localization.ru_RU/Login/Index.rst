@@ -10,6 +10,12 @@
 
 Введите в адресную строку браузера адрес вашего домена и добавьте к нему в конце :samp:`/typo3` для доступа к странице входа во внутренний интерфейс. Например: :samp:`http://www.example.org/typo3`.
 
+..  note::
+    Since TYPO3 v13, a custom entry point for the TYPO3 backend can be
+    customized. If the path :samp:`/typo3` does not work, consult the
+    project's documentation or ask your administrator for the correct backend
+    URL.
+
 Убедитесь, что в вашем браузере включены JavaScript и cookies, так как они необходимы для работы внутреннего интерфейса TYPO3.
 
 ..  figure:: /Images/ManualScreenshots/Login/BackendLoginPage.png
