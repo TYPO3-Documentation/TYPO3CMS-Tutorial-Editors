@@ -1,12 +1,15 @@
-.. include:: /Includes.rst.txt
+..  include:: /Includes.rst.txt
 
-.. _keyboard_commands:
+..  _keyboard_commands:
 
 =================
-Keyboard Commands
+Keyboard commands
 =================
 
-Navigating the Page Tree using a keyboard
+..  contents::
+    :local:
+
+Navigating the page tree using a keyboard
 =========================================
 
 It is possible to navigate the page tree using only a keyboard and it adheres to
@@ -19,6 +22,7 @@ the guidelines set out in `WAI-ARIA Authoring Practices 1.1. <https://www.w3.org
 *  :kbd:`Up` and  :kbd:`Down` arrow keys will move the focus up and down the page tree.
 *  :kbd:`Right` arrow key will expand the focus if possible.
 *  :kbd:`Left` arrow key will close the focus if possible.
+
 
 Editing text in the Rich Text Editor (RTE)
 ==========================================
@@ -48,6 +52,7 @@ text in TYPO3's :ref:`RTE <rte>`.
         * :kbd:`cmd (⌘)` + :kbd:`i` = Italic
         * :kbd:`cmd (⌘)` + :kbd:`b` = Bold
 
+
 Reloading pages and clearing browser cache
 ==========================================
 
@@ -63,6 +68,7 @@ Reloading pages and clearing browser cache
         * :kbd:`cmd (⌘)` + :kbd:`r` = Reload page
         * :kbd:`cmd (⌘)` + :kbd:`option (⌥)` + :kbd:`r` = Reload page and clear browser cache
 
+
 Opening the backend search modal
 ================================
 
@@ -77,3 +83,50 @@ Opening the backend search modal
     ..  group-tab:: macOS
 
         * :kbd:`cmd (⌘)` + :kbd:`k`
+
+
+Multiselect in content elements
+===============================
+
+..  versionadded:: 12.3
+
+The keyboard commands can be used on a select element:
+
+..  figure:: /Images/ManualScreenshots/ContentElements/SelectMultipleSideBySide.png
+    :alt: A multiselect element
+    :class: with-shadow
+
+    A multiselect element
+
+Or a folder element:
+
+..  figure:: /Images/ManualScreenshots/ContentElements/Folder.png
+    :alt: A folder element
+    :class: with-shadow
+
+    A folder element
+
+Or a group element:
+
+..  figure:: /Images/ManualScreenshots/ContentElements/Group.png
+    :alt: A group element
+    :class: with-shadow
+
+    A group element
+
+Selecting and deselecting options with the keyboard:
+
+*   :kbd:`enter` = Add options, either from right to left or left to right
+*   :kbd:`delete` or :kbd:`backspace` = Remove an option for Windows and Mac users
+*   :kbd:`alt` + :kbd:`arrow up` = Move the option one up
+*   :kbd:`alt` + :kbd:`arrow up` = Move the option one up
+*   :kbd:`alt` + :kbd:`arrow down` = Move the option one down
+*   :kbd:`alt` + :kbd:`shift` + :kbd:`arrow up` = Move the option to the top
+*   :kbd:`alt` + :kbd:`shift` + :kbd:`arrow down` = Move the option to the bottom
+
+More combinations:
+
+*   :kbd:`shift` + :kbd:`arrow up` = Include the upper option
+*   :kbd:`shift` + :kbd:`arrow down` = Include the lower option
+*   :kbd:`home` = Move the cursor to the top
+*   :kbd:`end` = Move the cursor to the bottom
