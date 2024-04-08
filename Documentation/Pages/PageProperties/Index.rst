@@ -15,9 +15,10 @@ icon in the Docheader.
 
 .. include:: /Images/AutomaticScreenshots/EditContent/EditPageProperties.rst.txt
 
-The page properties that are available depend on the page type and your
-TYPO3 installation. The default properties available in the Introduction
-Package for the *Standard* page type include:
+The page properties that are available depend on the page type, your user 
+permissions, and the configuration of the TYPO3 installation. The default 
+properties available in the Introduction Package for the *Standard* page type
+include:
 
 * General
 * SEO
