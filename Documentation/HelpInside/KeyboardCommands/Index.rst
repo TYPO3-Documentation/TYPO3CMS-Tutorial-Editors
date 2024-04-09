@@ -119,7 +119,6 @@ Selecting and deselecting options with the keyboard:
 *   :kbd:`enter` = Add options, either from right to left or left to right
 *   :kbd:`delete` or :kbd:`backspace` = Remove an option for Windows and Mac users
 *   :kbd:`alt` + :kbd:`arrow up` = Move the option one up
-*   :kbd:`alt` + :kbd:`arrow up` = Move the option one up
 *   :kbd:`alt` + :kbd:`arrow down` = Move the option one down
 *   :kbd:`alt` + :kbd:`shift` + :kbd:`arrow up` = Move the option to the top
 *   :kbd:`alt` + :kbd:`shift` + :kbd:`arrow down` = Move the option to the bottom
