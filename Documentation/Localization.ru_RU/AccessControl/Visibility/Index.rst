@@ -11,7 +11,6 @@
 
 В ядре и в расширениях, которые следуют лучшим стандартам, все опции, связанные с видимостью, определяются на вкладке :guilabel:`Доступ` / :guilabel:`Access` в :ref:`свойствах страницы<pages-properties>`.
 
-.. include:: /Images/AutomaticScreenshots/PageProperties/Enable.rst.txt
 
 .. _visibility-dates:
 
