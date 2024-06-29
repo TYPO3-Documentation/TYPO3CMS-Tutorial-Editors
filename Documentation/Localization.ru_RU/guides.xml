@@ -10,7 +10,7 @@
                edit-on-github-branch="main"
                edit-on-github="TYPO3-Documentation/TYPO3CMS-Tutorial-Editors"
                typo3-core-preferred="main"
-               interlink-shortcode="typo3/tutorial-editors"
+               interlink-shortcode="t3editors"
     />
     <project
             title="Tutorial for Editors"
