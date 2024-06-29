@@ -5,7 +5,7 @@
 TYPO3 Editors Guide
 ===================
 
-Once you have installed TYPO3 using the :doc:`Getting Started Guide <t3start:Index>`;
+Once you have installed TYPO3 using the :ref:`TYPO3 - Getting Started Tutorial <t3start:start>`;
 the next step is to log in to the backend of the CMS and start adding pages and create
 some content. In the TYPO3 world we often call users who carry out these tasks "Editors".
 
@@ -30,7 +30,7 @@ the `Official Introduction Package <https://extensions.typo3.org/extension/intro
 
          .. rst-class:: card-header h3
 
-            .. rubric:: :ref:`Getting Started`
+            .. rubric:: Getting Started
 
          .. container:: card-body
 
@@ -155,4 +155,3 @@ the `Official Introduction Package <https://extensions.typo3.org/extension/intro
    :hidden:
 
    Sitemap
-   genindex

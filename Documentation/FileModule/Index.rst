@@ -94,5 +94,6 @@ Next steps
 ==========
 
 The next chapters cover configuration and administration tasks that
-require special access privileges as described in :ref:`privileges`.
+require special access privileges as described in :ref:`Access control in the
+backend (users and groups) <t3coreapi:access>`.
 
