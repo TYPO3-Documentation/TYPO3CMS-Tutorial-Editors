@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<guides xmlns="https://www.phpdoc.org/guides" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="https://www.phpdoc.org/guides ../vendor/phpdocumentor/guides-cli/resources/schema/guides.xsd" links-are-relative="true">
+  <extension class="\T3Docs\Typo3DocsTheme\DependencyInjection\Typo3DocsThemeExtension" project-home="https://docs.typo3.org/m/typo3/tutorial-editors/main/en-us/" project-contact="https://typo3.slack.com/archives/C028JEPJL" project-repository="https://github.com/TYPO3-Documentation/TYPO3CMS-Tutorial-Editors" project-issues="https://github.com/TYPO3-Documentation/TYPO3CMS-Tutorial-Editors/issues" edit-on-github-branch="main" edit-on-github="TYPO3-Documentation/TYPO3CMS-Tutorial-Editors" typo3-core-preferred="stable" interlink-shortcode="typo3/tutorial-editors"/>
+  <project title="Tutorial for Editors" release="main (development)" version="main (development)" copyright="since 2012 by the TYPO3 contributors"/>
+  <inventory id="t3coreapi" url="https://docs.typo3.org/m/typo3/reference-coreapi/main/en-us/"/>
+  <inventory id="typo3/guide-frontendlocalization" url="https://docs.typo3.org/m/typo3/guide-frontendlocalization/main/en-us/"/>
+  <inventory id="t3sitepackage" url="https://docs.typo3.org/m/typo3/tutorial-sitepackage/main/en-us/"/>
+  <inventory id="t3start" url="https://docs.typo3.org/m/typo3/tutorial-getting-started/main/en-us/"/>
+  <inventory id="t3tsconfig" url="https://docs.typo3.org/m/typo3/reference-tsconfig/main/en-us/"/>
+  <inventory id="ext_felogin" url="https://docs.typo3.org/c/typo3/cms-felogin/main/en-us/"/>
+  <inventory id="ext_form" url="https://docs.typo3.org/c/typo3/cms-form/main/en-us/"/>
+  <inventory id="ext_indexed_search" url="https://docs.typo3.org/c/typo3/cms-indexed-search/main/en-us/"/>
+  <inventory id="ext_recycler" url="https://docs.typo3.org/c/typo3/cms-recycler/main/en-us/"/>
+  <inventory id="ext_seo" url="https://docs.typo3.org/c/typo3/cms-seo/main/en-us/"/>
+</guides>
