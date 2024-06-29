@@ -14,8 +14,6 @@ In the Core, and in extensions that follow best practice, all options related
 to visibility are controlled in the :guilabel:`Access` tab of the :ref:`page
 properties <pages-properties>`.
 
-.. include:: /Images/AutomaticScreenshots/PageProperties/Enable.rst.txt
-
 .. _visibility-dates:
 
 Publication dates
