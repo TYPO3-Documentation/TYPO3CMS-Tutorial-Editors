@@ -41,8 +41,6 @@ the heading (:guilabel:`Headlines > Type`). The choice of the level of the
 heading should be made in accordance to the semantics of the text and not according to
 design choices.
 
-.. include:: /Images/AutomaticScreenshots/NewContentElement/NewContentElement.rst.txt
-
 The :ref:`rich text editor (RTE) <rte>` also offers the ability to create
 headlines of different levels.
 
