@@ -11,7 +11,7 @@ TYPO3 CMS comes with the built-in ability to handle web sites
 in multiple languages.
 
 Detailed information about setting up a multilingual web site is
-found in the :ref:`Frontend Localization Guide <typo3/guide-frontendlocalization:start>`.
+found in the :ref:`Frontend Localization Guide <t3translate:start>`.
 
 ..  youtube:: B9TKbc7c7oI
 
@@ -131,7 +131,7 @@ translation. You can view a single language at a time by switching back to the
 
 Next steps
 ==========
-The :ref:`Frontend Localization Guide <typo3/guide-frontendlocalization:start>`
+The :ref:`Frontend Localization Guide <t3translate:start>`
 contains detailed information about setting up a multilingual web site and how to
 actually do the translation and localization.
 

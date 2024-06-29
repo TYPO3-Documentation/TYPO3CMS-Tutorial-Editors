@@ -9,7 +9,7 @@
 
 TYPO3 CMS имеет встроенную возможность работы с сайтами на нескольких языках.
 
-Подробную информацию о настройке многоязычного сайта можно найти в :ref:`Frontend Localization Guide <typo3/guide-frontendlocalization:start>`.
+Подробную информацию о настройке многоязычного сайта можно найти в :ref:`Frontend Localization Guide <t3translate:start>`.
 
 ..  youtube:: B9TKbc7c7oI
 
@@ -102,6 +102,6 @@ TYPO3 CMS имеет встроенную возможность работы с
 
 Следующие шаги
 ==============
-В :ref:`Frontend Localization Guide <typo3/guide-frontendlocalization:start>` содержится подробная информация о настройке многоязычного веб-сайта и о том, как выполнять перевод и локализацию.
+В :ref:`Frontend Localization Guide <t3translate:start>` содержится подробная информация о настройке многоязычного веб-сайта и о том, как выполнять перевод и локализацию.
 
 Документация :ref:`Site Handling<t3coreapi:sitehandling-basics>` содержит информацию о том, как настроить сайт для добавления дополнительных языков.

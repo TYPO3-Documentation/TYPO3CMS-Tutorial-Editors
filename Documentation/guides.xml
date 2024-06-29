@@ -18,6 +18,4 @@
             version="main"
             copyright="since 2012 by the TYPO3 contributors"
     />
-    <inventory id="typo3/guide-frontendlocalization"
-               url="https://docs.typo3.org/m/typo3/guide-frontendlocalization/main/en-us/"/>
 </guides>
