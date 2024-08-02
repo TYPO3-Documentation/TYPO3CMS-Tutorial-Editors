@@ -23,6 +23,20 @@ the guidelines set out in `WAI-ARIA Authoring Practices 1.1. <https://www.w3.org
 *  :kbd:`Right` arrow key will expand the focus if possible.
 *  :kbd:`Left` arrow key will close the focus if possible.
 
+Actions in backend editor
+=========================
+
+..  tabs::
+
+    ..  group-tab:: Windows / Linux
+
+        *  :kbd:`ctrl` + :kbd:`s` = Save
+        *  :kbd:`ctrl` + :kbd:`shift` + :kbd:`s` = Save and close
+
+    ..  group-tab:: macOs
+
+        *  :kbd:`cmd (⌘)` + :kbd:`s` = Save
+        *  :kbd:`cmd (⌘)` + :kbd:`shift` + :kbd:`s` = Save and close
 
 Editing text in the Rich Text Editor (RTE)
 ==========================================
