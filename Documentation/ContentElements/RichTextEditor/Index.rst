@@ -72,3 +72,9 @@ Removing a link
 
 To remove a link from text, put your cursor anywhere in the linked text then
 click the :guilabel:`Unlink` icon on the toolbar.
+
+.. tip::
+
+   If you are more comfortable using shortcuts, there are different kinds of
+   :ref:`keyboard commands <t3editors:keyboard_commands>` you can use in
+   the Backend Editor.

@@ -44,3 +44,9 @@ start playing as soon as the page loads.
 You can configure various settings for media files (for example, adding a
 border, setting page position and behavior) just as you would to
 :ref:`configure an image<Configure-the-image>`.
+
+.. tip::
+
+   If you are more comfortable using shortcuts, there are different kinds of
+   :ref:`keyboard commands <t3editors:keyboard_commands>` you can use in
+   the Backend Editor.
