@@ -23,7 +23,7 @@ the guidelines set out in `WAI-ARIA Authoring Practices 1.1. <https://www.w3.org
 *  :kbd:`Right` arrow key will expand the focus if possible.
 *  :kbd:`Left` arrow key will close the focus if possible.
 
-Actions in backend editor
+Actions in backend forms
 =========================
 
 ..  tabs::
