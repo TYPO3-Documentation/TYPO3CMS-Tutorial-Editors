@@ -30,13 +30,13 @@ Actions in backend forms
 
     ..  group-tab:: Windows / Linux
 
-        *  :kbd:`ctrl` + :kbd:`s` = Save
-        *  :kbd:`ctrl` + :kbd:`shift` + :kbd:`s` = Save and close
+        *   :kbd:`ctrl` + :kbd:`s` = Save
+        *   :kbd:`ctrl` + :kbd:`shift` + :kbd:`s` = Save and close
 
     ..  group-tab:: macOs
 
-        *  :kbd:`cmd (⌘)` + :kbd:`s` = Save
-        *  :kbd:`cmd (⌘)` + :kbd:`shift` + :kbd:`s` = Save and close
+        *   :kbd:`cmd (⌘)` + :kbd:`s` = Save
+        *   :kbd:`cmd (⌘)` + :kbd:`shift` + :kbd:`s` = Save and close
 
 Editing text in the Rich Text Editor (RTE)
 ==========================================
