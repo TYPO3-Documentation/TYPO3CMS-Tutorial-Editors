@@ -144,4 +144,4 @@ Add new content to a page
 
    The new content element appears in the Page module
 
-.. include:: /ContentElements/TipKeyboardCommands.rst
+.. include:: /ContentElements/TipKeyboardCommands.rst.txt

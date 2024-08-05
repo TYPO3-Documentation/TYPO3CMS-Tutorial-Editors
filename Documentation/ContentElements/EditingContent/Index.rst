@@ -27,4 +27,4 @@ display different input fields.
 This action does not delete content. It is saved in the background and will be
 restored if you select the applicable content element type again.
 
-.. include:: /ContentElements/TipKeyboardCommands.rst
+.. include:: /ContentElements/TipKeyboardCommands.rst.txt

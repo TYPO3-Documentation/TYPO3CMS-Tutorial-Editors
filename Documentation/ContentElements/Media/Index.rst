@@ -45,4 +45,4 @@ You can configure various settings for media files (for example, adding a
 border, setting page position and behavior) just as you would to
 :ref:`configure an image<Configure-the-image>`.
 
-.. include:: /ContentElements/TipKeyboardCommands.rst
+.. include:: /ContentElements/TipKeyboardCommands.rst.txt
