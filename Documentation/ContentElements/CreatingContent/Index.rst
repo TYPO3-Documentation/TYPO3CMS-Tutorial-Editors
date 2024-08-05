@@ -143,3 +143,5 @@ Add new content to a page
    :class: with-shadow
 
    The new content element appears in the Page module
+
+.. include:: /ContentElements/TipKeyboardCommands.rst.txt

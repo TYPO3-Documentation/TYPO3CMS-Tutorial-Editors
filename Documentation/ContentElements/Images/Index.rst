@@ -91,3 +91,5 @@ Behavior
 --------
 
 Use the :guilabel:`Enlarge on Click` setting to enable a lightbox display for the image.
+
+.. include:: /ContentElements/TipKeyboardCommands.rst.txt
