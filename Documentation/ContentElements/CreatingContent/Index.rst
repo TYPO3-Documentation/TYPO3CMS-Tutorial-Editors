@@ -144,8 +144,4 @@ Add new content to a page
 
    The new content element appears in the Page module
 
-.. tip::
-
-   If you are more comfortable using shortcuts, there are different kinds of
-   :ref:`keyboard commands <t3editors:keyboard_commands>` you can use in
-   the Backend Editor.
+.. include:: /ContentElements/TipKeyboardCommands.rst

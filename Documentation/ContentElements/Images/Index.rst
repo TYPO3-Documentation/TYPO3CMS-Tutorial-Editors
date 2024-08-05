@@ -92,8 +92,4 @@ Behavior
 
 Use the :guilabel:`Enlarge on Click` setting to enable a lightbox display for the image.
 
-.. tip::
-
-   If you are more comfortable using shortcuts, there are different kinds of
-   :ref:`keyboard commands <t3editors:keyboard_commands>` you can use in
-   the Backend Editor.
+.. include:: /ContentElements/TipKeyboardCommands.rst

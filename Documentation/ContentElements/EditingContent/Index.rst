@@ -27,8 +27,4 @@ display different input fields.
 This action does not delete content. It is saved in the background and will be
 restored if you select the applicable content element type again.
 
-.. tip::
-
-   If you are more comfortable using shortcuts, there are different kinds of
-   :ref:`keyboard commands <t3editors:keyboard_commands>` you can use in
-   the Backend Editor.
+.. include:: /ContentElements/TipKeyboardCommands.rst
