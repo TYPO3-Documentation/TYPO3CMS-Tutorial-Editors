@@ -6,7 +6,7 @@
 Login
 =====
 
-In TYPO3, an editor's work is done via the backend and having 
+In TYPO3, an editor's work is done via the backend and having
 a working backend account is critical.
 
 .. important::
@@ -18,16 +18,10 @@ Enter your domain name into the address bar of your internet browser and
 append "/typo3" to it to get to the "log in" page of your site.
 For example: :samp:`http://www.example.org/typo3`.
 
-
-.. figure:: /Images/AutomaticScreenshots/Login/BackendLoginPage.png
-   :alt: The TYPO3 CMS backend login screen
-
-   The TYPO3 CMS backend login screen
-
 Troubleshooting: Forgot password for backend login
 ===================================================
 
-.. info::
+.. tip::
    The following only works if your site administrator has
    :ref:`enabled the password reset <t3coreapi:access-password-reset>`
    and if your backend account has a valid email address set.
@@ -74,9 +68,9 @@ Troubleshooting: Forgot password for backend login
    After you clicked on the password recovery link in the email you received
    you can enter a new password. Always use a
    :ref:`secure password <t3coreapi:security-secure-passwords>`.
-   
+
    .. figure:: /Images/ManualScreenshots/Login/ForgotPasswordChangePassword.png
       :alt: Enter the secure new password twice
       :class: with-shadow
-      
+
       Enter a secure new password twice
