@@ -1,71 +1,47 @@
-.. include:: /Includes.rst.txt
-.. index:: Modules; List module
-.. _list-module:
-.. _the-list-module-and-clipboard:
+..  include:: /Includes.rst.txt
+..  index:: Modules; List module
+..  _list-module:
+..  _the-list-module-and-clipboard:
 
 =======
 Records
 =======
 
-.. container:: row m-0 p-0
+..  card-grid::
+    :columns: 1
+    :columns-md: 2
+    :gap: 4
+    :class: pb-4
+    :card-height: 100
 
-   .. container:: col-md-6 pl-0 pr-3 py-3 m-0
+    ..  card:: :ref:`Using The List Module<using-the-list-module-effectively>`
 
-      .. container:: card px-0 h-100
+        The list view displays a list of records stored on the current page, grouped by type.
 
-         .. rst-class:: card-header h3
+    ..  card:: :ref:`The Clipboard<clipboard>`
 
-            .. rubric:: :ref:`Using The List Module<using-the-list-module-effectively>`
+        Every time a record is copied in the TYPO3, it appears in the clipboard
+        found at the bottom of the list module screen.
 
-         .. container:: card-body
+        Find out how you can move and copy content in the backend.
 
-            The list view displays a list of records stored on the current page, grouped by type.
+    ..  card:: :ref:`Advanced Clipboard Usage<advanced_clipboard_usage>`
 
-   .. container:: col-md-6 pl-0 pr-3 py-3 m-0
-
-      .. container:: card px-0 h-100
-
-         .. rst-class:: card-header h3
-
-            .. rubric:: :ref:`The Clipboard<clipboard>`
-
-         .. container:: card-body
-
-            Every time a record is copied in the TYPO3, it appears in the clipboard found at the bottom of the list module screen.
-            Find out how you can move and copy content in the backend.
-
-   .. container:: col-md-6 pl-0 pr-3 py-3 m-0
-
-      .. container:: card px-0 h-100
-
-         .. rst-class:: card-header h3
-
-            .. rubric:: :ref:`Advanced Clipboard Usage<advanced_clipboard_usage>`
-
-         .. container:: card-body
-
-            Find out how to make get the most out of the clipboard with an overview of some
-            its extra features.
+        Find out how to make get the most out of the clipboard with an overview of some
+        its extra features.
 
 
-   .. container:: col-md-6 pl-0 pr-3 py-3 m-0
+    ..  card:: :ref:`Mass Editing<mass-editing>`
 
-      .. container:: card px-0 h-100
+        The List module makes it possible to display the content of several
+        fields at once and gives you the ability edit several records with one action.
 
-         .. rst-class:: card-header h3
+..  toctree::
+    :maxdepth: 2
+    :titlesonly:
+    :hidden:
 
-            .. rubric:: :ref:`Mass Editing<mass-editing>`
-
-         .. container:: card-body
-
-            The List module makes it possible to display the content of several fields at once and gives you the ability edit several records with one action.
-
-.. toctree::
-   :maxdepth: 2
-   :titlesonly:
-   :hidden:
-
-   UsingEffectively/Index
-   Clipboard/Index
-   AdvancedClipboard/Index
-   MassEditing/Index
+    UsingEffectively/Index
+    Clipboard/Index
+    AdvancedClipboard/Index
+    MassEditing/Index
