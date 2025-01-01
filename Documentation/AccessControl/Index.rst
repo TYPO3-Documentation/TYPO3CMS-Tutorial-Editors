@@ -1,7 +1,7 @@
-.. include:: /Includes.rst.txt
+..  include:: /Includes.rst.txt
 
 
-.. _access-control:
+..  _access-control:
 
 ==============
 Access Control
@@ -12,38 +12,27 @@ and other information in your TYPO3 CMS installation. Options can range from
 hiding pages in menus, to limiting visibility of content for a set time
 period, all the way through to requiring visitors to log in to view content.
 
-.. container:: row m-0 p-0
+..  card-grid::
+    :columns: 1
+    :columns-md: 2
+    :gap: 4
+    :class: pb-4
+    :card-height: 100
 
-   .. container:: col-md-6 pl-0 pr-3 py-3 m-0
+    ..  card:: :ref:`Visibility<visibility>`
 
-      .. container:: card px-0 h-100
+        When an element is hidden, be it a page, a content element or a news item,
+        it will not display in the frontend. You can, however, preview it in the backend.
 
-         .. rst-class:: card-header h3
+    ..  card:: :ref:`Frontend Login<frontend-login>`
 
-            .. rubric:: :ref:`Visibility<visibility>`
+        Find out how to configure content and pages to only be visible
+        to frontend users who have logged in to a restricted area.
 
-         .. container:: card-body
+..  toctree::
+    :maxdepth: 2
+    :titlesonly:
+    :hidden:
 
-            When an element is hidden, be it a page, a content element or a news item,
-            it will not display in the frontend. You can, however, preview it in the backend.
-
-   .. container:: col-md-6 pl-0 pr-3 py-3 m-0
-
-      .. container:: card px-0 h-100
-
-         .. rst-class:: card-header h3
-
-            .. rubric:: :ref:`Frontend Login<frontend-login>`
-
-         .. container:: card-body
-
-            Find out how to configure content and pages to only be visible
-            to frontend users who have logged in to a restricted area.
-
-.. toctree::
-   :maxdepth: 2
-   :titlesonly:
-   :hidden:
-
-   Visibility/Index
-   Login/Index
+    Visibility/Index
+    Login/Index
