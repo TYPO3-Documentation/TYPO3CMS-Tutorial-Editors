@@ -1,5 +1,5 @@
-.. include:: /Includes.rst.txt
-..  _start:
+..  include:: /Includes.rst.txt
+..   _start:
 
 ===================
 TYPO3 Editors Guide
@@ -22,135 +22,92 @@ the `Official Introduction Package <https://extensions.typo3.org/extension/intro
 
 ----
 
-.. container:: row m-0 p-0
+..  card-grid::
+    :columns: 1
+    :columns-md: 2
+    :gap: 4
+    :class: pb-4
+    :card-height: 100
 
-   .. container:: col-md-6 pl-0 pr-3 py-3 m-0
+    ..  card:: Getting Started
 
-      .. container:: card px-0 h-100
+        *  :ref:`Logging in to TYPO3's backend<login>`
 
-         .. rst-class:: card-header h3
+        *  :ref:`Getting help with TYPO3's built in support tools<help-inside>`
 
-            .. rubric:: Getting Started
+        *  :ref:`About this guide<introduction>`
 
-         .. container:: card-body
+    ..  card:: :ref:`Working With The Page Tree<pages>`
 
-            *  :ref:`Logging in to TYPO3's backend<login>`
+        *  :ref:`Creating pages<pages-creating>`
 
-            *  :ref:`Getting help with TYPO3's built in support tools<help-inside>`
+        *  :ref:`Creating multiple pages<pages-multiple>`
 
-            *  :ref:`About this guide<introduction>`
+        *  :ref:`Working with pages<pages-working-with>`
 
-   .. container:: col-md-6 pl-0 pr-3 py-3 m-0
+        *  :ref:`Page types<pages-types>` and :ref:`Page properties<pages-properties>`
 
-      .. container:: card px-0 h-100
+    ..  card:: :ref:`Creating & Managing Content<content-elements>`
 
-         .. rst-class:: card-header h3
+        *  :ref:`Creating content <content-creating>`
 
-            .. rubric:: :ref:`Working With The Page Tree<pages>`
+        *  :ref:`Editing<content-editing>` and :ref:`managing content<content-working>`
 
-         .. container:: card-body
+        *  :ref:`Working with images<images-new>` and :ref:`other media<media>`
 
-            *  :ref:`Creating pages<pages-creating>`
+        *  :ref:`Creating a contact form<mail-form>`
 
-            *  :ref:`Creating multiple pages<pages-multiple>`
+    ..  card:: :ref:`Record Management<list-module>`
 
-            *  :ref:`Working with pages<pages-working-with>`
+        *  :ref:`Using the backend List module <list-module>`
 
-            *  :ref:`Page types<pages-types>` and :ref:`Page properties<pages-properties>`
+        *  :ref:`Moving content with the clipboard <clipboard>`
 
-   .. container:: col-md-6 pl-0 pr-3 py-3 m-0
+        *  :ref:`Advanced clipboard features<advanced_clipboard_usage>`
 
-      .. container:: card px-0 h-100
+        *  :ref:`Mass editing content<mass-editing>`
 
-         .. rst-class:: card-header h3
+    ..  card:: Tools For Editors
 
-            .. rubric:: :ref:`Creating & Managing Content<content-elements>`
+        *  :ref:`Manage files with Filelist <file-module>`
 
-         .. container:: card-body
+        *  :ref:`Create links in the backend with Deep Linking <deeplinking>`
 
-            *  :ref:`Creating content <content-creating>`
+        *  :ref:`Restrict access to pages and content with Access Control <access-control>`
 
-            *  :ref:`Editing<content-editing>` and :ref:`managing content<content-working>`
+        *  :ref:`Working with multiple languages <languages>`
 
-            *  :ref:`Working with images<images-new>` and :ref:`other media<media>`
+    ..  card:: :ref:`Concepts <concepts>`
 
-            *  :ref:`Creating a contact form<mail-form>`
+        *  :ref:`Creating accessible content <accessibility>`
 
-   .. container:: col-md-6 pl-0 pr-3 py-3 m-0
+        *  :ref:`Caching <cache>`
 
-      .. container:: card px-0 h-100
+        *  :ref:`Copyright and data privacy <copyright>`
 
-         .. rst-class:: card-header h3
+        *  :ref:`File abstraction layer (FAL) <fal>`
 
-            .. rubric:: :ref:`Record Management<list-module>`
+..  toctree::
+    :maxdepth: 2
+    :titlesonly:
+    :hidden:
 
-         .. container:: card-body
+    Login/Index
+    Pages/Index
+    ContentElements/Index
+    ListModule/Index
+    FileModule/Index
+    Languages/Index
+    AccessControl/Index
+    DeepLinking/Index
+    HelpInside/Index
+    Concepts/Index
+    About
+    NextSteps/Index
 
-            *  :ref:`Using the backend List module <list-module>`
+..  Meta Menu
 
-            *  :ref:`Moving content with the clipboard <clipboard>`
+..  toctree::
+    :hidden:
 
-            *  :ref:`Advanced clipboard features<advanced_clipboard_usage>`
-
-            *  :ref:`Mass editing content<mass-editing>`
-
-   .. container:: col-md-6 pl-0 pr-3 py-3 m-0
-
-      .. container:: card px-0 h-100
-
-         .. rst-class:: card-header h3
-
-            .. rubric:: Tools For Editors
-
-         .. container:: card-body
-
-            *  :ref:`Manage files with Filelist <file-module>`
-
-            *  :ref:`Create links in the backend with Deep Linking <deeplinking>`
-
-            *  :ref:`Restrict access to pages and content with Access Control <access-control>`
-
-            *  :ref:`Working with multiple languages <languages>`
-
-   .. container:: col-md-6 pl-0 pr-3 py-3 m-0
-
-      .. container:: card px-0 h-100
-
-         .. rst-class:: card-header h3
-
-            .. rubric:: :ref:`Concepts <concepts>`
-
-         .. container:: card-body
-
-            *  :ref:`Creating accessible content <accessibility>`
-
-            *  :ref:`Caching <cache>`
-
-            *  :ref:`Copyright and data privacy <copyright>`
-
-            *  :ref:`File abstraction layer (FAL) <fal>`
-
-.. toctree::
-   :maxdepth: 2
-   :titlesonly:
-   :hidden:
-
-   Login/Index
-   Pages/Index
-   ContentElements/Index
-   ListModule/Index
-   FileModule/Index
-   Languages/Index
-   AccessControl/Index
-   DeepLinking/Index
-   HelpInside/Index
-   Concepts/Index
-   About
-   NextSteps/Index
-
-.. Meta Menu
-
-.. toctree::
-   :hidden:
-
-   Sitemap
+    Sitemap
