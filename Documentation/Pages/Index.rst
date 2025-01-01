@@ -1,91 +1,53 @@
-.. include:: /Includes.rst.txt
+..  include:: /Includes.rst.txt
 
 
-.. _pages:
+..  _pages:
 
 =====
 Pages
 =====
 
-.. container:: row m-0 p-0
+..  card-grid::
+    :columns: 1
+    :columns-md: 2
+    :gap: 4
+    :class: pb-4
+    :card-height: 100
 
-   .. container:: col-md-6 pl-0 pr-3 py-3 m-0
+    ..  card:: :ref:`Creating Pages<pages-creating>`
+        Creating pages is one of the first things you will do with your
+        new TYPO3 installation. This chapter contains information on how to
+        create pages and arrange them in the page tree.
 
-      .. container:: card px-0 h-100
+    ..  card:: :ref:`Creating Multiple Pages<pages-multiple>`
 
-         .. rst-class:: card-header h3
+        TYPO3 has a built-in feature that allows multiple pages to be created at once, making it easier to get started
+        with larger projects. This chapter contains information on how to use this tool.
 
-            .. rubric:: :ref:`Creating Pages<pages-creating>`
+    ..  card:: :ref:`Working With Pages<pages-working-with>`
 
-         .. container:: card-body
+        This chapter contains information on how pages can be moved, copied and
+        deleted in the page tree as well as showing you how to use the filter tool.
 
-            Creating pages is one of the first things you will do with your
-            new TYPO3 installation. This chapter contains information on how to
-            create pages and arrange them in the page tree.
+    ..  card:: :ref:`Page Types<pages-types>`
 
+        There are a number of different types of pages that can be created in the page tree,
+        including restricted pages and shortcuts to other pages. This chapter contains information
+        about the different types of pages that are available and how they can be used.
 
-   .. container:: col-md-6 pl-0 pr-3 py-3 m-0
+    ..  card:: :ref:`Page Properties<pages-properties>`
 
-      .. container:: card px-0 h-100
+        Every page in the page tree has a set of properties that can be changed. This includes what
+        template a page uses, SEO information and its visibility in the frontend. This chapter contains
+        detailed information on each of the property tabs and how they can be configured.
 
-         .. rst-class:: card-header h3
+..  toctree::
+    :maxdepth: 2
+    :titlesonly:
+    :hidden:
 
-            .. rubric:: :ref:`Creating Multiple Pages<pages-multiple>`
-
-         .. container:: card-body
-
-            TYPO3 has a built-in feature that allows multiple pages to be created at once, making it easier to get started
-            with larger projects. This chapter contains information on how to use this tool.
-
-   .. container:: col-md-6 pl-0 pr-3 py-3 m-0
-
-      .. container:: card px-0 h-100
-
-         .. rst-class:: card-header h3
-
-            .. rubric:: :ref:`Working With Pages<pages-working-with>`
-
-         .. container:: card-body
-
-            This chapter contains information on how pages can be moved, copied and
-            deleted in the page tree as well as showing you how to use the filter tool.
-
-   .. container:: col-md-6 pl-0 pr-3 py-3 m-0
-
-      .. container:: card px-0 h-100
-
-         .. rst-class:: card-header h3
-
-            .. rubric:: :ref:`Page Types<pages-types>`
-
-         .. container:: card-body
-
-            There are a number of different types of pages that can be created in the page tree,
-            including restricted pages and shortcuts to other pages. This chapter contains information
-            about the different types of pages that are available and how they can be used.
-
-
-   .. container:: col-md-6 pl-0 pr-3 py-3 m-0
-
-      .. container:: card px-0 h-100
-
-         .. rst-class:: card-header h3
-
-            .. rubric:: :ref:`Page Properties<pages-properties>`
-
-         .. container:: card-body
-
-            Every page in the page tree has a set of properties that can be changed. This includes what
-            template a page uses, SEO information and its visibility in the frontend. This chapter contains
-            detailed information on each of the property tabs and how they can be configured.
-
-.. toctree::
-   :maxdepth: 2
-   :titlesonly:
-   :hidden:
-
-   CreatingPages/Index
-   AddingMultiple/Index
-   WorkingWithPages/Index
-   PageTypes/Index
-   PageProperties/Index
+    CreatingPages/Index
+    AddingMultiple/Index
+    WorkingWithPages/Index
+    PageTypes/Index
+    PageProperties/Index
