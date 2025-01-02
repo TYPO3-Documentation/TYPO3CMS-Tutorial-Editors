@@ -1,6 +1,0 @@
-.. Automatic screenshot: Remove this line if you want to manually change this file
-
-.. figure:: /Images/AutomaticScreenshots/EditContent/EditContentChangeType.png
-   :class: with-shadow
-
-   Editing a content element to change its type
