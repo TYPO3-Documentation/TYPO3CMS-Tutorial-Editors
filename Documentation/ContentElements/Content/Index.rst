@@ -7,6 +7,11 @@
 Working with content
 ====================
 
+..  image:: /Images/ManualScreenshots/ContentElements/ManageContent.png
+    :alt: Manage content elements in the TYPO3 backend
+    :class: img-thumbnail float-end ms-1 ms-1
+    :width: 250
+
 In TYPO3, working with content happens mostly in the :guilabel:`Web > Page`
 module.
 
