@@ -7,15 +7,22 @@
 Creating content
 ================
 
+..  image:: /Images/ManualScreenshots/ContentElements/CreateContentElement.png
+    :alt: Creating content elements in the TYPO3 backend
+    :class: img-thumbnail float-end ms-1 ms-1
+    :width: 250
+
 In the :guilabel:`Web > Page` module, on any page, click the :guilabel:`+
 Create new content` button in the place where you want to insert content:
+
+The :guilabel:`New Page Content` wizard will then be displayed.
+
+In the following screenshot you see the location of that button:
 
 ..  figure:: /Images/ManualScreenshots/NewContentElement/CreateNew.png
     :alt: "Create new content button" in the Page module, column "Normal"
 
     Create a new Content Element by clicking the button
-
-The :guilabel:`New Page Content` wizard will then be displayed.
 
 ..  contents:: Table of contents:
 
