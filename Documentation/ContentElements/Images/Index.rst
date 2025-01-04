@@ -7,6 +7,11 @@
 Working with images
 ===================
 
+..  image:: /Images/ManualScreenshots/ContentElements/Images.png
+    :alt: Content element Images in the TYPO3 backend
+    :class: img-thumbnail float-end ms-1
+    :width: 250
+
 For content elements that support images (for example Text & Images, Text &
 Media, Images Only), you will see an :guilabel:`Images` or :guilabel:`Media`
 tab when you create or edit the content element.
@@ -58,13 +63,13 @@ insert a link to the image.
 
     Override the default meta data of the image with custom values for this location.
 
-If the file was added using the :guilabel:`File > Filelist`
-module (which is best practice), the information displayed here is drawn from
-the Filelist. If required, you can override this metadata to set specific
+The information displayed here is drawn from the file metadata set in the
+:guilabel:`Filelist`. If required, you can override this metadata to set specific
 values for the image for the current content element.
 
 You can experiment with the image manipulation editor to crop or resize the
-image. Making changes here won't impact the original image file in Filelist.
+image. Making changes here won't impact the original image file in
+:guilabel:`Filelist`.
 
 
 .. _images-appearance:
