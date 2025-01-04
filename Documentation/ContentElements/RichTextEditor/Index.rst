@@ -7,6 +7,11 @@
 The rich text editor
 ====================
 
+..  image:: /Images/ManualScreenshots/ContentElements/RegularText.png
+    :alt: Content element Regular Text in the TYPO3 backend
+    :class: img-thumbnail float-end
+    :width: 250
+
 The TYPO3 text editing interface is not much different from a word processor.
 The options available in the toolbars vary depending on how your TYPO3
 installation is configured.

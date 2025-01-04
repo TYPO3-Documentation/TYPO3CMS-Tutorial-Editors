@@ -8,6 +8,11 @@
 Creating a contact form
 =======================
 
+..  image:: /Images/ManualScreenshots/ContentElements/ContactForm.png
+    :alt: Content element Contact Form in the TYPO3 backend
+    :class: img-thumbnail float-end ms-1 ms-1
+    :width: 250
+
 You can create a form from the :guilabel:`Web > Forms` module. This is a
 system extension which needs to be activated by your administrator. It is
 written in TypoScript and is fully documented in the :doc:`Form Framework <ext_form:Index>` system extension manual.

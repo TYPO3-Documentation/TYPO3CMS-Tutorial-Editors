@@ -6,6 +6,11 @@
 Embedding video and audio
 =========================
 
+..  image:: /Images/ManualScreenshots/ContentElements/TextAndMedia.png
+    :alt: Content element Text and Media in the TYPO3 backend
+    :class: img-thumbnail float-end ms-1
+    :width: 250
+
 Like images, it's best practice to add new video and audio files using the
 :guilabel:`File > Filelist` module, which is covered in the :ref:`chapter about the file module <file-module>`. This method
 means files are stored centrally and any information or metadata you add to
