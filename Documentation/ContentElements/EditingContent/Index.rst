@@ -115,7 +115,7 @@ There can be various reasons:
 *   Your browser cached the old content: Delete your
     `Browser cache <https://docs.typo3.org/permalink/t3editors:browser-cache>`_.
 *   Try `Previewing the page without clearing the cache <https://docs.typo3.org/permalink/t3editors:cache-preview>`_.
-*   Your changed did not get saved due to an error (see possible errors above).
+*   Your changes did not get saved due to an error (see possible errors above).
 *   Your site is using `Workspaces <https://docs.typo3.org/permalink/typo3/cms-workspaces:users-guide>`_.
 *   Try `Manual cache clearing <https://docs.typo3.org/permalink/t3editors:cache-manual>`_
     if you have the permissions to do so.
@@ -126,7 +126,7 @@ There can be various reasons:
 Changing the type of an existing content element
 ================================================
 
-You can also change the content element type by selecting a new element from
+You can also change the content element type by selecting another element from
 the :guilabel:`Type` list.
 
 ..  figure:: /Images/ManualScreenshots/ContentElements/ChangeType.png
