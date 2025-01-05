@@ -33,9 +33,8 @@ The following screenshot demonstrates how to open the Page module:
 Overview of the Page module in TYPO3
 ====================================
 
-..  figure:: ../../Images/ManualScreenshots/Page/PageModule/PageModuleColumns.png
+..  figure:: /Images/ManualScreenshots/ContentElements/PageModuleAnnotated.png
     :alt: A typical view of the Page module with various content columns
-    :class: with-border
 
 Common page icons explained:
 
@@ -49,9 +48,10 @@ Common page icons explained:
 
 #.  This group of icons is enabled when hovering over the whole element.
 
-    *  Use the pencil icon to edit the element.
-    *  Enable/disable the element to show or hide it in the frontend
-    *  Delete the element.
+    *   Use the pencil icon to edit the element.
+    *   Enable/disable the element to show or hide it in the frontend
+    *   Delete the element.
+    *   Open the context menu.
 
 #.  If the edit icons are missing you do not have sufficient permission to
     edit the content element in question.
