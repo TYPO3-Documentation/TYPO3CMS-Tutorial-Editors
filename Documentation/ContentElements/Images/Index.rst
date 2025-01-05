@@ -55,7 +55,7 @@ Image metadata
 
 Use the small arrow next to the thumbnail to collapse and expand this section.
 
-Here you can set general metadata including description and alt text, and
+Here you can set general metadata including description, alt text, and
 insert a link to the image.
 
 ..  figure:: /Images/ManualScreenshots/ContentElements/TextWithImage/ImageMetaData.png
