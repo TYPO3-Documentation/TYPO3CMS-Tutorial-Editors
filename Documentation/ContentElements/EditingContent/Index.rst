@@ -87,7 +87,7 @@ not fill out a required field, you cannot save your changes.
 
     Input error caused by a letter entered in a number field
 
-If the field you changed is on a different then the currently changed palette,
+If the field you changed is on a different then the currently changed tab,
 you might not notice it right away.
 
 ..  _content-editing-trouble-error:
