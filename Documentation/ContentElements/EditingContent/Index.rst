@@ -25,7 +25,7 @@ that you have permissions for. There might be additional settings that only an
 advanced editor or an administrator can see and edit. Those might be hidden to
 you.
 
-..  figure:: /Images/ManualScreenshots/ContentElements/Edit.png
+..  figure:: /Images/ManualScreenshots/ContentElements/ChangeText.png
     :alt: Content element edit form screenshot, demonstrating changed content which is highlighted
 
     Changed content is highlighted. The save button is found on the top
