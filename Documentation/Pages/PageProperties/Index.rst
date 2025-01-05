@@ -1,38 +1,27 @@
-.. include:: /Includes.rst.txt
+..  include:: /Includes.rst.txt
 
-.. _pages-properties:
+..  _pages-properties:
 
 ===============
 Page properties
 ===============
 
-..  youtube:: dtRKsxzjKj0
-
-------------
-
 To access the page properties, click on the :guilabel:`Edit page properties`
 icon in the Docheader.
 
-.. include:: /Images/AutomaticScreenshots/EditContent/EditPageProperties.rst.txt
+..  figure:: /Images/ManualScreenshots/Page/EditPageProperties.png
+    :alt: The "Edit page properties" button is located in the doc-header of the page module
 
-The page properties that are available depend on the page type, your user 
-permissions, and the configuration of the TYPO3 installation. The default 
-properties available in the Introduction Package for the *Standard* page type
-include:
+    Click the "Edit page properties" button to open the properties
 
-* General
-* SEO
-* Social media
-* Metadata
-* Appearance
-* Behaviour
-* Resources
-* Language
-* Access
-* Categories
-* Notes
+The page properties that are available depend on the page type, your user
+permissions, and the configuration of the TYPO3 installation. The default
+properties available for the *Standard* page type include:
 
-.. _pages-properties-titles:
+..  contents::
+    :depth: 1
+
+..  _pages-properties-general:
 
 General
 =======
@@ -40,34 +29,91 @@ General
 This tab contains general information about the page. You
 can change the :guilabel:`Page Type`, and edit titles for the page and the URL.
 
-The :guilabel:`Page Title` is used to generate speaking URLs (user
-friendly URL format). It is also used in menus and in the `<title>` tag.
+The following fields are of interest:
 
-When you specify an :guilabel:`Alternative Navigation Title` all other
-instances of :guilabel:`Page Title` are left unchanged.
+..  contents::
+    :local:
+    :depth: 1
 
-.. include:: /Images/AutomaticScreenshots/PageProperties/General.rst.txt
+..  _pages-properties-url-type:
 
-.. _pages-properties-seo:
+Page Type
+---------
+
+The page types listed here vary with how the site package is defined and your
+user rights.
+
+See chapter `Page types <https://docs.typo3.org/permalink/t3editors:pages-types>`_
+for details.
+
+..  _pages-properties-titles:
+
+Page Title / Alternative Navigation Title
+-----------------------------------------
+
+The :guilabel:`Page Title` is used as label in menus and in the `<title>` tag in
+the HTML header. It is also used to generate the URL Segment.
+
+When you specify an :guilabel:`Alternative Navigation Title` this title is used
+as label in the menus while other usages of the "Page Title" stay unchanged.
+
+The "Subtitle" is only used if your site package configured it to be output
+somewhere.
+
+..  _pages-properties-url-segment:
+
+URL Segment
+-----------
+
+The "URL Segment", sometimes also called "Slug" is used to calculate the URL
+at which your page is available. Usually it is filled out automatically.
+
+..  figure:: /Images/ManualScreenshots/Page/RecalculateSlug.png
+    :alt: Location of the "Recalculate URL Segment" button at the end of the "URL Segment" field in the page properties
+
+    When you renamed or moved a page and also want to change the "URL Segment",
+    click the "Recalculate URL Segment" button.
+
+If the "Redirects" system extension is installed, an automatic redirect from
+the old to the new URL is created:
+
+..  figure:: /Images/ManualScreenshots/Page/RedirectCreated.png
+    :alt: Info: Slugs updated and redirects created: Because you renamed a slug, the slugs of all sub-pages were updated and redirects were created for you automatically.
+
+    If you accidentally changed a URL segment you can revert that change here
+
+It is also possible to edit the URL segment by clicking the "Toggle" button.
+You can then enter a different URL segment:
+
+..  figure:: /Images/ManualScreenshots/Page/RecalculateSlug.png
+    :alt: Manually editing a URL segment by clicking the "Toggle" button
+
+..  _pages-properties-seo:
 
 SEO
 ===
 
 This tab is used for search engine optimization. It uses the cs_seo system
-extension. See the :ref:`SEO Core extension <ext_seo:for-editors>` manual for
-more information.
+extension. See section
+`SEO Tab <https://docs.typo3.org/permalink/t3editors:seo-page-properties-seo>`_
+in chapter
+`Search engine optimization (SEO) for TYPO3 editors <https://docs.typo3.org/permalink/t3editors:seo>`_
+for more information.
 
 
-.. _pages-properties-social-media:
+..  _pages-properties-social-media:
 
 Social media
 ============
 
 The fields on this tab are used to enrich social media snippets for the URL of
-the page. It uses the `typo3/cms-seo` system extension. See the
-:ref:`SEO Core extension <ext_seo:for-editors>` manual for more information.
+the page. See section
+`Social media tab <https://docs.typo3.org/permalink/t3editors:seo-page-properties-social-media>`_
+in chapter
+`Search engine optimization (SEO) for TYPO3 editors <https://docs.typo3.org/permalink/t3editors:seo>`_
+for more information.
 
-.. _pages-properties-metadata:
+..  _pages-properties-metadata:
 
 Metadata
 ========
@@ -79,67 +125,41 @@ configuration.
 Typically, you might see the :guilabel:`Abstract` field, and editorial
 details like :guilabel:`Author Name` and :guilabel:`Last Update`.
 
-.. _pages-properties-appearance:
+..  _pages-properties-appearance:
 
 Appearance
 ==========
 
-This tab contains properties that influence how the page is rendered.
+This tab contains properties that influence how the page is rendered. By default
+it contains settings for the page layout, which influences the pages appearance
+in both the frontend and the Page Module in the backend. Sometimes a site package
+defines additional fields in this tab regarding appearance. Refer to the
+documentation of your site package or ask your integrator.
 
-.. include:: /Images/AutomaticScreenshots/PageProperties/Appearance.rst.txt
+..  _pages-properties-page-layout:
 
-Backend layouts can be applied to pages in the backend (the
-:guilabel:`Web > Page` module) to provide alternatives to the standard backend
-layout. In this way the backend page can mirror the structure of the frontend
-page. Content areas are then in roughly the same place as in the frontend,
-making editing easier.
+Page Layout / Backend Layout
+----------------------------
 
-Backend layouts can also be used to influence the rendering of the frontend.
+..  figure:: /Images/ManualScreenshots/Page/BackendLayout.png
+    :alt: The Backend Layout is found in the tab "Appearance" of the page properties in the TYPO3 Backend
 
-The :guilabel:`Show Content from Page` field tells the page to display the
-content from another page. This is an easier method for repeating the content of
-a single page than using :ref:`mount points <pages-types>`.
+Backend Layouts influence the general structure of a page not only in the
+backend but also in the frontend. A Backend Layout influences, which content
+areas are available in the Page Module to
+`Manage content <https://docs.typo3.org/permalink/t3editors:content-working>`_
+in them. A Backend Layout is usually bound to its own frontend template which
+influences the appearance in the frontend.
 
-.. _pages-properties-behaviour:
+..  _pages-properties-behaviour:
 
 Behaviour
 =========
 
-Fields on this tab set a variety of different aspects of the page.
+In this tab there is usually not much to do for an editor. Advanced editors can
+use it to exclude certain pages from the search.
 
-.. include:: /Images/AutomaticScreenshots/PageProperties/Behaviour.rst.txt
-
-Here are some of the common fields:
-
-Link Target
-   Set the default Link Target for menu items linking to the page. You can
-   also specify for the page to open in a new window.
-
-Cache Lifetime
-   Define a specific cache duration as well as assign cache tags to the page.
-   Some TYPO3 extensions can flush pages from the cache based on their cache
-   tag.
-
-Use as Root Page
-  Indicates that this page is the start of a new web site. The page icon
-  in the page tree is replaced by a world icon (as displayed for the
-  "Congratulations" page of the Introduction Package).
-
-Include in Search
-  By default, every page is included in the TYPO3 CMS built-in
-  search engine :docs:`ext_indexed_search/Index`. Use this flag to
-  exclude the current page.
-
-Hide child pages in page tree
-  Use this option to exclude the child page of the current page from
-  rendering in page tree of the backend. This can be useful if you have a
-  lot of subpages.
-
-Contains Plugin
-   Lets you define the page as a container for a frontend plugin.
-
-
-.. _pages-properties-resources:
+..  _pages-properties-resources:
 
 Resources
 =========
@@ -148,22 +168,7 @@ This tab lets you link media files to the current page.
 How those files are handled depends on your frontend rendering
 configuration.
 
-.. include:: /Images/AutomaticScreenshots/PageProperties/Resources.rst.txt
-
-The rest of the properties on this tab are related to :ref:`Page TSconfig
-<t3tsconfig:pagetsconfig>`.
-
-.. _pages-properties-language:
-
-Language
-========
-
-This tab lets you control the visibility of the page based on localization.
-
-For more information about translation, see :ref:`Working with Languages <languages>`
-
-
-.. _pages-properties-accesss:
+..  _pages-properties-accesss:
 
 Access
 ======
@@ -172,23 +177,15 @@ This tab lets you control the visibility of the page.
 
 For more information, see :ref:`Elements visibility <visibility>`.
 
-
-.. _pages-properties-categories:
+..  _pages-properties-categories:
 
 Categories
 ==========
 
-TYPO3 CMS provides a system-wide categorisation tool. By default
-categories can be applied to pages, content elements, and files.
+How categories for pages are used during rendering is up to the site package.
+By default they do not do anything.
 
-.. include:: /Images/AutomaticScreenshots/PageProperties/Categories.rst.txt
-
-
-Categories should be created in a folder and then be assigned to
-pages. The :ref:`content element type <content-special>` "Special Menus",
-for example, can display a list of pages from a selected category.
-
-.. _pages-properties-notes:
+..  _pages-properties-notes:
 
 Notes
 =====
@@ -196,5 +193,16 @@ Notes
 Use this tab for your own editorial notes and internal comments, such as
 reminders or to-do lists.
 
-Notes display in the backend above the Page Properties tabs. They are not
-displayed in the frontend.
+..  figure:: /Images/ManualScreenshots/Page/RecordInformation.png
+    :alt: Screenshot demonstrating the location of the "Record information" at the top of the Page Properties
+
+    Notes display in the backend above the Page Properties tabs. They are not
+    displayed in the frontend.
+
+..  _pages-properties-video:
+
+YouTube Video "Page Properties" (TYPO3 11.5)
+============================================
+
+..  youtube:: dtRKsxzjKj0
+
