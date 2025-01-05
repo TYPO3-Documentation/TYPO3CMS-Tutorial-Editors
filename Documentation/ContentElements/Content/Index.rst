@@ -86,20 +86,20 @@ Copy and paste content elements
 ..  figure:: /Images/ManualScreenshots/ContentElements/CopyContent.png
     :alt: The context menu of a content menu in the TYO3 backend
 
-    Use the context menu to copy a content element
+    Use the context menu of the upper left button of the content element to start copying a content element
 
 ..  _content-working-life-search:
 
 Finding content using the Live Search
 =====================================
 
-Use the search button on the top left of the TYPO3 backend or the keyboard
-shortcut :kbd:`Ctrl + K` to open the life search.
+Use the search button on the top right of the TYPO3 backend or the keyboard
+shortcut :kbd:`Ctrl + K` or :kbd:`Cmd + K` to open the live search.
 
 ..  figure:: /Images/ManualScreenshots/ContentElements/LiveSearch.png
     :alt: Using the live search to search for content elements
 
-    Use the arrow to get more information on the search result
+    Use the arrow button to get more information on the search result
 
 You can then edit the content element containing the text you were searching for.
 
