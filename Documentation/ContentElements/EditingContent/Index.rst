@@ -13,8 +13,6 @@ Editing content
 On a page, click the pencil icon for the content element you want to edit,
 then edit the text and make other changes as required.
 
-Click the edit button to start editing the content element
-
 ..  contents:: Table of contents:
 
 ..  _content-editing-change-text:
