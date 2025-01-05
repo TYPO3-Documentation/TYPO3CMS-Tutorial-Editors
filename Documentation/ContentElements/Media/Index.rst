@@ -8,7 +8,7 @@ Embedding videos as content into a TYPO3 website
 ================================================
 
 ..  image:: /Images/ManualScreenshots/ContentElements/TextAndMedia.png
-    :alt: Content element Text and Media in the TYPO3 backend
+    :alt: Content element "Text & Media" in the TYPO3 backend
     :class: img-thumbnail float-end ms-1
     :width: 250
 
@@ -21,7 +21,7 @@ It does however allow additional video and audio formats.
 It can also be used to embed video players for YouTube and or Vimeo.
 
 Which formats are allowed depends on the set up of your site. The allowed
-file extensions and pseudo formats (YouTube, Vimeo) are listed bellow the
+file extensions and pseudo formats (YouTube, Vimeo) are listed below the
 element selector.
 
 This content element can also be used to embed images and audio files.
