@@ -176,7 +176,7 @@ Undo changes using the Page History
 You can use the page history to undo any kind of content changes. If you have
 no access to the recycler you can also use it to restore deleted content.
 
-Use the content menu on the page tree and choose "History/Undo".
+Use the context menu on the page tree and choose "History/Undo".
 
 ..  figure:: /Images/ManualScreenshots/ContentElements/RestoreContent.png
     :alt: Screenshot of the page history in the TYPO3 backend
