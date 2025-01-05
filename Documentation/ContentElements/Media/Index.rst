@@ -44,7 +44,7 @@ source like YouTube or Vimeo, use the button :guilabel:`Add media URL` instead.
     :alt: Tab media of the text and media content element in TYPO3
 
 ..  note::
-    For security reasons the maximal upload size is limited. Images can have
+    For technical security reasons the maximal upload size is limited. Images can have
     large file sizes. If you cannot upload a video yourself, ask your
     administrator to do it for you or upload it on an external plattform and
     embed it.
