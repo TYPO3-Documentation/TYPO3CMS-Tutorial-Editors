@@ -1,7 +1,0 @@
-.. Automatic screenshot: Remove this line if you want to manually change this file
-
-.. figure:: /Images/AutomaticScreenshots/PageProperties/General.png
-   :alt: The General tab of the page properties
-   :class: with-shadow
-
-   The **General** tab of the page properties
