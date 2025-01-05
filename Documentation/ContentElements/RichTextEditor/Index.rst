@@ -11,7 +11,7 @@ The rich text editor
      :width: 250
 
 Start by `Creating a content element <https://docs.typo3.org/permalink/t3editors:content-creating>`_
-of type "Text & Images", "Text & Media", or "General Text". You can find them in the
+of type "Text & Images", "Text & Media", or "Regular Text Element". You can find them in the
 tab `Typical page content <https://docs.typo3.org/permalink/t3editors:content-typical>`_.
 
 The TYPO3 text editing interface is not much different from a word processor.
@@ -34,7 +34,7 @@ Creating a link
 Select the text you want to link.
 
 Click the :guilabel:`Link` icon in the toolbar or use the shortcut
-:kbd:`Ctrl + K`.
+:kbd:`Ctrl + K` or :kbd:`Cmd + K`.
 
 ..  figure:: /Images/ManualScreenshots/ContentElements/Text/Link.png
     :alt: Linking the highlighted text in the TYPO3 rich text editor
