@@ -113,7 +113,7 @@ Use the :guilabel:`Enlarge on Click` setting to enable a lightbox display for th
 
 .. include:: /ContentElements/TipKeyboardCommands.rst.txt
 
-.. _images-filelist:
+..  _images-filelist:
 
 Manage your images in the Filelist
 ==================================
