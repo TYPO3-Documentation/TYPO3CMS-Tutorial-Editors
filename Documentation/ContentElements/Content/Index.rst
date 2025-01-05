@@ -14,8 +14,17 @@ Managing content
 In TYPO3, working with content happens mostly in the :guilabel:`Web > Page`
 module. Chose the page you want to edit from the page tree.
 
+You can `Hide <https://docs.typo3.org/permalink/t3editors:content-working-hiding>`_.
+`Move <https://docs.typo3.org/permalink/t3editors:content-working-moving>`_
+or `Copy & paste <https://docs.typo3.org/permalink/t3editors:content-working-copy-paste>`_
+content elements using the context menu.
+
+The following screenshot demonstrates how to open the Page module:
+
 ..  figure:: /Images/ManualScreenshots/ContentElements/PageModule.png
     :alt: Screenshot demonstrating the page module and the page tree in the TYPO3 backend
+
+    Click on "Page" in the module menu, then choose the page to be managed in the page tree
 
 ..  contents:: Table of Content
 
@@ -88,6 +97,18 @@ Copy and paste content elements
 
     Use the context menu of the upper left button of the content element to start copying a content element
 
+..  figure:: /Images/ManualScreenshots/ContentElements/PasteContent.png
+    :alt: Location of the paste button beside the "Create new content" button
+
+    Paste the content into the desired location.
+
+You can also copy content elements by pressing :kbd:`Ctrl` during drag and drop.
+
+Copied content is hidden by default and has the text "(copy xx)" appended to its
+title. Your integrator can disable this default behaviour:
+`Disable hide and prepend at copy <https://docs.typo3.org/permalink/t3start:list-module-disablehideatcopy>`_
+if desired.
+
 ..  _content-working-life-search:
 
 Finding content using the Live Search
@@ -102,18 +123,6 @@ shortcut :kbd:`Ctrl + K` or :kbd:`Cmd + K` to open the live search.
     Use the arrow button to get more information on the search result
 
 You can then edit the content element containing the text you were searching for.
-
-..  figure:: /Images/ManualScreenshots/ContentElements/PasteContent.png
-    :alt: Location of the paste button beside the "Create new content" button
-
-    Paste the content into the desired location.
-
-You can also copy content elements by pressing :kbd:`Ctrl` during drag and drop.
-
-Copied content is hidden by default and has the text "(copy xx)" appended to its
-title. Your integrator can disable this default behaviour:
-`Disable hide and prepend at copy <https://docs.typo3.org/permalink/t3start:list-module-disablehideatcopy>`_
-if desired.
 
 ..  _content-working-troubleshooting:
 
