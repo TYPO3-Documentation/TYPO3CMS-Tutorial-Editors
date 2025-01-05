@@ -71,7 +71,7 @@ You can also link to uploaded files, for example PDF files:
 External links
 --------------
 
-#.  In the :guilabel:`Link Browser` window, go to the :guilabel:`*External URL` tab.
+#.  In the :guilabel:`Link Browser` window, go to the :guilabel:`External URL` tab.
 #.  Type your link in the :guilabel:`URL` field.
 #.  In the Target drop-down list, select :guilabel:`New window` to open the
     link in a new browser window.
