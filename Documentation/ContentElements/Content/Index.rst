@@ -80,7 +80,7 @@ page within the page tree.
 
 ..  _content-working-copy-paste:
 
-Copy and page content elements
+Copy and paste content elements
 ==============================
 
 ..  figure:: /Images/ManualScreenshots/ContentElements/CopyContent.png
