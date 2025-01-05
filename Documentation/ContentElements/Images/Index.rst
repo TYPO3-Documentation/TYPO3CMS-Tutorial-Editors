@@ -17,10 +17,10 @@ Media, Images Only), you will see an :guilabel:`Images` or :guilabel:`Media`
 tab when you create or edit the content element.
 
 Start by `Creating a content element <https://docs.typo3.org/permalink/t3editors:content-creating>`_
-of type "Text & Images", "Text & Media", or "Images". You can find them in the
+of type "Text & Images", "Text & Media", or "Images Only". You can find them in the
 tab `Typical page content <https://docs.typo3.org/permalink/t3editors:content-typical>`_.
 
-.. _add-image-to-page:
+..  _add-image-to-page:
 
 Add an image to the content element
 ===================================
