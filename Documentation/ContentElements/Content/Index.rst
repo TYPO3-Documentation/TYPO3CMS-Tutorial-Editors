@@ -68,7 +68,7 @@ on it. Hidden content elements are not visible in the frontend
 ..  figure:: /Images/ManualScreenshots/ContentElements/HideContent.png
     :alt: A content element in the page module is hidden
 
-    Use the "hide" button to hide a content elements. The second content element is hidden and can be unhidden by the same button.
+    Use the "hide" button to hide a content element. The second content element is hidden and can be unhidden by the same button.
 
 A content element can also be hidden in the "Access" tab of its edit form, its
 context menu or the `List module <https://docs.typo3.org/permalink/t3editors:using-the-list-module-effectively>`_.
