@@ -36,12 +36,6 @@ An alternative way is to use the context menu.
 General tab
 ===========
 
-..  figure:: ../Images/tab-general.png
-    :class: with-shadow
-    :alt: General Tab in the TYPO3 Backend
-
-    `General` Tab in the TYPO3 Backend
-
 ..  _seo-page-properties-general-title:
 
 Page Title
