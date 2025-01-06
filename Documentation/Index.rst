@@ -98,6 +98,7 @@ the `Official Introduction Package <https://extensions.typo3.org/extension/intro
     ListModule/Index
     FileModule/Index
     Languages/Index
+    SearchEngineOptimization/Index
     AccessControl/Index
     DeepLinking/Index
     HelpInside/Index
