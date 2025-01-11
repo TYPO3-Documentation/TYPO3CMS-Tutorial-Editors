@@ -1,6 +1,6 @@
 ..  include:: /Includes.rst.txt
 
-..  _keyboard_commands:
+..  _keyboard-commands:
 
 =================
 Keyboard commands
@@ -8,6 +8,8 @@ Keyboard commands
 
 ..  contents::
     :local:
+
+..  _keyboard-commands-page-tree:
 
 Navigating the page tree using a keyboard
 =========================================
@@ -23,6 +25,8 @@ the guidelines set out in `WAI-ARIA Authoring Practices 1.1. <https://www.w3.org
 *  :kbd:`Right` arrow key will expand the focus if possible.
 *  :kbd:`Left` arrow key will close the focus if possible.
 
+..  _keyboard-commands-forms:
+
 Actions in backend forms
 =========================
 
@@ -37,6 +41,8 @@ Actions in backend forms
 
         *   :kbd:`cmd (⌘)` + :kbd:`s` = Save
         *   :kbd:`cmd (⌘)` + :kbd:`shift` + :kbd:`s` = Save and close
+
+..  _keyboard-commands-rte:
 
 Editing text in the Rich Text Editor (RTE)
 ==========================================
@@ -66,6 +72,7 @@ text in TYPO3's :ref:`RTE <rte>`.
         * :kbd:`cmd (⌘)` + :kbd:`i` = Italic
         * :kbd:`cmd (⌘)` + :kbd:`b` = Bold
 
+..  _keyboard-commands-browser:
 
 Reloading pages and clearing browser cache
 ==========================================
@@ -82,6 +89,7 @@ Reloading pages and clearing browser cache
         * :kbd:`cmd (⌘)` + :kbd:`r` = Reload page
         * :kbd:`cmd (⌘)` + :kbd:`option (⌥)` + :kbd:`r` = Reload page and clear browser cache
 
+..  _keyboard-commands-search:
 
 Opening the backend search modal
 ================================
@@ -98,6 +106,7 @@ Opening the backend search modal
 
         * :kbd:`cmd (⌘)` + :kbd:`k`
 
+..  _keyboard-commands-multiselect:
 
 Multiselect in content elements
 ===============================
