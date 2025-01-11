@@ -46,7 +46,7 @@
 SEO
 ===
 
-Эта вкладка используется для поисковой оптимизации. Она использует системное расширение cs_seo. Дополнительную информацию смотрите в руководстве по :ref:`SEO Core extension <ext_seo:for-editors>`.
+Эта вкладка используется для поисковой оптимизации. Она использует системное расширение cs_seo. Дополнительную информацию смотрите в руководстве по `Search engine optimization (SEO) for TYPO3 editors <https://docs.typo3.org/permalink/t3editors:seo>`_.
 
 
 .. _pages-properties-social-media:
@@ -54,7 +54,7 @@ SEO
 Социальные медиа / Social media
 ===============================
 
-Эта вкладка используется для обогащения сниппетов социальных сетей по URL страницы. Она использует системное расширение ext_seo. Дополнительную информацию смотрите в руководстве по :ref:`SEO Core extension <ext_seo:for-editors>`.
+Эта вкладка используется для обогащения сниппетов социальных сетей по URL страницы. Она использует системное расширение ext_seo. Дополнительную информацию смотрите в руководстве по `Search engine optimization (SEO) for TYPO3 editors <https://docs.typo3.org/permalink/t3editors:seo>`_.
 
 .. _pages-properties-metadata:
 
