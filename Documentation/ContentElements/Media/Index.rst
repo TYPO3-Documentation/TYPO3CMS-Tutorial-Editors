@@ -1,44 +1,58 @@
-.. include:: /Includes.rst.txt
+:navigation-title: Embedding Videos
+..  include:: /Includes.rst.txt
 
-.. _media:
+..  _media:
 
-=========================
-Embedding video and audio
-=========================
+================================================
+Embedding videos as content into a TYPO3 website
+================================================
 
 ..  image:: /Images/ManualScreenshots/ContentElements/TextAndMedia.png
-    :alt: Content element Text and Media in the TYPO3 backend
+    :alt: Content element "Text & Media" in the TYPO3 backend
     :class: img-thumbnail float-end ms-1
     :width: 250
 
-Like images, it's best practice to add new video and audio files using the
-:guilabel:`File > Filelist` module, which is covered in the :ref:`chapter about the file module <file-module>`. This method
-means files are stored centrally and any information or metadata you add to
-the file is used wherever that media file is used on the site.
+The "Text & Media" content element extends the capabilities of
+the "Text & Image" <https://docs.typo3.org/permalink/t3editors:images>`_ 
+content element (introduced in the previous chapter) by supporting a
+wider range of media types. While "Text & Image"
+focuses on combining text and static images, "Text & Media" 
+allows you to embed dynamic media, such as videos and audio files.
 
-When you use the :guilabel:`Select & upload files` button, the media file is
-attached to the page and gets uploaded to the :guilabel:`user_uploads` folder in the :guilabel:`Filelist`.
+It also provides the option to embed content from external platforms
+like YouTube and Vimeo. The specific file types and formats
+supported (e.g., audio and video) depend on your site's configuration,
+including any installed extensions that may add support for additional
+formats. A list of allowed file extensions and pseudo-formats
+(e.g., YouTube, Vimeo) is displayed below the element selector.
 
-.. tip::
-   By only using :guilabel:`Select & upload files`, your files pile up in the :guilabel:`user_uploads` folder pretty quickly.
-   Therefore you should rather upload and organize the files via the :guilabel:`Add Media` button or upload it with the :guilabel:`File > Filelist`
-   module directly, as described above.
+This enhanced functionality makes "Text & Media" a versatile choice
+for presenting multimedia content alongside textual information.
 
-.. _add-video-to-page:
+..  tip::
+    There is a large number of third party TYPO3 extensions to display a video
+    player or embed a video from an external source. If one of those is used
+    refer to the manual of the extension in use.
+
+..  _add-video-to-page:
 
 Add a video to a page
 =====================
 
-On the :guilabel:`Media` tab, click the :guilabel:`Add media file` button, then follow
-the same process as you would to :ref:`add-image-to-page`.
+If you want to embed a previously uploaded video or upload a new video use the
+button :guilabel:`Add media file`. If you want to embed a video from an external
+source like YouTube or Vimeo, use the button :guilabel:`Add media URL` instead.
 
-.. include:: /Images/AutomaticScreenshots/EditContent/EditContentMediaTab.rst.txt
+..  figure:: /Images/ManualScreenshots/ContentElements/Media.png
+    :alt: Tab media of the text and media content element in TYPO3
 
-Alternatively, you can click the :guilabel:`Add media by URL` button to paste
-a link to a video or audio file from the web.
+..  note::
+    For technical security reasons the maximal upload size is limited. Images can have
+    large file sizes. If you cannot upload a video yourself, ask your
+    administrator to do it for you or upload it on an external plattform and
+    embed it.
 
-
-.. _Configure-the-video:
+..  _Configure-the-video:
 
 Configure the video
 ===================
@@ -50,4 +64,21 @@ You can configure various settings for media files (for example, adding a
 border, setting page position and behavior) just as you would to
 :ref:`configure an image<Configure-the-image>`.
 
-.. include:: /ContentElements/TipKeyboardCommands.rst.txt
+..  _video-data-privacy:
+
+External video sources and data privacy
+=======================================
+
+Using certain external video sources can have legal consequences concerning
+data privacy laws in your country.
+
+Talk to your Data Protection Officer (DPO) or legal department. Ask your
+integrator to install an extension that ensures you can use YouTube without
+data privacy issues on your page.
+
+Extension :composer:`b13/twoclickmedia` enables you to use the
+standard "Text & Media" content element while requiring consent from your
+readers before any data is sent to YouTube.
+
+Other extensions like :composer:`t3brightside/youtubevideo` provide their own
+content element.
