@@ -12,19 +12,22 @@ Embedding videos as content into a TYPO3 website
     :class: img-thumbnail float-end ms-1
     :width: 250
 
-The content element "Text & Media" can be used in a similar fashion to the
-`Text & Images <https://docs.typo3.org/permalink/t3editors:images>`_ content
-element introduced in the previous chapter.
+The "Text & Media" content element extends the capabilities of
+the "Text & Image" <https://docs.typo3.org/permalink/t3editors:images>`_ 
+content element by supporting a wider range of media
+types as introduced in the previous chapter. While "Text & Image"
+focuses on combining text and static images, "Text & Media" 
+allows you to embed dynamic media, such as videos and audio files.
 
-It does however allow additional video and audio formats.
+It also provides the option to embed content from external platforms
+like YouTube and Vimeo. The specific file types and formats
+supported (e.g., audio and video) depend on your site's configuration,
+including any installed extensions that may add support for additional
+formats. A list of allowed file extensions and pseudo-formats
+(e.g., YouTube, Vimeo) is displayed below the element selector.
 
-It can also be used to embed video players for YouTube and or Vimeo.
-
-Which formats are allowed depends on the set up of your site. The allowed
-file extensions and pseudo formats (YouTube, Vimeo) are listed below the
-element selector.
-
-This content element can also be used to embed images and audio files.
+This enhanced functionality makes "Text & Media" a versatile choice
+for presenting multimedia content alongside textual information.
 
 ..  tip::
     There is a large number of third party TYPO3 extensions to display a video
