@@ -14,8 +14,8 @@ Embedding videos as content into a TYPO3 website
 
 The "Text & Media" content element extends the capabilities of
 the "Text & Image" <https://docs.typo3.org/permalink/t3editors:images>`_ 
-content element by supporting a wider range of media
-types as introduced in the previous chapter. While "Text & Image"
+content element (introduced in the previous chapter) by supporting a
+wider range of media types. While "Text & Image"
 focuses on combining text and static images, "Text & Media" 
 allows you to embed dynamic media, such as videos and audio files.
 
