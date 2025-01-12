@@ -34,7 +34,9 @@ Creating a link
 Select the text you want to link.
 
 Click the :guilabel:`Link` icon in the toolbar or use the shortcut
-:kbd:`Ctrl + K` or :kbd:`Cmd + K`. This shortcut only works when your focus is within the editor. Outside the editor the same shortcut would open the life search.
+:kbd:`Ctrl + K` or :kbd:`Cmd + K`. This shortcut only works when
+your focus is within the editor. Outside the editor the same
+shortcut would open the live search.
 
 ..  figure:: /Images/ManualScreenshots/ContentElements/Text/Link.png
     :alt: Linking the highlighted text in the TYPO3 rich text editor
