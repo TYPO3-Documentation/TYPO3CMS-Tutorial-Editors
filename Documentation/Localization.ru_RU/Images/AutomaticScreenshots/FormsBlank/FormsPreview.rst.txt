@@ -1,6 +1,0 @@
-.. Automatic screenshot: Remove this line if you want to manually change this file
-
-.. figure:: /Images/AutomaticScreenshots/FormsBlank/FormsPreview.png
-   :class: with-shadow
-
-   Create a new form from scratch
