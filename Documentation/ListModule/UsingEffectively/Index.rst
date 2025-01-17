@@ -9,7 +9,7 @@ The :guilabel:`Web > List` module allows you to browse through pages and folders
 in your site and view the records that
 are stored there. You can also create and edit records.
 
-Select the :guilabel:`Web > List` module and choose a page or folder.
+Select the :guilabel:`Web > List` module and choose a page or storage folder.
 
 ..  contents:: Table of Contents
 
