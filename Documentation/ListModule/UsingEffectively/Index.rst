@@ -19,7 +19,7 @@ The List module header
 ======================
 
 ..  figure:: /Images/ManualScreenshots/ListModule/ListModule.png
-    :alt: Screenshots of the List module in the TYPO3 backend, demonstrating the locations of the buttons mentioned bellow
+    :alt: Screenshots of the List module in the TYPO3 backend, demonstrating the locations of the buttons mentioned below
 
     See bellow about the meaning of the labeled buttons
 
@@ -86,5 +86,5 @@ use the `Backend search <https://docs.typo3.org/permalink/t3editors:backend-sear
 
 The search can be opened by selecting the magnifying glass in the top right
 corner of the toolbar or by pressing the :kbd:`Cmd + K`
-keystroke on macOS or the :kbd:`Ctrl K` keystroke on Windows and Linux
+keystroke on MacOS or the :kbd:`Ctrl + K` keystroke on Windows and Linux
 systems.
