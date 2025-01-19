@@ -21,7 +21,7 @@ The List module header
 ..  figure:: /Images/ManualScreenshots/ListModule/ListModule.png
     :alt: Screenshots of the List module in the TYPO3 backend, demonstrating the locations of the buttons mentioned below
 
-    See bellow about the meaning of the labeled buttons
+    See below about the meaning of the labeled buttons
 
 The list view displays a list of records stored on the
 current page, grouped by type. The List module is commonly used for records
