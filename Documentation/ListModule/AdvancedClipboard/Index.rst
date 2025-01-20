@@ -43,7 +43,7 @@ and the current page will remain unchanged.
 
 Move to another page and click the "Paste in clipboard content" button:
 
-..  figure:: /Images/ManualScreenshots/ListModule/Clipboard/ClipboardMultipleItems.png
+..  figure:: /Images/ManualScreenshots/ListModule/Clipboard/PasteClipboard.png
     :alt: Button "Paste in clipboard content"
 
     The text on the button is the same no matter weather you move or copy items
