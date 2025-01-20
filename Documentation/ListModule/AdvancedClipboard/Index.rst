@@ -1,5 +1,8 @@
+:navigation-title: Clipboard
+
 .. include:: /Includes.rst.txt
 .. index:: Clipboard; Advanced
+..  _clipboard:
 .. _advanced_clipboard_usage:
 .. _the-numeric-clipboard-pads-managing-many-elements:
 

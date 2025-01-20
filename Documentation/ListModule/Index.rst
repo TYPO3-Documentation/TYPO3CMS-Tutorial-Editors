@@ -18,20 +18,17 @@ Records
 
         The list view displays a list of records stored on the current page, grouped by type.
 
-    ..  card:: :ref:`The Clipboard<clipboard>`
+    ..  card:: :ref:`Copy and paste <list-copy-paste>`
 
-        Every time a record is copied in the TYPO3, it appears in the clipboard
-        found at the bottom of the list module screen.
+        You can copy and paste records using the context menu and then choose
+        "copy" (or cut if you want to move the record instead).
 
-        Find out how you can move and copy content in the backend.
-
-    ..  card:: :ref:`Advanced Clipboard Usage<advanced_clipboard_usage>`
+    ..  card:: :ref:`Clipboard usage <advanced_clipboard_usage>`
 
         Find out how to make get the most out of the clipboard with an overview of some
         its extra features.
 
-
-    ..  card:: :ref:`Mass Editing<mass-editing>`
+    ..  card:: :ref:`Mass Editing <mass-editing>`
 
         The List module makes it possible to display the content of several
         fields at once and gives you the ability edit several records with one action.
@@ -42,6 +39,6 @@ Records
     :hidden:
 
     UsingEffectively/Index
-    Clipboard/Index
+    CopyPaste/Index
     AdvancedClipboard/Index
     MassEditing/Index
