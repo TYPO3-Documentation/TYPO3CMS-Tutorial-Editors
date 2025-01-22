@@ -1,7 +1,6 @@
-.. include:: /Includes.rst.txt
-.. index:: Editing; Mass editing
-.. _mass-editing:
-.. _selective-editing:
+..  include:: /Includes.rst.txt
+..  index:: Editing; Mass editing
+..  _mass-editing:
 
 ============
 Mass editing
@@ -14,61 +13,65 @@ one action.
 Choose the columns to be displayed by clicking the :guilabel:`Show Columns`
 button.
 
-.. include:: /Images/AutomaticScreenshots/ListModule/MassEdit/ShowColumnsButton.rst.txt
+..  figure:: /Images/ManualScreenshots/ListModule/MassEdit/ShowColumnsButton.png
+    :alt: Screenshot demonstrating the location of the "Show Columns" Button in the TYPO3 List module
 
-Then chose the field or fields from the modal. Select the :guilabel:`Type`
-field for now and click on the :guilabel:`Update` button.
+    The Show Columns button
 
-.. include:: /Images/AutomaticScreenshots/ListModule/MassEdit/ShowColumnsModal.rst.txt
+Then chose the field or fields you want to edit from the modal.
+Click on the :guilabel:`Update` button.
 
-This makes the :guilabel:`Type` field appear in a new column to the right
+..  figure:: /Images/ManualScreenshots/ListModule/MassEdit/ShowColumnsModal.png
+    :alt: Screenshot of the "Show columns for Page Content" popup
+
+    Choose the fields to be displayed and click "Update"
+
+This makes the additional fields appear in a new column to the right
 of the record list:
 
-.. include:: /Images/AutomaticScreenshots/ListModule/MassEdit/RecordListWithAdditionalFields.rst.txt
+..  figure:: /Images/ManualScreenshots/ListModule/MassEdit/RecordListWithAdditionalFields.png
+    :alt: List Module table with additional fields enabled
+
+    Click on the title or arrow to enable mass edit mode
+
+..  _editing-all-headers:
+..  _selective-editing-fields:
+
+Edit selected fields
+====================
 
 To enable mass editing you have to switch into the record list single view by
 clicking the tables title:
 
-.. include:: /Images/AutomaticScreenshots/ListModule/MassEdit/MassEditingEnabled.rst.txt
+..  figure:: /Images/ManualScreenshots/ListModule/MassEdit/MassEditingEnabled.png
+    :alt: Screen shot of the mass edit mode in the list module, edit buttons above columns visible
 
+    1: Edit all headers 2: Edit all Selected Fields 3: Edit just one field
 
-.. _editing-all-headers:
+To edit the headers of all records in one go, select the pencil icon next to the
+"Header" label (1).
 
-Edit all headers
-================
-
-To edit the headers of all records in one go,
-select the pencil icon next to the "Header" label:
-
-.. include:: /Images/AutomaticScreenshots/ListModule/MassEdit/MassEditHeaderButton.rst.txt
-
-You will then see this:
-
-.. include:: /Images/AutomaticScreenshots/ListModule/MassEdit/MassEditHeader.rst.txt
-
-Upon saving this change will be applied to all records.
-
-Edit all selected fields
-========================
+You will then see a screen with input fields to change all headers and save
+them all at once.
 
 All fields that are currently viewable can be edited at the same
-time by selecting a different icon:
+time by selecting a different icon (2) in the screenshot above.
 
-.. include:: /Images/AutomaticScreenshots/ListModule/MassEdit/MassEditMultipleFieldsButton.rst.txt
+The result is almost the same form, but with several fields per database record
+displayed.
 
-The result is almost the same form, but with the additional field "Type":
-
-.. include:: /Images/AutomaticScreenshots/ListModule/MassEdit/MassMultipleFields.rst.txt
-
+..  _selective-editing:
 
 Edit selected fields of selected records
 ========================================
 
-When the advanced :ref:`clipboard with multi-selection<advanced_clipboard_usage>`
-mode is activated, it is possible to select only those records that should be
-edited.
+It is possible to select only those records that should be edited by using the
+checkboxes:
 
-.. include:: /Images/AutomaticScreenshots/ListModule/MassEdit/SelectiveEditing.rst.txt
+..  figure:: /Images/ManualScreenshots/ListModule/MassEdit/SelectiveEditing.png
+    :alt: The list module with specific database records checked for mass edit
+
+    Selecting records for editing
 
 The result is a form for editing just the chosen field for the
 selected records.
