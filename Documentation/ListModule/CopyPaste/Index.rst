@@ -96,7 +96,7 @@ renamed by appending a number.
 ..  figure:: /Images/ManualScreenshots/ListModule/RecordUnique.png
     :alt: TYPO3 Backend Warning: The value of the field "username" has been changed from "galileo" to "galileo0" as it is required to be unique
 
-    Result of trying to copy a frontend user group into a plain page
+    Fields that have to be unique are automatically alterered on paste
 
 The record has been pasted but renamed. Edit the new record and replace the
 field with a unique value.
