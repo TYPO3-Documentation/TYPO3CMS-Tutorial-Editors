@@ -18,15 +18,15 @@ button.
 
     The Show Columns button
 
-Then chose the field or fields from the modal. Select the :guilabel:`Type`
-field for now and click on the :guilabel:`Update` button.
+Then chose the field or fields you want to edit from the modal.
+Click on the :guilabel:`Update` button.
 
 ..  figure:: /Images/ManualScreenshots/ListModule/MassEdit/ShowColumnsModal.png
     :alt: Screenshot of the "Show columns for Page Content" popup
 
     Choose the fields to be displayed and click "Update"
 
-This makes the :guilabel:`Type` field appear in a new column to the right
+This makes the additional fields appear in a new column to the right
 of the record list:
 
 ..  figure:: /Images/ManualScreenshots/ListModule/MassEdit/RecordListWithAdditionalFields.png
