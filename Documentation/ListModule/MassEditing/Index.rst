@@ -51,7 +51,7 @@ clicking the tables title:
 To edit the headers of all records in one go, select the pencil icon next to the
 "Header" label (1).
 
-You will then see this a screen with input fields to change all headers and save
+You will then see a screen with input fields to change all headers and save
 them all at once.
 
 All fields that are currently viewable can be edited at the same
@@ -66,7 +66,7 @@ Edit selected fields of selected records
 ========================================
 
 It is possible to select only those records that should be edited by using the
-checkboxes so select records:
+checkboxes:
 
 ..  figure:: /Images/ManualScreenshots/ListModule/MassEdit/SelectiveEditing.png
     :alt: The list module with specific database records checked for mass edit

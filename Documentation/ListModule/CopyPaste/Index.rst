@@ -53,7 +53,7 @@ Why is the header appended with (copy 1)?
 ..  figure:: /Images/ManualScreenshots/ListModule/CopyOfRecord.png
     :alt: A copied content element with (copy 1) appended to its header
 
-    The pasted database record is changed to "Some Title (copy 1)"
+    The pasted database record is changed to "Mercury (copy 1)"
 
 By default the title of the pasted record is post fixed with "(copy x)" and the
 new record is marked as hidden and not displayed in the frontend.
