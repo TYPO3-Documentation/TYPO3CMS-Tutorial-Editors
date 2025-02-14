@@ -8,7 +8,7 @@ Internal notes in the TYPO3 backend
 ===================================
 
 ..  note::
-    These are only available if :composer:`typo3/cms-system-notes` is installed
+    These are only available if :composer:`typo3/cms-sys-note` is installed
     and your administrator granted you the necessary user rights.
 
 Internal notes, also called system notes, are small text notes that are
