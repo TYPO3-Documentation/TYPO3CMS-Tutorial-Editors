@@ -14,10 +14,8 @@ help guide you when using the TYPO3.
     outdated and not maintained. Refer to the
     :ref:`typo3-online-documentation` instead.
 
-Topics
-======
-
 ..  toctree::
+    :caption: Topics
     :titlesonly:
     :glob:
 
