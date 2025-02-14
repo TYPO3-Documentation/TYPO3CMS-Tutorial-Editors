@@ -29,8 +29,8 @@ They look like this:
 ..  figure:: /Images/ManualScreenshots/Page/sys_note_create.png
     :alt: Screenshot demonstrating the location of the "Create internal note" button in the module header of the Page module
 
-    The button to create a system not is located on the top right of the "Page" and "List" modules
+    The button to create a system note is located on the top right of the "Page" and "List" modules
 
 ..  seealso::
-    For a detailed description on how to use the Internal notes see
+    For a detailed description on how to use the internal notes see
     `System notes manual, for Editors <https://docs.typo3.org/permalink/typo3/cms-sys-note:for-editors>`_.
