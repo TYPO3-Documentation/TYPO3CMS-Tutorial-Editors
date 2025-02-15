@@ -25,6 +25,10 @@ They look like this:
 
     If you have sufficient permissions you can also edit or delete the note.
 
+    The following image shows a detailed view of the TYPO3 backend toolbar, specifically in
+    the context of the "Page" or "List" module. On the right side of the toolbar are a number
+    of buttons, each providing different functionality. The button highlighted in this screenshot
+    is which allows the user to create a new internal note.
 
 ..  figure:: /Images/ManualScreenshots/Page/sys_note_create.png
     :alt: Screenshot demonstrating the location of the "Create internal note" button in the module header of the Page module
