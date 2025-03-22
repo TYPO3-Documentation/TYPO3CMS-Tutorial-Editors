@@ -6,6 +6,10 @@
 Page properties
 ===============
 
+..  youtube:: AS9PhYqVtns
+
+------------
+
 To access the page properties, click on the :guilabel:`Edit page properties`
 icon in the Docheader.
 
