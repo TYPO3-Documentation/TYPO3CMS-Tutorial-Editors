@@ -7,6 +7,10 @@
 Creating Multiple Pages
 =======================
 
+..  youtube:: KmCButMH80g
+
+------------
+
 #. In the page tree, position your cursor on the page that you want to be the
    parent of the new pages you are about to create.
 
