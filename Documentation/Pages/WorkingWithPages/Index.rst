@@ -81,7 +81,8 @@ Filter the page tree
 
 At the top of the page tree is a filtering tool.
 Type a word or numbers to filter the page tree based on matching page titles
-or page ID.
+or page ID. Multiple keywords / IDs can be entered by
+separating them with a comma.
 
 .. figure:: /Images/ManualScreenshots/PageTree/PageTreeFilter.png
    :alt: Filtering pages in the page tree
