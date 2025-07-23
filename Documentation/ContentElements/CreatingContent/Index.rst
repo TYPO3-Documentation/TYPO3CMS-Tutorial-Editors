@@ -7,6 +7,10 @@
 Creating content
 ================
 
+..  youtube:: 834giaL7L6M
+
+------------
+
 ..  image:: /Images/ManualScreenshots/ContentElements/CreateContentElement.png
     :alt: Creating content elements in the TYPO3 backend
     :class: img-thumbnail float-end ms-1 ms-1
@@ -174,9 +178,4 @@ Add new content to a page
     The new content element appears in the Page module
 
 ..  include:: /ContentElements/TipKeyboardCommands.rst.txt
-
-Video of creating a content element (TYPO3 11.5)
-================================================
-
-..   youtube:: RuQ4CikixdY
 
