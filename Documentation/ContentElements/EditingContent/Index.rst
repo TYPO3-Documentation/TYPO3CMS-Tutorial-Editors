@@ -5,6 +5,10 @@
 Editing content
 ===============
 
+..  youtube:: X1zP1HutQmA
+
+------------
+
 ..  image:: /Images/ManualScreenshots/ContentElements/EditContent.png
     :alt: Editing content elements in the TYPO3 backend
     :class: img-thumbnail float-end ms-1
@@ -146,10 +150,3 @@ This action does not delete content. It is saved in the background and will be
 restored if you select the applicable content element type again.
 
 ..  include:: /ContentElements/TipKeyboardCommands.rst.txt
-
-..  _content-editing-video:
-
-Video: Changing a content elements type (TYPO3 11)
-==================================================
-
-..  youtube:: JR3sOeRImTo
