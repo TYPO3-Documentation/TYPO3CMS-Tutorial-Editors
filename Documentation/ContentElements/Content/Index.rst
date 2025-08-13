@@ -6,6 +6,10 @@
 Managing content
 ================
 
+..  youtube:: b-USBqOPD3c
+
+------------
+
 ..  image:: /Images/ManualScreenshots/ContentElements/ManageContent.png
     :alt: Manage content elements in the TYPO3 backend
     :class: img-thumbnail float-end ms-1 ms-1
