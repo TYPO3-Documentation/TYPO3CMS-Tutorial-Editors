@@ -7,6 +7,10 @@
 Working with images
 ===================
 
+..  youtube:: KQ8fh_Ywktk
+
+------------
+
 ..  image:: /Images/ManualScreenshots/ContentElements/Images.png
     :alt: Content element Images in the TYPO3 backend
     :class: img-thumbnail float-end ms-1
