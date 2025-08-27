@@ -13,7 +13,7 @@ in multiple languages.
 Detailed information about setting up a multilingual web site is
 found in the :ref:`Frontend Localization Guide <typo3/guide-frontendlocalization:start>`.
 
-..  youtube:: B9TKbc7c7oI
+..  youtube:: XzKBdjUV53k
 
 ------------
 
