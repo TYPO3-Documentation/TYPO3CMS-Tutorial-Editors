@@ -5,6 +5,10 @@
 The rich text editor
 ====================
 
+..  youtube:: 7g4HIEU3uPA
+
+------------
+
 ..  image:: /Images/ManualScreenshots/ContentElements/RegularText.png
      :alt: Content element Regular Text in the TYPO3 backend
      :class: img-thumbnail float-end ms-1
