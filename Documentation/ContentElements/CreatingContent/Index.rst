@@ -16,7 +16,12 @@ Creating content
     :class: img-thumbnail float-end ms-1 ms-1
     :width: 250
 
-In the :guilabel:`Web > Page` module, on any page, click the :guilabel:`+
+..  versionchanged:: 14.0
+    The main module `Web` has been renamed to `Content`.
+    See `Feature: #107628 - Improved backend module naming and structure <https://docs.typo3.org/permalink/changelog:feature-107628-1729026000>`_
+
+
+In the :guilabel:`Content > Page` module, on any page, click the :guilabel:`+
 Create new content` button in the place where you want to insert content:
 
 The :guilabel:`New Page Content` wizard will then be displayed.
@@ -178,4 +183,3 @@ Add new content to a page
     The new content element appears in the Page module
 
 ..  include:: /ContentElements/TipKeyboardCommands.rst.txt
-
