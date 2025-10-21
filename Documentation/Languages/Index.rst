@@ -65,7 +65,7 @@ Working with translations
 =========================
 
 #. Working with the `Introduction Package <https://extensions.typo3.org/
-   extension/introduction/>`__, in the :guilabel:`Web > Pages` module, go to the "Congratulations" home page.
+   extension/introduction/>`__, in the :guilabel:`Content > Pages` module, go to the "Congratulations" home page.
 #. Using the menu in the docheader, switch to the "Languages" view.
 
    .. figure:: ../Images/ManualScreenshots/Language/LanguagesPageLanguages.png

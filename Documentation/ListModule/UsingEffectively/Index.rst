@@ -5,11 +5,15 @@
 Using the list module
 =====================
 
-The :guilabel:`Web > List` module allows you to browse through pages and folders
+..  versionchanged:: 14.0
+    The main module `Web` has been renamed to `Content`.
+    See `Feature: #107628 - Improved backend module naming and structure <https://docs.typo3.org/permalink/changelog:feature-107628-1729026000>`_
+
+The :guilabel:`Content > List` module allows you to browse through pages and folders
 in your site and view the records that
 are stored there. You can also create and edit records.
 
-Select the :guilabel:`Web > List` module and choose a page or storage folder.
+Select the :guilabel:`Content > List` module and choose a page or storage folder.
 
 ..  contents:: Table of Contents
 

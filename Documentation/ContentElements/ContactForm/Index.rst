@@ -13,7 +13,7 @@ Creating a contact form
     :class: img-thumbnail float-end ms-1 ms-1
     :width: 250
 
-You can create a form from the :guilabel:`Web > Forms` module. This is a
+You can create a form from the :guilabel:`Content > Forms` module. This is a
 system extension which needs to be activated by your administrator. It is
 written in TypoScript and is fully documented in the :doc:`Form Framework <ext_form:Index>` system extension manual.
 
@@ -21,7 +21,7 @@ This module provides a guided interface for editors to create any kind of form
 such as a contact form, newsletter subscription or even a survey. TYPO3 comes
 with one pre-defined form already built, which you can use to get started.
 
-#. In the :guilabel:`Web > Forms` module, click the :guilabel:`+ Create new
+#. In the :guilabel:`Content > Forms` module, click the :guilabel:`+ Create new
    form` button. The :guilabel:`Create new form` wizard displays.
 
    .. include:: /Images/AutomaticScreenshots/Forms/FormCreateNew.rst.txt
@@ -70,7 +70,7 @@ with one pre-defined form already built, which you can use to get started.
 Create a form from scratch
 ==========================
 
-#. In the :guilabel:`Web > Forms` module, click the :guilabel:`+ Create new
+#. In the :guilabel:`Content > Forms` module, click the :guilabel:`+ Create new
    form` button.
 #. In the :guilabel:`Create new form` wizard, choose to create a blank form.
 #. Give your form a name, then click :guilabel:`Next` and :guilabel:`Finish`.

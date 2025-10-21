@@ -15,7 +15,12 @@ Managing content
     :class: img-thumbnail float-end ms-1 ms-1
     :width: 250
 
-In TYPO3, working with content happens mostly in the :guilabel:`Web > Page`
+..  versionchanged:: 14.0
+    The main module `Web` has been renamed to `Content`.
+    See `Feature: #107628 - Improved backend module naming and structure <https://docs.typo3.org/permalink/changelog:feature-107628-1729026000>`_
+
+
+In TYPO3, working with content happens mostly in the :guilabel:`Content > Page`
 module. Chose the page you want to edit from the page tree.
 
 You can `Hide <https://docs.typo3.org/permalink/t3editors:content-working-hiding>`_.
@@ -164,7 +169,7 @@ Restore deleted content elements using the Recycler
 ---------------------------------------------------
 
 If you accidentally delete a content element or even a complete page you can
-restore your data using the module :guilabel:`Web > Recycler` if you have
+restore your data using the module :guilabel:`Content > Recycler` if you have
 sufficient permissions and it is installed.
 
 ..  figure:: /Images/ManualScreenshots/ContentElements/RestoreContent.png

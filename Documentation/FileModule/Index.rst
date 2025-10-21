@@ -23,7 +23,7 @@ Managing files in the TYPO3 CMS
 ===============================
 
 Files including documents and images are managed in the
-Filelist module. Similar to the :guilabel:`Web > List` module,
+Filelist module. Similar to the :guilabel:`Content > List` module,
 it displays a navigation tree, which corresponds to the file
 structure on the server, and a list of all files for the
 selected directory.
@@ -96,4 +96,3 @@ Next steps
 The next chapters cover configuration and administration tasks that
 require special access privileges as described in :ref:`Access control in the
 backend (users and groups) <t3coreapi:access>`.
-
