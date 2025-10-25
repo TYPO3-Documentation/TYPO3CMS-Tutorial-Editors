@@ -1,3 +1,5 @@
+:navigation-title: Media
+
 .. include:: /Includes.rst.txt
 .. index::
    Modules; Filelist
@@ -6,11 +8,15 @@
 .. _the-file-module:
 .. _the-file-module-or-image-archives:
 
-=====
-Files
-=====
+================================================
+Media upload and management in the TYPO3 backend
+================================================
 
-The :guilabel:`File > Filelist` module is where you can manage
+..  versionchanged:: 14.0
+    The top level module called "File" in TYPO3 13.4 has been renamed to
+    "Media" in TYPO3 14.0. Functionality remains the same
+
+The :guilabel:`Media > Filelist` module is where you can manage
 all the media associated with your TYPO3 web site.
 
 .. index::
@@ -19,12 +25,12 @@ all the media associated with your TYPO3 web site.
 .. _managing-files:
 .. _managing-files-in-typo:
 
-Managing files in the TYPO3 CMS
+Managing media in the TYPO3 CMS
 ===============================
 
 Files including documents and images are managed in the
-Filelist module. Similar to the :guilabel:`Content > List` module,
-it displays a navigation tree, which corresponds to the file
+:guilabel:`Media > Filelist` module. Similar to the :guilabel:`Content > List`
+module, it displays a navigation tree, which corresponds to the file
 structure on the server, and a list of all files for the
 selected directory.
 
