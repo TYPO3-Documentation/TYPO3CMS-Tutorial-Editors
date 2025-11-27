@@ -3,4 +3,4 @@
 .. figure:: /Images/AutomaticScreenshots/FilelistModule/FileUpload.png
    :class: with-shadow
 
-   Upload possibilities in the Filelist module
+   Upload possibilities in the Media module

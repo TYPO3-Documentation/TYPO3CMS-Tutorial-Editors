@@ -3,4 +3,4 @@
 .. figure:: /Images/AutomaticScreenshots/FilelistModule/FilelistModule.png
    :class: with-shadow
 
-   A typical view from the The Filelist module
+   A typical view from the The :guilabel:`Media` module

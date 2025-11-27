@@ -6,7 +6,7 @@
 Mass editing
 ============
 
-The :guilabel:`List` module makes it possible to display the content of several
+The :guilabel:`Content > Record` module makes it possible to display the content of several
 fields at once and gives you the ability edit several records with
 one action.
 
@@ -14,7 +14,7 @@ Choose the columns to be displayed by clicking the :guilabel:`Show Columns`
 button.
 
 ..  figure:: /Images/ManualScreenshots/ListModule/MassEdit/ShowColumnsButton.png
-    :alt: Screenshot demonstrating the location of the "Show Columns" Button in the TYPO3 List module
+    :alt: Screenshot demonstrating the location of the "Show Columns" Button in the Content Record module
 
     The Show Columns button
 
@@ -30,7 +30,7 @@ This makes the additional fields appear in a new column to the right
 of the record list:
 
 ..  figure:: /Images/ManualScreenshots/ListModule/MassEdit/RecordListWithAdditionalFields.png
-    :alt: List Module table with additional fields enabled
+    :alt: Content Record Module table with additional fields enabled
 
     Click on the title or arrow to enable mass edit mode
 

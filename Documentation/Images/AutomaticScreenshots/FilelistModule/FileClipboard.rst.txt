@@ -3,4 +3,4 @@
 .. figure:: /Images/AutomaticScreenshots/FilelistModule/FileClipboard.png
    :class: with-shadow
 
-   The Filelist module's clipboard
+   The Media module's clipboard

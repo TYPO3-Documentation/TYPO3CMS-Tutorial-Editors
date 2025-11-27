@@ -65,11 +65,11 @@ Working with translations
 =========================
 
 #. Working with the `Introduction Package <https://extensions.typo3.org/
-   extension/introduction/>`__, in the :guilabel:`Content > Pages` module, go to the "Congratulations" home page.
+   extension/introduction/>`__, in the :guilabel:`Content > Layout` module, go to the "Congratulations" home page.
 #. Using the menu in the docheader, switch to the "Languages" view.
 
    .. figure:: ../Images/ManualScreenshots/Language/LanguagesPageLanguages.png
-      :alt: The "Languages" view of the Page module
+      :alt: The "Languages" view of the Content Layout module
       :class: with-border
 
 #. In the drop-down menu "Create a new translation of this page", choose a
@@ -117,7 +117,7 @@ Working with translations
 Adjusting the view
 ==================
 
-The *Page* module may now seem cluttered, with one column for each
+The :guilabel:`Content > Layout` module may now seem cluttered, with one column for each
 translation. You can view a single language at a time by switching back to the
 "Columns" mode and choosing a specific language in the docheader.
 
