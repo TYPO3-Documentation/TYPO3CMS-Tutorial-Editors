@@ -34,7 +34,7 @@ Create a user group and user
 
    .. include:: /Images/AutomaticScreenshots/Access/AccessUserFolder.rst.txt
 
-#. Navigate to the :guilabel:`Content > List` module, and select your new folder.
+#. Navigate to the :guilabel:`Content > Record` module, and select your new folder.
 #. Click the **+** :guilabel:`Create new record` icon at the top left of the
    Docheader. The "New record" wizard displays.
 
@@ -76,7 +76,7 @@ the page properties or content element properties.
    * The "Show at any login" group is used for elements that require
      authentication to access, but are okay for all groups to see.
 
-#. Navigate to the :guilabel:`Content > Page` module, and create a new page called
+#. Navigate to the :guilabel:`Content > Layout` module, and create a new page called
    "Members only".
 #. Add a text content element to the Members Only page, with text similar to
    "You need to authenticate to access the members area".

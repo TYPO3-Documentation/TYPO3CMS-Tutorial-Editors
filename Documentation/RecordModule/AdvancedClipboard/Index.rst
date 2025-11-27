@@ -11,7 +11,7 @@ Using the clipboard to copy or move multiple records at once
 ============================================================
 
 If the clipboard is not yet enabled, display it via the "View" drop down in the
-header of the "List" module. Then choose one of the clipboards, for example
+header of the :guilabel:`Content > Record` module. Then choose one of the clipboards, for example
 "Clipboard #1".
 
 ..  figure:: /Images/ManualScreenshots/ListModule/Clipboard/ChooseClipboard.png
@@ -50,4 +50,4 @@ Move to another page and click the "Paste in clipboard content" button:
 
 A confirmation dialog appears. If you click ok, the chosen records are moved or
 copied, depending on the mode selected in the Clipboard on the bottom of the
-List module.
+:guilabel:`Content > Record` module.

@@ -1,34 +1,34 @@
 ..  include:: /Includes.rst.txt
 ..  _using-the-list-module-effectively:
 
-=====================
-Using the list module
-=====================
+===============================
+Using the Content Record module
+===============================
 
 ..  versionchanged:: 14.0
-    The main module `Web` has been renamed to `Content`.
-    See `Feature: #107628 - Improved backend module naming and structure <https://docs.typo3.org/permalink/changelog:feature-107628-1729026000>`_
+    This module has been renamed from :guilabel:`Web > List` to :guilabel:`Content > Record`
+	see `Feature: #107628 - Improved backend module naming and structure <https://docs.typo3.org/permalink/changelog:feature-107628-1729026000>`_.
 
-The :guilabel:`Content > List` module allows you to browse through pages and folders
+The :guilabel:`Content > Record` module allows you to browse through pages and folders
 in your site and view the records that
 are stored there. You can also create and edit records.
 
-Select the :guilabel:`Content > List` module and choose a page or storage folder.
+Select the :guilabel:`Content > Record` module and choose a page or storage folder.
 
 ..  contents:: Table of Contents
 
 ..  _list-module-header:
 
-The List module header
-======================
+The Record module header
+========================
 
 ..  figure:: /Images/ManualScreenshots/ListModule/ListModule.png
-    :alt: Screenshots of the List module in the TYPO3 backend, demonstrating the locations of the buttons mentioned below
+    :alt: Screenshots of the Content Record module in the TYPO3 backend, demonstrating the locations of the buttons mentioned below
 
     See below about the meaning of the labeled buttons
 
 The list view displays a list of records stored on the
-current page, grouped by type. The List module is commonly used for records
+current page, grouped by type. The :guilabel:`Content > Record` module is commonly used for records
 that have no dedicated backend module, for example website users and groups.
 
 The list view has action icons in the **module header** including:
@@ -39,7 +39,7 @@ The list view has action icons in the **module header** including:
 
 #.  **Clear the cache** of the current page
 
-#.  **Refresh** the List view
+#.  **Refresh** the :guilabel:`Content > Record` module
 
 #.  **Create internal note**
 
@@ -78,7 +78,7 @@ If there are a large number of records you can use the search box to search for
 a record containing a certain word.
 
 ..  figure:: /Images/ManualScreenshots/ListModule/SearchRecord.png
-    :alt: Screenshot of the List module with the search box visible
+    :alt: Screenshot of the Content Record module with the search box visible
 
     To make the search box visible, Select "Show Search" from the "View" dropdown.
 

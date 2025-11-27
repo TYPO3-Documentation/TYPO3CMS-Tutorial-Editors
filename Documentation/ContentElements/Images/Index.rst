@@ -68,12 +68,12 @@ insert a link to the image.
     Override the default meta data of the image with custom values for this location.
 
 The information displayed here is drawn from the file metadata set in the
-:guilabel:`Filelist`. If required, you can override this metadata to set specific
+:guilabel:`Media`. If required, you can override this metadata to set specific
 values for the image for the current content element.
 
 You can experiment with the image manipulation editor to crop or resize the
 image. Making changes here won't impact the original image file in
-:guilabel:`Filelist`.
+:guilabel:`Media`.
 
 
 .. _images-appearance:
@@ -118,15 +118,20 @@ Use the :guilabel:`Enlarge on Click` setting to enable a lightbox display for th
 .. include:: /ContentElements/TipKeyboardCommands.rst.txt
 
 ..  _images-filelist:
+..  _images-media:
 
-Manage your images in the Filelist
-==================================
+Manage your images in the Media module
+======================================
+
+..  versionchanged:: 14.0
+    This module has been renamed from :guilabel:`Filelist` to :guilabel:`Media`
+	see `Feature: #107628 - Improved backend module naming and structure <https://docs.typo3.org/permalink/changelog:feature-107628-1729026000>`_.
 
 You can manage your previously uploaded images in the backend module
-:guilabel:`File > Filelist`:
+:guilabel:`Media`:
 
 ..  figure:: /Images/ManualScreenshots/ContentElements/TextWithImage/FileList.png
-    :alt: Screenshot of the "Filelist" backend module in TYPO3
+    :alt: Screenshot of the "Media" backend module in TYPO3
 
     You can view the files as Tiles or List by switching the settings.
 
@@ -137,7 +142,7 @@ they are used in multiple places.
 You can move images into folders by drag and drop:
 
 ..  figure:: /Images/ManualScreenshots/ContentElements/TextWithImage/FileListDragAndDrop.png
-    :alt: Screenshot of the "Filelist" backend module demonstration Drag and Drop
+    :alt: Screenshot of the "Media" backend module demonstration Drag and Drop
 
     Grab a picture with the mouse, drag it to a folder and drop it there
 

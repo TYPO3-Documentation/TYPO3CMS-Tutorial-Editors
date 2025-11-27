@@ -20,8 +20,7 @@ Creating content
     The main module `Web` has been renamed to `Content`.
     See `Feature: #107628 - Improved backend module naming and structure <https://docs.typo3.org/permalink/changelog:feature-107628-1729026000>`_
 
-
-In the :guilabel:`Content > Page` module, on any page, click the :guilabel:`+
+In the :guilabel:`Content > Layout` module, on any page, click the :guilabel:`+
 Create new content` button in the place where you want to insert content:
 
 The :guilabel:`New Page Content` wizard will then be displayed.
@@ -29,7 +28,7 @@ The :guilabel:`New Page Content` wizard will then be displayed.
 In the following screenshot you see the location of that button:
 
 ..  figure:: /Images/ManualScreenshots/NewContentElement/CreateNew.png
-    :alt: "Create new content button" in the Page module, column "Normal"
+    :alt: "Create new content button" in the Content Layout module, column "Normal"
 
     Create a new Content Element by clicking the button
 
@@ -178,8 +177,8 @@ Add new content to a page
     You can see the newly added element on the page:
 
 ..  figure:: /Images/ManualScreenshots/NewContentElement/ContentSaved.png
-    :alt: The new content element appears in the Page module
+    :alt: The new content element appears in the Content Layout module
 
-    The new content element appears in the Page module
+    The new content element appears in the Content Layout module
 
 ..  include:: /ContentElements/TipKeyboardCommands.rst.txt

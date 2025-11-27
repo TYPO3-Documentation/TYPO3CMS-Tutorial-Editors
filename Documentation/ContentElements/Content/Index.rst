@@ -20,7 +20,7 @@ Managing content
     See `Feature: #107628 - Improved backend module naming and structure <https://docs.typo3.org/permalink/changelog:feature-107628-1729026000>`_
 
 
-In TYPO3, working with content happens mostly in the :guilabel:`Content > Page`
+In TYPO3, working with content happens mostly in the :guilabel:`Content > Layout`
 module. Chose the page you want to edit from the page tree.
 
 You can `Hide <https://docs.typo3.org/permalink/t3editors:content-working-hiding>`_.
@@ -28,22 +28,26 @@ You can `Hide <https://docs.typo3.org/permalink/t3editors:content-working-hiding
 or `Copy & paste <https://docs.typo3.org/permalink/t3editors:content-working-copy-paste>`_
 content elements using the context menu.
 
-The following screenshot demonstrates how to open the Page module:
+The following screenshot demonstrates how to open the :guilabel:`Content > Page` module:
 
 ..  figure:: /Images/ManualScreenshots/ContentElements/PageModule.png
     :alt: Screenshot demonstrating the page module and the page tree in the TYPO3 backend
 
-    Click on "Page" in the module menu, then choose the page to be managed in the page tree
+    Click on :guilabel:`Content > Layout` in the module menu, then choose the page to be managed in the page tree
 
 ..  contents:: Table of Content
 
 ..  _content-working-overview:
 
-Overview of the Page module in TYPO3
-====================================
+Overview of the Layout module in TYPO3
+======================================
+
+..  versionchanged:: 14.0
+    This module has been renamed from :guilabel:`Web > Pages` to :guilabel:`Content > Layout`
+	see `Feature: #107628 - Improved backend module naming and structure <https://docs.typo3.org/permalink/changelog:feature-107628-1729026000>`_.
 
 ..  figure:: /Images/ManualScreenshots/ContentElements/PageModuleAnnotated.png
-    :alt: A typical view of the Page module with various content columns
+    :alt: A typical view of the Content Layout module with various content columns
 
 Common page icons explained:
 
@@ -80,7 +84,7 @@ on it. Hidden content elements are not visible in the frontend
     Use the "hide" button to hide a content element. The second content element is hidden and can be unhidden by the same button.
 
 A content element can also be hidden in the "Access" tab of its edit form, its
-context menu or the `List module <https://docs.typo3.org/permalink/t3editors:using-the-list-module-effectively>`_.
+context menu or the `Content > Layout module <https://docs.typo3.org/permalink/t3editors:using-the-list-module-effectively>`_.
 
 ..  _content-working-moving:
 
@@ -115,7 +119,7 @@ You can also copy content elements by pressing :kbd:`Ctrl` during drag and drop.
 
 Copied content is hidden by default and has the text "(copy xx)" appended to its
 title. Your integrator can disable this default behaviour:
-`Disable hide and prepend at copy <https://docs.typo3.org/permalink/t3start:list-module-disablehideatcopy>`_
+`disableHideAtCopy <https://docs.typo3.org/permalink/t3tsref:pagetcemaintables-disablehideatcopy>`_
 if desired.
 
 ..  _content-working-life-search:

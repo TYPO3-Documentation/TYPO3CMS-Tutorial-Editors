@@ -63,7 +63,7 @@ Write meaningful text alternatives for images
    helpful guide: https://axesslab.com/alt-texts/ .
 
 In TYPO3 when you are uploading or managing an image file in the module
-:guilabel:`File > Filelist` you can provide an alternative text in the
+:guilabel:`Media` you can provide an alternative text in the
 :ref:`metadata <file-metadata>` of this file.
 
 When you are displaying an image as :guilabel:`Image` content element you

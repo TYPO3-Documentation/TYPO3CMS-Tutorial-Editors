@@ -59,7 +59,7 @@ the `Official Introduction Package <https://extensions.typo3.org/extension/intro
 
     ..  card:: :ref:`Record Management<list-module>`
 
-        *  :ref:`Using the backend List module <list-module>`
+        *  :ref:`Using the backend Content > Layout module <list-module>`
 
         *  :ref:`Moving content with the clipboard <clipboard>`
 
@@ -69,7 +69,7 @@ the `Official Introduction Package <https://extensions.typo3.org/extension/intro
 
     ..  card:: Tools For Editors
 
-        *  :ref:`Manage files with Filelist <file-module>`
+        *  :ref:`Manage files with Media module <media-module>`
 
         *  :ref:`Create links in the backend with Deep Linking <deeplinking>`
 
@@ -95,8 +95,8 @@ the `Official Introduction Package <https://extensions.typo3.org/extension/intro
     Login/Index
     Pages/Index
     ContentElements/Index
-    ListModule/Index
-    FileModule/Index
+    RecordModule/Index
+    MediaModule/Index
     Languages/Index
     SearchEngineOptimization/Index
     AccessControl/Index

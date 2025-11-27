@@ -7,7 +7,7 @@
 Copy and paste database record
 ==============================
 
-You can copy and paste records in the :guilabel:`List` module using the context
+You can copy and paste records in the :guilabel:`Content > Record` module using the context
 menu and then choose "copy" (or cut if you want to move the record instead).
 
 ..  tip::
@@ -32,7 +32,7 @@ left of the record. Copy or cut the database record.
 To paste the copied record you have several options:
 
 ..  figure:: /Images/ManualScreenshots/ListModule/PasteRecord.png
-    :alt: Location of the paste buttons in the TYPO3 List module: At the top of the module and in the context menu.
+    :alt: Location of the paste buttons in the Content > Layout module: At the top of the module and in the context menu.
 
     \(1) inserts the record at the end of the other records, with the context menu (2) you can choose the location
 
