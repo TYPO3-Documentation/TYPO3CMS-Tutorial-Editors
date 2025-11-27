@@ -119,7 +119,7 @@ You can also copy content elements by pressing :kbd:`Ctrl` during drag and drop.
 
 Copied content is hidden by default and has the text "(copy xx)" appended to its
 title. Your integrator can disable this default behaviour:
-`Disable hide and prepend at copy <https://docs.typo3.org/permalink/t3start:list-module-disablehideatcopy>`_
+`disableHideAtCopy <https://docs.typo3.org/permalink/t3tsref:pagetcemaintables-disablehideatcopy>`_
 if desired.
 
 ..  _content-working-life-search:
