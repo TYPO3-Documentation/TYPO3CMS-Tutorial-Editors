@@ -89,3 +89,7 @@ separating them with a comma.
    :class: with-border
 
    Filtering pages in the page tree
+
+..  note::
+    Since TYPO3 v14, also translated pages are considered when filtering. See
+    :issue:`107961` for details.
