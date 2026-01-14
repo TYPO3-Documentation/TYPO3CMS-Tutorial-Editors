@@ -88,8 +88,9 @@ separating them with a comma.
    :alt: Filtering pages in the page tree
    :class: with-border
 
-   Filtering pages in the page tree
+Filtering pages in the page tree
 
 ..  note::
-    Since TYPO3 v14, also translated pages are considered when filtering. See
-    :issue:`107961` for details.
+    Since TYPO3 v14, translated pages are also included in the search when
+    filtering. See :issue:`107961` for details.
+
