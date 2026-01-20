@@ -2,4 +2,4 @@
 
 .. figure:: /Images/AutomaticScreenshots/Access/AccessUserFolder.png
    :alt: Creating a folder for storing the users and groups
-   :class: with-shadow
+   :zoom: lightbox

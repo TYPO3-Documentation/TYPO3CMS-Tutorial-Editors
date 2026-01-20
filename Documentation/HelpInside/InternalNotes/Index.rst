@@ -22,6 +22,7 @@ They look like this:
 
 ..  figure:: /Images/ManualScreenshots/Page/PageWithSysNote.png
     :alt: Screenshot of a TODO note on the top of the "Page" backend module
+    :zoom: gallery
 
     If you have sufficient permissions you can also edit or delete the note.
 
@@ -32,6 +33,7 @@ They look like this:
 
 ..  figure:: /Images/ManualScreenshots/Page/sys_note_create.png
     :alt: Screenshot demonstrating the location of the "Create internal note" button in the module header of the Content Layout module
+    :zoom: gallery
 
     The button to create a system note is located on the top right of the :guilabel:`Content > Layout` and :guilabel:`Content > Record` modules
 

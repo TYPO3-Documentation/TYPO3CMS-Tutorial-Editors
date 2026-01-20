@@ -1,6 +1,6 @@
 .. Automatic screenshot: Remove this line if you want to manually change this file
 
 .. figure:: /Images/AutomaticScreenshots/Forms/FormsFormDefinition.png
-   :class: with-shadow
+   :zoom: lightbox
 
    Choose your form on the Plugin tab

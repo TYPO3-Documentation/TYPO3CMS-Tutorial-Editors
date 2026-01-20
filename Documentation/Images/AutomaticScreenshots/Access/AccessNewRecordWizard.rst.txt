@@ -2,4 +2,4 @@
 
 .. figure:: /Images/AutomaticScreenshots/Access/AccessNewRecordWizard.png
    :alt: Select "Usergroup" with the new record wizard
-   :class: with-shadow
+   :zoom: lightbox

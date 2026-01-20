@@ -26,7 +26,7 @@ Move pages
 
    .. figure:: /Images/ManualScreenshots/PageTree/CopyMovePage.png
       :alt: Drag a page to move it on the page tree
-      :class: with-border
+      :zoom: lightbox
 
       Drag a page to move it on the page tree
 
@@ -35,7 +35,7 @@ Move pages
 
    .. figure:: /Images/ManualScreenshots/PageTree/CopyMoveChildPage.png
       :alt: Drop a page on another page to make it a child page
-      :class: with-border
+      :zoom: lightbox
 
       Drop a page on another page to make it a child page
 
@@ -63,7 +63,7 @@ the :guilabel:`Delete` option.
 
 .. figure:: /Images/ManualScreenshots/PageTree/DeletePage.png
    :alt: Drag a page to the right to delete it
-   :class: with-border
+   :zoom: lightbox
 
    Drag a page to the right to delete it
 
@@ -86,11 +86,10 @@ separating them with a comma.
 
 .. figure:: /Images/ManualScreenshots/PageTree/PageTreeFilter.png
    :alt: Filtering pages in the page tree
-   :class: with-border
+   :zoom: lightbox
 
 Filtering pages in the page tree
 
 ..  note::
     Since TYPO3 v14, translated pages are also included in the search when
     filtering. See :issue:`107961` for details.
-

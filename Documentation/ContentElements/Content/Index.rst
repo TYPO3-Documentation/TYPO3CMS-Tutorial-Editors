@@ -14,6 +14,7 @@ Managing content
     :alt: Manage content elements in the TYPO3 backend
     :class: img-thumbnail float-end ms-1 ms-1
     :width: 250
+    :zoom: gallery
 
 ..  versionchanged:: 14.0
     The main module `Web` has been renamed to `Content`.
@@ -32,6 +33,7 @@ The following screenshot demonstrates how to open the :guilabel:`Content > Page`
 
 ..  figure:: /Images/ManualScreenshots/ContentElements/PageModule.png
     :alt: Screenshot demonstrating the page module and the page tree in the TYPO3 backend
+    :zoom: gallery
 
     Click on :guilabel:`Content > Layout` in the module menu, then choose the page to be managed in the page tree
 
@@ -48,6 +50,7 @@ Overview of the Layout module in TYPO3
 
 ..  figure:: /Images/ManualScreenshots/ContentElements/PageModuleAnnotated.png
     :alt: A typical view of the Content Layout module with various content columns
+    :zoom: gallery
 
 Common page icons explained:
 
@@ -80,6 +83,7 @@ on it. Hidden content elements are not visible in the frontend
 
 ..  figure:: /Images/ManualScreenshots/ContentElements/HideContent.png
     :alt: A content element in the page module is hidden
+    :zoom: gallery
 
     Use the "hide" button to hide a content element. The second content element is hidden and can be unhidden by the same button.
 
@@ -97,6 +101,7 @@ page within the page tree.
 
 ..  figure:: /Images/ManualScreenshots/ContentElements/MoveContentElement.png
     :alt: Screenshot of moving a content element via drag and drop in the TYPO3 backend
+    :zoom: gallery
 
     Drop the content element on a page in the page tree to move it to another page
 
@@ -107,11 +112,13 @@ Copy and paste content elements
 
 ..  figure:: /Images/ManualScreenshots/ContentElements/CopyContent.png
     :alt: The context menu of a content menu in the TYO3 backend
+    :zoom: gallery
 
     Use the context menu of the upper left button of the content element to start copying a content element
 
 ..  figure:: /Images/ManualScreenshots/ContentElements/PasteContent.png
     :alt: Location of the paste button beside the "Create new content" button
+    :zoom: gallery
 
     Paste the content into the desired location.
 
@@ -132,6 +139,7 @@ shortcut :kbd:`Ctrl + K` or :kbd:`Cmd + K` to open the live search.
 
 ..  figure:: /Images/ManualScreenshots/ContentElements/LiveSearch.png
     :alt: Using the live search to search for content elements
+    :zoom: gallery
 
     Use the arrow button to get more information on the search result
 
@@ -151,6 +159,7 @@ Sometimes the following warning is displayed on your page:
 
 ..  figure:: /Images/ManualScreenshots/ContentElements/UnusedContent.png
     :alt: Warning: Unused elements detected on this page: These elements don't belong to any of the available columns of this page. You should either delete them or move them to existing columns. We highlighted the problematic records for you.
+    :zoom: gallery
 
     Warning that some content elements belong to no valid content area
 
@@ -166,6 +175,7 @@ via drag an drop to the desired location or delete it, if it is not needed anymo
 
 ..  figure:: /Images/ManualScreenshots/ContentElements/MoveUnusedContent.png
     :alt: Demonstration of moving unused content back into a normal content area
+    :zoom: gallery
 
 ..  _content-working-troubleshooting-recycler:
 
@@ -178,6 +188,7 @@ sufficient permissions and it is installed.
 
 ..  figure:: /Images/ManualScreenshots/ContentElements/RestoreContent.png
     :alt: Screenshot of the Recycler module in the TYPO3 backend, demonstrating how to restore a deleted content element
+    :zoom: gallery
 
 See also :ref:`Recycler manual, For editors <typo3/cms-recycler:for-editors>`.
 
@@ -193,6 +204,7 @@ Use the context menu on the page tree and choose "History/Undo".
 
 ..  figure:: /Images/ManualScreenshots/ContentElements/RestoreContent.png
     :alt: Screenshot of the page history in the TYPO3 backend
+    :zoom: gallery
 
     Use the "Undo" button to undo your changes
 
@@ -201,6 +213,7 @@ where changed and who made which changes when.
 
 ..  figure:: /Images/ManualScreenshots/ContentElements/ContentElementHistoryDifferences.png
     :alt: Screenshot of the page history in the TYPO3 backend
+    :zoom: gallery
 
     Compare the differences. Use the undo button to undo changes.
 
@@ -216,5 +229,6 @@ another editor is currently working on. These are marked with a warning:
 
 ..  figure:: /Images/ManualScreenshots/ContentElements/ContentElementEdited.png
     :alt: Warning: The BE-User 'e.doe' began to edit this record 3 min ago.
+    :zoom: gallery
 
     Avoid working on content elements that are currently edited by someone else
