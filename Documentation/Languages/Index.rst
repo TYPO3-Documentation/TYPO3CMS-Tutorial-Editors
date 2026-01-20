@@ -69,8 +69,8 @@ Working with translations
 #. Using the menu in the docheader, switch to the "Languages" view.
 
    .. figure:: ../Images/ManualScreenshots/Language/LanguagesPageLanguages.png
-      :alt: The "Languages" view of the Page module
-      :class: with-border
+      :alt: The "Languages" view of the Content Layout module
+      :zoom: gallery
 
 #. In the drop-down menu "Create a new translation of this page", choose a
    language, let's say German in this case. The page properties displays for
@@ -79,21 +79,21 @@ Working with translations
 
    .. figure:: ../Images/ManualScreenshots/Language/LanguagesNewPageTranslation.png
       :alt: Creating a new page translation
-      :class: with-border
+      :zoom: gallery
 
 #. Save and close the page. The screen now displays two versions of the content
    elements showing the default language and the German version side by side.
 
    .. figure:: ../Images/ManualScreenshots/Language/LanguagesPageVersions.png
       :alt: Viewing languages side by side in the page module
-      :class: with-border
+      :zoom: gallery
 
 #. In the German column, click the :guilabel:`Translate` button for a content
    element. The :guilabel:`Localize` wizard displays.
 
    .. figure:: ../Images/ManualScreenshots/Language/LanguagesTranslateContentElementsStep1.png
       :alt: First step of the Localize wizard
-      :class: with-border
+      :zoom: gallery
 
 #. For this example, click the :guilabel:`Translate` button then click
    :guilabel:`Next`.
@@ -108,7 +108,7 @@ Working with translations
 
    .. figure:: ../Images/ManualScreenshots/Language/LanguagesNewContentTranslation.png
       :alt: A newly created content element translation
-      :class: with-border
+      :zoom: gallery
 
       A newly created content element translation
 
@@ -123,7 +123,7 @@ translation. You can view a single language at a time by switching back to the
 
 .. figure:: ../Images/ManualScreenshots/Language/LanguagesColumnModeWithTranslation.png
    :alt: The "Columns" mode displaying a translation
-   :class: with-border
+   :zoom: gallery
 
    The "Columns" mode displaying a translation
 

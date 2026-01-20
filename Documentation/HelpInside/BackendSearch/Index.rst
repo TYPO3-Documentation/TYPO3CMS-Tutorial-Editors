@@ -16,6 +16,6 @@ systems.
 
 ..  figure:: /Images/ManualScreenshots/Help/BackendSearch.png
     :alt: The backend search modal with some search results
-    :class: with-border
+    :zoom: lightbox
 
     The backend search modal with some search results

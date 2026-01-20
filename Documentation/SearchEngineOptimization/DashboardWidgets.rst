@@ -34,6 +34,7 @@ the "Missing Meta Description" widget you can add it yourself to your Dashboard:
 
 ..  figure:: /Images/ManualScreenshots/SearchEngineOptimization/add-widget.png
     :alt: Screenshot of the backend, showing the widget "Pages missing Meta Description" in category "SEO"
+    :zoom: gallery
 
     Adding the widget "Pages missing Meta Description"
 
@@ -52,6 +53,7 @@ Therefore this widget lists pages without a description in their meta data:
 
 ..  figure:: /Images/ManualScreenshots/SearchEngineOptimization/pages-missing-description.png
     :alt: Screenshot a widget listing pages without description
+    :zoom: gallery
 
     Pages without description listed in the Dashboard
 
@@ -59,5 +61,6 @@ You can now click on the pencil icon to add a description to the page:
 
 ..  figure:: /Images/ManualScreenshots/SearchEngineOptimization/addDescription.png
     :alt: Screenshot of an edit form showing just the description field
+    :zoom: gallery
 
     Add a description to the page

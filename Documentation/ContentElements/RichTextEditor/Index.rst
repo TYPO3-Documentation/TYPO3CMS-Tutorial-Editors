@@ -10,9 +10,10 @@ The rich text editor
 ------------
 
 ..  image:: /Images/ManualScreenshots/ContentElements/RegularText.png
-     :alt: Content element Regular Text in the TYPO3 backend
-     :class: img-thumbnail float-end ms-1
-     :width: 250
+    :alt: Content element Regular Text in the TYPO3 backend
+    :class: img-thumbnail float-end ms-1
+    :width: 250
+    :zoom: gallery
 
 Start by `Creating a content element <https://docs.typo3.org/permalink/t3editors:content-creating>`_
 of type "Text & Images", "Text & Media", or "Regular Text Element". You can find them in the
@@ -23,9 +24,10 @@ The options available in the toolbars vary depending on how your TYPO3
 installation is configured.
 
 ..  figure:: /Images/ManualScreenshots/ContentElements/Text/RichTextEditor.png
-     :alt: Screenshot of a typical rich text editor in the TYPO3 backend
+    :alt: Screenshot of a typical rich text editor in the TYPO3 backend
+    :zoom: gallery
 
-     The options you see depend on the configuration of your site
+    The options you see depend on the configuration of your site
 
 You can format text, set the alignment, insert tables and symbols and add
 internal and external links to text.
@@ -44,6 +46,7 @@ shortcut would open the live search.
 
 ..  figure:: /Images/ManualScreenshots/ContentElements/Text/Link.png
     :alt: Linking the highlighted text in the TYPO3 rich text editor
+    :zoom: gallery
 
 The :guilabel:`Link Browser` window displays.
 
@@ -57,6 +60,7 @@ Internal links
 
 ..  figure:: /Images/ManualScreenshots/Link/LinkBrowser.png
     :alt: The TYPO3 CMS link browser
+    :zoom: gallery
 
 You can link to an internal file, folder, page or content element on a page.
 
@@ -71,6 +75,7 @@ You can also link to uploaded files, for example PDF files:
 
 ..  figure:: /Images/ManualScreenshots/Link/LinkBrowserFile.png
     :alt: Linking to a file for download in TYPO3
+    :zoom: gallery
 
 ..  _rte-linking-external:
 
@@ -84,7 +89,7 @@ External links
 
     ..  figure:: /Images/ManualScreenshots/Link/LinkBrowserExternal.png
         :alt: Display the anchors on a page
-        :class: with-border
+        :zoom: gallery
 
 #.  Click the :guilabel:`Set Link` button to close the :guilabel:`Link Browser`
     window.
@@ -99,3 +104,4 @@ click the :guilabel:`Unlink` button in the popover:
 
 ..  figure:: /Images/ManualScreenshots/ContentElements/Text/Unlink.png
     :alt: Unlinking using the popover in the rich text editor
+    :zoom: gallery

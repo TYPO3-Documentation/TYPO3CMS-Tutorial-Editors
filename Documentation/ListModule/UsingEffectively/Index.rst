@@ -20,6 +20,7 @@ The List module header
 
 ..  figure:: /Images/ManualScreenshots/ListModule/ListModule.png
     :alt: Screenshots of the List module in the TYPO3 backend, demonstrating the locations of the buttons mentioned below
+    :zoom: gallery
 
     See below about the meaning of the labeled buttons
 
@@ -57,6 +58,7 @@ type features its own action buttons for available actions:
 
 ..  figure:: /Images/ManualScreenshots/ListModule/ActionIcons.png
     :alt: Example of the action icons available for record type "Website Usergroup"
+    :zoom: gallery
 
 In this example the first button can be used to edit the user group, the second
 button to hide or unhide it, the third button to delete it. The button with the
@@ -75,6 +77,7 @@ a record containing a certain word.
 
 ..  figure:: /Images/ManualScreenshots/ListModule/SearchRecord.png
     :alt: Screenshot of the List module with the search box visible
+    :zoom: gallery
 
     To make the search box visible, Select "Show Search" from the "View" dropdown.
 

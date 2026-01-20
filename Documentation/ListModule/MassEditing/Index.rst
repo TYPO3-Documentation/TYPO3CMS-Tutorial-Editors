@@ -14,7 +14,8 @@ Choose the columns to be displayed by clicking the :guilabel:`Show Columns`
 button.
 
 ..  figure:: /Images/ManualScreenshots/ListModule/MassEdit/ShowColumnsButton.png
-    :alt: Screenshot demonstrating the location of the "Show Columns" Button in the TYPO3 List module
+    :alt: Screenshot demonstrating the location of the "Show Columns" Button in the Content Record module
+    :zoom: gallery
 
     The Show Columns button
 
@@ -23,6 +24,7 @@ Click on the :guilabel:`Update` button.
 
 ..  figure:: /Images/ManualScreenshots/ListModule/MassEdit/ShowColumnsModal.png
     :alt: Screenshot of the "Show columns for Page Content" popup
+    :zoom: gallery
 
     Choose the fields to be displayed and click "Update"
 
@@ -30,7 +32,8 @@ This makes the additional fields appear in a new column to the right
 of the record list:
 
 ..  figure:: /Images/ManualScreenshots/ListModule/MassEdit/RecordListWithAdditionalFields.png
-    :alt: List Module table with additional fields enabled
+    :alt: Content Record Module table with additional fields enabled
+    :zoom: gallery
 
     Click on the title or arrow to enable mass edit mode
 
@@ -45,6 +48,7 @@ clicking the tables title:
 
 ..  figure:: /Images/ManualScreenshots/ListModule/MassEdit/MassEditingEnabled.png
     :alt: Screen shot of the mass edit mode in the list module, edit buttons above columns visible
+    :zoom: gallery
 
     1: Edit all headers 2: Edit all Selected Fields 3: Edit just one field
 
@@ -70,6 +74,7 @@ checkboxes:
 
 ..  figure:: /Images/ManualScreenshots/ListModule/MassEdit/SelectiveEditing.png
     :alt: The list module with specific database records checked for mass edit
+    :zoom: gallery
 
     Selecting records for editing
 

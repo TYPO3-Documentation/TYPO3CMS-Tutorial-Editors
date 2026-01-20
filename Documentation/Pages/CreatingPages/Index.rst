@@ -31,7 +31,7 @@ the page tree.
 
 .. figure:: /Images/ManualScreenshots/PageTree/PageCreateDragDrop.png
    :alt: Creating a page using drag and drop
-   :class: with-border
+   :zoom: gallery
 
    Creating a page using drag and drop
 
@@ -45,7 +45,7 @@ the page tree.
 
    .. figure:: /Images/ManualScreenshots/PageTree/PageCreateTitle.png
       :alt: Inserting a page title
-      :class: with-border
+      :zoom: gallery
 
       Inserting a page title
 
@@ -63,7 +63,7 @@ Adding pages with the context menu
 
    .. figure:: /Images/ManualScreenshots/PageTree/PageCreateContextMenu.png
       :alt: Creating pages with the context menu
-      :class: with-border
+      :zoom: gallery
 
       Creating pages with the context menu
 
@@ -73,7 +73,7 @@ Adding pages with the context menu
 
    .. figure:: /Images/ManualScreenshots/Page/PageCreateWizard.png
       :alt: Selecting a position for the new page using the wizard
-      :class: with-border
+      :zoom: gallery
 
       Selecting a position for the new page using the wizard
 
@@ -84,7 +84,7 @@ Adding pages with the context menu
 
    .. figure:: /Images/ManualScreenshots/PageProperties/Visibility.png
       :alt: Making the new page publicly visible
-      :class: with-border
+      :zoom: gallery
 
       Making the new page publicly visible
 

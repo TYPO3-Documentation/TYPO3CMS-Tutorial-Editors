@@ -13,6 +13,7 @@ Editing content
     :alt: Editing content elements in the TYPO3 backend
     :class: img-thumbnail float-end ms-1
     :width: 250
+    :zoom: gallery
 
 On a page, click the pencil icon for the content element you want to edit,
 then edit the text and make other changes as required.
@@ -31,6 +32,7 @@ you.
 
 ..  figure:: /Images/ManualScreenshots/ContentElements/ChangeText.png
     :alt: Content element edit form screenshot, demonstrating changed content which is highlighted
+    :zoom: gallery
 
     Changed content is highlighted. The save button is found on the top
 
@@ -39,6 +41,7 @@ a form that has changes you will be prompted to save:
 
 ..  figure:: /Images/ManualScreenshots/ContentElements/SavingPrompt.png
     :alt: Prompt: Do you want to close without saving? You currently have unsaved changes. Are you sure you want to discard these changes?
+    :zoom: gallery
 
     You are prompted when you try to leave a form with unsaved changes
 
@@ -61,6 +64,7 @@ element in the overview but no edit, hide or delete button appears.
 
 ..  figure:: /Images/ManualScreenshots/ContentElements/NoEdit.png
     :alt: A content element without an edit button
+    :zoom: gallery
 
     A content element that cannot be edited due to lacking permissions
 
@@ -83,11 +87,13 @@ not fill out a required field, you cannot save your changes.
 
 ..  figure:: /Images/ManualScreenshots/ContentElements/RequiredField.png
     :alt: Screenshot of a required field
+    :zoom: gallery
 
     A required field that has no value prevents saving of a content element
 
 ..  figure:: /Images/ManualScreenshots/ContentElements/InputError.png
     :alt: Input error caused by a letter entered in a number field
+    :zoom: gallery
 
     Input error caused by a letter entered in a number field
 
@@ -105,6 +111,7 @@ browser where you saw the error. Send these to your integrator or programmer.
 
 ..  figure:: /Images/ManualScreenshots/ContentElements/ErrorMessage.png
     :alt: Screenshot of an error message in the TYPO3 backend
+    :zoom: gallery
 
     Such an error can happen during or after updates or when a programmer is
     working on your installation.
@@ -135,6 +142,7 @@ the :guilabel:`Type` list.
 
 ..  figure:: /Images/ManualScreenshots/ContentElements/ChangeType.png
     :alt: Edit form of a content element in the TYPO3 backend, demonstrating the location of the "Type" selector in tab General
+    :zoom: gallery
 
     You can find the "Type" selector in tab General
 
@@ -143,6 +151,7 @@ the screen to display different input fields, you are prompted first:
 
 ..  figure:: /Images/ManualScreenshots/ContentElements/RefreshRequired.png
     :alt: Edit form of a content element in the TYPO3 backend, demonstrating the location of the "Type" selector in tab General
+    :zoom: gallery
 
     You can find the "Type" selector in tab General
 

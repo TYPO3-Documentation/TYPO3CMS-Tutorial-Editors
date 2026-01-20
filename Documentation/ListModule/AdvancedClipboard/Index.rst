@@ -16,6 +16,7 @@ header of the "List" module. Then choose one of the clipboards, for example
 
 ..  figure:: /Images/ManualScreenshots/ListModule/Clipboard/ChooseClipboard.png
     :alt: The clipboard can be shown by "Show clipbaord" entry in the "View" drop down
+    :zoom: gallery
 
     Choose "Clipboard #1" to activate the multi-selection mode
 
@@ -34,6 +35,7 @@ Your clipboard should look like this:
 
 ..  figure:: /Images/ManualScreenshots/ListModule/Clipboard/ClipboardMultipleItems.png
     :alt: TYPO3 backend clipboard with several items
+    :zoom: gallery
 
     You can transfer multiple items of different types from different pages
 
@@ -45,6 +47,7 @@ Move to another page and click the "Paste in clipboard content" button:
 
 ..  figure:: /Images/ManualScreenshots/ListModule/Clipboard/PasteClipboard.png
     :alt: Button "Paste in clipboard content"
+    :zoom: gallery
 
     The text on the button is the same no matter weather you move or copy items
 
