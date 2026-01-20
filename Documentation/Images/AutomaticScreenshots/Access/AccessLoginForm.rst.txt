@@ -2,4 +2,4 @@
 
 .. figure:: /Images/AutomaticScreenshots/Access/AccessLoginForm.png
    :alt: Defining a new login form
-   :class: with-shadow
+   :zoom: lightbox

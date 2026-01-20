@@ -16,6 +16,6 @@ Help section, then select the :guilabel:`TYPO3 Online Documentation` module.
 
 ..  figure:: /Images/ManualScreenshots/Help/Typo3OnlineDocumentation.png
     :alt: The TYPO3 Online Documentation in the Help menu
-    :class: with-border
+    :zoom: lightbox
 
     The :guilabel:`TYPO3 Online Documentation` in the :guilabel:`Help` menu

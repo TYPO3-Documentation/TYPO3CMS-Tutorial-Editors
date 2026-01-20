@@ -1,6 +1,6 @@
 .. Automatic screenshot: Remove this line if you want to manually change this file
 
 .. figure:: /Images/AutomaticScreenshots/Forms/FormsNewForm.png
-   :class: with-shadow
+   :zoom: lightbox
 
    New form based on template

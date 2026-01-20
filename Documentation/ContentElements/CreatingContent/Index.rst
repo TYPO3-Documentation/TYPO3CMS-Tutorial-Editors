@@ -15,6 +15,7 @@ Creating content
     :alt: Creating content elements in the TYPO3 backend
     :class: img-thumbnail float-end ms-1 ms-1
     :width: 250
+    :zoom: gallery
 
 ..  versionchanged:: 14.0
     The main module `Web` has been renamed to `Content`.
@@ -29,6 +30,7 @@ In the following screenshot you see the location of that button:
 
 ..  figure:: /Images/ManualScreenshots/NewContentElement/CreateNew.png
     :alt: "Create new content button" in the Content Layout module, column "Normal"
+    :zoom: gallery
 
     Create a new Content Element by clicking the button
 
@@ -52,6 +54,7 @@ A standard editor can see the following content elements:
 
 ..  figure:: /Images/ManualScreenshots/ContentElements/WizardTypical.png
     :alt: Screenshot of the "New Page Content" wizard as seen by a common TYPO3 editor, featuring "Typical Page Content", "Lists" and "Special elements"
+    :zoom: gallery
 
     Screenshot of the "New Page Content" wizard as seen by a common TYPO3 editor
 
@@ -59,6 +62,7 @@ An advanced editor or an administrator can see the following content elements:
 
 ..  figure:: /Images/ManualScreenshots/ContentElements/WizardAdvanced.png
     :alt: Screenshot of the "New Page Content" wizard as seen by an advanced TYPO3 editor, additionally including "Form elements", "Menus" and additional "Special elements"
+    :zoom: gallery
 
     An advanced editor sees more groups and more content elements types in some of the groups
 
@@ -76,6 +80,7 @@ Insert regular text and image content types to build standard web pages.
 
 ..  figure:: /Images/ManualScreenshots/NewContentElement/WizardTabTypical.png
     :alt: 'Typical page content' tab contains content like Header, Regular Text Element, Text & Media, Images etc
+    :zoom: gallery
 
     The :guilabel:`Typical page content` tab of the new content element window
 
@@ -89,6 +94,7 @@ standard content elements but are easier to use for their specialized use case.
 
 ..  figure:: /Images/ManualScreenshots/NewContentElement/WizardTabList.png
     :alt: The 'List' tab contains content elements like "Bullet List", "Table" and "File Links"
+    :zoom: gallery
 
     The :guilabel:`List` tab of the new content element window
 
@@ -112,6 +118,7 @@ Create a login form or a simple contact form.
 
 ..  figure:: /Images/ManualScreenshots/NewContentElement/WizardTabForm.png
     :alt: Tab "Form elements" with "Form" and "Login Form"
+    :zoom: gallery
 
     The :guilabel:`Form elements` tab of the new content element window
 
@@ -124,6 +131,7 @@ Present a menu or list of page links in different ways.
 
 ..  figure:: /Images/ManualScreenshots/NewContentElement/WizardTabMenu.png
     :alt: The 'Menu' tab of the new content element window
+    :zoom: gallery
 
     The :guilabel:`Menu` tab of the new content element window
 
@@ -149,6 +157,7 @@ element from another page without duplicating it.
 
 ..  figure:: /Images/ManualScreenshots/NewContentElement/WizardTabSpecialElements.png
     :alt: The 'Special elements' tab of the new content element window
+    :zoom: gallery
 
     The :guilabel:`Plugins` tab of the new content element window
 
@@ -164,10 +173,11 @@ Add new content to a page
     This is the most commonly used content type. The
     :guilabel:`Create new Page Content` form appears.
 
-..  figure:: /Images/ManualScreenshots/NewContentElement/NewContentElement.png
-    :alt: Create new Page Content on page "Page 1" form screenshot
+    ..  figure:: /Images/ManualScreenshots/NewContentElement/NewContentElement.png
+        :alt: Create new Page Content on page "Page 1" form screenshot
+        :zoom: gallery
 
-    Unsaved changes are highlighted in light blue
+        Unsaved changes are highlighted in light blue
 
 #.  In the :guilabel:`Header` field, type *My new content element*.
 #.  In the :guilabel:`Text` area, type in some text. This field uses a
@@ -176,9 +186,10 @@ Add new content to a page
 #.  Save and close the content element.
     You can see the newly added element on the page:
 
-..  figure:: /Images/ManualScreenshots/NewContentElement/ContentSaved.png
-    :alt: The new content element appears in the Content Layout module
+    ..  figure:: /Images/ManualScreenshots/NewContentElement/ContentSaved.png
+        :alt: The new content element appears in the Content Layout module
+        :zoom: gallery
 
-    The new content element appears in the Content Layout module
+        The new content element appears in the Content Layout module
 
 ..  include:: /ContentElements/TipKeyboardCommands.rst.txt

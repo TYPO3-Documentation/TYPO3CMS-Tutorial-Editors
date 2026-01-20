@@ -84,6 +84,7 @@ and click the button representing a lightning bolt with the tooltip
 
 ..  figure:: /Images/ManualScreenshots/Cache/ClearPageCache.png
     :alt: Clear cache for this page
+    :zoom: lightbox
 
     Clear cache for this page
 
@@ -97,6 +98,7 @@ button in the toolbar you might not have the rights to carry out this action:
 
 ..  figure:: /Images/ManualScreenshots/Cache/ClearAllPageCaches.png
     :alt: Flush cache of all pages
+    :zoom: lightbox
 
     Flush cache of **all** pages
 

@@ -15,6 +15,7 @@ Working with images
     :alt: Content element Images in the TYPO3 backend
     :class: img-thumbnail float-end ms-1
     :width: 250
+    :zoom: gallery
 
 For content elements that support images (for example Text & Images, Text &
 Media, Images Only), you will see an :guilabel:`Images` or :guilabel:`Media`
@@ -34,6 +35,7 @@ On the :guilabel:`Images` tab, click the :guilabel:`Add image` button. The
 
 ..  figure:: /Images/ManualScreenshots/ContentElements/TextWithImage/ImagesTab.png
     :alt: Screenshot of a "Text with Image" TYPO3 content element, tab "Images"
+    :zoom: gallery
 
     Click the "Add image" button in tab images to chose or upload an image
 
@@ -41,6 +43,7 @@ Browse the file tree, then select a folder.
 
 ..  figure:: /Images/ManualScreenshots/ContentElements/TextWithImage/FileSelector.png
     :alt: The file selector window in the TYPO3 backend
+    :zoom: gallery
 
     Click the name of an image to select it or use the "Upload files" dialoge.
     Alternatively, mark several images and import all of them at once.
@@ -64,6 +67,7 @@ insert a link to the image.
 
 ..  figure:: /Images/ManualScreenshots/ContentElements/TextWithImage/ImageMetaData.png
     :alt: Screenshot of the meta data of an image in a "Text and Image" content element
+    :zoom: gallery
 
     Override the default meta data of the image with custom values for this location.
 
@@ -75,7 +79,6 @@ You can experiment with the image manipulation editor to crop or resize the
 image. Making changes here won't impact the original image file in
 :guilabel:`Media`.
 
-
 .. _images-appearance:
 
 Media adjustments
@@ -86,6 +89,7 @@ border.
 
 ..  figure:: /Images/ManualScreenshots/ContentElements/TextWithImage/MediaAdjustments.png
     :alt: Screenshot of the Media Adjustments section of a "Text and Images" content element in TYPO3
+    :zoom: gallery
 
     A value of '0' means the size is calculated dynamically.
 
@@ -132,6 +136,7 @@ You can manage your previously uploaded images in the backend module
 
 ..  figure:: /Images/ManualScreenshots/ContentElements/TextWithImage/FileList.png
     :alt: Screenshot of the "Media" backend module in TYPO3
+    :zoom: gallery
 
     You can view the files as Tiles or List by switching the settings.
 
@@ -143,6 +148,7 @@ You can move images into folders by drag and drop:
 
 ..  figure:: /Images/ManualScreenshots/ContentElements/TextWithImage/FileListDragAndDrop.png
     :alt: Screenshot of the "Media" backend module demonstration Drag and Drop
+    :zoom: gallery
 
     Grab a picture with the mouse, drag it to a folder and drop it there
 
@@ -151,6 +157,7 @@ use in some content element:
 
 ..  figure:: /Images/ManualScreenshots/ContentElements/TextWithImage/FileNotDeleted.png
     :alt: File not deleted, The file "xxx.png" cannot be deleted since it is still used at the following places
+    :zoom: gallery
 
     TYPO3 FAL will prevent you from deleting files that are still in use
 

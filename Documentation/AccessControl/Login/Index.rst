@@ -126,7 +126,7 @@ can log in to view the restricted content.
 
    .. figure:: ../../Images/ManualScreenshots/Access/AccessPageWithAuthenticatedUser.png
       :alt: The page with the authenticated user
-      :class: with-border
+      :zoom: lightbox
 
 This is just a quick overview of the login form provided by TYPO3 CMS. It has a
 rich set of features that are described in the :doc:`Frontend Login <ext_felogin:Index>` manual.

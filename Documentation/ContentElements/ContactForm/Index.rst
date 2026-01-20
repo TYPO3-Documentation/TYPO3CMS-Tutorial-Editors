@@ -12,6 +12,7 @@ Creating a contact form
     :alt: Content element Contact Form in the TYPO3 backend
     :class: img-thumbnail float-end ms-1 ms-1
     :width: 250
+    :zoom: gallery
 
 You can create a form from the :guilabel:`Content > Forms` module. This is a
 system extension which needs to be activated by your administrator. It is
@@ -122,7 +123,7 @@ Click the :guilabel:`Settings` button at the top of the form to add
 
 .. figure:: ../../Images/ManualScreenshots/Forms/FormsFinishers.png
    :alt: Add finishers to a form
-   :class: with-border
+   :zoom: gallery
 
 You can integrate extensions with existing forms. For example, if you're
 running a sales operation, you can integrate with Mautic and any changes to a
