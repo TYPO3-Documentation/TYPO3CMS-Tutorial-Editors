@@ -88,7 +88,7 @@ Troubleshooting: Login does not work
 Backend and Install Tool are locked for maintenance
 ---------------------------------------------------
 
-If the administrator locked you TYPO3 installation for maintenance purposes,
+If the administrator locked your TYPO3 installation for maintenance purposes,
 you will see one of the following error messages:
 
 ..  warning::
@@ -120,7 +120,7 @@ Too many failed logins
 ----------------------
 
 After a certain amount of failed login attempts within a short time span the
-TYPO3 backend will be automatically logged to prevent brute force login attempts
+TYPO3 backend will be automatically locked to prevent brute force login attempts
 and other security relevant attacks:
 
 ..  warning::
