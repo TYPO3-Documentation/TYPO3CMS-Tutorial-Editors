@@ -34,7 +34,19 @@ module, it displays a navigation tree, which corresponds to the file
 structure on the server, and a list of all files for the
 selected directory.
 
-.. include:: /Images/AutomaticScreenshots/FilelistModule/FilelistModule.rst.txt
+.. figure:: /Images/ManualScreenshots/MediaModule/TileView.png
+   :zoom: gallery
+   :alt: View to the Media Module listing three image files as tiles
+
+   View from the The :guilabel:`Media` module displaying default view option tiles.
+
+.. figure:: /Images/ManualScreenshots/MediaModule/ListView.png
+   :zoom: gallery
+   :alt: View to the Media Module listing three image files as list, the view selector is open
+   showing the activated list view option as well as the deselected clipboard option. Accordingly,
+   the image does not contain a clipboard.
+
+   List view from the The :guilabel:`Media` module with View Selector open displaying options.
 
 For admin users, the folder displayed by default is called
 "fileadmin/ (auto-generated)" and corresponds to the
@@ -78,7 +90,12 @@ Clipboard
 
 There is a clipboard just like in the :guilabel:`Content > Record` module.
 
-.. include:: /Images/AutomaticScreenshots/FilelistModule/FileClipboard.rst.txt
+.. figure:: /Images/ManualScreenshots/MediaModule/Clipboard.png
+   :zoom: lightbox
+   :alt: The standard TYPO3 Clipboard, activated Clipboard #1 with one of the
+   images selected.
+
+   The :guilabel:`Media` module's clipboard
 
 The handling is the same as the description used in the :ref:`Advanced clipboard usage
 <advanced_clipboard_usage>`.
@@ -91,9 +108,18 @@ Uploading new files
 -------------------
 
 You can upload files to a given folder by using the context menu
-or to the current directory by using the action icon in the docheader.
+or to the current directory by using the action icon in the docheader. Also, drag & drop
+will initiate the upload. Just drag any file into the main view to upload it to the
+current folder, or select the `click, browse and choose files` option.
 
-.. include:: /Images/AutomaticScreenshots/FilelistModule/FileUpload.rst.txt
+.. figure:: /Images/ManualScreenshots/MediaModule/FileUpload.png
+   :zoom: lightbox
+   :alt: A section of TYPO3 Media Module open with a folder selected and upload
+   initiated. The upload overlay offers an option to open a file dialog for selecting
+   files from the local computer. Highlighted is the button to open the upload view and
+   the close button to cancel the upload action.
+
+   Upload possibilities in the Media module
 
 
 Next steps
