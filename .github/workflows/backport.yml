@@ -1,19 +1,64 @@
 name: Backport
+
 on:
   pull_request_target:
-    types:
-      - closed
-      - labeled
+    types: [closed, labeled]
 
 jobs:
   backport:
+    if: >
+      github.event.pull_request.merged == true &&
+      startsWith(github.event.label.name, 'backport-')
     runs-on: ubuntu-latest
-    name: Backport
+
     permissions:
-      contents: write        # needed to push the backport branch
-      pull-requests: write   # needed to open the PR
+      contents: write
+      pull-requests: write
+
     steps:
-      - name: Backport
-        uses: m-kuhn/backport@30b6e83906cc97bad3a02867181d6236becf68f9
+      - name: Determine target branch
+        id: vars
+        run: |
+          label="${{ github.event.label.name }}"
+          target="${label#backport-}"
+          echo "target=$target" >> $GITHUB_OUTPUT
+
+      - name: Checkout repo
+        uses: actions/checkout@de0fac2e4500dabe0009e67214ff5f5447ce83dd # v 6.0.2
         with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
+          fetch-depth: 0
+
+      - name: Configure git
+        run: |
+          git config user.name "github-actions"
+          git config user.email "github-actions@github.com"
+
+      - name: Cherry pick merge commit
+        env:
+          TARGET: ${{ steps.vars.outputs.target }}
+          PR: ${{ github.event.pull_request.number }}
+        run: |
+          MERGE_SHA=${{ github.event.pull_request.merge_commit_sha }}
+
+          BRANCH="backport/pr-${PR}-to-${TARGET}"
+
+          git fetch origin $TARGET
+          git checkout -b $BRANCH origin/$TARGET
+
+          git cherry-pick -x $MERGE_SHA
+
+          git push origin $BRANCH
+
+      - name: Create PR
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          TARGET: ${{ steps.vars.outputs.target }}
+          PR: ${{ github.event.pull_request.number }}
+        run: |
+          BRANCH="backport/pr-${PR}-to-${TARGET}"
+
+          gh pr create \
+            --base $TARGET \
+            --head $BRANCH \
+            --title "Backport PR #$PR to $TARGET" \
+            --body "Automated backport of #$PR to \`$TARGET\`."
