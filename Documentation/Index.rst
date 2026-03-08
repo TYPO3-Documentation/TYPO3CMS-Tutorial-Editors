@@ -15,7 +15,8 @@ creating pages, adding content to pages in the form of content elements and
 uploading and managing various file types including images and PDFs.
 
 This guide assumes that you are already familiar with TYPO3. If this is not the case,
-visit the :ref:`concepts of TYPO3<t3start:concepts>` to get started.
+visit the `TYPO3 Concepts <https://docs.typo3.org/permalink/t3start:concepts>`_
+to get started.
 
 All of the examples used in this guide are taken from a TYPO3 installation running
 the `Official Introduction Package <https://extensions.typo3.org/extension/introduction/>`__.
