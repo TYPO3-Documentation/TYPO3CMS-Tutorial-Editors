@@ -7,8 +7,9 @@ on:
 jobs:
   backport:
     if: >
+      github.event.action == 'labeled' &&
       github.event.pull_request.merged == true &&
-      startsWith(github.event.label.name, 'backport-')
+      startsWith(github.event.label.name, 'backport ')
     runs-on: ubuntu-latest
 
     permissions:
@@ -20,8 +21,8 @@ jobs:
         id: vars
         run: |
           label="${{ github.event.label.name }}"
-          target="${label#backport-}"
-          echo "target=$target" >> $GITHUB_OUTPUT
+          target="${label#backport }"
+          echo "target=$target" >> "$GITHUB_OUTPUT"
 
       - name: Checkout repo
         uses: actions/checkout@de0fac2e4500dabe0009e67214ff5f5447ce83dd # v 6.0.2
