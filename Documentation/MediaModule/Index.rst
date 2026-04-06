@@ -100,6 +100,29 @@ There is a clipboard just like in the :guilabel:`Content > Record` module.
 The handling is the same as the description used in the :ref:`Advanced clipboard usage
 <advanced_clipboard_usage>`.
 
+.. index::
+    Files; Management
+    Directories; fileadmin
+.. _creating-folders:
+
+Creating new folders
+--------------------
+
+To create folders within the file storage, the button :guilabel:`Create Folder` opens a module dialog
+with the familiar separation of tree and working frame. Left hand all available storages and folders
+are displayed in tree structure. The folder selected here will act as the parent for the folders
+to be created.
+Folders are to be created one by one, the modal will remain open after operation to ease multiple
+additions. Each new entry appears immediately in the folder tree and can be used as parent.
+
+.. figure:: /Images/ManualScreenshots/MediaModule/CreateFolder.avif
+   :zoom: lightbox
+   :alt: A section of TYPO3 Media Module open and overlayed with the module dialog for
+   creating new folders. The overlay displays the folder tree, one of the folders there is
+   selected as the parent for the new folder. Right frame displays the input form field for
+   the name of the new folder.
+
+   Modal dialog for folder creation
 
 .. index:: Files; Upload
 .. _uploading-files:
