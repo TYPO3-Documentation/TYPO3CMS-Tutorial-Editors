@@ -78,7 +78,7 @@ Typical page content
 
 Insert regular text and image content types to build standard web pages.
 
-..  figure:: /Images/ManualScreenshots/NewContentElement/WizardTabTypical.png
+..  figure:: /Images/ManualScreenshots/ContentElements/WizardTypical.png
     :alt: 'Typical page content' tab contains content like Header, Regular Text Element, Text & Media, Images etc
     :zoom: gallery
 
@@ -171,7 +171,7 @@ Add new content to a page
     where you want to insert content.
 #.  On the :guilabel:`Typical Page Content` tab, choose the "Text & Media" element.
     This is the most commonly used content type. The
-    :guilabel:`Create new Page Content` form appears.
+    :guilabel:`Create new Text & Media` form appears.
 
     ..  figure:: /Images/ManualScreenshots/NewContentElement/NewContentElement.png
         :alt: Create new Page Content on page "Page 1" form screenshot
