@@ -18,10 +18,10 @@ You can manage pages directly in the page tree.
 Move pages
 ==========
 
-#. Choose the page you want to move, then drag it anywhere in the page
+#. Choose the page you want to move, then drag it to anywhere in the page
    tree.
 
-   A horizontal line displays to indicate the new
+   A horizontal line indicates the new
    position of the page.
 
    .. figure:: /Images/ManualScreenshots/PageTree/CopyMovePage.png
