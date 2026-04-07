@@ -11,9 +11,9 @@ Creating Pages
 
 ------------
 
-There are two ways to add a new page to your site. It can be done either by dragging the new page
-icon to the desired location in the page tree or by right-clicking on
-an existing page and using the contextual menu.
+There are two ways to add a page to a site using the page tree. You can either drag
+and drop from icons above the page tree or you can use the context menu by right-clicking
+on an existing page inside the page tree.
 
 To start adding pages:
 
@@ -23,11 +23,14 @@ To start adding pages:
 
 .. _pages-creating-tree:
 
-Adding pages within the page tree
-=================================
+Adding pages using drag and drop
+================================
 
-You can create a new page by dragging and dropping a page from the top of
-the page tree.
+Along the top of the page tree is a :guilabel:`+ Page` button on the upper left
+next to a row of icons. The row of icons represent different page types. Create a
+new page either by clicking on the :guilabel:`+ Page` button or by dragging and
+dropping from the relevant icon into the page tree below. In both cases a pop up
+modal will appear.
 
 .. figure:: /Images/ManualScreenshots/PageTree/PageCreateDragDrop.png
    :alt: Creating a page using drag and drop
@@ -35,13 +38,16 @@ the page tree.
 
    Creating a page using drag and drop
 
-#. Select the type of page you want to add by choosing from one of the icons. In this example
-   we are creating a standard page.
+#. Choose your page type. If you have clicked on the :guilabel:`+ Page` button
+   choose your page type in the modal. Otherwise, decide which page type you want
+   from the row of icons. In this example we are creating a standard page.
 
-#. Drop the icon either between two existing pages to create a sibling
-   or on top of an existing page to create a child.
+#. Choose where you want the page to be in the page tree. If you have dragged from an icon, drop it on top of an existing page to
+   create a child page. If you clicked on the :guilabel:`+ Page` button, select the parent
+   page in the pop up modal. Select/drop on to the root page if you want to create a page
+   at the top level. You can always move the page around later by dragging and dropping.
 
-#. Give the new page a title.
+#. In the pop up modal give the new page a title.
 
    .. figure:: /Images/ManualScreenshots/PageTree/PageCreateTitle.png
       :alt: Inserting a page title
@@ -49,43 +55,31 @@ the page tree.
 
       Inserting a page title
 
-New pages are disabled by default. To enable a newly created page, right-click on the page
-and select :guilabel:`Enable`. You can also enable a page from the :guilabel:`Access` tab in page properties.
+New pages are disabled by default. Scroll down in the modal to see where you can enable
+the page while you are creating it or right-click the page once it has been created and select :guilabel:`Enable`.
+Another way to enable the page after it has been created is under the :guilabel:`Access`
+tab in the page properties.
 
+.. figure:: /Images/ManualScreenshots/PageProperties/Visibility.png
+  :alt: Making the new page publicly visible
+  :zoom: gallery
+
+  Making the new page publicly visible in page properties
 
 .. _pages-creating-context:
 
-Adding pages with the context menu
-==================================
+Adding pages using the context menu
+===================================
 
-#. Right-click any existing page and choose :guilabel:`More options > 'Create
-   New' Wizard` from the context menu.
+Right-click any existing page and choose :guilabel:`New subpage` from the context menu.
 
-   .. figure:: /Images/ManualScreenshots/PageTree/PageCreateContextMenu.png
-      :alt: Creating pages with the context menu
-      :zoom: gallery
+.. figure:: /Images/ManualScreenshots/PageTree/PageCreateContextMenu.png
+  :alt: Creating pages with the context menu
+  :zoom: gallery
 
-      Creating pages with the context menu
+  Creating pages with the context menu
 
-   The :guilabel:`New record` screen will appear.
+A pop up modal will appear as in :ref:`above <pages-creating-tree>`.
 
-#. Decide where you want your new page to appear in the page tree by selecting one of the black arrows.
-
-   .. figure:: /Images/ManualScreenshots/Page/PageCreateWizard.png
-      :alt: Selecting a position for the new page using the wizard
-      :zoom: gallery
-
-      Selecting a position for the new page using the wizard
-
-   The :guilabel:`Create new Page` screen will appear.
-
-#. Provide a title for the page. You can also go to the :guilabel:`Access` tab
-   and enable the page to make it visible in the frontend.
-
-   .. figure:: /Images/ManualScreenshots/PageProperties/Visibility.png
-      :alt: Making the new page publicly visible
-      :zoom: gallery
-
-      Making the new page publicly visible
 
 Visit the :ref:`page types <pages-types>` chapter for more information on the different types of pages that can be created.
