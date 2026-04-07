@@ -92,7 +92,7 @@ the old to the new URL is created:
 It is also possible to edit the URL segment by clicking the "Toggle" button.
 You can then enter a different URL segment:
 
-..  figure:: /Images/ManualScreenshots/Page/RecalculateSlug.png
+..  figure:: /Images/ManualScreenshots/Page/RecalculateSlugToggle.png
     :alt: Manually editing a URL segment by clicking the "Toggle" button
     :zoom: gallery
 
@@ -153,7 +153,7 @@ Page Layout / Backend Layout
     :alt: The Backend Layout is found in the tab "Appearance" of the page properties in the TYPO3 Backend
 
 Backend Layouts influence the general structure of a page not only in the
-backend but also in the frontend. A Backend Layout influences, which content
+backend but also in the frontend. A Backend Layout influences which content
 areas are available in the Page Module to
 `Manage content <https://docs.typo3.org/permalink/t3editors:content-working>`_
 in them. A Backend Layout is usually bound to its own frontend template which
