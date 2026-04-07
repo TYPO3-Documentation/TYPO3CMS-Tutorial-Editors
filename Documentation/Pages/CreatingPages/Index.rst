@@ -57,30 +57,29 @@ modal will appear.
 
 New pages are disabled by default. Scroll down in the modal to see where you can enable
 the page while you are creating it or right-click the page once it has been created and select :guilabel:`Enable`.
-Another way to enable the page after it has been created is under the
-:guilabel:`Access` tab in the page properties.
+Another way to enable the page after it has been created is under the :guilabel:`Access`
+tab in the page properties.
 
-   .. figure:: /Images/ManualScreenshots/PageProperties/Visibility.png
-      :alt: Making the new page publicly visible
-      :zoom: gallery
+.. figure:: /Images/ManualScreenshots/PageProperties/Visibility.png
+  :alt: Making the new page publicly visible
+  :zoom: gallery
 
-      Making the new page publicly visible in page properties
-
+  Making the new page publicly visible in page properties
 
 .. _pages-creating-context:
 
 Adding pages using the context menu
 ===================================
 
-#. Right-click any existing page and choose :guilabel:`New subpage` from the context menu.
+Right-click any existing page and choose :guilabel:`New subpage` from the context menu.
 
-   .. figure:: /Images/ManualScreenshots/PageTree/PageCreateContextMenu.png
-      :alt: Creating pages with the context menu
-      :zoom: gallery
+.. figure:: /Images/ManualScreenshots/PageTree/PageCreateContextMenu.png
+  :alt: Creating pages with the context menu
+  :zoom: gallery
 
-      Creating pages with the context menu
+  Creating pages with the context menu
 
-   A pop up modal will appear as in :ref:`above <pages-creating-tree>`.
+A pop up modal will appear as in :ref:`above <pages-creating-tree>`.
 
 
 Visit the :ref:`page types <pages-types>` chapter for more information on the different types of pages that can be created.
