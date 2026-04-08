@@ -171,7 +171,7 @@ displayed on the page. You can restore it if it is still needed or delete it if
 it is not needed anymore.
 
 The "Unused content" is found at the bottom of the page module. you can move it
-via drag an drop to the desired location or delete it, if it is not needed anymore.
+via drag an drop to the desired location or delete it if it is not needed anymore.
 
 ..  figure:: /Images/ManualScreenshots/ContentElements/MoveUnusedContent.png
     :alt: Demonstration of moving unused content back into a normal content area
@@ -186,7 +186,7 @@ If you accidentally delete a content element or even a complete page you can
 restore your data using the module :guilabel:`Content > Recycler` if you have
 sufficient permissions and it is installed.
 
-..  figure:: /Images/ManualScreenshots/ContentElements/RestoreContent.png
+..  figure:: /Images/ManualScreenshots/ContentElements/RestoreContentRecycler.png
     :alt: Screenshot of the Recycler module in the TYPO3 backend, demonstrating how to restore a deleted content element
     :zoom: gallery
 
