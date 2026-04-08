@@ -19,7 +19,7 @@ system extension which needs to be activated by your administrator. It is
 written in TypoScript and is fully documented in the :doc:`Form Framework <ext_form:Index>` system extension manual.
 
 This module provides a guided interface for editors to create any kind of form
-such as a contact form, newsletter subscription or even a survey. TYPO3 comes
+such as a contact form, newsletter subscription or a survey. TYPO3 comes
 with one pre-defined form already built, which you can use to get started.
 
 #. In the :guilabel:`Content > Forms` module, click the :guilabel:`+ Create new
@@ -32,17 +32,17 @@ with one pre-defined form already built, which you can use to get started.
 
    .. include:: /Images/AutomaticScreenshots/Forms/FormsSettingsStep1.rst.txt
 
-#. Choose the predefined :guilabel:`Simple contact form` and enter a name.
+#. Accept "Database" as the default storage location and click :guilabel:`Next`.
+   In the :guilabel:`Template` list, select :guilabel:`Simple contact form`.
+   Enter a name for the form and click :guilabel:`Next` .
 
    .. include:: /Images/AutomaticScreenshots/Forms/FormsSettingsStep2.rst.txt
 
-#. Check the settings and click :guilabel:`Next` once more.
+#. Check the settings and click :guilabel:`Create new form`.
 
    .. include:: /Images/AutomaticScreenshots/Forms/FormsSettingsStep3.rst.txt
 
-#. In the :guilabel:`Start template` list, select 'Simple contact form', and
-   then type a name for the form.
-#. Click :guilabel:`Next` and then click :guilabel:`Finish`. Your new form displays.
+#. Click :guilabel:`Finish`. Your new form is displayed.
 
    .. include:: /Images/AutomaticScreenshots/Forms/FormsNewForm.rst.txt
 
@@ -73,8 +73,10 @@ Create a form from scratch
 
 #. In the :guilabel:`Content > Forms` module, click the :guilabel:`+ Create new
    form` button.
-#. In the :guilabel:`Create new form` wizard, choose to create a blank form.
-#. Give your form a name, then click :guilabel:`Next` and :guilabel:`Finish`.
+#. In the :guilabel:`Create new form` wizard, choose to create a blank form and
+   accept "Database" as the default storage location.
+#. Give your form a name, then click :guilabel:`Next` and :guilabel:`Create new form`
+   then :guilabel:`Finish`.
 
    A blank form displays.
 
@@ -118,8 +120,7 @@ Working with forms
 When you have added multiple fields to your form, you can drag and drop them
 to rearrange their order.
 
-Click the :guilabel:`Settings` button at the top of the form to add
-:guilabel:`Finishers` like a confirmation message or redirection to another page.
+Add :guilabel:`Finishers` like a confirmation message or redirection to another page.
 
 .. figure:: ../../Images/ManualScreenshots/Forms/FormsFinishers.png
    :alt: Add finishers to a form
