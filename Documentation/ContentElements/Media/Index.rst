@@ -42,7 +42,7 @@ Add a video to a page
 
 If you want to embed a previously uploaded video or upload a new video use the
 button :guilabel:`Add media file`. If you want to embed a video from an external
-source like YouTube or Vimeo, use the button :guilabel:`Add media URL` instead.
+source like YouTube or Vimeo, use the button :guilabel:`Add media by URL` instead.
 
 ..  figure:: /Images/ManualScreenshots/ContentElements/Media.png
     :alt: Tab media of the text and media content element in TYPO3
