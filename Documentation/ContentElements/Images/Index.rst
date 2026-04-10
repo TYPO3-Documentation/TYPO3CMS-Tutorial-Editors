@@ -30,14 +30,14 @@ tab `Typical page content <https://docs.typo3.org/permalink/t3editors:content-ty
 Add an image to the content element
 ===================================
 
-On the :guilabel:`Images` tab, click the :guilabel:`Add image` button. The
-:guilabel:`File selector` window displays to let you browse for an image.
+On the :guilabel:`Images` tab, click on the :guilabel:`Add image` button to display a
+:guilabel:`File selector` window which lets you browse for an image.
 
 ..  figure:: /Images/ManualScreenshots/ContentElements/TextWithImage/ImagesTab.png
     :alt: Screenshot of a "Text with Image" TYPO3 content element, tab "Images"
     :zoom: gallery
 
-    Click the "Add image" button in tab images to chose or upload an image
+    Click on "Add image" or "Select & upload files" in images tab to choose or upload an image
 
 Browse the file tree, then select a folder.
 
@@ -91,7 +91,7 @@ border.
     :alt: Screenshot of the Media Adjustments section of a "Text and Images" content element in TYPO3
     :zoom: gallery
 
-    A value of '0' means the size is calculated dynamically.
+    Not setting a value means the size is calculated dynamically.
 
 ..  note::
     This section is only visible when your site package is based on the
@@ -141,7 +141,7 @@ You can manage your previously uploaded images in the backend module
     You can view the files as Tiles or List by switching the settings.
 
 TYPO3 uses a file abstraction layer (FAL) you can therefore move images into
-different folders without impending the frontend output of the web page, even if
+different folders without affecting the frontend output of the web page, even if
 they are used in multiple places.
 
 You can move images into folders by drag and drop:
