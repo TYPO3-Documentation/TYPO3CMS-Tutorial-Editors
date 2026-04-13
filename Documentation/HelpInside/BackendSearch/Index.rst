@@ -7,7 +7,7 @@ Backend search
 ==============
 
 The backend search tool accepts text and searches against
-various types of records in the backend.
+page records, content records, database records and backend modules.
 
 The search can be opened by selecting the magnifying glass in the top right
 corner of the toolbar or by pressing the :kbd:`Cmd` + :kbd:`K`

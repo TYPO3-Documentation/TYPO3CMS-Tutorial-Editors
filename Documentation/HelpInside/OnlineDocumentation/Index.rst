@@ -6,13 +6,12 @@
 TYPO3 online documentation
 ==========================
 
-You can find the startpage of the official TYPO3 documentation at
+The starting page of the official TYPO3 documentation is at
 https://docs.typo3.org/ .
 
-You can conveniently open this documentation from your TYPO3 backend:
-
-In the top bar, click the question mark icon to access the
-Help section, then select the :guilabel:`TYPO3 Online Documentation` module.
+However, you can also open this documentation from your TYPO3 backend. Click on your name
+in the right corner of top bar, and then click on
+:guilabel:`TYPO3 Online Documentation` in the drop down menu.
 
 ..  figure:: /Images/ManualScreenshots/Help/Typo3OnlineDocumentation.png
     :alt: The TYPO3 Online Documentation in the Help menu
