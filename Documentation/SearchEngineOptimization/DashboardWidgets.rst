@@ -49,7 +49,7 @@ the "Missing Meta Description" widget you can add it yourself to your Dashboard:
 Using the "Missing Meta Description" widget to improve SEO results
 ------------------------------------------------------------------
 
-Therefore this widget lists pages without a description in their meta data:
+This widget lists pages that are missing a description in their meta data:
 
 ..  figure:: /Images/ManualScreenshots/SearchEngineOptimization/pages-missing-description.png
     :alt: Screenshot a widget listing pages without description
