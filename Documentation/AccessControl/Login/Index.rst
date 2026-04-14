@@ -34,7 +34,7 @@ Create a user group and user
 
    .. include:: /Images/AutomaticScreenshots/Access/AccessUserFolder.rst.txt
 
-#. Navigate to the :guilabel:`Content > Record` module, and select your new folder.
+#. Navigate to the :guilabel:`Content > Records` module, and select your new folder.
 #. Click the **+** :guilabel:`Create new record` icon at the top left of the
    Docheader. The "New record" wizard displays.
 
