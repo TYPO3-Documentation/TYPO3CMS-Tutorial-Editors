@@ -38,13 +38,13 @@ The list view has action icons in the **module header** including:
 
 #.  **Edit page properties** of the current page
 
-#.  **Clear the cache** of the current page
+#.  **View** or hide search or `the clipboard <https://docs.typo3.org/permalink/t3editors:clipboard>`_
 
-#.  **Refresh** the :guilabel:`Content > Record` module
+#.  **Clear the cache** of the current page
 
 #.  **Create internal note**
 
-#.  **View** Show or hide search or `The clipboard <https://docs.typo3.org/permalink/t3editors:clipboard>`_
+#.  **Refresh** the :guilabel:`Content > Record` module
 
 #.  **Share** Copy an URL to this page or bookmark it for quick access
 
