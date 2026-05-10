@@ -14,8 +14,8 @@
     />
     <project
             title="Tutorial for Editors"
-            release="main"
-            version="main"
+            release="14.3"
+            version="14.3"
             copyright="since 2012 by the TYPO3 contributors"
     />
     <inventory id="typo3/guide-frontendlocalization"
