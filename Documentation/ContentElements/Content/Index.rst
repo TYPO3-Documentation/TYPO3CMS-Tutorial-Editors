@@ -135,7 +135,7 @@ Finding content using the Live Search
 =====================================
 
 Use the search button on the top right of the TYPO3 backend or the keyboard
-shortcut :kbd:`Ctrl + K` or :kbd:`Cmd + K` to open the live search.
+shortcuts :kbd:`Ctrl + K` or :kbd:`Cmd + K` to open the live search.
 
 ..  figure:: /Images/ManualScreenshots/ContentElements/LiveSearch.png
     :alt: Using the live search to search for content elements
@@ -144,6 +144,7 @@ shortcut :kbd:`Ctrl + K` or :kbd:`Cmd + K` to open the live search.
     Use the arrow button to get more information on the search result
 
 You can then edit the content element containing the text you were searching for.
+You can search by keywords, numbers or by frontend page URL.
 
 ..  _content-working-troubleshooting:
 
