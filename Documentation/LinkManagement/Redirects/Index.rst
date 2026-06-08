@@ -21,6 +21,19 @@ to redirect to pages in your new TYPO3 installation.
 You can set up a redirect for :samp:`/contact-us.aspx` that redirects visitors to your
 new `Contact Us` page in your TYPO3 installation.
 
+Scenario - preparing a URL for future use
+=========================================
+
+Your company will be attending a trade show next year and instead of providing attendees with a
+link to your homepage, you want to point them to a new page with specific information about your
+company that will be relevant to people attending the conference.
+
+You can set up a redirect for :samp:`/expo-2027` that points to your home page
+and give that to the event organizer.
+
+Then, once you have built your conference specific page, you can update the redirect
+so that it points to the new page.
+
 Creating a redirect
 ===================
 
@@ -33,14 +46,14 @@ Setting a Source Domain and Source Path
 ---------------------------------------
 
 ..  figure:: /Images/ManualScreenshots/LinkManagement/RedirectsSourceDomainSourcePath.png
-    :alt: Screenshot of the Source Domain and and Source Path fields found within "create new redirect"
+    :alt: Screenshot of the Source Domain and Source Path fields found within "create new redirect"
 
 Source Domain - this is the domain used in your TYPO3 installation. If you have multiple
 domains on a single TYPO3 installation, you will need to specify which one you are
 using here.
 
 Source Path - this is the path that will be redirected. Using the example above,
-we specify :samp:`/contact-us.aspx` here.
+we specify :samp:`/contact-us.aspx` here. Note that any query parameters will be ignored.
 
 Setting a Target
 ----------------
@@ -49,7 +62,7 @@ Setting a Target
     :alt: Screenshot of the target field found within "create new redirect"
 
 The Target selector allows us to specify which Page or file is served when visitors
-visit or redirected URL.
+visit the redirected URL.
 
 Using the example above, we would select the `Contact Us` page in the Page Tree.
 
@@ -62,14 +75,14 @@ Access Tab
 
 :guilabel:`Enabled`: Toggle the redirect on and off.
 
-:guilabel:`Publish Date`: Set a publish date.
+:guilabel:`Publish Date`: Set a publish date for when you want the Redirect to become active.
 
-:guilabel:`Expiration Date`: Set an expiration date.
+:guilabel:`Expiration Date`: Set an expiration date or when you want the Redirect to be no longer active.
 
 Notes Tab
 ---------
 
-..  figure:: /Images/ManualScreenshots/LinkManagement/GenericNotes.png
+..  figure:: /Images/ManualScreenshots/LinkManagement/RedirectsNotes.png
     :alt: Screenshot of the Notes Tab found inside Add redirect.
     :class: with-border
 
@@ -81,5 +94,5 @@ Managing existing redirect rules
 ..  figure:: /Images/ManualScreenshots/LinkManagement/RedirectsManage.png
     :alt: Screenshot of the Redirects main page, with two example records.
 
-Once a rule has been created, you then have option to edit an existing record,
+Once a rule has been created, you then have the option to edit an existing record,
 toggle it on or off and also delete the record.

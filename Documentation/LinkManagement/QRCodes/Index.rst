@@ -21,7 +21,7 @@ sent to a specific page in your TYPO3 installation.
 Using the QR Code feature, you can:
 
 - Generate a QR Code
-- Point it to a page in the Page tree.
+- Point it to a page in the Page Tree.
 - Download the QR Code either as a PNG or SVG and then send it to your design department so that they can add it to the flyer
 
 Creating a QR Code
@@ -40,7 +40,7 @@ General Tab
     :alt: Screenshot of the General Tab found inside Add QR Code.
     :class: with-border
 
-:guilabel:`Source Domain`: Select the domain you wish to link to the QRC. If you only have one site in your installation, there will be only one option to choose from.
+:guilabel:`Source Domain`: Select the domain you wish to associate with the QR Code. If you only have one site in your installation, there will be only one option to choose from.
 
 :guilabel:`Target`: Specify which page in the :guilabel:`Page Tree` your QRC will point to. It is also possible to link to Files stored in TYPO3 and also point to external URLs.
 
@@ -55,9 +55,9 @@ Access Tab
 
 :guilabel:`Enabled`: Toggle the QRC on and off.
 
-:guilabel:`Publish Date`: Set a publish date.
+:guilabel:`Publish Date`: Set a publish date for when you want the QR Code to become active.
 
-:guilabel:`Expiration Date`: Set an expiration date.
+:guilabel:`Expiration Date`: Set an expiration date or when you want the QR Code to be no longer active.
 
 Notes Tab
 ---------
@@ -92,6 +92,6 @@ Edit an existing QR Code
 
 :guilabel:`Edit Icon`: Once a QRC has been created, it is possible to change where it points to.
 
-:guilabel:`Hide`: Enable or disable the QRC without deleting it.
+:guilabel:`Hide`: Enable or disable the QRC without deleting it. If the QR Code is disabled, a 404 page will be returned.
 
 :guilabel:`Delete`: Delete the QRC.

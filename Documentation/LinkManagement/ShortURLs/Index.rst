@@ -16,7 +16,8 @@ Scenario - Shortening a long URL
 
 You want to share a link to your profile page found on your company website, however the URL itself is very long.
 
-With Short URLs you can generate a simple URL that can be shared easily.
+With Short URLs you can generate a simple URL that can be shared easily. They can also be
+repurposed at a later date and can point to a completely new page or resource.
 
 Creating a Short URL
 ====================
@@ -34,7 +35,7 @@ General Tab
     :alt: Screenshot of the General Tab found inside Add Short URL.
     :class: with-border
 
-:guilabel:`Short URL`: Select the domain you wish to link to Short URL. If you only have one site in your installation, there will be only one option to choose from. Then use
+:guilabel:`Short URL`: Select the domain you wish to link to the Short URL. If you only have one site in your installation, there will be only one option to choose from. Then use
 the dice icon to generate a random string of text. Note, you can also manually set the Short URL - however this is not recommended.
 
 :guilabel:`Target`: Specify which page in the :guilabel:`Page Tree` your Short URL will point to. It is also possible to link to Files stored in TYPO3 and also point to external URLs.
@@ -50,9 +51,9 @@ Access Tab
 
 :guilabel:`Enabled`: Toggle the Short URL on and off.
 
-:guilabel:`Publish Date`: Set a publish date.
+:guilabel:`Publish Date`: Set a publish date for when you want the Short URL to become active.
 
-:guilabel:`Expiration Date`: Set an expiration date.
+:guilabel:`Expiration Date`: Set an expiration date for when you want the Short URL to be no longer active.
 
 Notes Tab
 ---------
