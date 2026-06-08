@@ -26,8 +26,7 @@ located within the Sites module.
 
     If this is the case, contact your TYPO3 System Administrator for further assistance.
 
-Chapters
-========
+..  rubric:: Chapters
 
 ..  card-grid::
     :columns: 1
