@@ -11,6 +11,8 @@ Short URLs are a simple and convenient way to share short or "tiny" URLs that po
 
 Short URLs can point to files such as documents or redirect to external URLs.
 
+.. _short-urls-scenario:
+
 Scenario - Shortening a long URL
 ================================
 
@@ -18,6 +20,8 @@ You want to share a link to your profile page found on your company website, how
 
 With Short URLs you can generate a simple URL that can be shared easily. They can also be
 repurposed at a later date and can point to a completely new page or resource.
+
+.. _short-urls-creating:
 
 Creating a Short URL
 ====================
@@ -63,6 +67,8 @@ Notes Tab
     :class: with-border
 
 Add an internal note that other backend users can view.
+
+.. _short-urls-editing:
 
 Edit an existing Short URL
 ==========================

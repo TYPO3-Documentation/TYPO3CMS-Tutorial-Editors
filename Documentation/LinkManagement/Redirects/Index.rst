@@ -9,7 +9,7 @@ Redirects
 
 With Redirects, users are able to redirect inbound traffic to Pages, Files or External URLs.
 
-.. _redirects-common-scenario:
+.. _redirects-scenario-preserving:
 
 Scenario - preserving old URLs
 ==============================
@@ -20,6 +20,8 @@ to redirect to pages in your new TYPO3 installation.
 
 You can set up a redirect for :samp:`/contact-us.aspx` that redirects visitors to your
 new `Contact Us` page in your TYPO3 installation.
+
+.. _redirects-scenario-preparing:
 
 Scenario - preparing a URL for future use
 =========================================
@@ -33,6 +35,8 @@ and give that to the event organizer.
 
 Then, once you have built your conference specific page, you can update the redirect
 so that it points to the new page.
+
+.. _redirects-creating:
 
 Creating a redirect
 ===================
@@ -87,6 +91,8 @@ Notes Tab
     :class: with-border
 
 Add an internal note that other backend users can view.
+
+.. _redirects-managing:
 
 Managing existing redirect rules
 ================================

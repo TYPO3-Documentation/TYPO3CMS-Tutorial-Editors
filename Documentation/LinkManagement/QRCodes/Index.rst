@@ -10,6 +10,8 @@ Quick Response Codes
 In this chapter you will learn how to create Quick Response codes and have them
 link to pages in TYPO3's Page Tree, ready to be shared.
 
+.. _qr-codes-scenario:
+
 Scenario - sharing your QR Code
 ===============================
 You have a Christmas marketing campaign coming up and you're getting ready to print
@@ -23,6 +25,8 @@ Using the QR Code feature, you can:
 - Generate a QR Code
 - Point it to a page in the Page Tree.
 - Download the QR Code either as a PNG or SVG and then send it to your design department so that they can add it to the flyer
+
+.. _qr-codes-creating:
 
 Creating a QR Code
 ==================
@@ -68,6 +72,8 @@ Notes Tab
 
 Add an internal note that other backend users can view.
 
+.. _qr-codes-download:
+
 Downloading your new QR Code
 ============================
 
@@ -80,6 +86,8 @@ Once you have created your QRC, it can then be downloaded via two different form
 PNG: `64x64`, `128x128`, `256x256` and `512x512`
 
 SVG: `64x64`, `128x128`, `256x256` and `512x512`
+
+.. _qr-codes-edit:
 
 Edit an existing QR Code
 ========================
