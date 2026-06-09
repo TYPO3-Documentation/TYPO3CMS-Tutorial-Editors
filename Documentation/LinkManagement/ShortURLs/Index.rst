@@ -58,7 +58,7 @@ Access Tab
 Notes Tab
 ---------
 
-..  figure:: /Images/ManualScreenshots/LinkManagement/GenericNotes.png
+..  figure:: /Images/ManualScreenshots/LinkManagement/ShortURLNotes.png
     :alt: Screenshot of the Notes Tab found inside Add Short URL.
     :class: with-border
 

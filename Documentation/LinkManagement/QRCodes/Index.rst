@@ -62,7 +62,7 @@ Access Tab
 Notes Tab
 ---------
 
-..  figure:: /Images/ManualScreenshots/LinkManagement/GenericNotes.png
+..  figure:: /Images/ManualScreenshots/LinkManagement/QRCAddQRCNotes.png
     :alt: Screenshot of the Notes Tab found inside Add QR Code.
     :class: with-border
 
