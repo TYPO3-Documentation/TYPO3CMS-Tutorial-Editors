@@ -2,4 +2,4 @@
 
 .. figure:: /Images/AutomaticScreenshots/Access/AccessRightsItems.png
    :alt: Usergroup access rights
-   :class: with-shadow
+   :zoom: lightbox

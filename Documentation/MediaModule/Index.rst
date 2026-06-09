@@ -1,0 +1,153 @@
+:navigation-title: Media
+
+.. include:: /Includes.rst.txt
+.. index::
+   Modules; Media
+.. _file-module:
+.. _the-file-module:
+.. _the-file-module-or-image-archives:
+.. _media-module:
+
+================================================
+Media upload and management in the TYPO3 backend
+================================================
+
+..  versionchanged:: 14.0
+    This module has been renamed from :guilabel:`Filelist` to :guilabel:`Media`
+	see `Feature: #107628 - Improved backend module naming and structure <https://docs.typo3.org/permalink/changelog:feature-107628-1729026000>`_.
+
+The :guilabel:`Media` module is where you can manage
+all the media associated with your TYPO3 web site.
+
+.. index::
+   Files; Management
+   Directories; fileadmin
+.. _managing-files:
+.. _managing-files-in-typo:
+
+Managing media in the TYPO3 CMS
+===============================
+
+Files including documents and images are managed in the
+:guilabel:`Media` module. Similar to the :guilabel:`Content > Record`
+module, it displays a navigation tree, which corresponds to the file
+structure on the server, and a list of all files for the
+selected directory.
+
+.. figure:: /Images/ManualScreenshots/MediaModule/TileView.png
+   :zoom: gallery
+   :alt: View to the Media Module listing three image files as tiles
+
+   View from the The :guilabel:`Media` module displaying default view option tiles.
+
+.. figure:: /Images/ManualScreenshots/MediaModule/ListView.png
+   :zoom: gallery
+   :alt: View to the Media Module listing three image files as list, the view selector is open
+   showing the activated list view option as well as the deselected clipboard option. Accordingly,
+   the image does not contain a clipboard.
+
+   List view from the The :guilabel:`Media` module with View Selector open displaying options.
+
+For admin users, the folder displayed by default is called
+"fileadmin/ (auto-generated)" and corresponds to the
+:file:`fileadmin/` folder located under the document root
+folder on your web server.
+
+Using these files inside content elements to display them
+or link to them in your web site is covered in the
+:ref:`images chapter <images>`.
+
+.. note::
+
+   There are extensions which make it possible to connect to remote
+   storage pools (like a WebDAV server or an Amazon S3 account) and work
+   with the files as if they were on the TYPO3 CMS server.
+
+.. index:: pair: Files; Metadata
+.. _file-metadata:
+
+File metadata
+-------------
+
+You can provide metadata for the file by clicking on the button that looka like
+a pencil with the title text :guilabel:`Edit Metadata of this file`.
+
+The metadata you provide can include (depending on the setup of the system
+and the format of the file):
+
+*  Text to be displayed to all users in some contexts (:guilabel:`Title`,
+   :guilabel:`Description`)
+*  Text for :ref:`accessibility` such as the :guilabel:`alternative text`
+   for an image or a :guilabel:`download name`
+*  Data required due to copyright issues
+*  Metadata attached to the uploaded file such as information about the
+   camera used or the location
+
+.. index:: pair: Files; Clipboard
+
+Clipboard
+---------
+
+There is a clipboard just like in the :guilabel:`Content > Record` module.
+
+.. figure:: /Images/ManualScreenshots/MediaModule/Clipboard.png
+   :zoom: lightbox
+   :alt: The standard TYPO3 Clipboard, activated Clipboard #1 with one of the
+   images selected.
+
+   The :guilabel:`Media` module's clipboard
+
+The handling is the same as the description used in the :ref:`Advanced clipboard usage
+<advanced_clipboard_usage>`.
+
+.. index::
+    Files; Management
+    Directories; fileadmin
+.. _creating-folders:
+
+Creating new folders
+--------------------
+
+To create folders within the file storage, the button :guilabel:`Create Folder` opens a module dialog
+with the familiar separation of tree and working frame. Left hand all available storages and folders
+are displayed in tree structure. The folder selected here will act as the parent for the folders
+to be created.
+Folders are to be created one by one, the modal will remain open after operation to ease multiple
+additions. Each new entry appears immediately in the folder tree and can be used as parent.
+
+.. figure:: /Images/ManualScreenshots/MediaModule/CreateFolder.avif
+   :zoom: lightbox
+   :alt: A section of TYPO3 Media Module open and overlayed with the module dialog for
+   creating new folders. The overlay displays the folder tree, one of the folders there is
+   selected as the parent for the new folder. Right frame displays the input form field for
+   the name of the new folder.
+
+   Modal dialog for folder creation
+
+.. index:: Files; Upload
+.. _uploading-files:
+
+Uploading new files
+-------------------
+
+You can upload files to a given folder by using the context menu
+or to the current directory by using the action icon in the docheader. Also, drag & drop
+will initiate the upload. Just drag any file into the main view to upload it to the
+current folder, or select the `click, browse and choose files` option.
+
+.. figure:: /Images/ManualScreenshots/MediaModule/FileUpload.png
+   :zoom: lightbox
+   :alt: A section of TYPO3 Media Module open with a folder selected and upload
+   initiated. The upload overlay offers an option to open a file dialog for selecting
+   files from the local computer. Highlighted is the button to open the upload view and
+   the close button to cancel the upload action.
+
+   Upload possibilities in the Media module
+
+
+Next steps
+==========
+
+The next chapters cover configuration and administration tasks that
+require special access privileges as described in :ref:`Access control in the
+backend (users and groups) <t3coreapi:access>`.

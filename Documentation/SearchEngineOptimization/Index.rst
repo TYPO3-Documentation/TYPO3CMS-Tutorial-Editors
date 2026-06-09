@@ -15,13 +15,13 @@ All the following fields are part of the page record.
 
 You can reach it by:
 
-*   Open the :guilabel:`Web > Page` module
+*   Open the :guilabel:`Content > Page` module
 *   Use the pen (`Edit page properties`) in the top bar icon to edit the
     page record.
 
 An alternative way is to use the context menu.
 
-*   Open :guilabel:`Web > Page` module
+*   Open :guilabel:`Content > Page` module
 *   Right click the page you want to edit in the page tree
 *   Select the Edit action
 

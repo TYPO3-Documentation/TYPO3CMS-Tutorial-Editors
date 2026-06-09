@@ -23,6 +23,5 @@ files on the server. Especially videos are frequently displayed from
 third-party sources such as Youtube or Vimeo.
 
 In TYPO3 you can manage all assets in the backend module
-:guilabel:`File > Filelist` if you have sufficient permissions. See chapter
+:guilabel:`Media` if you have sufficient permissions. See chapter
 :ref:`managing-files`.
-

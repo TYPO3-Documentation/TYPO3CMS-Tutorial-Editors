@@ -1,30 +1,35 @@
 ..  include:: /Includes.rst.txt
 ..  _using-the-list-module-effectively:
 
-=====================
-Using the list module
-=====================
+===============================
+Using the Content Record module
+===============================
 
-The :guilabel:`Web > List` module allows you to browse through pages and folders
+..  versionchanged:: 14.0
+    This module has been renamed from :guilabel:`Web > List` to :guilabel:`Content > Record`
+	see `Feature: #107628 - Improved backend module naming and structure <https://docs.typo3.org/permalink/changelog:feature-107628-1729026000>`_.
+
+The :guilabel:`Content > Record` module allows you to browse through pages and folders
 in your site and view the records that
 are stored there. You can also create and edit records.
 
-Select the :guilabel:`Web > List` module and choose a page or storage folder.
+Select the :guilabel:`Content > Record` module and choose a page or storage folder.
 
 ..  contents:: Table of Contents
 
 ..  _list-module-header:
 
-The List module header
-======================
+The Record module header
+========================
 
 ..  figure:: /Images/ManualScreenshots/ListModule/ListModule.png
-    :alt: Screenshots of the List module in the TYPO3 backend, demonstrating the locations of the buttons mentioned below
+    :alt: Screenshots of the Content Record module in the TYPO3 backend, demonstrating the locations of the buttons mentioned below
+    :zoom: gallery
 
     See below about the meaning of the labeled buttons
 
 The list view displays a list of records stored on the
-current page, grouped by type. The List module is commonly used for records
+current page, grouped by type. The :guilabel:`Content > Record` module is commonly used for records
 that have no dedicated backend module, for example website users and groups.
 
 The list view has action icons in the **module header** including:
@@ -33,13 +38,13 @@ The list view has action icons in the **module header** including:
 
 #.  **Edit page properties** of the current page
 
-#.  **Clear the cache** of the current page
+#.  **View** or hide search or `the clipboard <https://docs.typo3.org/permalink/t3editors:clipboard>`_
 
-#.  **Refresh** the List view
+#.  **Clear the cache** of the current page
 
 #.  **Create internal note**
 
-#.  **View** Show or hide search or `The clipboard <https://docs.typo3.org/permalink/t3editors:clipboard>`_
+#.  **Refresh** the :guilabel:`Content > Record` module
 
 #.  **Share** Copy an URL to this page or bookmark it for quick access
 
@@ -57,6 +62,7 @@ type features its own action buttons for available actions:
 
 ..  figure:: /Images/ManualScreenshots/ListModule/ActionIcons.png
     :alt: Example of the action icons available for record type "Website Usergroup"
+    :zoom: gallery
 
 In this example the first button can be used to edit the user group, the second
 button to hide or unhide it, the third button to delete it. The button with the
@@ -74,7 +80,8 @@ If there are a large number of records you can use the search box to search for
 a record containing a certain word.
 
 ..  figure:: /Images/ManualScreenshots/ListModule/SearchRecord.png
-    :alt: Screenshot of the List module with the search box visible
+    :alt: Screenshot of the Content Record module with the search box visible
+    :zoom: gallery
 
     To make the search box visible, Select "Show Search" from the "View" dropdown.
 

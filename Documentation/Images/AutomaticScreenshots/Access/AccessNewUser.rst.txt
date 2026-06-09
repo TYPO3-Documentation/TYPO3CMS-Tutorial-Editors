@@ -2,4 +2,4 @@
 
 .. figure:: /Images/AutomaticScreenshots/Access/AccessNewUser.png
    :alt: Creating a new frontend user
-   :class: with-shadow
+   :zoom: lightbox

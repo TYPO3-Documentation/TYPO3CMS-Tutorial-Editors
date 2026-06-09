@@ -2,4 +2,4 @@
 
 .. figure:: /Images/AutomaticScreenshots/Access/AccessPageWithLoginBox.png
    :alt: The page with the login box
-   :class: with-shadow
+   :zoom: lightbox

@@ -78,12 +78,13 @@ Manual cache clearing
 Clearing the cache of a single page can be done without ill effect in most
 installations.
 
-To clear the cache of that page, go to the module :guilabel:`Web > Page`
+To clear the cache of that page, go to the module :guilabel:`Content > Page`
 and click the button representing a lightning bolt with the tooltip
 :guilabel:`Clear cache for this page`.
 
 ..  figure:: /Images/ManualScreenshots/Cache/ClearPageCache.png
     :alt: Clear cache for this page
+    :zoom: lightbox
 
     Clear cache for this page
 
@@ -97,6 +98,7 @@ button in the toolbar you might not have the rights to carry out this action:
 
 ..  figure:: /Images/ManualScreenshots/Cache/ClearAllPageCaches.png
     :alt: Flush cache of all pages
+    :zoom: lightbox
 
     Flush cache of **all** pages
 

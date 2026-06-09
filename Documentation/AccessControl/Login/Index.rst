@@ -34,7 +34,7 @@ Create a user group and user
 
    .. include:: /Images/AutomaticScreenshots/Access/AccessUserFolder.rst.txt
 
-#. Navigate to the :guilabel:`Web > List` module, and select your new folder.
+#. Navigate to the :guilabel:`Content > Records` module, and select your new folder.
 #. Click the **+** :guilabel:`Create new record` icon at the top left of the
    Docheader. The "New record" wizard displays.
 
@@ -76,7 +76,7 @@ the page properties or content element properties.
    * The "Show at any login" group is used for elements that require
      authentication to access, but are okay for all groups to see.
 
-#. Navigate to the :guilabel:`Web > Page` module, and create a new page called
+#. Navigate to the :guilabel:`Content > Layout` module, and create a new page called
    "Members only".
 #. Add a text content element to the Members Only page, with text similar to
    "You need to authenticate to access the members area".
@@ -126,7 +126,7 @@ can log in to view the restricted content.
 
    .. figure:: ../../Images/ManualScreenshots/Access/AccessPageWithAuthenticatedUser.png
       :alt: The page with the authenticated user
-      :class: with-border
+      :zoom: lightbox
 
 This is just a quick overview of the login form provided by TYPO3 CMS. It has a
 rich set of features that are described in the :doc:`Frontend Login <ext_felogin:Index>` manual.

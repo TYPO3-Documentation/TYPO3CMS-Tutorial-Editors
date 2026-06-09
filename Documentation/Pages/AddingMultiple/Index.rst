@@ -7,6 +7,10 @@
 Creating Multiple Pages
 =======================
 
+..  youtube:: KmCButMH80g
+
+------------
+
 #. In the page tree, position your cursor on the page that you want to be the
    parent of the new pages you are about to create.
 
@@ -15,13 +19,13 @@ Creating Multiple Pages
 
    .. figure:: ../../Images/ManualScreenshots/PageTree/MultiplePagesContextMenu.png
       :alt: Select "Create multiple pages" in the context menu
-      :class: with-border
+      :zoom: lightbox
 
    The :guilabel:`Create Multiple Pages` screen will appear, with five new empty pages.
 
    .. figure:: ../../Images/ManualScreenshots/Page/MultiplePagesCreatePages.png
       :alt: The "Create Multiple Pages" screen
-      :class: with-border
+      :zoom: lightbox
 
 #. Give each new page a title and select its type.
 

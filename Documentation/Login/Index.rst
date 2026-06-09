@@ -24,6 +24,7 @@ required by TYPO3's backend.
 
 ..  figure:: /Images/ManualScreenshots/Login/BackendLoginPage.png
     :alt: The TYPO3 backend login screen
+    :zoom: gallery
 
     The TYPO3 backend login screen
 
@@ -58,7 +59,7 @@ administrator if in doubt.
 
     ..  figure:: /Images/ManualScreenshots/Login/ForgotPasswordEmail.png
         :alt: Click on "Forgot your password?"
-        :class: with-shadow
+        :zoom: gallery
 
         Click on :guilabel:`Forgot your password?`
 
@@ -87,7 +88,7 @@ Troubleshooting: Login does not work
 Backend and Install Tool are locked for maintenance
 ---------------------------------------------------
 
-If the administrator locked you TYPO3 installation for maintenance purposes,
+If the administrator locked your TYPO3 installation for maintenance purposes,
 you will see one of the following error messages:
 
 ..  warning::
@@ -100,11 +101,13 @@ you will see one of the following error messages:
 
 ..  figure:: /Images/ManualScreenshots/Login/BackendLocked.png
     :alt: 503 Login Error: TYPO3 is in maintenance mode at the moment. Only administrators are allowed access.
+    :zoom: gallery
 
     The backend login is locked for maintenance.
 
 ..  figure:: /Images/ManualScreenshots/Login/BackendLockedDebug.png
     :alt: Error message: Whoops, looks like something went wrong. Backend and Install Tool are locked for maintenance.
+    :zoom: gallery
 
     The backend login is locked for maintenance, including for administrators.
 
@@ -117,7 +120,7 @@ Too many failed logins
 ----------------------
 
 After a certain amount of failed login attempts within a short time span the
-TYPO3 backend will be automatically logged to prevent brute force login attempts
+TYPO3 backend will be automatically locked to prevent brute force login attempts
 and other security relevant attacks:
 
 ..  warning::

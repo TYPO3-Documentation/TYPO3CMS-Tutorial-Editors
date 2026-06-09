@@ -7,7 +7,7 @@
 Working with pages
 ==================
 
-..  youtube:: 1NKE7Pev-D8
+..  youtube:: cfASKN-WbaQ
 
 ------------
 
@@ -18,15 +18,15 @@ You can manage pages directly in the page tree.
 Move pages
 ==========
 
-#. Choose the page you want to move, then drag it anywhere in the page
+#. Choose the page you want to move, then drag it to anywhere in the page
    tree.
 
-   A horizontal line displays to indicate the new
+   A horizontal line indicates the new
    position of the page.
 
    .. figure:: /Images/ManualScreenshots/PageTree/CopyMovePage.png
       :alt: Drag a page to move it on the page tree
-      :class: with-border
+      :zoom: lightbox
 
       Drag a page to move it on the page tree
 
@@ -35,7 +35,7 @@ Move pages
 
    .. figure:: /Images/ManualScreenshots/PageTree/CopyMoveChildPage.png
       :alt: Drop a page on another page to make it a child page
-      :class: with-border
+      :zoom: lightbox
 
       Drop a page on another page to make it a child page
 
@@ -63,7 +63,7 @@ the :guilabel:`Delete` option.
 
 .. figure:: /Images/ManualScreenshots/PageTree/DeletePage.png
    :alt: Drag a page to the right to delete it
-   :class: with-border
+   :zoom: lightbox
 
    Drag a page to the right to delete it
 
@@ -80,11 +80,16 @@ Filter the page tree
 ====================
 
 At the top of the page tree is a filtering tool.
-Type a word or numbers to filter the page tree based on matching page titles
-or page ID.
+You can type keywords, numbers or frontend page urls to filter the pages that you
+see in this backend page tree. If you use multiple keywords / IDs / URLs separate them with
+commas.
 
 .. figure:: /Images/ManualScreenshots/PageTree/PageTreeFilter.png
    :alt: Filtering pages in the page tree
-   :class: with-border
+   :zoom: lightbox
 
-   Filtering pages in the page tree
+Filtering pages in the page tree
+
+..  note::
+    Since TYPO3 v14, translated pages are also included in the search when
+    filtering. See :issue:`107961` for details.

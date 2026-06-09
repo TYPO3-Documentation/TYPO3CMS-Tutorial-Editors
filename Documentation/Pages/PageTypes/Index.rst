@@ -6,7 +6,7 @@
 Page types
 ==========
 
-..  youtube:: 9J_URJXkk-4
+..  youtube:: 19kCrgoRH2U
 
 ------------
 
@@ -53,11 +53,6 @@ Special
 Folder
     A folder page type is a container. It is generally used to store records
     other than pages or content elements. It will not display in the frontend.
-
-Recycler
-    ..  versionchanged:: 13.0
-        The recycler type was removed. As a substitution use the
-        :doc:`recycler module <ext_recycler:Index>`.
 
 Menu separator
     This page type creates a visual separation in the page tree. You can use

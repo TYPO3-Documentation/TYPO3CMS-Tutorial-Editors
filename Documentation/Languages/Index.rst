@@ -11,9 +11,9 @@ TYPO3 CMS comes with the built-in ability to handle web sites
 in multiple languages.
 
 Detailed information about setting up a multilingual web site is
-found in the :ref:`Frontend Localization Guide <typo3/guide-frontendlocalization:start>`.
+found in the `Frontend Localization Guide <https://docs.typo3.org/permalink/t3translate:start>`_.
 
-..  youtube:: B9TKbc7c7oI
+..  youtube:: XzKBdjUV53k
 
 ------------
 
@@ -65,12 +65,12 @@ Working with translations
 =========================
 
 #. Working with the `Introduction Package <https://extensions.typo3.org/
-   extension/introduction/>`__, in the :guilabel:`Web > Pages` module, go to the "Congratulations" home page.
+   extension/introduction/>`__, in the :guilabel:`Content > Layout` module, go to the "Congratulations" home page.
 #. Using the menu in the docheader, switch to the "Languages" view.
 
    .. figure:: ../Images/ManualScreenshots/Language/LanguagesPageLanguages.png
-      :alt: The "Languages" view of the Page module
-      :class: with-border
+      :alt: The "Languages" view of the Content Layout module
+      :zoom: gallery
 
 #. In the drop-down menu "Create a new translation of this page", choose a
    language, let's say German in this case. The page properties displays for
@@ -79,21 +79,21 @@ Working with translations
 
    .. figure:: ../Images/ManualScreenshots/Language/LanguagesNewPageTranslation.png
       :alt: Creating a new page translation
-      :class: with-border
+      :zoom: gallery
 
 #. Save and close the page. The screen now displays two versions of the content
    elements showing the default language and the German version side by side.
 
    .. figure:: ../Images/ManualScreenshots/Language/LanguagesPageVersions.png
       :alt: Viewing languages side by side in the page module
-      :class: with-border
+      :zoom: gallery
 
 #. In the German column, click the :guilabel:`Translate` button for a content
    element. The :guilabel:`Localize` wizard displays.
 
    .. figure:: ../Images/ManualScreenshots/Language/LanguagesTranslateContentElementsStep1.png
       :alt: First step of the Localize wizard
-      :class: with-border
+      :zoom: gallery
 
 #. For this example, click the :guilabel:`Translate` button then click
    :guilabel:`Next`.
@@ -108,7 +108,7 @@ Working with translations
 
    .. figure:: ../Images/ManualScreenshots/Language/LanguagesNewContentTranslation.png
       :alt: A newly created content element translation
-      :class: with-border
+      :zoom: gallery
 
       A newly created content element translation
 
@@ -117,13 +117,13 @@ Working with translations
 Adjusting the view
 ==================
 
-The *Page* module may now seem cluttered, with one column for each
+The :guilabel:`Content > Layout` module may now seem cluttered, with one column for each
 translation. You can view a single language at a time by switching back to the
 "Columns" mode and choosing a specific language in the docheader.
 
 .. figure:: ../Images/ManualScreenshots/Language/LanguagesColumnModeWithTranslation.png
    :alt: The "Columns" mode displaying a translation
-   :class: with-border
+   :zoom: gallery
 
    The "Columns" mode displaying a translation
 

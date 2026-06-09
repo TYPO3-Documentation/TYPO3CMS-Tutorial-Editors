@@ -117,7 +117,7 @@ The keyboard commands can be used on a select element:
 
 ..  figure:: /Images/ManualScreenshots/ContentElements/SelectMultipleSideBySide.png
     :alt: A multiselect element
-    :class: with-shadow
+    :zoom: lightbox
 
     A multiselect element
 
@@ -125,7 +125,7 @@ Or a folder element:
 
 ..  figure:: /Images/ManualScreenshots/ContentElements/Folder.png
     :alt: A folder element
-    :class: with-shadow
+    :zoom: lightbox
 
     A folder element
 
@@ -133,7 +133,7 @@ Or a group element:
 
 ..  figure:: /Images/ManualScreenshots/ContentElements/Group.png
     :alt: A group element
-    :class: with-shadow
+    :zoom: lightbox
 
     A group element
 

@@ -6,11 +6,16 @@
 Page properties
 ===============
 
+..  youtube:: AS9PhYqVtns
+
+------------
+
 To access the page properties, click on the :guilabel:`Edit page properties`
 icon in the Docheader.
 
 ..  figure:: /Images/ManualScreenshots/Page/EditPageProperties.png
     :alt: The "Edit page properties" button is located in the doc-header of the page module
+    :zoom: gallery
 
     Click the "Edit page properties" button to open the properties
 
@@ -70,6 +75,7 @@ at which your page is available. Usually it is filled out automatically.
 
 ..  figure:: /Images/ManualScreenshots/Page/RecalculateSlug.png
     :alt: Location of the "Recalculate URL Segment" button at the end of the "URL Segment" field in the page properties
+    :zoom: gallery
 
     When you renamed or moved a page and also want to change the "URL Segment",
     click the "Recalculate URL Segment" button.
@@ -79,14 +85,16 @@ the old to the new URL is created:
 
 ..  figure:: /Images/ManualScreenshots/Page/RedirectCreated.png
     :alt: Info: Slugs updated and redirects created: Because you renamed a slug, the slugs of all sub-pages were updated and redirects were created for you automatically.
+    :zoom: gallery
 
     If you accidentally changed a URL segment you can revert that change here
 
 It is also possible to edit the URL segment by clicking the "Toggle" button.
 You can then enter a different URL segment:
 
-..  figure:: /Images/ManualScreenshots/Page/RecalculateSlug.png
+..  figure:: /Images/ManualScreenshots/Page/RecalculateSlugToggle.png
     :alt: Manually editing a URL segment by clicking the "Toggle" button
+    :zoom: gallery
 
 ..  _pages-properties-seo:
 
@@ -145,7 +153,7 @@ Page Layout / Backend Layout
     :alt: The Backend Layout is found in the tab "Appearance" of the page properties in the TYPO3 Backend
 
 Backend Layouts influence the general structure of a page not only in the
-backend but also in the frontend. A Backend Layout influences, which content
+backend but also in the frontend. A Backend Layout influences which content
 areas are available in the Page Module to
 `Manage content <https://docs.typo3.org/permalink/t3editors:content-working>`_
 in them. A Backend Layout is usually bound to its own frontend template which
@@ -195,6 +203,7 @@ reminders or to-do lists.
 
 ..  figure:: /Images/ManualScreenshots/Page/RecordInformation.png
     :alt: Screenshot demonstrating the location of the "Record information" at the top of the Page Properties
+    :zoom: gallery
 
     Notes display in the backend above the Page Properties tabs. They are not
     displayed in the frontend.
@@ -205,4 +214,3 @@ YouTube Video "Page Properties" (TYPO3 11.5)
 ============================================
 
 ..  youtube:: dtRKsxzjKj0
-
