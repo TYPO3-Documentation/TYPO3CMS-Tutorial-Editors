@@ -43,7 +43,7 @@ Mount point
     See the :ref:`Mounts <t3coreapi:access-options-mounts>` section in "TYPO3
     Explained" for more information about mount points.
 
-Link to External URL
+Link
     This page type is similar to the :guilabel:`Shortcut` type but leads the
     user to a page on another web site.
 
