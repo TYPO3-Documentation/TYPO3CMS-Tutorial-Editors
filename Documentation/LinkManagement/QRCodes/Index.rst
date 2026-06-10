@@ -1,11 +1,13 @@
 ..  include:: /Includes.rst.txt
 
+:navigation-title: QR Codes
+
 
 .. _qr-codes:
 
-====================
-Quick Response Codes
-====================
+=========================
+Quick Response (QR) Codes
+=========================
 
 In this chapter you will learn how to create Quick Response codes and have them
 link to pages in TYPO3's Page Tree, ready to be shared.
@@ -37,6 +39,8 @@ From the Link Management module, select :guilabel:`QR Codes` followed by :guilab
     :alt: Screenshot of the Add QR Code button found within the QR Code submodule
     :class: with-border
 
+.. _qr-codes-general-tab:
+
 General Tab
 -----------
 
@@ -50,6 +54,8 @@ General Tab
 
 :guilabel:`Force SSL Redirect`: Force all requests to be served via https.
 
+.. _qr-codes-access-tab:
+
 Access Tab
 ----------
 
@@ -62,6 +68,8 @@ Access Tab
 :guilabel:`Publish Date`: Set a publish date for when you want the QR Code to become active.
 
 :guilabel:`Expiration Date`: Set an expiration date or when you want the QR Code to be no longer active.
+
+.. _qr-codes-notes-tab:
 
 Notes Tab
 ---------

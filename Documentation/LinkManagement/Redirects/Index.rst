@@ -46,6 +46,8 @@ From the Link Management module, select :guilabel:`Redirects` followed by :guila
 ..  figure:: /Images/ManualScreenshots/LinkManagement/RedirectsAddRedirect.png
     :alt: Screenshot of the Add redirect button found within the Redirects submodule
 
+.. _redirects-source-domain:
+
 Setting a Source Domain and Source Path
 ---------------------------------------
 
@@ -59,6 +61,8 @@ using here.
 Source Path - this is the path that will be redirected. Using the example above,
 we specify :samp:`/contact-us.aspx` here. Note that any query parameters will be ignored.
 
+.. _redirects-target:
+
 Setting a Target
 ----------------
 
@@ -69,6 +73,8 @@ The Target selector allows us to specify which Page or file is served when visit
 visit the redirected URL.
 
 Using the example above, we would select the `Contact Us` page in the Page Tree.
+
+.. _redirects-access-tab:
 
 Access Tab
 ----------
@@ -82,6 +88,8 @@ Access Tab
 :guilabel:`Publish Date`: Set a publish date for when you want the Redirect to become active.
 
 :guilabel:`Expiration Date`: Set an expiration date or when you want the Redirect to be no longer active.
+
+.. _redirects-notes-tab:
 
 Notes Tab
 ---------

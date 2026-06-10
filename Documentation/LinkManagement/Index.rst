@@ -11,7 +11,7 @@ There are various features available within TYPO3 that enable users to
 create, edit and manage different types of links, including :ref:`Redirects<redirects>`, :ref:`QR Codes<qr-codes>` and
 :ref:`Short URLs<short-urls>`.
 
-To use these features, you will need access to Link Management, which is
+To use these features, you will need access to :guilabel:`Link Management`, which is
 located within the Sites module.
 
 ..  figure:: /Images/ManualScreenshots/LinkManagement/HomeModuleOverview.png
