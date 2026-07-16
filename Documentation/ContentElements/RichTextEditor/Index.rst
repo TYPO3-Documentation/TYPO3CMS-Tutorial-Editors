@@ -105,3 +105,26 @@ click the :guilabel:`Unlink` button in the popover:
 ..  figure:: /Images/ManualScreenshots/ContentElements/Text/Unlink.png
     :alt: Unlinking using the popover in the rich text editor
     :zoom: gallery
+
+..  _rte-whitespace:
+
+Non-breaking spaces and soft hyphens
+====================================
+
+Two characters that are normally invisible are highlighted with a colour in the
+rich text editor so that you can see where they have been placed:
+
+*   A **non-breaking space** keeps two words together on the same line, so they
+    are never split across a line break.
+*   A **soft hyphen** marks a point where a word may be hyphenated and wrapped to
+    the next line, but only if the word does not otherwise fit.
+
+The colour highlighting is only shown while you edit. It helps you spot these
+characters in the editor and does not appear on the website itself.
+
+..  figure:: /Images/ManualScreenshots/ContentElements/Text/Whitespace.avif
+    :alt: A non-breaking space and a soft hyphen highlighted in the rich text editor
+    :zoom: gallery
+
+You can insert both characters with a :ref:`keyboard command
+<keyboard-commands-rte>`.
