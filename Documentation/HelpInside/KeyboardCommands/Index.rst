@@ -61,6 +61,8 @@ text in TYPO3's :ref:`RTE <rte>`.
         * :kbd:`ctrl` + :kbd:`z` = Undo
         * :kbd:`ctrl` + :kbd:`i` = Italic
         * :kbd:`ctrl` + :kbd:`b` = Bold
+        * :kbd:`ctrl` + :kbd:`shift` + :kbd:`space` = Insert non-breaking space
+        * :kbd:`ctrl` + :kbd:`shift` + :kbd:`-` = Insert soft hyphen
 
     ..  group-tab:: macOs
 
@@ -71,6 +73,8 @@ text in TYPO3's :ref:`RTE <rte>`.
         * :kbd:`cmd (⌘)` + :kbd:`z` = Undo
         * :kbd:`cmd (⌘)` + :kbd:`i` = Italic
         * :kbd:`cmd (⌘)` + :kbd:`b` = Bold
+        * :kbd:`alt` + :kbd:`shift` + :kbd:`space` = Insert non-breaking space
+        * :kbd:`alt` + :kbd:`shift` + :kbd:`-` = Insert soft hyphen
 
 ..  _keyboard-commands-browser:
 
