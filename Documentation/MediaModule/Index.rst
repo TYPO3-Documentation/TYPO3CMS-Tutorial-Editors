@@ -84,6 +84,7 @@ and the format of the file):
    camera used or the location
 
 .. index:: pair: Files; Clipboard
+.. _media-module-clipboard:
 
 Clipboard
 ---------
@@ -144,6 +145,30 @@ current folder, or select the `click, browse and choose files` option.
 
    Upload possibilities in the Media module
 
+.. index:: Files; Moving
+.. _moving-files-drag-and-drop:
+
+Moving files and folders with drag and drop
+-------------------------------------------
+
+To move one or more files or folders to a different location, select them in
+the working area and drag them onto the target folder in the navigation tree.
+Releasing the mouse button over the target folder moves the selected items
+there.
+
+This is a quick alternative to using the :ref:`clipboard <advanced_clipboard_usage>`,
+which remains useful when moving items across several steps or sessions.
+
+.. figure:: /Images/ManualScreenshots/MediaModule/DragDropMove.avif
+   :zoom: lightbox
+   :alt: A section of TYPO3 Media Module with one file selected in the working
+   area and being dragged towards a folder in the navigation tree, which is
+   highlighted as the drop target.
+
+   Moving a file by dragging it onto a folder in the navigation tree
+
+
+.. _media-module-next-steps:
 
 Next steps
 ==========
