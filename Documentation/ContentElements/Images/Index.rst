@@ -39,7 +39,9 @@ On the :guilabel:`Images` tab, click on the :guilabel:`Add image` button to disp
 
     Click on "Add image" or "Select & upload files" in images tab to choose or upload an image
 
-Browse the file tree, then select a folder.
+Browse the file tree, then select a folder. The file selector always starts
+in the root folder of the default storage. Use the search field to find a
+file by name. The search includes all the subfolders of the selected folder.
 
 ..  figure:: /Images/ManualScreenshots/ContentElements/TextWithImage/FileSelector.png
     :alt: The file selector window in the TYPO3 backend
