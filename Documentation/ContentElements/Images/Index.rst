@@ -41,7 +41,7 @@ On the :guilabel:`Images` tab, click on the :guilabel:`Add image` button to disp
 
 Browse the file tree, then select a folder. The file selector always starts
 in the root folder of the default storage. Use the search field to find a
-file by name, the search covers all subfolders of the selected folder.
+file by name. The search includes all the subfolders of the selected folder.
 
 ..  figure:: /Images/ManualScreenshots/ContentElements/TextWithImage/FileSelector.png
     :alt: The file selector window in the TYPO3 backend
