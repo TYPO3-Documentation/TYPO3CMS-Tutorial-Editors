@@ -51,7 +51,7 @@ Mount point
 
 Link
     This page type is similar to the :guilabel:`Shortcut` type but leads the
-    user to external URLs, other pages, content elements, sections, files,
+    user to external URLs, other pages, content elements, files,
     folders, email addresses or custom records (for example news records).
 
 Special
