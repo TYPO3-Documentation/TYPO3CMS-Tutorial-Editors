@@ -12,7 +12,7 @@ Page types
 
 ..  versionchanged:: 14.0
     The former page type `Link to External URL` has changed its name to `Link`
-    and has a lot more features now.
+    and has a lot more features.
     See
     :ref:`Feature: #17406 - Enhance page type "Link" to fully support typolinks <changelog:feature-17406-1762953087>`
 
