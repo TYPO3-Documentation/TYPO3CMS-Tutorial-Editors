@@ -10,6 +10,12 @@ Page types
 
 ------------
 
+..  versionchanged:: 14.0
+    The former page type `Link to External URL` has changed its name to `Link`
+    and has a lot more features.
+    See
+    :ref:`Feature: #17406 - Enhance page type "Link" to fully support typolinks <changelog:feature-17406-1762953087>`
+
 Default page types
 ==================
 
@@ -43,9 +49,10 @@ Mount point
     See the :ref:`Mounts <t3coreapi:access-options-mounts>` section in "TYPO3
     Explained" for more information about mount points.
 
-Link to External URL
+Link
     This page type is similar to the :guilabel:`Shortcut` type but leads the
-    user to a page on another web site.
+    user to external URLs, other pages, content elements, files,
+    folders, email addresses or custom records (for example news records).
 
 Special
 -------
