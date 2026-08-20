@@ -19,9 +19,10 @@ under Page Content.
 
     The Show Columns button
 
-Select the fields you want to edit by clicking on
-the :guilabel:`Show Columns` button ("Columns" refers to content element fields).
-Here we select header, alignment and then type). Click on the :guilabel:`Update` button.
+Select the fields you want to edit by clicking on the :guilabel:`Show
+Columns` button ("Columns" refers to content element fields). Here we
+select header, alignment and then type. Click on the :guilabel:`Update`
+button.
 
 ..  figure:: /Images/ManualScreenshots/ListModule/MassEdit/ShowColumnsModal.png
     :alt: Screenshot of the "Show columns for Page Content" popup
@@ -43,8 +44,9 @@ The added fields now appear on the right:
 Bulk edit all content elements on a page
 ========================================
 
-First select all the content elements on the page by clicking in the dropdown box on the left and
-selecting :guilabel:`Check all` (:guilabel:`Toggle selection` reverses the selection).
+First select all the content elements on the page by clicking in the
+dropdown box on the left and selecting :guilabel:`Check all`
+(:guilabel:`Toggle selection` reverses the selection).
 
 ..  figure:: /Images/ManualScreenshots/ListModule/MassEdit/MassEditingEnabled.png
     :alt: Screen shot of the mass edit mode in the Records module, edit buttons above columns visible
@@ -53,7 +55,9 @@ selecting :guilabel:`Check all` (:guilabel:`Toggle selection` reverses the selec
     Select all content fields
 
 ..  _selective-editing-fields-choose:
-You can now choose either the :guilabel:`Edit` button or the :guilabel:`Edit columns` button.
+
+You can now choose either the :guilabel:`Edit` button or the
+:guilabel:`Edit columns` button.
 
 Click on the :guilabel:`Edit` button to display a screen to **edit all fields**
 of the selected content elements.
@@ -64,7 +68,9 @@ of the selected content elements.
 
     The Edit button to edit all content element fields
 
-The screen will look as follows, with the content elements displayed one after the other. Click on :guilabel:`Save` after you have finished editing.
+The screen will look as follows, with the content elements displayed one
+after the other. Click on :guilabel:`Save` after you have finished
+editing.
 
 ..  figure:: /Images/ManualScreenshots/ListModule/MassEdit/MassEditingAllFields.png
     :alt: Screenshot of the content element multiple edit screen in the Content Record module
@@ -79,10 +85,11 @@ Or **edit only the displayed fields you have selected** by clicking on the
     :alt: Screenshot showing the location of the "Edit Columns" Button in the Content Record module
     :zoom: gallery
 
-    The Edit Columns button to edit just content element fields that are selected in the right-hand pane
+    The Edit Columns button to edit just content element fields that are
+    selected in the right-hand pane
 
-The screen will look as follows (here with fields header, type and alignment). Click on
-:guilabel:`Save` after you have finished editing.
+The screen will look as follows (here with fields header, type and
+alignment). Click on :guilabel:`Save` after you have finished editing.
 
 ..  figure:: /Images/ManualScreenshots/ListModule/MassEdit/MassEditingSelectedFields.png
     :alt: Screenshot of the content element multiple edit screen for selected fields in the Content Record module
@@ -95,7 +102,8 @@ The screen will look as follows (here with fields header, type and alignment). C
 Edit selected content elements
 ==============================
 
-Select the content elements which you would like to edit (here Mercury and Mars):
+Select the content elements which you would like to edit (here Mercury
+and Mars):
 
 ..  figure:: /Images/ManualScreenshots/ListModule/MassEdit/SelectiveEditing.png
     :alt: The list module with specific database records checked for mass edit
@@ -105,4 +113,5 @@ Select the content elements which you would like to edit (here Mercury and Mars)
 
 Then follow the instructions for bulk editing all the fields
 (:guilabel:`Edit` button) or only the displayed fields
-(:guilabel:`Edit columns` button) :ref:`in the previous section <selective-editing-fields-choose>`.
+(:guilabel:`Edit columns` button)
+:ref:`in the previous section <selective-editing-fields-choose>`.
