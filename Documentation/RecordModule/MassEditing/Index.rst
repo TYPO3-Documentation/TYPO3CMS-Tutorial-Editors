@@ -6,12 +6,12 @@
 Mass editing
 ============
 
-The :guilabel:`Content > Record` module makes it possible to display the content of several
-fields at once and gives you the ability edit several records with
-one action.
+Use the :guilabel:`Content > Record` module to bulk edit multiple content
+elements on a page at the same time.
 
-Choose the columns to be displayed by clicking the :guilabel:`Show Columns`
-button.
+Select the page you want to edit in the page tree in the middle pane (here page
+3). The content elements on the page are displayed in the right-hand pane
+under Page Content.
 
 ..  figure:: /Images/ManualScreenshots/ListModule/MassEdit/ShowColumnsButton.png
     :alt: Screenshot demonstrating the location of the "Show Columns" Button in the Content Record module
@@ -19,8 +19,9 @@ button.
 
     The Show Columns button
 
-Then chose the field or fields you want to edit from the modal.
-Click on the :guilabel:`Update` button.
+Select the fields you want to edit by clicking on
+the :guilabel:`Show Columns` button ("Columns" refers to content element fields).
+Here we select header, alignment and then type). Click on the :guilabel:`Update` button.
 
 ..  figure:: /Images/ManualScreenshots/ListModule/MassEdit/ShowColumnsModal.png
     :alt: Screenshot of the "Show columns for Page Content" popup
@@ -28,49 +29,73 @@ Click on the :guilabel:`Update` button.
 
     Choose the fields to be displayed and click "Update"
 
-This makes the additional fields appear in a new column to the right
-of the record list:
+The added fields now appear on the right:
 
 ..  figure:: /Images/ManualScreenshots/ListModule/MassEdit/RecordListWithAdditionalFields.png
     :alt: Content Record Module table with additional fields enabled
     :zoom: gallery
 
-    Click on the title or arrow to enable mass edit mode
+    Content element fields
 
 ..  _editing-all-headers:
 ..  _selective-editing-fields:
 
-Edit selected fields
-====================
+Bulk edit all content elements on a page
+========================================
 
-To enable mass editing you have to switch into the record list single view by
-clicking the tables title:
+First select all the content elements on the page by clicking in the dropdown box on the left and
+selecting :guilabel:`Check all` (:guilabel:`Toggle selection` reverses the selection).
 
 ..  figure:: /Images/ManualScreenshots/ListModule/MassEdit/MassEditingEnabled.png
-    :alt: Screen shot of the mass edit mode in the list module, edit buttons above columns visible
+    :alt: Screen shot of the mass edit mode in the Records module, edit buttons above columns visible
     :zoom: gallery
 
-    1: Edit all headers 2: Edit all Selected Fields 3: Edit just one field
+    Select all content fields
 
-To edit the headers of all records in one go, select the pencil icon next to the
-"Header" label (1).
+..  _selective-editing-fields-choose:
+You can now choose either the :guilabel:`Edit` button or the :guilabel:`Edit columns` button.
 
-You will then see a screen with input fields to change all headers and save
-them all at once.
+Click on the :guilabel:`Edit` button to display a screen to **edit all fields**
+of the selected content elements.
 
-All fields that are currently viewable can be edited at the same
-time by selecting a different icon (2) in the screenshot above.
+..  figure:: /Images/ManualScreenshots/ListModule/MassEdit/EditButton.png
+    :alt: Screenshot showing the location of the "Edit" Button in the Content Record module
+    :zoom: gallery
 
-The result is almost the same form, but with several fields per database record
-displayed.
+    The Edit button to edit all content element fields
+
+The screen will look as follows, with the content elements displayed one after the other. Click on :guilabel:`Save` after you have finished editing.
+
+..  figure:: /Images/ManualScreenshots/ListModule/MassEdit/MassEditingAllFields.png
+    :alt: Screenshot of the content element multiple edit screen in the Content Record module
+    :zoom: gallery
+
+    The multiple edit screen
+
+Or **edit only the displayed fields you have selected** by clicking on the
+:guilabel:`Edit columns` button:
+
+..  figure:: /Images/ManualScreenshots/ListModule/MassEdit/EditColumnsButton.png
+    :alt: Screenshot showing the location of the "Edit Columns" Button in the Content Record module
+    :zoom: gallery
+
+    The Edit Columns button to edit just content element fields that are selected in the right-hand pane
+
+The screen will look as follows (here with fields header, type and alignment). Click on
+:guilabel:`Save` after you have finished editing.
+
+..  figure:: /Images/ManualScreenshots/ListModule/MassEdit/MassEditingSelectedFields.png
+    :alt: Screenshot of the content element multiple edit screen for selected fields in the Content Record module
+    :zoom: gallery
+
+    The multiple edit screen for selected fields
 
 ..  _selective-editing:
 
-Edit selected fields of selected records
-========================================
+Edit selected content elements
+==============================
 
-It is possible to select only those records that should be edited by using the
-checkboxes:
+Select the content elements which you would like to edit (here Mercury and Mars):
 
 ..  figure:: /Images/ManualScreenshots/ListModule/MassEdit/SelectiveEditing.png
     :alt: The list module with specific database records checked for mass edit
@@ -78,5 +103,6 @@ checkboxes:
 
     Selecting records for editing
 
-The result is a form for editing just the chosen field for the
-selected records.
+Then follow the instructions for bulk editing all the fields
+(:guilabel:`Edit` button) or only the displayed fields
+(:guilabel:`Edit columns` button) :ref:`in the previous section <selective-editing-fields-choose>`.
