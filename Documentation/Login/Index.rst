@@ -6,46 +6,30 @@
 Logging in to TYPO3 backend
 ===========================
 
-With TYPO3, an editor's work is done via the backend and having
-an active backend account is required.
+If you are a TYPO3 editor, the backend is where you will most likely spend most
+of your time. So let's start by logging in.
 
-Enter your domain name into the address bar of your browser and
-append :samp:`/typo3` to the end of it to access the backend login page.
-For example: :samp:`http://www.example.org/typo3`.
+Navigate to  :samp:`https://www.yourdomain.org/typo3` in your browser. The
+:samp:`/typo3` part can be changed, so if :samp:`/typo3` does not work, check
+your project documentation or ask your administrator for the correct backend
+URL.
 
-..  note::
-    Since TYPO3 v13, a custom entry point for the TYPO3 backend can be
-    customized. If the path :samp:`/typo3` does not work, consult the
-    project's documentation or ask your administrator for the correct backend
-    URL.
-
-Check that JavaScript and cookies are enabled in your browser as they are
-required by TYPO3's backend.
 
 ..  figure:: /Images/ManualScreenshots/Login/BackendLoginPage.png
-    :alt: The TYPO3 backend login screen
+    :alt: The TYPO3 backend login box
     :zoom: gallery
 
-    The TYPO3 backend login screen
+    The login box
 
-The password can be displayed in clear text by clicking the "eye" symbol
-once something has been typed in the password field.
-
-..  warning::
-    Revealing login credentials is always a security risk. Please use this
-    feature with caution when nobody can watch your input, either remotely or by
-    looking over your shoulders!
+If you are having problems logging in, have a look at the
+troubleshooting tips below. If you are still having problems, **ask your
+administrator for help**. Troubleshooting tips for administrators are at the
+bottom.
 
 ..  _login-forgot-password:
 
-Troubleshooting: Forgot password for backend login
-==================================================
-
-The following example only works if your installation's administrator has
-:ref:`enabled the password reset feature<t3coreapi:access-password-reset>`
-and if your backend account has a valid email address set. It also requires
-that your TYPO3 installation is able to send mails. Contact your installation's
-administrator if in doubt.
+Troubleshooting: Forgotten password
+===================================
 
 ..  rst-class:: bignums-attention
 
@@ -55,95 +39,75 @@ administrator if in doubt.
 
 #.  Enter your email address
 
-    Use the same email address that you provided during registration.
+    Use the same email address that you entered during registration.
 
     ..  figure:: /Images/ManualScreenshots/Login/ForgotPasswordEmail.png
         :alt: Click on "Forgot your password?"
         :zoom: gallery
 
-        Click on :guilabel:`Forgot your password?`
+        Enter your email address
 
 #.  Open the email and follow the link
 
-    If you did not receive the email, check your spam folder and
-    double-check that the entered email address is correct.
+    If you haven't received the email, check your spam folder and
+    double-check that the email address you entered is correct.
 
-#.  Enter the new password
+#.  Enter a new password
 
-    After you clicked on the password recovery link in the email you received
-    you can enter a new password. The new password has to respect the password
-    policy requirements configured by the administrator of your installation.
+    Click on the password recovery link in the email and then enter a new
+    password. Make sure you choose a password that fits your administrator's
+    rules.
+
+Things your **administrator** can check if this is not working correctly:
+
+*    the :ref:`password reset feature<t3coreapi:access-password-reset>` is
+     enabled
+*    your backend account has a valid email address associated with it
+*    the TYPO3 installation can send emails.
 
 ..  _login-troubleshooting:
 
-Troubleshooting: Login does not work
-====================================
+Troubleshooting: You cannot log in
+==================================
 
-*   Check if JavaScript is enabled in your browser.
-*   Check the credentials are correct and valid.
-*   If your IP address changes you might be automatically logged out.
+Things you can check are:
+
+*   JavaScript is enabled in your browser
+*   your credentials are correct and valid
+*   whether your IP address has changed (you will automatically be logged out).
 
 ..  _login-troubleshooting-locked:
 
-Backend and Install Tool are locked for maintenance
----------------------------------------------------
+The backend is locked for maintenance
+-------------------------------------
 
-If the administrator locked your TYPO3 installation for maintenance purposes,
-you will see one of the following error messages:
-
-..  warning::
-
-    TYPO3 is in maintenance mode at the moment. Only administrators are allowed access.
-
-    or
-
-    Backend and Install Tool are locked for maintenance. [BE][adminOnly] is set to "-1".
-
-..  figure:: /Images/ManualScreenshots/Login/BackendLocked.png
-    :alt: 503 Login Error: TYPO3 is in maintenance mode at the moment. Only administrators are allowed access.
-    :zoom: gallery
-
-    The backend login is locked for maintenance.
-
-..  figure:: /Images/ManualScreenshots/Login/BackendLockedDebug.png
-    :alt: Error message: Whoops, looks like something went wrong. Backend and Install Tool are locked for maintenance.
-    :zoom: gallery
-
-    The backend login is locked for maintenance, including for administrators.
-
-This message can only be removed by an administrator or integrator / programmer
-of the TYPO3 installation.
+Your TYPO3 installation may be locked for maintenance and a message will appear
+indicating that TYPO3 is in maintenance mode. Check with your administrator.
 
 ..  _login-troubleshooting-failed-logins:
 
 Too many failed logins
 ----------------------
 
-After a certain amount of failed login attempts within a short time span the
-TYPO3 backend will be automatically locked to prevent brute force login attempts
-and other security relevant attacks:
+If you enter the wrong login credentials too many times,
+you may be locked out of the backend. You
+will see a message such as "The login is locked until
+2026-08-31 10:58 due to too many failed login attempts from your IP address."
 
-..  warning::
-
-    The login is locked until 2024-12-31 10:58 due to too many failed
-    login attempts from your IP address.
-
-Wait until after the mentioned time before you retry. Contact your administrator
-if the problem persists.
+Wait till the time is up and then try logging in again.
 
 ..  _login-troubleshooting-login-reloads:
 
-Login dialog reloads, no error message displayed
-------------------------------------------------
+The login box reloads but no error message is displayed
+-------------------------------------------------------
 
-This can happen if the login cookies are incorrectly set. Try deleting your
-cookies in the browser. If this does not help, inform your administrator.
+Login cookies could be incorrectly set. Try deleting your browser cookies.
 
 ..  _login-troubleshooting-administrators:
 
-Login trouble shooting for administrators
-=========================================
+Troubleshooting: Advice for administrators
+==========================================
 
-In case you are the administrator yourself you can find more trouble shooting
-options in `TYPO3 Getting Started, Troubleshooting common TYPO3 backend login
-problems <https://docs.typo3.org/permalink/t3start:troubleshooting-backend-login>`_.
+See
+`TYPO3 Getting Started, Troubleshooting common TYPO3 backend login problems
+<https://docs.typo3.org/permalink/t3start:troubleshooting-backend-login>`_.
