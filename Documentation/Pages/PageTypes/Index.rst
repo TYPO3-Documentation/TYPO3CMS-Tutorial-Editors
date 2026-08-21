@@ -6,77 +6,63 @@
 Page types
 ==========
 
+TYPO3 has distinct **page types** for items in the **page tree**.
+
 ..  youtube:: 19kCrgoRH2U
 
 ------------
-
-..  versionchanged:: 14.0
-    The former page type `Link to External URL` has changed its name to `Link`
-    and has a lot more features.
-    See
-    :ref:`Feature: #17406 - Enhance page type "Link" to fully support typolinks <changelog:feature-17406-1762953087>`
 
 ..  _pages-types-default-page-types:
 
 Default page types
 ==================
 
-By default, TYPO3 includes the following page types.
+TYPO3 includes several page types out of the box.
 
 ..  _pages-types-default-page-types-page:
 
-Page
-----
+Pages
+-----
 
-Standard
-    This is the default page type, and the most common. It covers all basic
-    needs.
-
-Backend User Section
-    This page type only displays in the frontend for a specific group of backend
-    users. You have to be logged in to the backend to see this type of page.
+*   **Standard page:** The default building block for standard web pages.
+*   **Backend user section:** A restricted page type that is only displayed in
+    the frontend if a user is logged into the TYPO3 backend.
 
 ..  _pages-types-default-page-types-link:
 
-Link
-----
+Links & redirects
+-----------------
 
-Shortcut
-    This page type is a shortcut to another page in the page tree. When users
-    navigate to this page in the frontend, they will be taken seamlessly to the
-    shortcut's destination.
+*   **Shortcut:** Creates a redirection to another page in your page tree.
+    Frontend visitors are forwarded to the other page.
+*   **Mount Point:** Similar to a :guilabel:`Shortcut`, but instead of
+    redirecting to another page, it redirects to a whole subtree somewhere
+    else in the page tree. This is particularly useful for frontend menus and
+    means you don't have to duplicate lots of pages in your page tree.
+*   **Link:** Similar to a :guilabel:`Shortcut`, but this page type can forward
+    users to external URLs, specific content elements, downloadable assets
+    (such as files), system folders, email forms, and data from extensions.
 
-Mount point
-    A mount point lets you select any other page in the page tree. All
-    child pages of the chosen page will display as child pages of the mount
-    point. This lets you duplicate parts of your page tree in terms of
-    navigation, without actually duplicating pages and content.
-
-    See the :ref:`Mounts <t3coreapi:access-options-mounts>` section in "TYPO3
-    Explained" for more information about mount points.
-
-Link
-    This page type is similar to the :guilabel:`Shortcut` type but leads the
-    user to external URLs, other pages, content elements, files,
-    folders, email addresses or custom records (for example news records).
+..  versionchanged:: 14.0
+    Starting in TYPO3 v14, the old page type `Link to External URL` has been
+    updated to the enhanced `Link` page type (a "typolink" -
+    :ref:`Feature: #17406 <changelog:feature-17406-1762953087>` ).
 
 ..  _pages-types-default-page-types-special:
 
-Special
--------
+Special Containers
+------------------
 
-Folder
-    A folder page type is a container. It is generally used to store records
-    other than pages or content elements. It will not display in the frontend.
-
-Menu separator
-    This page type creates a visual separation in the page tree. You can use
-    TypoScript to also display these separators in the frontend navigation.
-
+*   **Folder:** A container for TYPO3 records, plugins, or
+    configuration rather than frontend content elements. :guilabel:`Folders`
+    are never displayed in the frontend.
+*   **Menu Separator**: Adds a visual break into the backend page tree.
+    Particularly useful for large websites with many pages.
 
 ..  _pages-types-custom-page-types:
 
 Custom page types
 =================
 
-Depending on the project, custom page types may also be available.
+If extensions are installed on your TYPO3 website, there may be more page types
+available.
