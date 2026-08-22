@@ -3,7 +3,7 @@
 :navigation-title: QR Codes
 
 
-.. _qr-codes:
+..  _qr-codes:
 
 =========================
 Quick Response (QR) Codes
@@ -12,7 +12,7 @@ Quick Response (QR) Codes
 In this chapter you will learn how to create Quick Response codes and have them
 link to pages in TYPO3's Page Tree, ready to be shared.
 
-.. _qr-codes-scenario:
+..  _qr-codes-scenario:
 
 Scenario - sharing your QR Code
 ===============================
@@ -24,11 +24,11 @@ sent to a specific page in your TYPO3 installation.
 
 Using the QR Code feature, you can:
 
-- Generate a QR Code
-- Point it to a page in the Page Tree.
-- Download the QR Code either as a PNG or SVG and then send it to your design department so that they can add it to the flyer
+-   Generate a QR Code
+-   Point it to a page in the Page Tree.
+-   Download the QR Code either as a PNG or SVG and then send it to your design department so that they can add it to the flyer
 
-.. _qr-codes-creating:
+..  _qr-codes-creating:
 
 Creating a QR Code
 ==================
@@ -39,7 +39,7 @@ From the Link Management module, select :guilabel:`QR Codes` followed by :guilab
     :alt: Screenshot of the Add QR Code button found within the QR Code submodule
     :class: with-border
 
-.. _qr-codes-general-tab:
+..  _qr-codes-general-tab:
 
 General Tab
 -----------
@@ -54,7 +54,7 @@ General Tab
 
 :guilabel:`Force SSL Redirect`: Force all requests to be served via https.
 
-.. _qr-codes-access-tab:
+..  _qr-codes-access-tab:
 
 Access Tab
 ----------
@@ -69,7 +69,7 @@ Access Tab
 
 :guilabel:`Expiration Date`: Set an expiration date or when you want the QR Code to be no longer active.
 
-.. _qr-codes-notes-tab:
+..  _qr-codes-notes-tab:
 
 Notes Tab
 ---------
@@ -80,7 +80,7 @@ Notes Tab
 
 Add an internal note that other backend users can view.
 
-.. _qr-codes-download:
+..  _qr-codes-download:
 
 Downloading your new QR Code
 ============================
@@ -95,7 +95,7 @@ PNG: `64x64`, `128x128`, `256x256` and `512x512`
 
 SVG: `64x64`, `128x128`, `256x256` and `512x512`
 
-.. _qr-codes-edit:
+..  _qr-codes-edit:
 
 Edit an existing QR Code
 ========================

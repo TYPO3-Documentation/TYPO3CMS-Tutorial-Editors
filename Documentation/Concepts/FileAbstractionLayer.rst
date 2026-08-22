@@ -1,10 +1,10 @@
-.. include:: /Includes.rst.txt
+..  include:: /Includes.rst.txt
 
-.. _fal:
+..  _fal:
 
-=============================
+============================
 File abstraction layer (FAL)
-=============================
+============================
 
 TYPO3 has a file abstraction layer (FAL) integrated which abstracts technical
 details (where the file is stored) and allows to work with different storage
@@ -14,6 +14,8 @@ FAL also allows the editors to manage meta data that can be displayed wherever
 an asset is displayed. The metadata can also be used for
 :ref:`copyright notices <copyright>`.
 
+
+..  _fal-working-multi-media:
 
 Working with multi media: Digital asset management
 ==================================================

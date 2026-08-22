@@ -1,10 +1,12 @@
-.. include:: /Includes.rst.txt
+..  include:: /Includes.rst.txt
 
-.. _copyright:
+..  _copyright:
 
-================================
+==========================
 Copyright and data privacy
-================================
+==========================
+
+..  _copyright-copyright:
 
 Copyright
 =========
@@ -22,6 +24,8 @@ your favorite cartoon character and publish it.
 
 Have a look at the related
 `Wikipedia article: Copyright <https://en.wikipedia.org/wiki/Copyright>`__
+
+..  _copyright-data-privacy:
 
 Data privacy
 ============
