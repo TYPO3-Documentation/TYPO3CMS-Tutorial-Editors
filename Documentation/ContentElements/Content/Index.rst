@@ -108,7 +108,7 @@ page within the page tree.
 ..  _content-working-copy-paste:
 
 Copy and paste content elements
-==============================
+===============================
 
 ..  figure:: /Images/ManualScreenshots/ContentElements/CopyContent.png
     :alt: The context menu of a content menu in the TYO3 backend

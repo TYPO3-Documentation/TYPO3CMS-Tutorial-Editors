@@ -1,7 +1,7 @@
-.. include:: /Includes.rst.txt
+..  include:: /Includes.rst.txt
 
-.. _pages-working-with:
-.. _pages-drag-drop:
+..  _pages-working-with:
+..  _pages-drag-drop:
 
 ==================
 Working with pages
@@ -13,47 +13,47 @@ Working with pages
 
 You can manage pages directly in the page tree.
 
-.. _Move-Pages:
+..  _Move-Pages:
 
 Move pages
 ==========
 
-#. Choose the page you want to move, then drag it to anywhere in the page
-   tree.
+#.  Choose the page you want to move, then drag it to anywhere in the page
+    tree.
 
-   A horizontal line indicates the new
-   position of the page.
+    A horizontal line indicates the new
+    position of the page.
 
-   .. figure:: /Images/ManualScreenshots/PageTree/CopyMovePage.png
-      :alt: Drag a page to move it on the page tree
-      :zoom: lightbox
+    ..  figure:: /Images/ManualScreenshots/PageTree/CopyMovePage.png
+        :alt: Drag a page to move it on the page tree
+        :zoom: lightbox
 
-      Drag a page to move it on the page tree
+        Drag a page to move it on the page tree
 
-   A gray outlined background on existing pages indicates that your page will
-   become a child of that page.
+    A gray outlined background on existing pages indicates that your page will
+    become a child of that page.
 
-   .. figure:: /Images/ManualScreenshots/PageTree/CopyMoveChildPage.png
-      :alt: Drop a page on another page to make it a child page
-      :zoom: lightbox
+    ..  figure:: /Images/ManualScreenshots/PageTree/CopyMoveChildPage.png
+        :alt: Drop a page on another page to make it a child page
+        :zoom: lightbox
 
-      Drop a page on another page to make it a child page
+        Drop a page on another page to make it a child page
 
-#. Release your mouse. A confirmation message will appear displaying the option to copy or
-   move the page.
-#. Select :guilabel:`Move this item`.
+#.  Release your mouse. A confirmation message will appear displaying the option to copy or
+    move the page.
+#.  Select :guilabel:`Move this item`.
 
-.. _Copy-Pages:
+..  _Copy-Pages:
 
 Copy pages
 ==========
 
-#. Choose the page you want to copy, then drag it to its new position on the
-   page tree.
-#. Release your mouse, then select :guilabel:`Copy` in the confirmation
-   message.
+#.  Choose the page you want to copy, then drag it to its new position on the
+    page tree.
+#.  Release your mouse, then select :guilabel:`Copy` in the confirmation
+    message.
 
-.. _Delete-Pages:
+..  _Delete-Pages:
 
 Delete pages
 ============
@@ -61,11 +61,13 @@ Delete pages
 Choose the page you want to delete. Drag it directly to the right to display
 the :guilabel:`Delete` option.
 
-.. figure:: /Images/ManualScreenshots/PageTree/DeletePage.png
-   :alt: Drag a page to the right to delete it
-   :zoom: lightbox
+..  figure:: /Images/ManualScreenshots/PageTree/DeletePage.png
+    :alt: Drag a page to the right to delete it
+    :zoom: lightbox
 
-   Drag a page to the right to delete it
+    Drag a page to the right to delete it
+
+..  _pages-working-with-context-menu:
 
 Context menu
 ============
@@ -73,8 +75,8 @@ Context menu
 A variety of functions are also available from the right-click context
 menu.
 
-.. _pages-other-features:
-.. _Filter-the-page-tree:
+..  _pages-other-features:
+..  _Filter-the-page-tree:
 
 Filter the page tree
 ====================
@@ -84,9 +86,9 @@ You can type keywords, numbers or frontend page urls to filter the pages that yo
 see in this backend page tree. If you use multiple keywords / IDs / URLs separate them with
 commas.
 
-.. figure:: /Images/ManualScreenshots/PageTree/PageTreeFilter.png
-   :alt: Filtering pages in the page tree
-   :zoom: lightbox
+..  figure:: /Images/ManualScreenshots/PageTree/PageTreeFilter.png
+    :alt: Filtering pages in the page tree
+    :zoom: lightbox
 
 Filtering pages in the page tree
 
