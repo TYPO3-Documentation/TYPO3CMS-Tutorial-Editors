@@ -10,10 +10,14 @@ Page types
 
 ------------
 
+..  _pages-types-default-page-types:
+
 Default page types
 ==================
 
 By default, TYPO3 includes the following page types.
+
+..  _pages-types-default-page-types-page:
 
 Page
 ----
@@ -25,6 +29,8 @@ Standard
 Backend User Section
     This page type only displays in the frontend for a specific group of backend
     users. You have to be logged in to the backend to see this type of page.
+
+..  _pages-types-default-page-types-link:
 
 Link
 ----
@@ -47,6 +53,8 @@ Link to External URL
     This page type is similar to the :guilabel:`Shortcut` type but leads the
     user to a page on another web site.
 
+..  _pages-types-default-page-types-special:
+
 Special
 -------
 
@@ -63,6 +71,8 @@ Menu separator
     This page type creates a visual separation in the page tree. You can use
     TypoScript to also display these separators in the frontend navigation.
 
+
+..  _pages-types-custom-page-types:
 
 Custom page types
 =================

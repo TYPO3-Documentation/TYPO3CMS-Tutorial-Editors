@@ -1,7 +1,7 @@
-.. include:: /Includes.rst.txt
+..  include:: /Includes.rst.txt
 
-.. _images-new:
-.. _images:
+..  _images-new:
+..  _images:
 
 ===================
 Working with images
@@ -50,14 +50,14 @@ file by name. The search includes all the subfolders of the selected folder.
     Click the name of an image to select it or use the "Upload files" dialoge.
     Alternatively, mark several images and import all of them at once.
 
-.. _Configure-the-image:
+..  _Configure-the-image:
 
 Configure the image
 ===================
 
 The :guilabel:`Images` tab lets you perform a number of actions to configure an image.
 
-.. _override_image_metadata:
+..  _override_image_metadata:
 
 Image metadata
 --------------
@@ -81,7 +81,7 @@ You can experiment with the image manipulation editor to crop or resize the
 image. Making changes here won't impact the original image file in
 :guilabel:`Filelist`.
 
-.. _images-appearance:
+..  _images-appearance:
 
 Media adjustments
 -----------------
@@ -101,7 +101,7 @@ border.
     the Bootstrap Package have means to dynamically set the size of the images.
     The images will resize responsively to fill their container.
 
-.. _images-gallery:
+..  _images-gallery:
 
 Gallery settings
 ----------------
@@ -114,14 +114,14 @@ respect to the text here.
 Multiple images are automatically arranged in columns, two by two. You can change this
 behaviour with the :guilabel:`Number of Columns` field.
 
-.. _images-behavior:
+..  _images-behavior:
 
 Behavior
 --------
 
 Use the :guilabel:`Enlarge on Click` setting to enable a lightbox display for the image.
 
-.. include:: /ContentElements/TipKeyboardCommands.rst.txt
+..  include:: /ContentElements/TipKeyboardCommands.rst.txt
 
 ..  _images-filelist:
 

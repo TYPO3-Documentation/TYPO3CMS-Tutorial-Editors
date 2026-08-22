@@ -1,6 +1,6 @@
-.. include:: /Includes.rst.txt
+..  include:: /Includes.rst.txt
 
-.. _accessibility:
+..  _accessibility:
 
 =============
 Accessibility
@@ -17,11 +17,15 @@ Accessibility
 
 As an editor, it is your responsibility to help provide accessible content.
 
+..  _accessibility-writing-accessible-text:
+
 Writing accessible text
 =======================
 
 See also the following W3C page:
 `Writing for Web Accessibility <https://www.w3.org/WAI/tips/writing/>`__
+
+..  _accessibility-writing-accessible-text-provide-informative-unique:
 
 Provide informative, unique page titles
 ---------------------------------------
@@ -30,6 +34,8 @@ The title of a page can - in most cases - be influenced in the
 :ref:`page properties <pages-properties>`. Part of the page title - such as the
 name of the organization - might be added automatically. Ask your developer
 about this.
+
+..  _accessibility-writing-accessible-text-headings-convey-meaning:
 
 Use headings to convey meaning and structure
 --------------------------------------------
@@ -44,6 +50,8 @@ design choices.
 The :ref:`rich text editor (RTE) <rte>` also offers the ability to create
 headlines of different levels.
 
+..  _accessibility-writing-accessible-text-make-link-text:
+
 Make link text meaningful
 -------------------------
 
@@ -55,12 +63,14 @@ If you are linking an image the image should have a meaningful alternative text.
 It is also possible to link headlines of content elements. In this case the
 text of the headline itself becomes the link text.
 
+..  _accessibility-writing-accessible-text-write-meaningful-text:
+
 Write meaningful text alternatives for images
 ---------------------------------------------
 
-.. seealso::
-   Writing alternative text can prove difficult. Here is a
-   helpful guide: https://axesslab.com/alt-texts/ .
+..  seealso::
+    Writing alternative text can prove difficult. Here is a
+    helpful guide: https://axesslab.com/alt-texts/ .
 
 In TYPO3 when you are uploading or managing an image file in the module
 :guilabel:`File > Filelist` you can provide an alternative text in the
@@ -70,8 +80,8 @@ When you are displaying an image as :guilabel:`Image` content element you
 can :ref:`override <override_image_metadata>` the alternative text to fit the
 context or use the default.
 
-.. note::
-   An alternative image text is usually not visible. However, the description
-   of an image is usually displayed below the image. Therefore the alternative
-   text needs to supply the information supplied by the image to most users. The
-   description text should supply additional information to all users.
+..  note::
+    An alternative image text is usually not visible. However, the description
+    of an image is usually displayed below the image. Therefore the alternative
+    text needs to supply the information supplied by the image to most users. The
+    description text should supply additional information to all users.
