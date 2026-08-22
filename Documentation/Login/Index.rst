@@ -60,10 +60,10 @@ Troubleshooting: Forgotten password
 
 Things your **administrator** can check if this is not working correctly:
 
-*    the :ref:`password reset feature<t3coreapi:access-password-reset>` is
-     enabled
-*    your backend account has a valid email address associated with it
-*    the TYPO3 installation can send emails.
+*   the :ref:`password reset feature<t3coreapi:access-password-reset>` is
+    enabled
+*   your backend account has a valid email address associated with it
+*   the TYPO3 installation can send emails.
 
 ..  _login-troubleshooting:
 
