@@ -1,15 +1,15 @@
-.. include:: /Includes.rst.txt
+..  include:: /Includes.rst.txt
 
 
-.. _introduction:
+..  _introduction:
 
-.. _about:
+..  _about:
 
 ================
 About this guide
 ================
 
-.. _credits:
+..  _credits:
 
 Credits
 =======
@@ -20,7 +20,7 @@ It has since been updated by Susanne Moog, François Suter and Felicity Brand.
 
 Thanks to them all!
 
-.. _feedback:
+..  _feedback:
 
 Feedback
 ========
@@ -32,7 +32,7 @@ To support the translation to other languages see
 
 Maintaining high quality documentation requires time and effort and the TYPO3 Documentation Team always appreciates support. If you want to support us, please contact us as described in the next section.
 
-.. _contact-doc-team:
+..  _contact-doc-team:
 
 Contact the Documentation Team
 ==============================

@@ -1,7 +1,7 @@
-.. include:: /Includes.rst.txt
+..  include:: /Includes.rst.txt
 
 
-.. _visibility:
+..  _visibility:
 
 ===================
 Elements visibility
@@ -14,7 +14,7 @@ In the Core, and in extensions that follow best practice, all options related
 to visibility are controlled in the :guilabel:`Access` tab of the :ref:`page
 properties <pages-properties>`.
 
-.. _visibility-dates:
+..  _visibility-dates:
 
 Publication dates
 =================
@@ -25,7 +25,7 @@ Any page or content element with a defined :guilabel:`Publish Date`
 will not be visible before that date. If it has an :guilabel:`Expiration
 Date`, it will be hidden from that point onward.
 
-.. include:: /Images/AutomaticScreenshots/Access/AccessPublicationDate.rst.txt
+..  include:: /Images/AutomaticScreenshots/Access/AccessPublicationDate.rst.txt
 
 When you set a publication date in the future then try to navigate to that
 page, you are redirected to the home page.
