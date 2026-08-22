@@ -1,5 +1,5 @@
 ..  include:: /Includes.rst.txt
-..   _start:
+..  _start:
 
 ===================
 TYPO3 Editors Guide
@@ -32,61 +32,61 @@ the `Official Introduction Package <https://extensions.typo3.org/extension/intro
 
     ..  card:: Getting Started
 
-        *  :ref:`Logging in to TYPO3's backend<login>`
+        *   :ref:`Logging in to TYPO3's backend<login>`
 
-        *  :ref:`Getting help with TYPO3's built in support tools<help-inside>`
+        *   :ref:`Getting help with TYPO3's built in support tools<help-inside>`
 
-        *  :ref:`About this guide<introduction>`
+        *   :ref:`About this guide<introduction>`
 
     ..  card:: :ref:`Working With The Page Tree<pages>`
 
-        *  :ref:`Creating pages<pages-creating>`
+        *   :ref:`Creating pages<pages-creating>`
 
-        *  :ref:`Creating multiple pages<pages-multiple>`
+        *   :ref:`Creating multiple pages<pages-multiple>`
 
-        *  :ref:`Working with pages<pages-working-with>`
+        *   :ref:`Working with pages<pages-working-with>`
 
-        *  :ref:`Page types<pages-types>` and :ref:`Page properties<pages-properties>`
+        *   :ref:`Page types<pages-types>` and :ref:`Page properties<pages-properties>`
 
     ..  card:: :ref:`Creating & Managing Content<content-elements>`
 
-        *  :ref:`Creating content <content-creating>`
+        *   :ref:`Creating content <content-creating>`
 
-        *  :ref:`Editing<content-editing>` and :ref:`managing content<content-working>`
+        *   :ref:`Editing<content-editing>` and :ref:`managing content<content-working>`
 
-        *  :ref:`Working with images<images-new>` and :ref:`other media<media>`
+        *   :ref:`Working with images<images-new>` and :ref:`other media<media>`
 
-        *  :ref:`Creating a contact form<mail-form>`
+        *   :ref:`Creating a contact form<mail-form>`
 
     ..  card:: :ref:`Record Management<list-module>`
 
-        *  :ref:`Using the backend Content > Layout module <list-module>`
+        *   :ref:`Using the backend Content > Layout module <list-module>`
 
-        *  :ref:`Moving content with the clipboard <clipboard>`
+        *   :ref:`Moving content with the clipboard <clipboard>`
 
-        *  :ref:`Advanced clipboard features<advanced_clipboard_usage>`
+        *   :ref:`Advanced clipboard features<advanced_clipboard_usage>`
 
-        *  :ref:`Mass editing content<mass-editing>`
+        *   :ref:`Mass editing content<mass-editing>`
 
     ..  card:: Tools For Editors
 
-        *  :ref:`Manage files with Media module <media-module>`
+        *   :ref:`Manage files with Media module <media-module>`
 
-        *  :ref:`Create links in the backend with Deep Linking <deeplinking>`
+        *   :ref:`Create links in the backend with Deep Linking <deeplinking>`
 
-        *  :ref:`Restrict access to pages and content with Access Control <access-control>`
+        *   :ref:`Restrict access to pages and content with Access Control <access-control>`
 
-        *  :ref:`Working with multiple languages <languages>`
+        *   :ref:`Working with multiple languages <languages>`
 
     ..  card:: :ref:`Concepts <concepts>`
 
-        *  :ref:`Creating accessible content <accessibility>`
+        *   :ref:`Creating accessible content <accessibility>`
 
-        *  :ref:`Caching <cache>`
+        *   :ref:`Caching <cache>`
 
-        *  :ref:`Copyright and data privacy <copyright>`
+        *   :ref:`Copyright and data privacy <copyright>`
 
-        *  :ref:`File abstraction layer (FAL) <fal>`
+        *   :ref:`File abstraction layer (FAL) <fal>`
 
 ..  toctree::
     :maxdepth: 2

@@ -1,7 +1,7 @@
-.. include:: /Includes.rst.txt
+..  include:: /Includes.rst.txt
 
 
-.. _deeplinking:
+..  _deeplinking:
 
 ============
 Deep Linking
@@ -15,7 +15,7 @@ to be published. Using deep links, they can share a link to the page
 they are working on or even share a link to the actual content element that contains
 their work and send it to another member of the team for review.
 
-.. _deeplinking-sharing:
+..  _deeplinking-sharing:
 
 Sharing links
 =============
@@ -28,6 +28,8 @@ page in the backend.
     :zoom: lightbox
 
 
+..  _deeplinking-sharing-linking-page:
+
 Linking to a page
 -----------------
 
@@ -36,6 +38,8 @@ The example below would create a deep link to the `About Us` page:
 ..  figure:: ../Images/ManualScreenshots/DeepLinking/DeepLinkingPageLink.png
     :alt: Creating a share link in the page module
     :zoom: lightbox
+
+..  _deeplinking-sharing-linking-content-element:
 
 Linking to a content element
 ----------------------------
@@ -47,6 +51,8 @@ on the `About Us` page:
     :alt: Creating a share link to a content element
     :zoom: lightbox
 
+..  _deeplinking-sharing-linking-backend-modules:
+
 Linking to backend modules
 --------------------------
 
@@ -57,7 +63,7 @@ to the `Site Configuration` module.
     :alt: Creating a link to the backend Sites module
     :zoom: lightbox
 
-.. _deeplinking-bestpractices:
+..  _deeplinking-bestpractices:
 
 URLs and deep links
 ===================

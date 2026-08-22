@@ -1,7 +1,7 @@
 ..  include:: /Includes.rst.txt
 
 
-.. _redirects:
+..  _redirects:
 
 =========
 Redirects
@@ -9,7 +9,7 @@ Redirects
 
 With Redirects, users are able to redirect inbound traffic to Pages, Files or External URLs.
 
-.. _redirects-scenario-preserving:
+..  _redirects-scenario-preserving:
 
 Scenario - preserving old URLs
 ==============================
@@ -21,7 +21,7 @@ to redirect to pages in your new TYPO3 installation.
 You can set up a redirect for :samp:`/contact-us.aspx` that redirects visitors to your
 new `Contact Us` page in your TYPO3 installation.
 
-.. _redirects-scenario-preparing:
+..  _redirects-scenario-preparing:
 
 Scenario - preparing a URL for future use
 =========================================
@@ -36,7 +36,7 @@ and give that to the event organizer.
 Then, once you have built your conference specific page, you can update the redirect
 so that it points to the new page.
 
-.. _redirects-creating:
+..  _redirects-creating:
 
 Creating a redirect
 ===================
@@ -46,7 +46,7 @@ From the Link Management module, select :guilabel:`Redirects` followed by :guila
 ..  figure:: /Images/ManualScreenshots/LinkManagement/RedirectsAddRedirect.png
     :alt: Screenshot of the Add redirect button found within the Redirects submodule
 
-.. _redirects-source-domain:
+..  _redirects-source-domain:
 
 Setting a Source Domain and Source Path
 ---------------------------------------
@@ -61,7 +61,7 @@ using here.
 Source Path - this is the path that will be redirected. Using the example above,
 we specify :samp:`/contact-us.aspx` here. Note that any query parameters will be ignored.
 
-.. _redirects-target:
+..  _redirects-target:
 
 Setting a Target
 ----------------
@@ -74,7 +74,7 @@ visit the redirected URL.
 
 Using the example above, we would select the `Contact Us` page in the Page Tree.
 
-.. _redirects-access-tab:
+..  _redirects-access-tab:
 
 Access Tab
 ----------
@@ -89,7 +89,7 @@ Access Tab
 
 :guilabel:`Expiration Date`: Set an expiration date or when you want the Redirect to be no longer active.
 
-.. _redirects-notes-tab:
+..  _redirects-notes-tab:
 
 Notes Tab
 ---------
@@ -100,7 +100,7 @@ Notes Tab
 
 Add an internal note that other backend users can view.
 
-.. _redirects-managing:
+..  _redirects-managing:
 
 Managing existing redirect rules
 ================================
