@@ -1,7 +1,7 @@
 ..  include:: /Includes.rst.txt
 
 
-.. _short-urls:
+..  _short-urls:
 
 ==========
 Short URLs
@@ -11,7 +11,7 @@ Short URLs are a simple and convenient way to share short or "tiny" URLs that po
 
 Short URLs can point to files such as documents or redirect to external URLs.
 
-.. _short-urls-scenario:
+..  _short-urls-scenario:
 
 Scenario - Shortening a long URL
 ================================
@@ -21,7 +21,7 @@ You want to share a link to your profile page found on your company website, how
 With Short URLs you can generate a simple URL that can be shared easily. They can also be
 repurposed at a later date and can point to a completely new page or resource.
 
-.. _short-urls-creating:
+..  _short-urls-creating:
 
 Creating a Short URL
 ====================
@@ -31,6 +31,8 @@ From the Link Management module, select :guilabel:`Short URLs` followed by :guil
 ..  figure:: /Images/ManualScreenshots/LinkManagement/ShortURLCreate.png
     :alt: Screenshot of the Add Short URL button found within the Short URL submodule
     :class: with-border
+
+..  _short-urls-creating-general-tab:
 
 General Tab
 -----------
@@ -46,6 +48,8 @@ the dice icon to generate a random string of text. Note, you can also manually s
 
 :guilabel:`Force SSL Redirect`: Force all requests to be served via https.
 
+..  _short-urls-creating-access-tab:
+
 Access Tab
 ----------
 
@@ -59,6 +63,8 @@ Access Tab
 
 :guilabel:`Expiration Date`: Set an expiration date for when you want the Short URL to be no longer active.
 
+..  _short-urls-creating-notes-tab:
+
 Notes Tab
 ---------
 
@@ -68,7 +74,7 @@ Notes Tab
 
 Add an internal note that other backend users can view.
 
-.. _short-urls-editing:
+..  _short-urls-editing:
 
 Edit an existing Short URL
 ==========================
