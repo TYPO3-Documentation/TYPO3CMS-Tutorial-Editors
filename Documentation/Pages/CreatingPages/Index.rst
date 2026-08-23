@@ -4,7 +4,7 @@
 ..  _pages-creating:
 
 ==============
-Creating Pages
+Creating pages
 ==============
 
 ..  youtube:: UzHc1Z3vT6E
