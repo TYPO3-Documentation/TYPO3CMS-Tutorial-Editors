@@ -38,7 +38,7 @@ General tab
 
 ..  _seo-page-properties-general-title:
 
-Page Title
+Page title
 ----------
 
 The page title field is used for several purposes. From a SEO perspective
@@ -48,7 +48,7 @@ the title fields can be found at :ref:`title-for-search-engines`.
 
 ..  _seo-page-properties-general-url-segment:
 
-URL Segment (slug)
+URL segment (slug)
 ------------------
 
 The URL segment is the part of the URL the user enters to access your page.
@@ -63,7 +63,7 @@ Please make sure to check other best practices with your SEO specialist.
 
 ..  _seo-page-properties-seo:
 
-SEO Tab
+SEO tab
 =======
 
 ..  _title-for-search-engines:
@@ -227,7 +227,7 @@ to have more dimensions, please let your integrator add more dimensions.
 
 ..  _seo-page-properties-metadata:
 
-Metadata Tab
+Metadata tab
 ============
 
 The `Metadata` tab contains a list of elements like `Abstract`, `Keywords`

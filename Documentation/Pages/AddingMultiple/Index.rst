@@ -4,7 +4,7 @@
 ..  _pages-multiple:
 
 =======================
-Creating Multiple Pages
+Creating multiple pages
 =======================
 
 ..  youtube:: KmCButMH80g

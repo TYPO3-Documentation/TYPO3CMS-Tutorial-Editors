@@ -42,7 +42,7 @@ The following fields are of interest:
 
 ..  _pages-properties-url-type:
 
-Page Type
+Page type
 ---------
 
 The page types listed here vary with how the site package is defined and your
@@ -53,7 +53,7 @@ for details.
 
 ..  _pages-properties-titles:
 
-Page Title / Alternative Navigation Title
+Page title / alternative navigation title
 -----------------------------------------
 
 The :guilabel:`Page Title` is used as label in menus and in the `<title>` tag in
@@ -67,7 +67,7 @@ somewhere.
 
 ..  _pages-properties-url-segment:
 
-URL Segment
+URL segment
 -----------
 
 The "URL Segment", sometimes also called "Slug" is used to calculate the URL
@@ -146,7 +146,7 @@ documentation of your site package or ask your integrator.
 
 ..  _pages-properties-page-layout:
 
-Page Layout / Backend Layout
+Page layout / Backend Layout
 ----------------------------
 
 ..  figure:: /Images/ManualScreenshots/Page/BackendLayout.png
@@ -210,7 +210,7 @@ reminders or to-do lists.
 
 ..  _pages-properties-video:
 
-YouTube Video "Page Properties" (TYPO3 11.5)
+YouTube video "Page Properties" (TYPO3 11.5)
 ============================================
 
 ..  youtube:: dtRKsxzjKj0
