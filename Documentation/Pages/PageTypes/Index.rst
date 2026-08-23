@@ -50,7 +50,7 @@ Links & redirects
 
 ..  _pages-types-default-page-types-special:
 
-Special Containers
+Special containers
 ------------------
 
 *   **Folder:** A container for TYPO3 records, plugins, or
