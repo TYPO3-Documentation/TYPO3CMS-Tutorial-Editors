@@ -4,7 +4,7 @@
 ..  _deeplinking:
 
 ============
-Deep Linking
+Deep linking
 ============
 
 Deep linking allows users to share links to specific pages, content elements and modules
