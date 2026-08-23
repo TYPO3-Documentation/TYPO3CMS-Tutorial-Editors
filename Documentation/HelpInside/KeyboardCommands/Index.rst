@@ -44,7 +44,7 @@ Actions in backend forms
 
 ..  _keyboard-commands-rte:
 
-Editing text in the Rich Text Editor (RTE)
+Editing text in the rich text editor (RTE)
 ==========================================
 
 Below is a list of common keyboard commands that can be used when editing
