@@ -3,7 +3,7 @@
 ..  _content-elements:
 
 ================
-Content Elements
+Content elements
 ================
 
 ..  card-grid::

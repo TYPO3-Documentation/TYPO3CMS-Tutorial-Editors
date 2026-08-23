@@ -3,7 +3,7 @@
 ..  _dashboard-widgets:
 
 ===============================================================
-Dashboard widgets for Search engine optimization (SEO) in TYPO3
+Dashboard widgets for search engine optimization (SEO) in TYPO3
 ===============================================================
 
 The following dashboard widgets are available to editors if your integrator

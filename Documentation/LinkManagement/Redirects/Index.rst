@@ -48,7 +48,7 @@ From the Link Management module, select :guilabel:`Redirects` followed by :guila
 
 ..  _redirects-source-domain:
 
-Setting a Source Domain and Source Path
+Setting a source domain and source path
 ---------------------------------------
 
 ..  figure:: /Images/ManualScreenshots/LinkManagement/RedirectsSourceDomainSourcePath.png
@@ -63,7 +63,7 @@ we specify :samp:`/contact-us.aspx` here. Note that any query parameters will be
 
 ..  _redirects-target:
 
-Setting a Target
+Setting a target
 ----------------
 
 ..  figure:: /Images/ManualScreenshots/LinkManagement/RedirectsSourceTarget.png
@@ -76,7 +76,7 @@ Using the example above, we would select the `Contact Us` page in the Page Tree.
 
 ..  _redirects-access-tab:
 
-Access Tab
+Access tab
 ----------
 
 ..  figure:: /Images/ManualScreenshots/LinkManagement/RedirectsAccess.png
@@ -91,7 +91,7 @@ Access Tab
 
 ..  _redirects-notes-tab:
 
-Notes Tab
+Notes tab
 ---------
 
 ..  figure:: /Images/ManualScreenshots/LinkManagement/RedirectsNotes.png

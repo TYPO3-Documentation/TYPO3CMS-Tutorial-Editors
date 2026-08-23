@@ -131,7 +131,7 @@ if desired.
 
 ..  _content-working-life-search:
 
-Finding content using the Live Search
+Finding content using the live search
 =====================================
 
 Use the search button on the top right of the TYPO3 backend or the keyboard
@@ -195,7 +195,7 @@ See also :ref:`Recycler manual, For editors <typo3/cms-recycler:for-editors>`.
 
 ..  _content-working-troubleshooting-history:
 
-Undo changes using the Page History
+Undo changes using the page history
 -----------------------------------
 
 You can use the page history to undo any kind of content changes. If you have
