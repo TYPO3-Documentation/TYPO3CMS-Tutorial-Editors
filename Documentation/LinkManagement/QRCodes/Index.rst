@@ -6,7 +6,7 @@
 ..  _qr-codes:
 
 =========================
-Quick Response (QR) Codes
+Quick response (QR) codes
 =========================
 
 In this chapter you will learn how to create Quick Response codes and have them
@@ -14,7 +14,7 @@ link to pages in TYPO3's Page Tree, ready to be shared.
 
 ..  _qr-codes-scenario:
 
-Scenario - sharing your QR Code
+Scenario - sharing your QR code
 ===============================
 You have a Christmas marketing campaign coming up and you're getting ready to print
 several hundred flyers to promote your campaign.
@@ -30,7 +30,7 @@ Using the QR Code feature, you can:
 
 ..  _qr-codes-creating:
 
-Creating a QR Code
+Creating a QR code
 ==================
 
 From the Link Management module, select :guilabel:`QR Codes` followed by :guilabel:`Add QR Code` or :guilabel:`Create new QR Code`.
@@ -41,7 +41,7 @@ From the Link Management module, select :guilabel:`QR Codes` followed by :guilab
 
 ..  _qr-codes-general-tab:
 
-General Tab
+General tab
 -----------
 
 ..  figure:: /Images/ManualScreenshots/LinkManagement/QRCAddQRCGeneral.png
@@ -56,7 +56,7 @@ General Tab
 
 ..  _qr-codes-access-tab:
 
-Access Tab
+Access tab
 ----------
 
 ..  figure:: /Images/ManualScreenshots/LinkManagement/QRCAddQRCAccess.png
@@ -71,7 +71,7 @@ Access Tab
 
 ..  _qr-codes-notes-tab:
 
-Notes Tab
+Notes tab
 ---------
 
 ..  figure:: /Images/ManualScreenshots/LinkManagement/QRCAddQRCNotes.png
@@ -82,7 +82,7 @@ Add an internal note that other backend users can view.
 
 ..  _qr-codes-download:
 
-Downloading your new QR Code
+Downloading your new QR code
 ============================
 
 ..  figure:: /Images/ManualScreenshots/LinkManagement/QRCDownload.png
@@ -97,7 +97,7 @@ SVG: `64x64`, `128x128`, `256x256` and `512x512`
 
 ..  _qr-codes-edit:
 
-Edit an existing QR Code
+Edit an existing QR code
 ========================
 
 ..  figure:: /Images/ManualScreenshots/LinkManagement/QRCEdit.png

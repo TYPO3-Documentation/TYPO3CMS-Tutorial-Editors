@@ -4,7 +4,7 @@
 ..  _access-control:
 
 ==============
-Access Control
+Access control
 ==============
 
 There are many ways to restrict access to pages, content elements

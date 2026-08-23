@@ -13,7 +13,7 @@ Short URLs can point to files such as documents or redirect to external URLs.
 
 ..  _short-urls-scenario:
 
-Scenario - Shortening a long URL
+Scenario - shortening a long URL
 ================================
 
 You want to share a link to your profile page found on your company website, however the URL itself is very long.
@@ -23,7 +23,7 @@ repurposed at a later date and can point to a completely new page or resource.
 
 ..  _short-urls-creating:
 
-Creating a Short URL
+Creating a short URL
 ====================
 
 From the Link Management module, select :guilabel:`Short URLs` followed by :guilabel:`Add Short URL` or :guilabel:`Create a new Short URL`.
@@ -34,7 +34,7 @@ From the Link Management module, select :guilabel:`Short URLs` followed by :guil
 
 ..  _short-urls-creating-general-tab:
 
-General Tab
+General tab
 -----------
 
 ..  figure:: /Images/ManualScreenshots/LinkManagement/ShortURLGeneral.png
@@ -50,7 +50,7 @@ the dice icon to generate a random string of text. Note, you can also manually s
 
 ..  _short-urls-creating-access-tab:
 
-Access Tab
+Access tab
 ----------
 
 ..  figure:: /Images/ManualScreenshots/LinkManagement/ShortURLAccess.png
@@ -65,7 +65,7 @@ Access Tab
 
 ..  _short-urls-creating-notes-tab:
 
-Notes Tab
+Notes tab
 ---------
 
 ..  figure:: /Images/ManualScreenshots/LinkManagement/ShortURLNotes.png
@@ -76,7 +76,7 @@ Add an internal note that other backend users can view.
 
 ..  _short-urls-editing:
 
-Edit an existing Short URL
+Edit an existing short URL
 ==========================
 
 ..  figure:: /Images/ManualScreenshots/LinkManagement/ShortURLEdit.png

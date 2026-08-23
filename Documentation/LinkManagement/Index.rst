@@ -4,7 +4,7 @@
 ..  _link-management:
 
 ===============
-Link Management
+Link management
 ===============
 
 There are various features available within TYPO3 that enable users to
