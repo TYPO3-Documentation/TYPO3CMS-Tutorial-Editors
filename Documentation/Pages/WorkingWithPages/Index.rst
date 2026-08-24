@@ -7,59 +7,61 @@
 Working with pages
 ==================
 
+You can organize pages in your website using the **page tree**.
+
 ..  youtube:: cfASKN-WbaQ
 
 ------------
 
-You can manage pages directly in the page tree.
+First click on
+:guilabel:`Content > Layout` in the backend sidebar to display the page tree in
+the middle pane.
 
 ..  _Move-Pages:
 
-Move pages
-==========
+Moving pages
+============
 
-#.  Choose the page you want to move, then drag it to anywhere in the page
-    tree.
+You can change your site hierarchy or reorder pages by dragging-and-dropping
+inside the page tree.
 
-    A horizontal line indicates the new
-    position of the page.
+#.  **Locate the page** you want to move within the page tree.
+#.  **Click and drag** the page to its new position. A horizontal line will
+    appear to preview where the page will land.
 
     ..  figure:: /Images/ManualScreenshots/PageTree/CopyMovePage.png
-        :alt: Drag a page to move it on the page tree
+        :alt: Drag a page to move it to a different position in the page tree
         :zoom: lightbox
 
-        Drag a page to move it on the page tree
+        Drag a page to move it to a different position in the page tree
 
-    A gray outlined background on existing pages indicates that your page will
-    become a child of that page.
+#.  **To nest a page** (making it a "child" of an existing page), drag it
+    directly over the target page until a gray outlined background appears.
 
     ..  figure:: /Images/ManualScreenshots/PageTree/CopyMoveChildPage.png
-        :alt: Drop a page on another page to make it a child page
+        :alt: Drop a page onto another page to make it a child page
         :zoom: lightbox
 
-        Drop a page on another page to make it a child page
+        Drop a page onto another page to make it a child page. Here page 4 will
+        become the "child" of page 3
 
-#.  Release your mouse. A confirmation message will appear displaying the option to copy or
-    move the page.
+#.  **Release your mouse.** A confirmation message will prompt you to choose
+    between copying or moving.
 #.  Select :guilabel:`Move this item`.
 
 ..  _Copy-Pages:
 
-Copy pages
-==========
-
-#.  Choose the page you want to copy, then drag it to its new position on the
-    page tree.
-#.  Release your mouse, then select :guilabel:`Copy` in the confirmation
-    message.
+..  tip::
+    To copy a page instead of moving it, follow the exact same steps but select
+    :guilabel:`Copy` from the confirmation prompt.
 
 ..  _Delete-Pages:
 
-Delete pages
-============
+Deleting pages
+==============
 
-Choose the page you want to delete. Drag it directly to the right to display
-the :guilabel:`Delete` option.
+To remove a page entirely, click and drag the page to the right. You will see
+the :guilabel:`Delete` action.
 
 ..  figure:: /Images/ManualScreenshots/PageTree/DeletePage.png
     :alt: Drag a page to the right to delete it
@@ -69,29 +71,30 @@ the :guilabel:`Delete` option.
 
 ..  _pages-working-with-context-menu:
 
-Context menu
-============
+Context menu actions
+====================
 
-A variety of functions are also available from the right-click context
-menu.
+Right click on any page in the page tree to bring up the context menu and see
+the many editing shortcuts and page functions.
+
+..  figure:: /Images/ManualScreenshots/PageTree/PageActions.png
+    :alt: Right click on a page to see context menu
+    :zoom: lightbox
+
+    Right click on a page to see the context menu
 
 ..  _pages-other-features:
 ..  _Filter-the-page-tree:
 
-Filter the page tree
-====================
+Filtering the page tree
+=======================
 
-At the top of the page tree is a filtering tool.
-You can type keywords, numbers or frontend page urls to filter the pages that you
-see in this backend page tree. If you use multiple keywords / IDs / URLs separate them with
-commas.
+Use the search tool at the top of the page tree to quickly
+isolate specific pages by keyword, page ID number, or frontend page URL.
+Separate multiple keywords, IDs, or URLs with a comma.
 
 ..  figure:: /Images/ManualScreenshots/PageTree/PageTreeFilter.png
     :alt: Filtering pages in the page tree
     :zoom: lightbox
 
 Filtering pages in the page tree
-
-..  note::
-    Since TYPO3 v14, translated pages are also included in the search when
-    filtering. See :issue:`107961` for details.
