@@ -24,17 +24,18 @@ First click into the :guilabel:`Content > Layout` module in the left sidebar.
         :alt: Select "Create multiple pages" in the context menu
         :zoom: lightbox
 
-#.  **Name your pages**: Enter a title and select a page type for each page. Here
+#.  **Name your pages**: Enter a title and a page type for each page. Here
     we are just creating normal "standard" pages.
 
     ..  figure:: ../../Images/ManualScreenshots/Page/MultiplePagesCreatePages.png
         :alt: The "Create Multiple Pages" screen
         :zoom: lightbox
 
-#.  **Expand your list**: Click :guilabel:`Add more lines` to add five more pages
-    as needed.
+#.  **Expand your list**: Click :guilabel:`Add more lines` to add five more
+    pages as needed.
 
-#.  **Set page position and visibility** if necessary at the bottom of the screen:
+#.  **Set page position and visibility** if necessary at the bottom of the
+    screen:
 
     ..  figure:: ../../Images/ManualScreenshots/Page/MultiplePagesConfigure.png
         :alt: The "Create Multiple Pages" configuration
@@ -51,8 +52,7 @@ First click into the :guilabel:`Content > Layout` module in the left sidebar.
 
 ..  tip::
 
-    PAGE VISIBILITY VS. MENU VISIBILITY
 
     **Hidden pages** are completely offline and inaccessible to visitors.
     **Hidden in menus** pages are online but will not appear in your site
-    navigation.
+    navigation. Visitors will still be able to visit your pages via URL.
