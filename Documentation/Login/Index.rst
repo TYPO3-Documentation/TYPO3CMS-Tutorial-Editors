@@ -42,7 +42,7 @@ Troubleshooting: Forgotten password
     Use the same email address that you entered during registration.
 
     ..  figure:: /Images/ManualScreenshots/Login/ForgotPasswordEmail.png
-        :alt: Click on "Forgot your password?"
+        :alt: The password reset form with the email address field
         :zoom: gallery
 
         Enter your email address
