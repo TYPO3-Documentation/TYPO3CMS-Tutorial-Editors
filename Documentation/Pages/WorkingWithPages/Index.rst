@@ -98,9 +98,3 @@ Separate multiple keywords, IDs, or URLs with a comma.
     :zoom: lightbox
 
 Filtering pages in the page tree
-
-..  note::
-    Translated pages
-
-    Starting in TYPO3 v14, translated pages are included when filtering
-    (:issue:`107961` )
