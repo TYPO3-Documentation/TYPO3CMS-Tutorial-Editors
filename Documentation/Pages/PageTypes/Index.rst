@@ -6,77 +6,74 @@
 Page types
 ==========
 
+Each item in the **page tree** has a distinct **page type**.
+
 ..  youtube:: 19kCrgoRH2U
 
 ------------
-
-..  versionchanged:: 14.0
-    The former page type `Link to External URL` has changed its name to `Link`
-    and has a lot more features.
-    See
-    :ref:`Feature: #17406 - Enhance page type "Link" to fully support typolinks <changelog:feature-17406-1762953087>`
 
 ..  _pages-types-default-page-types:
 
 Default page types
 ==================
 
-By default, TYPO3 includes the following page types.
+TYPO3 includes several page types out of the box.
 
 ..  _pages-types-default-page-types-page:
 
-Page
-----
+Pages
+-----
 
 Standard
-    This is the default page type, and the most common. It covers all basic
-    needs.
+    The default building block for standard web pages.
 
 Backend User Section
-    This page type only displays in the frontend for a specific group of backend
-    users. You have to be logged in to the backend to see this type of page.
+    A restricted page type that is only displayed in the frontend if a user is
+    logged into the TYPO3 backend.
 
 ..  _pages-types-default-page-types-link:
 
-Link
-----
+Links & redirects
+-----------------
 
 Shortcut
-    This page type is a shortcut to another page in the page tree. When users
-    navigate to this page in the frontend, they will be taken seamlessly to the
-    shortcut's destination.
+    Creates a redirection to another page in your page tree. Frontend visitors
+    are forwarded to the other page.
 
-Mount point
-    A mount point lets you select any other page in the page tree. All
-    child pages of the chosen page will display as child pages of the mount
-    point. This lets you duplicate parts of your page tree in terms of
-    navigation, without actually duplicating pages and content.
-
-    See the :ref:`Mounts <t3coreapi:access-options-mounts>` section in "TYPO3
-    Explained" for more information about mount points.
+Mount Point
+    Similar to a :guilabel:`Shortcut`, but instead of redirecting to another
+    page, it redirects to a whole subtree somewhere else in the page tree. This
+    is particularly useful for frontend menus and means you don't have to
+    duplicate lots of pages in your page tree.
 
 Link
-    This page type is similar to the :guilabel:`Shortcut` type but leads the
-    user to external URLs, other pages, content elements, files,
-    folders, email addresses or custom records (for example news records).
+    Similar to a :guilabel:`Shortcut`, but this page type can forward users to
+    external URLs, individual content elements/page sections, downloadable
+    assets (such as files), system folders, email forms, and data from
+    extensions.
 
 ..  _pages-types-default-page-types-special:
 
-Special
--------
+Special containers
+------------------
 
 Folder
-    A folder page type is a container. It is generally used to store records
-    other than pages or content elements. It will not display in the frontend.
+    A simple container used to store records (data from extensions) or pages.
+    Containers are hidden in the frontend. Records are usually stored in
+    containers and then referenced via plugins on other pages. Pages that are
+    not included in the main menu are usually stored in containers (for
+    example, a footer menu container)
 
-Menu separator
-    This page type creates a visual separation in the page tree. You can use
-    TypoScript to also display these separators in the frontend navigation.
-
+Menu Separator
+    A separator element that can be used as a visual separator in the backend
+    page tree. Menu separators can also be referenced in **TypoScript** (the
+    TYPO3 frontend configuration language) to add lines/spaces to navigation
+    menus in the frontend.
 
 ..  _pages-types-custom-page-types:
 
-Custom page types
-=================
+Other page types
+================
 
-Depending on the project, custom page types may also be available.
+If you have a site package or other extensions installed on your TYPO3 website,
+there may be more page types.
