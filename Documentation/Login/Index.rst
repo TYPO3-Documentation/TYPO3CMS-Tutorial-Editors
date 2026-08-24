@@ -9,7 +9,7 @@ Logging in to TYPO3 backend
 If you are a TYPO3 editor, the backend is where you will most likely spend most
 of your time. So let's start by logging in.
 
-Navigate to  :samp:`https://www.yourdomain.org/typo3` in your browser. The
+Navigate to  :samp:`https://example.org/typo3` in your browser. The
 :samp:`/typo3` part can be changed, so if :samp:`/typo3` does not work, check
 your project documentation or ask your administrator for the correct backend
 URL.
