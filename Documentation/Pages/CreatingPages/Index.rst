@@ -41,17 +41,17 @@ Method 1: Using drag and drop
 
     The standard page icon above the page tree
 
-#.  Open the **page creator**: Click the :guilabel:`+ Page` button at the top left
-    of the page tree, or find the **row of icons** representing different types
-    of pages.
+#.  Open the **page creator**: Click the :guilabel:`+ Page` button at the top
+    left of the page tree, or find the **row of icons** representing different
+    types of pages.
 
 #.  Position your page:
 
     *   If using :guilabel:`+ Page`: Click on a location for your new page in
         the popup window. Select the page with the globe icon (**"root" page**)
-        if you want to create another main page or select an existing page to create a
-        **"child" page**. Then click on :guilabel:`Insert subpage`. Choose the
-        standard page type.
+        if you want to create another main page or select an existing page to
+        create a **"child" page**. Then click on :guilabel:`Insert subpage`.
+        Choose the standard page type.
     ..  figure:: /Images/ManualScreenshots/PageTree/PageInsertSubpage.png
         :alt: The insert subpage button on the page creator form
         :zoom: gallery
