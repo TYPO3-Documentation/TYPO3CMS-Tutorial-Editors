@@ -7,41 +7,52 @@
 Creating multiple pages
 =======================
 
+If you need to build out a new section of your website quickly, you can create
+many pages at once from the page tree.
+
 ..  youtube:: KmCButMH80g
 
 ------------
 
-#.  In the page tree, position your cursor on the page that you want to be the
-    parent of the new pages you are about to create.
+First click into the :guilabel:`Content > Layout` module in the left sidebar.
 
-#.  Right-click the page and select :guilabel:`More options > Create
-    multiple pages` from the context menu.
+#.  **Open the bulk creator**:
+    Right-click a "parent" page in the page tree and choose
+    :guilabel:`More options > Create multiple pages` from the context menu.
 
     ..  figure:: ../../Images/ManualScreenshots/PageTree/MultiplePagesContextMenu.png
         :alt: Select "Create multiple pages" in the context menu
         :zoom: lightbox
 
-    The :guilabel:`Create Multiple Pages` screen will appear, with five new empty pages.
+#.  **Name your pages**: Enter a title and a page type for each page. Here
+    we are just creating normal "standard" pages.
 
     ..  figure:: ../../Images/ManualScreenshots/Page/MultiplePagesCreatePages.png
         :alt: The "Create Multiple Pages" screen
         :zoom: lightbox
 
-#.  Give each new page a title and select its type.
+#.  **Expand your list**: Click :guilabel:`Add more lines` to add five more
+    pages as needed.
 
-#.  Click the :guilabel:`Add more lines` button to add five more new pages if you need to create even more pages.
+#.  **Set page position and visibility** if necessary at the bottom of the
+    screen:
 
-#.  Configure the new pages using the options at the bottom of the screen:
+    ..  figure:: ../../Images/ManualScreenshots/Page/MultiplePagesConfigure.png
+        :alt: The "Create Multiple Pages" configuration
+        :zoom: lightbox
 
-    *   The :guilabel:`Place new pages after the existing subpages` option adds
-        new pages below the existing subpages. Otherwise they will be
-        placed above the current pages.
+    *   Positioning: Toggle
+        :guilabel:`Place new pages after the existing subpages` to add
+        the pages below any existing subpages. Leave it off to place them above.
 
-    *   The :guilabel:`Hide new pages` and :guilabel:`Hide new pages in menus`
-        options let you manage the visibility of your new pages.
+    *   Visibility: Toggle :guilabel:`Hide new pages` or
+        :guilabel:`Hide new pages in menus`.
 
-        A hidden page cannot be accessed by anyone via the web site. A page which
-        is hidden in menus does not appear in the site navigation but can be
-        accessed by someone having the direct URL of that page.
+#.  **Save your changes**: Click :guilabel:`Create pages`.
 
-#.  Click the :guilabel:`Create pages` button to create the pages.
+..  tip::
+
+
+    **Hidden pages** are completely offline and inaccessible to visitors.
+    **Hidden in menus** pages are online but will not appear in your site
+    navigation. Visitors will still be able to visit your pages via URL.
