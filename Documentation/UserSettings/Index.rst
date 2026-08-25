@@ -29,7 +29,7 @@ Personal data
 =============
 
 Update your personal identification details and language preferences. You can
-update your name and email address but your username can be changed here.
+update your name and email address but your username cannot be changed here.
 
 *   **Name:** Your full name displayed in the backend interface.
 *   **Email:** The address used for system notifications and password resets.
@@ -99,13 +99,13 @@ More settings to fine-tune your workspace behavior.
     displayed in lists to keep your workspace clean.
 *   **File upload directly in Doc-module:** Enable or disable the direct file
     dropzone and upload button inside your form editing views.
-*   **Use quick editing for records in the page module:** Skip the full record view and open a
-    streamlined editor when clicking on content elements.
-*   **Enable dynamic "recently used" category in wizards:** Allow content element
-    wizards to track and display your most frequently used elements
+*   **Use quick editing for records in the page module:** Skip the full record
+    view and open a streamlined editor when clicking on content elements.
+*   **Enable dynamic "recently used" category in wizards:** Allow content
+    element wizards to track and display your most frequently used elements
     at the top.
-*   **Recursive copy.. :** Toggle whether copying a page should automatically copy all
-    of its sub-pages and nested content as well.
+*   **Recursive copy.. :** Toggle whether copying a page should automatically
+    copy all of its sub-pages and nested content as well.
 
 ..  figure:: ../Images/ManualScreenshots/UserSettings/UserSettingsPersonalization.png
     :alt: The personalization tab in the user settings module
