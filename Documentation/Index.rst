@@ -70,6 +70,8 @@ the `Official Introduction Package <https://extensions.typo3.org/extension/intro
 
     ..  card:: Tools For Editors
 
+        *   :ref:`User settings <usersettings>`
+
         *   :ref:`Manage files with Media module <media-module>`
 
         *   :ref:`Create links in the backend with Deep Linking <deeplinking>`
@@ -101,6 +103,7 @@ the `Official Introduction Package <https://extensions.typo3.org/extension/intro
     LinkManagement/Index
     Languages/Index
     SearchEngineOptimization/Index
+    UserSettings/Index
     AccessControl/Index
     DeepLinking/Index
     HelpInside/Index
