@@ -18,14 +18,3 @@ corner of the topbar, then select :guilabel:`User Settings`.
     :zoom: lightbox
 
     The user settings module
-
-You will see four tabs:
-
-..  toctree::
-    :maxdepth: 1
-    :titlesonly:
-
-    PersonalData/Index
-    AccountSecurity/Index
-    BackendAppearance/Index
-    Personalization/Index
