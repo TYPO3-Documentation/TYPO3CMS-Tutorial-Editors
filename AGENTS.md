@@ -10,7 +10,7 @@ CONTRIBUTING.md                  # how to contribute
 ## Commands
 
 - `make docs` — render the manual locally with Docker
-- `make test-docs` — render in fail-on-log mode; use this to validate any change before committing
+- `make test-docs` — render in minimal-test mode (the same validation CI runs); use this to validate any change before committing
 
 ## Documentation writing rules
 
