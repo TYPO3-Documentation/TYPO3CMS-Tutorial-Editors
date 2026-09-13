@@ -7,7 +7,7 @@ Using the Content Record module
 
 ..  versionchanged:: 14.0
     This module has been renamed from :guilabel:`Web > List` to :guilabel:`Content > Record`
-	see `Feature: #107628 - Improved backend module naming and structure <https://docs.typo3.org/permalink/changelog:feature-107628-1729026000>`_.
+    see `Feature: #107628 - Improved backend module naming and structure <https://docs.typo3.org/permalink/changelog:feature-107628-1729026000>`_.
 
 The :guilabel:`Content > Record` module allows you to browse through pages and folders
 in your site and view the records that

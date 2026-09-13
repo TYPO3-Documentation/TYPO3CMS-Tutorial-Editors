@@ -14,7 +14,7 @@ Media upload and management in the TYPO3 backend
 
 ..  versionchanged:: 14.0
     This module has been renamed from :guilabel:`Filelist` to :guilabel:`Media`
-	see `Feature: #107628 - Improved backend module naming and structure <https://docs.typo3.org/permalink/changelog:feature-107628-1729026000>`_.
+    see `Feature: #107628 - Improved backend module naming and structure <https://docs.typo3.org/permalink/changelog:feature-107628-1729026000>`_.
 
 The :guilabel:`Media` module is where you can manage
 all the media associated with your TYPO3 web site.

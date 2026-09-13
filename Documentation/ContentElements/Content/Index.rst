@@ -46,7 +46,7 @@ Overview of the Layout module in TYPO3
 
 ..  versionchanged:: 14.0
     This module has been renamed from :guilabel:`Web > Pages` to :guilabel:`Content > Layout`
-	see `Feature: #107628 - Improved backend module naming and structure <https://docs.typo3.org/permalink/changelog:feature-107628-1729026000>`_.
+    see `Feature: #107628 - Improved backend module naming and structure <https://docs.typo3.org/permalink/changelog:feature-107628-1729026000>`_.
 
 ..  figure:: /Images/ManualScreenshots/ContentElements/PageModuleAnnotated.png
     :alt: A typical view of the Content Layout module with various content columns
