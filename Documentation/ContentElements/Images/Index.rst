@@ -131,7 +131,7 @@ Manage your images in the Media module
 
 ..  versionchanged:: 14.0
     This module has been renamed from :guilabel:`Filelist` to :guilabel:`Media`
-	see `Feature: #107628 - Improved backend module naming and structure <https://docs.typo3.org/permalink/changelog:feature-107628-1729026000>`_.
+    see `Feature: #107628 - Improved backend module naming and structure <https://docs.typo3.org/permalink/changelog:feature-107628-1729026000>`_.
 
 You can manage your previously uploaded images in the backend module
 :guilabel:`Media`:
