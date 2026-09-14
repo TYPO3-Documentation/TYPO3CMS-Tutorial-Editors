@@ -1,7 +1,7 @@
-.. include:: /Includes.rst.txt
+..  include:: /Includes.rst.txt
 
 
-.. _visibility:
+..  _visibility:
 
 ===================
 Видимость элементов
@@ -12,14 +12,14 @@
 В ядре и в расширениях, которые следуют лучшим стандартам, все опции, связанные с видимостью, определяются на вкладке :guilabel:`Доступ` / :guilabel:`Access` в :ref:`свойствах страницы<pages-properties>`.
 
 
-.. _visibility-dates:
+..  _visibility-dates:
 
 Даты публикации
 ===============
 
 Можно указать период времени, в течение которого содержимое будет видно. Это может быть полезно для сезонных объявлений или праздничных периодов. Любая страница или элемент содержимого с заданной :guilabel:`Датой публикации` / :guilabel:`Publish Date` не будет отображаться до этой даты. Если у него есть :guilabel:`Срок истечения` / :guilabel:`Expiration Date`, то с этого момента он будет скрыт.
 
-.. include:: /Images/AutomaticScreenshots/Access/AccessPublicationDate.rst.txt
+..  include:: /Images/AutomaticScreenshots/Access/AccessPublicationDate.rst.txt
 
 При установке даты публикации в будущем и попытке перейти на эту страницу происходит перенаправление на главную страницу.
 

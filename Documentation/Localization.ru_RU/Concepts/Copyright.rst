@@ -1,6 +1,6 @@
-.. include:: /Includes.rst.txt
+..  include:: /Includes.rst.txt
 
-.. _copyright:
+..  _copyright:
 
 ===========================================
 Авторское право и конфиденциальность данных
