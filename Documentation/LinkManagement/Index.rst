@@ -16,7 +16,7 @@ located within the Sites module.
 
 ..  figure:: /Images/ManualScreenshots/LinkManagement/HomeModuleOverview.png
     :alt: Screenshot of the Link Management overview page containing links to each of
-          the sub modules. Redirects, Quick Response Codes and Short URLs.
+        the sub modules. Redirects, Quick Response Codes and Short URLs.
 
 ..  tip::
     If you cannot see the Link Management module, it is likely that either you have
