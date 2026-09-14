@@ -1,7 +1,7 @@
-.. include:: /Includes.rst.txt
+..  include:: /Includes.rst.txt
 
 
-.. _access-control:
+..  _access-control:
 
 ================
 Контроль доступа
@@ -9,36 +9,36 @@
 
 Существует множество способов разграничения доступа к страницам, элементам содержимого и другой информации в вашей системе TYPO3 CMS. Варианты могут быть самыми разными: от скрытия страниц в меню до ограничения видимости содержимого в течение определенного периода времени и вплоть до требования входа в систему для просмотра содержимого.
 
-.. container:: row m-0 p-0
+..  container:: row m-0 p-0
 
-   .. container:: col-md-6 pl-0 pr-3 py-3 m-0
+    ..  container:: col-md-6 pl-0 pr-3 py-3 m-0
 
-      .. container:: card px-0 h-100
+        ..  container:: card px-0 h-100
 
-         .. rst-class:: card-header h3
+            ..  rst-class:: card-header h3
 
-            .. rubric:: :ref:`Видимость<visibility>`
+                ..  rubric:: :ref:`Видимость<visibility>`
 
-         .. container:: card-body
+            ..  container:: card-body
 
-           Когда элемент скрыт, будь то страница, элемент содержимого или новость, он не будет отображаться на сайте. Однако можно предварительно просмотреть его во внутреннем интерфейсе.
+                Когда элемент скрыт, будь то страница, элемент содержимого или новость, он не будет отображаться на сайте. Однако можно предварительно просмотреть его во внутреннем интерфейсе.
 
-   .. container:: col-md-6 pl-0 pr-3 py-3 m-0
+    ..  container:: col-md-6 pl-0 pr-3 py-3 m-0
 
-      .. container:: card px-0 h-100
+        ..  container:: card px-0 h-100
 
-         .. rst-class:: card-header h3
+            ..  rst-class:: card-header h3
 
-            .. rubric:: :ref:`Авторизация на сайте<frontend-login>`
+                ..  rubric:: :ref:`Авторизация на сайте<frontend-login>`
 
-         .. container:: card-body
+            ..  container:: card-body
 
-            Узнайте, как настроить содержимое и страницы таким образом, чтобы они были видны только тем пользователям, которые авторизовались на сайте в разделе с ограниченным доступом.
+                Узнайте, как настроить содержимое и страницы таким образом, чтобы они были видны только тем пользователям, которые авторизовались на сайте в разделе с ограниченным доступом.
 
-.. toctree::
-   :maxdepth: 2
-   :titlesonly:
-   :hidden:
+..  toctree::
+    :maxdepth: 2
+    :titlesonly:
+    :hidden:
 
-   Visibility/Index
-   Login/Index
+    Visibility/Index
+    Login/Index

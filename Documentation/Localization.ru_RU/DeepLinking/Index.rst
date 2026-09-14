@@ -1,7 +1,7 @@
-.. include:: /Includes.rst.txt
+..  include:: /Includes.rst.txt
 
 
-.. _deeplinking:
+..  _deeplinking:
 
 ================
 Внутренние связи
@@ -11,16 +11,16 @@
 
 Например, пользователь может создавать материалы для новой страницы, которая скоро будет опубликована. Используя внутренние ссылки, пользователь может поделиться ссылкой на страницу, над которой он работает, или даже поделиться ссылкой на элемент содержимого, с его работой, и отправить его на проверку другому представителю команды.
 
-.. _deeplinking-sharing:
+..  _deeplinking-sharing:
 
 Обмен ссылками
 ==============
 
 Чтобы поделиться ссылкой, найдите значок :guilabel:`Поделиться` / :guilabel:`Share`, расположенный в правом верхнем углу любой страницы внутреннего интерфейса.
 
-.. figure:: ../Images/ManualScreenshots/DeepLinking/DeepLinkingIcon.png
-  :alt: Значок для обмена
-  :class: with-border
+..  figure:: ../Images/ManualScreenshots/DeepLinking/DeepLinkingIcon.png
+    :alt: Значок для обмена
+    :class: with-border
 
 
 Ссылка на страницу
@@ -28,29 +28,29 @@
 
 В приведенном ниже примере будет создана внутренняя ссылка на страницу `About Us`:
 
-.. figure:: ../Images/ManualScreenshots/DeepLinking/DeepLinkingPageLink.png
-  :alt: Создание ссылки на общий доступ в модуле Страница
-  :class: with-border
+..  figure:: ../Images/ManualScreenshots/DeepLinking/DeepLinkingPageLink.png
+    :alt: Создание ссылки на общий доступ в модуле Страница
+    :class: with-border
 
 Ссылка на элемент содержимого
 -----------------------------
 
 В данном примере будет создана внутренняя ссылка на элемент содержимого `Introduction`, расположенный на странице `About Us`:
 
-.. figure:: ../Images/ManualScreenshots/DeepLinking/DeepLinkingContentElementLink.png
-  :alt: Создание общей ссылки на элемент содержимого
-  :class: with-border
+..  figure:: ../Images/ManualScreenshots/DeepLinking/DeepLinkingContentElementLink.png
+    :alt: Создание общей ссылки на элемент содержимого
+    :class: with-border
 
 Связь с внутренними модулями
 ----------------------------
 
 Существует возможность создания ссылок на места внутри модулей внутреннего интерфейса. В данном примере создается ссылка на модуль `Настройка сайта` / `Site Configuration`.
 
-.. figure:: ../Images/ManualScreenshots/DeepLinking/DeepLinkingSiteModuleLink.png
-  :alt: Создание ссылки на внутренний модуль Сайты
-  :class: with-border
+..  figure:: ../Images/ManualScreenshots/DeepLinking/DeepLinkingSiteModuleLink.png
+    :alt: Создание ссылки на внутренний модуль Сайты
+    :class: with-border
 
-.. _deeplinking-bestpractices:
+..  _deeplinking-bestpractices:
 
 URL-адреса и внутренние ссылки
 ==============================

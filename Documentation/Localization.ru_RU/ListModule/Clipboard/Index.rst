@@ -1,6 +1,6 @@
-.. include:: /Includes.rst.txt
-.. index:: Clipboard
-.. _clipboard:
+..  include:: /Includes.rst.txt
+..  index:: Clipboard
+..  _clipboard:
 
 =============
 Буфер обмена
@@ -10,12 +10,12 @@
 
 Щелкните на значке копирования страницы "Features":
 
-.. include:: /Images/AutomaticScreenshots/ListModule/CopyToClipboard.rst.txt
+..  include:: /Images/AutomaticScreenshots/ListModule/CopyToClipboard.rst.txt
 
 
 Прокрутите вниз и посмотрите в буфер обмена:
 
-.. include:: /Images/AutomaticScreenshots/ListModule/SimpleClipboard.rst.txt
+..  include:: /Images/AutomaticScreenshots/ListModule/SimpleClipboard.rst.txt
 
 
 Обратите внимание, как буфер обмена фиксирует выбор действия "Копировать". Действие "Вырезать" аналогично, но в буфере обмена это будет отражено по-разному.

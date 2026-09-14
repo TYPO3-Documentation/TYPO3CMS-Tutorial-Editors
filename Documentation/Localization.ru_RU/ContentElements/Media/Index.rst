@@ -1,6 +1,6 @@
-.. include:: /Includes.rst.txt
+..  include:: /Includes.rst.txt
 
-.. _media:
+..  _media:
 
 =========================
 Встраивание видео и аудио
@@ -10,22 +10,22 @@
 
 При использовании кнопки :guilabel:`Выбор и загрузка файлов` / :guilabel:`Select & upload files` медиафайл прикрепляется к странице и загружается в папку :guilabel:`user_uploads` в :guilabel:`Список файлов` / :guilabel:`Filelist`.
 
-.. tip::
-   Если использовать только :guilabel:`Выбор и загрузка файлов` / :guilabel:`Select & upload files`, то файлы быстро накапливаются в папке :guilabel:`user_uploads`. Поэтому лучше загружать и упорядочивать файлы с помощью кнопки :guilabel:`Добавить изображение` / :guilabel:`Add Image` или загружать их с помощью модуля :guilabel:`Файл > Список файлов` / :guilabel:`File > Filelist` напрямую, как описано выше.
+..  tip::
+    Если использовать только :guilabel:`Выбор и загрузка файлов` / :guilabel:`Select & upload files`, то файлы быстро накапливаются в папке :guilabel:`user_uploads`. Поэтому лучше загружать и упорядочивать файлы с помощью кнопки :guilabel:`Добавить изображение` / :guilabel:`Add Image` или загружать их с помощью модуля :guilabel:`Файл > Список файлов` / :guilabel:`File > Filelist` напрямую, как описано выше.
 
-.. _add-video-to-page:
+..  _add-video-to-page:
 
 Добавление видео на страницу
 ============================
 
 На вкладке :guilabel:`Медиа` / :guilabel:`Media` нажмите кнопку :guilabel:`Добавить медиа файл` / :guilabel:`Add media file`, а затем выполните те же действия, что и для :ref:`add-image-to-page`.
 
-.. include:: /Images/AutomaticScreenshots/EditContent/EditContentMediaTab.rst.txt
+..  include:: /Images/AutomaticScreenshots/EditContent/EditContentMediaTab.rst.txt
 
 Кроме того, можно нажать кнопку :guilabel:`Добавить медиа по URL` / :guilabel:`Add media by URL`, чтобы вставить ссылку на видео или аудиофайл из Интернета.
 
 
-.. _Configure-the-video:
+..  _Configure-the-video:
 
 Настройка видео
 ===============

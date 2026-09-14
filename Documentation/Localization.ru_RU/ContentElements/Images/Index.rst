@@ -1,7 +1,7 @@
-.. include:: /Includes.rst.txt
+..  include:: /Includes.rst.txt
 
-.. _images-new:
-.. _images:
+..  _images-new:
+..  _images:
 
 ======================
 Работа с изображениями
@@ -9,38 +9,38 @@
 
 Для элементов содержимого, поддерживающих изображения (например, Текст с изображениями / Text & Images, Текст и Медиа / Text & Media, Изображения / Images Only), при создании или редактировании появляется вкладка :guilabel:`Изображения` / :guilabel:`Images`.
 
-.. include:: /Images/AutomaticScreenshots/EditContent/EditContentImagesTab.rst.txt
+..  include:: /Images/AutomaticScreenshots/EditContent/EditContentImagesTab.rst.txt
 
 Лучше всего добавлять новые изображения с помощью модуля :guilabel:`Файл > Список файлов` / :guilabel:`File > Filelist`, который рассматривается в :ref:`главе о модуле файл<file-module>`. Этот значит, что файлы хранятся централизованно, и любая информация или метаданные, добавляемые к изображению, используются везде, где это изображение добавляется на сайте.
 
 При использовании кнопки :guilabel:`Выбор и загрузка файлов` / :guilabel:`Select & upload files` файл изображения прикрепляется к странице и загружается в папку :guilabel:`user_uploads` в :guilabel:`Списке файлов` / :guilabel:`Filelist`.
 
-.. tip::
-   Если использовать только :guilabel:`Выбор и загрузка файлов` / :guilabel:`Select & upload files`, то файлы быстро накапливаются в папке :guilabel:`user_uploads`. Поэтому лучше загружать и упорядочивать файлы с помощью кнопки :guilabel:`Добавить изображение` / :guilabel:`Add Image` или загружать их с помощью модуля :guilabel:`Файл > Список файлов` / :guilabel:`File > Filelist` напрямую, как описано выше.
+..  tip::
+    Если использовать только :guilabel:`Выбор и загрузка файлов` / :guilabel:`Select & upload files`, то файлы быстро накапливаются в папке :guilabel:`user_uploads`. Поэтому лучше загружать и упорядочивать файлы с помощью кнопки :guilabel:`Добавить изображение` / :guilabel:`Add Image` или загружать их с помощью модуля :guilabel:`Файл > Список файлов` / :guilabel:`File > Filelist` напрямую, как описано выше.
 
-.. _add-image-to-page:
+..  _add-image-to-page:
 
 Добавление изображения на страницу
 ==================================
 
-#. На вкладке :guilabel:`Изображения` / :guilabel:`Images` нажмите кнопку :guilabel:`Добавить изображение` / :guilabel:`Add image`. Появится окно :guilabel:`Выбор файлов` / :guilabel:`File selector`, в котором можно найти изображение.
+#.  На вкладке :guilabel:`Изображения` / :guilabel:`Images` нажмите кнопку :guilabel:`Добавить изображение` / :guilabel:`Add image`. Появится окно :guilabel:`Выбор файлов` / :guilabel:`File selector`, в котором можно найти изображение.
 
-   .. include:: /Images/AutomaticScreenshots/Fileadmin/ImageSelector.rst.txt
+    ..  include:: /Images/AutomaticScreenshots/Fileadmin/ImageSelector.rst.txt
 
-#. Пройдитесь по дереву файлов, выберите папку.
-#. Установите флажок :guilabel:`Отображать миниатюры` / :guilabel:`Display thumbnails`, чтобы отобразить предварительный просмотр каждого изображения в папке.
-#. Щелкните по названию изображения для его выделения. Также можно выбрать несколько изображений, щелкнув на значке :guilabel:`+`, и закрыть окно.
+#.  Пройдитесь по дереву файлов, выберите папку.
+#.  Установите флажок :guilabel:`Отображать миниатюры` / :guilabel:`Display thumbnails`, чтобы отобразить предварительный просмотр каждого изображения в папке.
+#.  Щелкните по названию изображения для его выделения. Также можно выбрать несколько изображений, щелкнув на значке :guilabel:`+`, и закрыть окно.
 
-.. _Configure-the-image:
+..  _Configure-the-image:
 
 Настройка изображения
 =====================
 
 Вкладка :guilabel:`Изображения` / :guilabel:`Images` позволяет выполнить ряд действий по настройке изображения.
 
-.. include:: /Images/AutomaticScreenshots/EditContent/EditContentImageProperties.rst.txt
+..  include:: /Images/AutomaticScreenshots/EditContent/EditContentImageProperties.rst.txt
 
-.. _override_image_metadata:
+..  _override_image_metadata:
 
 Метаданные изображения
 ----------------------
@@ -54,7 +54,7 @@
 Вы можете поэкспериментировать с редактированием изображения, обрезая его или изменяя его размер. Внесение изменений здесь не повлияет на исходный файл изображения в Списке файлов.
 
 
-.. _images-appearance:
+..  _images-appearance:
 
 Корректировки медиа
 -------------------

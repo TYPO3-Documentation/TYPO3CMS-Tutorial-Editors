@@ -1,4 +1,4 @@
-.. include:: /Includes.rst.txt
+..  include:: /Includes.rst.txt
 ..  _start:
 
 ===========================
@@ -15,136 +15,136 @@
 
 ----
 
-.. container:: row m-0 p-0
+..  container:: row m-0 p-0
 
-   .. container:: col-md-6 pl-0 pr-3 py-3 m-0
+    ..  container:: col-md-6 pl-0 pr-3 py-3 m-0
 
-      .. container:: card px-0 h-100
+        ..  container:: card px-0 h-100
 
-         .. rst-class:: card-header h3
+            ..  rst-class:: card-header h3
 
-            .. rubric:: :ref:`Начало работы`
+                ..  rubric:: :ref:`Начало работы`
 
-         .. container:: card-body
+            ..  container:: card-body
 
-            *  :ref:`Авторизация во внутреннем интерфейсе TYPO3<login>`
+                *   :ref:`Авторизация во внутреннем интерфейсе TYPO3<login>`
 
-            *  :ref:`Получение помощи с помощью встроенных средств поддержки TYPO3<help-inside>`
+                *   :ref:`Получение помощи с помощью встроенных средств поддержки TYPO3<help-inside>`
 
-            *  :ref:`Об этом руководстве<introduction>`
+                *   :ref:`Об этом руководстве<introduction>`
 
-   .. container:: col-md-6 pl-0 pr-3 py-3 m-0
+    ..  container:: col-md-6 pl-0 pr-3 py-3 m-0
 
-      .. container:: card px-0 h-100
+        ..  container:: card px-0 h-100
 
-         .. rst-class:: card-header h3
+            ..  rst-class:: card-header h3
 
-            .. rubric:: :ref:`Работа с деревом страниц<pages>`
+                ..  rubric:: :ref:`Работа с деревом страниц<pages>`
 
-         .. container:: card-body
+            ..  container:: card-body
 
-            *  :ref:`Создание страниц<pages-creating>`
+                *   :ref:`Создание страниц<pages-creating>`
 
-            *  :ref:`Создание нескольких страниц<pages-multiple>`
+                *   :ref:`Создание нескольких страниц<pages-multiple>`
 
-            *  :ref:`Работа со страницами<pages-working-with>`
+                *   :ref:`Работа со страницами<pages-working-with>`
 
-            *  :ref:`Типы страниц<pages-types>` и :ref:`Свойства страниц<pages-properties>`
+                *   :ref:`Типы страниц<pages-types>` и :ref:`Свойства страниц<pages-properties>`
 
-   .. container:: col-md-6 pl-0 pr-3 py-3 m-0
+    ..  container:: col-md-6 pl-0 pr-3 py-3 m-0
 
-      .. container:: card px-0 h-100
+        ..  container:: card px-0 h-100
 
-         .. rst-class:: card-header h3
+            ..  rst-class:: card-header h3
 
-            .. rubric:: :ref:`Создание содержимого и управление его размещением<content-elements>`
+                ..  rubric:: :ref:`Создание содержимого и управление его размещением<content-elements>`
 
-         .. container:: card-body
+            ..  container:: card-body
 
-            *  :ref:`Создание содержимого<content-creating>`
+                *   :ref:`Создание содержимого<content-creating>`
 
-            *  :ref:`Редактирование<content-editing>` и :ref:`управление содержимым<content-working>`
+                *   :ref:`Редактирование<content-editing>` и :ref:`управление содержимым<content-working>`
 
-            *  :ref:`Работа с изображениями<images-new>` и :ref:`другими средствами передачи информации<media>`
+                *   :ref:`Работа с изображениями<images-new>` и :ref:`другими средствами передачи информации<media>`
 
-            *  :ref:`Создание контактной формы<mail-form>`
+                *   :ref:`Создание контактной формы<mail-form>`
 
-   .. container:: col-md-6 pl-0 pr-3 py-3 m-0
+    ..  container:: col-md-6 pl-0 pr-3 py-3 m-0
 
-      .. container:: card px-0 h-100
+        ..  container:: card px-0 h-100
 
-         .. rst-class:: card-header h3
+            ..  rst-class:: card-header h3
 
-            .. rubric:: :ref:`Управление записями<list-module>`
+                ..  rubric:: :ref:`Управление записями<list-module>`
 
-         .. container:: card-body
+            ..  container:: card-body
 
-            *  :ref:`Использование модуля Список / List внутреннего интерфейса<list-module>`
+                *   :ref:`Использование модуля Список / List внутреннего интерфейса<list-module>`
 
-            *  :ref:`Перемещение содержимого с помощью буфера обмена<clipboard>`
+                *   :ref:`Перемещение содержимого с помощью буфера обмена<clipboard>`
 
-            *  :ref:`Дополнительные возможности буфера обмена<advanced_clipboard_usage>`
+                *   :ref:`Дополнительные возможности буфера обмена<advanced_clipboard_usage>`
 
-            *  :ref:`Массовое редактирование материалов<mass-editing>`
+                *   :ref:`Массовое редактирование материалов<mass-editing>`
 
-   .. container:: col-md-6 pl-0 pr-3 py-3 m-0
+    ..  container:: col-md-6 pl-0 pr-3 py-3 m-0
 
-      .. container:: card px-0 h-100
+        ..  container:: card px-0 h-100
 
-         .. rst-class:: card-header h3
+            ..  rst-class:: card-header h3
 
-            .. rubric:: Инструменты для редакторов
+                ..  rubric:: Инструменты для редакторов
 
-         .. container:: card-body
+            ..  container:: card-body
 
-            *  :ref:`Управление файлами с помощью Списка файлов / Filelist<file-module>`
+                *   :ref:`Управление файлами с помощью Списка файлов / Filelist<file-module>`
 
-            *  :ref:`Создание ссылок во внутреннем интерфейсе с помощью функции Deep Linking<deeplinking>`
+                *   :ref:`Создание ссылок во внутреннем интерфейсе с помощью функции Deep Linking<deeplinking>`
 
-            *  :ref:`Разграничение доступа к страницам и содержимому с помощью функции управления доступом<access-control>`
+                *   :ref:`Разграничение доступа к страницам и содержимому с помощью функции управления доступом<access-control>`
 
-            *  :ref:`Работа с несколькими языками<languages>`
+                *   :ref:`Работа с несколькими языками<languages>`
 
-   .. container:: col-md-6 pl-0 pr-3 py-3 m-0
+    ..  container:: col-md-6 pl-0 pr-3 py-3 m-0
 
-      .. container:: card px-0 h-100
+        ..  container:: card px-0 h-100
 
-         .. rst-class:: card-header h3
+            ..  rst-class:: card-header h3
 
-            .. rubric:: :ref:`Концепции <concepts>`
+                ..  rubric:: :ref:`Концепции <concepts>`
 
-         .. container:: card-body
+            ..  container:: card-body
 
-            *  :ref:`Создание доступного содержимого <accessibility>`
+                *   :ref:`Создание доступного содержимого <accessibility>`
 
-            *  :ref:`Кэширование <cache>`
+                *   :ref:`Кэширование <cache>`
 
-            *  :ref:`Авторское право и конфиденциальность данных <copyright>`
+                *   :ref:`Авторское право и конфиденциальность данных <copyright>`
 
-            *  :ref:`Уровень абстрагирования файлов / File abstraction layer (FAL) <fal>`
+                *   :ref:`Уровень абстрагирования файлов / File abstraction layer (FAL) <fal>`
 
-.. toctree::
-   :maxdepth: 2
-   :titlesonly:
-   :hidden:
+..  toctree::
+    :maxdepth: 2
+    :titlesonly:
+    :hidden:
 
-   Login/Index
-   Pages/Index
-   ContentElements/Index
-   ListModule/Index
-   FileModule/Index
-   Languages/Index
-   AccessControl/Index
-   DeepLinking/Index
-   HelpInside/Index
-   Concepts/Index
-   About
-   NextSteps/Index
+    Login/Index
+    Pages/Index
+    ContentElements/Index
+    ListModule/Index
+    FileModule/Index
+    Languages/Index
+    AccessControl/Index
+    DeepLinking/Index
+    HelpInside/Index
+    Concepts/Index
+    About
+    NextSteps/Index
 
 .. Meta Menu
 
-.. toctree::
-   :hidden:
+..  toctree::
+    :hidden:
 
-   Sitemap
+    Sitemap
 

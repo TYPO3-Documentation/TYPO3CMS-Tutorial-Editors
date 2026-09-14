@@ -1,7 +1,7 @@
-.. include:: /Includes.rst.txt
+..  include:: /Includes.rst.txt
 
 
-.. _rte:
+..  _rte:
 
 =================================
 Форматирование текста в редакторе
@@ -9,22 +9,22 @@
 
 Интерфейс текстового редактора TYPO3 мало чем отличается от обычного текстового редактора Word. Опции, доступные на панелях инструментов, зависят от того, как настроена ваша система TYPO3.
 
-.. include:: /Images/AutomaticScreenshots/EditContent/EditContentRichTextEditor.rst.txt
+..  include:: /Images/AutomaticScreenshots/EditContent/EditContentRichTextEditor.rst.txt
 
 Можно форматировать текст, задавать выравнивание, вставлять таблицы и символы, добавлять в текст внутренние и внешние ссылки.
 
 
-.. _rte-linking:
+..  _rte-linking:
 
 Создание ссылки
 ===============
 
-#. Выберите текст, который необходимо связать.
-#. Щелкните на пиктограмме :guilabel:`Ссылка` / :guilabel:`Link` на панели инструментов. На экране появится окно :guilabel:`Ссылки` / :guilabel:`Link Browser`.
+#.  Выберите текст, который необходимо связать.
+#.  Щелкните на пиктограмме :guilabel:`Ссылка` / :guilabel:`Link` на панели инструментов. На экране появится окно :guilabel:`Ссылки` / :guilabel:`Link Browser`.
 
-   .. figure:: /Images/ManualScreenshots/Link/LinkBrowser.png
-      :alt: Браузер ссылок TYPO3 CMS
-      :class: with-border
+    ..  figure:: /Images/ManualScreenshots/Link/LinkBrowser.png
+        :alt: Браузер ссылок TYPO3 CMS
+        :class: with-border
 
 Здесь можно установить ссылку на внутреннюю страницу, файл, папку, внешний URL-адрес, адрес электронной почты или номер телефона.
 
@@ -36,9 +36,9 @@
 
 Кроме того, можно сделать ссылку на определенную позицию (якорь) на странице. Перейдите к странице, на которую нужно сделать ссылку, затем нажмите на значок стрелки рядом с названием страницы. Появятся элементы содержимого этой страницы, и вы сможете выбрать элемент содержимого, на который нужно сделать ссылку.
 
-.. figure:: ../../Images/ManualScreenshots/Link/LinkBrowserAnchor.png
-   :alt: Отображение якорных элементов на странице
-   :class: with-border
+..  figure:: ../../Images/ManualScreenshots/Link/LinkBrowserAnchor.png
+    :alt: Отображение якорных элементов на странице
+    :class: with-border
 
 Окно :guilabel:`Ссылки` / :guilabel:`Link Browser` закроется, и ссылка будет добавлена в текст.
 
@@ -46,15 +46,15 @@
 Внешние ссылки
 --------------
 
-#. В окне :guilabel:`Ссылки` перейдите на вкладку :guilabel:`*Внешний URL`.:guilabel:`*External URL` tab.
-#. Введите ссылку в поле :guilabel:`URL`.
-#. В раскрывающемся списке Цель / Target выберите :guilabel:`Новое окно` / :guilabel:`New window`, чтобы открыть ссылку в новом окне браузера.
+#.  В окне :guilabel:`Ссылки` перейдите на вкладку :guilabel:`*Внешний URL`.:guilabel:`*External URL` tab.
+#.  Введите ссылку в поле :guilabel:`URL`.
+#.  В раскрывающемся списке Цель / Target выберите :guilabel:`Новое окно` / :guilabel:`New window`, чтобы открыть ссылку в новом окне браузера.
 
-   .. figure:: ../../Images/ManualScreenshots/Link/LinkBrowserExternal.png
-      :alt: Отображение якорных элементов на странице
-      :class: with-border
+    ..  figure:: ../../Images/ManualScreenshots/Link/LinkBrowserExternal.png
+        :alt: Отображение якорных элементов на странице
+        :class: with-border
 
-#. Нажмите кнопку :guilabel:`Установить ссылку` / :guilabel:`Set Link`, чтобы закрыть окно :guilabel:`Ссылки`.
+#.  Нажмите кнопку :guilabel:`Установить ссылку` / :guilabel:`Set Link`, чтобы закрыть окно :guilabel:`Ссылки`.
 
 
 Удаление ссылки

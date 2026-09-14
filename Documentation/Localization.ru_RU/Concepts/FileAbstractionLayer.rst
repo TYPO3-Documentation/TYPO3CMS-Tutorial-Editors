@@ -1,6 +1,6 @@
-.. include:: /Includes.rst.txt
+..  include:: /Includes.rst.txt
 
-.. _fal:
+..  _fal:
 
 =============================================================
 Уровень абстрагирования файлов / File Abstraction Layer (FAL)
