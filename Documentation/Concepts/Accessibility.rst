@@ -6,14 +6,14 @@
 Accessibility
 =============
 
-   Accessibility is the design of products, services, [...]
-   or environments so as to be usable by people with disabilities.
-   The concept of accessible design and practice of accessible development
-   ensures both "direct access" (i.e. unassisted) and "indirect access"
-   meaning compatibility with a person's assistive technology
-   (computer screen readers, keyboard only access).
+    Accessibility is the design of products, services, [...]
+    or environments so as to be usable by people with disabilities.
+    The concept of accessible design and practice of accessible development
+    ensures both "direct access" (i.e. unassisted) and "indirect access"
+    meaning compatibility with a person's assistive technology
+    (computer screen readers, keyboard only access).
 
-   https://en.wikipedia.org/wiki/Accessibility
+    https://en.wikipedia.org/wiki/Accessibility
 
 As an editor, it is your responsibility to help provide accessible content.
 
