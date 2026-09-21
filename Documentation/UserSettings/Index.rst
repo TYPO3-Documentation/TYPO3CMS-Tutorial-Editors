@@ -26,3 +26,4 @@ You will see four tabs:
     :titlesonly:
 
     PersonalData/Index
+    AccountSecurity/Index
