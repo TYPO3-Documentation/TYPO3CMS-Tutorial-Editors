@@ -16,3 +16,11 @@ First click your name in the top-right corner of the topbar, then select
     :zoom: lightbox
 
     Open the user settings from the avatar menu in the topbar
+
+You will see four tabs:
+
+..  toctree::
+    :maxdepth: 1
+    :titlesonly:
+
+    PersonalData/Index
