@@ -138,4 +138,4 @@ contains detailed information about setting up a multilingual web site and how t
 do translation and localization.
 
 :ref:`Site Handling <t3coreapi:sitehandling-basics>` contains
-information about how to add more languages to you site configuration.
+information about how to add more languages to your site configuration.
