@@ -1,20 +1,20 @@
 ..  include:: /Includes.rst.txt
 
 
-..  _usersettings:
+..  _user-settings:
 
 =============
 User settings
 =============
 
 The user settings module is where you can check your profile details, change
-your password, and customize your backend interface behavior.
+your password, and change how the backend looks and behaves.
 
-First click on your name/user profile avatar in the top-right
-corner of the topbar, then select :guilabel:`User Settings`.
+First click your name in the top-right corner of the topbar, then select
+:guilabel:`User Settings`.
 
-..  figure:: ../Images/ManualScreenshots/UserSettings/UserSettingsModule.png
-    :alt: The user settings module
+..  figure:: /Images/ManualScreenshots/UserSettings/UserSettingsModule.png
+    :alt: The avatar menu in the topbar with the User Settings entry
     :zoom: lightbox
 
-    The user settings module
+    Open the user settings from the avatar menu in the topbar

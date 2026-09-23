@@ -70,15 +70,15 @@ the `Official Introduction Package <https://extensions.typo3.org/extension/intro
 
     ..  card:: Tools For Editors
 
-        *   :ref:`User settings <usersettings>`
-
         *   :ref:`Manage files with Media module <media-module>`
 
-        *   :ref:`Create links in the backend with Deep Linking <deeplinking>`
+        *   :ref:`Working with multiple languages <languages>`
+
+        *   :ref:`Adjust your profile and backend preferences in User settings <user-settings>`
 
         *   :ref:`Restrict access to pages and content with Access Control <access-control>`
 
-        *   :ref:`Working with multiple languages <languages>`
+        *   :ref:`Create links in the backend with Deep Linking <deeplinking>`
 
     ..  card:: :ref:`Concepts <concepts>`
 
