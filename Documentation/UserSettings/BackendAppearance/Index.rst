@@ -1,50 +1,56 @@
+:navigation-title: Backend appearance
+
 ..  include:: /Includes.rst.txt
 
-..  _usersettings-backend-appearance:
+..  _user-settings-backend-appearance:
 
-==================
-Backend appearance
-==================
+==============================================
+Change how the TYPO3 backend looks and behaves
+==============================================
 
-Customise the look, feel, and navigation behavior of your workspace.
+Customize the look, feel, and navigation behavior of your backend. These
+settings only change your own backend, not what other editors see.
 
-*   **Color scheme**: Toggle between light mode and dark mode.
-*   **Theme**: Choose an :ref:`installed theme <usersettings-backend-themes>`
-    to skin your workspace interface.
-*   **Start up in the following module**: Select which module you see
-    when you log into the backend (for example,
-    :guilabel:`Dashboard`, :guilabel:`Content > Layout`, or :guilabel:`Media`).
-*   **Format of window title in backend:** Set the browser tab text (for
-    example, choosing whether the page title or your site name is displayed
-    first).
-*   **First day of week in calendar popups:** Set whether date picker calendar
-    popups begin weeks on a Sunday or Monday.
+*   **Color scheme:** Choose :guilabel:`Light mode`, :guilabel:`Dark mode` or
+    :guilabel:`Auto detect`, which follows the setting of your operating
+    system.
+*   **Theme:** Choose one of the :ref:`backend themes <user-settings-backend-themes>`.
+*   **Start up in the following module:** Select the module you see when you
+    log into the backend, for example :guilabel:`Dashboard`,
+    :guilabel:`Content > Layout` or :guilabel:`Media`.
+*   **Format of window title in backend:** Set the text of the browser tab,
+    for example whether the page title or the site name comes first.
+*   **First day of week in calendar popups:** Set whether calendars in date
+    pickers start on Sunday or Monday.
 
-..  figure:: ../../Images/ManualScreenshots/UserSettings/UserSettingsBackendAppearance.png
-    :alt: The backend appearance tab in the user settings module
+..  figure:: /Images/ManualScreenshots/UserSettings/UserSettingsBackendAppearance.png
+    :alt: The Backend appearance tab with the fields Color scheme, Theme, Start up in the following module, Format of window title in backend and First day of week in calendar popups
     :zoom: lightbox
 
-    The backend appearance tab in the user settings module
+    The Backend appearance tab
 
-..  _usersettings-backend-themes:
+..  _user-settings-backend-themes:
 
 Backend themes
 ==============
 
-..  figure:: ../../Images/ManualScreenshots/UserSettings/ClassicTheme.png
-    :alt: The "Classic" backend theme
+A theme changes the look of the backend. It does not change where things
+are or what you can do.
+
+..  figure:: /Images/ManualScreenshots/UserSettings/ClassicTheme.png
+    :alt: The backend in the Classic theme
     :zoom: lightbox
 
     The "Classic" backend theme
 
-..  figure:: ../../Images/ManualScreenshots/UserSettings/FreshTheme.png
-    :alt: The "Fresh" backend theme
+..  figure:: /Images/ManualScreenshots/UserSettings/FreshTheme.png
+    :alt: The backend in the Fresh theme
     :zoom: lightbox
 
     The "Fresh" backend theme
 
-..  figure:: ../../Images/ManualScreenshots/UserSettings/ModernTheme.png
-    :alt: The "Modern" backend theme
+..  figure:: /Images/ManualScreenshots/UserSettings/ModernTheme.png
+    :alt: The backend in the Modern theme
     :zoom: lightbox
 
     The "Modern" backend theme
