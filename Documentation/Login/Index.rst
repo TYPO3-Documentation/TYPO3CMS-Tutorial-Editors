@@ -1,5 +1,6 @@
 :navigation-title: Backend login
 ..  include:: /Includes.rst.txt
+
 ..  _login:
 
 ===========================
@@ -14,7 +15,6 @@ Navigate to  :samp:`https://example.org/typo3` in your browser. The
 your project documentation or ask your administrator for the correct backend
 URL.
 
-
 ..  figure:: /Images/ManualScreenshots/Login/BackendLoginPage.png
     :alt: The TYPO3 backend login box
     :zoom: gallery
@@ -22,9 +22,11 @@ URL.
     The login box
 
 If you are having problems logging in, have a look at the
-troubleshooting tips below. If you are still having problems, **ask your
-administrator for help**. Troubleshooting tips for administrators are at the
-bottom.
+troubleshooting tips.
+
+..  contents::
+    :depth: 1
+    :local:
 
 ..  _login-forgot-password:
 
@@ -111,3 +113,28 @@ Troubleshooting: Advice for administrators
 See
 `TYPO3 Getting Started, Troubleshooting common TYPO3 backend login problems
 <https://docs.typo3.org/permalink/t3start:troubleshooting-backend-login>`_.
+
+..  _ending-your-session:
+
+Ending your session
+===================
+
+When you are finished updating content or managing records, you should properly
+end your session to secure your workspace. TYPO3 keeps your session open as
+long as you are actively working, but explicitly logging out ensures that
+unauthorized users cannot access your backend account from your device.
+
+..  _logout-how-to:
+
+How to log out
+--------------
+
+To log out of the TYPO3 backend, look at the top bar interface:
+
+#.  Locate your :guilabel:`Toolbar (top right) > User Avatar` (or your username
+    initials).
+#.  Click on the avatar to expand the :guilabel:`User Profile Menu`.
+#.  Select :guilabel:`Log out` from the dropdown menu options.
+
+Once clicked, your session is immediately destroyed, your authentication tokens
+are cleared, and you will be redirected back to the TYPO3 backend login page.
