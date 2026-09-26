@@ -44,7 +44,8 @@ Page title
 The page title field is used for several purposes. From a SEO perspective
 it is mainly used to define the default URL segment and as a fallback title,
 if you do not set a specific SEO title. More information about the usage of
-the title fields can be found at :ref:`title-for-search-engines`.
+the title fields can be found at
+:ref:`Title for search engines <title-for-search-engines>`.
 
 ..  _seo-page-properties-general-url-segment:
 
@@ -107,7 +108,9 @@ clear overview of the topic of this page.
     description is not too long, so it fits in the search result snippets.
 
 ..  seealso::
-    You can use the :ref:`dashboard-widgets-missing-description` to get an
+    You can use the
+    :ref:`"Missing Meta Description" widget <dashboard-widgets-missing-description>`
+    to get an
     overview of all pages without a description and edit them directly.
 
 ..  _seo-page-properties-index-page:
@@ -190,7 +193,8 @@ Facebook and LinkedIn) and X (formerly Twitter) Cards.
 Both implementations allow you to set a title, a description and to provide an
 image. When this information is not set manually, the social network will
 decide itself what to show. Most probably it will use the information from
-:ref:`title-for-search-engines` and :ref:`seo-page-properties-social-media-description`.
+:ref:`Title for search engines <title-for-search-engines>` and the
+:ref:`social media description <seo-page-properties-social-media-description>`.
 
 ..  _seo-page-properties-social-media-title:
 
