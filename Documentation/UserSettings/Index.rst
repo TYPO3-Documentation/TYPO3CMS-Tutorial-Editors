@@ -26,3 +26,4 @@ You will see four tabs:
     PersonalData/Index
     AccountSecurity/Index
     BackendAppearance/Index
+    Personalization/Index
