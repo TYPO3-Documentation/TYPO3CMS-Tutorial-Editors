@@ -10,6 +10,7 @@
                edit-on-github-branch="main"
                edit-on-github="TYPO3-Documentation/TYPO3CMS-Tutorial-Editors"
                typo3-core-preferred="14.3"
+               check-link-text="true"
                interlink-shortcode="t3editors"
     />
     <project
