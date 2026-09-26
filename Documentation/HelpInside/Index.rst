@@ -12,7 +12,7 @@ help guide you when using the TYPO3.
 ..  versionchanged:: 12.0
     The context sensitive help, also called "CSH" has been removed as it was
     outdated and not maintained. Refer to the
-    :ref:`typo3-online-documentation` instead.
+    :ref:`TYPO3 online documentation <typo3-online-documentation>` instead.
 
 ..  toctree::
     :caption: Topics
