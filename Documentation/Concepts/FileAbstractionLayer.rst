@@ -26,5 +26,4 @@ third-party sources such as Youtube or Vimeo.
 
 In TYPO3 you can manage all assets in the backend module
 :guilabel:`File > Filelist` if you have sufficient permissions. See chapter
-:ref:`managing-files`.
-
+:ref:`Managing media in the TYPO3 CMS <managing-files>`.

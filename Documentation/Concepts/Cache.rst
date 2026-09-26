@@ -89,7 +89,8 @@ and click the button representing a lightning bolt with the tooltip
     Clear cache for this page
 
 When you reload the affected page, the changes should be visible right away.
-If the changes are not visible, clear the :ref:`browser-cache`. Or use an
+If the changes are not visible, clear the
+:ref:`browser cache <browser-cache>`. Or use an
 incognito tab in your browser.
 
 Only editors who have the relevant user rights can flush the cache of
