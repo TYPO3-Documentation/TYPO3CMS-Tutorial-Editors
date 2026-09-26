@@ -7,11 +7,12 @@
 Working with languages
 ======================
 
-TYPO3 CMS comes with the built-in ability to handle web sites
-in multiple languages.
+TYPO3 CMS comes with built-in support for managing multi-language sites from a
+single installation.
 
-Detailed information about setting up a multilingual web site is
-found in the `Frontend Localization Guide <https://docs.typo3.org/permalink/t3translate:start>`_.
+..  note::
+    More detailed information can be found in the
+    `Frontend Localization Guide <https://docs.typo3.org/permalink/t3translate:start>`_.
 
 ..  youtube:: XzKBdjUV53k
 
@@ -19,113 +20,114 @@ found in the `Frontend Localization Guide <https://docs.typo3.org/permalink/t3tr
 
 ..  _languages-new:
 
-Defining a new language
-=======================
+Language Configuration
+======================
 
-Languages are defined per site.
+Languages are managed at the site level. To add or configure languages for a
+site, navigate to :guilabel:`Site Management > Sites`.
 
-Adding a new language is done in the :guilabel:`Site Management > Sites`
-module, which is restricted to admin users. Detailed information on how to
-configure your site to add more languages can be found in the :ref:`Site
-Handling <t3coreapi:sitehandling-basics>` documentation.
-
-The `Introduction Package's <https://extensions.typo3.org/extension/introduction/>`__
-default languages are English, Danish and German languages.
+..  note::
+    Managing site languages requires administrative privileges. For detailed setup
+    instructions, see the :ref:`Site Handling <t3coreapi:sitehandling-basics>`
+    documentation.
 
 ..  _Translation-modes:
 
-Translation modes
-=================
+Translation strategies
+======================
 
-When you choose to translate content, TYPO3 offers two methods:
+When translating your content, TYPO3 supports two distinct localization
+workflows: a :ref:`connected <languages-translation-mode-connected>` and
+an :ref:`independent <languages-translation-mode-copy>` mode
 
-*   :guilabel:`Translate` - Use this option when you have a strict translation workflow
-    or content structure.
+..  _languages-translation-mode-connected:
 
-    TYPO3 will create a direct connection between the
-    original language and the translation. When the original language content
-    is changed, the translations are marked as out-of-date and you can see the
-    changes in the original language when editing a translation.
+Translate (connected)
+---------------------
 
-    This mode means that TYPO3 can help you maintain consistency when you have
-    separate teams localizing content. This mode also allows TYPO3 to
-    automatically mark translated content for review, and notify translators
-    when the original text changes.
-*   :guilabel:`Copy` - Use this option when you would like the content structure to be
-    free and independent between languages.
+Use this mode if your site requires a strict, parallel content structure across
+all languages. TYPO3 maintains a direct link between the source element and its
+translation.
 
-    TYPO3 creates a copy of the content in the target language. No connection
-    is maintained between the original and the translation, which means
-    subsequent versions of the translations can easily diverge from the
-    original.
+*   Out-of-date flags: Updates to the source text automatically flag
+    translations as out-of-date.
+*   Side-by-side editing: Editors can view original source changes while
+    updating the translation.
+*   Review workflows: Supports automated notifications and review tracking for
+    localization teams.
+
+..  _languages-translation-mode-copy:
+
+Copy (independent)
+------------------
+
+Use this mode if your localized pages require unique layouts, different content
+structures, or completely independent text.
+
+*   Decoupled content: TYPO3 creates a standalone copy of the source content in
+    the target language.
+*   Structural freedom: No link is maintained, allowing the localized page
+    structure to diverge entirely from the source.
+
 
 ..  _languages-translations:
 
-Working with translations
-=========================
+Localizing a page
+=================
 
-#.  Working with the `Introduction Package <https://extensions.typo3.org/extension/introduction/>`__,
-    in the :guilabel:`Content > Layout` module, go to the "Congratulations" home page.
-#.  Using the menu in the docheader, switch to the "Languages" view.
+Follow these steps to translate a page and its content elements.
 
-    ..  figure:: ../Images/ManualScreenshots/Language/LanguagesPageLanguages.png
-        :alt: The "Languages" view of the Content Layout module
+
+Create the page translation
+---------------------------
+
+#.  Navigate to the :guilabel:`Content > Layout` module and select the page you
+    want to translate.
+#.  Locate the :guilabel:`Create new translation` dropdown and select
+    the target language that you want to translate into, making sure the target
+    language has been configured in :guilabel:`Site Management > Sites`. This
+    will open the translation wizard.
+
+    ..  figure:: ../Images/ManualScreenshots/Language/PageLanguages.png
+        :alt: Creating a translation of a page
         :zoom: gallery
 
-#.  In the drop-down menu "Create a new translation of this page", choose a
-    language, let's say German in this case. The page properties displays for
-    the German version of the page.
-#.  Type the German translation in the :guilabel:`Page Title` field.
+#.  Click through the translation wizard, choosing a translation mode of
+    :guilabel:`Translate` or :guilabel:`Copy`
+    (see :ref:`Translation strategies <Translation-modes>`) for each content
+    element on the page until you see :guilabel:`Localization completed`. The
+    last screen of the wizard shows a summary of what will be translated.
+    Click on the :guilabel:`Finish` button.
 
-    ..  figure:: ../Images/ManualScreenshots/Language/LanguagesNewPageTranslation.png
-        :alt: Creating a new page translation
+    ..  figure:: ../Images/ManualScreenshots/Language/LanguagesTranslateContentElements.png
+        :alt: The translation wizard
         :zoom: gallery
 
-#.  Save and close the page. The screen now displays two versions of the content
-    elements showing the default language and the German version side by side.
+#.  Click on :guilabel:`Language Comparison` (1). The screen now
+    displays two versions of the page - the default language version on the left
+    and the target language version on the right. Translate **page** fields such
+    as the title by clicking on the pencil icon(2) and then typing in your
+    translations. The new target language **content elements** are hidden in the
+    frontend by default. **Enable**(3) each content element after you have
+    finished translating its text.
 
     ..  figure:: ../Images/ManualScreenshots/Language/LanguagesPageVersions.png
-        :alt: Viewing languages side by side in the page module
+        :alt: Viewing translated pages side by side in the content layout module
         :zoom: gallery
-
-#.  In the German column, click the :guilabel:`Translate` button for a content
-    element. The :guilabel:`Localize` wizard displays.
-
-    ..  figure:: ../Images/ManualScreenshots/Language/LanguagesTranslateContentElementsStep1.png
-        :alt: First step of the Localize wizard
-        :zoom: gallery
-
-#.  For this example, click the :guilabel:`Translate` button then click
-    :guilabel:`Next`.
-    Step 2 of the wizard will pass by automatically since we are translating in
-    a single language.
-    Step 3 provides a summary of the elements that will be translated.
-#.  Click :guilabel:`Next` to complete the wizard.
-
-    The German version of the content element is now prepended with *[Translate
-    to German:]*. The element is hidden by default, so that incomplete
-    translations aren't displayed on the frontend until you are ready.
-
-    ..  figure:: ../Images/ManualScreenshots/Language/LanguagesNewContentTranslation.png
-        :alt: A newly created content element translation
-        :zoom: gallery
-
-        A newly created content element translation
 
 ..  _Adjusting-the-View:
 
-Adjusting the view
+Changing the view
 ==================
 
-The :guilabel:`Content > Layout` module may now seem cluttered, with one column for each
-translation. You can view a single language at a time by switching back to the
-"Columns" mode and choosing a specific language in the docheader.
+Change the view from side-by-side pages to a single language by clicking on
+:guilabel:`Layout` mode and then choosing the language you want to see(1).
 
-..  figure:: ../Images/ManualScreenshots/Language/LanguagesColumnModeWithTranslation.png
-    :alt: The "Columns" mode displaying a translation
+..  figure:: ../Images/ManualScreenshots/Language/LanguagesSingleLanguageLayout.png
+    :alt: The Layout button and language dropdown
     :zoom: gallery
 
-    The "Columns" mode displaying a translation
+    Buttons to change the view on multilingual pages
 
 ..  _next-steps-l10n:
 
@@ -133,7 +135,7 @@ Next steps
 ==========
 The :ref:`Frontend Localization Guide <typo3/guide-frontendlocalization:start>`
 contains detailed information about setting up a multilingual web site and how to
-actually do the translation and localization.
+do translation and localization.
 
-The :ref:`Site Handling <t3coreapi:sitehandling-basics>` documentation contains
-information about how to configure your site to add more languages.
+:ref:`Site Handling <t3coreapi:sitehandling-basics>` contains
+information about how to add more languages to your site configuration.
