@@ -119,7 +119,7 @@ See
 Ending your session
 ===================
 
-When you are finished updating content or managing records, you should properly
+When you have finished updating content or managing records, you should properly
 end your session to secure your workspace. TYPO3 keeps your session open as
 long as you are actively working, but explicitly logging out ensures that
 unauthorized users cannot access your backend account from your device.
@@ -129,12 +129,15 @@ unauthorized users cannot access your backend account from your device.
 How to log out
 --------------
 
-To log out of the TYPO3 backend, look at the top bar interface:
+To log out of the TYPO3 backend, have a look at the top bar:
 
-#.  Locate your :guilabel:`Toolbar (top right) > User Avatar` (or your username
-    initials).
-#.  Click on the avatar to expand the :guilabel:`User Profile Menu`.
-#.  Select :guilabel:`Log out` from the dropdown menu options.
+#.  Click your name in the top-right corner.
+#.  Select :guilabel:`Logout` from the menu.
 
-Once clicked, your session is immediately destroyed, your authentication tokens
-are cleared, and you will be redirected back to the TYPO3 backend login page.
+..  figure:: /Images/ManualScreenshots/UserSettings/UserSettingsModule.png
+    :alt: The avatar menu in the top bar with the Logout button
+    :zoom: lightbox
+
+    Logout from the avatar menu in the top bar
+
+You will be logged out straight away and taken back to the login page.
