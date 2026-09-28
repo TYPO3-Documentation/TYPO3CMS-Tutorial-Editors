@@ -1,27 +1,32 @@
+:navigation-title: Personalization
+
 ..  include:: /Includes.rst.txt
 
-..  _usersettings-personalization:
+..  _user-settings-personalization:
 
-===============
-Personalization
-===============
+=====================================================
+Fine-tune editing, uploads and copying in the backend
+=====================================================
 
-More settings to fine-tune your workspace behavior.
+These settings change how the backend behaves while you work.
 
-*   **Max. title length:** Limit the character length of page and record titles
-    displayed in lists to keep your workspace clean.
-*   **File upload directly in Doc-module:** Enable or disable the direct file
-    dropzone and upload button inside your form editing views.
-*   **Use quick editing for records in the page module:** Skip the full record
-    view and open a streamlined editor when clicking on content elements.
-*   **Enable dynamic "recently used" category in wizards:** Allow content
-    element wizards to track and display your most frequently used elements
-    at the top.
-*   **Recursive copy.. :** Toggle whether copying a page should automatically
-    copy all of its sub-pages and nested content as well.
+*   **Maximum length of displayed labels / record titles:** How many
+    characters of a title are shown in lists before it is shortened. Between
+    10 and 255, 50 by default.
+*   **Allow to directly upload files when editing or creating records:** Shows
+    a drop zone and an upload button in file fields when you edit a record.
+*   **Use quick editing for records in the Layout module:** Opens content
+    elements in a small editing form instead of the full record view.
+*   **Show hidden files and folders in the Media module:** Shows files and
+    folders that TYPO3 normally hides.
+*   **Enable dynamic "recently used" category in wizards:** Puts the elements
+    you use most at the top of the wizards.
+*   **Recursive copy: Enter the number of page sublevels to include, when a
+    page is copied:** How many levels below a copied page are copied with it.
+    `0` copies just the page.
 
-..  figure:: ../../Images/ManualScreenshots/UserSettings/UserSettingsPersonalization.png
-    :alt: The personalization tab in the user settings module
+..  figure:: /Images/ManualScreenshots/UserSettings/UserSettingsPersonalization.png
+    :alt: The Personalization tab with six settings, from the maximum title length to recursive copy
     :zoom: lightbox
 
-    The personalization tab in the user settings module
+    The Personalization tab
