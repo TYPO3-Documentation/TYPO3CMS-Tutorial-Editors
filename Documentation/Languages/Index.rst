@@ -1,6 +1,5 @@
 ..  include:: /Includes.rst.txt
 
-
 ..  _languages:
 
 ======================
@@ -10,9 +9,9 @@ Working with languages
 TYPO3 CMS comes with built-in support for managing multi-language sites from a
 single installation.
 
-..  note::
+..  seealso::
     More detailed information can be found in the
-    `Frontend Localization Guide <https://docs.typo3.org/permalink/t3translate:start>`_.
+    :ref:`Frontend Localization Guide <typo3/guide-frontendlocalization:start>`.
 
 ..  youtube:: XzKBdjUV53k
 
@@ -20,7 +19,7 @@ single installation.
 
 ..  _languages-new:
 
-Language Configuration
+Language configuration
 ======================
 
 Languages are managed at the site level. To add or configure languages for a
@@ -36,9 +35,9 @@ site, navigate to :guilabel:`Site Management > Sites`.
 Translation strategies
 ======================
 
-When translating your content, TYPO3 supports two distinct localization
-workflows: a :ref:`connected <languages-translation-mode-connected>` and
-an :ref:`independent <languages-translation-mode-copy>` mode
+When you translate content, there are two modes: a
+:ref:`connected <languages-translation-mode-connected>` mode and an
+:ref:`independent <languages-translation-mode-copy>` mode.
 
 ..  _languages-translation-mode-connected:
 
@@ -49,12 +48,10 @@ Use this mode if your site requires a strict, parallel content structure across
 all languages. TYPO3 maintains a direct link between the source element and its
 translation.
 
-*   Out-of-date flags: Updates to the source text automatically flag
-    translations as out-of-date.
-*   Side-by-side editing: Editors can view original source changes while
-    updating the translation.
-*   Review workflows: Supports automated notifications and review tracking for
-    localization teams.
+*   When the source text changes, TYPO3 marks the translation as out of date.
+*   While you are translating, you can see the changes in the source language next
+    to your text.
+*   Translation teams can be notified and can track what still needs review.
 
 ..  _languages-translation-mode-copy:
 
@@ -77,6 +74,7 @@ Localizing a page
 
 Follow these steps to translate a page and its content elements.
 
+..  _languages-create-page-translation:
 
 Create the page translation
 ---------------------------
@@ -88,7 +86,7 @@ Create the page translation
     language has been configured in :guilabel:`Site Management > Sites`. This
     will open the translation wizard.
 
-    ..  figure:: ../Images/ManualScreenshots/Language/PageLanguages.png
+    ..  figure:: /Images/ManualScreenshots/Language/PageLanguages.png
         :alt: Creating a translation of a page
         :zoom: gallery
 
@@ -104,14 +102,14 @@ Create the page translation
         :zoom: gallery
 
 #.  Click on :guilabel:`Language Comparison` (1). The screen now
-    displays two versions of the page - the default language version on the left
-    and the target language version on the right. Translate **page** fields such
-    as the title by clicking on the pencil icon(2) and then typing in your
-    translations. The new target language **content elements** are hidden in the
-    frontend by default. **Enable**(3) each content element after you have
-    finished translating its text.
+    displays two versions of the page: the default language version on the
+    left and the target language version on the right. Translate **page**
+    fields such as the title by clicking the pencil icon (2) and typing in
+    your translations. The new content elements in the target language are
+    hidden in the frontend by default. **Enable** (3) each content element
+    after you have finished translating its text.
 
-    ..  figure:: ../Images/ManualScreenshots/Language/LanguagesPageVersions.png
+    ..  figure:: /Images/ManualScreenshots/Language/LanguagesPageVersions.png
         :alt: Viewing translated pages side by side in the content layout module
         :zoom: gallery
 
@@ -121,9 +119,9 @@ Changing the view
 ==================
 
 Change the view from side-by-side pages to a single language by clicking on
-:guilabel:`Layout` mode and then choosing the language you want to see(1).
+:guilabel:`Layout` mode and then choosing the language you want to see (1).
 
-..  figure:: ../Images/ManualScreenshots/Language/LanguagesSingleLanguageLayout.png
+..  figure:: /Images/ManualScreenshots/Language/LanguagesSingleLanguageLayout.png
     :alt: The Layout button and language dropdown
     :zoom: gallery
 
