@@ -17,7 +17,7 @@ First click on
 :guilabel:`Content > Layout` in the backend sidebar to display the page tree in
 the middle pane.
 
-..  _Move-Pages:
+..  _move-pages:
 
 Moving pages
 ============
@@ -49,13 +49,13 @@ inside the page tree.
     between copying or moving.
 #.  Select :guilabel:`Move this item`.
 
-..  _Copy-Pages:
+..  _copy-pages:
 
 ..  tip::
     To copy a page instead of moving it, follow the exact same steps but select
     :guilabel:`Copy` from the confirmation prompt.
 
-..  _Delete-Pages:
+..  _delete-pages:
 
 Deleting pages
 ==============
@@ -84,7 +84,7 @@ the many editing shortcuts and page functions.
     Right click on a page to see the context menu
 
 ..  _pages-other-features:
-..  _Filter-the-page-tree:
+..  _filter-the-page-tree:
 
 Filtering the page tree
 =======================

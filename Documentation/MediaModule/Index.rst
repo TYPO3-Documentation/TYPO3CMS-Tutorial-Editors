@@ -100,7 +100,7 @@ There is a clipboard just like in the :guilabel:`Content > Record` module.
     The :guilabel:`Media` module's clipboard
 
 The handling is the same as the description used in the :ref:`Advanced clipboard usage
-<advanced_clipboard_usage>`.
+<advanced-clipboard-usage>`.
 
 ..  index::
     Files; Management
@@ -157,7 +157,7 @@ the working area and drag them onto the target folder in the navigation tree.
 Releasing the mouse button over the target folder moves the selected items
 there.
 
-This is a quick alternative to using the :ref:`clipboard <advanced_clipboard_usage>`,
+This is a quick alternative to using the :ref:`clipboard <advanced-clipboard-usage>`,
 which remains useful when moving items across several steps or sessions.
 
 ..  figure:: /Images/ManualScreenshots/MediaModule/DragDropMove.avif

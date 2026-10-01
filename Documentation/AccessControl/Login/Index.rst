@@ -25,7 +25,7 @@ Frontend users are always part of frontend groups. Access is granted to
 groups, never directly to users. Users and groups are defined like any other
 record, and stored in a suitable page in the backend.
 
-..  _Create-a-Usergroup:
+..  _create-a-usergroup:
 
 Create a user group and user
 ============================

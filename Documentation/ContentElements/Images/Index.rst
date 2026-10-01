@@ -50,14 +50,14 @@ file by name. The search includes all the subfolders of the selected folder.
     Click the name of an image to select it or use the "Upload files" dialoge.
     Alternatively, mark several images and import all of them at once.
 
-..  _Configure-the-image:
+..  _configure-the-image:
 
 Configure the image
 ===================
 
 The :guilabel:`Images` tab lets you perform a number of actions to configure an image.
 
-..  _override_image_metadata:
+..  _override-image-metadata:
 
 Image metadata
 --------------
