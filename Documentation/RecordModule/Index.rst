@@ -23,7 +23,7 @@ Records
         You can copy and paste records using the context menu and then choose
         "copy" (or cut if you want to move the record instead).
 
-    ..  card:: :ref:`Clipboard usage <advanced_clipboard_usage>`
+    ..  card:: :ref:`Clipboard usage <advanced-clipboard-usage>`
 
         Find out how to make get the most out of the clipboard with an overview of some
         its extra features.

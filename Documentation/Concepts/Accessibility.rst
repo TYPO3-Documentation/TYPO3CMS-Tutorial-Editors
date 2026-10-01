@@ -77,7 +77,7 @@ In TYPO3 when you are uploading or managing an image file in the module
 :ref:`metadata <file-metadata>` of this file.
 
 When you are displaying an image as :guilabel:`Image` content element you
-can :ref:`override <override_image_metadata>` the alternative text to fit the
+can :ref:`override <override-image-metadata>` the alternative text to fit the
 context or use the default.
 
 ..  note::
