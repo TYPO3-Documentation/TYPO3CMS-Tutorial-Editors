@@ -18,8 +18,9 @@ Creating content
     :zoom: gallery
 
 ..  versionchanged:: 14.0
+    :changelog: feature-107628-1729026000
+
     The main module `Web` has been renamed to `Content`.
-    See `Feature: #107628 - Improved backend module naming and structure <https://docs.typo3.org/permalink/changelog:feature-107628-1729026000>`_
 
 In the :guilabel:`Content > Layout` module, on any page, click the :guilabel:`+
 Create new content` button in the place where you want to insert content:
