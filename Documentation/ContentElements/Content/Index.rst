@@ -17,8 +17,9 @@ Managing content
     :zoom: gallery
 
 ..  versionchanged:: 14.0
+    :changelog: feature-107628-1729026000
+
     The main module `Web` has been renamed to `Content`.
-    See `Feature: #107628 - Improved backend module naming and structure <https://docs.typo3.org/permalink/changelog:feature-107628-1729026000>`_
 
 
 In TYPO3, working with content happens mostly in the :guilabel:`Content > Layout`
@@ -45,8 +46,10 @@ Overview of the Layout module in TYPO3
 ======================================
 
 ..  versionchanged:: 14.0
-    This module has been renamed from :guilabel:`Web > Pages` to :guilabel:`Content > Layout`
-    see `Feature: #107628 - Improved backend module naming and structure <https://docs.typo3.org/permalink/changelog:feature-107628-1729026000>`_.
+    :changelog: feature-107628-1729026000
+
+    This module has been renamed from :guilabel:`Web > Pages` to
+    :guilabel:`Content > Layout`.
 
 ..  figure:: /Images/ManualScreenshots/ContentElements/PageModuleAnnotated.png
     :alt: A typical view of the Content Layout module with various content columns
