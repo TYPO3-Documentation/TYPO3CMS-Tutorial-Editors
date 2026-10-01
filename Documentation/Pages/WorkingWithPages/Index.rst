@@ -13,7 +13,7 @@ Working with pages
 
 You can manage pages directly in the page tree.
 
-..  _Move-Pages:
+..  _move-pages:
 
 Move pages
 ==========
@@ -43,7 +43,7 @@ Move pages
     move the page.
 #.  Select :guilabel:`Move this item`.
 
-..  _Copy-Pages:
+..  _copy-pages:
 
 Copy pages
 ==========
@@ -53,7 +53,7 @@ Copy pages
 #.  Release your mouse, then select :guilabel:`Copy` in the confirmation
     message.
 
-..  _Delete-Pages:
+..  _delete-pages:
 
 Delete pages
 ============
@@ -76,7 +76,7 @@ A variety of functions are also available from the right-click context
 menu.
 
 ..  _pages-other-features:
-..  _Filter-the-page-tree:
+..  _filter-the-page-tree:
 
 Filter the page tree
 ====================

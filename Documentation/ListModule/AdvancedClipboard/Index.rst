@@ -3,7 +3,7 @@
 ..  include:: /Includes.rst.txt
 ..  index:: Clipboard; Advanced
 ..  _clipboard:
-..  _advanced_clipboard_usage:
+..  _advanced-clipboard-usage:
 ..  _the-numeric-clipboard-pads-managing-many-elements:
 
 ============================================================

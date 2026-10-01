@@ -32,7 +32,7 @@ Handling <t3coreapi:sitehandling-basics>` documentation.
 The `Introduction Package's <https://extensions.typo3.org/extension/introduction/>`__
 default languages are English, Danish and German languages.
 
-..  _Translation-modes:
+..  _translation-modes:
 
 Translation modes
 =================
@@ -112,7 +112,7 @@ Working with translations
 
         A newly created content element translation
 
-..  _Adjusting-the-View:
+..  _adjusting-the-view:
 
 Adjusting the view
 ==================
