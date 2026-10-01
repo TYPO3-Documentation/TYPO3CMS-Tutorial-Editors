@@ -64,7 +64,7 @@ the `Official Introduction Package <https://extensions.typo3.org/extension/intro
 
         *   :ref:`Moving content with the clipboard <clipboard>`
 
-        *   :ref:`Advanced clipboard features<advanced_clipboard_usage>`
+        *   :ref:`Advanced clipboard features<advanced-clipboard-usage>`
 
         *   :ref:`Mass editing content<mass-editing>`
 

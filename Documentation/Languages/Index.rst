@@ -30,7 +30,7 @@ site, navigate to :guilabel:`Site Management > Sites`.
     instructions, see the :ref:`Site Handling <t3coreapi:sitehandling-basics>`
     documentation.
 
-..  _Translation-modes:
+..  _translation-modes:
 
 Translation strategies
 ======================
@@ -92,7 +92,7 @@ Create the page translation
 
 #.  Click through the translation wizard, choosing a translation mode of
     :guilabel:`Translate` or :guilabel:`Copy`
-    (see :ref:`Translation strategies <Translation-modes>`) for each content
+    (see :ref:`Translation strategies <translation-modes>`) for each content
     element on the page until you see :guilabel:`Localization completed`. The
     last screen of the wizard shows a summary of what will be translated.
     Click on the :guilabel:`Finish` button.
@@ -113,7 +113,7 @@ Create the page translation
         :alt: Viewing translated pages side by side in the content layout module
         :zoom: gallery
 
-..  _Adjusting-the-View:
+..  _adjusting-the-view:
 
 Changing the view
 ==================

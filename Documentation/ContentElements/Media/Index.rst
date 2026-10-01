@@ -54,7 +54,7 @@ source like YouTube or Vimeo, use the button :guilabel:`Add media by URL` instea
     administrator to do it for you or upload it on an external plattform and
     embed it.
 
-..  _Configure-the-video:
+..  _configure-the-video:
 
 Configure the video
 ===================
@@ -64,7 +64,7 @@ start playing as soon as the page loads.
 
 You can configure various settings for media files (for example, adding a
 border, setting page position and behavior) just as you would to
-:ref:`configure an image<Configure-the-image>`.
+:ref:`configure an image<configure-the-image>`.
 
 ..  _video-data-privacy:
 
