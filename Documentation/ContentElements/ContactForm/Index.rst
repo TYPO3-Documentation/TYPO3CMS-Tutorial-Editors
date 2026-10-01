@@ -66,7 +66,7 @@ with one pre-defined form already built, which you can use to get started.
     ..  include:: /Images/AutomaticScreenshots/Forms/FormOutput.rst.txt
 
 
-..  _Create-form-scratch:
+..  _create-form-scratch:
 
 Create a form from scratch
 ==========================
@@ -112,7 +112,7 @@ Create a form from scratch
     ..  include:: /Images/AutomaticScreenshots/FormsBlank/FormsPreview.rst.txt
 
 
-..  _Working-with-Forms:
+..  _working-with-forms:
 
 Working with forms
 ==================
