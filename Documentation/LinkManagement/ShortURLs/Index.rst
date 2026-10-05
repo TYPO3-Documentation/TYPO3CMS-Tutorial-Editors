@@ -7,7 +7,7 @@
 Short URLs
 ==========
 
-Short URLs are a simple and convenient way to share short or "tiny" URLs that point back to Pages in your TYPO3 installation.
+Short URLs are a way to share short or "tiny" URLs that point back to Pages in your TYPO3 installation.
 
 Short URLs can point to files such as documents or redirect to external URLs.
 
@@ -18,7 +18,7 @@ Scenario - shortening a long URL
 
 You want to share a link to your profile page found on your company website, however the URL itself is very long.
 
-With Short URLs you can generate a simple URL that can be shared easily. They can also be
+With Short URLs you can generate a short URL that you can share. They can also be
 repurposed at a later date and can point to a completely new page or resource.
 
 ..  _short-urls-creating:
