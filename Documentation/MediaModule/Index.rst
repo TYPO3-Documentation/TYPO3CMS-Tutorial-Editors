@@ -134,7 +134,7 @@ Uploading new files
 
 You can upload files to a given folder by using the context menu
 or to the current directory by using the action icon in the docheader. Also, drag & drop
-will initiate the upload. Just drag any file into the main view to upload it to the
+will initiate the upload. Drag any file into the main view to upload it to the
 current folder, or select the `click, browse and choose files` option.
 
 ..  figure:: /Images/ManualScreenshots/MediaModule/FileUpload.png
