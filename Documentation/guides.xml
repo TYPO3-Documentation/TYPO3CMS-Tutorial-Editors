@@ -12,6 +12,7 @@
                typo3-core-preferred="14.3"
                check-link-text="true"
                interlink-shortcode="t3editors"
+               check-headline-anchors="true"
     />
     <project
             title="Tutorial for Editors"
