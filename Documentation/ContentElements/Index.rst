@@ -31,7 +31,7 @@ Content elements
 
     ..  card:: :ref:`Managing Content<content-working>`
 
-        ..  card-image:: /Images/ManualScreenshots/ContentElements/ManageContent.png
+        ..  card-image:: /Images/GeneratedScreenshots/ContentElements/ManageContent.png
             :alt: Manage content elements in the TYPO3 backend
 
         This chapter contains information on how you can move, copy and cut content. It also has information

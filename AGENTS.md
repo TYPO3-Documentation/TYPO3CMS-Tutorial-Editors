@@ -34,13 +34,19 @@ To add a screenshot:
     change, such as a hidden element, or a record of its own, add it to
     `Build/Screenshots/create-records.php`. Find the records of the theme
     by their title, because their uids can differ between TYPO3 versions,
-    and export the ones a screenshot needs in the list at the end.
+    and export the ones a screenshot needs in the list at the end. Give
+    every time that a screenshot shows a fixed value, such as the times of
+    the history, so the image does not change with every run.
 2.  Add an entry to `Build/Screenshots/screenshots.mjs`: the `url`, and
-    either `from`/`to` for a part of a module or `window: true` for the
-    whole backend. A module screenshot shows where the module is in the
-    menu, with every other menu group collapsed. Its page tree is hidden
-    unless `pageTree: true`, and an `until` element ends the image below
-    the part that matters. Use `prepare` for clicks before the screenshot.
+    either `from`/`to` for a part of a module, `window: true` for the
+    whole backend, or `modal: true` for a dialog. A module screenshot
+    shows where the module is in the menu: the group named in `menu`,
+    `Content` by default, stays open and every other group is collapsed.
+    Its page tree is hidden unless `pageTree: true`, and an `until`
+    element ends the image below the part that matters. Use `prepare`
+    for clicks before the screenshot. A view whose route needs a token,
+    such as the history, cannot be opened by its URL; `prepare` opens it
+    through the backend, the way an editor does.
 3.  Take only that screenshot, then all of them once, and commit only the
     images that really changed.
 4.  Screenshots that a script cannot take, such as one during drag and
