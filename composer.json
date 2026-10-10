@@ -1,9 +1,49 @@
 {
-    "name": "typo3/tutorial-editors",
-    "type": "typo3-cms-documentation",
-    "description": "This tutorial explains how to add or change content on an existing website using TYPO3 CMS. It provides the most basic instructions step by step and illustrated with screenshots.",
-    "license": "OPL-1.0",
-    "require": {
-      "typo3/cms-core": "^14.3"
+  "name": "typo3/tutorial-editors",
+  "type": "typo3-cms-documentation",
+  "description": "This tutorial explains how to add or change content on an existing website using TYPO3 CMS. It provides the most basic instructions step by step and illustrated with screenshots.",
+  "license": "OPL-1.0",
+  "require": {
+    "typo3/cms-core": "dev-main as 14.3"
+  },
+  "require-dev": {
+    "typo3/cms-backend": "dev-main as 14.3",
+    "typo3/cms-dashboard": "dev-main as 14.3",
+    "typo3/cms-extbase": "dev-main as 14.3",
+    "typo3/cms-felogin": "dev-main as 14.3",
+    "typo3/cms-filelist": "dev-main as 14.3",
+    "typo3/cms-filemetadata": "dev-main as 14.3",
+    "typo3/cms-fluid": "dev-main as 14.3",
+    "typo3/cms-form": "dev-main as 14.3",
+    "typo3/cms-frontend": "dev-main as 14.3",
+    "typo3/cms-impexp": "dev-main as 14.3",
+    "typo3/cms-info": "dev-main as 14.3",
+    "typo3/cms-install": "dev-main as 14.3",
+    "typo3/cms-linkvalidator": "dev-main as 14.3",
+    "typo3/cms-lowlevel": "dev-main as 14.3",
+    "typo3/cms-recycler": "dev-main as 14.3",
+    "typo3/cms-redirects": "dev-main as 14.3",
+    "typo3/cms-rte-ckeditor": "dev-main as 14.3",
+    "typo3/cms-seo": "dev-main as 14.3",
+    "typo3/cms-sys-note": "dev-main as 14.3",
+    "typo3/cms-viewpage": "dev-main as 14.3",
+    "typo3/theme-camino": "dev-main as 14.3"
+  },
+  "minimum-stability": "dev",
+  "prefer-stable": true,
+  "config": {
+    "allow-plugins": {
+      "typo3/class-alias-loader": true,
+      "typo3/cms-composer-installers": true
+    },
+    "bin-dir": ".Build/bin",
+    "sort-packages": true,
+    "vendor-dir": ".Build/vendor"
+  },
+  "extra": {
+    "typo3/cms": {
+      "extension-key": "t3docs-tutorial-editors",
+      "web-dir": ".Build/public"
     }
+  }
 }

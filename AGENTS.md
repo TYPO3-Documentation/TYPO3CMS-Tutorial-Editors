@@ -4,6 +4,7 @@
 
 ```
 Documentation/                   # the actual manual (reST source, published to docs.typo3.org)
+Build/Screenshots/               # takes the generated screenshots, see below
 CONTRIBUTING.md                  # how to contribute
 ```
 
@@ -11,6 +12,39 @@ CONTRIBUTING.md                  # how to contribute
 
 - `make docs` — render the manual locally with Docker
 - `make test-docs` — render in minimal-test mode (the same validation CI runs); use this to validate any change before committing
+- `make install` — install the TYPO3 Core packages into `.Build`, which
+  `make screenshots` needs; run it once in a new worktree
+- `make screenshots` — take the screenshots listed in
+  `Build/Screenshots/screenshots.mjs` from a throwaway TYPO3 instance;
+  `Build/Scripts/runTests.sh -s screenshots ContentElements/PageModule`
+  takes only the named ones
+
+## Generated screenshots
+
+The screenshots in `Documentation/Images/GeneratedScreenshots/` come from a
+TYPO3 instance with the demo site of the Camino theme, which the Core ships.
+The pages and content elements are the ones of the theme, so the
+screenshots show a real website instead of placeholder records. The backend
+user is an administrator named `j.doe`, without debug mode, so the backend
+looks as an editor sees it, without field names and uids in brackets.
+
+To add a screenshot:
+
+1.  Prefer what the Camino demo site already has. If a screenshot needs a
+    change, such as a hidden element, or a record of its own, add it to
+    `Build/Screenshots/create-records.php`. Find the records of the theme
+    by their title, because their uids can differ between TYPO3 versions,
+    and export the ones a screenshot needs in the list at the end.
+2.  Add an entry to `Build/Screenshots/screenshots.mjs`: the `url`, and
+    either `from`/`to` for a part of a module or `window: true` for the
+    whole backend. A module screenshot shows where the module is in the
+    menu, with every other menu group collapsed. Its page tree is hidden
+    unless `pageTree: true`, and an `until` element ends the image below
+    the part that matters. Use `prepare` for clicks before the screenshot.
+3.  Take only that screenshot, then all of them once, and commit only the
+    images that really changed.
+4.  Screenshots that a script cannot take, such as one during drag and
+    drop, stay in `Documentation/Images/ManualScreenshots/`.
 
 ## Documentation writing rules
 
