@@ -32,7 +32,7 @@ content elements using the context menu.
 
 The following screenshot demonstrates how to open the :guilabel:`Content > Page` module:
 
-..  figure:: /Images/ManualScreenshots/ContentElements/PageModule.png
+..  figure:: /Images/GeneratedScreenshots/ContentElements/PageModule.png
     :alt: Screenshot demonstrating the page module and the page tree in the TYPO3 backend
     :zoom: gallery
 
@@ -84,7 +84,7 @@ You can temporarily hide content that should be hidden for a while but will be
 needed later. You can also hide a content element while you are still working
 on it. Hidden content elements are not visible in the frontend
 
-..  figure:: /Images/ManualScreenshots/ContentElements/HideContent.png
+..  figure:: /Images/GeneratedScreenshots/ContentElements/HideContent.png
     :alt: A content element in the page module is hidden
     :zoom: gallery
 
@@ -113,7 +113,7 @@ page within the page tree.
 Copy and paste content elements
 ===============================
 
-..  figure:: /Images/ManualScreenshots/ContentElements/CopyContent.png
+..  figure:: /Images/GeneratedScreenshots/ContentElements/CopyContent.png
     :alt: The context menu of a content menu in the TYO3 backend
     :zoom: gallery
 
