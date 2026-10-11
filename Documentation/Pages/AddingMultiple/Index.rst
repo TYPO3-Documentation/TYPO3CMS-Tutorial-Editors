@@ -20,14 +20,14 @@ First click into the :guilabel:`Content > Layout` module in the left sidebar.
     Right-click a "parent" page in the page tree and choose
     :guilabel:`More options > Create multiple pages` from the context menu.
 
-    ..  figure:: ../../Images/ManualScreenshots/PageTree/MultiplePagesContextMenu.png
+    ..  figure:: /Images/GeneratedScreenshots/PageTree/MultiplePagesContextMenu.png
         :alt: Select "Create multiple pages" in the context menu
         :zoom: lightbox
 
 #.  **Name your pages**: Enter a title and a page type for each page. Here
     we are just creating normal "standard" pages.
 
-    ..  figure:: ../../Images/ManualScreenshots/Page/MultiplePagesCreatePages.png
+    ..  figure:: /Images/GeneratedScreenshots/Page/MultiplePagesCreatePages.png
         :alt: The "Create Multiple Pages" screen
         :zoom: lightbox
 
@@ -37,7 +37,7 @@ First click into the :guilabel:`Content > Layout` module in the left sidebar.
 #.  **Set page position and visibility** if necessary at the bottom of the
     screen:
 
-    ..  figure:: ../../Images/ManualScreenshots/Page/MultiplePagesConfigure.png
+    ..  figure:: /Images/GeneratedScreenshots/Page/MultiplePagesConfigure.png
         :alt: The "Create Multiple Pages" configuration
         :zoom: lightbox
 
