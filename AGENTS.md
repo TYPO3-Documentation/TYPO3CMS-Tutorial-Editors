@@ -24,9 +24,17 @@ CONTRIBUTING.md                  # how to contribute
 The screenshots in `Documentation/Images/GeneratedScreenshots/` come from a
 TYPO3 instance with the demo site of the Camino theme, which the Core ships.
 The pages and content elements are the ones of the theme, so the
-screenshots show a real website instead of placeholder records. The backend
-user is an administrator named `j.doe`, without debug mode, so the backend
-looks as an editor sees it, without field names and uids in brackets.
+screenshots show a real website instead of placeholder records. Camino
+replaces the standard content types of fluid_styled_content with its own.
+The page "Pilgrim stories", which `create-records.php` adds, swaps them
+back and has one column that allows all of them, for the screenshots of
+creating content as a standard installation offers it.
+
+The backend runs without debug mode, so it looks as an editor sees it,
+without field names and uids in brackets. Screenshots are taken as the
+administrator `j.doe`. A screenshot that names `user: 'e.doe'` is taken as
+Erika Doe instead, a common editor who may create the typical content
+types, lists and dividers only.
 
 To add a screenshot:
 

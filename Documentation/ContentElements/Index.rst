@@ -15,7 +15,7 @@ Content elements
 
     ..  card:: :ref:`Creating Content<content-creating>`
 
-        ..  card-image:: /Images/ManualScreenshots/ContentElements/CreateContentElement.png
+        ..  card-image:: /Images/GeneratedScreenshots/ContentElements/CreateContentElement.png
             :alt: Creating content elements in the TYPO3 backend
 
         This chapter contains information you need to start adding content

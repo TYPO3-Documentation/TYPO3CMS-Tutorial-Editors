@@ -11,8 +11,9 @@ import { chromium } from 'playwright';
 
 const baseUrl = process.env.TYPO3_BASE_URL ?? 'http://localhost:8080';
 const target = process.env.SCREENSHOT_TARGET ?? '../../Documentation/Images/GeneratedScreenshots';
-const username = process.env.TYPO3_USERNAME ?? 'j.doe';
-const password = process.env.TYPO3_PASSWORD ?? 'Screenshots-2026!';
+// The administrator, unless a screenshot names another user
+const defaultUser = 'j.doe';
+const password = 'Screenshots-2026!';
 
 const moduleUrl = (path, id) => `${baseUrl}/typo3/module/${path}?id=${id}`;
 const editUrl = (table, uid) => `${baseUrl}/typo3/record/edit?edit[${table}][${uid}]=edit`;
@@ -20,7 +21,7 @@ const editUrl = (table, uid) => `${baseUrl}/typo3/record/edit?edit[${table}][${u
 const margin = 12;
 
 // The uids of the records that create-records.php looked up
-const { packingList, toiletries, extras, essentialItems, faqs } =
+const { packingList, toiletries, extras, essentialItems, faqs, stories } =
   JSON.parse(readFileSync('../../var/screenshot-records.json', 'utf8'));
 
 // A content element in the Content > Layout module
@@ -46,6 +47,43 @@ const openPageHistory = (uid, page) => async (frame) => {
   url.searchParams.set('element', `pages:${page}`);
   await frame.goto(url.toString());
   await frame.waitForLoadState('networkidle');
+};
+
+// A column of the Content > Layout module. The main column of the Camino
+// layouts, "Content area", has colPos 0.
+const column = (colPos) => `.t3js-page-column[data-colpos="${colPos}"]`;
+
+// Opens the New Page Content wizard of the content area, on the tab named:
+// the wizard remembers the last one. The hero area at the top allows the
+// hero elements only.
+const openWizard = (tab) => async (frame) => {
+  await frame.locator(column(0)).getByRole('button', { name: 'Create new content' }).first().click();
+  const dialog = frame.page().locator('typo3-backend-modal dialog[open]');
+  await dialog.waitFor();
+  await frame.page().waitForTimeout(1000);
+  await dialog.getByText(tab, { exact: true }).filter({ visible: true }).first().click();
+  await frame.page().waitForTimeout(500);
+  // The search field has the focus, which would look selected
+  await frame.page().evaluate(() => document.activeElement?.blur());
+};
+
+// The size of the New Page Content wizard, which grows with the window
+const wizardSize = { modal: true, width: 1024, height: 600 };
+
+// A field of a form, found by its label: the backend runs without debug
+// mode, which would show the field names
+const field = (name) => `.form-group:has([name$="[${name}]"])`;
+
+// Creates a Text & Media element on the page, up to the filled header
+const newTextAndMedia = async (frame) => {
+  await openWizard('Typical page content')(frame);
+  await frame.page().locator('typo3-backend-modal dialog[open]').getByRole('button', { name: /^Text & Media/ }).click();
+  await frame.waitForURL(/record\/edit/);
+  await frame.waitForLoadState('networkidle');
+  await frame.locator(`${field('header')} input[type="text"]`).first().fill('My new content element');
+  // The field shows that it changed only once it lost the focus
+  await frame.locator('h1').first().click();
+  await frame.page().waitForTimeout(500);
 };
 
 const screenshots = {
@@ -139,6 +177,85 @@ const screenshots = {
     from: 'table thead',
     to: 'table tbody tr:has-text("modified") >> nth=0',
   },
+  // The thumbnail at the top of the chapter
+  'ContentElements/CreateContentElement': {
+    // Narrow, as the page shows the image 250 px wide
+    width: 800,
+    url: moduleUrl('web/layout', stories),
+    from: `${column(0)} .t3-page-column-header`,
+    to: `${column(0)} .t3js-page-ce-sortable .t3-page-ce-header`,
+    // The text of the element follows right below its header
+    margin: 4,
+  },
+  'NewContentElement/CreateNew': {
+    width: 1440,
+    url: moduleUrl('web/layout', stories),
+    prepare: async (frame) => {
+      // Marks the button that the text names
+      await frame.locator(column(0)).getByRole('button', { name: 'Create new content' }).first()
+        .evaluate((button) => { button.style.outline = '3px solid #ff8700'; button.style.outlineOffset = '3px'; });
+    },
+    window: true,
+    pageTree: true,
+    until: `${column(0)} .t3js-page-ce-sortable .t3-page-ce-header`,
+  },
+  'ContentElements/WizardTypical': {
+    user: 'e.doe',
+    url: moduleUrl('web/layout', stories),
+    prepare: openWizard('Typical page content'),
+    ...wizardSize,
+  },
+  'ContentElements/WizardAdvanced': {
+    url: moduleUrl('web/layout', stories),
+    prepare: openWizard('Typical page content'),
+    ...wizardSize,
+  },
+  'NewContentElement/WizardTabList': {
+    url: moduleUrl('web/layout', stories),
+    prepare: openWizard('Lists'),
+    ...wizardSize,
+  },
+  'NewContentElement/WizardTabForm': {
+    url: moduleUrl('web/layout', stories),
+    prepare: openWizard('Form elements'),
+    ...wizardSize,
+  },
+  'NewContentElement/WizardTabMenu': {
+    url: moduleUrl('web/layout', stories),
+    prepare: openWizard('Menu'),
+    ...wizardSize,
+  },
+  'NewContentElement/WizardTabSpecialElements': {
+    url: moduleUrl('web/layout', stories),
+    prepare: openWizard('Special elements'),
+    ...wizardSize,
+  },
+  'NewContentElement/NewContentElement': {
+    url: moduleUrl('web/layout', stories),
+    prepare: newTextAndMedia,
+    from: '.module-docheader',
+    to: `${field('header_layout')}`,
+    // The form fills the module frame, a margin would show the menu
+    margin: 0,
+  },
+  // Last, as it saves a content element on the page of the screenshots above
+  'NewContentElement/ContentSaved': {
+    url: moduleUrl('web/layout', stories),
+    prepare: async (frame) => {
+      await newTextAndMedia(frame);
+      // The text, which the step after the screenshot of the form types in
+      await frame.locator('.ck-editor__editable').first().click();
+      await frame.page().keyboard.type('Every pilgrim has a story to tell.');
+      await frame.getByRole('button', { name: 'Save' }).first().click();
+      // A saved record can be deleted, a new one cannot
+      await frame.getByRole('button', { name: 'Delete' }).first().waitFor();
+      await frame.getByRole('button', { name: 'Close' }).first().click();
+      await frame.locator(column(0)).waitFor();
+      await frame.waitForLoadState('networkidle');
+    },
+    from: `${column(0)} .t3-page-column-header`,
+    to: `${column(0)} .t3js-page-ce-sortable >> nth=0`,
+  },
 };
 
 // Hides the page tree, unless the screenshot needs it, and collapses the
@@ -168,12 +285,21 @@ const collapseNavigation = async (pageTree, menu) => {
 const viewportHeight = 2000;
 
 const browser = await chromium.launch();
-const page = await browser.newPage({ viewport: { width: 1280, height: viewportHeight } });
-await page.goto(`${baseUrl}/typo3/`);
-await page.fill('#t3-username', username);
-await page.fill('#t3-password', password);
-await page.click('#t3-login-submit');
-await page.waitForURL(/\/typo3\/(main|module)/);
+// One logged in window per user, opened when a screenshot needs it
+const windows = {};
+const login = async (username) => {
+  if (windows[username] === undefined) {
+    const window = await browser.newPage({ viewport: { width: 1280, height: viewportHeight } });
+    await window.goto(`${baseUrl}/typo3/`);
+    await window.fill('#t3-username', username);
+    await window.fill('#t3-password', password);
+    await window.click('#t3-login-submit');
+    await window.waitForURL(/\/typo3\/(main|module)/);
+    windows[username] = window;
+  }
+  return windows[username];
+};
+let page;
 
 const names = process.argv.length > 2 ? process.argv.slice(2) : Object.keys(screenshots);
 for (const name of names) {
@@ -181,6 +307,7 @@ for (const name of names) {
   if (screenshot === undefined) {
     throw new Error(`Unknown screenshot "${name}"`);
   }
+  page = await login(screenshot.user ?? defaultUser);
   await page.setViewportSize({
     width: screenshot.width ?? 1280,
     height: screenshot.height ?? viewportHeight,

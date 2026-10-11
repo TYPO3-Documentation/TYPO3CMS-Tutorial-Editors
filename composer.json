@@ -14,6 +14,7 @@
     "typo3/cms-filelist": "dev-main as 14.3",
     "typo3/cms-filemetadata": "dev-main as 14.3",
     "typo3/cms-fluid": "dev-main as 14.3",
+    "typo3/cms-fluid-styled-content": "dev-main as 14.3",
     "typo3/cms-form": "dev-main as 14.3",
     "typo3/cms-frontend": "dev-main as 14.3",
     "typo3/cms-impexp": "dev-main as 14.3",
