@@ -792,6 +792,42 @@ const screenshots = {
     frontend: `${baseUrl}/camino/faqs`,
     frontendElement: 'form',
   },
+  // The login, in a window without a session
+  'Login/BackendLoginPage': {
+    loggedOut: true,
+    url: `${baseUrl}/typo3/`,
+    prepare: async (page) => {
+      await page.fill('#t3-username', 'j.doe');
+      await page.fill('#t3-password', password);
+      await page.locator('h1, .card-login').first().click({ position: { x: 5, y: 5 } });
+    },
+    from: '.card-login',
+  },
+  'Login/ForgotPasswordEmail': {
+    loggedOut: true,
+    url: `${baseUrl}/typo3/`,
+    prepare: async (page) => {
+      await page.getByRole('link', { name: 'Forgot your password?' }).click();
+      await page.waitForLoadState('networkidle');
+      await page.getByRole('textbox').first().fill('j.doe@example.org');
+      await page.locator('.card-login').first().click({ position: { x: 5, y: 5 } });
+    },
+    from: '.card-login',
+  },
+  // The menu of the user in the top bar, as on the page about user settings
+  'UserSettings/UserSettingsModule': {
+    url: moduleUrl('web/layout', packingList),
+    prepare: async (frame) => {
+      await frame.page().locator('#typo3-cms-backend-backend-toolbaritems-usertoolbaritem > button, .toolbar-item-avatar').first().click();
+      await frame.page().waitForTimeout(500);
+      await frame.page().getByRole('menuitem', { name: 'User Settings' }).or(frame.page().getByRole('link', { name: 'User Settings' })).first().hover();
+      await frame.page().waitForTimeout(300);
+    },
+    hover: true,
+    outside: true,
+    from: '#typo3-cms-backend-backend-toolbaritems-usertoolbaritem',
+    to: '#typo3-cms-backend-backend-toolbaritems-usertoolbaritem .dropdown-menu',
+  },
   // Last, as it saves a content element on the page of the screenshots above
   'NewContentElement/ContentSaved': {
     url: moduleUrl('web/layout', stories),
@@ -871,6 +907,23 @@ for (const name of names) {
   const screenshot = screenshots[name];
   if (screenshot === undefined) {
     throw new Error(`Unknown screenshot "${name}"`);
+  }
+  if (screenshot.loggedOut) {
+    // A window of its own, without the session of the other screenshots
+    const context = await browser.newContext({ viewport: { width: 1280, height: 900 } });
+    const window = await context.newPage();
+    await window.goto(screenshot.url);
+    await window.waitForLoadState('networkidle');
+    await screenshot.prepare(window);
+    await window.waitForTimeout(500);
+    const box = await window.locator(screenshot.from).first().boundingBox();
+    await window.screenshot({
+      path: `${target}/${name}.png`,
+      clip: { x: box.x - margin, y: box.y - margin, width: box.width + 2 * margin, height: box.height + 2 * margin },
+    });
+    await context.close();
+    console.log(`${name}.png`);
+    continue;
   }
   page = await login(screenshot.user ?? defaultUser);
   await page.setViewportSize({

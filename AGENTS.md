@@ -54,6 +54,8 @@ To add a screenshot:
     element ends the image below the part that matters. Use `prepare`
     for clicks before the screenshot, and `tab` for the tab of a form,
     which the backend would otherwise remember from the last screenshot.
+    A screenshot of the login takes `loggedOut: true`, which opens a
+    window without a session.
     A view whose route needs a token, such as the history, cannot be
     opened by its URL; `prepare` opens it through the backend, the way an
     editor does. Something the backend picks at random, such as the tip of
