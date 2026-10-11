@@ -56,7 +56,7 @@ Content elements
 
     ..  card:: :ref:`Embedding Video And Audio<media>`
 
-        ..  card-image:: /Images/ManualScreenshots/ContentElements/TextAndMedia.png
+        ..  card-image:: /Images/GeneratedScreenshots/ContentElements/TextAndMedia.png
             :alt: Content element Text and Media in the TYPO3 backend
 
         This chapter contains information on how to embed video and audio files to a page.

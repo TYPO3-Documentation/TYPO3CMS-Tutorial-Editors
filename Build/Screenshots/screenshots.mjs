@@ -560,6 +560,20 @@ const screenshots = {
     },
     from: '.alert-warning, .callout-warning',
   },
+  // The thumbnail at the top of the chapter about videos
+  'ContentElements/TextAndMedia': {
+    url: moduleUrl('web/layout', stories),
+    prepare: openWizard('Typical page content'),
+    outside: true,
+    from: 'typo3-backend-modal dialog[open] >> role=button[name=/^Text & Media/]',
+  },
+  'ContentElements/Media': {
+    url: editUrl('tt_content', story),
+    tab: 'Media',
+    from: '[role="tablist"]',
+    // Down to the list of the allowed file extensions and platforms
+    to: '.badge-list >> nth=0',
+  },
   // Last, as it saves a content element on the page of the screenshots above
   'NewContentElement/ContentSaved': {
     url: moduleUrl('web/layout', stories),
