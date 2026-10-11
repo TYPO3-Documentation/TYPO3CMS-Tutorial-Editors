@@ -21,7 +21,7 @@ const editUrl = (table, uid) => `${baseUrl}/typo3/record/edit?edit[${table}][${u
 const margin = 12;
 
 // The uids of the records that create-records.php looked up
-const { root, websiteUsers, packingList, routeComparison, toiletries, extras, essentialItems, faqs, stories, story, map, author, office, shells } =
+const { root, redirect, qrcode, shortUrl, websiteUsers, packingList, routeComparison, toiletries, extras, essentialItems, faqs, stories, story, map, author, office, shells } =
   JSON.parse(readFileSync('../../var/screenshot-records.json', 'utf8'));
 
 // A content element in the Content > Layout module
@@ -350,6 +350,20 @@ const checkAll = async (frame) => {
 const mediaUrl = (view) => `${baseUrl}/typo3/module/file/list?id=1:/camino/&viewMode=${view}`;
 // The button "View" of the Media module, and its menu
 const viewButton = (frame) => frame.locator('.module-docheader button', { hasText: 'View' }).first();
+
+// The button that adds a record in a module of the link management, and
+// the form it opens
+const addButton = (frame, name) => frame.locator('.module-docheader').getByRole('button', { name })
+  .or(frame.locator('.module-docheader').getByRole('link', { name })).first();
+const openNew = (name) => async (frame) => {
+  await addButton(frame, name).click();
+  await frame.waitForURL(/record\/edit/);
+  await frame.waitForLoadState('networkidle');
+  await frame.page().waitForTimeout(800);
+};
+
+// The modules of the link management
+const linkUrl = (module) => `${baseUrl}/typo3/module/link-management${module ? `/${module}` : ''}`;
 
 // Marks a button that the text names. A button in a group or a table cell
 // is marked inside, as its neighbours would cut a frame around it.
@@ -1358,6 +1372,123 @@ const screenshots = {
     modal: true,
     width: 1100,
     height: 900,
+  },
+  // The chapter about link management
+  'LinkManagement/HomeModuleOverview': {
+    url: linkUrl(''),
+    window: true,
+    menu: 'Sites',
+    prepare: async (frame) => {
+      await outline(frame.page().locator('[data-modulemenu-identifier="link_management"]').first(), true);
+    },
+    until: '.card >> nth=-1',
+  },
+  'LinkManagement/RedirectsAddRedirect': {
+    url: linkUrl('redirects'),
+    prepare: (frame) => outline(addButton(frame, 'Add redirect')),
+    margin: 0,
+    from: '.module-docheader',
+    to: 'h1',
+  },
+  'LinkManagement/RedirectsSourceDomainSourcePath': {
+    url: editUrl('sys_redirect', redirect),
+    from: '[role="tablist"]',
+    to: field('is_regexp'),
+  },
+  'LinkManagement/RedirectsSourceTarget': {
+    url: editUrl('sys_redirect', redirect),
+    from: field('target'),
+  },
+  'LinkManagement/RedirectsAccess': {
+    url: editUrl('sys_redirect', redirect),
+    tab: 'Access',
+    from: '[role="tablist"]',
+    to: field('endtime'),
+  },
+  'LinkManagement/RedirectsNotes': {
+    url: editUrl('sys_redirect', redirect),
+    tab: 'Notes',
+    from: '[role="tablist"]',
+    to: field('description'),
+  },
+  'LinkManagement/RedirectsManage': {
+    // Wide, so that the list shows its buttons
+    width: 1440,
+    url: linkUrl('redirects'),
+    prepare: (frame) => outline(frame.locator('table tbody tr').first().locator('td').last(), true),
+    from: 'table',
+  },
+  'LinkManagement/ShortURLCreate': {
+    url: linkUrl('short-urls'),
+    prepare: (frame) => outline(addButton(frame, 'Add Short URL')),
+    margin: 0,
+    from: '.module-docheader',
+    to: 'table',
+  },
+  'LinkManagement/ShortURLGeneral': {
+    url: linkUrl('short-urls'),
+    prepare: openNew('Add Short URL'),
+    margin: 0,
+    from: '.module-docheader',
+    to: field('force_https'),
+  },
+  'LinkManagement/ShortURLAccess': {
+    url: editUrl('sys_redirect', shortUrl),
+    tab: 'Access',
+    from: '[role="tablist"]',
+    to: field('endtime'),
+  },
+  'LinkManagement/ShortURLNotes': {
+    url: editUrl('sys_redirect', shortUrl),
+    tab: 'Notes',
+    from: '[role="tablist"]',
+    to: field('description'),
+  },
+  'LinkManagement/ShortURLEdit': {
+    url: linkUrl('short-urls'),
+    prepare: (frame) => outline(frame.locator('table tbody tr').first().locator('td').last(), true),
+    from: 'table',
+  },
+  'LinkManagement/QRCAddQRC': {
+    url: linkUrl('qrcodes'),
+    prepare: (frame) => outline(addButton(frame, 'Add QR Code')),
+    margin: 0,
+    from: '.module-docheader',
+    to: 'h1',
+  },
+  'LinkManagement/QRCAddQRCGeneral': {
+    url: linkUrl('qrcodes'),
+    prepare: openNew('Add QR Code'),
+    margin: 0,
+    from: '.module-docheader',
+    to: field('force_https'),
+  },
+  'LinkManagement/QRCAddQRCAccess': {
+    url: editUrl('sys_redirect', qrcode),
+    tab: 'Access',
+    from: '[role="tablist"]',
+    to: field('endtime'),
+  },
+  'LinkManagement/QRCAddQRCNotes': {
+    url: editUrl('sys_redirect', qrcode),
+    tab: 'Notes',
+    from: '[role="tablist"]',
+    to: field('description'),
+  },
+  'LinkManagement/QRCDownload': {
+    url: editUrl('sys_redirect', qrcode),
+    prepare: async (frame) => {
+      // The row with the format, the size, and the button
+      await outline(frame.locator('typo3-qrcode').locator(':has(> * select):has(button)').last());
+    },
+    margin: 0,
+    from: '.module-docheader',
+    to: '.form-group:has(typo3-qrcode)',
+  },
+  'LinkManagement/QRCEdit': {
+    url: linkUrl('qrcodes'),
+    prepare: (frame) => outline(frame.locator('table tbody tr').first().locator('td').last(), true),
+    from: 'table',
   },
   // Last, as it saves a content element on the page of the screenshots above
   'NewContentElement/ContentSaved': {

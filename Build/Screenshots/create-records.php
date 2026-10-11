@@ -261,6 +261,51 @@ $editors = $dataHandler->substNEWwithIDs['NEWeditors'];
 // The editors may edit the content of every page of the site
 $connectionPool->getConnectionForTable('pages')->update('pages', ['perms_groupid' => $editors, 'perms_group' => 31], ['deleted' => 0]);
 
+// Redirects, a QR code, and a short URL for the chapter about link
+// management, with the paths of the scenarios in the text. The QR code and
+// the short URL get a random path, and every record shows when it was
+// created, so both are fixed.
+$imprint = $find('pages', 'title', 'Imprint');
+$dataHandler = $process(['sys_redirect' => [
+    'NEWcontact' => [
+        'pid' => 0,
+        'source_host' => '*',
+        'source_path' => '/contact-us.aspx',
+        'description' => 'The contact page of the old website, which flyers still name.',
+        'target' => 't3://page?uid=' . $imprint,
+        'target_statuscode' => 301,
+    ],
+    'NEWexpo' => [
+        'pid' => 0,
+        'source_host' => '*',
+        'source_path' => '/expo-2027',
+        'target' => 't3://page?uid=' . $uids['root'],
+        'target_statuscode' => 307,
+    ],
+    'NEWqrcode' => [
+        'pid' => 0,
+        'redirect_type' => 'qrcode',
+        'target' => 't3://page?uid=' . $uids['packingList'],
+        'description' => 'This QR code is used on our Christmas 2026 print flyers.',
+    ],
+    // A short URL is only saved with its path
+    'NEWshorturl' => [
+        'pid' => 0,
+        'redirect_type' => 'short_url',
+        'source_host' => 'camino.example.org',
+        'source_path' => '/s/Kq7Wz2',
+        'target' => 't3://page?uid=' . $uids['stories'],
+    ],
+]]);
+$uids['redirect'] = $dataHandler->substNEWwithIDs['NEWcontact'];
+$uids['qrcode'] = $dataHandler->substNEWwithIDs['NEWqrcode'];
+$uids['shortUrl'] = $dataHandler->substNEWwithIDs['NEWshorturl'];
+$redirects = $connectionPool->getConnectionForTable('sys_redirect');
+// The site of the demo has no domain of its own, so the QR code and the
+// short URL get one from the domain reserved for examples
+$redirects->update('sys_redirect', ['source_host' => 'camino.example.org', 'source_path' => '/_redirect/6a229e83e6a65366790351'], ['uid' => $uids['qrcode']]);
+$redirects->update('sys_redirect', ['createdon' => $changedAt, 'updatedon' => $changedAt], ['deleted' => 0]);
+
 // A second editor, who is a member of the group above, and who is editing
 // the element of the locking example. The Layout module marks a locked
 // element, so it is one that no other screenshot shows. The warning names
