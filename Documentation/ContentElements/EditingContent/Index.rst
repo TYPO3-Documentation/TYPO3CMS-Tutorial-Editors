@@ -9,7 +9,7 @@ Editing content
 
 ------------
 
-..  image:: /Images/ManualScreenshots/ContentElements/EditContent.png
+..  image:: /Images/GeneratedScreenshots/ContentElements/EditContent.png
     :alt: Editing content elements in the TYPO3 backend
     :class: img-thumbnail float-end ms-1
     :width: 250
@@ -30,7 +30,7 @@ that you have permissions for. There might be additional settings that only an
 advanced editor or an administrator can see and edit. Those might be hidden to
 you.
 
-..  figure:: /Images/ManualScreenshots/ContentElements/ChangeText.png
+..  figure:: /Images/GeneratedScreenshots/ContentElements/ChangeText.png
     :alt: Content element edit form screenshot, demonstrating changed content which is highlighted
     :zoom: gallery
 
@@ -39,7 +39,7 @@ you.
 Content in the Content element forms is not auto-saved. If you try to leave
 a form that has changes you will be prompted to save:
 
-..  figure:: /Images/ManualScreenshots/ContentElements/SavingPrompt.png
+..  figure:: /Images/GeneratedScreenshots/ContentElements/SavingPrompt.png
     :alt: Prompt: Do you want to close without saving? You currently have unsaved changes. Are you sure you want to discard these changes?
     :zoom: gallery
 
@@ -62,7 +62,7 @@ Content element has no edit button
 If you have no permissions to change a content element, you will see that
 element in the overview but no edit, hide or delete button appears.
 
-..  figure:: /Images/ManualScreenshots/ContentElements/NoEdit.png
+..  figure:: /Images/GeneratedScreenshots/ContentElements/NoEdit.png
     :alt: A content element without an edit button
     :zoom: gallery
 
@@ -85,13 +85,13 @@ Content element does not get saved
 If one of the fields you edited contains an illegal value now or if you did
 not fill out a required field, you cannot save your changes.
 
-..  figure:: /Images/ManualScreenshots/ContentElements/RequiredField.png
+..  figure:: /Images/GeneratedScreenshots/ContentElements/RequiredField.png
     :alt: Screenshot of a required field
     :zoom: gallery
 
     A required field that has no value prevents saving of a content element
 
-..  figure:: /Images/ManualScreenshots/ContentElements/InputError.png
+..  figure:: /Images/GeneratedScreenshots/ContentElements/InputError.png
     :alt: Input error caused by a letter entered in a number field
     :zoom: gallery
 
@@ -140,7 +140,7 @@ Changing the type of an existing content element
 You can also change the content element type by selecting another element from
 the :guilabel:`Type` list.
 
-..  figure:: /Images/ManualScreenshots/ContentElements/ChangeType.png
+..  figure:: /Images/GeneratedScreenshots/ContentElements/ChangeType.png
     :alt: Edit form of a content element in the TYPO3 backend, demonstrating the location of the "Type" selector in tab General
     :zoom: gallery
 
@@ -149,7 +149,7 @@ the :guilabel:`Type` list.
 When you change a content element's type, the TYPO3 backend wants to reload
 the screen to display different input fields, you are prompted first:
 
-..  figure:: /Images/ManualScreenshots/ContentElements/RefreshRequired.png
+..  figure:: /Images/GeneratedScreenshots/ContentElements/RefreshRequired.png
     :alt: Edit form of a content element in the TYPO3 backend, demonstrating the location of the "Type" selector in tab General
     :zoom: gallery
 

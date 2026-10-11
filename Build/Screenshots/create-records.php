@@ -132,14 +132,34 @@ $connectionPool->getConnectionForTable('pages')->update('pages', ['TSconfig' => 
       }
     }
     TCEFORM.tt_content.CType.removeItems = camino_hero, camino_hero_small, camino_hero_text_only, camino_textteaser, camino_testimonial, camino_author, camino_textmedia_teaser, camino_textmedia_teaser_grid, camino_linklist, camino_sociallinks
+    # The media adjustments, which Camino hides, for the example of an input error
+    TCEFORM.tt_content {
+      imagewidth.disabled = 0
+      imageheight.disabled = 0
+      imageborder.disabled = 0
+    }
     TSCONFIG], ['uid' => $uids['stories']]);
-$process(['tt_content' => ['NEWstory' => [
+$dataHandler = $process(['tt_content' => ['NEWstory' => [
     'pid' => $uids['stories'],
     'colPos' => 0,
     'CType' => 'textmedia',
     'header' => 'Arriving in Santiago',
     'bodytext' => '<p>After weeks on the road, the first view of the cathedral towers makes every blister worth it.</p>',
 ]]]);
+$uids['story'] = $dataHandler->substNEWwithIDs['NEWstory'];
+// An element of a type that the common editor below may not edit. It comes
+// after the story, so the screenshots of creating content are not affected.
+$dataHandler = $process(['tt_content' => ['NEWmap' => [
+    'pid' => -$uids['story'],
+    'colPos' => 0,
+    'CType' => 'html',
+    'header' => 'Map of the stages',
+    'bodytext' => '<iframe src="https://example.org/map" title="Map of the stages"></iframe>',
+]]]);
+$uids['map'] = $dataHandler->substNEWwithIDs['NEWmap'];
+
+// The author card of the theme, whose name is a required field
+$uids['author'] = $find('tt_content', 'header', 'Elena Vásquez', $uids['routeComparison']);
 
 // The group of a common editor, who creates the typical content types,
 // lists and dividers, but no forms, menus, or plugins

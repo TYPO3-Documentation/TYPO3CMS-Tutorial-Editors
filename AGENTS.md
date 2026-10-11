@@ -52,9 +52,12 @@ To add a screenshot:
     `Content` by default, stays open and every other group is collapsed.
     Its page tree is hidden unless `pageTree: true`, and an `until`
     element ends the image below the part that matters. Use `prepare`
-    for clicks before the screenshot. A view whose route needs a token,
-    such as the history, cannot be opened by its URL; `prepare` opens it
-    through the backend, the way an editor does.
+    for clicks before the screenshot, and `tab` for the tab of a form,
+    which the backend would otherwise remember from the last screenshot.
+    A view whose route needs a token, such as the history, cannot be
+    opened by its URL; `prepare` opens it through the backend, the way an
+    editor does. Something the backend picks at random, such as the tip of
+    the live search, is reopened until it shows the same thing every run.
 3.  Take only that screenshot, then all of them once, and commit only the
     images that really changed.
 4.  Screenshots that a script cannot take, such as one during drag and
