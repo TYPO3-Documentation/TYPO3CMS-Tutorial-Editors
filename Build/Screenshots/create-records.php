@@ -174,6 +174,27 @@ $dataHandler = $process(['tt_content' => ['NEWoffice' => [
         . 'hard to read for the office&shy;workers.</p>',
 ]]]);
 $uids['office'] = $dataHandler->substNEWwithIDs['NEWoffice'];
+// A text with an image of the demo site, for the screenshots of working
+// with images. It comes last, after the elements above.
+$uids['shellsFile'] = $find('sys_file', 'identifier', '/camino/bernard-wortelboer-l5zWzwYnt_s-unsplash.webp');
+$dataHandler = $process([
+    'tt_content' => ['NEWshells' => [
+        'pid' => -$uids['office'],
+        'colPos' => 0,
+        'CType' => 'textpic',
+        'header' => 'The scallop shell',
+        'bodytext' => '<p>Most pilgrims carry a scallop shell on their backpack, the sign of the Camino.</p>',
+        'image' => 'NEWshellsImage',
+    ]],
+    'sys_file_reference' => ['NEWshellsImage' => [
+        'pid' => $uids['stories'],
+        'uid_local' => $uids['shellsFile'],
+        'uid_foreign' => 'NEWshells',
+        'tablenames' => 'tt_content',
+        'fieldname' => 'image',
+    ]],
+]);
+$uids['shells'] = $dataHandler->substNEWwithIDs['NEWshells'];
 
 // The author card of the theme, whose name is a required field
 $uids['author'] = $find('tt_content', 'header', 'Elena Vásquez', $uids['routeComparison']);

@@ -48,7 +48,7 @@ Content elements
 
     ..  card:: :ref:`Working With Images<images-new>`
 
-        ..  card-image:: /Images/ManualScreenshots/ContentElements/Images.png
+        ..  card-image:: /Images/GeneratedScreenshots/ContentElements/Images.png
             :alt: Content element Images in the TYPO3 backend
 
         Find out how to upload images, resize and add images to a page.
