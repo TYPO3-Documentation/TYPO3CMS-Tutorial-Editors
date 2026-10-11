@@ -23,7 +23,7 @@ Content elements
 
     ..  card:: :ref:`Editing Content<content-editing>`
 
-        ..  card-image:: /Images/ManualScreenshots/ContentElements/EditContent.png
+        ..  card-image:: /Images/GeneratedScreenshots/ContentElements/EditContent.png
             :alt: Editing content elements in the TYPO3 backend
 
         Want to change a content element's type? This chapter contains information on

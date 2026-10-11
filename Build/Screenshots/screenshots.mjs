@@ -21,7 +21,7 @@ const editUrl = (table, uid) => `${baseUrl}/typo3/record/edit?edit[${table}][${u
 const margin = 12;
 
 // The uids of the records that create-records.php looked up
-const { packingList, toiletries, extras, essentialItems, faqs, stories } =
+const { packingList, toiletries, extras, essentialItems, faqs, stories, story, map, author } =
   JSON.parse(readFileSync('../../var/screenshot-records.json', 'utf8'));
 
 // A content element in the Content > Layout module
@@ -72,7 +72,17 @@ const wizardSize = { modal: true, width: 1024, height: 600 };
 
 // A field of a form, found by its label: the backend runs without debug
 // mode, which would show the field names
-const field = (name) => `.form-group:has([name$="[${name}]"])`;
+const field = (name) => `.form-group:has([name$="[${name}]"]):not(:has(.form-group))`;
+// The input of a field, not the hidden one that holds the value
+const input = (name) => `${field(name)} input:not([type="hidden"]):not([type="checkbox"])`;
+
+// Changes the header of the story on the Pilgrim stories page, which the
+// form highlights once the field lost the focus
+const changeHeader = async (frame) => {
+  await frame.locator(input('header')).first().fill('Arriving in Santiago de Compostela');
+  await frame.locator('h1').first().click();
+  await frame.page().waitForTimeout(500);
+};
 
 // Creates a Text & Media element on the page, up to the filled header
 const newTextAndMedia = async (frame) => {
@@ -141,7 +151,20 @@ const screenshots = {
   'ContentElements/LiveSearch': {
     url: moduleUrl('web/layout', packingList),
     prepare: async (frame) => {
-      await frame.page().locator('.t3js-topbar-button-search:visible').first().click();
+      // The search shows a tip picked at random, which would change the
+      // screenshot with every run. It opens until it shows the tip about
+      // searching for content, which fits the search.
+      for (let attempt = 0; attempt < 30; attempt++) {
+        await frame.page().locator('.t3js-topbar-button-search:visible').first().click();
+        const dialog = frame.page().locator('typo3-backend-modal dialog[open]');
+        await dialog.waitFor();
+        await frame.page().waitForTimeout(500);
+        if ((await dialog.innerText()).includes('#content:')) {
+          break;
+        }
+        await frame.page().keyboard.press('Escape');
+        await dialog.waitFor({ state: 'detached' });
+      }
       const search = frame.page().locator('typo3-backend-modal dialog[open] input[type="search"]');
       await search.fill('#content:items');
       await frame.page().waitForTimeout(1500);
@@ -183,7 +206,7 @@ const screenshots = {
     width: 800,
     url: moduleUrl('web/layout', stories),
     from: `${column(0)} .t3-page-column-header`,
-    to: `${column(0)} .t3js-page-ce-sortable .t3-page-ce-header`,
+    to: `${contentElement(story)} .t3-page-ce-header`,
     // The text of the element follows right below its header
     margin: 4,
   },
@@ -197,7 +220,7 @@ const screenshots = {
     },
     window: true,
     pageTree: true,
-    until: `${column(0)} .t3js-page-ce-sortable .t3-page-ce-header`,
+    until: `${contentElement(story)} .t3-page-ce-header`,
   },
   'ContentElements/WizardTypical': {
     user: 'e.doe',
@@ -238,6 +261,96 @@ const screenshots = {
     // The form fills the module frame, a margin would show the menu
     margin: 0,
   },
+  // The thumbnail at the top of the chapter about editing content
+  'ContentElements/EditContent': {
+    // Narrow, as the page shows the image 250 px wide
+    width: 800,
+    url: moduleUrl('web/layout', stories),
+    prepare: async (frame) => {
+      await frame.locator(`${contentElement(story)} typo3-backend-contextual-record-edit-trigger`).first().hover();
+    },
+    hover: true,
+    from: contentElement(story),
+  },
+  'ContentElements/ChangeText': {
+    url: editUrl('tt_content', story),
+    prepare: changeHeader,
+    from: '.module-docheader',
+    to: field('header'),
+    margin: 0,
+  },
+  'ContentElements/SavingPrompt': {
+    url: editUrl('tt_content', story),
+    prepare: async (frame) => {
+      await changeHeader(frame);
+      await frame.getByRole('button', { name: 'Close' }).first().click();
+      await frame.page().locator('typo3-backend-modal dialog[open]').waitFor();
+      await frame.page().waitForTimeout(1000);
+      // The dialog focuses a button, which would look selected
+      await frame.page().evaluate(() => document.activeElement?.blur());
+    },
+    modal: true,
+  },
+  'ContentElements/NoEdit': {
+    user: 'e.doe',
+    url: moduleUrl('web/layout', stories),
+    from: contentElement(map),
+  },
+  'ContentElements/RequiredField': {
+    url: editUrl('tt_content', author),
+    prepare: async (frame) => {
+      await frame.locator(input('header')).first().fill('');
+      await frame.getByRole('button', { name: 'Save' }).first().click();
+      // A dialog says that the form cannot be saved, and darkens the form
+      await frame.page().locator('typo3-backend-modal dialog[open]').waitFor();
+      await frame.page().keyboard.press('Escape');
+      await frame.page().locator('typo3-backend-modal dialog[open]').waitFor({ state: 'detached' });
+      await frame.page().waitForTimeout(500);
+    },
+    from: '[role="tablist"]',
+    to: field('header'),
+  },
+  'ContentElements/InputError': {
+    url: editUrl('tt_content', story),
+    tab: 'Media',
+    prepare: async (frame) => {
+      // The field has no value by default, until its checkbox gives it one
+      await frame.locator(`${field('imagewidth')} input[type="checkbox"]`).first().check();
+      // A number field takes a typed "e", the start of an exponent, but no
+      // other letter
+      await frame.locator(input('imagewidth')).first().click();
+      await frame.page().keyboard.type('e');
+      // Saving makes the browser check the field and show its message
+      await frame.getByRole('button', { name: 'Save' }).first().click();
+      await frame.page().waitForTimeout(1000);
+    },
+    // The message of the browser is not part of the page, so the image
+    // reaches to the heading of the next section, below the message
+    from: 'text=Media Adjustments',
+    to: 'text=Gallery Settings',
+    // The message starts a little left of the field
+    left: 8,
+  },
+  'ContentElements/ChangeType': {
+    url: editUrl('tt_content', story),
+    prepare: async (frame) => {
+      // A screenshot cannot show the native list of a select, so the select
+      // shows a part of its items as a list box instead
+      await frame.locator(`${field('CType')} select`).evaluate((select) => { select.size = 12; });
+    },
+    from: 'h1',
+    to: field('CType'),
+  },
+  'ContentElements/RefreshRequired': {
+    url: editUrl('tt_content', story),
+    prepare: async (frame) => {
+      await frame.locator(`${field('CType')} select`).selectOption('text');
+      await frame.page().locator('typo3-backend-modal dialog[open]').waitFor();
+      await frame.page().waitForTimeout(1000);
+      await frame.page().evaluate(() => document.activeElement?.blur());
+    },
+    modal: true,
+  },
   // Last, as it saves a content element on the page of the screenshots above
   'NewContentElement/ContentSaved': {
     url: moduleUrl('web/layout', stories),
@@ -265,20 +378,31 @@ const screenshots = {
 // its module as active in time, such as the history.
 const collapseNavigation = async (pageTree, menu) => {
   const hideTree = page.locator('typo3-backend-content-navigation-toggle[action="collapse"]');
+  let clicked = false;
   if (!pageTree && await hideTree.isVisible()) {
     await hideTree.click();
+    clicked = true;
   }
   const groups = page.locator('button[data-modulemenu-collapsible="true"]');
   for (let index = 0; index < await groups.count(); index++) {
     const group = groups.nth(index);
+    // A narrow window hides the menu
+    if (!await group.isVisible()) {
+      continue;
+    }
     const open = await group.getAttribute('aria-expanded') === 'true';
     const keep = (await group.innerText()).trim() === menu;
     if (open !== keep) {
       await group.click();
+      clicked = true;
     }
   }
-  // The clicked buttons would look selected
-  await page.evaluate(() => document.activeElement?.blur());
+  // The clicked buttons would look selected. Without a click the focus
+  // stays, as it can be part of the screenshot, such as the message of the
+  // browser about an invalid field.
+  if (clicked) {
+    await page.evaluate(() => document.activeElement?.blur());
+  }
 };
 
 // Tall, so that most pages fit without scrolling
@@ -316,6 +440,12 @@ for (const name of names) {
   await page.waitForLoadState('networkidle');
   const frame = page.frame({ name: 'list_frame' });
   await frame.waitForLoadState('networkidle');
+  // The backend remembers the last tab of a form, so a form opens the tab
+  // that the screenshot names, or the first one
+  const tab = frame.getByRole('tab', { name: screenshot.tab ?? 'General', exact: true });
+  if (await tab.count() > 0) {
+    await tab.click();
+  }
   // Also for a part of a module: the module frame is too narrow for the
   // columns of the Layout module next to the page tree
   await collapseNavigation(screenshot.pageTree, screenshot.menu ?? 'Content');
@@ -362,7 +492,7 @@ for (const name of names) {
       : await frame.locator(screenshot.to ?? screenshot.from).last().boundingBox(),
   ];
   const space = screenshot.margin ?? margin;
-  const left = Math.max(Math.min(...boxes.map((box) => box.x)) - space, 0);
+  const left = Math.max(Math.min(...boxes.map((box) => box.x)) - space - (screenshot.left ?? 0), 0);
   const top = Math.max(Math.min(...boxes.map((box) => box.y)) - space, 0);
   await page.screenshot({
     path,
