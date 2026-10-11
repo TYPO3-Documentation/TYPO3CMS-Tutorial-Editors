@@ -345,6 +345,12 @@ const checkAll = async (frame) => {
   await frame.page().waitForTimeout(500);
 };
 
+// The Media module on the folder of the demo site. The module keeps the
+// view per user, so every screenshot names it.
+const mediaUrl = (view) => `${baseUrl}/typo3/module/file/list?id=1:/camino/&viewMode=${view}`;
+// The button "View" of the Media module, and its menu
+const viewButton = (frame) => frame.locator('.module-docheader button', { hasText: 'View' }).first();
+
 // Marks a button that the text names. A button in a group or a table cell
 // is marked inside, as its neighbours would cut a frame around it.
 const outline = (locator, inside = false) => locator.evaluate((element, inner) => {
@@ -1268,6 +1274,90 @@ const screenshots = {
     },
     from: '.alert-warning, .callout-warning',
     to: '#recordlist-fe_users',
+  },
+  // The chapter about the Media module
+  'MediaModule/TileView': {
+    url: mediaUrl('tiles'),
+    window: true,
+    pageTree: true,
+    menu: 'Media',
+    prepare: async (frame) => {
+      const tile = frame.locator('.resource-tile').nth(1);
+      await tile.hover();
+      await tile.locator('input[type="checkbox"]').check();
+      await frame.page().mouse.move(0, 0);
+      await outline(viewButton(frame));
+    },
+    until: '.resource-tile >> nth=0',
+  },
+  'MediaModule/ListView': {
+    // Wide, so that the list shows all its columns next to the page tree
+    width: 1440,
+    url: mediaUrl('list'),
+    window: true,
+    pageTree: true,
+    menu: 'Media',
+    prepare: async (frame) => {
+      await viewButton(frame).click();
+      await frame.page().waitForTimeout(500);
+      await outline(frame.locator('.module-docheader .dropdown-menu >> visible=true').getByText('List', { exact: true }).first());
+    },
+    until: 'tr[data-filelist-type="file"] >> nth=2',
+  },
+  // As the common editor: a chosen clipboard stays chosen
+  'MediaModule/Clipboard': {
+    user: 'e.doe',
+    // Wide, so that the files take few rows above the clipboard
+    width: 1800,
+    url: mediaUrl('tiles'),
+    window: true,
+    pageTree: true,
+    menu: 'Media',
+    prepare: async (frame) => {
+      const pad = frame.locator('button[data-action="setP"]', { hasText: 'Clipboard #1' });
+      if (await pad.getAttribute('aria-checked') !== 'true') {
+        await pad.click();
+        await frame.waitForLoadState('networkidle');
+      }
+      await frame.page().waitForTimeout(1000);
+      const tile = frame.locator('.resource-tile').nth(1);
+      await tile.hover();
+      await tile.locator('input[type="checkbox"]').check();
+      await frame.getByRole('button', { name: 'Transfer to clipboard' }).filter({ visible: true }).first().click();
+      await frame.waitForLoadState('networkidle');
+      await frame.page().waitForTimeout(1000);
+      await viewButton(frame).click();
+      await frame.page().waitForTimeout(500);
+      await outline(frame.locator('.module-docheader .dropdown-menu >> visible=true').getByText('Show clipboard').first());
+    },
+    until: 'text=Clipboard #3',
+  },
+  'MediaModule/CreateFolder': {
+    url: mediaUrl('tiles'),
+    prepare: async (frame) => {
+      await frame.locator('.module-docheader').getByRole('button', { name: 'New Folder' })
+        .or(frame.locator('.module-docheader').getByRole('link', { name: 'New Folder' })).first().click();
+      await frame.page().locator('typo3-backend-modal dialog[open]').waitFor();
+      await frame.page().waitForTimeout(2000);
+      await frame.page().evaluate(() => document.activeElement?.blur());
+    },
+    modal: true,
+    width: 1100,
+    height: 700,
+  },
+  // The button "New File" opens a dialog for uploading and creating files
+  'MediaModule/FileUpload': {
+    url: mediaUrl('tiles'),
+    prepare: async (frame) => {
+      await frame.locator('.module-docheader').getByRole('button', { name: 'New File' })
+        .or(frame.locator('.module-docheader').getByRole('link', { name: 'New File' })).first().click();
+      await frame.page().locator('typo3-backend-modal dialog[open]').waitFor();
+      await frame.page().waitForTimeout(2000);
+      await frame.page().evaluate(() => document.activeElement?.blur());
+    },
+    modal: true,
+    width: 1100,
+    height: 900,
   },
   // Last, as it saves a content element on the page of the screenshots above
   'NewContentElement/ContentSaved': {
