@@ -135,6 +135,8 @@ $connectionPool->getConnectionForTable('pages')->update('pages', ['TSconfig' => 
         }
       }
     }
+    # A copy gets "(copy 1)" appended, which Camino switches off
+    TCEMAIN.default.disablePrependAtCopy = 0
     TCEFORM.tt_content.CType.removeItems = camino_hero, camino_hero_small, camino_hero_text_only, camino_textteaser, camino_testimonial, camino_author, camino_textmedia_teaser, camino_textmedia_teaser_grid, camino_linklist, camino_sociallinks
     # The media adjustments, which Camino hides, for the example of an input error
     TCEFORM.tt_content {
@@ -196,19 +198,54 @@ $dataHandler = $process([
 ]);
 $uids['shells'] = $dataHandler->substNEWwithIDs['NEWshells'];
 
+// Website users and groups, which have no module of their own, for the
+// screenshots of the Records module. Their folder is in the folder of the
+// footer navigation, which the page tree shows closed, so the screenshots
+// of the page tree do not change.
+$dataHandler = $process(['pages' => ['NEWusers' => [
+    'pid' => $find('pages', 'title', 'Footer navigation', $uids['root']),
+    'title' => 'Website users',
+    'doktype' => 254,
+    'hidden' => 0,
+]]]);
+$uids['websiteUsers'] = $dataHandler->substNEWwithIDs['NEWusers'];
+$dataHandler = $process(['fe_groups' => [
+    'NEWpilgrims' => ['pid' => $uids['websiteUsers'], 'title' => 'Pilgrims', 'description' => 'Pilgrims who receive the newsletter'],
+    'NEWvolunteers' => ['pid' => $uids['websiteUsers'], 'title' => 'Volunteers', 'description' => 'Volunteers of the pilgrim hostels'],
+]]);
+$process(['fe_users' => [
+    'NEWrosa' => [
+        'pid' => $uids['websiteUsers'],
+        'username' => 'rosa',
+        'name' => 'Rosa Martín',
+        'email' => 'rosa@example.org',
+        'password' => 'Screenshots-2026!',
+        'usergroup' => (string)$dataHandler->substNEWwithIDs['NEWpilgrims'],
+    ],
+    'NEWtomas' => [
+        'pid' => $uids['websiteUsers'],
+        'username' => 'tomas',
+        'name' => 'Tomás Ferreira',
+        'email' => 'tomas@example.org',
+        'password' => 'Screenshots-2026!',
+        'usergroup' => (string)$dataHandler->substNEWwithIDs['NEWvolunteers'],
+    ],
+]]);
+
 // The author card of the theme, whose name is a required field
 $uids['author'] = $find('tt_content', 'header', 'Elena Vásquez', $uids['routeComparison']);
 
 // The group of a common editor, who creates the typical content types,
-// lists and dividers, but no forms, menus, or plugins
+// lists and dividers, but no forms, menus, or plugins, and who manages the
+// website users in the Records module
 $contentTypes = ['header', 'text', 'textpic', 'image', 'textmedia', 'bullets', 'table', 'uploads', 'div'];
 $dataHandler = $process(['be_groups' => ['NEWeditors' => [
     'pid' => 0,
     'title' => 'Editors',
     'db_mountpoints' => (string)$uids['root'],
-    'groupMods' => 'web_layout',
-    'tables_select' => 'pages,tt_content',
-    'tables_modify' => 'tt_content',
+    'groupMods' => 'web_layout,records',
+    'tables_select' => 'pages,tt_content,fe_users,fe_groups',
+    'tables_modify' => 'tt_content,fe_users,fe_groups',
     'explicit_allowdeny' => implode(',', array_map(static fn(string $type): string => 'tt_content:CType:' . $type, $contentTypes)),
 ]]]);
 $editors = $dataHandler->substNEWwithIDs['NEWeditors'];

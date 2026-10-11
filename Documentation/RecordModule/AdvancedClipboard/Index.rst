@@ -14,7 +14,7 @@ If the clipboard is not yet enabled, display it via the "View" drop down in the
 header of the :guilabel:`Content > Record` module. Then choose one of the clipboards, for example
 "Clipboard #1".
 
-..  figure:: /Images/ManualScreenshots/ListModule/Clipboard/ChooseClipboard.png
+..  figure:: /Images/GeneratedScreenshots/ListModule/Clipboard/ChooseClipboard.png
     :alt: The clipboard can be shown by "Show clipbaord" entry in the "View" drop down
     :zoom: gallery
 
@@ -33,7 +33,7 @@ As soon as one or more records are checked, new buttons will appear at the top o
 Now check several boxes and click the :guilabel:`Transfer to Clipboard` button.
 Your clipboard should look like this:
 
-..  figure:: /Images/ManualScreenshots/ListModule/Clipboard/ClipboardMultipleItems.png
+..  figure:: /Images/GeneratedScreenshots/ListModule/Clipboard/ClipboardMultipleItems.png
     :alt: TYPO3 backend clipboard with several items
     :zoom: gallery
 
@@ -45,7 +45,7 @@ and the current page will remain unchanged.
 
 Move to another page and click the "Paste in clipboard content" button:
 
-..  figure:: /Images/ManualScreenshots/ListModule/Clipboard/PasteClipboard.png
+..  figure:: /Images/GeneratedScreenshots/ListModule/Clipboard/PasteClipboard.png
     :alt: Button "Paste in clipboard content"
     :zoom: gallery
 
