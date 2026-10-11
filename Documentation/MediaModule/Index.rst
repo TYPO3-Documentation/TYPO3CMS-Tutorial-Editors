@@ -35,17 +35,16 @@ module, it displays a navigation tree, which corresponds to the file
 structure on the server, and a list of all files for the
 selected directory.
 
-..  figure:: /Images/ManualScreenshots/MediaModule/TileView.png
+..  figure:: /Images/GeneratedScreenshots/MediaModule/TileView.png
     :zoom: gallery
-    :alt: View to the Media Module listing three image files as tiles
+    :alt: View to the Media Module listing image files as tiles
 
     View from the The :guilabel:`Media` module displaying default view option tiles.
 
-..  figure:: /Images/ManualScreenshots/MediaModule/ListView.png
+..  figure:: /Images/GeneratedScreenshots/MediaModule/ListView.png
     :zoom: gallery
-    :alt: View to the Media Module listing three image files as list, the view selector is open
-    showing the activated list view option as well as the deselected clipboard option. Accordingly,
-    the image does not contain a clipboard.
+    :alt: View to the Media Module listing image files as a list, the view
+        selector is open showing the activated list view option
 
     List view from the The :guilabel:`Media` module with View Selector open displaying options.
 
@@ -92,7 +91,7 @@ Clipboard
 
 There is a clipboard just like in the :guilabel:`Content > Record` module.
 
-..  figure:: /Images/ManualScreenshots/MediaModule/Clipboard.png
+..  figure:: /Images/GeneratedScreenshots/MediaModule/Clipboard.png
     :zoom: lightbox
     :alt: The standard TYPO3 Clipboard, activated Clipboard #1 with one of the
     images selected.
@@ -117,7 +116,7 @@ to be created.
 Folders are to be created one by one, the modal will remain open after operation to ease multiple
 additions. Each new entry appears immediately in the folder tree and can be used as parent.
 
-..  figure:: /Images/ManualScreenshots/MediaModule/CreateFolder.avif
+..  figure:: /Images/GeneratedScreenshots/MediaModule/CreateFolder.png
     :zoom: lightbox
     :alt: A section of TYPO3 Media Module open and overlayed with the module dialog for
     creating new folders. The overlay displays the folder tree, one of the folders there is
@@ -137,12 +136,10 @@ or to the current directory by using the action icon in the docheader. Also, dra
 will initiate the upload. Drag any file into the main view to upload it to the
 current folder, or select the `click, browse and choose files` option.
 
-..  figure:: /Images/ManualScreenshots/MediaModule/FileUpload.png
+..  figure:: /Images/GeneratedScreenshots/MediaModule/FileUpload.png
     :zoom: lightbox
-    :alt: A section of TYPO3 Media Module open with a folder selected and upload
-    initiated. The upload overlay offers an option to open a file dialog for selecting
-    files from the local computer. Highlighted is the button to open the upload view and
-    the close button to cancel the upload action.
+    :alt: The window "New File" of the Media module, with the options to
+        upload files, to add a media asset by its URL, and to create a text file
 
     Upload possibilities in the Media module
 

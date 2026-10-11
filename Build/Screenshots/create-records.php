@@ -237,13 +237,22 @@ $uids['author'] = $find('tt_content', 'header', 'Elena Vásquez', $uids['routeCo
 
 // The group of a common editor, who creates the typical content types,
 // lists and dividers, but no forms, menus, or plugins, and who manages the
-// website users in the Records module
+// website users in the Records module and the files of the demo site
 $contentTypes = ['header', 'text', 'textpic', 'image', 'textmedia', 'bullets', 'table', 'uploads', 'div'];
+// The folder of the demo site, which the editors manage in the Media module
+$dataHandler = $process(['sys_filemounts' => ['NEWmount' => [
+    'pid' => 0,
+    'title' => 'Camino',
+    'identifier' => '1:/camino/',
+]]]);
+$fileMount = $dataHandler->substNEWwithIDs['NEWmount'];
 $dataHandler = $process(['be_groups' => ['NEWeditors' => [
     'pid' => 0,
     'title' => 'Editors',
     'db_mountpoints' => (string)$uids['root'],
-    'groupMods' => 'web_layout,records',
+    'groupMods' => 'web_layout,records,media_management',
+    'file_mountpoints' => (string)$fileMount,
+    'file_permissions' => 'readFolder,writeFolder,addFolder,renameFolder,moveFolder,readFile,writeFile,addFile,renameFile,replaceFile,moveFile,copyFile',
     'tables_select' => 'pages,tt_content,fe_users,fe_groups',
     'tables_modify' => 'tt_content,fe_users,fe_groups',
     'explicit_allowdeny' => implode(',', array_map(static fn(string $type): string => 'tt_content:CType:' . $type, $contentTypes)),
