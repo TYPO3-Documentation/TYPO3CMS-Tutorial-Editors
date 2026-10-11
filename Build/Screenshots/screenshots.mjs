@@ -21,7 +21,7 @@ const editUrl = (table, uid) => `${baseUrl}/typo3/record/edit?edit[${table}][${u
 const margin = 12;
 
 // The uids of the records that create-records.php looked up
-const { packingList, toiletries, extras, essentialItems, faqs, stories, story, map, author, office, shells } =
+const { root, packingList, routeComparison, toiletries, extras, essentialItems, faqs, stories, story, map, author, office, shells } =
   JSON.parse(readFileSync('../../var/screenshot-records.json', 'utf8'));
 
 // A content element in the Content > Layout module
@@ -234,6 +234,34 @@ const newFormElement = (answer) => async (frame) => {
   await dialog.getByRole('button', { name: answer }).click();
   // The closed dialog stays in the page for a while
   await frame.page().waitForTimeout(2000);
+};
+
+// The page tree, which is outside of the module frame
+const pageTree = '#typo3-pagetree-tree .nodes-list';
+const treeNode = (uid) => `#typo3-pagetree-tree .node[data-id="${uid}"]`;
+
+// Opens the context menu of a page in the page tree
+const openPageMenu = (uid) => async (frame) => {
+  await frame.page().locator(`${treeNode(uid)} .node-contentlabel`).click({ button: 'right' });
+  await frame.page().locator('.context-menu >> visible=true').first().waitFor();
+  await frame.page().waitForTimeout(500);
+  await frame.page().evaluate(() => document.activeElement?.blur());
+};
+
+// Opens the submenu "More options..." of the context menu of a page
+const openMoreOptions = (uid) => async (frame) => {
+  await openPageMenu(uid)(frame);
+  await frame.page().locator('.context-menu >> visible=true').getByText('More options...').click();
+  await frame.page().waitForTimeout(800);
+};
+
+// Opens "Create multiple pages" for a page, through its context menu
+const openCreateMultiple = async (frame) => {
+  await openMoreOptions(root)(frame);
+  await frame.page().locator('.context-menu').filter({ visible: true }).getByText('Create multiple pages').last().click();
+  await frame.waitForLoadState('networkidle');
+  await frame.getByRole('heading', { name: 'Create multiple pages' }).waitFor();
+  await frame.page().waitForTimeout(500);
 };
 
 // Marks a button that the text names
@@ -827,6 +855,169 @@ const screenshots = {
     outside: true,
     from: '#typo3-cms-backend-backend-toolbaritems-usertoolbaritem',
     to: '#typo3-cms-backend-backend-toolbaritems-usertoolbaritem .dropdown-menu',
+  },
+  // The chapter about pages. The page tree is outside of the module frame.
+  'PageTree/PageCreateDragDrop': {
+    url: moduleUrl('web/layout', packingList),
+    pageTree: true,
+    prepare: async (frame) => {
+      // Inside the icon: the toolbar would cut a frame around it
+      await frame.page().locator('.tree-toolbar__drag-node[data-node-type="1"]').evaluate((element) => {
+        element.style.outline = '2px solid #ff8700';
+        element.style.outlineOffset = '-2px';
+      });
+    },
+    outside: true,
+    // The page tree has rounded corners, a full margin would show the menu
+    margin: 6,
+    from: '#typo3-pagetree-toolbar',
+    to: pageTree,
+  },
+  'PageTree/PageInsertSubpage': {
+    url: moduleUrl('web/layout', packingList),
+    pageTree: true,
+    prepare: async (frame) => {
+      await frame.page().locator('.tree-toolbar__submenu-items button', { hasText: 'Page' }).first().click();
+      await frame.page().locator('typo3-backend-modal dialog[open]').waitFor();
+      await frame.page().waitForTimeout(1500);
+      await frame.page().evaluate(() => document.activeElement?.blur());
+    },
+    modal: true,
+    width: 1024,
+    height: 650,
+  },
+  'PageTree/PageCreateContextMenu': {
+    url: moduleUrl('web/layout', packingList),
+    pageTree: true,
+    prepare: async (frame) => {
+      await openPageMenu(root)(frame);
+      await frame.page().locator('.context-menu >> visible=true').getByText('New subpage').hover();
+    },
+    hover: true,
+    outside: true,
+    // The page tree has rounded corners, a full margin would show the menu
+    margin: 6,
+    from: '#typo3-pagetree-toolbar',
+    to: '.context-menu >> visible=true',
+  },
+  'PageProperties/Visibility': {
+    url: editUrl('pages', packingList),
+    tab: 'Access',
+    from: 'text=Visibility',
+    to: field('nav_hide'),
+  },
+  'PageTree/PageActions': {
+    url: moduleUrl('web/layout', packingList),
+    pageTree: true,
+    prepare: openMoreOptions(packingList),
+    hover: true,
+    outside: true,
+    margin: 6,
+    from: treeNode(root),
+    to: '.context-menu >> visible=true >> nth=-1',
+  },
+  'PageTree/PageTreeFilter': {
+    url: moduleUrl('web/layout', packingList),
+    pageTree: true,
+    prepare: async (frame) => {
+      await frame.page().locator('#toolbarSearch').fill('packing');
+      await frame.page().waitForTimeout(1500);
+    },
+    outside: true,
+    // The page tree has rounded corners, a full margin would show the menu
+    margin: 6,
+    from: '#typo3-pagetree-toolbar',
+    to: pageTree,
+  },
+  'PageTree/MultiplePagesContextMenu': {
+    url: moduleUrl('web/layout', packingList),
+    pageTree: true,
+    prepare: async (frame) => {
+      await openMoreOptions(root)(frame);
+      await frame.page().locator('.context-menu').filter({ visible: true }).getByText('Create multiple pages').last().hover();
+    },
+    hover: true,
+    outside: true,
+    margin: 6,
+    from: treeNode(root),
+    to: '.context-menu >> visible=true >> nth=-1',
+  },
+  'Page/MultiplePagesCreatePages': {
+    url: moduleUrl('web/layout', packingList),
+    pageTree: true,
+    prepare: openCreateMultiple,
+    from: 'h1',
+    // Down to the second page, as the list goes on below
+    to: 'input[placeholder="Title"] >> visible=true >> nth=1',
+  },
+  'Page/MultiplePagesConfigure': {
+    url: moduleUrl('web/layout', packingList),
+    pageTree: true,
+    prepare: openCreateMultiple,
+    // The last of the five pages, down to the buttons
+    from: '#form-line-4',
+    to: 'input[type="reset"]',
+  },
+  'Page/EditPageProperties': {
+    url: moduleUrl('web/layout', packingList),
+    window: true,
+    pageTree: true,
+    prepare: async (frame) => {
+      await outline(frame.getByRole('button', { name: 'Edit page properties' }).or(frame.getByRole('link', { name: 'Edit page properties' })).first());
+    },
+    until: 'h1',
+  },
+  'Page/RecalculateSlug': {
+    url: editUrl('pages', packingList),
+    from: 'text=Title',
+    to: field('slug'),
+  },
+  'Page/RecalculateSlugToggle': {
+    url: editUrl('pages', packingList),
+    prepare: async (frame) => {
+      await frame.locator(`${field('slug')} button`).first().click();
+      const slug = frame.locator(`${field('slug')} input[type="text"]:not([readonly])`).first();
+      await slug.fill('/packing-list/what-to-bring');
+      await frame.page().keyboard.press('Tab');
+      await frame.page().waitForTimeout(1500);
+    },
+    from: 'text=Title',
+    // The message where the page will be reachable
+    to: '.t3js-form-proposal-accepted',
+  },
+  'Page/BackendLayout': {
+    url: editUrl('pages', packingList),
+    tab: 'Appearance',
+    from: '[role="tablist"]',
+    to: field('backend_layout_next_level'),
+  },
+  'Page/RecordInformation': {
+    url: editUrl('pages', packingList),
+    tab: 'Notes',
+    prepare: async (frame) => {
+      await frame.locator(`${field('rowDescription')} textarea`).first().fill('When working on this page, please talk to Erika first.');
+      await frame.locator('h1').first().click();
+      await frame.page().waitForTimeout(500);
+    },
+    from: '[role="tablist"]',
+    to: field('rowDescription'),
+  },
+  // Saves a new URL segment, near the end: the page keeps it
+  'Page/RedirectCreated': {
+    url: editUrl('pages', routeComparison),
+    prepare: async (frame) => {
+      await frame.locator(`${field('slug')} button`).first().click();
+      const slug = frame.locator(`${field('slug')} input[type="text"]:not([readonly])`).first();
+      await slug.fill('/routes');
+      await frame.page().keyboard.press('Tab');
+      await frame.getByRole('button', { name: 'Save' }).first().click();
+      await frame.page().locator('typo3-notification-message, .alert-notification').first().waitFor();
+      await frame.page().waitForTimeout(800);
+    },
+    outside: true,
+    // The notification of the saved record follows right below
+    margin: 4,
+    from: 'typo3-notification-message >> nth=0',
   },
   // Last, as it saves a content element on the page of the screenshots above
   'NewContentElement/ContentSaved': {
