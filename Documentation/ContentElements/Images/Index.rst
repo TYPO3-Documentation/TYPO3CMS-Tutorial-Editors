@@ -11,7 +11,7 @@ Working with images
 
 ------------
 
-..  image:: /Images/ManualScreenshots/ContentElements/Images.png
+..  image:: /Images/GeneratedScreenshots/ContentElements/Images.png
     :alt: Content element Images in the TYPO3 backend
     :class: img-thumbnail float-end ms-1
     :width: 250
@@ -33,7 +33,7 @@ Add an image to the content element
 On the :guilabel:`Images` tab, click on the :guilabel:`Add image` button to display a
 :guilabel:`File selector` window which lets you browse for an image.
 
-..  figure:: /Images/ManualScreenshots/ContentElements/TextWithImage/ImagesTab.png
+..  figure:: /Images/GeneratedScreenshots/ContentElements/TextWithImage/ImagesTab.png
     :alt: Screenshot of a "Text with Image" TYPO3 content element, tab "Images"
     :zoom: gallery
 
@@ -43,7 +43,7 @@ Browse the file tree, then select a folder. The file selector always starts
 in the root folder of the default storage. Use the search field to find a
 file by name. The search includes all the subfolders of the selected folder.
 
-..  figure:: /Images/ManualScreenshots/ContentElements/TextWithImage/FileSelector.png
+..  figure:: /Images/GeneratedScreenshots/ContentElements/TextWithImage/FileSelector.png
     :alt: The file selector window in the TYPO3 backend
     :zoom: gallery
 
@@ -67,7 +67,7 @@ Use the small arrow next to the thumbnail to collapse and expand this section.
 Here you can set general metadata including description, alt text, and
 insert a link to the image.
 
-..  figure:: /Images/ManualScreenshots/ContentElements/TextWithImage/ImageMetaData.png
+..  figure:: /Images/GeneratedScreenshots/ContentElements/TextWithImage/ImageMetaData.png
     :alt: Screenshot of the meta data of an image in a "Text and Image" content element
     :zoom: gallery
 
@@ -89,7 +89,7 @@ Media adjustments
 Manually specify the width and height of the image in pixels, and apply a
 border.
 
-..  figure:: /Images/ManualScreenshots/ContentElements/TextWithImage/MediaAdjustments.png
+..  figure:: /Images/GeneratedScreenshots/ContentElements/TextWithImage/MediaAdjustments.png
     :alt: Screenshot of the Media Adjustments section of a "Text and Images" content element in TYPO3
     :zoom: gallery
 
@@ -137,7 +137,7 @@ Manage your images in the Media module
 You can manage your previously uploaded images in the backend module
 :guilabel:`Media`:
 
-..  figure:: /Images/ManualScreenshots/ContentElements/TextWithImage/FileList.png
+..  figure:: /Images/GeneratedScreenshots/ContentElements/TextWithImage/FileList.png
     :alt: Screenshot of the "Media" backend module in TYPO3
     :zoom: gallery
 
@@ -158,7 +158,7 @@ You can move images into folders by drag and drop:
 The file abstraction layer will not allow you to delete images that are still in
 use in some content element:
 
-..  figure:: /Images/ManualScreenshots/ContentElements/TextWithImage/FileNotDeleted.png
+..  figure:: /Images/GeneratedScreenshots/ContentElements/TextWithImage/FileNotDeleted.png
     :alt: File not deleted, The file "xxx.png" cannot be deleted since it is still used at the following places
     :zoom: gallery
 

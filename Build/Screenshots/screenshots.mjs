@@ -21,7 +21,7 @@ const editUrl = (table, uid) => `${baseUrl}/typo3/record/edit?edit[${table}][${u
 const margin = 12;
 
 // The uids of the records that create-records.php looked up
-const { packingList, toiletries, extras, essentialItems, faqs, stories, story, map, author, office } =
+const { packingList, toiletries, extras, essentialItems, faqs, stories, story, map, author, office, shells } =
   JSON.parse(readFileSync('../../var/screenshot-records.json', 'utf8'));
 
 // A content element in the Content > Layout module
@@ -73,8 +73,9 @@ const wizardSize = { modal: true, width: 1024, height: 600 };
 // A field of a form, found by its label: the backend runs without debug
 // mode, which would show the field names
 const field = (name) => `.form-group:has([name$="[${name}]"]):not(:has(.form-group))`;
-// The input of a field, not the hidden one that holds the value
-const input = (name) => `${field(name)} input:not([type="hidden"]):not([type="checkbox"])`;
+// The input of a field: not the hidden one that holds the value, nor the
+// disabled one that shows the default of a field without a value of its own
+const input = (name) => `${field(name)} input[data-formengine-input-name]`;
 
 // Changes the header of the story on the Pilgrim stories page, which the
 // form highlights once the field lost the focus
@@ -427,8 +428,12 @@ const screenshots = {
     prepare: async (frame) => {
       await openLinkBrowser('Page')(frame);
       const browser = linkBrowser(frame.page());
-      // The tree shows the site, but not its pages
-      await browser.locator('.node', { hasText: 'Camino' }).locator('.node-toggle').first().click();
+      // The tree shows the site, but not its pages, unless an earlier
+      // screenshot opened them: the state of the tree is kept per user
+      const closed = browser.locator('.node[aria-expanded="false"]', { hasText: 'Camino' }).locator('.node-toggle');
+      if (await closed.count() > 0) {
+        await closed.first().click();
+      }
       // The tree draws its nodes anew while it loads, which a normal click
       // waits for in vain
       await browser.getByText('Packing List', { exact: true }).filter({ visible: true }).first().click({ force: true });
@@ -465,6 +470,95 @@ const screenshots = {
   'ContentElements/Text/Whitespace': {
     url: editUrl('tt_content', office),
     from: '.ck-editor__editable p',
+  },
+  // The thumbnail at the top of the chapter about images
+  'ContentElements/Images': {
+    url: moduleUrl('web/layout', stories),
+    prepare: openWizard('Typical page content'),
+    outside: true,
+    from: 'typo3-backend-modal dialog[open] >> role=button[name=/^Images Only/]',
+  },
+  'ContentElements/TextWithImage/ImagesTab': {
+    url: editUrl('tt_content', shells),
+    tab: 'Images',
+    from: 'h1',
+    // Down to the image that the element already has
+    to: '.form-irre-object >> nth=0',
+  },
+  'ContentElements/TextWithImage/FileSelector': {
+    url: editUrl('tt_content', shells),
+    tab: 'Images',
+    prepare: async (frame) => {
+      await frame.getByRole('button', { name: 'Add image' }).first().click();
+      const selector = frame.page().frameLocator('typo3-backend-modal dialog[open] iframe');
+      await selector.getByText('camino', { exact: true }).filter({ visible: true }).first().click({ force: true });
+      await frame.page().waitForTimeout(1500);
+      // Two images marked, to import them at once. A tile shows its
+      // checkbox only while the mouse is over it.
+      for (const index of [0, 1]) {
+        const tile = selector.locator('.resource-tile').nth(index);
+        await tile.hover();
+        await tile.locator('input[type="checkbox"]').check();
+      }
+      await frame.page().mouse.move(0, 0);
+      // The checked tile has the focus, which would look different
+      await selector.locator('body').evaluate(() => document.activeElement?.blur());
+      await frame.page().waitForTimeout(500);
+    },
+    ...linkBrowserSize,
+  },
+  'ContentElements/TextWithImage/ImageMetaData': {
+    url: editUrl('tt_content', shells),
+    tab: 'Images',
+    prepare: async (frame) => {
+      // The image record opens when its header is clicked
+      await frame.locator('.form-irre-object .panel-button').first().click();
+      await frame.locator(field('alternative')).first().waitFor();
+      await frame.locator(`${field('alternative')} input[type="checkbox"]`).first().check();
+      await frame.locator(input('alternative')).first().fill('Scallop shells hanging in a pilgrim shop');
+      await frame.locator('h1').first().click();
+      await frame.page().waitForTimeout(500);
+    },
+    from: '[role="tablist"]',
+    to: field('alternative'),
+  },
+  'ContentElements/TextWithImage/MediaAdjustments': {
+    url: editUrl('tt_content', shells),
+    tab: 'Images',
+    prepare: async (frame) => {
+      await frame.locator(`${field('imagewidth')} input[type="checkbox"]`).first().check();
+      await frame.locator(input('imagewidth')).first().fill('250');
+      await frame.locator(`${field('imageborder')} input[type="checkbox"]`).first().check();
+      await frame.locator('h1').first().click();
+      await frame.page().waitForTimeout(500);
+    },
+    from: 'text=Media Adjustments',
+    to: field('imageborder'),
+  },
+  'ContentElements/TextWithImage/FileList': {
+    url: `${baseUrl}/typo3/module/file/list?id=1:/camino/`,
+    window: true,
+    pageTree: true,
+    menu: 'Media',
+    prepare: async (frame) => {
+      await frame.getByRole('button', { name: 'View' }).first().click();
+      await frame.page().waitForTimeout(500);
+    },
+    until: '.resource-tile >> nth=0',
+  },
+  'ContentElements/TextWithImage/FileNotDeleted': {
+    url: `${baseUrl}/typo3/module/file/list?id=1:/camino/&viewMode=list`,
+    menu: 'Media',
+    prepare: async (frame) => {
+      // The image of the text above, which is still in use
+      await frame.locator('tr', { hasText: 'bernard-wortelboer' }).locator('a[title="Delete"], button[title="Delete"]').first().click();
+      const dialog = frame.page().locator('typo3-backend-modal dialog[open]');
+      await dialog.waitFor();
+      await dialog.getByRole('button', { name: /^Yes, delete/ }).click();
+      await frame.waitForLoadState('networkidle');
+      await frame.page().waitForTimeout(1500);
+    },
+    from: '.alert-warning, .callout-warning',
   },
   // Last, as it saves a content element on the page of the screenshots above
   'NewContentElement/ContentSaved': {
