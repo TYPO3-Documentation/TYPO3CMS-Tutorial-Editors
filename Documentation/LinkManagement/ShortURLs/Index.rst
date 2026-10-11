@@ -28,7 +28,7 @@ Creating a short URL
 
 From the Link Management module, select :guilabel:`Short URLs` followed by :guilabel:`Add Short URL` or :guilabel:`Create a new Short URL`.
 
-..  figure:: /Images/ManualScreenshots/LinkManagement/ShortURLCreate.png
+..  figure:: /Images/GeneratedScreenshots/LinkManagement/ShortURLCreate.png
     :alt: Screenshot of the Add Short URL button found within the Short URL submodule
     :class: with-border
 
@@ -37,7 +37,7 @@ From the Link Management module, select :guilabel:`Short URLs` followed by :guil
 General tab
 -----------
 
-..  figure:: /Images/ManualScreenshots/LinkManagement/ShortURLGeneral.png
+..  figure:: /Images/GeneratedScreenshots/LinkManagement/ShortURLGeneral.png
     :alt: Screenshot of the General Tab found inside Add Short URL.
     :class: with-border
 
@@ -53,7 +53,7 @@ the dice icon to generate a random string of text. Note, you can also manually s
 Access tab
 ----------
 
-..  figure:: /Images/ManualScreenshots/LinkManagement/ShortURLAccess.png
+..  figure:: /Images/GeneratedScreenshots/LinkManagement/ShortURLAccess.png
     :alt: Screenshot of the Access Tab found inside Add Short URL.
     :class: with-border
 
@@ -68,7 +68,7 @@ Access tab
 Notes tab
 ---------
 
-..  figure:: /Images/ManualScreenshots/LinkManagement/ShortURLNotes.png
+..  figure:: /Images/GeneratedScreenshots/LinkManagement/ShortURLNotes.png
     :alt: Screenshot of the Notes Tab found inside Add Short URL.
     :class: with-border
 
@@ -79,7 +79,7 @@ Add an internal note that other backend users can view.
 Edit an existing short URL
 ==========================
 
-..  figure:: /Images/ManualScreenshots/LinkManagement/ShortURLEdit.png
+..  figure:: /Images/GeneratedScreenshots/LinkManagement/ShortURLEdit.png
     :alt: Screenshot of the Short URL Management Screen
     :class: with-border
 
