@@ -15,6 +15,7 @@ use TYPO3\CMS\Core\Authentication\CommandLineUserAuthentication;
 use TYPO3\CMS\Core\Core\Bootstrap;
 use TYPO3\CMS\Core\Core\Environment;
 use TYPO3\CMS\Core\Core\SystemEnvironmentBuilder;
+use TYPO3\CMS\Core\Crypto\PasswordHashing\PasswordHashFactory;
 use TYPO3\CMS\Core\Database\ConnectionPool;
 use TYPO3\CMS\Core\DataHandling\DataHandler;
 use TYPO3\CMS\Core\Localization\LanguageServiceFactory;
@@ -56,6 +57,7 @@ $find = static function (string $table, string $field, string $value, ?int $pid 
 $uids = [
     'root' => $find('pages', 'title', 'Camino', 0),
 ];
+$uids['routeComparison'] = $find('pages', 'title', 'Camino Route Comparison', $uids['root']);
 $uids['packingList'] = $find('pages', 'title', 'Packing List', $uids['root']);
 $uids['toiletries'] = $find('tt_content', 'header', 'Toiletries', $uids['packingList']);
 $uids['extras'] = $find('tt_content', 'header', 'Extras', $uids['packingList']);
@@ -103,16 +105,70 @@ foreach ($history->select(['uid'], 'sys_history', [], [], ['uid' => 'ASC'])->fet
 $connectionPool->getConnectionForTable('tt_content')
     ->update('tt_content', ['tstamp' => $changedAt + 90], ['uid' => $uids['optionalItems']]);
 
-// A second editor, who is editing the element of the locking example. The
-// Layout module marks a locked element, so it is one that no other
-// screenshot shows. The warning names the age of the lock in the largest
-// unit only, so 90 minutes read "1 hour" for half an hour, longer than the
-// screenshots take.
+// A page for creating content, as a standard installation offers it. Camino
+// replaces the standard content types with its own, and the columns of its
+// layouts allow a few of them each. This page swaps the types back and has
+// a layout of its own, with one column that allows all of them.
+// It comes last in the page tree, so the pages above keep their place.
+$dataHandler = $process(['pages' => ['NEWstories' => [
+    'pid' => -$find('pages', 'title', 'Footer navigation', $uids['root']),
+    'title' => 'Pilgrim stories',
+    'hidden' => 0,
+    'backend_layout' => 'pagets__editorsTutorial',
+]]]);
+$uids['stories'] = $dataHandler->substNEWwithIDs['NEWstories'];
+// Camino hides the TSconfig field from the form, which the DataHandler
+// respects, so the field is written directly
+$connectionPool->getConnectionForTable('pages')->update('pages', ['TSconfig' => <<<'TSCONFIG'
+    mod.web_layout.BackendLayouts.editorsTutorial {
+      title = One column
+      config.backend_layout {
+        colCount = 1
+        rowCount = 1
+        rows.1.columns.1 {
+          name = Content area
+          colPos = 0
+        }
+      }
+    }
+    TCEFORM.tt_content.CType.removeItems = camino_hero, camino_hero_small, camino_hero_text_only, camino_textteaser, camino_testimonial, camino_author, camino_textmedia_teaser, camino_textmedia_teaser_grid, camino_linklist, camino_sociallinks
+    TSCONFIG], ['uid' => $uids['stories']]);
+$process(['tt_content' => ['NEWstory' => [
+    'pid' => $uids['stories'],
+    'colPos' => 0,
+    'CType' => 'textmedia',
+    'header' => 'Arriving in Santiago',
+    'bodytext' => '<p>After weeks on the road, the first view of the cathedral towers makes every blister worth it.</p>',
+]]]);
+
+// The group of a common editor, who creates the typical content types,
+// lists and dividers, but no forms, menus, or plugins
+$contentTypes = ['header', 'text', 'textpic', 'image', 'textmedia', 'bullets', 'table', 'uploads', 'div'];
+$dataHandler = $process(['be_groups' => ['NEWeditors' => [
+    'pid' => 0,
+    'title' => 'Editors',
+    'db_mountpoints' => (string)$uids['root'],
+    'groupMods' => 'web_layout',
+    'tables_select' => 'pages,tt_content',
+    'tables_modify' => 'tt_content',
+    'explicit_allowdeny' => implode(',', array_map(static fn(string $type): string => 'tt_content:CType:' . $type, $contentTypes)),
+]]]);
+$editors = $dataHandler->substNEWwithIDs['NEWeditors'];
+// The editors may edit the content of every page of the site
+$connectionPool->getConnectionForTable('pages')->update('pages', ['perms_groupid' => $editors, 'perms_group' => 31], ['deleted' => 0]);
+
+// A second editor, who is a member of the group above, and who is editing
+// the element of the locking example. The Layout module marks a locked
+// element, so it is one that no other screenshot shows. The warning names
+// the age of the lock in the largest unit only, so 90 minutes read "1 hour"
+// for half an hour, longer than the screenshots take.
 $connectionPool->getConnectionForTable('be_users')->insert('be_users', [
     'pid' => 0,
     'username' => 'e.doe',
     'realName' => 'Erika Doe',
-    'password' => '',
+    'password' => GeneralUtility::makeInstance(PasswordHashFactory::class)
+        ->getDefaultHashInstance('BE')->getHashedPassword('Screenshots-2026!'),
+    'usergroup' => (string)$editors,
     'tstamp' => $changedAt,
     'crdate' => $changedAt,
 ]);
