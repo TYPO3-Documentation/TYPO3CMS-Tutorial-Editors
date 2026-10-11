@@ -104,6 +104,10 @@ foreach ($history->select(['uid'], 'sys_history', [], [], ['uid' => 'ASC'])->fet
 }
 $connectionPool->getConnectionForTable('tt_content')
     ->update('tt_content', ['tstamp' => $changedAt + 90], ['uid' => $uids['optionalItems']]);
+// The file lists show the dates of the files, which the import of the demo
+// site sets to the day of the run
+$connectionPool->getConnectionForTable('sys_file')
+    ->update('sys_file', ['creation_date' => $changedAt, 'modification_date' => $changedAt], ['storage' => 1]);
 
 // A page for creating content, as a standard installation offers it. Camino
 // replaces the standard content types with its own, and the columns of its
@@ -157,6 +161,19 @@ $dataHandler = $process(['tt_content' => ['NEWmap' => [
     'bodytext' => '<iframe src="https://example.org/map" title="Map of the stages"></iframe>',
 ]]]);
 $uids['map'] = $dataHandler->substNEWwithIDs['NEWmap'];
+// A text for the rich text editor, with a link, a non-breaking space and a
+// soft hyphen. It comes last, after the elements above.
+$dataHandler = $process(['tt_content' => ['NEWoffice' => [
+    'pid' => -$uids['map'],
+    'colPos' => 0,
+    'CType' => 'text',
+    'header' => 'The pilgrim office',
+    'bodytext' => '<p>In Santiago, the <a href="https://example.org/pilgrim-office">pilgrim office</a> '
+        . 'checks the stamps in your credential and issues the Compostela. Plan about 30&nbsp;minutes '
+        . 'for the queue in the summer, and keep your credential dry: a soaked page of stamps is '
+        . 'hard to read for the office&shy;workers.</p>',
+]]]);
+$uids['office'] = $dataHandler->substNEWwithIDs['NEWoffice'];
 
 // The author card of the theme, whose name is a required field
 $uids['author'] = $find('tt_content', 'header', 'Elena Vásquez', $uids['routeComparison']);

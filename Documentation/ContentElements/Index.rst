@@ -39,7 +39,7 @@ Content elements
 
     ..  card:: :ref:`Rich Text Editor<rte>`
 
-        ..  card-image:: /Images/ManualScreenshots/ContentElements/RegularText.png
+        ..  card-image:: /Images/GeneratedScreenshots/ContentElements/RegularText.png
             :alt: Content element Regular Text in the TYPO3 backend
 
         We use the rich text editor to add written content. Find out how you can use it to format
