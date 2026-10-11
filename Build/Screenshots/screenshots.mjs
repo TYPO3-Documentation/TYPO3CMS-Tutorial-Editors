@@ -21,7 +21,7 @@ const editUrl = (table, uid) => `${baseUrl}/typo3/record/edit?edit[${table}][${u
 const margin = 12;
 
 // The uids of the records that create-records.php looked up
-const { packingList, toiletries, extras, essentialItems, faqs, stories, story, map, author } =
+const { packingList, toiletries, extras, essentialItems, faqs, stories, story, map, author, office } =
   JSON.parse(readFileSync('../../var/screenshot-records.json', 'utf8'));
 
 // A content element in the Content > Layout module
@@ -94,6 +94,56 @@ const newTextAndMedia = async (frame) => {
   // The field shows that it changed only once it lost the focus
   await frame.locator('h1').first().click();
   await frame.page().waitForTimeout(500);
+};
+
+// Selects a phrase in the rich text editor, as an editor would with the
+// mouse. The editor follows the selection of the browser.
+const selectText = (phrase) => async (frame) => {
+  const editable = frame.locator('.ck-editor__editable').first();
+  await editable.click();
+  await editable.evaluate((element, text) => {
+    const walker = document.createTreeWalker(element, NodeFilter.SHOW_TEXT);
+    for (let node = walker.nextNode(); node; node = walker.nextNode()) {
+      const start = node.textContent.indexOf(text);
+      if (start >= 0) {
+        const range = document.createRange();
+        range.setStart(node, start);
+        range.setEnd(node, start + text.length);
+        const selection = window.getSelection();
+        selection.removeAllRanges();
+        selection.addRange(range);
+        return;
+      }
+    }
+    throw new Error(`"${text}" is not in the editor`);
+  }, phrase);
+  await frame.page().waitForTimeout(500);
+};
+
+// The button of the rich text editor whose tooltip starts with the label
+const editorButton = (label) => `.ck-toolbar button[data-cke-tooltip-text^="${label}"]`;
+
+// The size of the link browser, which grows with the window
+const linkBrowserSize = { modal: true, width: 1100, height: 700 };
+
+// The text of the rich text editor, from the label of the field to the
+// end of the text: the editor is taller than the text
+const editorText = { from: `${field('bodytext')} .form-label`, to: '.ck-editor__editable p' };
+
+// The link browser, which opens in a frame of its own in a dialog
+const linkBrowser = (page) => page.frameLocator('typo3-backend-modal dialog[open] iframe');
+
+// Opens the link browser for the link in the text, on the tab named
+const openLinkBrowser = (tab) => async (frame) => {
+  await selectText('pilgrim office')(frame);
+  // On a link, the button shows the link in a balloon first, whose "Edit
+  // link" button opens the link browser
+  await frame.locator(editorButton('Link')).first().click();
+  await frame.locator('.ck-balloon-panel_visible button[data-cke-tooltip-text="Edit link"]').first().click();
+  const browser = linkBrowser(frame.page());
+  await browser.getByRole('tab', { name: tab }).waitFor();
+  await browser.getByRole('tab', { name: tab }).click();
+  await frame.page().waitForTimeout(1500);
 };
 
 const screenshots = {
@@ -351,6 +401,71 @@ const screenshots = {
     },
     modal: true,
   },
+  // The thumbnail at the top of the chapter about the rich text editor
+  'ContentElements/RegularText': {
+    url: moduleUrl('web/layout', stories),
+    prepare: openWizard('Typical page content'),
+    outside: true,
+    from: 'typo3-backend-modal dialog[open] >> role=button[name=/^Regular Text Element/]',
+  },
+  'ContentElements/Text/RichTextEditor': {
+    url: editUrl('tt_content', office),
+    ...editorText,
+  },
+  'ContentElements/Text/Link': {
+    url: editUrl('tt_content', office),
+    prepare: async (frame) => {
+      await selectText('Compostela')(frame);
+      await frame.locator(editorButton('Link')).first().hover();
+      await frame.page().waitForTimeout(1000);
+    },
+    hover: true,
+    ...editorText,
+  },
+  'Link/LinkBrowser': {
+    url: editUrl('tt_content', office),
+    prepare: async (frame) => {
+      await openLinkBrowser('Page')(frame);
+      const browser = linkBrowser(frame.page());
+      // The tree shows the site, but not its pages
+      await browser.locator('.node', { hasText: 'Camino' }).locator('.node-toggle').first().click();
+      // The tree draws its nodes anew while it loads, which a normal click
+      // waits for in vain
+      await browser.getByText('Packing List', { exact: true }).filter({ visible: true }).first().click({ force: true });
+      await frame.page().waitForTimeout(1500);
+    },
+    ...linkBrowserSize,
+  },
+  'Link/LinkBrowserFile': {
+    url: editUrl('tt_content', office),
+    prepare: async (frame) => {
+      await openLinkBrowser('File')(frame);
+      await linkBrowser(frame.page()).getByText('camino', { exact: true }).filter({ visible: true }).first().click({ force: true });
+      await frame.page().waitForTimeout(1500);
+    },
+    ...linkBrowserSize,
+  },
+  'Link/LinkBrowserExternal': {
+    url: editUrl('tt_content', office),
+    prepare: openLinkBrowser('External URL'),
+    ...linkBrowserSize,
+  },
+  'ContentElements/Text/Unlink': {
+    url: editUrl('tt_content', office),
+    prepare: async (frame) => {
+      await frame.locator('.ck-editor__editable a').first().click();
+      await frame.locator('.ck-balloon-panel_visible').first().waitFor();
+      await frame.locator('.ck-balloon-panel_visible button[data-cke-tooltip-text="Unlink"]').first().hover();
+      await frame.page().waitForTimeout(1000);
+    },
+    hover: true,
+    from: '.ck-editor__editable p',
+    to: '.ck-balloon-panel_visible',
+  },
+  'ContentElements/Text/Whitespace': {
+    url: editUrl('tt_content', office),
+    from: '.ck-editor__editable p',
+  },
   // Last, as it saves a content element on the page of the screenshots above
   'NewContentElement/ContentSaved': {
     url: moduleUrl('web/layout', stories),
@@ -485,11 +600,13 @@ for (const name of names) {
     continue;
   }
   // Bounding boxes are relative to the page, also for elements in the frame
+  // The page tree and dialogs are outside of the module frame
+  const scope = screenshot.outside ? page : frame;
   const boxes = [
-    await frame.locator(screenshot.from).first().boundingBox(),
+    await scope.locator(screenshot.from).first().boundingBox(),
     screenshot.toOutside
       ? await page.locator(screenshot.toOutside).last().boundingBox()
-      : await frame.locator(screenshot.to ?? screenshot.from).last().boundingBox(),
+      : await scope.locator(screenshot.to ?? screenshot.from).last().boundingBox(),
   ];
   const space = screenshot.margin ?? margin;
   const left = Math.max(Math.min(...boxes.map((box) => box.x)) - space - (screenshot.left ?? 0), 0);
