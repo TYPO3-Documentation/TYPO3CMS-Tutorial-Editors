@@ -8,7 +8,7 @@
 Creating a contact form
 =======================
 
-..  image:: /Images/ManualScreenshots/ContentElements/ContactForm.png
+..  image:: /Images/GeneratedScreenshots/ContentElements/ContactForm.png
     :alt: Content element Contact Form in the TYPO3 backend
     :class: img-thumbnail float-end ms-1 ms-1
     :width: 250
@@ -25,26 +25,50 @@ with one pre-defined form already built, which you can use to get started.
 #.  In the :guilabel:`Content > Forms` module, click the :guilabel:`+ Create new
     form` button. The :guilabel:`Create new form` wizard displays.
 
-    ..  include:: /Images/AutomaticScreenshots/Forms/FormCreateNew.rst.txt
+    ..  figure:: /Images/GeneratedScreenshots/Forms/FormCreateNew.png
+        :alt: The Forms module without forms, with the button "Create new form"
+        :zoom: gallery
 
-#.  Choose whether you want to create a blank form or use a predefined form.
-    In this case, choose :guilabel:`Predefined Form`.
+        Launching the :guilabel:`Create new form` wizard
 
-    ..  include:: /Images/AutomaticScreenshots/Forms/FormsSettingsStep1.rst.txt
+#.  Choose the template :guilabel:`Simple contact form`.
 
-#.  Accept "Database" as the default storage location and click :guilabel:`Next`.
-    In the :guilabel:`Template` list, select :guilabel:`Simple contact form`.
-    Enter a name for the form and click :guilabel:`Next` .
+    ..  versionchanged:: 15.0
+        :changelog: feature-110331-1785369600
 
-    ..  include:: /Images/AutomaticScreenshots/Forms/FormsSettingsStep2.rst.txt
+        Before, the wizard asked whether to create a blank form or a
+        predefined form, and offered the templates in a list in a later
+        step.
 
-#.  Check the settings and click :guilabel:`Create new form`.
+    ..  figure:: /Images/GeneratedScreenshots/Forms/FormsSettingsStep1.png
+        :alt: The first step of the wizard with the templates "Blank form" and
+            "Simple contact form"
+        :zoom: gallery
 
-    ..  include:: /Images/AutomaticScreenshots/Forms/FormsSettingsStep3.rst.txt
+        Choose a template
 
-#.  Click :guilabel:`Finish`. Your new form is displayed.
+#.  Enter a name for the form and click :guilabel:`Next`.
 
-    ..  include:: /Images/AutomaticScreenshots/Forms/FormsNewForm.rst.txt
+    ..  figure:: /Images/GeneratedScreenshots/Forms/FormsSettingsStep2.png
+        :alt: The step "Settings" of the wizard with the name of the new form
+        :zoom: gallery
+
+        Enter a name
+
+#.  TYPO3 creates the form. Click :guilabel:`Finish`. Your new form is
+    displayed.
+
+    ..  figure:: /Images/GeneratedScreenshots/Forms/FormsSettingsStep3.png
+        :alt: The last step of the wizard with the message "Form created"
+        :zoom: gallery
+
+        The form is created
+
+    ..  figure:: /Images/GeneratedScreenshots/Forms/FormsNewForm.png
+        :alt: The new contact form in the form editor
+        :zoom: gallery
+
+        New form based on template
 
     The predefined 'Simple contact form' comes with some settings already
     configured, but you can edit these settings and add more fields. For
@@ -56,14 +80,23 @@ with one pre-defined form already built, which you can use to get started.
 #.  In the form content element, go to the :guilabel:`Plugin` tab and in the
     :guilabel:`Form definition` list, choose your form.
 
-    ..  include:: /Images/AutomaticScreenshots/Forms/FormsFormDefinition.rst.txt
+    ..  figure:: /Images/GeneratedScreenshots/Forms/FormsFormDefinition.png
+        :alt: The tab "Plugin" of a form element with the form definition
+            "Get in touch"
+        :zoom: gallery
+
+        Choose your form on the :guilabel:`Plugin` tab
 
 #.  On the :guilabel:`General` tab, type a header for your form, then save and close
     the record.
 
     Preview the page and it should look something like this:
 
-    ..  include:: /Images/AutomaticScreenshots/Forms/FormOutput.rst.txt
+    ..  figure:: /Images/GeneratedScreenshots/Forms/FormOutput.png
+        :alt: The contact form in the frontend
+        :zoom: gallery
+
+        The contact form in the frontend
 
 
 ..  _create-form-scratch:
@@ -73,19 +106,25 @@ Create a form from scratch
 
 #.  In the :guilabel:`Content > Forms` module, click the :guilabel:`+ Create new
     form` button.
-#.  In the :guilabel:`Create new form` wizard, choose to create a blank form and
-    accept "Database" as the default storage location.
-#.  Give your form a name, then click :guilabel:`Next` and :guilabel:`Create new form`
-    then :guilabel:`Finish`.
+#.  In the :guilabel:`Create new form` wizard, choose :guilabel:`Blank form`.
+#.  Give your form a name, then click :guilabel:`Next` and :guilabel:`Finish`.
 
     A blank form displays.
 
-    ..  include:: /Images/AutomaticScreenshots/FormsBlank/FormsBlankForm.rst.txt
+    ..  figure:: /Images/GeneratedScreenshots/FormsBlank/FormsBlankForm.png
+        :alt: A blank form in the form editor
+        :zoom: gallery
+
+        Create a new form from scratch
 
 #.  Click the :guilabel:`Create new element` button. The :guilabel:`New element`
     window displays.
 
-    ..  include:: /Images/AutomaticScreenshots/FormsBlank/FormsNewElement.rst.txt
+    ..  figure:: /Images/GeneratedScreenshots/FormsBlank/FormsNewElement.png
+        :alt: The window "New element" with the types of form elements
+        :zoom: gallery
+
+        Create new element in form
 
     TYPO3 comes with over twenty form fields by default, including:
 
@@ -103,13 +142,21 @@ Create a form from scratch
     configure settings for the field (such as placeholder text and field
     validation) on the right-hand side of the screen .
 
-    ..  include:: /Images/AutomaticScreenshots/FormsBlank/FormsFieldSettings.rst.txt
+    ..  figure:: /Images/GeneratedScreenshots/FormsBlank/FormsFieldSettings.png
+        :alt: A text field in the form editor, with its settings on the right
+        :zoom: gallery
+
+        Configure the settings of the field
 
 #.  Click the :guilabel:`Preview mode` icon to see an indication of how your
     form will display on the frontend. Use the :guilabel:`Edit mode` icon to
     return to editing your form.
 
-    ..  include:: /Images/AutomaticScreenshots/FormsBlank/FormsPreview.rst.txt
+    ..  figure:: /Images/GeneratedScreenshots/FormsBlank/FormsPreview.png
+        :alt: The form in the preview mode of the form editor
+        :zoom: gallery
+
+        The preview mode of the form editor
 
 
 ..  _working-with-forms:
@@ -122,7 +169,7 @@ to rearrange their order.
 
 Add :guilabel:`Finishers` like a confirmation message or redirection to another page.
 
-..  figure:: ../../Images/ManualScreenshots/Forms/FormsFinishers.png
+..  figure:: /Images/GeneratedScreenshots/Forms/FormsFinishers.png
     :alt: Add finishers to a form
     :zoom: gallery
 
