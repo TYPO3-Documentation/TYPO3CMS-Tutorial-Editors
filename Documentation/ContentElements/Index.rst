@@ -65,7 +65,7 @@ Content elements
 
     ..  card:: :ref:`Creating A Contact Form<mail-form>`
 
-        ..  card-image:: /Images/ManualScreenshots/ContentElements/ContactForm.png
+        ..  card-image:: /Images/GeneratedScreenshots/ContentElements/ContactForm.png
             :alt: Content element Contact Form in the TYPO3 backend
 
         Find out how to create a contact form using the step-by-step guide.

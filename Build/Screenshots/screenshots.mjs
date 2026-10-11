@@ -147,6 +147,101 @@ const openLinkBrowser = (tab) => async (frame) => {
   await frame.page().waitForTimeout(1500);
 };
 
+// The Forms module, which lists the forms
+const formsUrl = `${baseUrl}/typo3/module/form`;
+
+// Creates a form with the "Create new form" wizard, up to the step named:
+// "choose" (the templates), "settings" (the name), "created" (the last
+// step) or "editor" (the new form in the form editor)
+const createForm = async (frame, template, name, until) => {
+  await frame.getByRole('button', { name: 'Create new form' }).first().click();
+  const dialog = frame.page().locator('typo3-backend-modal dialog[open]');
+  await dialog.waitFor();
+  await frame.page().waitForTimeout(1000);
+  if (until === 'choose') {
+    // The dialog focuses its close button, which would look selected
+    await frame.page().evaluate(() => document.activeElement?.blur());
+    return;
+  }
+  // The label of a template can go on, such as "(ext:form example)"
+  await dialog.getByText(new RegExp(`^${template}`)).first().click();
+  const nameField = dialog.getByRole('textbox').first();
+  await nameField.waitFor();
+  await nameField.click();
+  await frame.page().keyboard.type(name);
+  await frame.page().waitForTimeout(500);
+  if (until === 'settings') {
+    return;
+  }
+  await dialog.getByRole('button', { name: /^Next/ }).click();
+  await dialog.getByRole('button', { name: /^Finish/ }).waitFor();
+  await frame.page().waitForTimeout(500);
+  if (until === 'created') {
+    return;
+  }
+  await dialog.getByRole('button', { name: /^Finish/ }).click();
+  await frame.waitForURL(/form\/editor/);
+  await frame.waitForLoadState('networkidle');
+  await frame.page().waitForTimeout(1500);
+};
+
+// Opens a form in the form editor, and creates it first if an earlier
+// screenshot has not
+const openForm = async (frame, template, name) => {
+  const link = frame.getByRole('link', { name, exact: true });
+  if (await link.count() > 0) {
+    await link.first().click();
+    await frame.waitForURL(/form\/editor/);
+    await frame.waitForLoadState('networkidle');
+    await frame.page().waitForTimeout(1500);
+    return;
+  }
+  await createForm(frame, template, name, 'editor');
+};
+
+// Adds a text field to the blank form, which is not saved
+const addTextField = async (frame) => {
+  await openForm(frame, 'Blank form', 'Talk to us');
+  await frame.getByRole('button', { name: 'Create new element', exact: true }).first().click();
+  const dialog = frame.page().locator('typo3-backend-modal dialog[open]');
+  await dialog.waitFor();
+  await dialog.getByRole('button', { name: /^Text A single-line/ }).first().click();
+  await frame.page().waitForTimeout(1500);
+};
+
+// The form definition of a form element, which is a field of its FlexForm
+const formDefinition = 'role=combobox[name="Form definition"]';
+
+// Creates a form element on the FAQs page with the contact form. The page
+// is one of the Camino theme, which renders it in the frontend.
+// Choosing the form asks whether to save: "Keep editing" or "Save and
+// refresh".
+const newFormElement = (answer) => async (frame) => {
+  await openWizard('Form elements')(frame);
+  await frame.page().locator('typo3-backend-modal dialog[open]').getByRole('button', { name: /^Form A form/ }).click();
+  await frame.waitForURL(/record\/edit/);
+  await frame.waitForLoadState('networkidle');
+  await frame.locator(input('header')).first().fill('Get in touch');
+  await frame.getByRole('tab', { name: 'Plugin', exact: true }).click();
+  // The list names a form with its uid, "Get in touch (1)", after the
+  // empty entry
+  const select = frame.locator(formDefinition);
+  const value = await select.locator('option', { hasText: /^Get in touch/ }).first().getAttribute('value');
+  await select.selectOption(value);
+  // The form asks to be saved and shown again with the settings of the form
+  const dialog = frame.page().locator('typo3-backend-modal dialog[open]');
+  await dialog.waitFor();
+  await dialog.getByRole('button', { name: answer }).click();
+  // The closed dialog stays in the page for a while
+  await frame.page().waitForTimeout(2000);
+};
+
+// Marks a button that the text names
+const outline = (locator) => locator.evaluate((element) => {
+  element.style.outline = '3px solid #ff8700';
+  element.style.outlineOffset = '3px';
+});
+
 const screenshots = {
   // First, as the warning names the age of the lock that create-records.php
   // set: the sooner, the safer
@@ -574,6 +669,129 @@ const screenshots = {
     // Down to the list of the allowed file extensions and platforms
     to: '.badge-list >> nth=0',
   },
+  // The forms, in the order of the steps of the chapter. Without forms,
+  // the module explains how to create the first one.
+  'Forms/FormCreateNew': {
+    url: formsUrl,
+    window: true,
+    prepare: async (frame) => {
+      await outline(frame.getByRole('button', { name: 'Create new form' }).first());
+    },
+    until: '.callout-info',
+  },
+  'Forms/FormsSettingsStep1': {
+    url: formsUrl,
+    prepare: (frame) => createForm(frame, 'Simple contact form', 'Get in touch', 'choose'),
+    modal: true,
+    width: 1024,
+    height: 600,
+  },
+  'Forms/FormsSettingsStep2': {
+    url: formsUrl,
+    prepare: (frame) => createForm(frame, 'Simple contact form', 'Get in touch', 'settings'),
+    modal: true,
+    width: 1024,
+    height: 600,
+  },
+  // Creates the contact form, which the screenshots below use
+  'Forms/FormsSettingsStep3': {
+    url: formsUrl,
+    prepare: (frame) => createForm(frame, 'Simple contact form', 'Get in touch', 'created'),
+    modal: true,
+    width: 1024,
+    height: 600,
+  },
+  'Forms/FormsNewForm': {
+    // Wide, so that the form editor shows its settings next to the form
+    width: 1800,
+    height: 900,
+    url: formsUrl,
+    prepare: (frame) => openForm(frame, 'Simple contact form', 'Get in touch'),
+    window: true,
+    // The tree of the form elements, in the place of the page tree
+    pageTree: true,
+  },
+  // Creates the blank form, which the screenshots below use
+  'FormsBlank/FormsBlankForm': {
+    width: 1800,
+    height: 600,
+    url: formsUrl,
+    prepare: (frame) => openForm(frame, 'Blank form', 'Talk to us'),
+    window: true,
+    pageTree: true,
+  },
+  'FormsBlank/FormsNewElement': {
+    url: formsUrl,
+    prepare: async (frame) => {
+      await openForm(frame, 'Blank form', 'Talk to us');
+      await frame.getByRole('button', { name: 'Create new element', exact: true }).first().click();
+      await frame.page().locator('typo3-backend-modal dialog[open]').waitFor();
+      await frame.page().waitForTimeout(1000);
+      await frame.page().evaluate(() => document.activeElement?.blur());
+      // The mouse is still where the button was, over an element type
+      await frame.page().mouse.move(0, 0);
+    },
+    modal: true,
+    width: 1280,
+    height: 900,
+  },
+  'FormsBlank/FormsFieldSettings': {
+    width: 1800,
+    height: 900,
+    url: formsUrl,
+    prepare: (frame) => addTextField(frame),
+    window: true,
+    pageTree: true,
+  },
+  'FormsBlank/FormsPreview': {
+    width: 1800,
+    height: 700,
+    url: formsUrl,
+    prepare: async (frame) => {
+      await addTextField(frame);
+      await frame.getByRole('button', { name: 'Preview mode' }).first().click();
+      await frame.page().waitForTimeout(1500);
+    },
+    window: true,
+    pageTree: true,
+  },
+  'Forms/FormsFinishers': {
+    width: 1800,
+    url: formsUrl,
+    prepare: async (frame) => {
+      await openForm(frame, 'Simple contact form', 'Get in touch');
+      // A screenshot cannot show the native list of a select, so the select
+      // shows its items as a list box instead
+      await frame.locator('.formeditor-inspector select:has(option:text-is("Add finisher"))').first()
+        .evaluate((select) => { select.size = select.options.length; });
+    },
+    from: '.formeditor-inspector-content',
+    to: '.formeditor-inspector select:has(option:text-is("Add finisher"))',
+  },
+  // The thumbnail at the top of the chapter about forms
+  'ContentElements/ContactForm': {
+    url: moduleUrl('web/layout', stories),
+    prepare: openWizard('Form elements'),
+    outside: true,
+    from: 'typo3-backend-modal dialog[open] >> role=button[name=/^Form A form/]',
+  },
+  'Forms/FormsFormDefinition': {
+    url: moduleUrl('web/layout', faqs),
+    prepare: newFormElement('Keep editing'),
+    from: '[role="tablist"]',
+    to: formDefinition,
+  },
+  // Saves a form element on the FAQs page and shows it in the frontend:
+  // near the end, as the element stays on the page
+  'Forms/FormOutput': {
+    url: moduleUrl('web/layout', faqs),
+    prepare: async (frame) => {
+      await newFormElement('Save and refresh')(frame);
+      await frame.getByRole('button', { name: 'Delete' }).first().waitFor();
+    },
+    frontend: `${baseUrl}/camino/faqs`,
+    frontendElement: 'form',
+  },
   // Last, as it saves a content element on the page of the screenshots above
   'NewContentElement/ContentSaved': {
     url: moduleUrl('web/layout', stories),
@@ -679,8 +897,11 @@ for (const name of names) {
   if (screenshot.prepare) {
     await screenshot.prepare(frame);
     // A view opened by "prepare" can change the menu again. Clicks would
-    // close a context menu, so only a changed menu is clicked.
-    await collapseNavigation(screenshot.pageTree, screenshot.menu ?? 'Content');
+    // close a context menu, so only a changed menu is clicked. Behind a
+    // dialog, the menu does not show and cannot be clicked.
+    if (!screenshot.modal) {
+      await collapseNavigation(screenshot.pageTree, screenshot.menu ?? 'Content');
+    }
   }
   await page.waitForTimeout(500);
   if (process.env.DUMP) {
@@ -688,6 +909,18 @@ for (const name of names) {
     writeFileSync(`../../var/${name.replaceAll('/', '_')}-window.html`, await page.content());
   }
   const path = `${target}/${name}.png`;
+  if (screenshot.frontend) {
+    // The page in the frontend, cut to the element named
+    await page.goto(screenshot.frontend);
+    await page.waitForLoadState('networkidle');
+    const box = await page.locator(screenshot.frontendElement).first().boundingBox();
+    await page.screenshot({
+      path,
+      clip: { x: box.x - margin, y: box.y - margin, width: box.width + 2 * margin, height: box.height + 2 * margin },
+    });
+    console.log(`${name}.png`);
+    continue;
+  }
   if (screenshot.modal) {
     // Only the dialog: the page behind it does not belong to the example
     await page.locator('typo3-backend-modal dialog[open]').screenshot({ path });
