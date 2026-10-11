@@ -21,7 +21,7 @@ const editUrl = (table, uid) => `${baseUrl}/typo3/record/edit?edit[${table}][${u
 const margin = 12;
 
 // The uids of the records that create-records.php looked up
-const { root, packingList, routeComparison, toiletries, extras, essentialItems, faqs, stories, story, map, author, office, shells } =
+const { root, websiteUsers, packingList, routeComparison, toiletries, extras, essentialItems, faqs, stories, story, map, author, office, shells } =
   JSON.parse(readFileSync('../../var/screenshot-records.json', 'utf8'));
 
 // A content element in the Content > Layout module
@@ -264,11 +264,93 @@ const openCreateMultiple = async (frame) => {
   await frame.page().waitForTimeout(500);
 };
 
-// Marks a button that the text names
-const outline = (locator) => locator.evaluate((element) => {
+// The Records module of a page
+const recordsUrl = (id) => moduleUrl('content/records', id);
+// A record in the Records module, and its menu "More options..."
+const recordRow = (table, uid) => `tr[data-table="${table}"][data-uid="${uid}"]`;
+const openRecordOptions = (table, uid) => async (frame) => {
+  await frame.locator(`${recordRow(table, uid)} button[title="More options..."]`).first().click();
+  await frame.locator(`[id="actions_${table}_${uid}"]`).waitFor();
+  await frame.page().waitForTimeout(300);
+};
+// Copies a record with its menu "More options..." in the Records module
+const copyRecord = async (frame, table, uid) => {
+  await openRecordOptions(table, uid)(frame);
+  await frame.locator(`[id="actions_${table}_${uid}"]`).getByRole('button', { name: 'Copy' })
+    .or(frame.locator(`[id="actions_${table}_${uid}"]`).getByRole('link', { name: 'Copy' })).first().click();
+  await frame.waitForLoadState('networkidle');
+  await frame.page().waitForTimeout(500);
+};
+// Answers the dialog that asks whether to paste
+const confirmPaste = async (frame) => {
+  const dialog = frame.page().locator('typo3-backend-modal dialog[open]');
+  await dialog.waitFor();
+  await dialog.locator('button.btn-warning, button.btn-primary').last().click();
+  await frame.page().waitForTimeout(2000);
+};
+
+// A number in an orange circle at the lower right of an element, for a
+// screenshot whose text explains the numbered parts
+const badge = (locator, number) => locator.evaluate((element, text) => {
+  const box = element.getBoundingClientRect();
+  const circle = element.ownerDocument.createElement('span');
+  // The crop takes in every circle, see below
+  circle.className = 'screenshot-badge';
+  circle.textContent = text;
+  Object.assign(circle.style, {
+    position: 'fixed', left: `${box.right - 12}px`, top: `${box.bottom - 6}px`, width: '26px', height: '26px',
+    borderRadius: '50%', background: '#ff8700', color: '#fff', font: 'bold 15px sans-serif', zIndex: '10000',
+    display: 'flex', alignItems: 'center', justifyContent: 'center', boxShadow: '0 1px 3px rgba(0, 0, 0, 0.4)',
+  });
+  element.ownerDocument.body.appendChild(circle);
+}, String(number));
+
+// The columns that the mass editing adds to the list of content elements:
+// the field names, and the labels in the list
+const massEditColumns = { subheader: 'Subheader', header_layout: 'Rank / Hierarchy' };
+
+// Chooses the columns in the dialog "Show columns", and applies them
+const chooseColumns = async (frame, apply) => {
+  if (apply && await frame.locator('#t3-table-tt_content th', { hasText: massEditColumns.subheader }).count() > 0) {
+    return;
+  }
+  await frame.locator('#t3-table-tt_content typo3-backend-column-selector-button').first().click();
+  const dialog = frame.page().locator('typo3-backend-modal dialog[open]');
+  await dialog.waitFor();
+  await frame.page().waitForTimeout(1000);
+  const content = dialog.locator('iframe').count().then((count) => (count > 0 ? frame.page().frameLocator('typo3-backend-modal dialog[open] iframe') : dialog));
+  const scope = await content;
+  // The list filters on key strokes, not on a filled value
+  await scope.getByRole('searchbox').first().pressSequentially('header');
+  await frame.page().waitForTimeout(800);
+  for (const column of Object.keys(massEditColumns)) {
+    // The list of the dialog never counts as stable to Playwright
+    await scope.locator(`#select-column-tt_content-${column}`).check({ force: true });
+  }
+  await frame.page().evaluate(() => document.activeElement?.blur());
+  await frame.page().waitForTimeout(500);
+  if (apply) {
+    await dialog.getByRole('button', { name: 'Update' }).click();
+    await frame.waitForLoadState('networkidle');
+    await frame.page().waitForTimeout(1500);
+  }
+};
+
+// Checks all content elements in the list
+const checkAll = async (frame) => {
+  await chooseColumns(frame, true);
+  await frame.locator('#t3-table-tt_content .t3js-multi-record-selection-check-actions-toggle').first().click();
+  await frame.locator('#t3-table-tt_content [data-multi-record-selection-check-action="check-all"]').first().click();
+  await frame.page().mouse.move(0, 0);
+  await frame.page().waitForTimeout(500);
+};
+
+// Marks a button that the text names. A button in a group or a table cell
+// is marked inside, as its neighbours would cut a frame around it.
+const outline = (locator, inside = false) => locator.evaluate((element, inner) => {
   element.style.outline = '3px solid #ff8700';
-  element.style.outlineOffset = '3px';
-});
+  element.style.outlineOffset = inner ? '-3px' : '3px';
+}, inside);
 
 const screenshots = {
   // First, as the warning names the age of the lock that create-records.php
@@ -430,10 +512,10 @@ const screenshots = {
   'NewContentElement/NewContentElement': {
     url: moduleUrl('web/layout', stories),
     prepare: newTextAndMedia,
+    // The module frame has rounded corners, a margin would show the menu
+    margin: 0,
     from: '.module-docheader',
     to: `${field('header_layout')}`,
-    // The form fills the module frame, a margin would show the menu
-    margin: 0,
   },
   // The thumbnail at the top of the chapter about editing content
   'ContentElements/EditContent': {
@@ -449,9 +531,10 @@ const screenshots = {
   'ContentElements/ChangeText': {
     url: editUrl('tt_content', story),
     prepare: changeHeader,
+    // The module frame has rounded corners, a margin would show the menu
+    margin: 0,
     from: '.module-docheader',
     to: field('header'),
-    margin: 0,
   },
   'ContentElements/SavingPrompt': {
     url: editUrl('tt_content', story),
@@ -1019,6 +1102,173 @@ const screenshots = {
     margin: 4,
     from: 'typo3-notification-message >> nth=0',
   },
+  // The Records module, on the folder of the website users
+  'ListModule/ListModule': {
+    url: recordsUrl(websiteUsers),
+    window: true,
+    pageTree: true,
+    prepare: async (frame) => {
+      const buttons = [
+        frame.getByRole('button', { name: 'Create new record' }),
+        frame.getByRole('button', { name: 'Edit page properties' }),
+        frame.locator('.module-docheader button', { hasText: 'View' }),
+        frame.locator('[title="Clear cache for this page"]'),
+        frame.locator('.module-docheader a[href*="sys_note"]'),
+        frame.locator('.module-docheader [title="Reload"]'),
+        frame.locator('.module-docheader [title="Share"]'),
+      ];
+      for (const [index, button] of buttons.entries()) {
+        await badge(button.first(), index + 1);
+      }
+    },
+    until: `${recordRow('fe_groups', 2)}`,
+  },
+  'ListModule/ActionIcons': {
+    url: recordsUrl(websiteUsers),
+    prepare: async (frame) => {
+      // Inside the cell: the list would cut a frame around it
+      await frame.locator(`${recordRow('fe_users', 2)} td.col-control`).first().evaluate((cell) => {
+        cell.style.outline = '3px solid #ff8700';
+        cell.style.outlineOffset = '-3px';
+      });
+    },
+    from: '#t3-table-fe_users',
+  },
+  // Copying and pasting, on the Pilgrim stories page
+  'ListModule/CopyRecord': {
+    url: recordsUrl(stories),
+    prepare: openRecordOptions('tt_content', story),
+    from: '#t3-table-tt_content',
+    to: `[id="actions_tt_content_${story}"]`,
+  },
+  'ListModule/PasteRecord': {
+    url: recordsUrl(stories),
+    prepare: async (frame) => {
+      await copyRecord(frame, 'tt_content', story);
+      await openRecordOptions('tt_content', map)(frame);
+      await badge(frame.locator('.module-docheader').getByRole('button', { name: /^Paste/ })
+        .or(frame.locator('.module-docheader').getByRole('link', { name: /^Paste/ })).first(), 1);
+      await badge(frame.locator(`[id="actions_tt_content_${map}"]`).getByText(/Paste after/).first(), 2);
+    },
+    // The module frame has rounded corners, a margin would show the menu
+    margin: 0,
+    from: '.module-docheader',
+    to: `[id="actions_tt_content_${map}"]`,
+  },
+  // Pastes a website group on a page that cannot hold it: nothing is saved
+  'ListModule/RecordOnPageError': {
+    url: recordsUrl(websiteUsers),
+    prepare: async (frame) => {
+      await copyRecord(frame, 'fe_groups', 1);
+      await frame.goto(frame.url().replace(/id=\d+/, `id=${stories}`));
+      await frame.waitForLoadState('networkidle');
+      await frame.locator('.module-docheader').getByRole('button', { name: /^Paste/ })
+        .or(frame.locator('.module-docheader').getByRole('link', { name: /^Paste/ })).first().click();
+      await confirmPaste(frame);
+    },
+    // The module frame has rounded corners, a margin would show the menu
+    margin: 0,
+    from: '.module-docheader',
+    to: '.alert-danger, .callout-danger',
+  },
+  // The advanced clipboard, as the common editor: a chosen clipboard stays
+  // chosen, which would change the copying of the screenshots above
+  'ListModule/Clipboard/ChooseClipboard': {
+    user: 'e.doe',
+    url: recordsUrl(websiteUsers),
+    prepare: async (frame) => {
+      await frame.locator('button[data-action="setP"]', { hasText: 'Clipboard #1' }).click();
+      await frame.locator('button[data-action="setP"][aria-checked="true"]', { hasText: 'Clipboard #1' }).waitFor();
+      await frame.waitForLoadState('networkidle');
+      // The clicked choice would look hovered
+      await frame.page().mouse.move(0, 0);
+      await frame.page().evaluate(() => document.activeElement?.blur());
+      await frame.page().waitForTimeout(800);
+    },
+    // The module frame has rounded corners, a margin would show the menu
+    margin: 0,
+    from: '.module-docheader',
+    to: 'text=Clipboard #3',
+  },
+  'ListModule/Clipboard/ClipboardMultipleItems': {
+    user: 'e.doe',
+    url: recordsUrl(websiteUsers),
+    prepare: async (frame) => {
+      await frame.locator('button[data-action="setP"]', { hasText: 'Clipboard #1' }).click();
+      await frame.locator('button[data-action="setP"][aria-checked="true"]', { hasText: 'Clipboard #1' }).waitFor();
+      await frame.waitForLoadState('networkidle');
+      // A transfer reloads the module, so each list is marked and
+      // transferred on its own
+      const lists = [['fe_groups', [1]], ['fe_users', [1, 2]]];
+      for (const [table, uids] of lists) {
+        await frame.page().waitForTimeout(1000);
+        for (const uid of uids) {
+          await frame.locator(`${recordRow(table, uid)} input[type="checkbox"]`).first().check();
+        }
+        // Only the list with marked records shows its buttons
+        await frame.getByRole('button', { name: 'Transfer to clipboard' }).filter({ visible: true }).first().click();
+        await frame.waitForLoadState('networkidle');
+      }
+      await frame.page().waitForTimeout(1000);
+    },
+    from: '.panel:has(button[data-action="setP"])',
+  },
+  // As the common editor and after the clipboard: the search stays shown,
+  // which would change the screenshots of the administrator
+  'ListModule/SearchRecord': {
+    user: 'e.doe',
+    url: recordsUrl(websiteUsers),
+    prepare: async (frame) => {
+      await frame.locator('.module-docheader button', { hasText: 'View' }).first().click();
+      await frame.getByRole('link', { name: 'Show search' }).or(frame.getByRole('button', { name: 'Show search' })).first().click();
+      await frame.waitForLoadState('networkidle');
+      const search = frame.locator('input[name="searchTerm"], input[type="search"]').first();
+      await search.fill('rosa');
+      await search.press('Enter');
+      await frame.waitForLoadState('networkidle');
+      await frame.page().waitForTimeout(800);
+    },
+    // The module frame has rounded corners, a margin would show the menu
+    margin: 0,
+    from: '.module-docheader',
+    to: '#recordlist-fe_users',
+  },
+  'ListModule/Clipboard/PasteClipboard': {
+    url: recordsUrl(websiteUsers),
+    prepare: async (frame) => {
+      await copyRecord(frame, 'fe_users', 2);
+      await outline(frame.locator('.module-docheader').getByRole('button', { name: /^Paste/ })
+        .or(frame.locator('.module-docheader').getByRole('link', { name: /^Paste/ })).first());
+    },
+    // The module frame has rounded corners, a margin would show the menu
+    margin: 0,
+    from: '.module-docheader',
+  },
+  // Pastes a copy of a content element and of a website user, near the
+  // end: both stay
+  'ListModule/CopyOfRecord': {
+    url: recordsUrl(stories),
+    prepare: async (frame) => {
+      await copyRecord(frame, 'tt_content', story);
+      await openRecordOptions('tt_content', story)(frame);
+      await frame.locator(`[id="actions_tt_content_${story}"]`).getByText(/Paste after/).first().click();
+      await confirmPaste(frame);
+      await frame.waitForLoadState('networkidle');
+    },
+    from: '#t3-table-tt_content',
+  },
+  'ListModule/RecordUnique': {
+    url: recordsUrl(websiteUsers),
+    prepare: async (frame) => {
+      await copyRecord(frame, 'fe_users', 1);
+      await frame.locator('.module-docheader').getByRole('button', { name: /^Paste/ })
+        .or(frame.locator('.module-docheader').getByRole('link', { name: /^Paste/ })).first().click();
+      await confirmPaste(frame);
+      await frame.waitForLoadState('networkidle');
+    },
+    from: '.alert-warning, .callout-warning',
+    to: '#recordlist-fe_users',
+  },
   // Last, as it saves a content element on the page of the screenshots above
   'NewContentElement/ContentSaved': {
     url: moduleUrl('web/layout', stories),
@@ -1036,6 +1286,101 @@ const screenshots = {
     },
     from: `${column(0)} .t3-page-column-header`,
     to: `${column(0)} .t3js-page-ce-sortable >> nth=0`,
+  },
+  // Mass editing, at the very end: the Records module keeps the chosen
+  // columns of a table per user, which would change the lists above
+  'ListModule/MassEdit/ShowColumnsButton': {
+    url: recordsUrl(stories),
+    window: true,
+    pageTree: true,
+    prepare: async (frame) => {
+      await outline(frame.locator('#t3-table-tt_content typo3-backend-column-selector-button').first());
+    },
+    until: recordRow('tt_content', story),
+  },
+  'ListModule/MassEdit/ShowColumnsModal': {
+    url: recordsUrl(stories),
+    prepare: (frame) => chooseColumns(frame, false),
+    modal: true,
+    width: 1024,
+    height: 600,
+  },
+  'ListModule/MassEdit/RecordListWithAdditionalFields': {
+    url: recordsUrl(stories),
+    prepare: async (frame) => {
+      await chooseColumns(frame, true);
+      for (const column of Object.values(massEditColumns)) {
+        await outline(frame.locator('#t3-table-tt_content th', { hasText: column }).first(), true);
+      }
+    },
+    from: '#t3-table-tt_content',
+    to: recordRow('tt_content', map),
+  },
+  'ListModule/MassEdit/MassEditingEnabled': {
+    url: recordsUrl(stories),
+    prepare: async (frame) => {
+      await chooseColumns(frame, true);
+      await frame.locator('#t3-table-tt_content .t3js-multi-record-selection-check-actions-toggle').first().click();
+      await frame.locator('#t3-table-tt_content [data-multi-record-selection-check-action="check-all"]').first().hover();
+      await frame.page().waitForTimeout(500);
+    },
+    hover: true,
+    from: '#t3-table-tt_content',
+    to: recordRow('tt_content', map),
+  },
+  'ListModule/MassEdit/EditButton': {
+    url: recordsUrl(stories),
+    prepare: async (frame) => {
+      await checkAll(frame);
+      await outline(frame.locator('#t3-table-tt_content button[title="Edit"]').first(), true);
+    },
+    from: '#t3-table-tt_content',
+  },
+  'ListModule/MassEdit/MassEditingAllFields': {
+    url: recordsUrl(stories),
+    prepare: async (frame) => {
+      await checkAll(frame);
+      await frame.locator('#t3-table-tt_content button[title="Edit"]').first().click();
+      await frame.waitForURL(/record\/edit/);
+      await frame.waitForLoadState('networkidle');
+      await frame.page().waitForTimeout(1000);
+    },
+    margin: 0,
+    from: '.module-docheader',
+    to: `${field('header')} >> nth=0`,
+  },
+  'ListModule/MassEdit/EditColumnsButton': {
+    url: recordsUrl(stories),
+    prepare: async (frame) => {
+      await checkAll(frame);
+      await outline(frame.locator('#t3-table-tt_content button[title="Edit columns"]').first(), true);
+    },
+    from: '#t3-table-tt_content',
+  },
+  'ListModule/MassEdit/MassEditingSelectedFields': {
+    url: recordsUrl(stories),
+    prepare: async (frame) => {
+      await checkAll(frame);
+      await frame.locator('#t3-table-tt_content button[title="Edit columns"]').first().click();
+      await frame.waitForURL(/record\/edit/);
+      await frame.waitForLoadState('networkidle');
+      await frame.page().waitForTimeout(1000);
+    },
+    margin: 0,
+    from: '.module-docheader',
+    // Down to the second content element, as the form goes on below
+    to: 'text=Map of the stages',
+  },
+  'ListModule/MassEdit/SelectiveEditing': {
+    url: recordsUrl(stories),
+    prepare: async (frame) => {
+      await chooseColumns(frame, true);
+      for (const uid of [story, shells]) {
+        await frame.locator(`${recordRow('tt_content', uid)} input[type="checkbox"]`).first().check();
+      }
+      await frame.page().evaluate(() => document.activeElement?.blur());
+    },
+    from: '#t3-table-tt_content',
   },
 };
 
@@ -1193,6 +1538,10 @@ for (const name of names) {
       ? await page.locator(screenshot.toOutside).last().boundingBox()
       : await scope.locator(screenshot.to ?? screenshot.from).last().boundingBox(),
   ];
+  // Numbered circles, which can stick out of the elements
+  for (const circle of await scope.locator('.screenshot-badge').all()) {
+    boxes.push(await circle.boundingBox());
+  }
   const space = screenshot.margin ?? margin;
   const left = Math.max(Math.min(...boxes.map((box) => box.x)) - space - (screenshot.left ?? 0), 0);
   const top = Math.max(Math.min(...boxes.map((box) => box.y)) - space, 0);

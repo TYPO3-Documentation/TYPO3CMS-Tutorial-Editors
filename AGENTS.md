@@ -56,6 +56,13 @@ To add a screenshot:
     which the backend would otherwise remember from the last screenshot.
     A screenshot of the login takes `loggedOut: true`, which opens a
     window without a session.
+    Mark what the text names with `outline()`, an orange frame, and
+    number the parts that the text lists with `badge()`, an orange
+    circle with a number. Draw no arrows.
+    The backend keeps some choices per user, such as the clipboard, the
+    search box, and the columns of a list. A screenshot that changes one
+    of them runs as `e.doe` or comes after the screenshots it would
+    change.
     A view whose route needs a token, such as the history, cannot be
     opened by its URL; `prepare` opens it through the backend, the way an
     editor does. Something the backend picks at random, such as the tip of
