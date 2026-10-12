@@ -428,6 +428,23 @@ const outline = (locator, inside = false) => locator.evaluate((element, inner) =
   element.style.outlineOffset = inner ? '-3px' : '3px';
 }, inside);
 
+// Adds the widget "Pages missing meta description" to the dashboard, which
+// keeps it from then on
+const seoWidget = (frame) => frame.locator('typo3-dashboard-widget').filter({ hasText: 'Pages missing meta description' });
+const addSeoWidget = async (frame) => {
+  if (await seoWidget(frame).count() === 0) {
+    await frame.locator('.btn-dashboard-add-widget').click();
+    const dialog = frame.page().locator('typo3-backend-modal dialog[open]');
+    await dialog.waitFor();
+    await frame.page().waitForTimeout(1000);
+    await dialog.getByText('SEO', { exact: true }).filter({ visible: true }).first().click();
+    await dialog.getByRole('button', { name: /Pages missing meta description/ }).filter({ visible: true }).first().click();
+    await frame.waitForLoadState('networkidle');
+  }
+  await seoWidget(frame).locator('table, ul, .widget-table').first().waitFor();
+  await frame.page().waitForTimeout(1000);
+};
+
 const screenshots = {
   // First, as the warning names the age of the lock that create-records.php
   // set: the sooner, the safer
@@ -1628,6 +1645,45 @@ const screenshots = {
     margin: 0,
     from: '.module-docheader',
     to: '.t3js-page-ce-sortable >> nth=0',
+  },
+  // The chapter about search engine optimization
+  'SearchEngineOptimization/AddWidget': {
+    url: `${baseUrl}/typo3/module/dashboard`,
+    menu: 'Dashboard',
+    prepare: async (frame) => {
+      await frame.locator('.btn-dashboard-add-widget').click();
+      const dialog = frame.page().locator('typo3-backend-modal dialog[open]');
+      await dialog.waitFor();
+      await frame.page().waitForTimeout(1000);
+      await dialog.getByText('SEO', { exact: true }).filter({ visible: true }).first().click();
+      await frame.page().waitForTimeout(500);
+      await frame.page().evaluate(() => document.activeElement?.blur());
+      await outline(dialog.getByRole('button', { name: /Pages missing meta description/ }).filter({ visible: true }).first(), true);
+    },
+    ...wizardSize,
+  },
+  'SearchEngineOptimization/PagesMissingDescription': {
+    url: `${baseUrl}/typo3/module/dashboard`,
+    window: true,
+    menu: 'Dashboard',
+    prepare: addSeoWidget,
+    until: 'typo3-dashboard-widget',
+  },
+  'SearchEngineOptimization/AddDescription': {
+    url: `${baseUrl}/typo3/module/dashboard`,
+    menu: 'Dashboard',
+    prepare: async (frame) => {
+      await addSeoWidget(frame);
+      const row = seoWidget(frame).locator('tr, li').filter({ hasText: 'FAQs' }).first();
+      await row.locator('a, button').last().click();
+      await frame.waitForLoadState('networkidle');
+      const description = frame.locator(`${field('description')} textarea`).first();
+      await description.waitFor();
+      await description.fill('Answers to the questions pilgrims ask most before they set out on the Camino.');
+    },
+    margin: 0,
+    from: '.module-docheader',
+    to: '.form-section',
   },
   // Mass editing, at the very end: the Records module keeps the chosen
   // columns of a table per user, which would change the lists above

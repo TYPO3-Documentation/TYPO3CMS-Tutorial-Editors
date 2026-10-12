@@ -32,16 +32,16 @@ Adding the "Missing Meta Description" widget to your personal Dashboard
 If you have the access rights to the Dashboard module and are granted access to
 the "Missing Meta Description" widget you can add it yourself to your Dashboard:
 
-..  figure:: /Images/ManualScreenshots/SearchEngineOptimization/add-widget.png
-    :alt: Screenshot of the backend, showing the widget "Pages missing Meta Description" in category "SEO"
+..  figure:: /Images/GeneratedScreenshots/SearchEngineOptimization/AddWidget.png
+    :alt: The dialog "Add widget" with the category "SEO" and the widget "Pages missing meta description"
     :zoom: gallery
 
-    Adding the widget "Pages missing Meta Description"
+    Adding the widget "Pages missing meta description"
 
 #.  Open the Dashboard module
 #.  Click on the plus button to add a widget
 #.  Go to category "SEO"
-#.  Choose widget "Pages missing Meta Description"
+#.  Choose widget "Pages missing meta description"
 
 
 ..  _dashboard-widgets-missing-description-use:
@@ -51,16 +51,16 @@ Using the "Missing Meta Description" widget to improve SEO results
 
 This widget lists pages that are missing a description in their meta data:
 
-..  figure:: /Images/ManualScreenshots/SearchEngineOptimization/pages-missing-description.png
-    :alt: Screenshot a widget listing pages without description
+..  figure:: /Images/GeneratedScreenshots/SearchEngineOptimization/PagesMissingDescription.png
+    :alt: The Dashboard with a widget that lists pages without a description
     :zoom: gallery
 
     Pages without description listed in the Dashboard
 
 You can now click on the pencil icon to add a description to the page:
 
-..  figure:: /Images/ManualScreenshots/SearchEngineOptimization/addDescription.png
-    :alt: Screenshot of an edit form showing just the description field
+..  figure:: /Images/GeneratedScreenshots/SearchEngineOptimization/AddDescription.png
+    :alt: An edit form that shows only the field "Description for search engines"
     :zoom: gallery
 
     Add a description to the page
