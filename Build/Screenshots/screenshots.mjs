@@ -444,6 +444,16 @@ const userMenu = (item) => ({
   to: '#typo3-cms-backend-backend-toolbaritems-usertoolbaritem .dropdown-menu',
 });
 
+// The Share button at the top right of a module, and its menu, with the
+// pointer on the item that copies the link
+const shareButton = '.module-docheader button[title="Share"]';
+const openShareMenu = async (frame) => {
+  await frame.locator(shareButton).first().click();
+  const copy = frame.locator('.module-docheader .dropdown-menu >> visible=true').getByText('Copy URL of this record').first();
+  await copy.waitFor();
+  await copy.hover();
+};
+
 // Adds the widget "Pages missing meta description" to the dashboard, which
 // keeps it from then on
 const seoWidget = (frame) => frame.locator('typo3-dashboard-widget').filter({ hasText: 'Pages missing meta description' });
@@ -1669,6 +1679,44 @@ const screenshots = {
     },
     from: `${column(0)} .t3-page-column-header`,
     to: `${column(0)} .t3js-page-ce-sortable >> nth=0`,
+  },
+  // The chapter about deep linking
+  'DeepLinking/DeepLinkingIcon': {
+    url: moduleUrl('web/layout', packingList),
+    prepare: async (frame) => {
+      await openShareMenu(frame);
+      await outline(frame.locator(shareButton).first());
+    },
+    hover: true,
+    from: shareButton,
+    to: '.module-docheader .dropdown-menu >> visible=true',
+    // With the buttons on its left, which show where it is
+    left: 220,
+  },
+  'DeepLinking/DeepLinkingPageLink': {
+    url: moduleUrl('web/layout', packingList),
+    prepare: openShareMenu,
+    hover: true,
+    margin: 0,
+    from: '.module-docheader',
+    to: '.t3js-page-ce .t3-page-ce-element >> nth=0',
+  },
+  'DeepLinking/DeepLinkingContentElementLink': {
+    url: editUrl('tt_content', toiletries),
+    prepare: openShareMenu,
+    hover: true,
+    margin: 0,
+    from: '.module-docheader',
+    to: '.form-section >> nth=0',
+  },
+  'DeepLinking/DeepLinkingSiteModuleLink': {
+    url: `${baseUrl}/typo3/module/site/configuration/detail?site=camino`,
+    menu: 'Sites',
+    prepare: openShareMenu,
+    hover: true,
+    margin: 0,
+    from: '.module-docheader',
+    to: '#languages-collapse thead',
   },
   // The chapter about languages, near the end: the Layout module keeps the
   // view of the languages per user, and the Spanish translation stays
