@@ -67,8 +67,10 @@ To add a screenshot:
     opened by its URL; `prepare` opens it through the backend, the way an
     editor does. Something the backend picks at random, such as the tip of
     the live search, is reopened until it shows the same thing every run.
-3.  Take only that screenshot, then all of them once, and commit only the
-    images that really changed.
+3.  Take only that screenshot, then all of them once, and commit the
+    images that changed. A run keeps an image that differs from the old
+    one in fewer than 10 pixels, because a new image is never exactly the
+    same, even when nothing changed.
 4.  Screenshots that a script cannot take, such as one during drag and
     drop, stay in `Documentation/Images/ManualScreenshots/`.
 
