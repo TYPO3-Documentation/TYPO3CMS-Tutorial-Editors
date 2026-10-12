@@ -18,7 +18,7 @@ This tab holds your profile details. Your username cannot be changed.
     :guilabel:`Open file browser to select avatar image` to choose one.
 *   **Language:** The language of the backend labels and menus.
 
-..  figure:: /Images/ManualScreenshots/UserSettings/UserSettingsPersonalData.png
+..  figure:: /Images/GeneratedScreenshots/UserSettings/UserSettingsPersonalData.png
     :alt: The Personal Data tab with the fields Name, Email, login notification, avatar and Language
     :zoom: lightbox
 

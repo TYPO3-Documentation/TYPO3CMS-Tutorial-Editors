@@ -25,7 +25,7 @@ These settings change how the backend behaves while you work.
     page is copied:** How many levels below a copied page are copied with it.
     `0` copies just the page.
 
-..  figure:: /Images/ManualScreenshots/UserSettings/UserSettingsPersonalization.png
+..  figure:: /Images/GeneratedScreenshots/UserSettings/UserSettingsPersonalization.png
     :alt: The Personalization tab with six settings, from the maximum title length to recursive copy
     :zoom: lightbox
 

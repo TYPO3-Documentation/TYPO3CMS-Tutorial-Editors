@@ -297,7 +297,8 @@ $uids['author'] = $find('tt_content', 'header', 'Elena Vásquez', $uids['routeCo
 
 // The group of a common editor, who creates the typical content types,
 // lists and dividers, but no forms, menus, or plugins, and who manages the
-// website users in the Records module and the files of the demo site
+// website users in the Records module and the files of the demo site. Like
+// every editor, they change their own settings in the User Settings module.
 $contentTypes = ['header', 'text', 'textpic', 'image', 'textmedia', 'bullets', 'table', 'uploads', 'div'];
 // The folder of the demo site, which the editors manage in the Media module
 $dataHandler = $process(['sys_filemounts' => ['NEWmount' => [
@@ -310,7 +311,7 @@ $dataHandler = $process(['be_groups' => ['NEWeditors' => [
     'pid' => 0,
     'title' => 'Editors',
     'db_mountpoints' => (string)$uids['root'],
-    'groupMods' => 'web_layout,records,media_management',
+    'groupMods' => 'web_layout,records,media_management,user_setup',
     'file_mountpoints' => (string)$fileMount,
     'file_permissions' => 'readFolder,writeFolder,addFolder,renameFolder,moveFolder,readFile,writeFile,addFile,renameFile,replaceFile,moveFile,copyFile',
     'tables_select' => 'pages,tt_content,fe_users,fe_groups',
@@ -375,6 +376,7 @@ $connectionPool->getConnectionForTable('be_users')->insert('be_users', [
     'pid' => 0,
     'username' => 'e.doe',
     'realName' => 'Erika Doe',
+    'email' => 'erika.doe@example.org',
     'password' => GeneralUtility::makeInstance(PasswordHashFactory::class)
         ->getDefaultHashInstance('BE')->getHashedPassword('Screenshots-2026!'),
     'usergroup' => (string)$editors,

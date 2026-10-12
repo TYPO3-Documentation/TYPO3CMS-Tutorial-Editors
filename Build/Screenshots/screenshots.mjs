@@ -446,6 +446,35 @@ const addSeoWidget = async (frame) => {
   await frame.page().waitForTimeout(1000);
 };
 
+// A tab of the User Settings module
+const userSettings = (tab) => ({
+  url: `${baseUrl}/typo3/module/user/setup`,
+  user: 'e.doe',
+  tab,
+  // A wider margin would take in the heading above the tabs
+  margin: 6,
+  from: '[role="tablist"]',
+  to: '.tab-pane.active',
+});
+// The top left of the backend in a theme, which the User Settings module
+// sets. The whole backend reloads to show it.
+const backendTheme = (theme) => ({
+  url: `${baseUrl}/typo3/module/user/setup`,
+  user: 'e.doe',
+  tab: 'Backend appearance',
+  prepare: async (frame) => {
+    await frame.locator('select[name$="[user_settings__theme]"]').selectOption(theme);
+    await frame.locator('button[name="data[save]"]').click();
+    await frame.waitForLoadState('networkidle');
+    await frame.page().goto(moduleUrl('web/layout', packingList));
+    await frame.page().waitForLoadState('networkidle');
+    await frame.page().waitForTimeout(1000);
+  },
+  window: true,
+  pageTree: true,
+  clip: { width: 440, height: 440 },
+});
+
 const screenshots = {
   // First, as the warning names the age of the lock that create-records.php
   // set: the sooner, the safer
@@ -1686,6 +1715,24 @@ const screenshots = {
     from: '.module-docheader',
     to: '.form-section',
   },
+  // The chapter about the user settings
+  // As Erika Doe, whose name and email address the form shows
+  'UserSettings/UserSettingsPersonalData': {
+    ...userSettings('Personal Data'),
+  },
+  'UserSettings/UserSettingsSecurity': {
+    ...userSettings('Account security'),
+  },
+  'UserSettings/UserSettingsBackendAppearance': {
+    ...userSettings('Backend appearance'),
+  },
+  'UserSettings/UserSettingsPersonalization': {
+    ...userSettings('Personalization'),
+  },
+  // The themes, with the default one last, which Erika Doe keeps
+  'UserSettings/ClassicTheme': backendTheme('classic'),
+  'UserSettings/ModernTheme': backendTheme('modern'),
+  'UserSettings/FreshTheme': backendTheme('fresh'),
   // Mass editing, at the very end: the Records module keeps the chosen
   // columns of a table per user, which would change the lists above
   'ListModule/MassEdit/ShowColumnsButton': {
@@ -1960,7 +2007,7 @@ for (const name of names) {
   if (screenshot.window) {
     // The whole backend. It ends below the element named in "until", so the
     // image takes no more room on the page than it needs.
-    let clip;
+    let clip = screenshot.clip && { x: 0, y: 0, ...screenshot.clip };
     if (screenshot.until) {
       const until = await frame.locator(screenshot.until).last().boundingBox();
       const viewport = page.viewportSize();
