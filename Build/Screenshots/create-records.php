@@ -12,6 +12,8 @@ declare(strict_types=1);
  */
 
 use TYPO3\CMS\Core\Authentication\CommandLineUserAuthentication;
+use TYPO3\CMS\Core\Cache\CacheManager;
+use TYPO3\CMS\Core\Configuration\SiteWriter;
 use TYPO3\CMS\Core\Core\Bootstrap;
 use TYPO3\CMS\Core\Core\Environment;
 use TYPO3\CMS\Core\Core\SystemEnvironmentBuilder;
@@ -19,6 +21,7 @@ use TYPO3\CMS\Core\Crypto\PasswordHashing\PasswordHashFactory;
 use TYPO3\CMS\Core\Database\ConnectionPool;
 use TYPO3\CMS\Core\DataHandling\DataHandler;
 use TYPO3\CMS\Core\Localization\LanguageServiceFactory;
+use TYPO3\CMS\Core\Site\SiteFinder;
 use TYPO3\CMS\Core\Utility\GeneralUtility;
 
 $classLoader = require __DIR__ . '/../../.Build/vendor/autoload.php';
@@ -62,6 +65,63 @@ $uids['packingList'] = $find('pages', 'title', 'Packing List', $uids['root']);
 $uids['toiletries'] = $find('tt_content', 'header', 'Toiletries', $uids['packingList']);
 $uids['extras'] = $find('tt_content', 'header', 'Extras', $uids['packingList']);
 $uids['essentialItems'] = $find('tt_content', 'header', 'Essential Items', $uids['packingList']);
+
+// More languages for the chapter about languages: Spanish
+$site = GeneralUtility::makeInstance(SiteFinder::class)->getSiteByRootPageId($uids['root']);
+$configuration = $site->getConfiguration();
+$configuration['languages'][] = [
+    'title' => 'Español',
+    'enabled' => true,
+    'languageId' => 1,
+    'base' => '/es/',
+    'locale' => 'es-ES',
+    'hreflang' => 'es-ES',
+    'navigationTitle' => 'Español',
+    'websiteTitle' => '',
+    'flag' => 'es',
+    'fallbackType' => 'strict',
+    'fallbacks' => '',
+];
+// Arabic, which was spoken in Spain for centuries, and which is written
+// from right to left
+$configuration['languages'][] = [
+    'title' => 'العربية',
+    'enabled' => true,
+    'languageId' => 2,
+    'base' => '/ar/',
+    'locale' => 'ar',
+    'hreflang' => 'ar',
+    'navigationTitle' => 'العربية',
+    'websiteTitle' => '',
+    'flag' => 'ma',
+    'fallbackType' => 'strict',
+    'fallbacks' => '',
+];
+GeneralUtility::makeInstance(SiteWriter::class)->write($site->getIdentifier(), $configuration);
+GeneralUtility::makeInstance(CacheManager::class)->flushCaches();
+
+// The packing list in Arabic: the page and its header, which show the
+// right-to-left text next to the English one. The Spanish translation is
+// made in the screenshots, with the wizard that the chapter describes.
+// It comes before the history is cleared, so the history does not show it.
+$localize = static function (string $table, int $uid, int $language): int {
+    $dataHandler = GeneralUtility::makeInstance(DataHandler::class);
+    $dataHandler->start([], [$table => [$uid => ['localize' => $language]]]);
+    $dataHandler->process_cmdmap();
+    if ($dataHandler->errorLog !== []) {
+        throw new RuntimeException(implode("\n", $dataHandler->errorLog));
+    }
+    return (int)$dataHandler->copyMappingArray_merged[$table][$uid];
+};
+$arabicPage = $localize('pages', $uids['packingList'], 2);
+$process(['pages' => [$arabicPage => ['title' => 'قائمة الأمتعة', 'hidden' => 0]]]);
+$hero = $find('tt_content', 'CType', 'camino_hero_small', $uids['packingList']);
+$arabicHero = $localize('tt_content', $hero, 2);
+$process(['tt_content' => [$arabicHero => [
+    'header' => 'قائمة الأمتعة',
+    'subheader' => 'لطريق سانتياغو',
+    'hidden' => 0,
+]]]);
 
 // The import of the demo site leaves a history of its own, which no editor
 // made and which would fill the history screenshots

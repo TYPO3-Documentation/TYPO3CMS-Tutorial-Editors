@@ -291,19 +291,21 @@ const confirmPaste = async (frame) => {
 
 // A number in an orange circle at the lower right of an element, for a
 // screenshot whose text explains the numbered parts
-const badge = (locator, number) => locator.evaluate((element, text) => {
+// Below the right corner, or below the left one where a neighbour follows
+// closely on the right
+const badge = (locator, number, side = 'right') => locator.evaluate((element, [text, side]) => {
   const box = element.getBoundingClientRect();
   const circle = element.ownerDocument.createElement('span');
   // The crop takes in every circle, see below
   circle.className = 'screenshot-badge';
   circle.textContent = text;
   Object.assign(circle.style, {
-    position: 'fixed', left: `${box.right - 12}px`, top: `${box.bottom - 6}px`, width: '26px', height: '26px',
+    position: 'fixed', left: `${side === 'left' ? box.left - 14 : box.right - 12}px`, top: `${box.bottom - 6}px`, width: '26px', height: '26px',
     borderRadius: '50%', background: '#ff8700', color: '#fff', font: 'bold 15px sans-serif', zIndex: '10000',
     display: 'flex', alignItems: 'center', justifyContent: 'center', boxShadow: '0 1px 3px rgba(0, 0, 0, 0.4)',
   });
   element.ownerDocument.body.appendChild(circle);
-}, String(number));
+}, [String(number), side]);
 
 // The columns that the mass editing adds to the list of content elements:
 // the field names, and the labels in the list
@@ -365,12 +367,83 @@ const openNew = (name) => async (frame) => {
 // The modules of the link management
 const linkUrl = (module) => `${baseUrl}/typo3/module/link-management${module ? `/${module}` : ''}`;
 
+// The language menu at the top of the Layout module, and the translation
+// wizard that it opens for a language
+const languageMenu = (frame) => frame.locator('.module-docheader-navigation button.dropdown-toggle').last();
+const openTranslation = (language) => async (frame) => {
+  await languageMenu(frame).click();
+  await frame.page().waitForTimeout(500);
+  await frame.locator('.module-docheader .dropdown-menu >> visible=true').getByText(language).first().click();
+  await frame.page().locator('typo3-backend-modal dialog[open]').waitFor();
+  await frame.page().waitForTimeout(1500);
+};
+// Switches the Layout module to the languages next to each other
+const viewModeButton = (frame) => frame.locator('.module-docheader-buttons button.dropdown-toggle').first();
+// While the module still loads, a click can get lost, so it is repeated
+// until the view shows the comparison
+const showLanguageComparison = async (frame) => {
+  for (let attempt = 0; attempt < 3; attempt++) {
+    if ((await viewModeButton(frame).innerText()).includes('Language Comparison')) {
+      break;
+    }
+    await viewModeButton(frame).click();
+    const item = frame.locator('.module-docheader .dropdown-menu >> visible=true').getByText('Language Comparison').first();
+    if (await item.waitFor({ timeout: 2000 }).then(() => true, () => false)) {
+      await item.click();
+    }
+    await frame.waitForLoadState('networkidle');
+    await frame.page().waitForTimeout(1500);
+  }
+};
+
+// Goes through the translation wizard up to the step named
+const translate = (language, until) => async (frame) => {
+  await openTranslation(language)(frame);
+  const dialog = frame.page().locator('typo3-backend-modal dialog[open]');
+  // The content selection, then the mode
+  await dialog.getByRole('button', { name: /^Next/ }).click();
+  await frame.page().waitForTimeout(1000);
+  if (until === 'mode') {
+    await frame.page().evaluate(() => document.activeElement?.blur());
+    return;
+  }
+  for (let step = 0; step < 5; step++) {
+    const localize = dialog.getByRole('button', { name: /^Localize/ });
+    if (await localize.count() > 0) {
+      await localize.click();
+      break;
+    }
+    await dialog.getByRole('button', { name: /^Next/ }).click();
+    await frame.page().waitForTimeout(1000);
+  }
+  await dialog.getByRole('button', { name: /^Finish/ }).click();
+  await frame.waitForLoadState('networkidle');
+  await frame.page().waitForTimeout(2000);
+};
+
 // Marks a button that the text names. A button in a group or a table cell
 // is marked inside, as its neighbours would cut a frame around it.
 const outline = (locator, inside = false) => locator.evaluate((element, inner) => {
   element.style.outline = '3px solid #ff8700';
   element.style.outlineOffset = inner ? '-3px' : '3px';
 }, inside);
+
+// Adds the widget "Pages missing meta description" to the dashboard, which
+// keeps it from then on
+const seoWidget = (frame) => frame.locator('typo3-dashboard-widget').filter({ hasText: 'Pages missing meta description' });
+const addSeoWidget = async (frame) => {
+  if (await seoWidget(frame).count() === 0) {
+    await frame.locator('.btn-dashboard-add-widget').click();
+    const dialog = frame.page().locator('typo3-backend-modal dialog[open]');
+    await dialog.waitFor();
+    await frame.page().waitForTimeout(1000);
+    await dialog.getByText('SEO', { exact: true }).filter({ visible: true }).first().click();
+    await dialog.getByRole('button', { name: /Pages missing meta description/ }).filter({ visible: true }).first().click();
+    await frame.waitForLoadState('networkidle');
+  }
+  await seoWidget(frame).locator('table, ul, .widget-table').first().waitFor();
+  await frame.page().waitForTimeout(1000);
+};
 
 const screenshots = {
   // First, as the warning names the age of the lock that create-records.php
@@ -1507,6 +1580,110 @@ const screenshots = {
     },
     from: `${column(0)} .t3-page-column-header`,
     to: `${column(0)} .t3js-page-ce-sortable >> nth=0`,
+  },
+  // The chapter about languages, near the end: the Layout module keeps the
+  // view of the languages per user, and the Spanish translation stays
+  'Language/PageLanguages': {
+    url: moduleUrl('web/layout', packingList),
+    prepare: async (frame) => {
+      await languageMenu(frame).click();
+      await frame.page().waitForTimeout(500);
+      await frame.locator('.module-docheader .dropdown-menu >> visible=true').getByText('Español').first().hover();
+    },
+    hover: true,
+    margin: 0,
+    from: '.module-docheader',
+    to: '.t3js-page-ce-sortable >> nth=0',
+  },
+  'Language/LanguagesTranslateContentElements': {
+    url: moduleUrl('web/layout', packingList),
+    prepare: translate('Español', 'mode'),
+    modal: true,
+    width: 1024,
+    height: 650,
+  },
+  'Language/LanguagesPageVersions': {
+    // Wide, for the three languages next to each other
+    width: 1600,
+    url: moduleUrl('web/layout', packingList),
+    prepare: async (frame) => {
+      await translate('Español', 'done')(frame);
+      await showLanguageComparison(frame);
+      // The comparison shows the languages chosen in the language menu.
+      // Arabic shows the text that is written from right to left. The
+      // module keeps the choice, so a second run finds it chosen already.
+      if (await frame.locator('td[data-language-uid="2"]').count() === 0) {
+        // As above, a click can get lost while the module loads
+        const arabic = frame.locator('.dropdown-menu .dropdown-item').filter({ hasText: 'العربية', visible: true }).first();
+        for (let attempt = 0; attempt < 3 && !await arabic.isVisible(); attempt++) {
+          await languageMenu(frame).click();
+          await arabic.waitFor({ timeout: 2000 }).catch(() => {});
+        }
+        await arabic.click();
+        await frame.waitForLoadState('networkidle');
+        await frame.page().waitForTimeout(1500);
+      }
+      await badge(viewModeButton(frame), 1);
+      await badge(frame.locator('td[data-language-uid="1"] typo3-backend-editable-page-title button[data-action="edit"]').first(), 2, 'left');
+      await badge(frame.locator('.t3js-page-ce[data-language-uid="1"] [data-action="content-element-visibility-toggle"]').first(), 3);
+    },
+    margin: 0,
+    from: '.module-docheader',
+    to: '.t3js-page-ce-sortable >> nth=0',
+  },
+  'Language/LanguagesSingleLanguageLayout': {
+    // Comes after the comparison, which the Layout module keeps
+    width: 1600,
+    url: moduleUrl('web/layout', packingList),
+    prepare: async (frame) => {
+      await badge(languageMenu(frame), 1);
+      await viewModeButton(frame).click();
+      await frame.page().waitForTimeout(500);
+      await frame.locator('.module-docheader .dropdown-menu >> visible=true').getByText('Layout', { exact: true }).first().hover();
+    },
+    hover: true,
+    margin: 0,
+    from: '.module-docheader',
+    to: '.t3js-page-ce-sortable >> nth=0',
+  },
+  // The chapter about search engine optimization
+  'SearchEngineOptimization/AddWidget': {
+    url: `${baseUrl}/typo3/module/dashboard`,
+    menu: 'Dashboard',
+    prepare: async (frame) => {
+      await frame.locator('.btn-dashboard-add-widget').click();
+      const dialog = frame.page().locator('typo3-backend-modal dialog[open]');
+      await dialog.waitFor();
+      await frame.page().waitForTimeout(1000);
+      await dialog.getByText('SEO', { exact: true }).filter({ visible: true }).first().click();
+      await frame.page().waitForTimeout(500);
+      await frame.page().evaluate(() => document.activeElement?.blur());
+      await outline(dialog.getByRole('button', { name: /Pages missing meta description/ }).filter({ visible: true }).first(), true);
+    },
+    ...wizardSize,
+  },
+  'SearchEngineOptimization/PagesMissingDescription': {
+    url: `${baseUrl}/typo3/module/dashboard`,
+    window: true,
+    menu: 'Dashboard',
+    prepare: addSeoWidget,
+    until: 'typo3-dashboard-widget',
+  },
+  'SearchEngineOptimization/AddDescription': {
+    url: `${baseUrl}/typo3/module/dashboard`,
+    menu: 'Dashboard',
+    prepare: async (frame) => {
+      await addSeoWidget(frame);
+      const row = seoWidget(frame).locator('tr, li').filter({ hasText: 'FAQs' }).first();
+      await row.locator('a, button').last().click();
+      await frame.waitForLoadState('networkidle');
+      const description = frame.locator(`${field('description')} textarea`).first();
+      await description.waitFor();
+      await description.fill('Answers to the questions pilgrims ask most before they set out on the Camino.');
+    },
+    margin: 0,
+    from: '.module-docheader',
+    to: '.form-section',
   },
   // Mass editing, at the very end: the Records module keeps the chosen
   // columns of a table per user, which would change the lists above
