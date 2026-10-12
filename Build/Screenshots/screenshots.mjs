@@ -6,7 +6,8 @@
 // below Documentation/Images/GeneratedScreenshots, without ".png". With DUMP
 // set, the HTML of each screen is also written to var/, to look up selectors.
 
-import { readFileSync, writeFileSync } from 'node:fs';
+import { existsSync, mkdirSync, readFileSync, writeFileSync } from 'node:fs';
+import { dirname } from 'node:path';
 import { chromium } from 'playwright';
 
 const baseUrl = process.env.TYPO3_BASE_URL ?? 'http://localhost:8080';
@@ -1659,6 +1660,53 @@ const login = async (username) => {
 };
 let page;
 
+// A new image differs from the old one in a few pixels even when nothing
+// changed, such as at the edge of a rounded corner. Below this number of
+// pixels, the old image stays, so a commit holds only real changes.
+const unchangedPixels = 10;
+let comparison;
+const changedPixels = async (before, after) => {
+  comparison ??= await browser.newPage();
+  return comparison.evaluate(async ([before, after]) => {
+    const load = (data) => new Promise((resolve) => {
+      const image = new Image();
+      image.onload = () => resolve(image);
+      image.src = `data:image/png;base64,${data}`;
+    });
+    const images = [await load(before), await load(after)];
+    const { width, height } = images[0];
+    if (images[1].width !== width || images[1].height !== height) {
+      return Infinity;
+    }
+    const canvas = document.createElement('canvas');
+    canvas.width = width;
+    canvas.height = height;
+    const context = canvas.getContext('2d');
+    const [a, b] = images.map((image) => {
+      context.drawImage(image, 0, 0);
+      return context.getImageData(0, 0, width, height).data;
+    });
+    let count = 0;
+    for (let i = 0; i < a.length; i += 4) {
+      if (Math.abs(a[i] - b[i]) + Math.abs(a[i + 1] - b[i + 1]) + Math.abs(a[i + 2] - b[i + 2]) > 30) {
+        count++;
+      }
+    }
+    return count;
+  }, [before.toString('base64'), after.toString('base64')]);
+};
+// Writes the image, unless it looks the same as the one already there
+const save = async (name, image) => {
+  const path = `${target}/${name}.png`;
+  if (existsSync(path) && await changedPixels(readFileSync(path), image) < unchangedPixels) {
+    console.log(`${name}.png (unchanged)`);
+    return;
+  }
+  mkdirSync(dirname(path), { recursive: true });
+  writeFileSync(path, image);
+  console.log(`${name}.png`);
+};
+
 const names = process.argv.length > 2 ? process.argv.slice(2) : Object.keys(screenshots);
 for (const name of names) {
   const screenshot = screenshots[name];
@@ -1674,12 +1722,11 @@ for (const name of names) {
     await screenshot.prepare(window);
     await window.waitForTimeout(500);
     const box = await window.locator(screenshot.from).first().boundingBox();
-    await window.screenshot({
-      path: `${target}/${name}.png`,
+    const image = await window.screenshot({
       clip: { x: box.x - margin, y: box.y - margin, width: box.width + 2 * margin, height: box.height + 2 * margin },
     });
     await context.close();
-    console.log(`${name}.png`);
+    await save(name, image);
     continue;
   }
   page = await login(screenshot.user ?? defaultUser);
@@ -1718,23 +1765,19 @@ for (const name of names) {
     writeFileSync(`../../var/${name.replaceAll('/', '_')}.html`, await frame.content());
     writeFileSync(`../../var/${name.replaceAll('/', '_')}-window.html`, await page.content());
   }
-  const path = `${target}/${name}.png`;
   if (screenshot.frontend) {
     // The page in the frontend, cut to the element named
     await page.goto(screenshot.frontend);
     await page.waitForLoadState('networkidle');
     const box = await page.locator(screenshot.frontendElement).first().boundingBox();
-    await page.screenshot({
-      path,
+    await save(name, await page.screenshot({
       clip: { x: box.x - margin, y: box.y - margin, width: box.width + 2 * margin, height: box.height + 2 * margin },
-    });
-    console.log(`${name}.png`);
+    }));
     continue;
   }
   if (screenshot.modal) {
     // Only the dialog: the page behind it does not belong to the example
-    await page.locator('typo3-backend-modal dialog[open]').screenshot({ path });
-    console.log(`${name}.png`);
+    await save(name, await page.locator('typo3-backend-modal dialog[open]').screenshot());
     continue;
   }
   if (screenshot.window) {
@@ -1746,8 +1789,7 @@ for (const name of names) {
       const viewport = page.viewportSize();
       clip = { x: 0, y: 0, width: viewport.width, height: Math.min(until.y + until.height + 4, viewport.height) };
     }
-    await page.screenshot({ path, clip });
-    console.log(`${name}.png`);
+    await save(name, await page.screenshot({ clip }));
     continue;
   }
   // Bounding boxes are relative to the page, also for elements in the frame
@@ -1766,15 +1808,13 @@ for (const name of names) {
   const space = screenshot.margin ?? margin;
   const left = Math.max(Math.min(...boxes.map((box) => box.x)) - space - (screenshot.left ?? 0), 0);
   const top = Math.max(Math.min(...boxes.map((box) => box.y)) - space, 0);
-  await page.screenshot({
-    path,
+  await save(name, await page.screenshot({
     clip: {
       x: left,
       y: top,
       width: Math.max(...boxes.map((box) => box.x + box.width)) + space - left,
       height: Math.max(...boxes.map((box) => box.y + box.height)) + space - top,
     },
-  });
-  console.log(`${name}.png`);
+  }));
 }
 await browser.close();
