@@ -292,6 +292,49 @@ $process(['fe_users' => [
     ],
 ]]);
 
+// A page for the members, with a text for visitors who are not logged in,
+// the login form, and a text for the pilgrims. It comes last in the page
+// tree, after the page above, and stays out of the menus of the website,
+// so the screenshots of the frontend do not change. Its description keeps
+// it out of the list of pages that miss one.
+$uids['pilgrims'] = $find('fe_groups', 'title', 'Pilgrims', $uids['websiteUsers']);
+$dataHandler = $process(['pages' => ['NEWmembers' => [
+    'pid' => -$uids['stories'],
+    'title' => 'Members only',
+    'description' => 'The stories that pilgrims share with each other.',
+    'hidden' => 0,
+    'nav_hide' => 1,
+]]]);
+$uids['members'] = $dataHandler->substNEWwithIDs['NEWmembers'];
+$dataHandler = $process(['tt_content' => ['NEWpleaseLogIn' => [
+    'pid' => $uids['members'],
+    'colPos' => 0,
+    'CType' => 'text',
+    'header' => 'Please log in',
+    'bodytext' => '<p>Log in to read the stories that pilgrims share with each other.</p>',
+    'fe_group' => '-1',
+]]]);
+$uids['pleaseLogIn'] = $dataHandler->substNEWwithIDs['NEWpleaseLogIn'];
+$dataHandler = $process(['tt_content' => ['NEWlogin' => [
+    'pid' => -$uids['pleaseLogIn'],
+    'colPos' => 0,
+    'CType' => 'felogin_login',
+    'header' => 'Log in',
+    'pi_flexform' => ['data' => ['sDEF' => ['lDEF' => [
+        'settings.pages' => ['vDEF' => (string)$uids['websiteUsers']],
+    ]]]],
+]]]);
+$uids['loginForm'] = $dataHandler->substNEWwithIDs['NEWlogin'];
+$dataHandler = $process(['tt_content' => ['NEWwelcome' => [
+    'pid' => -$uids['loginForm'],
+    'colPos' => 0,
+    'CType' => 'text',
+    'header' => 'Welcome to the members area',
+    'bodytext' => '<p>Share your stories of the Camino with the other pilgrims.</p>',
+    'fe_group' => (string)$uids['pilgrims'],
+]]]);
+$uids['welcome'] = $dataHandler->substNEWwithIDs['NEWwelcome'];
+
 // The author card of the theme, whose name is a required field
 $uids['author'] = $find('tt_content', 'header', 'Elena Vásquez', $uids['routeComparison']);
 
