@@ -36,7 +36,7 @@ On a development or test system, the error page has a dark header reading
 **Whoops, looks like something went wrong.** Below it, TYPO3 shows the error
 and the list of program files that led to it, also called the stack trace.
 
-..  figure:: /Images/ManualScreenshots/ErrorHandling/exception-header-copy-path.png
+..  figure:: /Images/GeneratedScreenshots/HelpInside/ErrorPage.png
     :alt: Error page with the heading "Whoops, looks like something went
         wrong.", the buttons Toggle details and Copy plaintext stack trace,
         and the error message below them
