@@ -296,7 +296,8 @@ $process(['fe_users' => [
 // the login form, and a text for the pilgrims. It comes last in the page
 // tree, after the page above, and stays out of the menus of the website,
 // so the screenshots of the frontend do not change. Its description keeps
-// it out of the list of pages that miss one.
+// it out of the list of pages that miss one, and the page tree of j.doe
+// hides it, so the screenshots of the page tree do not change either.
 $uids['pilgrims'] = $find('fe_groups', 'title', 'Pilgrims', $uids['websiteUsers']);
 $dataHandler = $process(['pages' => ['NEWmembers' => [
     'pid' => -$uids['stories'],
@@ -334,6 +335,11 @@ $dataHandler = $process(['tt_content' => ['NEWwelcome' => [
     'fe_group' => (string)$uids['pilgrims'],
 ]]]);
 $uids['welcome'] = $dataHandler->substNEWwithIDs['NEWwelcome'];
+$connectionPool->getConnectionForTable('be_users')->update(
+    'be_users',
+    ['TSconfig' => 'options.hideRecords.pages = ' . $uids['members']],
+    ['username' => 'j.doe'],
+);
 
 // The author card of the theme, whose name is a required field
 $uids['author'] = $find('tt_content', 'header', 'Elena Vásquez', $uids['routeComparison']);
