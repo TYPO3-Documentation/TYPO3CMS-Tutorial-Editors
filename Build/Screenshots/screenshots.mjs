@@ -1889,6 +1889,21 @@ const screenshots = {
   'UserSettings/UserSettingsPersonalData': {
     ...userSettings('Personal Data'),
   },
+  'UserSettings/UserSettingsLanguage': {
+    ...userSettings('Personal Data'),
+    prepare: async (frame) => {
+      // A screenshot cannot show the native list of a select, so the select
+      // shows its items as a list box instead
+      await frame.locator(`${field('be_users__lang')} select`).evaluate((select) => {
+        select.size = select.options.length;
+        // A list box is higher than three items by default
+        select.style.minHeight = '0';
+        select.style.height = 'auto';
+      });
+    },
+    from: `${field('be_users__lang')} label`,
+    to: `${field('be_users__lang')} select`,
+  },
   'UserSettings/UserSettingsSecurity': {
     ...userSettings('Account security'),
   },

@@ -28,6 +28,9 @@ ${PHP_RUN} .Build/bin/typo3 configuration:set SYS/trustedHostsPattern '.*'
 # whose address is not 127.0.0.1.
 ${PHP_RUN} .Build/bin/typo3 configuration:set SYS/devIPmask '*'
 ${PHP_RUN} .Build/bin/typo3 configuration:set SYS/displayErrors 1
+# Backend languages besides English, which the language select of the user
+# settings offers. Their labels stay English, as no language pack is loaded.
+${PHP_RUN} .Build/bin/typo3 configuration:set LANG/availableLocales '["de","es"]' --json
 ${PHP_RUN} php Build/Screenshots/create-records.php
 ${PHP_RUN} .Build/bin/typo3 cache:flush
 
