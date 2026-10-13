@@ -293,15 +293,19 @@ const confirmPaste = async (frame) => {
 // A number in an orange circle at the lower right of an element, for a
 // screenshot whose text explains the numbered parts
 // Below the right corner, or below the left one where a neighbour follows
-// closely on the right
+// closely on the right. 'before' puts it left of the element, centered on
+// its height, so that the numbers of a screenshot line up.
 const badge = (locator, number, side = 'right') => locator.evaluate((element, [text, side]) => {
   const box = element.getBoundingClientRect();
+  const position = side === 'before'
+    ? { left: box.left - 32, top: box.top + box.height / 2 - 13 }
+    : { left: side === 'left' ? box.left - 14 : box.right - 12, top: box.bottom - 6 };
   const circle = element.ownerDocument.createElement('span');
   // The crop takes in every circle, see below
   circle.className = 'screenshot-badge';
   circle.textContent = text;
   Object.assign(circle.style, {
-    position: 'fixed', left: `${side === 'left' ? box.left - 14 : box.right - 12}px`, top: `${box.bottom - 6}px`, width: '26px', height: '26px',
+    position: 'fixed', left: `${position.left}px`, top: `${position.top}px`, width: '26px', height: '26px',
     borderRadius: '50%', background: '#ff8700', color: '#fff', font: 'bold 15px sans-serif', zIndex: '10000',
     display: 'flex', alignItems: 'center', justifyContent: 'center', boxShadow: '0 1px 3px rgba(0, 0, 0, 0.4)',
   });
@@ -539,6 +543,21 @@ const screenshots = {
     url: moduleUrl('web/layout', packingList),
     prepare: openContextMenu(toiletries),
     from: contentElement(toiletries),
+  },
+  // The parts of the module that the overview lists, numbered. Erika Doe
+  // may not edit the element with the map, so it has no buttons.
+  'ContentElements/PageModuleOverview': {
+    user: 'e.doe',
+    url: moduleUrl('web/layout', stories),
+    prepare: async (frame) => {
+      await badge(frame.locator('.t3-page-column-header-icons a').first(), 1, 'before');
+      await badge(frame.locator('typo3-backend-new-content-element-wizard-button').first(), 2, 'before');
+      await badge(frame.locator(`${contentElement(story)} .t3-page-ce-header-left`), 3, 'before');
+      await badge(frame.locator(`${contentElement(story)} .t3-page-ce-header-right .btn-group`), 4, 'before');
+      await badge(frame.locator(`${contentElement(map)} .t3-page-ce-header-left`), 5, 'before');
+    },
+    from: '.t3-page-column-header >> nth=0',
+    to: contentElement(map),
   },
   'ContentElements/PasteContent': {
     url: moduleUrl('web/layout', packingList),
