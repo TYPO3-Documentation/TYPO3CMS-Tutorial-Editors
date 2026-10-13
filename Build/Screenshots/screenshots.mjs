@@ -1121,6 +1121,31 @@ const screenshots = {
       + `&defVals[tt_content][records]=tt_content_${toiletries},tt_content_${extras},tt_content_${essentialItems}`,
     from: field('records'),
   },
+  // The page about the cache: the button of the module, and the menu of the
+  // top bar, with the pointer on the frontend caches
+  'Cache/ClearPageCache': {
+    url: moduleUrl('web/layout', packingList),
+    prepare: async (frame) => {
+      await outline(frame.locator('.module-docheader [title="Clear cache for this page"]').first());
+    },
+    window: true,
+    pageTree: true,
+    clip: { width: 1280, height: 300 },
+  },
+  'Cache/ClearAllPageCaches': {
+    url: moduleUrl('web/layout', packingList),
+    prepare: async (frame) => {
+      const item = frame.page().locator('#typo3-cms-backend-backend-toolbaritems-clearcachetoolbaritem');
+      await item.locator('button, a').first().click();
+      const flush = item.getByText('Flush frontend caches').first();
+      await flush.waitFor();
+      await flush.hover();
+    },
+    hover: true,
+    window: true,
+    pageTree: true,
+    clip: { width: 1280, height: 300 },
+  },
   // The chapter about pages. The page tree is outside of the module frame.
   'PageTree/PageCreateDragDrop': {
     url: moduleUrl('web/layout', packingList),
