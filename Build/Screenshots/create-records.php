@@ -295,6 +295,18 @@ $process(['fe_users' => [
 // The author card of the theme, whose name is a required field
 $uids['author'] = $find('tt_content', 'header', 'Elena Vásquez', $uids['routeComparison']);
 
+// An internal note at the top of a page that no other screenshot shows in
+// the Layout module, with the date of the history above
+$dataHandler = $process(['sys_note' => ['NEWnote' => [
+    'pid' => $uids['routeComparison'],
+    'category' => 4,
+    'position' => 1,
+    'subject' => 'Update the Primitivo route',
+    'message' => 'The stage from Grandas de Salime has a new hostel since spring.',
+]]]);
+$connectionPool->getConnectionForTable('sys_note')
+    ->update('sys_note', ['tstamp' => $changedAt], ['uid' => $dataHandler->substNEWwithIDs['NEWnote']]);
+
 // The group of a common editor, who creates the typical content types,
 // lists and dividers, but no forms, menus, or plugins, and who manages the
 // website users in the Records module and the files of the demo site. Like

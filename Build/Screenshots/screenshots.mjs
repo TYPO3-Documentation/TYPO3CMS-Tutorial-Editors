@@ -429,6 +429,21 @@ const outline = (locator, inside = false) => locator.evaluate((element, inner) =
   element.style.outlineOffset = inner ? '-3px' : '3px';
 }, inside);
 
+// The menu of the user in the top bar, with the pointer on an item
+const userMenu = (item) => ({
+  url: moduleUrl('web/layout', packingList),
+  prepare: async (frame) => {
+    await frame.page().locator('#typo3-cms-backend-backend-toolbaritems-usertoolbaritem > button, .toolbar-item-avatar').first().click();
+    await frame.page().waitForTimeout(500);
+    await frame.page().getByRole('menuitem', { name: item }).or(frame.page().getByRole('link', { name: item })).first().hover();
+    await frame.page().waitForTimeout(300);
+  },
+  hover: true,
+  outside: true,
+  from: '#typo3-cms-backend-backend-toolbaritems-usertoolbaritem',
+  to: '#typo3-cms-backend-backend-toolbaritems-usertoolbaritem .dropdown-menu',
+});
+
 // Adds the widget "Pages missing meta description" to the dashboard, which
 // keeps it from then on
 const seoWidget = (frame) => frame.locator('typo3-dashboard-widget').filter({ hasText: 'Pages missing meta description' });
@@ -1049,18 +1064,62 @@ const screenshots = {
     from: '.card-login',
   },
   // The menu of the user in the top bar, as on the page about user settings
-  'UserSettings/UserSettingsModule': {
+  'UserSettings/UserSettingsModule': userMenu('User Settings'),
+  // The chapter about the help within TYPO3
+  'HelpInside/OnlineDocumentation': userMenu('TYPO3 Online Documentation'),
+  'HelpInside/BackendSearch': {
     url: moduleUrl('web/layout', packingList),
     prepare: async (frame) => {
-      await frame.page().locator('#typo3-cms-backend-backend-toolbaritems-usertoolbaritem > button, .toolbar-item-avatar').first().click();
-      await frame.page().waitForTimeout(500);
-      await frame.page().getByRole('menuitem', { name: 'User Settings' }).or(frame.page().getByRole('link', { name: 'User Settings' })).first().hover();
-      await frame.page().waitForTimeout(300);
+      const button = frame.page().locator('.t3js-topbar-button-search:visible').first();
+      await outline(button);
+      // The search shows a tip picked at random. It opens until it shows
+      // the tip about the keystroke, which the text names as well.
+      for (let attempt = 0; attempt < 30; attempt++) {
+        await button.click();
+        const dialog = frame.page().locator('typo3-backend-modal dialog[open]');
+        await dialog.waitFor();
+        await frame.page().waitForTimeout(500);
+        if ((await dialog.innerText()).includes('keystroke')) {
+          break;
+        }
+        // The search keeps the text of the last search, which Escape
+        // would clear instead of closing the dialog
+        await dialog.getByRole('button', { name: 'Close' }).first().click();
+        await dialog.waitFor({ state: 'detached' });
+      }
+      const search = frame.page().locator('typo3-backend-modal dialog[open] input[type="search"]');
+      await search.fill('packing');
+      await frame.page().waitForTimeout(1500);
     },
-    hover: true,
-    outside: true,
-    from: '#typo3-cms-backend-backend-toolbaritems-usertoolbaritem',
-    to: '#typo3-cms-backend-backend-toolbaritems-usertoolbaritem .dropdown-menu',
+    // The whole backend, as the button is in the top bar
+    window: true,
+    height: 700,
+  },
+  // The internal note on the page, and the button that creates one
+  'HelpInside/PageWithInternalNote': {
+    url: moduleUrl('web/layout', routeComparison),
+    margin: 0,
+    from: '.module-docheader',
+    to: '.note-list',
+  },
+  'HelpInside/CreateInternalNote': {
+    url: moduleUrl('web/layout', routeComparison),
+    prepare: async (frame) => {
+      await outline(frame.locator('.module-docheader a[href*="sys_note"]').first());
+    },
+    margin: 0,
+    from: '.module-docheader',
+  },
+  // Fields that the keyboard commands work in: a multiple selection and a
+  // list of records. The new record is not saved.
+  'HelpInside/SelectMultipleSideBySide': {
+    url: editUrl('fe_users', 1),
+    from: field('usergroup'),
+  },
+  'HelpInside/Group': {
+    url: `${baseUrl}/typo3/record/edit?edit[tt_content][${stories}]=new&defVals[tt_content][CType]=shortcut`
+      + `&defVals[tt_content][records]=tt_content_${toiletries},tt_content_${extras},tt_content_${essentialItems}`,
+    from: field('records'),
   },
   // The chapter about pages. The page tree is outside of the module frame.
   'PageTree/PageCreateDragDrop': {
