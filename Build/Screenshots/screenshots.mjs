@@ -736,6 +736,24 @@ const screenshots = {
     // The message starts a little left of the field
     left: 8,
   },
+  // An error after saving, which only the saving request causes, see
+  // create-records.php
+  'ContentElements/ErrorMessage': {
+    url: editUrl('tt_content', story),
+    prepare: async (frame) => {
+      await frame.page().route((url) => url.pathname === '/typo3/record/edit', (route) => route.continue(
+        route.request().method() === 'POST'
+          ? { headers: { ...route.request().headers(), 'x-screenshot': 'save-error' } }
+          : {},
+      ));
+      await frame.getByRole('button', { name: 'Save' }).first().click();
+      await frame.locator('.trace-head').first().waitFor();
+      await frame.page().unrouteAll();
+    },
+    // The error, without the help and the trace around it. The page lists
+    // two more errors below, which caused the first one.
+    from: '.trace-head >> nth=0',
+  },
   'ContentElements/ChangeType': {
     url: editUrl('tt_content', story),
     prepare: async (frame) => {
