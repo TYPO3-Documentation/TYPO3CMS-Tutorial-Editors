@@ -24,8 +24,8 @@ This tab holds your profile details. Your username cannot be changed.
 
     The Personal Data tab
 
-..  figure:: /Images/ManualScreenshots/UserSettings/UserSettingsLanguage.png
-    :alt: The language dropdown box on the Personal data tab
+..  figure:: /Images/GeneratedScreenshots/UserSettings/UserSettingsLanguage.png
+    :alt: The options of the Language field: English, German, and Spanish
     :zoom: lightbox
 
     The language dropdown box on the Personal data tab
