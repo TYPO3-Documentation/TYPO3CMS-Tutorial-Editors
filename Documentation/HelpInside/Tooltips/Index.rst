@@ -9,7 +9,7 @@ Tooltips
 Hover your mouse pointer over buttons and icons to display a short description
 of the function.
 
-..  figure:: /Images/ManualScreenshots/Help/Tooltip.png
+..  figure:: /Images/GeneratedScreenshots/HelpInside/Tooltip.png
     :alt: Tooltip for the color scheme
     :zoom: lightbox
 
