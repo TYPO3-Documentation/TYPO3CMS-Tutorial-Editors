@@ -51,28 +51,31 @@ Overview of the Layout module in TYPO3
     This module has been renamed from :guilabel:`Web > Pages` to
     :guilabel:`Content > Layout`.
 
-..  figure:: /Images/ManualScreenshots/ContentElements/PageModuleAnnotated.png
-    :alt: A typical view of the Content Layout module with various content columns
+..  figure:: /Images/GeneratedScreenshots/ContentElements/PageModuleOverview.png
+    :alt: A column of the Content > Layout module with two content elements,
+        numbered from 1 to 5
     :zoom: gallery
 
 Common page icons explained:
 
-#.  Use this icon to edit all the content elements of a column.
+1.  Use this icon to edit all the content elements of a column.
 
-#.  Add a new content element to the column at this specific position.
+2.  Add a new content element to the column at this specific position.
 
-#.  Content element icon. This can provide a visual clue to the type of content
+3.  Content element icon. This can provide a visual clue to the type of content
     element. Click to access the context menu for the element (to perform
     actions like *copy*).
 
-#.  This group of icons is enabled when hovering over the whole element.
+4.  Use these buttons to work with the element:
 
     *   Use the pencil icon to edit the element.
-    *   Enable/disable the element to show or hide it in the frontend
     *   Delete the element.
     *   Open the context menu.
 
-#.  If the edit icons are missing you do not have sufficient permission to
+    If you may hide content elements, a button to hide or show the element
+    in the frontend appears here as well.
+
+5.  If the buttons are missing you do not have sufficient permission to
     edit the content element in question.
 
 ..  _content-working-hiding:
