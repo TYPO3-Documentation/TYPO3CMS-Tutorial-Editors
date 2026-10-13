@@ -98,6 +98,14 @@ $configuration['languages'][] = [
     'fallbacks' => '',
 ];
 GeneralUtility::makeInstance(SiteWriter::class)->write($site->getIdentifier(), $configuration);
+// An error for the error page: a request with the header below finds no
+// page to render. The TypoScript of the site needs no record, which would
+// show in the screenshots of the other chapters.
+file_put_contents(Environment::getConfigPath() . '/sites/' . $site->getIdentifier() . '/setup.typoscript', <<<'TYPOSCRIPT'
+    [(request.getHeaders()['x-screenshot'][0] ?? '') == 'error']
+      page >
+    [END]
+    TYPOSCRIPT);
 GeneralUtility::makeInstance(CacheManager::class)->flushCaches();
 
 // The packing list in Arabic: the page and its header, which show the

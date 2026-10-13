@@ -2045,6 +2045,17 @@ const screenshots = {
     from: field('starttime'),
     to: field('extendToSubpages'),
   },
+  // The error page of a development system, for a page that the header
+  // breaks, see create-records.php
+  'HelpInside/ErrorPage': {
+    loggedOut: true,
+    url: `${baseUrl}/camino/packing-list`,
+    headers: { 'X-Screenshot': 'error' },
+    prepare: async (page) => {
+      await outline(page.getByRole('button', { name: 'Copy plaintext stack trace' }));
+    },
+    until: '.trace-head',
+  },
 };
 
 // Hides the page tree, unless the screenshot needs it, and collapses the
@@ -2156,16 +2167,22 @@ for (const name of names) {
   }
   if (screenshot.loggedOut) {
     // A window of its own, without the session of the other screenshots
-    const context = await browser.newContext({ viewport: { width: 1280, height: 900 } });
+    const context = await browser.newContext({ viewport: { width: 1280, height: 900 }, extraHTTPHeaders: screenshot.headers });
     const window = await context.newPage();
     await window.goto(screenshot.url);
     await window.waitForLoadState('networkidle');
     await screenshot.prepare(window);
     await window.waitForTimeout(500);
-    const box = await window.locator(screenshot.from).first().boundingBox();
-    const image = await window.screenshot({
-      clip: { x: box.x - margin, y: box.y - margin, width: box.width + 2 * margin, height: box.height + 2 * margin },
-    });
+    let clip;
+    if (screenshot.until) {
+      // The whole width of the window, down to the element named
+      const until = await window.locator(screenshot.until).first().boundingBox();
+      clip = { x: 0, y: 0, width: 1280, height: until.y + until.height + margin };
+    } else {
+      const box = await window.locator(screenshot.from).first().boundingBox();
+      clip = { x: box.x - margin, y: box.y - margin, width: box.width + 2 * margin, height: box.height + 2 * margin };
+    }
+    const image = await window.screenshot({ clip });
     await context.close();
     await save(name, image);
     continue;
