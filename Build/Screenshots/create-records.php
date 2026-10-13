@@ -106,6 +106,31 @@ file_put_contents(Environment::getConfigPath() . '/sites/' . $site->getIdentifie
       page >
     [END]
     TYPOSCRIPT);
+// An error after saving a content element, as after an update that left the
+// database behind: for a request with the header below, a hook of the
+// DataHandler reads a column that the table does not have. The hook runs
+// before anything is written. The message names no path, which would differ
+// from one checkout to the next.
+file_put_contents(Environment::getConfigPath() . '/system/additional.php', <<<'PHP'
+    <?php
+
+    use TYPO3\CMS\Core\Database\ConnectionPool;
+    use TYPO3\CMS\Core\Utility\GeneralUtility;
+
+    if (($_SERVER['HTTP_X_SCREENSHOT'] ?? '') === 'save-error') {
+        $GLOBALS['TYPO3_CONF_VARS']['SC_OPTIONS']['t3lib/class.t3lib_tcemain.php']['processDatamapClass'][] = ScreenshotSaveError::class;
+        if (!class_exists(ScreenshotSaveError::class, false)) {
+            class ScreenshotSaveError
+            {
+                public function processDatamap_preProcessFieldArray(array $fieldArray, string $table): void
+                {
+                    GeneralUtility::makeInstance(ConnectionPool::class)->getQueryBuilderForTable($table)
+                        ->select($table . '.tx_example_teaser')->from($table)->executeQuery();
+                }
+            }
+        }
+    }
+    PHP);
 GeneralUtility::makeInstance(CacheManager::class)->flushCaches();
 
 // The packing list in Arabic: the page and its header, which show the

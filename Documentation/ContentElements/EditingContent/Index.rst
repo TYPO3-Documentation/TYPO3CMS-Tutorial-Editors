@@ -109,7 +109,7 @@ Such error messages can happen if you are editing content during or right after
 an update. Note the time and exact error message and copy the URL from your
 browser where you saw the error. Send these to your integrator or programmer.
 
-..  figure:: /Images/ManualScreenshots/ContentElements/ErrorMessage.png
+..  figure:: /Images/GeneratedScreenshots/ContentElements/ErrorMessage.png
     :alt: Screenshot of an error message in the TYPO3 backend
     :zoom: gallery
 
