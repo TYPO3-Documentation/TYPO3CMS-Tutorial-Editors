@@ -22,7 +22,7 @@ const editUrl = (table, uid) => `${baseUrl}/typo3/record/edit?edit[${table}][${u
 const margin = 12;
 
 // The uids of the records that create-records.php looked up
-const { root, redirect, qrcode, shortUrl, websiteUsers, packingList, routeComparison, toiletries, extras, essentialItems, faqs, stories, story, map, author, office, shells } =
+const { root, redirect, qrcode, shortUrl, websiteUsers, packingList, routeComparison, toiletries, extras, essentialItems, faqs, stories, story, map, author, office, shells, pilgrims, members, pleaseLogIn, loginForm, welcome } =
   JSON.parse(readFileSync('../../var/screenshot-records.json', 'utf8'));
 
 // A content element in the Content > Layout module
@@ -1062,6 +1062,89 @@ const screenshots = {
       await page.locator('.card-login').first().click({ position: { x: 5, y: 5 } });
     },
     from: '.card-login',
+  },
+  // The chapter about access control: the website users and their group,
+  // the members page, and its login form in the frontend
+  'AccessControl/UserFolder': {
+    url: recordsUrl(websiteUsers),
+    window: true,
+    pageTree: true,
+    prepare: async (frame) => {
+      await outline(frame.getByRole('button', { name: 'Create new record' }).first());
+    },
+    until: recordRow('fe_groups', 2),
+  },
+  'AccessControl/NewRecordWizard': {
+    url: recordsUrl(websiteUsers),
+    prepare: async (frame) => {
+      await frame.getByRole('button', { name: 'Create new record' }).first().click();
+      await frame.waitForLoadState('networkidle');
+      await outline(frame.locator('.list-group-item', { hasText: 'Website Usergroup' }).first(), true);
+    },
+    from: 'h1',
+    to: '.list-group',
+  },
+  'AccessControl/NewGroup': {
+    url: `${baseUrl}/typo3/record/edit?edit[fe_groups][${websiteUsers}]=new&defVals[fe_groups][title]=Pilgrims`,
+    prepare: async (frame) => {
+      await outline(frame.locator(input('title')).first(), true);
+    },
+    margin: 0,
+    from: '.module-docheader',
+    to: field('title'),
+  },
+  'AccessControl/NewUser': {
+    url: `${baseUrl}/typo3/record/edit?edit[fe_users][${websiteUsers}]=new&defVals[fe_users][username]=rosa`
+      + `&defVals[fe_users][usergroup]=${pilgrims}`,
+    prepare: async (frame) => {
+      const passwordInput = frame.locator(input('password')).first();
+      await passwordInput.fill(password);
+      // The field shows that it changed only once it lost the focus
+      await passwordInput.blur();
+    },
+    margin: 0,
+    from: '.module-docheader',
+    to: field('usergroup'),
+  },
+  'AccessControl/AccessRights': {
+    url: editUrl('tt_content', pleaseLogIn),
+    tab: 'Access',
+    from: field('starttime'),
+    to: field('fe_group'),
+  },
+  'AccessControl/RestrictContent': {
+    url: moduleUrl('web/layout', members),
+    from: contentElement(pleaseLogIn),
+    to: contentElement(welcome),
+  },
+  'AccessControl/LoginForm': {
+    url: editUrl('tt_content', loginForm),
+    tab: 'Plugin',
+    from: '[role="tablist"]',
+    to: '.form-group:has([name*="[settings.pages]"]):not(:has(.form-group))',
+  },
+  'AccessControl/PageWithLoginForm': {
+    loggedOut: true,
+    url: `${baseUrl}/camino/members-only`,
+    prepare: async () => {},
+    from: 'main',
+  },
+  'AccessControl/PageWithAuthenticatedUser': {
+    loggedOut: true,
+    url: `${baseUrl}/camino/members-only`,
+    prepare: async (page) => {
+      await page.locator('input[name="user"]').fill('rosa');
+      await page.locator('input[name="pass"]').fill(password);
+      await page.locator('form:has(input[name="user"]) [type="submit"]').first().click();
+      await page.waitForLoadState('networkidle');
+    },
+    from: 'main',
+  },
+  'AccessControl/PublicationDate': {
+    url: editUrl('pages', faqs),
+    tab: 'Access',
+    from: field('starttime'),
+    to: field('extendToSubpages'),
   },
   // The menu of the user in the top bar, as on the page about user settings
   'UserSettings/UserSettingsModule': userMenu('User Settings'),
