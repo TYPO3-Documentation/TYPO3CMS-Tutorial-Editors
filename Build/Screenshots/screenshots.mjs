@@ -433,6 +433,25 @@ const outline = (locator, inside = false) => locator.evaluate((element, inner) =
   element.style.outlineOffset = inner ? '-3px' : '3px';
 }, inside);
 
+// The tooltip of an element with a title, below the pointer in its middle.
+// The browser draws the tooltip outside of the page, where a screenshot does
+// not reach, so the page shows the title in a box of its own instead.
+const tooltip = (locator) => locator.evaluate((element) => {
+  const box = element.getBoundingClientRect();
+  const tip = element.ownerDocument.createElement('span');
+  tip.textContent = element.title;
+  Object.assign(tip.style, {
+    position: 'fixed', top: `${box.top + box.height / 2 + 20}px`, padding: '3px 7px', zIndex: '10000',
+    background: '#fff', color: '#1d1d1d', border: '1px solid #a3a3a3', borderRadius: '3px',
+    font: '12px sans-serif', whiteSpace: 'nowrap', boxShadow: '0 2px 4px rgba(0, 0, 0, 0.25)',
+  });
+  // Inside a dropdown, which the browser shows above everything else
+  (element.closest('.dropdown-menu') ?? element.ownerDocument.body).appendChild(tip);
+  // Like the browser, the tooltip moves left to fit into the window
+  const width = tip.getBoundingClientRect().width;
+  tip.style.left = `${Math.min(box.left + box.width / 2, window.innerWidth - width - 4)}px`;
+});
+
 // The menu of the user in the top bar, with the pointer on an item
 const userMenu = (item) => ({
   url: moduleUrl('web/layout', packingList),
@@ -1114,6 +1133,16 @@ const screenshots = {
   'UserSettings/UserSettingsModule': userMenu('User Settings'),
   // The chapter about the help within TYPO3
   'HelpInside/OnlineDocumentation': userMenu('TYPO3 Online Documentation'),
+  // The tooltip of the switch between light and dark mode in the user menu
+  'HelpInside/Tooltip': {
+    ...userMenu('TYPO3 Online Documentation'),
+    prepare: async (frame) => {
+      await userMenu('TYPO3 Online Documentation').prepare(frame);
+      const toggle = frame.page().locator('typo3-backend-color-scheme-switch button[title]').first();
+      await toggle.hover();
+      await tooltip(toggle);
+    },
+  },
   'HelpInside/BackendSearch': {
     url: moduleUrl('web/layout', packingList),
     prepare: async (frame) => {
