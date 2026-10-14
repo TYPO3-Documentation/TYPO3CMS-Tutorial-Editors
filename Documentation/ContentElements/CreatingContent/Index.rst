@@ -11,7 +11,7 @@ Creating content
 
 ------------
 
-..  image:: /Images/ManualScreenshots/ContentElements/CreateContentElement.png
+..  image:: /Images/GeneratedScreenshots/ContentElements/CreateContentElement.png
     :alt: Creating content elements in the TYPO3 backend
     :class: img-thumbnail float-end ms-1 ms-1
     :width: 250
@@ -29,8 +29,8 @@ The :guilabel:`New Page Content` wizard will then be displayed.
 
 In the following screenshot you see the location of that button:
 
-..  figure:: /Images/ManualScreenshots/NewContentElement/CreateNew.png
-    :alt: "Create new content button" in the Content Layout module, column "Normal"
+..  figure:: /Images/GeneratedScreenshots/NewContentElement/CreateNew.png
+    :alt: "Create new content button" in the Content Layout module, column "Content area"
     :zoom: gallery
 
     Create a new Content Element by clicking the button
@@ -53,7 +53,7 @@ Which content elements you can see as an editor also depends on your user rights
 
 A standard editor can see the following content elements:
 
-..  figure:: /Images/ManualScreenshots/ContentElements/WizardTypical.png
+..  figure:: /Images/GeneratedScreenshots/ContentElements/WizardTypical.png
     :alt: Screenshot of the "New Page Content" wizard as seen by a common TYPO3 editor, featuring "Typical Page Content", "Lists" and "Special elements"
     :zoom: gallery
 
@@ -61,7 +61,7 @@ A standard editor can see the following content elements:
 
 An advanced editor or an administrator can see the following content elements:
 
-..  figure:: /Images/ManualScreenshots/ContentElements/WizardAdvanced.png
+..  figure:: /Images/GeneratedScreenshots/ContentElements/WizardAdvanced.png
     :alt: Screenshot of the "New Page Content" wizard as seen by an advanced TYPO3 editor, additionally including "Form elements", "Menus" and additional "Special elements"
     :zoom: gallery
 
@@ -79,7 +79,7 @@ Typical page content
 
 Insert regular text and image content types to build standard web pages.
 
-..  figure:: /Images/ManualScreenshots/ContentElements/WizardTypical.png
+..  figure:: /Images/GeneratedScreenshots/ContentElements/WizardTypical.png
     :alt: 'Typical page content' tab contains content like Header, Regular Text Element, Text & Media, Images etc
     :zoom: gallery
 
@@ -93,7 +93,7 @@ Lists
 Lists can be used for structured content. They provide less flexibility then
 standard content elements but are easier to use for their specialized use case.
 
-..  figure:: /Images/ManualScreenshots/NewContentElement/WizardTabList.png
+..  figure:: /Images/GeneratedScreenshots/NewContentElement/WizardTabList.png
     :alt: The 'List' tab contains content elements like "Bullet List", "Table" and "File Links"
     :zoom: gallery
 
@@ -117,7 +117,7 @@ Form elements
 
 Create a login form or a simple contact form.
 
-..  figure:: /Images/ManualScreenshots/NewContentElement/WizardTabForm.png
+..  figure:: /Images/GeneratedScreenshots/NewContentElement/WizardTabForm.png
     :alt: Tab "Form elements" with "Form" and "Login Form"
     :zoom: gallery
 
@@ -130,7 +130,7 @@ Menu elements
 
 Present a menu or list of page links in different ways.
 
-..  figure:: /Images/ManualScreenshots/NewContentElement/WizardTabMenu.png
+..  figure:: /Images/GeneratedScreenshots/NewContentElement/WizardTabMenu.png
     :alt: The 'Menu' tab of the new content element window
     :zoom: gallery
 
@@ -156,7 +156,7 @@ Insert plain HTML, or a horizontal divider on the page. The "Insert records"
 element lets you reference other content elements, i.e. reuse a content
 element from another page without duplicating it.
 
-..  figure:: /Images/ManualScreenshots/NewContentElement/WizardTabSpecialElements.png
+..  figure:: /Images/GeneratedScreenshots/NewContentElement/WizardTabSpecialElements.png
     :alt: The 'Special elements' tab of the new content element window
     :zoom: gallery
 
@@ -174,8 +174,8 @@ Add new content to a page
     This is the most commonly used content type. The
     :guilabel:`Create new Text & Media` form appears.
 
-    ..  figure:: /Images/ManualScreenshots/NewContentElement/NewContentElement.png
-        :alt: Create new Page Content on page "Page 1" form screenshot
+    ..  figure:: /Images/GeneratedScreenshots/NewContentElement/NewContentElement.png
+        :alt: Create new Page Content on page "Pilgrim stories" form screenshot
         :zoom: gallery
 
         Unsaved changes are highlighted in light blue
@@ -187,7 +187,7 @@ Add new content to a page
 #.  Save and close the content element.
     You can see the newly added element on the page:
 
-    ..  figure:: /Images/ManualScreenshots/NewContentElement/ContentSaved.png
+    ..  figure:: /Images/GeneratedScreenshots/NewContentElement/ContentSaved.png
         :alt: The new content element appears in the Content Layout module
         :zoom: gallery
 

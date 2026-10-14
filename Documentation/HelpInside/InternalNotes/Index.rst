@@ -20,8 +20,8 @@ can use them to write notes to you as well.
 
 They look like this:
 
-..  figure:: /Images/ManualScreenshots/Page/PageWithSysNote.png
-    :alt: Screenshot of a TODO note on the top of the "Page" backend module
+..  figure:: /Images/GeneratedScreenshots/HelpInside/PageWithInternalNote.png
+    :alt: A to-do note at the top of the Content > Layout module
     :zoom: gallery
 
     If you have sufficient permissions you can also edit or delete the note.
@@ -31,7 +31,7 @@ They look like this:
     of buttons, each providing different functionality. The button highlighted in this screenshot
     is which allows the user to create a new internal note.
 
-..  figure:: /Images/ManualScreenshots/Page/sys_note_create.png
+..  figure:: /Images/GeneratedScreenshots/HelpInside/CreateInternalNote.png
     :alt: Screenshot demonstrating the location of the "Create internal note" button in the module header of the Content Layout module
     :zoom: gallery
 

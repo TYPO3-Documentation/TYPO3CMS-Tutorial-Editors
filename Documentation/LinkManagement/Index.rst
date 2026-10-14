@@ -14,9 +14,9 @@ create, edit and manage different types of links, including :ref:`Redirects<redi
 To use these features, you will need access to :guilabel:`Link Management`, which is
 located within the Sites module.
 
-..  figure:: /Images/ManualScreenshots/LinkManagement/HomeModuleOverview.png
-    :alt: Screenshot of the Link Management overview page containing links to each of
-        the sub modules. Redirects, Quick Response Codes and Short URLs.
+..  figure:: /Images/GeneratedScreenshots/LinkManagement/HomeModuleOverview.png
+    :alt: Screenshot of the Link Management overview page containing links to
+        each of the sub modules: Redirects, QR Codes, Short URLs, and Check Links.
 
 ..  tip::
     If you cannot see the Link Management module, it is likely that either you have

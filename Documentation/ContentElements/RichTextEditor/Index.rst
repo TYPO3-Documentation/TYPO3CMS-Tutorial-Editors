@@ -9,7 +9,7 @@ The rich text editor
 
 ------------
 
-..  image:: /Images/ManualScreenshots/ContentElements/RegularText.png
+..  image:: /Images/GeneratedScreenshots/ContentElements/RegularText.png
     :alt: Content element Regular Text in the TYPO3 backend
     :class: img-thumbnail float-end ms-1
     :width: 250
@@ -23,7 +23,7 @@ The TYPO3 text editing interface is not much different from a word processor.
 The options available in the toolbars vary depending on how your TYPO3
 installation is configured.
 
-..  figure:: /Images/ManualScreenshots/ContentElements/Text/RichTextEditor.png
+..  figure:: /Images/GeneratedScreenshots/ContentElements/Text/RichTextEditor.png
     :alt: Screenshot of a typical rich text editor in the TYPO3 backend
     :zoom: gallery
 
@@ -44,7 +44,7 @@ Click the :guilabel:`Link` icon in the toolbar or use the shortcut
 your focus is within the editor. Outside the editor the same
 shortcut would open the live search.
 
-..  figure:: /Images/ManualScreenshots/ContentElements/Text/Link.png
+..  figure:: /Images/GeneratedScreenshots/ContentElements/Text/Link.png
     :alt: Linking the highlighted text in the TYPO3 rich text editor
     :zoom: gallery
 
@@ -58,7 +58,7 @@ URL, email address or phone number.
 Internal links
 --------------
 
-..  figure:: /Images/ManualScreenshots/Link/LinkBrowser.png
+..  figure:: /Images/GeneratedScreenshots/Link/LinkBrowser.png
     :alt: The TYPO3 CMS link browser
     :zoom: gallery
 
@@ -73,7 +73,7 @@ desired content element.
 
 You can also link to uploaded files, for example PDF files:
 
-..  figure:: /Images/ManualScreenshots/Link/LinkBrowserFile.png
+..  figure:: /Images/GeneratedScreenshots/Link/LinkBrowserFile.png
     :alt: Linking to a file for download in TYPO3
     :zoom: gallery
 
@@ -87,7 +87,7 @@ External links
 #.  In the Target drop-down list, select :guilabel:`New window` to open the
     link in a new browser window.
 
-    ..  figure:: /Images/ManualScreenshots/Link/LinkBrowserExternal.png
+    ..  figure:: /Images/GeneratedScreenshots/Link/LinkBrowserExternal.png
         :alt: Display the anchors on a page
         :zoom: gallery
 
@@ -102,7 +102,7 @@ Removing a link
 To remove a link from text, put your cursor anywhere in the linked text then
 click the :guilabel:`Unlink` button in the popover:
 
-..  figure:: /Images/ManualScreenshots/ContentElements/Text/Unlink.png
+..  figure:: /Images/GeneratedScreenshots/ContentElements/Text/Unlink.png
     :alt: Unlinking using the popover in the rich text editor
     :zoom: gallery
 
@@ -122,7 +122,7 @@ rich text editor so that you can see where they have been placed:
 The colour highlighting is only shown while you edit. It helps you spot these
 characters in the editor and does not appear on the website itself.
 
-..  figure:: /Images/ManualScreenshots/ContentElements/Text/Whitespace.avif
+..  figure:: /Images/GeneratedScreenshots/ContentElements/Text/Whitespace.png
     :alt: A non-breaking space and a soft hyphen highlighted in the rich text editor
     :zoom: gallery
 

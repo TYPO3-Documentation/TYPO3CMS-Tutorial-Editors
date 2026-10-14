@@ -35,7 +35,7 @@ displayed in the right pane.
 Method 1: Using drag and drop
 =============================
 
-..  figure:: /Images/ManualScreenshots/PageTree/PageCreateDragDrop.png
+..  figure:: /Images/GeneratedScreenshots/PageTree/PageCreateDragDrop.png
     :alt: The standard page icon above the page tree
     :zoom: gallery
 
@@ -52,7 +52,7 @@ Method 1: Using drag and drop
         if you want to create another main page or select an existing page to
         create a **"child" page**. Then click on :guilabel:`Insert subpage`.
         Choose the standard page type.
-    ..  figure:: /Images/ManualScreenshots/PageTree/PageInsertSubpage.png
+    ..  figure:: /Images/GeneratedScreenshots/PageTree/PageInsertSubpage.png
         :alt: The insert subpage button on the page creator form
         :zoom: gallery
 
@@ -74,7 +74,7 @@ Method 2: Using the context menu
     you want to create a "child" page.
 #.  Select :guilabel:`New subpage` from the context menu.
 
-    ..  figure:: /Images/ManualScreenshots/PageTree/PageCreateContextMenu.png
+    ..  figure:: /Images/GeneratedScreenshots/PageTree/PageCreateContextMenu.png
         :alt: The context menu with the "New subpage" menu item
         :zoom: gallery
 
@@ -100,7 +100,7 @@ make your pages visible:
 *   You can also publish while you are creating a page: Scroll to the bottom of
     the popup window and toggle the :guilabel:`Enable` switch.
 
-..  figure:: /Images/ManualScreenshots/PageProperties/Visibility.png
+..  figure:: /Images/GeneratedScreenshots/PageProperties/Visibility.png
     :alt: Making the new page publicly visible
     :zoom: gallery
 

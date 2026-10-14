@@ -23,7 +23,7 @@ settings only change your own backend, not what other editors see.
 *   **First day of week in calendar popups:** Set whether calendars in date
     pickers start on Sunday or Monday.
 
-..  figure:: /Images/ManualScreenshots/UserSettings/UserSettingsBackendAppearance.png
+..  figure:: /Images/GeneratedScreenshots/UserSettings/UserSettingsBackendAppearance.png
     :alt: The Backend appearance tab with the fields Color scheme, Theme, Start up in the following module, Format of window title in backend and First day of week in calendar popups
     :zoom: lightbox
 
@@ -37,19 +37,19 @@ Backend themes
 A theme changes the look of the backend. It does not change where things
 are or what you can do.
 
-..  figure:: /Images/ManualScreenshots/UserSettings/ClassicTheme.png
+..  figure:: /Images/GeneratedScreenshots/UserSettings/ClassicTheme.png
     :alt: The backend in the Classic theme
     :zoom: lightbox
 
     The "Classic" backend theme
 
-..  figure:: /Images/ManualScreenshots/UserSettings/FreshTheme.png
+..  figure:: /Images/GeneratedScreenshots/UserSettings/FreshTheme.png
     :alt: The backend in the Fresh theme
     :zoom: lightbox
 
     The "Fresh" backend theme
 
-..  figure:: /Images/ManualScreenshots/UserSettings/ModernTheme.png
+..  figure:: /Images/GeneratedScreenshots/UserSettings/ModernTheme.png
     :alt: The backend in the Modern theme
     :zoom: lightbox
 

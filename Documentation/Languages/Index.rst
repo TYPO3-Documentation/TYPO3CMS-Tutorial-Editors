@@ -86,7 +86,7 @@ Create the page translation
     language has been configured in :guilabel:`Site Management > Sites`. This
     will open the translation wizard.
 
-    ..  figure:: /Images/ManualScreenshots/Language/PageLanguages.png
+    ..  figure:: /Images/GeneratedScreenshots/Language/PageLanguages.png
         :alt: Creating a translation of a page
         :zoom: gallery
 
@@ -97,19 +97,20 @@ Create the page translation
     last screen of the wizard shows a summary of what will be translated.
     Click on the :guilabel:`Finish` button.
 
-    ..  figure:: ../Images/ManualScreenshots/Language/LanguagesTranslateContentElements.png
+    ..  figure:: /Images/GeneratedScreenshots/Language/LanguagesTranslateContentElements.png
         :alt: The translation wizard
         :zoom: gallery
 
 #.  Click on :guilabel:`Language Comparison` (1). The screen now
-    displays two versions of the page: the default language version on the
-    left and the target language version on the right. Translate **page**
+    displays the versions of the page side by side: the default language
+    version on the left and the translations next to it. Choose the
+    languages to compare in the language menu. Translate **page**
     fields such as the title by clicking the pencil icon (2) and typing in
     your translations. The new content elements in the target language are
     hidden in the frontend by default. **Enable** (3) each content element
     after you have finished translating its text.
 
-    ..  figure:: /Images/ManualScreenshots/Language/LanguagesPageVersions.png
+    ..  figure:: /Images/GeneratedScreenshots/Language/LanguagesPageVersions.png
         :alt: Viewing translated pages side by side in the content layout module
         :zoom: gallery
 
@@ -121,7 +122,7 @@ Changing the view
 Change the view from side-by-side pages to a single language by clicking on
 :guilabel:`Layout` mode and then choosing the language you want to see (1).
 
-..  figure:: /Images/ManualScreenshots/Language/LanguagesSingleLanguageLayout.png
+..  figure:: /Images/GeneratedScreenshots/Language/LanguagesSingleLanguageLayout.png
     :alt: The Layout button and language dropdown
     :zoom: gallery
 

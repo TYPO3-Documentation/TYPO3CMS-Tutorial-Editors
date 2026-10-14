@@ -24,7 +24,7 @@ How to copy and paste via list module
 Open the context menu by clicking the three dots button or the icon to the
 left of the record. Copy or cut the database record.
 
-..  figure:: /Images/ManualScreenshots/ListModule/CopyRecord.png
+..  figure:: /Images/GeneratedScreenshots/ListModule/CopyRecord.png
     :alt: The context menu contains options copy and cut amongst others
     :zoom: gallery
 
@@ -32,7 +32,7 @@ left of the record. Copy or cut the database record.
 
 To paste the copied record you have several options:
 
-..  figure:: /Images/ManualScreenshots/ListModule/PasteRecord.png
+..  figure:: /Images/GeneratedScreenshots/ListModule/PasteRecord.png
     :alt: Location of the paste buttons in the Content > Layout module: At the top of the module and in the context menu.
     :zoom: gallery
 
@@ -52,11 +52,11 @@ administrator.
 Why is the header appended with (copy 1)?
 -----------------------------------------
 
-..  figure:: /Images/ManualScreenshots/ListModule/CopyOfRecord.png
+..  figure:: /Images/GeneratedScreenshots/ListModule/CopyOfRecord.png
     :alt: A copied content element with (copy 1) appended to its header
     :zoom: gallery
 
-    The pasted database record is changed to "Mercury (copy 1)"
+    The pasted database record is changed to "Arriving in Santiago (copy 1)"
 
 By default the title of the pasted record is post fixed with "(copy x)" and the
 new record is marked as hidden and not displayed in the frontend.
@@ -76,14 +76,15 @@ Some record types, for example frontend user records or category records may
 only be created in pages of type "folder". If you try to insert such a record
 on a plain page, an error message will be displayed:
 
-..  figure:: /Images/ManualScreenshots/ListModule/RecordOnPageError.png
-    :alt: TYPO3 Backend Error: Attempt to insert record "fe_groups:3" on a page (8) that can't store record type
+..  figure:: /Images/GeneratedScreenshots/ListModule/RecordOnPageError.png
+    :alt: TYPO3 Backend Error: Attempt to insert record on pages:8 where table
+        "fe_groups" is not allowed
     :zoom: gallery
 
     Result of trying to copy a frontend user group into a plain page
 
 The record was not pasted in this case. Use the page tree to switch to a folder,
-for example the folder "Frontend Users" and click the "Paste in clipboard
+for example the folder "Website users" and click the "Paste in clipboard
 content" there.
 
 ..  _list-copy-paste-unique:
@@ -97,8 +98,9 @@ a user name or identifier.
 If you try to copy & paste such a record, the affected fields are automatically
 renamed by appending a number.
 
-..  figure:: /Images/ManualScreenshots/ListModule/RecordUnique.png
-    :alt: TYPO3 Backend Warning: The value of the field "username" has been changed from "galileo" to "galileo0" as it is required to be unique
+..  figure:: /Images/GeneratedScreenshots/ListModule/RecordUnique.png
+    :alt: TYPO3 Backend Warning: The value of the field "username" has been
+        changed from "rosa" to "rosa0" as it is required to be unique
     :zoom: gallery
 
     Fields that have to be unique are automatically alterered on paste

@@ -43,7 +43,7 @@ Creating a redirect
 
 From the Link Management module, select :guilabel:`Redirects` followed by :guilabel:`Add redirect`.
 
-..  figure:: /Images/ManualScreenshots/LinkManagement/RedirectsAddRedirect.png
+..  figure:: /Images/GeneratedScreenshots/LinkManagement/RedirectsAddRedirect.png
     :alt: Screenshot of the Add redirect button found within the Redirects submodule
 
 ..  _redirects-source-domain:
@@ -51,7 +51,7 @@ From the Link Management module, select :guilabel:`Redirects` followed by :guila
 Setting a source domain and source path
 ---------------------------------------
 
-..  figure:: /Images/ManualScreenshots/LinkManagement/RedirectsSourceDomainSourcePath.png
+..  figure:: /Images/GeneratedScreenshots/LinkManagement/RedirectsSourceDomainSourcePath.png
     :alt: Screenshot of the Source Domain and Source Path fields found within "create new redirect"
 
 Source Domain - this is the domain used in your TYPO3 installation. If you have multiple
@@ -66,7 +66,7 @@ we specify :samp:`/contact-us.aspx` here. Note that any query parameters will be
 Setting a target
 ----------------
 
-..  figure:: /Images/ManualScreenshots/LinkManagement/RedirectsSourceTarget.png
+..  figure:: /Images/GeneratedScreenshots/LinkManagement/RedirectsSourceTarget.png
     :alt: Screenshot of the target field found within "create new redirect"
 
 The Target selector allows us to specify which Page or file is served when visitors
@@ -79,7 +79,7 @@ Using the example above, we would select the `Contact Us` page in the Page Tree.
 Access tab
 ----------
 
-..  figure:: /Images/ManualScreenshots/LinkManagement/RedirectsAccess.png
+..  figure:: /Images/GeneratedScreenshots/LinkManagement/RedirectsAccess.png
     :alt: Screenshot of the Access Tab found inside Add redirect.
     :class: with-border
 
@@ -94,7 +94,7 @@ Access tab
 Notes tab
 ---------
 
-..  figure:: /Images/ManualScreenshots/LinkManagement/RedirectsNotes.png
+..  figure:: /Images/GeneratedScreenshots/LinkManagement/RedirectsNotes.png
     :alt: Screenshot of the Notes Tab found inside Add redirect.
     :class: with-border
 
@@ -105,7 +105,7 @@ Add an internal note that other backend users can view.
 Managing existing redirect rules
 ================================
 
-..  figure:: /Images/ManualScreenshots/LinkManagement/RedirectsManage.png
+..  figure:: /Images/GeneratedScreenshots/LinkManagement/RedirectsManage.png
     :alt: Screenshot of the Redirects main page, with two example records.
 
 Once a rule has been created, you then have the option to edit an existing record,

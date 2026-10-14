@@ -4,6 +4,7 @@
 
 ```
 Documentation/                   # the actual manual (reST source, published to docs.typo3.org)
+Build/Screenshots/               # takes the generated screenshots, see below
 CONTRIBUTING.md                  # how to contribute
 ```
 
@@ -11,6 +12,67 @@ CONTRIBUTING.md                  # how to contribute
 
 - `make docs` — render the manual locally with Docker
 - `make test-docs` — render in minimal-test mode (the same validation CI runs); use this to validate any change before committing
+- `make install` — install the TYPO3 Core packages into `.Build`, which
+  `make screenshots` needs; run it once in a new worktree
+- `make screenshots` — take the screenshots listed in
+  `Build/Screenshots/screenshots.mjs` from a throwaway TYPO3 instance;
+  `Build/Scripts/runTests.sh -s screenshots ContentElements/PageModule`
+  takes only the named ones
+
+## Generated screenshots
+
+The screenshots in `Documentation/Images/GeneratedScreenshots/` come from a
+TYPO3 instance with the demo site of the Camino theme, which the Core ships.
+The pages and content elements are the ones of the theme, so the
+screenshots show a real website instead of placeholder records. Camino
+replaces the standard content types of fluid_styled_content with its own.
+The page "Pilgrim stories", which `create-records.php` adds, swaps them
+back and has one column that allows all of them, for the screenshots of
+creating content as a standard installation offers it.
+
+The backend runs without debug mode, so it looks as an editor sees it,
+without field names and uids in brackets. Screenshots are taken as the
+administrator `j.doe`. A screenshot that names `user: 'e.doe'` is taken as
+Erika Doe instead, a common editor who may create the typical content
+types, lists and dividers only.
+
+To add a screenshot:
+
+1.  Prefer what the Camino demo site already has. If a screenshot needs a
+    change, such as a hidden element, or a record of its own, add it to
+    `Build/Screenshots/create-records.php`. Find the records of the theme
+    by their title, because their uids can differ between TYPO3 versions,
+    and export the ones a screenshot needs in the list at the end. Give
+    every time that a screenshot shows a fixed value, such as the times of
+    the history, so the image does not change with every run.
+2.  Add an entry to `Build/Screenshots/screenshots.mjs`: the `url`, and
+    either `from`/`to` for a part of a module, `window: true` for the
+    whole backend, or `modal: true` for a dialog. A module screenshot
+    shows where the module is in the menu: the group named in `menu`,
+    `Content` by default, stays open and every other group is collapsed.
+    Its page tree is hidden unless `pageTree: true`, and an `until`
+    element ends the image below the part that matters. Use `prepare`
+    for clicks before the screenshot, and `tab` for the tab of a form,
+    which the backend would otherwise remember from the last screenshot.
+    A screenshot of the login takes `loggedOut: true`, which opens a
+    window without a session.
+    Mark what the text names with `outline()`, an orange frame, and
+    number the parts that the text lists with `badge()`, an orange
+    circle with a number. Draw no arrows.
+    The backend keeps some choices per user, such as the clipboard, the
+    search box, and the columns of a list. A screenshot that changes one
+    of them runs as `e.doe` or comes after the screenshots it would
+    change.
+    A view whose route needs a token, such as the history, cannot be
+    opened by its URL; `prepare` opens it through the backend, the way an
+    editor does. Something the backend picks at random, such as the tip of
+    the live search, is reopened until it shows the same thing every run.
+3.  Take only that screenshot, then all of them once, and commit the
+    images that changed. A run keeps an image that differs from the old
+    one in fewer than 10 pixels, because a new image is never exactly the
+    same, even when nothing changed.
+4.  Screenshots that a script cannot take, such as one during drag and
+    drop, stay in `Documentation/Images/ManualScreenshots/`.
 
 ## Documentation writing rules
 

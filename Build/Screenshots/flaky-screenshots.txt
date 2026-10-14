@@ -1,0 +1,7 @@
+# Screenshots that change on every run, without a change in TYPO3 or in
+# the screenshots. The skill typo3-docs-screenshot-review of the guide
+# "How to document" reads this list with --flaky and chooses Restore for
+# them. One path or glob per line.
+Documentation/Images/GeneratedScreenshots/ContentElements/TextWithImage/FileSelector.png
+Documentation/Images/GeneratedScreenshots/FormsBlank/FormsPreview.png
+Documentation/Images/GeneratedScreenshots/LinkManagement/RedirectsManage.png

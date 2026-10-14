@@ -13,7 +13,7 @@ Page properties
 To access the page properties, click on the :guilabel:`Edit page properties`
 icon in the Docheader.
 
-..  figure:: /Images/ManualScreenshots/Page/EditPageProperties.png
+..  figure:: /Images/GeneratedScreenshots/Page/EditPageProperties.png
     :alt: The "Edit page properties" button is located in the doc-header of the page module
     :zoom: gallery
 
@@ -73,7 +73,7 @@ URL segment
 The "URL Segment", sometimes also called "Slug" is used to calculate the URL
 at which your page is available. Usually it is filled out automatically.
 
-..  figure:: /Images/ManualScreenshots/Page/RecalculateSlug.png
+..  figure:: /Images/GeneratedScreenshots/Page/RecalculateSlug.png
     :alt: Location of the "Recalculate URL Segment" button at the end of the "URL Segment" field in the page properties
     :zoom: gallery
 
@@ -83,7 +83,7 @@ at which your page is available. Usually it is filled out automatically.
 If the "Redirects" system extension is installed, an automatic redirect from
 the old to the new URL is created:
 
-..  figure:: /Images/ManualScreenshots/Page/RedirectCreated.png
+..  figure:: /Images/GeneratedScreenshots/Page/RedirectCreated.png
     :alt: Info: Slugs updated and redirects created: Because you renamed a slug, the slugs of all sub-pages were updated and redirects were created for you automatically.
     :zoom: gallery
 
@@ -92,7 +92,7 @@ the old to the new URL is created:
 It is also possible to edit the URL segment by clicking the "Toggle" button.
 You can then enter a different URL segment:
 
-..  figure:: /Images/ManualScreenshots/Page/RecalculateSlugToggle.png
+..  figure:: /Images/GeneratedScreenshots/Page/RecalculateSlugToggle.png
     :alt: Manually editing a URL segment by clicking the "Toggle" button
     :zoom: gallery
 
@@ -149,7 +149,7 @@ documentation of your site package or ask your integrator.
 Page layout / Backend Layout
 ----------------------------
 
-..  figure:: /Images/ManualScreenshots/Page/BackendLayout.png
+..  figure:: /Images/GeneratedScreenshots/Page/BackendLayout.png
     :alt: The Backend Layout is found in the tab "Appearance" of the page properties in the TYPO3 Backend
 
 Backend Layouts influence the general structure of a page not only in the
@@ -201,7 +201,7 @@ Notes
 Use this tab for your own editorial notes and internal comments, such as
 reminders or to-do lists.
 
-..  figure:: /Images/ManualScreenshots/Page/RecordInformation.png
+..  figure:: /Images/GeneratedScreenshots/Page/RecordInformation.png
     :alt: Screenshot demonstrating the location of the "Record information" at the top of the Page Properties
     :zoom: gallery
 
