@@ -29,7 +29,7 @@ inside the page tree.
 #.  **Click and drag** the page to its new position. A horizontal line will
     appear to preview where the page will land.
 
-    ..  figure:: /Images/ManualScreenshots/PageTree/CopyMovePage.png
+    ..  figure:: /Images/GeneratedScreenshots/PageTree/CopyMovePage.png
         :alt: Drag a page to move it to a different position in the page tree
         :zoom: lightbox
 
@@ -38,12 +38,12 @@ inside the page tree.
 #.  **To nest a page** (making it a "child" of an existing page), drag it
     directly over the target page until a gray outlined background appears.
 
-    ..  figure:: /Images/ManualScreenshots/PageTree/CopyMoveChildPage.png
+    ..  figure:: /Images/GeneratedScreenshots/PageTree/CopyMoveChildPage.png
         :alt: Drop a page onto another page to make it a child page
         :zoom: lightbox
 
-        Drop a page onto another page to make it a child page. Here page 4 will
-        become the "child" of page 3
+        Drop a page onto another page to make it a child page. Here, the page
+        "Pilgrim stories" becomes a child page of "FAQs".
 
 #.  **Release your mouse.** A confirmation message will prompt you to choose
     between copying or moving.
@@ -63,7 +63,7 @@ Deleting pages
 To remove a page entirely, click and drag the page to the right. You will see
 the :guilabel:`Delete` action.
 
-..  figure:: /Images/ManualScreenshots/PageTree/DeletePage.png
+..  figure:: /Images/GeneratedScreenshots/PageTree/DeletePage.png
     :alt: Drag a page to the right to delete it
     :zoom: lightbox
 
