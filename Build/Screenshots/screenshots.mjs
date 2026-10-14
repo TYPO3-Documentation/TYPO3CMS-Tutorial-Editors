@@ -424,6 +424,34 @@ const mediaUrl = (view) => `${baseUrl}/typo3/module/file/list?id=1:/camino/&view
 // The button "View" of the Media module, and its menu
 const viewButton = (frame) => frame.locator('.module-docheader button', { hasText: 'View' }).first();
 
+// Drags a file of the Media module, or the selected files, and holds it over
+// a folder of the folder tree. As in the page tree, the drag events come
+// from the script, so nothing is moved. The tree opens a folder with
+// subfolders after a second, and remembers that for later screenshots, so
+// the timer stops before.
+const dragFile = (index, folder) => async (frame) => {
+  await frame.locator('[data-filelist-element][draggable="true"]').nth(index).evaluate((file) => {
+    window.screenshotDrag = new DataTransfer();
+    file.dispatchEvent(new DragEvent('dragstart', { bubbles: true, composed: true, cancelable: true, view: window, dataTransfer: window.screenshotDrag }));
+  });
+  await frame.page().waitForTimeout(300);
+  await frame.page().locator('#typo3-filestoragetree-tree .node', { hasText: folder }).first().locator('.node-contentlabel').evaluate((label) => {
+    const box = label.getBoundingClientRect();
+    label.dispatchEvent(new DragEvent('dragover', {
+      bubbles: true, composed: true, cancelable: true, view: window,
+      dataTransfer: document.querySelector('iframe[name="list_frame"]').contentWindow.screenshotDrag,
+      clientX: box.x + Math.min(box.width / 2, 40),
+      clientY: box.y + box.height / 2,
+    }));
+    let tree = label;
+    while (tree && !('openNodeTimeout' in tree)) {
+      tree = tree.parentNode ?? tree.host;
+    }
+    clearTimeout(tree?.openNodeTimeout.timeout);
+  });
+  await frame.page().waitForTimeout(500);
+};
+
 // The button that adds a record in a module of the link management, and
 // the form it opens
 const addButton = (frame, name) => frame.locator('.module-docheader').getByRole('button', { name })
@@ -1042,6 +1070,15 @@ const screenshots = {
       await frame.getByRole('button', { name: 'View' }).first().click();
       await frame.page().waitForTimeout(500);
     },
+    until: '.resource-tile >> nth=0',
+  },
+  // A picture dragged to a folder
+  'ContentElements/TextWithImage/FileListDragAndDrop': {
+    url: mediaUrl('tiles'),
+    window: true,
+    pageTree: true,
+    menu: 'Media',
+    prepare: dragFile(1, 'userupload'),
     until: '.resource-tile >> nth=0',
   },
   'ContentElements/TextWithImage/FileNotDeleted': {
@@ -1708,6 +1745,20 @@ const screenshots = {
       await viewButton(frame).click();
       await frame.page().waitForTimeout(500);
       await outline(frame.locator('.module-docheader .dropdown-menu >> visible=true').getByText('List', { exact: true }).first());
+    },
+    until: 'tr[data-filelist-type="file"] >> nth=2',
+  },
+  // A selected file dragged to a folder of the folder tree
+  'MediaModule/DragDropMove': {
+    width: 1440,
+    url: mediaUrl('list'),
+    window: true,
+    pageTree: true,
+    menu: 'Media',
+    prepare: async (frame) => {
+      await frame.locator('tr[data-filelist-type="file"]').nth(1).locator('input[type="checkbox"]').check();
+      await frame.page().mouse.move(0, 0);
+      await dragFile(1, 'userupload')(frame);
     },
     until: 'tr[data-filelist-type="file"] >> nth=2',
   },

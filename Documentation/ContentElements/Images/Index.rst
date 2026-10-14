@@ -149,7 +149,7 @@ they are used in multiple places.
 
 You can move images into folders by drag and drop:
 
-..  figure:: /Images/ManualScreenshots/ContentElements/TextWithImage/FileListDragAndDrop.png
+..  figure:: /Images/GeneratedScreenshots/ContentElements/TextWithImage/FileListDragAndDrop.png
     :alt: Screenshot of the "Media" backend module demonstration Drag and Drop
     :zoom: gallery
 
