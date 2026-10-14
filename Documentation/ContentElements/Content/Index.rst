@@ -105,7 +105,7 @@ You can move content elements using drag and drop. You can either drop them
 in one of the highlighted areas on the current page or drop them on a different
 page within the page tree.
 
-..  figure:: /Images/ManualScreenshots/ContentElements/MoveContentElement.png
+..  figure:: /Images/GeneratedScreenshots/ContentElements/MoveContentElement.png
     :alt: Screenshot of moving a content element via drag and drop in the TYPO3 backend
     :zoom: gallery
 
@@ -180,7 +180,7 @@ it is not needed anymore.
 The "Unused content" is found at the bottom of the page module. you can move it
 via drag an drop to the desired location or delete it if it is not needed anymore.
 
-..  figure:: /Images/ManualScreenshots/ContentElements/MoveUnusedContent.png
+..  figure:: /Images/GeneratedScreenshots/ContentElements/MoveUnusedContent.png
     :alt: Demonstration of moving unused content back into a normal content area
     :zoom: gallery
 
