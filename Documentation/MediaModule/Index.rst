@@ -157,7 +157,7 @@ there.
 This is a quick alternative to using the :ref:`clipboard <advanced-clipboard-usage>`,
 which remains useful when moving items across several steps or sessions.
 
-..  figure:: /Images/ManualScreenshots/MediaModule/DragDropMove.avif
+..  figure:: /Images/GeneratedScreenshots/MediaModule/DragDropMove.png
     :zoom: lightbox
     :alt: A section of TYPO3 Media Module with one file selected in the working
     area and being dragged towards a folder in the navigation tree, which is
