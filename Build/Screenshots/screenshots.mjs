@@ -22,7 +22,7 @@ const editUrl = (table, uid) => `${baseUrl}/typo3/record/edit?edit[${table}][${u
 const margin = 12;
 
 // The uids of the records that create-records.php looked up
-const { root, redirect, qrcode, shortUrl, websiteUsers, packingList, routeComparison, toiletries, extras, essentialItems, faqs, stories, story, map, author, office, shells, pilgrims, members, pleaseLogIn, loginForm, welcome } =
+const { root, unused, redirect, qrcode, shortUrl, websiteUsers, packingList, routeComparison, toiletries, extras, essentialItems, faqs, stories, story, map, author, office, shells, pilgrims, members, pleaseLogIn, loginForm, welcome } =
   JSON.parse(readFileSync('../../var/screenshot-records.json', 'utf8'));
 
 // A content element in the Content > Layout module
@@ -53,6 +53,37 @@ const openPageHistory = (uid, page) => async (frame) => {
 // A column of the Content > Layout module. The main column of the Camino
 // layouts, "Content area", has colPos 0.
 const column = (colPos) => `.t3js-page-column[data-colpos="${colPos}"]`;
+
+// Drags a content element of the Content > Layout module by its header and
+// holds it over a drop zone, which the module shows during the drag, or
+// over a page of the page tree, given by its uid. As in the page tree, the
+// drag events come from the script, so nothing is dropped.
+const dragContent = (uid, target) => async (frame) => {
+  await frame.locator(`${contentElement(uid)} .t3js-page-ce-header[draggable="true"]`).first().evaluate((handle) => {
+    window.screenshotDrag = new DataTransfer();
+    const drag = { bubbles: true, composed: true, cancelable: true, view: window, dataTransfer: window.screenshotDrag };
+    handle.dispatchEvent(new DragEvent('dragstart', drag));
+    // Shows the drop zones of the module
+    handle.dispatchEvent(new DragEvent('dragenter', drag));
+  });
+  await frame.page().waitForTimeout(300);
+  // The page tree is outside of the module frame, but takes the same data
+  const over = typeof target === 'number'
+    ? frame.page().locator(`${treeNode(target)} .node-contentlabel`)
+    : frame.locator(target);
+  await over.evaluate((element) => {
+    const data = window.screenshotDrag ?? document.querySelector('iframe[name="list_frame"]').contentWindow.screenshotDrag;
+    const box = element.getBoundingClientRect();
+    const drag = {
+      bubbles: true, composed: true, cancelable: true, view: window, dataTransfer: data,
+      clientX: box.x + Math.min(box.width / 2, 40),
+      clientY: box.y + box.height / 2,
+    };
+    element.dispatchEvent(new DragEvent('dragenter', drag));
+    element.dispatchEvent(new DragEvent('dragover', drag));
+  });
+  await frame.page().waitForTimeout(500);
+};
 
 // Opens the New Page Content wizard of the content area, on the tab named:
 // the wizard remembers the last one. The hero area at the top allows the
@@ -647,6 +678,28 @@ const screenshots = {
   'ContentElements/UnusedContent': {
     url: moduleUrl('web/layout', faqs),
     from: '.alert-warning',
+  },
+  // Moving a content element by drag and drop, and the unused element back
+  // into the content area
+  'ContentElements/MoveContentElement': {
+    url: moduleUrl('web/layout', packingList),
+    width: 1440,
+    prepare: dragContent(toiletries, faqs),
+    window: true,
+    pageTree: true,
+    height: 900,
+  },
+  'ContentElements/MoveUnusedContent': {
+    url: moduleUrl('web/layout', faqs),
+    prepare: dragContent(unused, `${column(0)} .t3js-page-ce-dropzone-available >> nth=-1`),
+    // The last element of the content area, with the drop zone below it
+    from: `${column(0)} .t3js-page-ce[data-uid] >> nth=-1`,
+    to: contentElement(unused),
+    include: ['.dragging-tooltip'],
+    // The module scrolls during a drag near the bottom of the window, but
+    // the tooltip stays where the drag was. In a window taller than the
+    // page, the module cannot scroll.
+    height: 4000,
   },
   'ContentElements/RestoreContentRecycler': {
     url: moduleUrl('web/recycler', packingList),
