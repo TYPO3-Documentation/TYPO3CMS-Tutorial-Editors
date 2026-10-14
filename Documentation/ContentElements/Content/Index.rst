@@ -10,7 +10,7 @@ Managing content
 
 ------------
 
-..  image:: /Images/ManualScreenshots/ContentElements/ManageContent.png
+..  image:: /Images/GeneratedScreenshots/ContentElements/ManageContent.png
     :alt: Manage content elements in the TYPO3 backend
     :class: img-thumbnail float-end ms-1 ms-1
     :width: 250
@@ -32,7 +32,7 @@ content elements using the context menu.
 
 The following screenshot demonstrates how to open the :guilabel:`Content > Page` module:
 
-..  figure:: /Images/ManualScreenshots/ContentElements/PageModule.png
+..  figure:: /Images/GeneratedScreenshots/ContentElements/PageModule.png
     :alt: Screenshot demonstrating the page module and the page tree in the TYPO3 backend
     :zoom: gallery
 
@@ -51,28 +51,31 @@ Overview of the Layout module in TYPO3
     This module has been renamed from :guilabel:`Web > Pages` to
     :guilabel:`Content > Layout`.
 
-..  figure:: /Images/ManualScreenshots/ContentElements/PageModuleAnnotated.png
-    :alt: A typical view of the Content Layout module with various content columns
+..  figure:: /Images/GeneratedScreenshots/ContentElements/PageModuleOverview.png
+    :alt: A column of the Content > Layout module with two content elements,
+        numbered from 1 to 5
     :zoom: gallery
 
 Common page icons explained:
 
-#.  Use this icon to edit all the content elements of a column.
+1.  Use this icon to edit all the content elements of a column.
 
-#.  Add a new content element to the column at this specific position.
+2.  Add a new content element to the column at this specific position.
 
-#.  Content element icon. This can provide a visual clue to the type of content
+3.  Content element icon. This can provide a visual clue to the type of content
     element. Click to access the context menu for the element (to perform
     actions like *copy*).
 
-#.  This group of icons is enabled when hovering over the whole element.
+4.  Use these buttons to work with the element:
 
     *   Use the pencil icon to edit the element.
-    *   Enable/disable the element to show or hide it in the frontend
     *   Delete the element.
     *   Open the context menu.
 
-#.  If the edit icons are missing you do not have sufficient permission to
+    If you may hide content elements, a button to hide or show the element
+    in the frontend appears here as well.
+
+5.  If the buttons are missing you do not have sufficient permission to
     edit the content element in question.
 
 ..  _content-working-hiding:
@@ -84,7 +87,7 @@ You can temporarily hide content that should be hidden for a while but will be
 needed later. You can also hide a content element while you are still working
 on it. Hidden content elements are not visible in the frontend
 
-..  figure:: /Images/ManualScreenshots/ContentElements/HideContent.png
+..  figure:: /Images/GeneratedScreenshots/ContentElements/HideContent.png
     :alt: A content element in the page module is hidden
     :zoom: gallery
 
@@ -113,13 +116,13 @@ page within the page tree.
 Copy and paste content elements
 ===============================
 
-..  figure:: /Images/ManualScreenshots/ContentElements/CopyContent.png
+..  figure:: /Images/GeneratedScreenshots/ContentElements/CopyContent.png
     :alt: The context menu of a content menu in the TYO3 backend
     :zoom: gallery
 
     Use the context menu of the upper left button of the content element to start copying a content element
 
-..  figure:: /Images/ManualScreenshots/ContentElements/PasteContent.png
+..  figure:: /Images/GeneratedScreenshots/ContentElements/PasteContent.png
     :alt: Location of the paste button beside the "Create new content" button
     :zoom: gallery
 
@@ -140,7 +143,7 @@ Finding content using the live search
 Use the search button on the top right of the TYPO3 backend or the keyboard
 shortcuts :kbd:`Ctrl + K` or :kbd:`Cmd + K` to open the live search.
 
-..  figure:: /Images/ManualScreenshots/ContentElements/LiveSearch.png
+..  figure:: /Images/GeneratedScreenshots/ContentElements/LiveSearch.png
     :alt: Using the live search to search for content elements
     :zoom: gallery
 
@@ -161,7 +164,7 @@ Unused elements detected on this page
 
 Sometimes the following warning is displayed on your page:
 
-..  figure:: /Images/ManualScreenshots/ContentElements/UnusedContent.png
+..  figure:: /Images/GeneratedScreenshots/ContentElements/UnusedContent.png
     :alt: Warning: Unused elements detected on this page: These elements don't belong to any of the available columns of this page. You should either delete them or move them to existing columns. We highlighted the problematic records for you.
     :zoom: gallery
 
@@ -190,7 +193,7 @@ If you accidentally delete a content element or even a complete page you can
 restore your data using the module :guilabel:`Content > Recycler` if you have
 sufficient permissions and it is installed.
 
-..  figure:: /Images/ManualScreenshots/ContentElements/RestoreContentRecycler.png
+..  figure:: /Images/GeneratedScreenshots/ContentElements/RestoreContentRecycler.png
     :alt: Screenshot of the Recycler module in the TYPO3 backend, demonstrating how to restore a deleted content element
     :zoom: gallery
 
@@ -206,7 +209,7 @@ no access to the recycler you can also use it to restore deleted content.
 
 Use the context menu on the page tree and choose "History/Undo".
 
-..  figure:: /Images/ManualScreenshots/ContentElements/RestoreContent.png
+..  figure:: /Images/GeneratedScreenshots/ContentElements/RestoreContent.png
     :alt: Screenshot of the page history in the TYPO3 backend
     :zoom: gallery
 
@@ -215,7 +218,7 @@ Use the context menu on the page tree and choose "History/Undo".
 In this module you can even see a detailed view on how text or other fields
 where changed and who made which changes when.
 
-..  figure:: /Images/ManualScreenshots/ContentElements/ContentElementHistoryDifferences.png
+..  figure:: /Images/GeneratedScreenshots/ContentElements/ContentElementHistoryDifferences.png
     :alt: Screenshot of the page history in the TYPO3 backend
     :zoom: gallery
 
@@ -231,8 +234,8 @@ at the same time. The last editor who saves the content element will override
 all other changes. You should therefore avoid working on content elements that
 another editor is currently working on. These are marked with a warning:
 
-..  figure:: /Images/ManualScreenshots/ContentElements/ContentElementEdited.png
-    :alt: Warning: The BE-User 'e.doe' began to edit this record 3 min ago.
+..  figure:: /Images/GeneratedScreenshots/ContentElements/ContentElementEdited.png
+    :alt: Warning: The BE-User 'Erika Doe [e.doe]' began to edit this record 1 hour ago.
     :zoom: gallery
 
     Avoid working on content elements that are currently edited by someone else

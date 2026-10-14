@@ -13,7 +13,7 @@ However, you can also open this documentation from your TYPO3 backend. Click on 
 in the right corner of top bar, and then click on
 :guilabel:`TYPO3 Online Documentation` in the drop down menu.
 
-..  figure:: /Images/ManualScreenshots/Help/Typo3OnlineDocumentation.png
+..  figure:: /Images/GeneratedScreenshots/HelpInside/OnlineDocumentation.png
     :alt: The TYPO3 Online Documentation in the Help menu
     :zoom: lightbox
 

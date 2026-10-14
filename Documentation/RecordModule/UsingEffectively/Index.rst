@@ -24,7 +24,7 @@ Select the :guilabel:`Content > Record` module and choose a page or storage fold
 The Record module header
 ========================
 
-..  figure:: /Images/ManualScreenshots/ListModule/ListModule.png
+..  figure:: /Images/GeneratedScreenshots/ListModule/ListModule.png
     :alt: Screenshots of the Content Record module in the TYPO3 backend, demonstrating the locations of the buttons mentioned below
     :zoom: gallery
 
@@ -36,19 +36,19 @@ that have no dedicated backend module, for example website users and groups.
 
 The list view has action icons in the **module header** including:
 
-#.  **Create new record** (a wizard appears to let you choose which type)
+1.  **Create new record** (a wizard appears to let you choose which type)
 
-#.  **Edit page properties** of the current page
+2.  **Edit page properties** of the current page
 
-#.  **View** or hide search or `the clipboard <https://docs.typo3.org/permalink/t3editors:clipboard>`_
+3.  **View** or hide search or `the clipboard <https://docs.typo3.org/permalink/t3editors:clipboard>`_
 
-#.  **Clear the cache** of the current page
+4.  **Clear the cache** of the current page
 
-#.  **Create internal note**
+5.  **Create internal note**
 
-#.  **Refresh** the :guilabel:`Content > Record` module
+6.  **Refresh** the :guilabel:`Content > Record` module
 
-#.  **Share** Copy an URL to this page or bookmark it for quick access
+7.  **Share** Copy an URL to this page or bookmark it for quick access
 
 ..  tip::
     Use the **Create new record** button if you want to create a record of
@@ -62,7 +62,7 @@ Editing a record of a certain type
 If there are already database records stored on the current page, each record
 type features its own action buttons for available actions:
 
-..  figure:: /Images/ManualScreenshots/ListModule/ActionIcons.png
+..  figure:: /Images/GeneratedScreenshots/ListModule/ActionIcons.png
     :alt: Example of the action icons available for record type "Website Usergroup"
     :zoom: gallery
 
@@ -81,7 +81,7 @@ Finding a record in a long list
 If there are a large number of records you can use the search box to search for
 a record containing a certain word.
 
-..  figure:: /Images/ManualScreenshots/ListModule/SearchRecord.png
+..  figure:: /Images/GeneratedScreenshots/ListModule/SearchRecord.png
     :alt: Screenshot of the Content Record module with the search box visible
     :zoom: gallery
 

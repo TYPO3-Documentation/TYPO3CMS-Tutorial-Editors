@@ -78,11 +78,11 @@ Manual cache clearing
 Clearing the cache of a single page can be done without ill effect in most
 installations.
 
-To clear the cache of that page, go to the module :guilabel:`Content > Page`
+To clear the cache of that page, go to the module :guilabel:`Content > Layout`
 and click the button representing a lightning bolt with the tooltip
 :guilabel:`Clear cache for this page`.
 
-..  figure:: /Images/ManualScreenshots/Cache/ClearPageCache.png
+..  figure:: /Images/GeneratedScreenshots/Cache/ClearPageCache.png
     :alt: Clear cache for this page
     :zoom: lightbox
 
@@ -94,10 +94,11 @@ If the changes are not visible, clear the
 incognito tab in your browser.
 
 Only editors who have the relevant user rights can flush the cache of
-all pages. If you cannot see the lightning bolt button beside the help menu
-button in the toolbar you might not have the rights to carry out this action:
+all pages. To do so, click the lightning bolt button in the top bar and
+choose :guilabel:`Flush frontend caches`. If you cannot see the button, you
+might not have the rights to carry out this action:
 
-..  figure:: /Images/ManualScreenshots/Cache/ClearAllPageCaches.png
+..  figure:: /Images/GeneratedScreenshots/Cache/ClearAllPageCaches.png
     :alt: Flush cache of all pages
     :zoom: lightbox
 

@@ -16,7 +16,7 @@ Change your password and set up a second login factor here.
     code, that is asked for after your password. Use
     :guilabel:`Setup multi-factor authentication` to switch it on.
 
-..  figure:: /Images/ManualScreenshots/UserSettings/UserSettingsSecurity.png
+..  figure:: /Images/GeneratedScreenshots/UserSettings/UserSettingsSecurity.png
     :alt: The Account security tab with the fields New password, New password (repetition) and Multi-factor authentication
     :zoom: lightbox
 

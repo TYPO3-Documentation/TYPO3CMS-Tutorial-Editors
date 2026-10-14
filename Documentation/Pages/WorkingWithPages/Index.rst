@@ -77,7 +77,7 @@ Context menu actions
 Right click on any page in the page tree to bring up the context menu and see
 the many editing shortcuts and page functions.
 
-..  figure:: /Images/ManualScreenshots/PageTree/PageActions.png
+..  figure:: /Images/GeneratedScreenshots/PageTree/PageActions.png
     :alt: Right click on a page to see context menu
     :zoom: lightbox
 
@@ -93,7 +93,7 @@ Use the search tool at the top of the page tree to quickly
 isolate specific pages by keyword, page ID number, or frontend page URL.
 Separate multiple keywords, IDs, or URLs with a comma.
 
-..  figure:: /Images/ManualScreenshots/PageTree/PageTreeFilter.png
+..  figure:: /Images/GeneratedScreenshots/PageTree/PageTreeFilter.png
     :alt: Filtering pages in the page tree
     :zoom: lightbox
 

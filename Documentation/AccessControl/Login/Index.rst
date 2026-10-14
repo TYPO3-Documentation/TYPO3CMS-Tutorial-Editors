@@ -30,26 +30,34 @@ record, and stored in a suitable page in the backend.
 Create a user group and user
 ============================
 
-#.  Create a new folder in the page tree, and name it "Frontend users".
+#.  Create a new folder in the page tree, and name it "Website users".
 
-    ..  include:: /Images/AutomaticScreenshots/Access/AccessUserFolder.rst.txt
+    ..  figure:: /Images/GeneratedScreenshots/AccessControl/UserFolder.png
+        :alt: The folder "Website users" in the Records module
+        :zoom: lightbox
 
 #.  Navigate to the :guilabel:`Content > Records` module, and select your new folder.
-#.  Click the **+** :guilabel:`Create new record` icon at the top left of the
-    Docheader. The "New record" wizard displays.
+#.  Click :guilabel:`+ Create new record` at the top left of the module. The
+    "New record" wizard displays.
 
-    ..  include:: /Images/AutomaticScreenshots/Access/AccessNewRecordWizard.rst.txt
+    ..  figure:: /Images/GeneratedScreenshots/AccessControl/NewRecordWizard.png
+        :alt: The "New record" wizard with the Website Usergroup
+        :zoom: lightbox
 
 #.  Click :guilabel:`Website Usergroup` to create a new frontend group.
-#.  Name it "Private Area".
+#.  Name it "Pilgrims".
 
-    ..  include:: /Images/AutomaticScreenshots/Access/AccessNewGroup.rst.txt
+    ..  figure:: /Images/GeneratedScreenshots/AccessControl/NewGroup.png
+        :alt: Creating a new frontend user group
+        :zoom: lightbox
 
 #.  Save and close the record.
 #.  Use the "New record" wizard again, but this time create a :guilabel:`Website User`.
-#.  Type a username, a password and click the "Private Area" group to select it.
+#.  Type a username, a password and click the "Pilgrims" group to select it.
 
-    ..  include:: /Images/AutomaticScreenshots/Access/AccessNewUser.rst.txt
+    ..  figure:: /Images/GeneratedScreenshots/AccessControl/NewUser.png
+        :alt: Creating a new frontend user
+        :zoom: lightbox
 
     You can add further information on the :guilabel:`Personal Data` tab if required.
 
@@ -64,7 +72,9 @@ Now that we have at least one group, and a user assigned to that group, we can
 assign access restrictions. This is done on the :guilabel:`Access` tab of
 the page properties or content element properties.
 
-..  include:: /Images/AutomaticScreenshots/Access/AccessRightsItems.rst.txt
+..  figure:: /Images/GeneratedScreenshots/AccessControl/AccessRights.png
+    :alt: The access rights of a content element
+    :zoom: lightbox
 
 ..  note::
 
@@ -78,20 +88,22 @@ the page properties or content element properties.
 
 #.  Navigate to the :guilabel:`Content > Layout` module, and create a new page called
     "Members only".
-#.  Add a text content element to the Members Only page, with text similar to
-    "You need to authenticate to access the members area".
+#.  Add a text content element to the Members only page, with text similar to
+    "Log in to read the stories that pilgrims share with each other".
 #.  On the :guilabel:`Access` tab, select the "Hide at login" group for it.
 #.  Save and close the record.
 #.  Add another text content element to the page, with text similar to
     "Welcome to the members area".
-#.  On the :guilabel:`Access` tab, select the "Private area" group for it.
+#.  On the :guilabel:`Access` tab, select the "Pilgrims" group for it.
 #.  Save and close the record.
 
 You should have something like this:
 
-..  include:: /Images/AutomaticScreenshots/Access/AccessRestrictContent.rst.txt
+..  figure:: /Images/GeneratedScreenshots/AccessControl/RestrictContent.png
+    :alt: Content elements with access restrictions in the Layout module
+    :zoom: lightbox
 
-Try setting the access for an entire page to "Private area". When you save the
+Try setting the access for an entire page to "Pilgrims". When you save the
 page, notice how the icon in the page tree changes. This is a visual reminder
 that the page is not public. If you try to access a restricted page in the
 frontend, the TYPO3 error message "Page Not Found" will display.
@@ -104,27 +116,31 @@ Add a login form
 The next step is to place a login box somewhere on the site so that visitors
 can log in to view the restricted content.
 
-#.  On the "Members only" page, click the :guilabel:`+ Content` button between
-    the two existing content elements.
+#.  On the "Members only" page, click the :guilabel:`+ Create new content`
+    button between the two existing content elements.
 #.  In the new content element wizard, go to the :guilabel:`Form elements` tab and
     select "Login Form".
 #.  Give it a header (for example, *Log in*).
 #.  Go to the :guilabel:`Plugin` tab. There are several options for the Login Form, but
     the only one which is absolutely necessary is the "User Storage Page".
 #.  Use the :guilabel:`Browse for records` icon to browse the page tree and
-    select the "Web site users" folder.
+    select the "Website users" folder.
 
-    ..  include:: /Images/AutomaticScreenshots/Access/AccessLoginForm.rst.txt
+    ..  figure:: /Images/GeneratedScreenshots/AccessControl/LoginForm.png
+        :alt: The plugin options of the login form
+        :zoom: lightbox
 
 #.  Save and close the record.
 #.  View the page. You should have something like this:
 
-    ..  include:: /Images/AutomaticScreenshots/Access/AccessPageWithLoginBox.rst.txt
+    ..  figure:: /Images/GeneratedScreenshots/AccessControl/PageWithLoginForm.png
+        :alt: The page with the login form
+        :zoom: lightbox
 
 #.  Enter the user name and the password you defined earlier for the
     frontend user, and you should see the following:
 
-    ..  figure:: ../../Images/ManualScreenshots/Access/AccessPageWithAuthenticatedUser.png
+    ..  figure:: /Images/GeneratedScreenshots/AccessControl/PageWithAuthenticatedUser.png
         :alt: The page with the authenticated user
         :zoom: lightbox
 

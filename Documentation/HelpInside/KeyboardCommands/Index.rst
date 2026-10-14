@@ -119,23 +119,15 @@ Multiselect in content elements
 
 The keyboard commands can be used on a select element:
 
-..  figure:: /Images/ManualScreenshots/ContentElements/SelectMultipleSideBySide.png
+..  figure:: /Images/GeneratedScreenshots/HelpInside/SelectMultipleSideBySide.png
     :alt: A multiselect element
     :zoom: lightbox
 
     A multiselect element
 
-Or a folder element:
-
-..  figure:: /Images/ManualScreenshots/ContentElements/Folder.png
-    :alt: A folder element
-    :zoom: lightbox
-
-    A folder element
-
 Or a group element:
 
-..  figure:: /Images/ManualScreenshots/ContentElements/Group.png
+..  figure:: /Images/GeneratedScreenshots/HelpInside/Group.png
     :alt: A group element
     :zoom: lightbox
 

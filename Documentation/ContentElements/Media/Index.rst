@@ -7,7 +7,7 @@
 Embedding videos as content into a TYPO3 website
 ================================================
 
-..  image:: /Images/ManualScreenshots/ContentElements/TextAndMedia.png
+..  image:: /Images/GeneratedScreenshots/ContentElements/TextAndMedia.png
     :alt: Content element "Text & Media" in the TYPO3 backend
     :class: img-thumbnail float-end ms-1
     :width: 250
@@ -44,7 +44,7 @@ If you want to embed a previously uploaded video or upload a new video use the
 button :guilabel:`Add media file`. If you want to embed a video from an external
 source like YouTube or Vimeo, use the button :guilabel:`Add media by URL` instead.
 
-..  figure:: /Images/ManualScreenshots/ContentElements/Media.png
+..  figure:: /Images/GeneratedScreenshots/ContentElements/Media.png
     :alt: Tab media of the text and media content element in TYPO3
     :zoom: gallery
 

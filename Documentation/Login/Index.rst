@@ -15,7 +15,7 @@ Navigate to  :samp:`https://example.org/typo3` in your browser. The
 your project documentation or ask your administrator for the correct backend
 URL.
 
-..  figure:: /Images/ManualScreenshots/Login/BackendLoginPage.png
+..  figure:: /Images/GeneratedScreenshots/Login/BackendLoginPage.png
     :alt: The TYPO3 backend login box
     :zoom: gallery
 
@@ -43,7 +43,7 @@ Troubleshooting: Forgotten password
 
     Use the same email address that you entered during registration.
 
-    ..  figure:: /Images/ManualScreenshots/Login/ForgotPasswordEmail.png
+    ..  figure:: /Images/GeneratedScreenshots/Login/ForgotPasswordEmail.png
         :alt: The password reset form with the email address field
         :zoom: gallery
 
@@ -134,7 +134,7 @@ To log out of the TYPO3 backend, have a look at the top bar:
 #.  Click your name in the top-right corner.
 #.  Select :guilabel:`Logout` from the menu.
 
-..  figure:: /Images/ManualScreenshots/UserSettings/UserSettingsModule.png
+..  figure:: /Images/GeneratedScreenshots/UserSettings/UserSettingsModule.png
     :alt: The avatar menu in the top bar with the Logout button
     :zoom: lightbox
 

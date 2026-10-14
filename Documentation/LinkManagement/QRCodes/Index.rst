@@ -35,7 +35,7 @@ Creating a QR code
 
 From the Link Management module, select :guilabel:`QR Codes` followed by :guilabel:`Add QR Code` or :guilabel:`Create new QR Code`.
 
-..  figure:: /Images/ManualScreenshots/LinkManagement/QRCAddQRC.png
+..  figure:: /Images/GeneratedScreenshots/LinkManagement/QRCAddQRC.png
     :alt: Screenshot of the Add QR Code button found within the QR Code submodule
     :class: with-border
 
@@ -44,7 +44,7 @@ From the Link Management module, select :guilabel:`QR Codes` followed by :guilab
 General tab
 -----------
 
-..  figure:: /Images/ManualScreenshots/LinkManagement/QRCAddQRCGeneral.png
+..  figure:: /Images/GeneratedScreenshots/LinkManagement/QRCAddQRCGeneral.png
     :alt: Screenshot of the General Tab found inside Add QR Code.
     :class: with-border
 
@@ -59,7 +59,7 @@ General tab
 Access tab
 ----------
 
-..  figure:: /Images/ManualScreenshots/LinkManagement/QRCAddQRCAccess.png
+..  figure:: /Images/GeneratedScreenshots/LinkManagement/QRCAddQRCAccess.png
     :alt: Screenshot of the Access Tab found inside Add QR Code.
     :class: with-border
 
@@ -74,7 +74,7 @@ Access tab
 Notes tab
 ---------
 
-..  figure:: /Images/ManualScreenshots/LinkManagement/QRCAddQRCNotes.png
+..  figure:: /Images/GeneratedScreenshots/LinkManagement/QRCAddQRCNotes.png
     :alt: Screenshot of the Notes Tab found inside Add QR Code.
     :class: with-border
 
@@ -85,7 +85,7 @@ Add an internal note that other backend users can view.
 Downloading your new QR code
 ============================
 
-..  figure:: /Images/ManualScreenshots/LinkManagement/QRCDownload.png
+..  figure:: /Images/GeneratedScreenshots/LinkManagement/QRCDownload.png
     :alt: Screenshot of the Access Tab found inside Add QR Code.
     :class: with-border
 
@@ -100,7 +100,7 @@ SVG: `64x64`, `128x128`, `256x256` and `512x512`
 Edit an existing QR code
 ========================
 
-..  figure:: /Images/ManualScreenshots/LinkManagement/QRCEdit.png
+..  figure:: /Images/GeneratedScreenshots/LinkManagement/QRCEdit.png
     :alt: Screenshot of the Access Tab found inside Add QR Code.
     :class: with-border
 
