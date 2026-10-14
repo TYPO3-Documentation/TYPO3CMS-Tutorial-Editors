@@ -50,6 +50,30 @@ file by name. The search includes all the subfolders of the selected folder.
     Click the name of an image to select it or use the "Upload files" dialoge.
     Alternatively, mark several images and import all of them at once.
 
+..  versionadded:: 15.0
+    :changelog: feature-110873-1790859108
+
+The file selector can upload files from your computer to the folder it shows:
+
+*   Click :guilabel:`Select & upload files` in the section
+    :guilabel:`Upload files` below the files of the folder.
+*   Drop the files anywhere onto the files of the folder.
+*   Copy the files in the file manager of your computer, or copy image data
+    such as a screenshot, and press :kbd:`Ctrl` + :kbd:`V`. On a Mac, press
+    :kbd:`Cmd` + :kbd:`V`.
+
+Only files with one of the allowed file extensions of the field are uploaded.
+If a file with the same name already exists in the folder, TYPO3 asks what to
+do with it. The folder then shows the uploaded files, so you can select them
+right away.
+
+..  figure:: /Images/GeneratedScreenshots/ContentElements/TextWithImage/FileSelectorDropZone.png
+    :alt: The file selector, with a drop zone over the files of the folder and
+        the text "Drag & drop to upload files"
+    :zoom: gallery
+
+    While you drag files over the file selector, a drop zone covers the files
+
 ..  _configure-the-image:
 
 Configure the image
