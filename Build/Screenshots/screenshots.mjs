@@ -266,6 +266,31 @@ const openMoreOptions = (uid) => async (frame) => {
   await frame.page().waitForTimeout(800);
 };
 
+// Drags a page of the page tree and holds it over a place: "before" the top
+// edge of another page, "inside" another page, or "delete", the area that
+// the dragged page shows on its right. The drag events come from the
+// script, as a real drag would drop the page when the mouse is released.
+const dragPage = (uid, place, target = uid) => async (frame) => {
+  const window = frame.page();
+  await window.locator(treeNode(uid)).evaluate((node) => {
+    window.screenshotDrag = new DataTransfer();
+    node.dispatchEvent(new DragEvent('dragstart', { bubbles: true, composed: true, view: window, dataTransfer: window.screenshotDrag }));
+  });
+  // The page shows the delete area once the drag starts
+  await window.waitForTimeout(300);
+  const over = place === 'delete' ? `${treeNode(uid)} .node-dropzone-delete` : treeNode(target);
+  await window.locator(over).evaluate((element, where) => {
+    const box = element.getBoundingClientRect();
+    const position = {
+      // On the title of the page, or at the left of the delete area
+      clientX: box.x + (where === 'delete' ? 12 : 120),
+      clientY: where === 'before' ? box.y + 2 : box.y + box.height / 2,
+    };
+    element.dispatchEvent(new DragEvent('dragover', { bubbles: true, composed: true, cancelable: true, view: window, dataTransfer: window.screenshotDrag, ...position }));
+  }, place);
+  await window.waitForTimeout(500);
+};
+
 // Opens "Create multiple pages" for a page, through its context menu
 const openCreateMultiple = async (frame) => {
   await openMoreOptions(root)(frame);
@@ -1316,6 +1341,37 @@ const screenshots = {
     from: '#typo3-pagetree-toolbar',
     to: pageTree,
   },
+  // Moving, nesting, and deleting a page by drag and drop
+  'PageTree/CopyMovePage': {
+    url: moduleUrl('web/layout', packingList),
+    pageTree: true,
+    prepare: dragPage(stories, 'before', faqs),
+    outside: true,
+    margin: 6,
+    from: '#typo3-pagetree-toolbar',
+    to: pageTree,
+    include: ['.dragging-tooltip'],
+  },
+  'PageTree/CopyMoveChildPage': {
+    url: moduleUrl('web/layout', packingList),
+    pageTree: true,
+    prepare: dragPage(stories, 'inside', faqs),
+    outside: true,
+    margin: 6,
+    from: '#typo3-pagetree-toolbar',
+    to: pageTree,
+    include: ['.dragging-tooltip'],
+  },
+  'PageTree/DeletePage': {
+    url: moduleUrl('web/layout', packingList),
+    pageTree: true,
+    prepare: dragPage(stories, 'delete'),
+    outside: true,
+    margin: 6,
+    from: '#typo3-pagetree-toolbar',
+    to: pageTree,
+    include: ['.dragging-tooltip'],
+  },
   'PageTree/MultiplePagesContextMenu': {
     url: moduleUrl('web/layout', packingList),
     pageTree: true,
@@ -2364,6 +2420,10 @@ for (const name of names) {
   // Numbered circles, which can stick out of the elements
   for (const circle of await scope.locator('.screenshot-badge').all()) {
     boxes.push(await circle.boundingBox());
+  }
+  // Other elements that stick out, such as the tooltip of a drag
+  for (const selector of screenshot.include ?? []) {
+    boxes.push(await page.locator(selector).first().boundingBox());
   }
   const space = screenshot.margin ?? margin;
   const left = Math.max(Math.min(...boxes.map((box) => box.x)) - space - (screenshot.left ?? 0), 0);
