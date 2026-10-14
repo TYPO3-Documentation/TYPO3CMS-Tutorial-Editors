@@ -39,6 +39,29 @@ On the :guilabel:`Images` tab, click on the :guilabel:`Add image` button to disp
 
     Click on "Add image" or "Select & upload files" in images tab to choose or upload an image
 
+..  versionadded:: 15.0
+    :changelog: feature-110873-1790859108
+
+You can also upload files from your computer straight into the field. TYPO3
+uploads them and adds them to the field. Only files with one of the allowed
+file extensions are uploaded.
+
+*   **Drop files onto the field:** Drag the files from the file manager of your
+    computer over the content element. A drop zone covers each file field,
+    so you can drop the files anywhere onto the field.
+*   **Paste files into the field:** Copy the files in the file manager of your
+    computer, or copy image data such as a screenshot. Click into the field
+    and press :kbd:`Ctrl` + :kbd:`V`. On a Mac, press :kbd:`Cmd` + :kbd:`V`.
+    If you paste without clicking into a field first and the form shows
+    several file fields, TYPO3 asks which field to add the files to.
+
+..  figure:: /Images/GeneratedScreenshots/ContentElements/TextWithImage/ImagesDropZone.png
+    :alt: The Images field of a content element, covered by a drop zone with
+        the text "Drag & drop to upload files"
+    :zoom: gallery
+
+    While you drag files over the content element, a drop zone covers the field
+
 Browse the file tree, then select a folder. The file selector always starts
 in the root folder of the default storage. Use the search field to find a
 file by name. The search includes all the subfolders of the selected folder.

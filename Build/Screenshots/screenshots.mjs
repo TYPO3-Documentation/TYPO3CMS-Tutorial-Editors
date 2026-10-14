@@ -1001,6 +1001,25 @@ const screenshots = {
     // Down to the image that the element already has
     to: '.form-irre-object >> nth=0',
   },
+  // Files dragged from the computer over the form: the drop zone covers the
+  // field. The drag events come from the script, so nothing is uploaded.
+  'ContentElements/TextWithImage/ImagesDropZone': {
+    url: editUrl('tt_content', shells),
+    tab: 'Images',
+    prepare: async (frame) => {
+      // Over the field, which shows its drop zone and highlights it
+      await frame.locator('.t3js-drag-uploader').first().evaluate((uploader) => {
+        const files = new DataTransfer();
+        files.items.add(new File([''], 'scallop-shell.jpg', { type: 'image/jpeg' }));
+        const drag = { bubbles: true, cancelable: true, view: window, dataTransfer: files };
+        uploader.closest('fieldset').dispatchEvent(new DragEvent('dragover', drag));
+        document.querySelector('.dropzone:not([hidden])')?.dispatchEvent(new DragEvent('dragenter', drag));
+      });
+      await frame.page().waitForTimeout(500);
+    },
+    from: 'h1',
+    to: '.form-irre-object >> nth=0',
+  },
   'ContentElements/TextWithImage/FileSelector': {
     url: editUrl('tt_content', shells),
     tab: 'Images',
