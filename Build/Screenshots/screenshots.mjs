@@ -1176,10 +1176,21 @@ const screenshots = {
       const search = frame.page().locator('typo3-backend-modal dialog[open] input[type="search"]');
       await search.fill('packing');
       await frame.page().waitForTimeout(1500);
+      // The dialog would cover the button, so it moves down below the
+      // top bar, and the shade behind the dialog leaves out the button
+      const box = await button.boundingBox();
+      await frame.page().locator('typo3-backend-modal dialog[open]').evaluate((dialog, button) => {
+        dialog.style.transform = `translateY(${button.y + button.height + 16 - dialog.getBoundingClientRect().top}px)`;
+        const x = button.x - 8;
+        const y = button.y - 8;
+        const style = dialog.ownerDocument.createElement('style');
+        style.textContent = `dialog[open]::backdrop { clip-path: path(evenodd, "M0 0 H${innerWidth} V${innerHeight} H0 Z M${x} ${y} h${button.width + 16} v${button.height + 16} h-${button.width + 16} Z"); }`;
+        dialog.ownerDocument.head.append(style);
+      }, box);
     },
     // The whole backend, as the button is in the top bar
     window: true,
-    height: 700,
+    height: 760,
   },
   // The internal note on the page, and the button that creates one
   'HelpInside/PageWithInternalNote': {
