@@ -39,6 +39,11 @@ Creating a link
 
 Select the text you want to link.
 
+Click the :guilabel:`Link` icon in the toolbar or use the shortcut
+:kbd:`Ctrl + K` or :kbd:`Cmd + K`. This shortcut only works when
+your focus is within the editor. Outside the editor the same
+shortcut would open the live search.
+
 ..  versionadded:: 15.0
     :changelog: feature-99678-1790186405
 
@@ -46,11 +51,6 @@ If you insert a link without selecting text first, TYPO3 uses the title of
 the link as link text. If the link has no title, TYPO3 uses the title of the
 link target, for example the title of the page. The new link stays selected,
 so you can change it right away.
-
-Click the :guilabel:`Link` icon in the toolbar or use the shortcut
-:kbd:`Ctrl + K` or :kbd:`Cmd + K`. This shortcut only works when
-your focus is within the editor. Outside the editor the same
-shortcut would open the live search.
 
 ..  figure:: /Images/GeneratedScreenshots/ContentElements/Text/Link.png
     :alt: Linking the highlighted text in the TYPO3 rich text editor
