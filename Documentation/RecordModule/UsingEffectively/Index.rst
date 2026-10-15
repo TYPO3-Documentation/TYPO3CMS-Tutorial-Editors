@@ -97,3 +97,46 @@ The search can be opened by selecting the magnifying glass in the top right
 corner of the toolbar or by pressing the :kbd:`Cmd + K`
 keystroke on MacOS or the :kbd:`Ctrl + K` keystroke on Windows and Linux
 systems.
+
+..  _list-module-languages:
+
+Showing the records of certain languages
+========================================
+
+..  versionadded:: 14.0
+    :changelog: feature-103258-1709588499
+
+On a page with translations, the :guilabel:`Content > Records` module lists
+the records of the languages that you choose in its language menu. The button
+of the menu, at the top right of the module, shows how many languages the
+record list shows.
+
+..  figure:: /Images/GeneratedScreenshots/ListModule/LanguageMenu.png
+    :alt: The open language menu of the Records module, with English, Español, and العربية checked
+    :zoom: gallery
+
+    The language menu of a page in three languages
+
+1.  Open the language menu. The languages with a check mark are the ones
+    that the record list shows.
+
+2.  Click a language to show or hide its records.
+
+3.  Click :guilabel:`Check all` to show the records of all languages, or
+    :guilabel:`Uncheck all` to show the default language only.
+
+The records of the default language always stay in the record list, as well as
+records that apply to all languages. Their translations show below them.
+
+..  figure:: /Images/GeneratedScreenshots/ListModule/LanguageFilter.png
+    :alt: The Records module without the Spanish records, with the English content elements and the Arabic translation
+    :zoom: gallery
+
+    Without Español, the record list shows the English records and the Arabic ones
+
+TYPO3 remembers the languages that you have chosen for each page. The
+:guilabel:`Content > Layout` module shows the same languages on that page.
+
+On a page without a translation, the language menu offers to create one under
+:guilabel:`Create new translation`, see
+`Create the page translation <https://docs.typo3.org/permalink/t3editors:languages-create-page-translation>`_.

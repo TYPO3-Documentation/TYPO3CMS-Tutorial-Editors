@@ -2080,6 +2080,36 @@ const screenshots = {
     from: '.module-docheader',
     to: '.t3js-page-ce-sortable >> nth=0',
   },
+  // The language menu of the Records module, after the chapter about
+  // languages, which translates the packing list into Spanish. The backend
+  // keeps the chosen languages of a page for all modules, and no later
+  // screenshot shows the packing list.
+  'ListModule/LanguageMenu': {
+    url: recordsUrl(packingList),
+    prepare: async (frame) => {
+      await languageMenu(frame).click();
+      await frame.page().waitForTimeout(500);
+      await frame.locator('.module-docheader .dropdown-menu >> visible=true').getByText('Español').first().hover();
+    },
+    hover: true,
+    margin: 0,
+    from: '.module-docheader',
+    to: '.module-docheader .dropdown-menu >> visible=true',
+  },
+  // Without the Spanish records: the list keeps the English ones
+  'ListModule/LanguageFilter': {
+    url: recordsUrl(packingList),
+    prepare: async (frame) => {
+      await languageMenu(frame).click();
+      await frame.page().waitForTimeout(500);
+      await frame.locator('.module-docheader .dropdown-menu >> visible=true').getByText('Español').first().click();
+      await frame.waitForLoadState('networkidle');
+      await frame.locator('.module-docheader button.dropdown-toggle', { hasText: 'Languages (2)' }).waitFor();
+    },
+    margin: 0,
+    from: '.module-docheader',
+    to: '#t3-table-tt_content',
+  },
   // The chapter about search engine optimization
   'SearchEngineOptimization/AddWidget': {
     url: `${baseUrl}/typo3/module/dashboard`,
