@@ -6,7 +6,7 @@
 Mass editing
 ============
 
-Use the :guilabel:`Content > Record` module to bulk edit multiple content
+Use the :guilabel:`Content > Records` module to bulk edit multiple content
 elements on a page at the same time.
 
 Select the page you want to edit in the page tree in the middle pane (here
@@ -14,7 +14,7 @@ Select the page you want to edit in the page tree in the middle pane (here
 right-hand pane under Page Content.
 
 ..  figure:: /Images/GeneratedScreenshots/ListModule/MassEdit/ShowColumnsButton.png
-    :alt: Screenshot demonstrating the location of the "Show Columns" Button in the Content Record module
+    :alt: Screenshot demonstrating the location of the "Show Columns" Button in the Records module
     :zoom: gallery
 
     The Show Columns button
@@ -33,7 +33,7 @@ select :guilabel:`Rank / Hierarchy` and :guilabel:`Subheader`. Click on the
 The added fields now appear on the right:
 
 ..  figure:: /Images/GeneratedScreenshots/ListModule/MassEdit/RecordListWithAdditionalFields.png
-    :alt: Content Record Module table with additional fields enabled
+    :alt: Records module table with additional fields enabled
     :zoom: gallery
 
     Content element fields
@@ -63,7 +63,7 @@ Click on the :guilabel:`Edit` button to display a screen to **edit all fields**
 of the selected content elements.
 
 ..  figure:: /Images/GeneratedScreenshots/ListModule/MassEdit/EditButton.png
-    :alt: Screenshot showing the location of the "Edit" Button in the Content Record module
+    :alt: Screenshot showing the location of the "Edit" Button in the Records module
     :zoom: gallery
 
     The Edit button to edit all content element fields
@@ -73,7 +73,7 @@ after the other. Click on :guilabel:`Save` after you have finished
 editing.
 
 ..  figure:: /Images/GeneratedScreenshots/ListModule/MassEdit/MassEditingAllFields.png
-    :alt: Screenshot of the content element multiple edit screen in the Content Record module
+    :alt: Screenshot of the content element multiple edit screen in the Records module
     :zoom: gallery
 
     The multiple edit screen
@@ -82,7 +82,7 @@ Or **edit only the displayed fields you have selected** by clicking on the
 :guilabel:`Edit columns` button:
 
 ..  figure:: /Images/GeneratedScreenshots/ListModule/MassEdit/EditColumnsButton.png
-    :alt: Screenshot showing the location of the "Edit Columns" Button in the Content Record module
+    :alt: Screenshot showing the location of the "Edit Columns" Button in the Records module
     :zoom: gallery
 
     The Edit Columns button to edit just content element fields that are
@@ -92,7 +92,7 @@ The screen will look as follows (here with the fields Header, Rank / Hierarchy,
 and Subheader). Click on :guilabel:`Save` after you have finished editing.
 
 ..  figure:: /Images/GeneratedScreenshots/ListModule/MassEdit/MassEditingSelectedFields.png
-    :alt: Screenshot of the content element multiple edit screen for selected fields in the Content Record module
+    :alt: Screenshot of the content element multiple edit screen for selected fields in the Records module
     :zoom: gallery
 
     The multiple edit screen for selected fields
@@ -106,7 +106,7 @@ Select the content elements which you would like to edit (here "Arriving in
 Santiago" and "The scallop shell"):
 
 ..  figure:: /Images/GeneratedScreenshots/ListModule/MassEdit/SelectiveEditing.png
-    :alt: The list module with specific database records checked for mass edit
+    :alt: The Records module with specific database records checked for mass edit
     :zoom: gallery
 
     Selecting records for editing
