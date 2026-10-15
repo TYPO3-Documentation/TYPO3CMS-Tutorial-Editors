@@ -30,7 +30,7 @@ Managing media in the TYPO3 CMS
 ===============================
 
 Files including documents and images are managed in the
-:guilabel:`Media` module. Similar to the :guilabel:`Content > Record`
+:guilabel:`Media` module. Similar to the :guilabel:`Content > Records`
 module, it displays a navigation tree, which corresponds to the file
 structure on the server, and a list of all files for the
 selected directory.
@@ -89,7 +89,7 @@ and the format of the file):
 Clipboard
 ---------
 
-There is a clipboard just like in the :guilabel:`Content > Record` module.
+There is a clipboard just like in the :guilabel:`Content > Records` module.
 
 ..  figure:: /Images/GeneratedScreenshots/MediaModule/Clipboard.png
     :zoom: lightbox
