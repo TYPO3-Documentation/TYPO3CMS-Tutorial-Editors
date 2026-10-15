@@ -13,7 +13,7 @@ Internal notes in the TYPO3 backend
 
 Internal notes, also called system notes, are small text notes that are
 displayed in the `Layout module <https://docs.typo3.org/permalink/t3editors:content-creating>`_
-and `Record module <https://docs.typo3.org/permalink/t3editors:using-the-list-module-effectively>`_.
+and `Records module <https://docs.typo3.org/permalink/t3editors:using-the-list-module-effectively>`_.
 
 You can use them to write notes to yourself or other editors. Administrators
 can use them to write notes to you as well.
@@ -27,7 +27,7 @@ They look like this:
     If you have sufficient permissions you can also edit or delete the note.
 
     The following image shows a detailed view of the TYPO3 backend toolbar, specifically in
-    the context of the :guilabel:`Content > Layout` or :guilabel:`Content > Record` module. On the right side of the toolbar are a number
+    the context of the :guilabel:`Content > Layout` or :guilabel:`Content > Records` module. On the right side of the toolbar are a number
     of buttons, each providing different functionality. The button highlighted in this screenshot
     is which allows the user to create a new internal note.
 
@@ -35,7 +35,7 @@ They look like this:
     :alt: Screenshot demonstrating the location of the "Create internal note" button in the module header of the Content Layout module
     :zoom: gallery
 
-    The button to create a system note is located on the top right of the :guilabel:`Content > Layout` and :guilabel:`Content > Record` modules
+    The button to create a system note is located on the top right of the :guilabel:`Content > Layout` and :guilabel:`Content > Records` modules
 
 ..  seealso::
     For a detailed description on how to use the internal notes see

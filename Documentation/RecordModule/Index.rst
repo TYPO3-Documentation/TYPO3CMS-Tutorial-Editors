@@ -14,7 +14,7 @@ Records
     :class: pb-4
     :card-height: 100
 
-    ..  card:: :ref:`Using The Content Records Module<using-the-list-module-effectively>`
+    ..  card:: :ref:`Using the Records module<using-the-list-module-effectively>`
 
         The list view displays a list of records stored on the current page, grouped by type.
 
@@ -30,7 +30,7 @@ Records
 
     ..  card:: :ref:`Mass Editing <mass-editing>`
 
-        The :guilabel:`Content > Record` module makes it possible to display the content of several
+        The :guilabel:`Content > Records` module makes it possible to display the content of several
         fields at once and gives you the ability edit several records with one action.
 
 ..  toctree::
