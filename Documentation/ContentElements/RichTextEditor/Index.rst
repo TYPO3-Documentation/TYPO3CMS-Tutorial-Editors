@@ -44,6 +44,14 @@ Click the :guilabel:`Link` icon in the toolbar or use the shortcut
 your focus is within the editor. Outside the editor the same
 shortcut would open the live search.
 
+..  versionadded:: 15.0
+    :changelog: feature-99678-1790186405
+
+If you insert a link without selecting text first, TYPO3 uses the title of
+the link as link text. If the link has no title, TYPO3 uses the title of the
+link target, for example the title of the page. The new link stays selected,
+so you can change it right away.
+
 ..  figure:: /Images/GeneratedScreenshots/ContentElements/Text/Link.png
     :alt: Linking the highlighted text in the TYPO3 rich text editor
     :zoom: gallery
@@ -94,6 +102,25 @@ External links
 #.  Click the :guilabel:`Set Link` button to close the :guilabel:`Link Browser`
     window.
 
+..  _rte-linking-preview:
+
+Checking and opening a link
+===========================
+
+..  versionadded:: 15.0
+    :changelog: feature-99678-1790186405
+
+When you put your cursor into a link, a popover shows where the link goes.
+For a page or a file, it shows the icon and the title of the target. Hover
+over the title to see the path of the page or file. For an external link, the
+popover shows the address.
+
+To open the link in a new browser tab, click the
+:guilabel:`Open link in new tab` button in the popover. You can also click
+the link while you hold :kbd:`Ctrl`, or :kbd:`Cmd` on a Mac, or press
+:kbd:`Alt` + :kbd:`Enter` while your cursor is in the link. A link to a page
+opens the page in the frontend, and a link to a file opens the file.
+
 ..  _rte-linking-remove:
 
 Removing a link
@@ -103,7 +130,8 @@ To remove a link from text, put your cursor anywhere in the linked text then
 click the :guilabel:`Unlink` button in the popover:
 
 ..  figure:: /Images/GeneratedScreenshots/ContentElements/Text/Unlink.png
-    :alt: Unlinking using the popover in the rich text editor
+    :alt: The popover of a link to the page "FAQs" in the rich text editor,
+        with the buttons to open, edit, and remove the link
     :zoom: gallery
 
 ..  _rte-whitespace:

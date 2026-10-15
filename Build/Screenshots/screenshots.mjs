@@ -974,8 +974,15 @@ const screenshots = {
   'ContentElements/Text/Unlink': {
     url: editUrl('tt_content', office),
     prepare: async (frame) => {
+      // The balloon shows the icon, title, and path of a page, but only the
+      // address of an external link. The link turns into a link to a page
+      // in the editor only, as nothing is saved.
       await frame.locator('.ck-editor__editable a').first().click();
-      await frame.locator('.ck-balloon-panel_visible').first().waitFor();
+      await frame.locator('.ck-editor__editable').first().evaluate((element, uid) => {
+        element.ckeditorInstance.execute('link', `t3://page?uid=${uid}`, { attrs: {} });
+      }, faqs);
+      await frame.locator('.ck-editor__editable a').first().click();
+      await frame.locator('.ck-balloon-panel_visible', { hasText: 'FAQs' }).first().waitFor();
       await frame.locator('.ck-balloon-panel_visible button[data-cke-tooltip-text="Unlink"]').first().hover();
       await frame.page().waitForTimeout(1000);
     },
