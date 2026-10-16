@@ -136,6 +136,16 @@ or to the current directory by using the action icon in the docheader. Also, dra
 will initiate the upload. Drag any file into the main view to upload it to the
 current folder, or select the `click, browse and choose files` option.
 
+..  versionadded:: 15.0
+    :changelog: feature-110873-1790859108
+
+You can also paste files to upload them to the current folder. Copy one or more
+files in the file manager of your computer, or copy image data such as a
+screenshot, and press :kbd:`Ctrl` + :kbd:`V` in the Media module. On a Mac,
+press :kbd:`Cmd` + :kbd:`V`. If a file with the same name already exists in the
+folder, TYPO3 asks what to do with it, as it does for uploaded files. Pasting
+into a field of the module, such as the search field, does not upload anything.
+
 ..  figure:: /Images/GeneratedScreenshots/MediaModule/FileUpload.png
     :zoom: lightbox
     :alt: The window "New File" of the Media module, with the options to
