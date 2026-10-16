@@ -414,6 +414,39 @@ const mediaUrl = (view) => `${baseUrl}/typo3/module/file/list?id=1:/camino/&view
 // The button "View" of the Media module, and its menu
 const viewButton = (frame) => frame.locator('.module-docheader button', { hasText: 'View' }).first();
 
+// The metadata columns that the Media module adds to its list: the field
+// names, and the labels in the list
+const fileColumns = { alternative: 'Alternative Text', description: 'Description' };
+
+// Chooses the columns in the dialog "Show columns for File" of the Media
+// module, and applies them
+const chooseFileColumns = async (frame, apply) => {
+  if (apply && await frame.locator('th', { hasText: fileColumns.alternative }).count() > 0) {
+    return;
+  }
+  await viewButton(frame).click();
+  await frame.locator('.module-docheader .dropdown-menu >> visible=true').getByText('Select columns', { exact: true }).first().click();
+  const dialog = frame.page().locator('typo3-backend-modal dialog[open]');
+  await dialog.waitFor();
+  await frame.page().waitForTimeout(1000);
+  for (const column of Object.keys(fileColumns)) {
+    // The list of the dialog never counts as stable to Playwright
+    await dialog.locator(`#select-column-_FILE-${column}`).check({ force: true });
+  }
+  // The mouse would rest on the buttons of the dialog, and the focus ring
+  // of the search field fades out
+  await frame.page().mouse.move(0, 0);
+  await frame.page().evaluate(() => document.activeElement?.blur());
+  await frame.page().waitForTimeout(1500);
+  if (apply) {
+    await dialog.getByRole('button', { name: 'Update' }).click();
+    // The list loads again only after the dialog has saved the columns
+    await frame.locator('th', { hasText: fileColumns.alternative }).first().waitFor();
+    await frame.waitForLoadState('networkidle');
+    await frame.page().waitForTimeout(1000);
+  }
+};
+
 // Drags a file of the Media module, or the selected files, and holds it over
 // a folder of the folder tree. As in the page tree, the drag events come
 // from the script, so nothing is moved. The tree opens a folder with
@@ -2218,6 +2251,51 @@ const screenshots = {
       await frame.page().evaluate(() => document.activeElement?.blur());
     },
     from: '#t3-table-tt_content',
+  },
+  // Editing the metadata of several files, after the mass editing: the
+  // Media module keeps the chosen columns per user, too
+  'MediaModule/SelectColumnsModal': {
+    url: mediaUrl('list'),
+    menu: 'Media',
+    prepare: (frame) => chooseFileColumns(frame, false),
+    modal: true,
+    width: 1024,
+    height: 600,
+  },
+  'MediaModule/EditSpecificMetadataButton': {
+    // Wide, so that the list shows the descriptions in full
+    width: 1800,
+    url: mediaUrl('list'),
+    menu: 'Media',
+    prepare: async (frame) => {
+      await chooseFileColumns(frame, true);
+      for (const row of [0, 1]) {
+        await frame.locator('tr[data-filelist-type="file"]').nth(row).locator('input[type="checkbox"]').check();
+      }
+      await frame.page().mouse.move(0, 0);
+      await frame.page().evaluate(() => document.activeElement?.blur());
+      await outline(frame.getByRole('button', { name: 'Edit specific Metadata' }).first(), true);
+    },
+    from: '.multi-record-selection-actions-wrapper',
+    to: 'tr[data-filelist-type="file"] >> nth=2',
+  },
+  'MediaModule/EditSpecificMetadata': {
+    url: mediaUrl('list'),
+    menu: 'Media',
+    prepare: async (frame) => {
+      await chooseFileColumns(frame, true);
+      for (const row of [0, 1]) {
+        await frame.locator('tr[data-filelist-type="file"]').nth(row).locator('input[type="checkbox"]').check();
+      }
+      await frame.getByRole('button', { name: 'Edit specific Metadata' }).first().click();
+      await frame.waitForURL(/record\/edit/);
+      await frame.waitForLoadState('networkidle');
+      await frame.page().mouse.move(0, 0);
+      await frame.page().waitForTimeout(2000);
+    },
+    margin: 0,
+    from: '.module-docheader',
+    to: `${field('description')} >> nth=1`,
   },
   // The chapter about access control: the website users and their group,
   // the members page, and its login form in the frontend. Last, because
