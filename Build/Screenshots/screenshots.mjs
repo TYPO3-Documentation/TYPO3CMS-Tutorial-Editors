@@ -1049,6 +1049,40 @@ const screenshots = {
     },
     ...linkBrowserSize,
   },
+  // Files dragged from the computer over the file selector: the drop zone
+  // covers the files of the folder. The drag events come from the script,
+  // so nothing is uploaded.
+  'ContentElements/TextWithImage/FileSelectorDropZone': {
+    url: editUrl('tt_content', shells),
+    tab: 'Images',
+    prepare: async (frame) => {
+      await frame.getByRole('button', { name: 'Add image' }).first().click();
+      const selector = frame.page().frameLocator('typo3-backend-modal dialog[open] iframe');
+      await selector.getByText('camino', { exact: true }).filter({ visible: true }).first().click({ force: true });
+      await frame.page().waitForTimeout(1500);
+      // The test server makes the thumbnails one after the other, so they
+      // load late, and the uploader is ready only after the page scripts
+      await selector.locator('.resource-tile img').last().waitFor();
+      await selector.locator('body').evaluate(async () => {
+        const loaded = () => [...document.querySelectorAll('.resource-tile img')].every((image) => image.complete && image.naturalWidth > 0);
+        for (let wait = 0; wait < 100 && !loaded(); wait++) {
+          await new Promise((resolve) => setTimeout(resolve, 200));
+        }
+      });
+      await selector.locator('.dropzone').waitFor({ state: 'attached' });
+      await selector.locator('.element-browser-main-content').evaluate((content) => {
+        const files = new DataTransfer();
+        files.items.add(new File([''], 'scallop-shell.jpg', { type: 'image/jpeg' }));
+        const drag = { bubbles: true, cancelable: true, view: window, dataTransfer: files };
+        content.dispatchEvent(new DragEvent('dragover', drag));
+        document.querySelector('.dropzone:not([hidden])')?.dispatchEvent(new DragEvent('dragenter', drag));
+      });
+      await selector.locator('.dropzone:not([hidden])').waitFor();
+      await frame.page().mouse.move(0, 0);
+      await frame.page().waitForTimeout(500);
+    },
+    ...linkBrowserSize,
+  },
   'ContentElements/TextWithImage/ImageMetaData': {
     url: editUrl('tt_content', shells),
     tab: 'Images',
