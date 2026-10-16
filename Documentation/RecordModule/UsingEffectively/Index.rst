@@ -1,37 +1,37 @@
 ..  include:: /Includes.rst.txt
 ..  _using-the-list-module-effectively:
 
-===============================
-Using the Content Record module
-===============================
+========================
+Using the Records module
+========================
 
 ..  versionchanged:: 14.0
     :changelog: feature-107628-1729026000
 
     This module has been renamed from :guilabel:`Web > List` to
-    :guilabel:`Content > Record`.
+    :guilabel:`Content > Records`.
 
-The :guilabel:`Content > Record` module allows you to browse through pages and folders
+The :guilabel:`Content > Records` module allows you to browse through pages and folders
 in your site and view the records that
 are stored there. You can also create and edit records.
 
-Select the :guilabel:`Content > Record` module and choose a page or storage folder.
+Select the :guilabel:`Content > Records` module and choose a page or storage folder.
 
 ..  contents:: Table of Contents
 
 ..  _list-module-header:
 
-The Record module header
-========================
+The Records module header
+=========================
 
 ..  figure:: /Images/GeneratedScreenshots/ListModule/ListModule.png
-    :alt: Screenshots of the Content Record module in the TYPO3 backend, demonstrating the locations of the buttons mentioned below
+    :alt: Screenshots of the Records module in the TYPO3 backend, demonstrating the locations of the buttons mentioned below
     :zoom: gallery
 
     See below about the meaning of the labeled buttons
 
 The list view displays a list of records stored on the
-current page, grouped by type. The :guilabel:`Content > Record` module is commonly used for records
+current page, grouped by type. The :guilabel:`Content > Records` module is commonly used for records
 that have no dedicated backend module, for example website users and groups.
 
 The list view has action icons in the **module header** including:
@@ -46,7 +46,7 @@ The list view has action icons in the **module header** including:
 
 5.  **Create internal note**
 
-6.  **Refresh** the :guilabel:`Content > Record` module
+6.  **Refresh** the :guilabel:`Content > Records` module
 
 7.  **Share** Copy an URL to this page or bookmark it for quick access
 
@@ -82,7 +82,7 @@ If there are a large number of records you can use the search box to search for
 a record containing a certain word.
 
 ..  figure:: /Images/GeneratedScreenshots/ListModule/SearchRecord.png
-    :alt: Screenshot of the Content Record module with the search box visible
+    :alt: Screenshot of the Records module with the search box visible
     :zoom: gallery
 
     To make the search box visible, Select "Show Search" from the "View" dropdown.

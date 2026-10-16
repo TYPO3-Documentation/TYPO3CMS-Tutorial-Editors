@@ -7,7 +7,7 @@
 Copy and paste database record
 ==============================
 
-You can copy and paste records in the :guilabel:`Content > Record` module using the context
+You can copy and paste records in the :guilabel:`Content > Records` module using the context
 menu and then choose "copy" (or cut if you want to move the record instead).
 
 ..  tip::
@@ -18,8 +18,8 @@ menu and then choose "copy" (or cut if you want to move the record instead).
 
 ..  _list-copy-paste-howto:
 
-How to copy and paste via list module
-=====================================
+How to copy and paste in the Records module
+===========================================
 
 Open the context menu by clicking the three dots button or the icon to the
 left of the record. Copy or cut the database record.
