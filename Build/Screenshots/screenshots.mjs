@@ -1987,6 +1987,31 @@ const screenshots = {
     from: '.module-docheader',
     to: '#languages-collapse thead',
   },
+  'DeepLinking/QrCodeContextMenu': {
+    url: moduleUrl('web/layout', packingList),
+    pageTree: true,
+    prepare: async (frame) => {
+      await openPageMenu(packingList)(frame);
+      await frame.page().locator('.context-menu >> visible=true').getByText('Show QR code', { exact: true }).hover();
+    },
+    hover: true,
+    outside: true,
+    margin: 6,
+    from: treeNode(root),
+    to: '.context-menu >> visible=true',
+  },
+  'DeepLinking/QrCodeModal': {
+    url: moduleUrl('web/layout', packingList),
+    pageTree: true,
+    prepare: async (frame) => {
+      await openPageMenu(packingList)(frame);
+      await frame.page().locator('.context-menu >> visible=true').getByText('Show QR code', { exact: true }).click();
+      // The code comes from the server and replaces a spinner
+      await frame.page().locator('typo3-backend-modal dialog[open] typo3-qrcode .preview :is(svg, img)').first().waitFor();
+      await frame.page().waitForTimeout(1000);
+    },
+    modal: true,
+  },
   // The chapter about languages, near the end: the Layout module keeps the
   // view of the languages per user, and the Spanish translation stays
   'Language/PageLanguages': {
