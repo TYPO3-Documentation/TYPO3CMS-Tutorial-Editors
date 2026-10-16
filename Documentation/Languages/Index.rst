@@ -128,6 +128,9 @@ Change the view from side-by-side pages to a single language by clicking on
 
     Buttons to change the view on multilingual pages
 
+The :guilabel:`Content > Records` module has a language menu as well, see
+`Showing the records of certain languages <https://docs.typo3.org/permalink/t3editors:list-module-languages>`_.
+
 ..  _next-steps-l10n:
 
 Next steps
