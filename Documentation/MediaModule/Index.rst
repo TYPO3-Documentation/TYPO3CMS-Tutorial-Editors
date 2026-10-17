@@ -83,6 +83,49 @@ and the format of the file):
 *   Metadata attached to the uploaded file such as information about the
     camera used or the location
 
+..  index:: pair: Files; Metadata
+..  _media-module-metadata-several-files:
+
+Editing the metadata of several files
+-------------------------------------
+
+To fill in the same fields for several files, for example the alternative
+texts of the images in a folder, edit the metadata of all of them in one
+form. The Media module shows only the fields that you choose, as in the
+:ref:`mass editing <mass-editing>` of the :guilabel:`Content > Records` module.
+
+#.  Click :guilabel:`View` and choose :guilabel:`List`. Then click
+    :guilabel:`View` again and choose :guilabel:`Select columns`.
+#.  In the dialog :guilabel:`Show columns for File`, check the fields that
+    you want to edit, for example :guilabel:`Alternative Text` and
+    :guilabel:`Description`, and click :guilabel:`Update`. The list shows
+    these fields as columns.
+
+    ..  figure:: /Images/GeneratedScreenshots/MediaModule/SelectColumnsModal.png
+        :alt: The dialog "Show columns for File" with the fields "Alternative
+            Text" and "Description" checked
+        :zoom: lightbox
+
+#.  Select the files with the checkboxes in front of their names, and click
+    :guilabel:`Edit specific Metadata` above the list. The button
+    :guilabel:`Edit Metadata` next to it shows all the fields instead.
+
+    ..  figure:: /Images/GeneratedScreenshots/MediaModule/EditSpecificMetadataButton.png
+        :alt: Two selected files in the list of the Media module, with the
+            button "Edit specific Metadata" above the list
+        :zoom: lightbox
+
+#.  The form shows the chosen fields of each selected file. Fill them in, and
+    click :guilabel:`Save`.
+
+    ..  figure:: /Images/GeneratedScreenshots/MediaModule/EditSpecificMetadata.png
+        :alt: The form with the fields "Alternative Text" and "Description" of
+            two files
+        :zoom: lightbox
+
+The Media module keeps the chosen columns, so you can go on with the next
+files right away.
+
 ..  index:: pair: Files; Clipboard
 ..  _media-module-clipboard:
 
