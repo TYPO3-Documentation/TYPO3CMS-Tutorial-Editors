@@ -110,6 +110,13 @@ form. The Media module shows only the fields that you choose, as in the
     :guilabel:`Edit specific Metadata` above the list. The button
     :guilabel:`Edit Metadata` next to it shows all the fields instead.
 
+    ..  note::
+        The button :guilabel:`Edit specific Metadata` only shows when at
+        least one of the chosen columns is a metadata field that you are
+        allowed to edit, such as :guilabel:`Alternative Text`. Columns that
+        describe the file itself, such as its type or the date of its last
+        change, cannot be edited in the form.
+
     ..  figure:: /Images/GeneratedScreenshots/MediaModule/EditSpecificMetadataButton.png
         :alt: Two selected files in the list of the Media module, with the
             button "Edit specific Metadata" above the list
