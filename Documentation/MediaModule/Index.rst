@@ -89,40 +89,40 @@ and the format of the file):
 Editing the metadata of several files
 -------------------------------------
 
-To fill in the same fields for several files, for example the alternative
-texts of the images in a folder, edit the metadata of all of them in one
-form. The Media module shows only the fields that you choose, as in the
-:ref:`mass editing <mass-editing>` of the :guilabel:`Content > Records` module.
+You can edit fields such as the alternative text field (particularly useful for
+image files) in multiple files in a single view. The Media module shows
+a list with columns corresponding to fields that you have selected, as in
+:ref:`mass editing <mass-editing>` in the :guilabel:`Content > Records` module.
 
-#.  Click :guilabel:`View` and choose :guilabel:`List`. Then click
+#.  Click :guilabel:`View` and choose :guilabel:`List`. Click
     :guilabel:`View` again and choose :guilabel:`Select columns`.
 #.  In the dialog :guilabel:`Show columns for File`, check the fields that
     you want to edit, for example :guilabel:`Alternative Text` and
-    :guilabel:`Description`, and click :guilabel:`Update`. The list shows
-    these fields as columns.
+    :guilabel:`Description`, and click :guilabel:`Update`. These fields will
+    be the columns in the list.
 
     ..  figure:: /Images/GeneratedScreenshots/MediaModule/SelectColumnsModal.png
         :alt: The dialog "Show columns for File" with the fields "Alternative
             Text" and "Description" checked
         :zoom: lightbox
 
-#.  Select the files with the checkboxes in front of their names, and click
-    :guilabel:`Edit specific Metadata` above the list. The button
-    :guilabel:`Edit Metadata` next to it shows all the fields instead.
+#.  Select the files that you want to edit by clicking the checkboxes in front of
+    their names, and click :guilabel:`Edit specific Metadata` above the list. The
+    button :guilabel:`Edit Metadata` shows all the metadata fields.
 
     ..  note::
-        The button :guilabel:`Edit specific Metadata` only shows when at
-        least one of the chosen columns is a metadata field that you are
+        The button :guilabel:`Edit specific Metadata` is only displayed when at
+        least one of the columns is a metadata field that you are
         allowed to edit, such as :guilabel:`Alternative Text`. Columns that
         describe the file itself, such as its type or the date of its last
-        change, cannot be edited in the form.
+        change, that can't be changed, cannot be edited in the form.
 
     ..  figure:: /Images/GeneratedScreenshots/MediaModule/EditSpecificMetadataButton.png
         :alt: Two selected files in the list of the Media module, with the
             button "Edit specific Metadata" above the list
         :zoom: lightbox
 
-#.  The form shows the chosen fields of each selected file. Fill them in, and
+#.  The form shows the chosen fields of the selected files. Add your text, and
     click :guilabel:`Save`.
 
     ..  figure:: /Images/GeneratedScreenshots/MediaModule/EditSpecificMetadata.png
@@ -130,7 +130,7 @@ form. The Media module shows only the fields that you choose, as in the
             two files
         :zoom: lightbox
 
-The Media module keeps the chosen columns, so you can go on with the next
+The Media module keeps the columns selected, so you can go on with the next
 files right away.
 
 ..  index:: pair: Files; Clipboard
