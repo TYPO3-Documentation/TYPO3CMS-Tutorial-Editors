@@ -107,9 +107,9 @@ Showing the records of certain languages
     :changelog: feature-103258-1709588499
 
 On a page with translations, the :guilabel:`Content > Records` module lists
-the records of the languages that you choose in its language menu. The button
-of the menu, at the top right of the module, shows how many languages the
-record list shows.
+records in the languages selected in the language menu at the
+top right of the module. Use the menu to limit the record list to certain
+languages.
 
 ..  figure:: /Images/GeneratedScreenshots/ListModule/LanguageMenu.png
     :alt: The open language menu of the Records module, with English, Español, and العربية checked
