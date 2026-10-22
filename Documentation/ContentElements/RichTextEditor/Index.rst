@@ -79,7 +79,7 @@ content element that you would like to link to.
 
     Example: A link to a content element in the frontend.
 
-When you open the Developer tool, you can see exactly how the link looks like
+When you open the Developer tools, you can see exactly how the link looks like
 in the frontend.
 
 ..  figure:: /Images/ManualScreenshots/Developer_tools-Link_frontend.png
@@ -88,6 +88,11 @@ in the frontend.
     :class: with-shadow
 
     Example: The source code of the link to a content element in the frontend.
+
+Note that every TYPO3 content element provided by default, for example
+"Text & Images", "Text & Media", or "Regular Text Element", has a unique id
+marked with `c` for "content element" and a unique number. With this we are able
+to link every content element by default when we know its id.
 
 Note, when you did not select a text and clicked the :guilabel:`Link` then you
 see a raw TYPO3 link, for example
