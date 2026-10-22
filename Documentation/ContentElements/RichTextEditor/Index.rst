@@ -37,47 +37,83 @@ internal and external links to text.
 Creating a link
 ===============
 
-Select the text you want to link.
-
-Click the :guilabel:`Link` icon in the toolbar or use the shortcut
-:kbd:`Ctrl + K` or :kbd:`Cmd + K`. This shortcut only works when
-your focus is within the editor. Outside the editor the same
-shortcut would open the live search.
-
 ..  versionadded:: 15.0
     :changelog: feature-99678-1790186405
 
-If you insert a link without selecting text first, TYPO3 uses the title of
-the link as link text. If the link has no title, TYPO3 uses the title of the
-link target, for example the title of the page. The new link stays selected,
-so you can change it right away.
+In the rich text editor (RTE) write a text. Select the character or collection
+of characters that should link to something. You can link to internal TYPO3
+pages, files or folders from the Media module, external URL's, email addresses
+or phone numbers.
 
 ..  figure:: /Images/GeneratedScreenshots/ContentElements/Text/Link.png
     :alt: Linking the highlighted text in the TYPO3 rich text editor
     :zoom: gallery
 
-The :guilabel:`Link Browser` window displays.
+    Example: Within the RTE The text "Compostela" is selected and we hover over the
+    :guilabel:`Link` icon
 
-This window lets you link to an internal page, file, folder, external
-URL, email address or phone number.
+Click the :guilabel:`Link` icon in the toolbar or use the shortcut :kbd:`Ctrl + K`
+or :kbd:`Cmd + K`. Note that this shortcut only works when your focus is within
+the RTE editor.
+
+Then a window called :guilabel:`Link Browser` opens.
+
+..  figure:: /Images/GeneratedScreenshots/Link/LinkBrowser.png
+    :alt: The TYPO3 CMS link browser
+    :zoom: gallery
+
+    Example: Inside the Link Browser. Linking a TYPO3 page or a content element.
+
+To link the page itself click the paper clip of the respective page or
+the :guilabel:`Link to ...` button when you already selected a page in the
+page tree that pops up in the :guilabel:`Link Browser`. To link to
+a content element of a respective page do not click the paper clip but just the
+line that appears when you hover over the respective page where you want to
+link the respective content element from. On the right side you can click the
+content element that you would like to link to.
+
+..  figure:: /Images/ManualScreenshots/Link_Frontend.png
+    :alt: The link in the frontend
+    :zoom: gallery
+    :class: with-shadow
+
+    Example: A link to a content element in the frontend.
+
+When you open the Developer tool, you can see exactly how the link looks like
+in the frontend.
+
+..  figure:: /Images/ManualScreenshots/Developer_tools-Link_frontend.png
+    :alt: Link in the frontend opened in the Developer Tools
+    :zoom: gallery
+    :class: with-shadow
+
+    Example: The source code of the link to a content element in the frontend.
+
+Note, when you did not select a text and clicked the :guilabel:`Link` then you
+see a raw TYPO3 link, for example
+`<a href="/camino/camino-route-comparison">t3://page?uid=17</a>` in the frontend.
+
+Within the :guilabel:`Link Browser` you can assign a title and a target to the
+link. The title is shown when you hover over the link in the frontend. As target
+you can select the options `Top` (`_top`) or `New Window` (`_blank`). This
+defines how the new page is shown to you when you click the link.
+
+..  figure:: /Images/ManualScreenshots/Link_Browser_page_marked.png
+    :alt: Target and title in the link browser
+    :zoom: gallery
+
+    Set target and title individually. Best practice: Select `New Window` as
+    target.
 
 ..  _rte-linking-internal:
 
 Internal links
 --------------
 
-..  figure:: /Images/GeneratedScreenshots/Link/LinkBrowser.png
-    :alt: The TYPO3 CMS link browser
-    :zoom: gallery
-
 You can link to an internal file, folder, page or content element on a page.
 
 On the :guilabel:`Page` tab, select the page in the page tree that you want
 to link to, then click the :guilabel:`Link to ...` button.
-
-You can also link directly to a content element. In that case an anchor
-(link with a hashtag) is used so your readers will automatically jump to the
-desired content element.
 
 You can also link to uploaded files, for example PDF files:
 
@@ -102,6 +138,20 @@ External links
 #.  Click the :guilabel:`Set Link` button to close the :guilabel:`Link Browser`
     window.
 
+..  _rte-edit-or-remove-linking:
+
+Edit or remove a link
+=====================
+
+To edit a link or unlink click over the respective text then you can click
+:guilabel:`Edit link` or :guilabel:`Unlink`.
+
+..  figure:: /Images/ManualScreenshots/Unlink_or_remove_link.png
+    :alt: Edit link or unlink
+    :zoom: gallery
+
+    Edit the link or unlink text by clicking the respective linked texts
+
 ..  _rte-linking-preview:
 
 Checking and opening a link
@@ -121,18 +171,6 @@ the link while you hold :kbd:`Ctrl`, or :kbd:`Cmd` on a Mac, or press
 :kbd:`Alt` + :kbd:`Enter` while your cursor is in the link. A link to a page
 opens the page in the frontend, and a link to a file opens the file.
 
-..  _rte-linking-remove:
-
-Removing a link
-===============
-
-To remove a link from text, put your cursor anywhere in the linked text then
-click the :guilabel:`Unlink` button in the popover:
-
-..  figure:: /Images/GeneratedScreenshots/ContentElements/Text/Unlink.png
-    :alt: The popover of a link to the page "FAQs" in the rich text editor,
-        with the buttons to open, edit, and remove the link
-    :zoom: gallery
 
 ..  _rte-whitespace:
 
