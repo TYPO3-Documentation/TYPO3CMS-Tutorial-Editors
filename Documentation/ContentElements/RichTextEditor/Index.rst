@@ -49,7 +49,7 @@ or phone numbers.
     :alt: Linking the highlighted text in the TYPO3 rich text editor
     :zoom: gallery
 
-    Example: Within the RTE The text "Compostela" is selected and we hover over the
+    Example: Within the RTE the text "Compostela" is selected and we hover over the
     :guilabel:`Link` icon
 
 Click the :guilabel:`Link` icon in the toolbar or use the shortcut :kbd:`Ctrl + K`
