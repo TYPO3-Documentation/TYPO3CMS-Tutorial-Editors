@@ -87,7 +87,7 @@ in the frontend.
     :zoom: gallery
     :class: with-shadow
 
-    Example: The source code of the link to a content element in the frontend.
+    Example: The source code of the link to a content element in the Developer Tools.
 
 Note that every TYPO3 content element provided by default, for example
 "Text & Images", "Text & Media", or "Regular Text Element", has a unique id
