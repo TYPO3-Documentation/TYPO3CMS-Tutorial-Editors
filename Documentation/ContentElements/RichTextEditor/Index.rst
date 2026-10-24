@@ -79,7 +79,7 @@ content element that you would like to link to.
 
     Example: A link to a content element in the frontend.
 
-When you open the Developer tools, you can see exactly how the link looks like
+When you open the Developer Tools, you can see exactly how the link looks like
 in the frontend.
 
 ..  figure:: /Images/ManualScreenshots/Developer_tools-Link_frontend.png
