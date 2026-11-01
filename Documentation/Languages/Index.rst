@@ -39,6 +39,9 @@ When you translate content, there are two modes: a
 :ref:`connected <languages-translation-mode-connected>` mode and an
 :ref:`independent <languages-translation-mode-copy>` mode.
 
+A page uses one mode per language. Once a page has content in a language,
+the translation wizard offers only the mode that this content uses.
+
 ..  _languages-translation-mode-connected:
 
 Translate (connected)
@@ -90,12 +93,14 @@ Create the page translation
         :alt: Creating a translation of a page
         :zoom: gallery
 
-#.  Click through the translation wizard, choosing a translation mode of
-    :guilabel:`Translate` or :guilabel:`Copy`
-    (see :ref:`Translation strategies <translation-modes>`) for each content
-    element on the page until you see :guilabel:`Localization completed`. The
-    last screen of the wizard shows a summary of what will be translated.
-    Click on the :guilabel:`Finish` button.
+#.  In the translation wizard, select the content elements that you want to
+    translate. Then choose the translation mode :guilabel:`Translate` or
+    :guilabel:`Copy` for all of them
+    (see :ref:`Translation strategies <translation-modes>`). The wizard skips
+    a step when there is nothing to choose, for example the source language
+    when only one language can be the source. Check the summary of your
+    choices and click :guilabel:`Localize`. When the wizard shows
+    **Localization completed**, click :guilabel:`Finish`.
 
     ..  figure:: /Images/GeneratedScreenshots/Language/LanguagesTranslateContentElements.png
         :alt: The translation wizard
