@@ -79,8 +79,8 @@ content element that you would like to link to.
 
     Example: A link to a content element in the frontend.
 
-When you open the Developer Tools, you can see exactly how the link looks like
-in the frontend.
+When you open the Developer Tools, you can see exactly what the link looks like
+in the HTML source code.
 
 ..  figure:: /Images/ManualScreenshots/Developer_tools-Link_frontend.png
     :alt: Link in the frontend opened in the Developer Tools
@@ -108,7 +108,7 @@ defines how the new page is shown to you when you click the link.
     :zoom: gallery
 
     Set target and title individually. Best practice: Select `New Window` as
-    target.
+    target for external links.
 
 ..  _rte-linking-internal:
 
