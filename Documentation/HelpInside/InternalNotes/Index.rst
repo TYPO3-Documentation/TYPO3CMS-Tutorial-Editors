@@ -14,8 +14,10 @@ Internal notes in the TYPO3 backend
     and grant you the necessary permissions.
 
 Internal notes (also known as system notes) are small reminders or instructions
-displayed directly on a page in the :guilabel:`Content > Layout` module or in
-the :guilabel:`Content > Records` module.
+displayed directly on a page in the
+`Layout module <https://docs.typo3.org/permalink/t3editors:content-creating>`_
+or in the
+`Records module <https://docs.typo3.org/permalink/t3editors:using-the-list-module-effectively>`_.
 
 You can use them to write notes to yourself or other editors. Administrators
 can use them to leave instructions for you as well.
@@ -50,14 +52,12 @@ To create a new note:
 #.  Save the note.
 
 ..  tip::
-    **Position of the note:**
+    By default, new notes are displayed at the **bottom** of the page, below
+    all content elements or records.
 
-    By default, new notes are displayed at the **bottom** of the page (below
-    all content elements or records).
-
-    If you want the note to appear prominently at the **top** of the page (as
-    shown in the screenshot above), change the :guilabel:`Position` field in the
-    note from `Bottom` to `Top`.
+    If you want the note to appear at the **top** of the page, as in the
+    screenshot above, set the :guilabel:`Position` field of the note from
+    :guilabel:`Bottom` to :guilabel:`Top`.
 
 ..  seealso::
     For a detailed description on how to use internal notes, see the
