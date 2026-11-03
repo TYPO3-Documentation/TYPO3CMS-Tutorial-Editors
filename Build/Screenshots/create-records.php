@@ -163,7 +163,7 @@ $connectionPool->getConnectionForTable('sys_history')->truncate('sys_history');
 
 // The changes are made by the administrator who logs in for the
 // screenshots, so the history shows their name instead of "_cli_"
-$GLOBALS['BE_USER']->setBeUserByName('j.doe');
+$GLOBALS['BE_USER']->setBeUserByUid($find('be_users', 'username', 'j.doe'));
 
 // The hidden content element of the hiding example
 $process(['tt_content' => [$uids['extras'] => ['hidden' => 1]]]);
