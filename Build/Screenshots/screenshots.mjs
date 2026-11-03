@@ -594,6 +594,15 @@ const userMenu = (item) => ({
   to: '#typo3-cms-backend-backend-toolbaritems-usertoolbaritem .dropdown-menu',
 });
 
+// The Bookmarks menu in the top bar, which loads the bookmarks after it
+// opens
+const bookmarksMenu = '#typo3-cms-backend-backend-toolbaritems-bookmarktoolbaritem';
+const openBookmarksMenu = async (frame) => {
+  await frame.page().locator(`${bookmarksMenu} > button`).first().click();
+  await frame.page().locator(bookmarksMenu).getByText('Packing List').waitFor();
+  await frame.page().waitForTimeout(500);
+};
+
 // The Share button at the top right of a module, and its menu, with the
 // pointer on the item that copies the link
 const shareButton = '.module-docheader button[title="Share"]';
@@ -2022,6 +2031,42 @@ const screenshots = {
     margin: 0,
     from: '.module-docheader',
     to: '#languages-collapse thead',
+  },
+  // The bookmarks of the common editor, which create-records.php adds
+  // The whole backend, which shows where the menu is in the top bar
+  'DeepLinking/BookmarksMenu': {
+    url: moduleUrl('web/layout', packingList),
+    user: 'e.doe',
+    prepare: async (frame) => {
+      await openBookmarksMenu(frame);
+      await outline(frame.page().locator(`${bookmarksMenu} > button`).first());
+    },
+    hover: true,
+    window: true,
+    pageTree: true,
+    height: 560,
+  },
+  'DeepLinking/BookmarkManager': {
+    url: moduleUrl('web/layout', packingList),
+    user: 'e.doe',
+    prepare: async (frame) => {
+      await openBookmarksMenu(frame);
+      await frame.page().locator(bookmarksMenu).getByText('Manage bookmarks').click();
+      const dialog = frame.page().locator('typo3-backend-modal dialog[open]');
+      await dialog.getByText('Pilgrim stories').waitFor();
+      // Two bookmarks are checked, which shows the buttons for several
+      // bookmarks at once
+      for (const title of ['Packing List', 'FAQs']) {
+        await dialog.locator('li, .list-group-item, [draggable]', { hasText: title }).first()
+          .locator('input[type="checkbox"]').check();
+      }
+      await frame.page().mouse.move(0, 0);
+      await frame.page().evaluate(() => document.activeElement?.blur());
+      await frame.page().waitForTimeout(1000);
+    },
+    modal: true,
+    width: 1024,
+    height: 650,
   },
   'DeepLinking/QrCodeContextMenu': {
     url: moduleUrl('web/layout', packingList),
