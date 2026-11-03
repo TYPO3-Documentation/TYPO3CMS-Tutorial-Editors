@@ -73,6 +73,58 @@ When creating links to anything in the backend, it is recommended that the
 :guilabel:`Share` button is used to generate the link. Copying the URL from the browser
 is not recommended.
 
+..  _deeplinking-bookmarks:
+
+Bookmarks
+=========
+
+..  versionchanged:: 14.2
+    :changelog: feature-108796-1738078800
+
+A bookmark takes you back to a place in the backend that you need often,
+such as a page in the :guilabel:`Content > Layout` module.
+
+To bookmark the place where you are, open the :guilabel:`Share` menu at the
+top right and choose :guilabel:`Create bookmark`. If the place has a bookmark
+already, the menu offers :guilabel:`Remove bookmark` instead.
+
+The :guilabel:`Bookmarks` icon in the top bar lists your bookmarks in their
+groups. Click a bookmark to go to its place.
+
+..  figure:: /Images/GeneratedScreenshots/DeepLinking/BookmarksMenu.png
+    :alt: The backend with the Bookmarks menu open below its icon at the
+        top right, with bookmarks in the groups Pages, Records, and
+        Global: All, and the item Manage bookmarks
+    :zoom: lightbox
+
+..  _deeplinking-bookmarks-manage:
+
+Managing bookmarks
+------------------
+
+In the :guilabel:`Bookmarks` menu, choose :guilabel:`Manage bookmarks`. In
+the dialog that opens, you can:
+
+*   Rename a bookmark or put it into another group with
+    :guilabel:`Edit bookmark`, the cog icon next to it.
+*   Change the order of your bookmarks: drag them, or move them with the
+    arrows.
+*   Check several bookmarks and move them to another group with
+    :guilabel:`Move to group`, or delete them with :guilabel:`Delete`.
+*   Create groups of your own with :guilabel:`Manage Groups` and
+    :guilabel:`New Group`. When you delete a group, its bookmarks move to the
+    group **Default**.
+
+..  figure:: /Images/GeneratedScreenshots/DeepLinking/BookmarkManager.png
+    :alt: The dialog Manage bookmarks with two checked bookmarks and the
+        buttons Move to group and Delete
+    :zoom: lightbox
+
+A new bookmark goes into the group **Default**. Your administrator can set
+up groups for everyone, such as **Pages** and **Records**, and bookmarks
+for all users. You can use the bookmarks for all users, but not change
+them. They show a lock icon.
+
 ..  _deeplinking-qr-code:
 
 Sharing a preview with a QR code
