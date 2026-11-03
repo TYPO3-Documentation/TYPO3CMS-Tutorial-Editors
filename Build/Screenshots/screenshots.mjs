@@ -532,9 +532,15 @@ const showLanguageComparison = async (frame) => {
 const translate = (language, until) => async (frame) => {
   await openTranslation(language)(frame);
   const dialog = frame.page().locator('typo3-backend-modal dialog[open]');
-  // The content selection, then the mode
-  await dialog.getByRole('button', { name: /^Next/ }).click();
-  await frame.page().waitForTimeout(1000);
+  // The source language, as the page has an Arabic translation as well,
+  // then the content selection, then the mode. The wizard skips a step
+  // with only one choice, so it clicks "Next" until the mode shows.
+  const mode = dialog.getByText('Select localization mode');
+  for (let step = 0; step < 3 && !await mode.isVisible(); step++) {
+    await dialog.getByRole('button', { name: /^Next/ }).click();
+    await frame.page().waitForTimeout(1000);
+  }
+  await mode.waitFor();
   if (until === 'mode') {
     await frame.page().evaluate(() => document.activeElement?.blur());
     return;
