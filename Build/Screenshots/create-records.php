@@ -485,6 +485,26 @@ $connectionPool->getConnectionForTable('sys_lockedrecords')->insert('sys_lockedr
     'record_pid' => $uids['packingList'],
 ]);
 
+// The bookmarks of the common editor in the groups "Pages" and "Records" of
+// the TSconfig of the Core, and one that the administrator added for all
+// users, which the editor may use but not change
+$bookmarks = [
+    ['e.doe', 'web_layout', ['id' => $uids['packingList']], 'Packing List', 1],
+    ['e.doe', 'web_layout', ['id' => $uids['faqs']], 'FAQs', 1],
+    ['e.doe', 'records', ['id' => $uids['websiteUsers']], 'Website users', 2],
+    ['j.doe', 'web_layout', ['id' => $uids['stories']], 'Pilgrim stories', -100],
+];
+foreach ($bookmarks as $sorting => [$user, $route, $arguments, $title, $group]) {
+    $connectionPool->getConnectionForTable('sys_be_shortcuts')->insert('sys_be_shortcuts', [
+        'userid' => $find('be_users', 'username', $user),
+        'route' => $route,
+        'arguments' => json_encode(array_map(strval(...), $arguments)),
+        'description' => $title,
+        'sorting' => $sorting,
+        'sc_group' => $group,
+    ]);
+}
+
 // The uids differ between TYPO3 versions, so screenshots.mjs reads them here
 GeneralUtility::mkdir_deep(Environment::getVarPath());
 file_put_contents(Environment::getVarPath() . '/screenshot-records.json', json_encode($uids, JSON_PRETTY_PRINT) . "\n");
