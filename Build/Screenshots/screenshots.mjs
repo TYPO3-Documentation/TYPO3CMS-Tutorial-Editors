@@ -710,6 +710,20 @@ const screenshots = {
     from: '.t3-page-column-header >> nth=0',
     to: contentElement(map),
   },
+  // The footer columns of Camino take their content from the pages above
+  'ContentElements/SlideModeBadge': {
+    user: 'e.doe',
+    url: moduleUrl('web/layout', packingList),
+    prepare: async (frame) => {
+      const slideBadge = frame.locator(`${column(11)} .t3-page-column-title .badge`);
+      // The footer is below the content area, out of the window
+      await frame.locator(column(14)).scrollIntoViewIfNeeded();
+      await outline(slideBadge);
+      await tooltip(slideBadge);
+    },
+    from: column(11),
+    to: column(14),
+  },
   'ContentElements/PasteContent': {
     url: moduleUrl('web/layout', packingList),
     prepare: async (frame) => {

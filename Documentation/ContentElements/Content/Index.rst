@@ -78,6 +78,40 @@ Common page icons explained:
 5.  If the buttons are missing you do not have sufficient permission to
     edit the content element in question.
 
+..  _content-working-slide-mode:
+
+Content from the pages above
+============================
+
+..  versionadded:: 14.2
+    :changelog: feature-108842-1770128495
+
+Some columns show the content of the pages above on the website, such as
+the footer, which is the same on many pages. These columns have a blue
+badge below their title. Hover over the badge to see what it means.
+
+..  figure:: /Images/GeneratedScreenshots/ContentElements/SlideModeBadge.png
+    :alt: The four footer columns of a page in the Content > Layout module,
+        each with a blue badge, and the tooltip of the first badge
+    :zoom: gallery
+
+A magnifying glass and an arrow up
+    The column is empty on this page, so the website shows the content of
+    the nearest page above that has some. Add content to the column to
+    replace it on this page and the pages below. The badge then
+    disappears.
+
+A cart and an arrow down
+    The website shows the content of this page together with the content
+    of all pages above, starting with the topmost page.
+
+A cart and an arrow up
+    The website shows the content of this page together with the content
+    of all pages above, starting with this page.
+
+The pages at the top level of the page tree show no badge, as there is no
+page above them.
+
 ..  _content-working-hiding:
 
 Hiding content elements
