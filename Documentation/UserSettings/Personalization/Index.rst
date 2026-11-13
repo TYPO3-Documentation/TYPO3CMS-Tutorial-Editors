@@ -21,6 +21,10 @@ These settings change how the backend behaves while you work.
     folders that TYPO3 normally hides.
 *   **Enable dynamic "recently used" category in wizards:** Puts the elements
     you use most at the top of the wizards.
+*   **Enable workspace Live indicator:** Shows a bar at the top of the
+    backend while you work in the LIVE workspace. This setting is only there
+    if your site uses
+    `Workspaces <https://docs.typo3.org/permalink/typo3/cms-workspaces:users-guide>`_.
 *   **Recursive copy: Enter the number of page sublevels to include, when a
     page is copied:** How many levels below a copied page are copied with it.
     `0` copies just the page.
