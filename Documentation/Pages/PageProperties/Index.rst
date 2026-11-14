@@ -19,6 +19,10 @@ icon in the Docheader.
 
     Click the "Edit page properties" button to open the properties
 
+The page properties open in a panel beside the page, like a content element.
+`Editing in a panel beside the page <https://docs.typo3.org/permalink/t3editors:content-editing-panel>`_
+explains its buttons.
+
 The page properties that are available depend on the page type, your user
 permissions, and the configuration of the TYPO3 installation. The default
 properties available for the *Standard* page type include:
