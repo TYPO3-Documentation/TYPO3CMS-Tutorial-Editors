@@ -20,6 +20,40 @@ then edit the text and make other changes as required.
 
 ..  contents:: Table of contents:
 
+..  _content-editing-panel:
+
+Editing in a panel beside the page
+==================================
+
+..  versionadded:: 14.2
+    :changelog: feature-109130-1772489836
+
+In the module :guilabel:`Content > Layout`, the pencil icon opens the form in
+a panel beside the page. The page stays visible behind the panel.
+
+..  figure:: /Images/GeneratedScreenshots/ContentElements/EditPanel.png
+    :alt: The form of a content element in a panel beside the page, with
+        the numbered buttons Save, Close, and Open full editing view
+    :zoom: gallery
+
+    The panel shows the form, the page stays visible
+
+At the top of the panel, you find these buttons:
+
+1.  :guilabel:`Save` saves your changes. The panel stays open, so you can
+    go on editing.
+2.  :guilabel:`Close` closes the panel. If you have unsaved changes, you are
+    asked first whether to save them.
+3.  :guilabel:`Open full editing view`, the icon next to the title, opens the
+    form in the whole module instead.
+
+The button :guilabel:`Edit page properties` opens the panel as well.
+
+If you prefer the full form, switch off the option
+:guilabel:`Use quick editing for records in the Layout module` in your
+`User settings <https://docs.typo3.org/permalink/t3editors:user-settings-personalization>`_.
+The pencil icon then opens the form in the whole module, as in older versions.
+
 ..  _content-editing-change-text:
 
 Changing text and setting in a content element
