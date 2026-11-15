@@ -47,11 +47,20 @@ Method 1: Using drag and drop
 
 #.  Position your page:
 
-    *   If using :guilabel:`+ Page`: Click on a location for your new page in
-        the popup window. Select the page with the globe icon (**"root" page**)
-        if you want to create another main page or select an existing page to
-        create a **"child" page**. Then click on :guilabel:`Insert subpage`.
-        Choose the standard page type.
+    *   If using :guilabel:`+ Page`: In the popup window, click the page
+        where your new page should go. Select the page with the globe icon
+        (**"root" page**) if you want to create another main page. Below the
+        page you clicked, two kinds of positions appear:
+
+        *   :guilabel:`Insert subpage` creates a **"child" page**. It becomes
+            the first subpage of the page you clicked.
+        *   :guilabel:`Insert page` creates a page on the same level, after
+            the page you clicked. This position also appears after each
+            subpage of that page.
+
+        Click a position, then click :guilabel:`Next`. Choose the standard
+        page type.
+
     ..  figure:: /Images/GeneratedScreenshots/PageTree/PageInsertSubpage.png
         :alt: The insert subpage button on the page creator form
         :zoom: gallery
