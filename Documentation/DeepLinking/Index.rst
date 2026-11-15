@@ -140,9 +140,8 @@ the QR code of a page:
 *   In the page tree, right-click the page and choose
     :guilabel:`Show QR code`. The context menu of a page offers the item
     wherever a page is listed.
-*   In the modules :guilabel:`Content > Records` and
-    :guilabel:`Content > Preview`, click the :guilabel:`Show QR code` button
-    in the top bar.
+*   In the module :guilabel:`Content > Preview`, click the
+    :guilabel:`Show QR code` button in the top bar.
 
 ..  figure:: /Images/GeneratedScreenshots/DeepLinking/QrCodeContextMenu.png
     :alt: The context menu of the page "Packing List" in the page tree, with
