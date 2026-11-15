@@ -126,6 +126,14 @@ You can also link to uploaded files, for example PDF files:
     :alt: Linking to a file for download in TYPO3
     :zoom: gallery
 
+..  versionadded:: 14.2
+    :changelog: feature-100254-1742119200
+
+Select :guilabel:`Force download` so that the browser of the visitor
+downloads the file instead of opening it. A field :guilabel:`Custom filename`
+appears. To save the file under another name, enter that name, for example
+`pilgrim-guide.pdf`. If you leave the field empty, the file keeps its name.
+
 ..  _rte-linking-external:
 
 External links
