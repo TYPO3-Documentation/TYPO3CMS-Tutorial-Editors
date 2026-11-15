@@ -8,35 +8,57 @@ Internal notes in the TYPO3 backend
 ===================================
 
 ..  note::
-    These are only available if :composer:`typo3/cms-sys-note` is installed
-    and your administrator granted you the necessary user rights.
+    Internal notes are an optional feature provided by
+    :composer:`typo3/cms-sys-note`. If you do not see the note button or
+    notes in your backend, ask your administrator to install this extension
+    and grant you the necessary permissions.
 
-Internal notes, also called system notes, are small text notes that are
-displayed in the `Layout module <https://docs.typo3.org/permalink/t3editors:content-creating>`_
-and `Records module <https://docs.typo3.org/permalink/t3editors:using-the-list-module-effectively>`_.
+Internal notes (also known as system notes) are small reminders or instructions
+displayed directly on a page in the
+`Layout module <https://docs.typo3.org/permalink/t3editors:content-creating>`_
+or in the
+`Records module <https://docs.typo3.org/permalink/t3editors:using-the-list-module-effectively>`_.
 
 You can use them to write notes to yourself or other editors. Administrators
-can use them to write notes to you as well.
-
-They look like this:
+can use them to leave instructions for you as well.
 
 ..  figure:: /Images/GeneratedScreenshots/HelpInside/PageWithInternalNote.png
     :alt: A to-do note at the top of the Content > Layout module
     :zoom: gallery
 
-    If you have sufficient permissions you can also edit or delete the note.
+    An internal note displayed on a page. If you have sufficient permissions,
+    you can also edit or delete existing notes.
 
-    The following image shows a detailed view of the TYPO3 backend toolbar, specifically in
-    the context of the :guilabel:`Content > Layout` or :guilabel:`Content > Records` module. On the right side of the toolbar are a number
-    of buttons, each providing different functionality. The button highlighted in this screenshot
-    is which allows the user to create a new internal note.
 
-..  figure:: /Images/GeneratedScreenshots/HelpInside/CreateInternalNote.png
-    :alt: Screenshot demonstrating the location of the "Create internal note" button in the module header of the Content Layout module
-    :zoom: gallery
+..  _internal-notes-create:
 
-    The button to create a system note is located on the top right of the :guilabel:`Content > Layout` and :guilabel:`Content > Records` modules
+Creating an internal note
+=========================
+
+To create a new note:
+
+#.  Select a page in the page tree.
+#.  In the top-right toolbar of the module header, click the
+    :guilabel:`Create internal note for this page` button:
+
+    ..  figure:: /Images/GeneratedScreenshots/HelpInside/CreateInternalNote.png
+        :alt: Screenshot demonstrating the location of the "Create internal note" button in the module header
+        :zoom: gallery
+
+        The button to create an internal note is located in the top-right toolbar
+        of the :guilabel:`Content > Layout` and :guilabel:`Content > Records` modules.
+
+#.  Enter a :guilabel:`Subject` and your :guilabel:`Message`.
+#.  Save the note.
+
+..  tip::
+    By default, new notes are displayed at the **bottom** of the page, below
+    all content elements or records.
+
+    If you want the note to appear at the **top** of the page, as in the
+    screenshot above, set the :guilabel:`Position` field of the note from
+    :guilabel:`Bottom` to :guilabel:`Top`.
 
 ..  seealso::
-    For a detailed description on how to use the internal notes see
-    `System notes manual, for Editors <https://docs.typo3.org/permalink/typo3/cms-sys-note:for-editors>`_.
+    For a detailed description on how to use internal notes, see the
+    `System notes manual for editors <https://docs.typo3.org/permalink/typo3/cms-sys-note:for-editors>`_.
