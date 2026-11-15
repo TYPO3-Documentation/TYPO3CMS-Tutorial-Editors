@@ -224,6 +224,13 @@ where changed and who made which changes when.
 
     Compare the differences. Use the undo button to undo changes.
 
+..  versionadded:: 14.2
+    :changelog: feature-95910-1754604644
+
+If the page or the record has translations, the history has a
+:guilabel:`Language` menu at the top. Choose a language to see the changes
+of that translation. The menu lists only the languages that you may edit.
+
 ..  _content-working-began-editing:
 
 The BE-User 'xxx' began to edit this record x min ago
