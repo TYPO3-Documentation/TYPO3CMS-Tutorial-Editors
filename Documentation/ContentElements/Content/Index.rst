@@ -152,6 +152,15 @@ shortcuts :kbd:`Ctrl + K` or :kbd:`Cmd + K` to open the live search.
 You can then edit the content element containing the text you were searching for.
 You can search by keywords, numbers or by frontend page URL.
 
+..  versionchanged:: 14.3.6
+    :changelog: important-109787-1730981200
+
+The live search also finds files, by their file name and by their
+metadata, such as the title, the description, or the alternative text.
+You only see the files of the folders that you have access to. The details
+of a file show a preview and its properties, such as the location, the
+file size, and the date it was last changed.
+
 ..  _content-working-troubleshooting:
 
 Troubleshooting page management

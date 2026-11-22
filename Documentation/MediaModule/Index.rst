@@ -48,6 +48,9 @@ selected directory.
 
     List view from the The :guilabel:`Media` module with View Selector open displaying options.
 
+To find a file without browsing the folders, use the
+`live search <https://docs.typo3.org/permalink/t3editors:content-working-life-search>`_.
+
 For admin users, the folder displayed by default is called
 "fileadmin/ (auto-generated)" and corresponds to the
 :file:`fileadmin/` folder located under the document root
