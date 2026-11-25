@@ -868,6 +868,24 @@ const screenshots = {
     hover: true,
     from: contentElement(story),
   },
+  'ContentElements/EditPanel': {
+    url: moduleUrl('web/layout', stories),
+    window: true,
+    // Down to the text of the content element
+    height: 800,
+    prepare: async (frame) => {
+      await frame.locator(`${contentElement(story)} typo3-backend-contextual-record-edit-trigger`).first().click();
+      const sheet = frame.page().frameLocator('typo3-backend-modal[data-contextual-record-edit] iframe');
+      const header = sheet.locator('.contextual-record-edit-header');
+      await header.waitFor();
+      await frame.page().waitForTimeout(1000);
+      // The panel focuses its first button, which would show a focus ring
+      await header.locator('.t3js-contextual-fullscreen').evaluate((link) => link.blur());
+      await badge(header.getByRole('button', { name: 'Save' }), 1, 'left');
+      await badge(header.getByRole('button', { name: 'Close' }), 2, 'left');
+      await badge(header.locator('.t3js-contextual-fullscreen'), 3);
+    },
+  },
   'ContentElements/ChangeText': {
     url: editUrl('tt_content', story),
     prepare: changeHeader,
